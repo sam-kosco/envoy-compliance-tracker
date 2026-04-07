@@ -168,6 +168,28 @@
   .filter-clear:hover { background:var(--red); color:white; border-color:var(--red); }
   .filter-active-note { font-size:11px; font-weight:600; color:var(--orange); background:var(--orange-pale); border:1px solid var(--orange-light); padding:4px 10px; border-radius:4px; display:none; }
 
+
+  /* DETAIL PANEL CLOSE */
+  .detail-close {
+    position:absolute; top:12px; right:14px;
+    width:28px; height:28px;
+    border-radius:50%;
+    border:1.5px solid rgba(255,255,255,0.3);
+    background:rgba(255,255,255,0.1);
+    color:white;
+    font-size:16px;
+    line-height:1;
+    cursor:pointer;
+    display:flex; align-items:center; justify-content:center;
+    transition:background 0.15s, border-color 0.15s;
+    flex-shrink:0;
+  }
+  .detail-close:hover {
+    background:rgba(255,255,255,0.25);
+    border-color:rgba(255,255,255,0.6);
+  }
+  #detail-panel { position:relative; }
+
 </style>
 </head>
 <body>
@@ -204,8 +226,11 @@
     <div class="card-header"><div class="card-title">🔍 Tail Number Lookup</div></div>
     <div class="card-body">
       <div class="search-row">
-        <select class="search-select" id="tail-select"><option value="">— Select a tail number —</option></select>
-        <button class="search-btn" onclick="searchTail()">Look Up</button>
+        <input class="search-select" type="text" id="tail-input" list="tail-datalist"
+               placeholder="Search a Tail Number"
+               autocomplete="off" oninput="onTailInput(this.value)" style="text-transform:uppercase">
+        <datalist id="tail-datalist"></datalist>
+        <button class="search-btn" onclick="searchFromInput()">Look Up</button>
       </div>
 
       <div class="filter-bar" id="filter-bar">
@@ -325,6 +350,9 @@ const SAMPLE = {"generated": "2026-04-07T22:48:15.264151", "planes": [{"tail": "
 let DATA = null;
 
 document.addEventListener('DOMContentLoaded', () => {
+  document.getElementById('tail-input').addEventListener('keydown', e => {
+    if (e.key === 'Enter') searchFromInput();
+  });
   document.getElementById('band-date').textContent = 'Current as of ' + new Date().toLocaleDateString('en-US',{month:'2-digit',day:'2-digit',year:'2-digit'});
   loadDashboard();
 });
@@ -374,12 +402,12 @@ function renderAll() {
   document.getElementById('nc-list').innerHTML   = nc.length   ? nc.map(p=>planeCard(p,'noncompliant')).join('') : '<div class="empty-state">✓ No noncompliant aircraft</div>';
   document.getElementById('soon-list').innerHTML = soon.length ? soon.map(p=>planeCard(p,'soon')).join('')      : '<div class="empty-state">No aircraft due within 7 days</div>';
 
-  const sel = document.getElementById('tail-select');
-  sel.innerHTML = '<option value="">— Select a tail number —</option>';
+  const dl = document.getElementById('tail-datalist');
+  dl.innerHTML = '';
   [...planes].sort((a,b)=>a.tail.localeCompare(b.tail)).forEach(p => {
     const o=document.createElement('option');
-    o.value=p.tail; o.textContent=`${p.tail}${p.lastLocation?' ('+p.lastLocation+')':''}`;
-    sel.appendChild(o);
+    o.value=p.tail;
+    dl.appendChild(o);
   });
 
   document.getElementById('fleet-count').textContent = planes.length+' aircraft';
@@ -412,10 +440,41 @@ function planeCard(p,type) {
   </div>`;
 }
 
-function searchTail() { const t=document.getElementById('tail-select').value; if(t) selectTail(t); }
+function onTailInput(val) {
+  // Auto-trigger lookup when input exactly matches a known tail
+  const upper = val.trim().toUpperCase();
+  if (DATA && DATA.planes.find(p => p.tail === upper)) {
+    selectTail(upper);
+  }
+}
+
+
+function closeDetail() {
+  const panel = document.getElementById('detail-panel');
+  panel.style.display = 'none';
+  panel.innerHTML = '';
+  document.getElementById('tail-input').value = '';
+}
+function searchFromInput() {
+  const input = document.getElementById('tail-input').value.trim().toUpperCase();
+  if (!input || !DATA) return;
+  // Exact match first
+  if (DATA.planes.find(p => p.tail === input)) {
+    selectTail(input);
+    return;
+  }
+  // Substring match — pick first hit sorted alphabetically
+  const match = [...DATA.planes]
+    .sort((a,b)=>a.tail.localeCompare(b.tail))
+    .find(p => p.tail.includes(input));
+  if (match) {
+    document.getElementById('tail-input').value = match.tail;
+    selectTail(match.tail);
+  }
+}
 
 function selectTail(tail) {
-  document.getElementById('tail-select').value = tail;
+  document.getElementById('tail-input').value = tail;
   const p = DATA.planes.find(x=>x.tail===tail);
   if (!p) return;
 
@@ -471,12 +530,15 @@ function selectTail(tail) {
   panel.style.display='block';
   panel.className='fade-in';
   panel.innerHTML=`
-    <div class="detail-top">
+    <div class="detail-top" style="position:relative">
       <div>
         <div class="detail-tail">${p.tail}</div>
         <div class="detail-meta">Last service: ${fmtDate(p.lastService)} &nbsp;·&nbsp; ${p.lastLocation||'—'} &nbsp;·&nbsp; ${p.lastTech||'—'}</div>
       </div>
-      <div class="detail-status-pill ${status}">${statusLbl}</div>
+      <div style="display:flex;align-items:center;gap:10px">
+        <div class="detail-status-pill ${status}">${statusLbl}</div>
+        <button class="detail-close" onclick="closeDetail()" title="Close">✕</button>
+      </div>
     </div>
     <div class="compliance-grid">${cells}${infoRow}</div>
     <div class="history-wrap">

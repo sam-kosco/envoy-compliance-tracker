@@ -190,6 +190,34 @@
   }
   #detail-panel { position:relative; }
 
+
+  /* CUSTOM TAIL SEARCH DROPDOWN */
+  .tail-search-wrap { position:relative; flex:1; }
+  .tail-search-wrap input {
+    width:100%; border:1.5px solid var(--gray); border-right:none;
+    border-radius:4px 0 0 4px; padding:10px 14px;
+    font-family:var(--sans); font-size:14px; font-weight:600;
+    color:var(--text); outline:none; background:white; box-sizing:border-box;
+  }
+  .tail-search-wrap input:focus { border-color:var(--orange); }
+  .tail-dropdown {
+    position:absolute; top:calc(100% + 2px); left:0; right:0;
+    background:var(--white); border:1.5px solid var(--orange);
+    border-radius:0 0 4px 4px; box-shadow:var(--shadow-md);
+    max-height:260px; overflow-y:auto; z-index:200; display:none;
+  }
+  .tail-dropdown::-webkit-scrollbar { width:4px; }
+  .tail-dropdown::-webkit-scrollbar-thumb { background:var(--gray); border-radius:4px; }
+  .tail-dropdown-item {
+    padding:9px 14px; font-family:var(--cond); font-size:15px;
+    font-weight:700; color:var(--navy); cursor:pointer; letter-spacing:0.5px;
+    border-bottom:1px solid var(--gray-light);
+    transition:background 0.1s;
+  }
+  .tail-dropdown-item:last-child { border-bottom:none; }
+  .tail-dropdown-item:hover, .tail-dropdown-item.highlighted { background:var(--orange-pale); color:var(--orange); }
+  .tail-dropdown-empty { padding:12px 14px; font-size:13px; color:var(--text-light); font-style:italic; }
+
 </style>
 </head>
 <body>
@@ -226,10 +254,15 @@
     <div class="card-header"><div class="card-title">🔍 Tail Number Lookup</div></div>
     <div class="card-body">
       <div class="search-row">
-        <input class="search-select" type="text" id="tail-input" list="tail-datalist"
-               placeholder="Search a Tail Number"
-               autocomplete="off" oninput="onTailInput(this.value)" style="text-transform:uppercase">
-        <datalist id="tail-datalist"></datalist>
+        <div class="tail-search-wrap">
+          <input type="text" id="tail-input"
+                 placeholder="Search a Tail Number"
+                 autocomplete="off"
+                 oninput="onTailInput(this.value)"
+                 onfocus="openDropdown()"
+                 style="text-transform:uppercase">
+          <div class="tail-dropdown" id="tail-dropdown"></div>
+        </div>
         <button class="search-btn" onclick="searchFromInput()">Look Up</button>
       </div>
 
@@ -352,6 +385,11 @@ let DATA = null;
 document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('tail-input').addEventListener('keydown', e => {
     if (e.key === 'Enter') searchFromInput();
+    if (e.key === 'Escape') closeDropdown();
+  });
+  document.addEventListener('click', e => {
+    const wrap = document.querySelector('.tail-search-wrap');
+    if (wrap && !wrap.contains(e.target)) closeDropdown();
   });
   document.getElementById('band-date').textContent = 'Current as of ' + new Date().toLocaleDateString('en-US',{month:'2-digit',day:'2-digit',year:'2-digit'});
   loadDashboard();
@@ -402,13 +440,9 @@ function renderAll() {
   document.getElementById('nc-list').innerHTML   = nc.length   ? nc.map(p=>planeCard(p,'noncompliant')).join('') : '<div class="empty-state">✓ No noncompliant aircraft</div>';
   document.getElementById('soon-list').innerHTML = soon.length ? soon.map(p=>planeCard(p,'soon')).join('')      : '<div class="empty-state">No aircraft due within 7 days</div>';
 
-  const dl = document.getElementById('tail-datalist');
-  dl.innerHTML = '';
-  [...planes].sort((a,b)=>a.tail.localeCompare(b.tail)).forEach(p => {
-    const o=document.createElement('option');
-    o.value=p.tail;
-    dl.appendChild(o);
-  });
+  // store sorted tails for dropdown
+  window._allTails = [...planes].map(p=>p.tail).sort((a,b)=>a.localeCompare(b));
+  renderDropdown('');
 
   document.getElementById('fleet-count').textContent = planes.length+' aircraft';
   document.getElementById('fleet-body').innerHTML = [...planes].sort((a,b)=>a.tail.localeCompare(b.tail)).map(p => {
@@ -441,13 +475,43 @@ function planeCard(p,type) {
 }
 
 function onTailInput(val) {
-  // Auto-trigger lookup when input exactly matches a known tail
-  const upper = val.trim().toUpperCase();
-  if (DATA && DATA.planes.find(p => p.tail === upper)) {
-    selectTail(upper);
-  }
+  renderDropdown(val);
 }
 
+
+// ── CUSTOM DROPDOWN ──────────────────────────────────
+function renderDropdown(query) {
+  const dd = document.getElementById('tail-dropdown');
+  if (!dd) return;
+  const tails = window._allTails || [];
+  const q = query.trim().toUpperCase();
+  const filtered = q ? tails.filter(t => t.includes(q)) : tails;
+  if (filtered.length === 0) {
+    dd.innerHTML = '<div class="tail-dropdown-empty">No matching tails</div>';
+  } else {
+    dd.innerHTML = filtered.map(t => {
+      const label = q ? t.replace(q, '<span style="color:var(--orange);font-weight:800">'+q+'</span>') : t;
+      return '<div class="tail-dropdown-item" onmousedown="pickTail(\'' + t + '\')">' + label + '</div>';
+    }).join('');
+  }
+  dd.style.display = 'block';
+}
+
+function openDropdown() {
+  const q = document.getElementById('tail-input').value.trim().toUpperCase();
+  renderDropdown(q);
+}
+
+function closeDropdown() {
+  const dd = document.getElementById('tail-dropdown');
+  if (dd) dd.style.display = 'none';
+}
+
+function pickTail(tail) {
+  document.getElementById('tail-input').value = tail;
+  closeDropdown();
+  selectTail(tail);
+}
 
 function closeDetail() {
   const panel = document.getElementById('detail-panel');
@@ -457,23 +521,15 @@ function closeDetail() {
 }
 function searchFromInput() {
   const input = document.getElementById('tail-input').value.trim().toUpperCase();
+  closeDropdown();
   if (!input || !DATA) return;
-  // Exact match first
-  if (DATA.planes.find(p => p.tail === input)) {
-    selectTail(input);
-    return;
-  }
-  // Substring match — pick first hit sorted alphabetically
-  const match = [...DATA.planes]
-    .sort((a,b)=>a.tail.localeCompare(b.tail))
-    .find(p => p.tail.includes(input));
-  if (match) {
-    document.getElementById('tail-input').value = match.tail;
-    selectTail(match.tail);
-  }
+  if (DATA.planes.find(p => p.tail === input)) { selectTail(input); return; }
+  const match = (window._allTails||[]).find(t => t.includes(input));
+  if (match) { document.getElementById('tail-input').value = match; selectTail(match); }
 }
 
 function selectTail(tail) {
+  closeDropdown();
   document.getElementById('tail-input').value = tail;
   const p = DATA.planes.find(x=>x.tail===tail);
   if (!p) return;

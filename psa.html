@@ -218,6 +218,19 @@
   .tail-dropdown-item:hover, .tail-dropdown-item.highlighted { background:var(--orange-pale); color:var(--orange); }
   .tail-dropdown-empty { padding:12px 14px; font-size:13px; color:var(--text-light); font-style:italic; }
 
+
+  /* Allow tail dropdown to escape card boundary */
+  #lookup-card,
+  #lookup-card .card-body,
+  #lookup-card .search-row,
+  #lookup-card .tail-search-wrap {
+    overflow: visible;
+  }
+  /* But keep the dropdown itself scrollable */
+  #tail-dropdown {
+    overflow-y: auto;
+  }
+
 </style>
 </head>
 <body>
@@ -250,7 +263,7 @@
     <div class="stat-card s-green"><div class="stat-label">Fully Compliant</div><div class="stat-value" id="stat-ok">—</div><div class="stat-sub">all jobs current</div></div>
   </div>
 
-  <div class="card col-full">
+  <div class="card col-full" id="lookup-card">
     <div class="card-header"><div class="card-title">🔍 Tail Number Lookup</div></div>
     <div class="card-body">
       <div class="search-row">
@@ -440,9 +453,8 @@ function renderAll() {
   document.getElementById('nc-list').innerHTML   = nc.length   ? nc.map(p=>planeCard(p,'noncompliant')).join('') : '<div class="empty-state">✓ No noncompliant aircraft</div>';
   document.getElementById('soon-list').innerHTML = soon.length ? soon.map(p=>planeCard(p,'soon')).join('')      : '<div class="empty-state">No aircraft due within 7 days</div>';
 
-  // store sorted tails for dropdown
+  // store sorted tails for dropdown (don't show yet)
   window._allTails = [...planes].map(p=>p.tail).sort((a,b)=>a.localeCompare(b));
-  renderDropdown('');
 
   document.getElementById('fleet-count').textContent = planes.length+' aircraft';
   document.getElementById('fleet-body').innerHTML = [...planes].sort((a,b)=>a.tail.localeCompare(b.tail)).map(p => {
@@ -488,11 +500,19 @@ function renderDropdown(query) {
   const filtered = q ? tails.filter(t => t.includes(q)) : tails;
   if (filtered.length === 0) {
     dd.innerHTML = '<div class="tail-dropdown-empty">No matching tails</div>';
+    dd.style.maxHeight = '48px';
+    dd.style.overflowY = 'hidden';
   } else {
     dd.innerHTML = filtered.map(t => {
-      const label = q ? t.replace(q, '<span style="color:var(--orange);font-weight:800">'+q+'</span>') : t;
+      const label = q
+        ? t.replace(q, '<span style="color:var(--orange);font-weight:800">'+q+'</span>')
+        : t;
       return '<div class="tail-dropdown-item" onmousedown="pickTail(\'' + t + '\')">' + label + '</div>';
     }).join('');
+    const ITEM_H = 38;
+    const show = Math.min(filtered.length, 10);
+    dd.style.maxHeight = (show * ITEM_H) + 'px';
+    dd.style.overflowY = filtered.length > 10 ? 'auto' : 'hidden';
   }
   dd.style.display = 'block';
 }

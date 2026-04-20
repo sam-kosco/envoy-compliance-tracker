@@ -231,6 +231,65 @@
     overflow-y: auto;
   }
 
+
+  /* PER-JOB COMPLIANCE BREAKDOWN */
+  .breakdown-strip {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 12px;
+  }
+  .breakdown-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    border: 1px solid var(--gray-light);
+    box-shadow: var(--shadow-sm);
+    padding: 14px 16px 12px;
+    position: relative;
+    overflow: hidden;
+  }
+  .breakdown-job {
+    font-family: var(--cond);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--text-light);
+    margin-bottom: 6px;
+  }
+  .breakdown-job-full {
+    font-size: 11px;
+    color: var(--text-light);
+    font-weight: 500;
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+  .breakdown-pct {
+    font-family: var(--cond);
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: -1px;
+    margin-bottom: 6px;
+  }
+  .breakdown-bar-track {
+    height: 5px;
+    background: var(--gray-light);
+    border-radius: 3px;
+    overflow: hidden;
+    margin-bottom: 4px;
+  }
+  .breakdown-bar-fill {
+    height: 100%;
+    border-radius: 3px;
+    transition: width 0.6s ease;
+  }
+  .breakdown-sub {
+    font-size: 10px;
+    color: var(--text-light);
+    font-weight: 500;
+  }
+
 </style>
 </head>
 <body>
@@ -261,6 +320,16 @@
     <div class="stat-card s-red"><div class="stat-label">Noncompliant</div><div class="stat-value" id="stat-noncomp">—</div><div class="stat-sub">overdue or no service</div></div>
     <div class="stat-card s-amber"><div class="stat-label">Due Within 7 Days</div><div class="stat-value" id="stat-soon">—</div><div class="stat-sub">action required soon</div></div>
     <div class="stat-card s-green"><div class="stat-label">Fully Compliant</div><div class="stat-value" id="stat-ok">—</div><div class="stat-sub">all jobs current</div></div>
+  </div>
+
+  <!-- PER-JOB COMPLIANCE BREAKDOWN -->
+  <div class="breakdown-strip col-full" id="breakdown-strip">
+    <div class="breakdown-card" id="bd-CC"></div>
+    <div class="breakdown-card" id="bd-DSC"></div>
+    <div class="breakdown-card" id="bd-CE"></div>
+    <div class="breakdown-card" id="bd-ED1"></div>
+    <div class="breakdown-card" id="bd-ED2"></div>
+    <div class="breakdown-card" id="bd-Lav"></div>
   </div>
 
   <div class="card col-full" id="lookup-card">
@@ -344,6 +413,50 @@ const TRACKED   = ['CC','DSC','CE','ED1','ED2','Lav'];
 const JOB_NAMES = {CC:'Cockpit Clean',DSC:'Deep Seat Clean',CE:'Carpet Extraction',ED1:'Exterior Detail #1',ED2:'Exterior Detail #2',Lav:'Lav Tank Pressure Wash'};
 const CYCLES    = {CC:30,DSC:30,CE:30,ED1:30,ED2:30,Lav:90};
 
+
+
+// ── PER-JOB COMPLIANCE BREAKDOWN ─────────────────────
+const JOB_COLORS = {
+  CC:  { pct: '#6366F1', bar: '#C7D2FE' },
+  DSC: { pct: '#0891B2', bar: '#A5F3FC' },
+  CE:  { pct: '#D97706', bar: '#FDE68A' },
+  ED1: { pct: '#16A34A', bar: '#86EFAC' },
+  ED2: { pct: '#059669', bar: '#6EE7B7' },
+  Lav: { pct: '#7C3AED', bar: '#DDD6FE' },
+};
+
+function renderBreakdown(planes) {
+  // Always uses the full TRACKED list — unaffected by activeFilters
+  TRACKED.forEach(job => {
+    const el = document.getElementById('bd-' + job);
+    if (!el) return;
+
+    const total = planes.length;
+    if (total === 0) { el.innerHTML = ''; return; }
+
+    // Compliant = window is a positive number (not No Service, not negative)
+    const compliant = planes.filter(p =>
+      typeof p[job] === 'number' && p[job] >= 0
+    ).length;
+    const pct = Math.round((compliant / total) * 100);
+    const color = JOB_COLORS[job];
+
+    // Color the percentage by how good it is
+    let pctColor = color.pct;
+    if (pct < 50) pctColor = 'var(--red)';
+    else if (pct < 80) pctColor = 'var(--amber)';
+
+    el.innerHTML = `
+      <div class="breakdown-job">${job}</div>
+      <div class="breakdown-job-full">${JOB_NAMES[job]}</div>
+      <div class="breakdown-pct" style="color:${pctColor}">${pct}%</div>
+      <div class="breakdown-bar-track">
+        <div class="breakdown-bar-fill" style="width:${pct}%;background:${pctColor}"></div>
+      </div>
+      <div class="breakdown-sub">${compliant} of ${total} aircraft compliant</div>
+    `;
+  });
+}
 
 // ── FILTERS ──────────────────────────────────────────
 let activeFilters = new Set(); // empty = all jobs active
@@ -443,6 +556,7 @@ function renderAll() {
   const soon = planes.filter(isSoon).sort((a,b)=>worst(a)-worst(b));
   const ok   = planes.filter(p=>!isNC(p)&&!isSoon(p));
 
+  renderBreakdown(planes);
   document.getElementById('stat-total').textContent   = planes.length;
   document.getElementById('stat-noncomp').textContent = nc.length;
   document.getElementById('stat-soon').textContent    = soon.length;

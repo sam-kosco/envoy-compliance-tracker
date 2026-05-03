@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-03T09:34:32.164582+00:00",
+  "generated": "2026-05-03T10:24:55.017819+00:00",
   "planes": [
     {
       "tail": "N740MR",
@@ -674,14 +674,14 @@
     },
     {
       "tail": "N748RR",
-      "lastService": "2026-04-23",
+      "lastService": "2026-05-02",
       "lastED1": "2026-03-29",
-      "lastED2": "2026-03-02",
-      "lastIHC": "2026-04-23",
-      "lastLocation": "SGF",
-      "lastTech": "Steven Wilson",
+      "lastED2": "2026-05-02",
+      "lastIHC": "2026-05-02",
+      "lastLocation": "CMH",
+      "lastTech": "Alex Hamilton",
       "ED1": -5,
-      "ED2": -2
+      "ED2": 59
     },
     {
       "tail": "N751AB",
@@ -905,12 +905,12 @@
     },
     {
       "tail": "N289MW",
-      "lastService": "2026-05-01",
+      "lastService": "2026-05-02",
       "lastED1": "2026-04-11",
       "lastED2": "2026-04-11",
-      "lastIHC": "2026-05-01",
-      "lastLocation": "CVG",
-      "lastTech": "Sellers Davis",
+      "lastIHC": "2026-05-02",
+      "lastLocation": "CMH",
+      "lastTech": "Alex Hamilton",
       "ED1": 8,
       "ED2": 38
     },
@@ -1609,12 +1609,12 @@
     },
     {
       "tail": "N233NN",
-      "lastService": "2026-04-28",
+      "lastService": "2026-05-02",
       "lastED1": "2026-03-15",
       "lastED2": "2026-02-16",
-      "lastIHC": "2026-04-28",
-      "lastLocation": "SGF",
-      "lastTech": "Todd Axle",
+      "lastIHC": "2026-05-02",
+      "lastLocation": "CMH",
+      "lastTech": "Alex Hamilton",
       "ED1": -19,
       "ED2": -16
     },
@@ -1664,12 +1664,12 @@
     },
     {
       "tail": "N200NN",
-      "lastService": "2026-04-30",
+      "lastService": "2026-05-02",
       "lastED1": "2026-04-09",
       "lastED2": "2026-03-08",
-      "lastIHC": "2026-04-30",
-      "lastLocation": "LIT",
-      "lastTech": "Dane  Clement",
+      "lastIHC": "2026-05-02",
+      "lastLocation": "CMH",
+      "lastTech": "Alex Hamilton",
       "ED1": 6,
       "ED2": 4
     },
@@ -2227,6 +2227,51 @@
       "date": "2026-05-02",
       "name": "Jeffrey Crookshanks",
       "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N748RR",
+      "date": "2026-05-02",
+      "name": "Alex Hamilton",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 1
+    },
+    {
+      "tail": "N233NN",
+      "date": "2026-05-02",
+      "name": "Alex Hamilton",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N289MW",
+      "date": "2026-05-02",
+      "name": "Alex Hamilton",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N200NN",
+      "date": "2026-05-02",
+      "name": "Alex Hamilton",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N200NN",
+      "date": "2026-05-02",
+      "name": "Alex Hamilton",
+      "location": "CMH",
       "IHC": 1,
       "ED1": 0,
       "ED2": 0

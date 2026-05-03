@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-03T03:12:29.659250+00:00",
+  "generated": "2026-05-03T05:12:58.634773+00:00",
   "planes": [
     {
       "tail": "N740MR",
@@ -14,12 +14,12 @@
     },
     {
       "tail": "N770JM",
-      "lastService": "2026-04-27",
+      "lastService": "2026-05-02",
       "lastED1": "2026-04-10",
       "lastED2": "2026-04-10",
-      "lastIHC": "2026-04-27",
-      "lastLocation": "DFW",
-      "lastTech": "Sharmaine Brown",
+      "lastIHC": "2026-05-02",
+      "lastLocation": "CVG",
+      "lastTech": "Precious Roberson",
       "ED1": 7,
       "ED2": 37
     },
@@ -157,12 +157,12 @@
     },
     {
       "tail": "N251NN",
-      "lastService": "2026-05-01",
+      "lastService": "2026-05-02",
       "lastED1": "2026-04-01",
       "lastED2": "2026-04-01",
-      "lastIHC": "2026-05-01",
+      "lastIHC": "2026-05-02",
       "lastLocation": "CVG",
-      "lastTech": "Sellers Davis",
+      "lastTech": "Precious Roberson",
       "ED1": -2,
       "ED2": 28
     },
@@ -278,12 +278,12 @@
     },
     {
       "tail": "N771JV",
-      "lastService": "2026-04-27",
+      "lastService": "2026-05-02",
       "lastED1": "2026-04-27",
       "lastED2": "2026-02-16",
-      "lastIHC": "2026-04-27",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
+      "lastIHC": "2026-05-02",
+      "lastLocation": "CVG",
+      "lastTech": "Precious Roberson",
       "ED1": 24,
       "ED2": -16
     },
@@ -531,12 +531,12 @@
     },
     {
       "tail": "N209NN",
-      "lastService": "2026-04-29",
+      "lastService": "2026-05-02",
       "lastED1": "2026-04-10",
       "lastED2": "2026-02-24",
-      "lastIHC": "2026-04-29",
+      "lastIHC": "2026-05-02",
       "lastLocation": "CVG",
-      "lastTech": "Todd Axle",
+      "lastTech": "Precious Roberson",
       "ED1": 7,
       "ED2": -8
     },
@@ -696,13 +696,13 @@
     },
     {
       "tail": "N327PG",
-      "lastService": "2026-04-23",
-      "lastED1": "2026-03-28",
+      "lastService": "2026-05-02",
+      "lastED1": "2026-05-02",
       "lastED2": "2026-03-01",
-      "lastIHC": "2026-04-23",
+      "lastIHC": "2026-05-02",
       "lastLocation": "CVG",
-      "lastTech": "Bayleah Vogel",
-      "ED1": -6,
+      "lastTech": "Precious Roberson",
+      "ED1": 29,
       "ED2": -3
     },
     {
@@ -1048,10 +1048,10 @@
     },
     {
       "tail": "N261NN",
-      "lastService": "2026-04-25",
+      "lastService": "2026-05-02",
       "lastED1": "2026-04-20",
       "lastED2": "2026-03-06",
-      "lastIHC": "2026-04-25",
+      "lastIHC": "2026-05-02",
       "lastLocation": "CVG",
       "lastTech": "Precious Roberson",
       "ED1": 17,
@@ -2060,6 +2060,60 @@
     }
   ],
   "debriefs": [
+    {
+      "tail": "N251NN",
+      "date": "2026-05-02",
+      "name": "Precious Roberson",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N771JV",
+      "date": "2026-05-02",
+      "name": "Precious Roberson",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N327PG",
+      "date": "2026-05-02",
+      "name": "Precious Roberson",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N209NN",
+      "date": "2026-05-02",
+      "name": "Precious Roberson",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N770JM",
+      "date": "2026-05-02",
+      "name": "Precious Roberson",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N261NN",
+      "date": "2026-05-02",
+      "name": "Precious Roberson",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
     {
       "tail": "N780AH",
       "date": "2026-05-01",

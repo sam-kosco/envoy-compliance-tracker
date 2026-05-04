@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-04T03:13:25.317401+00:00",
+  "generated": "2026-05-04T05:14:38.882350+00:00",
   "planes": [
     {
       "tail": "N740MR",
@@ -223,12 +223,12 @@
     },
     {
       "tail": "N315NH",
-      "lastService": "2026-04-27",
+      "lastService": "2026-05-03",
       "lastED1": "2026-04-16",
       "lastED2": "2026-03-25",
-      "lastIHC": "2026-04-27",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
+      "lastIHC": "2026-05-03",
+      "lastLocation": "DFW",
+      "lastTech": "Sharmaine Brown",
       "ED1": 12,
       "ED2": 20
     },
@@ -2060,6 +2060,15 @@
     }
   ],
   "debriefs": [
+    {
+      "tail": "N315NH",
+      "date": "2026-05-03",
+      "name": "Sharmaine Brown",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
     {
       "tail": "N251NN",
       "date": "2026-05-02",

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-05T07:43:23.661389+00:00",
+  "generated": "2026-05-05T08:51:17.609372+00:00",
   "planes": [
     {
       "tail": "N740MR",
@@ -245,12 +245,12 @@
     },
     {
       "tail": "N760MQ",
-      "lastService": "2026-05-02",
+      "lastService": "2026-05-04",
       "lastED1": "2026-04-26",
       "lastED2": "2026-04-15",
-      "lastIHC": "2026-05-02",
+      "lastIHC": "2026-05-04",
       "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastTech": "Sharmaine Brown",
       "ED1": 21,
       "ED2": 40
     },
@@ -773,12 +773,12 @@
     },
     {
       "tail": "N266NN",
-      "lastService": "2026-05-03",
+      "lastService": "2026-05-04",
       "lastED1": "2026-05-03",
       "lastED2": "2026-04-08",
-      "lastIHC": "2026-05-03",
-      "lastLocation": "XNA",
-      "lastTech": "Dillon Greene",
+      "lastIHC": "2026-05-04",
+      "lastLocation": "DFW",
+      "lastTech": "Sharmaine Brown",
       "ED1": 28,
       "ED2": 33
     },
@@ -1147,12 +1147,12 @@
     },
     {
       "tail": "N249NN",
-      "lastService": "2026-04-30",
+      "lastService": "2026-05-04",
       "lastED1": "2026-04-10",
       "lastED2": "2026-03-19",
-      "lastIHC": "2026-04-30",
-      "lastLocation": "XNA",
-      "lastTech": "Dillon Greene",
+      "lastIHC": "2026-05-04",
+      "lastLocation": "DFW",
+      "lastTech": "Sharmaine Brown",
       "ED1": 5,
       "ED2": 13
     },
@@ -2305,6 +2305,33 @@
     },
     {
       "tail": "N216NN",
+      "date": "2026-05-04",
+      "name": "Sharmaine Brown",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N266NN",
+      "date": "2026-05-04",
+      "name": "Sharmaine Brown",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N249NN",
+      "date": "2026-05-04",
+      "name": "Sharmaine Brown",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N760MQ",
       "date": "2026-05-04",
       "name": "Sharmaine Brown",
       "location": "DFW",

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-06T05:06:28.088788+00:00",
+  "generated": "2026-05-06T06:55:13.708807+00:00",
   "planes": [
     {
       "tail": "N500AE",
@@ -3017,19 +3017,19 @@
     },
     {
       "tail": "N646NN",
-      "lastService": "2026-05-04",
+      "lastService": "2026-05-06",
       "lastCC": "2026-05-04",
       "lastDSC": "2026-04-19",
       "lastCE": "2026-04-19",
       "lastED1": null,
       "lastED2": "2026-04-19",
       "lastLav": null,
-      "lastIC": "2026-05-04",
-      "lastEC": "2026-05-04",
+      "lastIC": "2026-05-06",
+      "lastEC": "2026-05-06",
       "lastED3": null,
       "lastED4": null,
-      "lastLocation": "GSP",
-      "lastTech": "Brittany Eckelberry",
+      "lastLocation": "CAK",
+      "lastTech": "Katherine Reynolds",
       "CC": 28,
       "DSC": 13,
       "CE": 13,
@@ -3413,6 +3413,22 @@
     }
   ],
   "debriefs": [
+    {
+      "tail": "N646NN",
+      "date": "2026-05-06",
+      "name": "Katherine Reynolds",
+      "location": "CAK",
+      "IC": 1,
+      "EC": 1,
+      "CC": 0,
+      "DSC": 0,
+      "CE": 0,
+      "ED1": 0,
+      "ED2": 0,
+      "ED3": 0,
+      "ED4": 0,
+      "Lav": 0
+    },
     {
       "tail": "N530EA",
       "date": "2026-05-05",

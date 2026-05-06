@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-06T03:13:10.216787+00:00",
+  "generated": "2026-05-06T05:10:35.356325+00:00",
   "planes": [
     {
       "tail": "N740MR",
@@ -36,12 +36,12 @@
     },
     {
       "tail": "N205NN",
-      "lastService": "2026-04-27",
+      "lastService": "2026-05-05",
       "lastED1": "2026-04-27",
       "lastED2": "2026-03-26",
-      "lastIHC": "2026-04-27",
-      "lastLocation": "LIT",
-      "lastTech": "Dane  Clement",
+      "lastIHC": "2026-05-05",
+      "lastLocation": "CVG",
+      "lastTech": "Bayleah Vogel",
       "ED1": 21,
       "ED2": 19
     },
@@ -113,10 +113,10 @@
     },
     {
       "tail": "N761RW",
-      "lastService": "2026-04-30",
+      "lastService": "2026-05-05",
       "lastED1": "2026-04-01",
       "lastED2": "2026-04-22",
-      "lastIHC": "2026-04-30",
+      "lastIHC": "2026-05-05",
       "lastLocation": "CVG",
       "lastTech": "Bayleah Vogel",
       "ED1": -5,
@@ -652,12 +652,12 @@
     },
     {
       "tail": "N333RQ",
-      "lastService": "2026-04-09",
+      "lastService": "2026-05-05",
       "lastED1": "2026-04-01",
       "lastED2": "2026-04-01",
-      "lastIHC": "2026-04-09",
+      "lastIHC": "2026-05-05",
       "lastLocation": "CVG",
-      "lastTech": "Precious Valadez-Roberson",
+      "lastTech": "Bayleah Vogel",
       "ED1": -5,
       "ED2": 25
     },
@@ -1125,10 +1125,10 @@
     },
     {
       "tail": "N254NN",
-      "lastService": "2026-04-30",
+      "lastService": "2026-05-05",
       "lastED1": "2026-04-30",
       "lastED2": "2026-03-28",
-      "lastIHC": "2026-04-30",
+      "lastIHC": "2026-05-05",
       "lastLocation": "CVG",
       "lastTech": "Bayleah Vogel",
       "ED1": 24,
@@ -1356,12 +1356,12 @@
     },
     {
       "tail": "N325DM",
-      "lastService": "2026-05-02",
+      "lastService": "2026-05-05",
       "lastED1": "2026-04-14",
       "lastED2": "2026-03-23",
-      "lastIHC": "2026-05-02",
-      "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastIHC": "2026-05-05",
+      "lastLocation": "CVG",
+      "lastTech": "Bayleah Vogel",
       "ED1": 8,
       "ED2": 16
     },
@@ -1697,12 +1697,12 @@
     },
     {
       "tail": "N274NN",
-      "lastService": "2026-04-30",
+      "lastService": "2026-05-05",
       "lastED1": "2026-04-21",
       "lastED2": "2026-03-17",
-      "lastIHC": "2026-04-30",
-      "lastLocation": "CMH",
-      "lastTech": "Alex Hamilton",
+      "lastIHC": "2026-05-05",
+      "lastLocation": "CVG",
+      "lastTech": "Bayleah Vogel",
       "ED1": 15,
       "ED2": 10
     },
@@ -2122,6 +2122,60 @@
       "IHC": 1,
       "ED1": 0,
       "ED2": 1
+    },
+    {
+      "tail": "N254NN",
+      "date": "2026-05-05",
+      "name": "Bayleah Vogel",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N205NN",
+      "date": "2026-05-05",
+      "name": "Bayleah Vogel",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N274NN",
+      "date": "2026-05-05",
+      "name": "Bayleah Vogel",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N325DM",
+      "date": "2026-05-05",
+      "name": "Bayleah Vogel",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N333RQ",
+      "date": "2026-05-05",
+      "name": "Bayleah Vogel",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N761RW",
+      "date": "2026-05-05",
+      "name": "Bayleah Vogel",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
     },
     {
       "tail": "N335JS",

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-08T05:04:55.311187+00:00",
+  "generated": "2026-05-08T06:42:46.043363+00:00",
   "planes": [
     {
       "tail": "N740MR",
@@ -388,12 +388,12 @@
     },
     {
       "tail": "N272NN",
-      "lastService": "2026-05-02",
+      "lastService": "2026-05-07",
       "lastED1": "2026-03-20",
       "lastED2": "2026-03-20",
-      "lastIHC": "2026-05-02",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
+      "lastIHC": "2026-05-07",
+      "lastLocation": "CMH",
+      "lastTech": "Tanaija Price",
       "ED1": -19,
       "ED2": 11
     },
@@ -410,12 +410,12 @@
     },
     {
       "tail": "N318JE",
-      "lastService": "2026-04-30",
+      "lastService": "2026-05-07",
       "lastED1": "2026-04-30",
       "lastED2": "2026-03-31",
-      "lastIHC": "2026-04-30",
-      "lastLocation": "XNA",
-      "lastTech": "Dillon Greene",
+      "lastIHC": "2026-05-07",
+      "lastLocation": "CMH",
+      "lastTech": "Tanaija Price",
       "ED1": 22,
       "ED2": 22
     },
@@ -432,12 +432,12 @@
     },
     {
       "tail": "N288NN",
-      "lastService": "2026-05-02",
+      "lastService": "2026-05-07",
       "lastED1": "2026-04-16",
       "lastED2": "2026-04-02",
-      "lastIHC": "2026-05-02",
-      "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastIHC": "2026-05-07",
+      "lastLocation": "CMH",
+      "lastTech": "Tanaija Price",
       "ED1": 8,
       "ED2": 24
     },
@@ -674,12 +674,12 @@
     },
     {
       "tail": "N748RR",
-      "lastService": "2026-05-04",
+      "lastService": "2026-05-07",
       "lastED1": "2026-05-04",
       "lastED2": "2026-05-02",
-      "lastIHC": "2026-05-04",
-      "lastLocation": "CVG",
-      "lastTech": "Sellers Davis",
+      "lastIHC": "2026-05-07",
+      "lastLocation": "CMH",
+      "lastTech": "Tanaija Price",
       "ED1": 26,
       "ED2": 54
     },
@@ -1378,12 +1378,12 @@
     },
     {
       "tail": "N279MQ",
-      "lastService": "2026-05-05",
+      "lastService": "2026-05-07",
       "lastED1": "2026-04-18",
       "lastED2": "2026-05-05",
-      "lastIHC": "2026-05-05",
-      "lastLocation": "XNA",
-      "lastTech": "Shaun Neil",
+      "lastIHC": "2026-05-07",
+      "lastLocation": "CMH",
+      "lastTech": "Tanaija Price",
       "ED1": 10,
       "ED2": 57
     },
@@ -2060,6 +2060,51 @@
     }
   ],
   "debriefs": [
+    {
+      "tail": "N318JE",
+      "date": "2026-05-07",
+      "name": "Tanaija Price",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N288NN",
+      "date": "2026-05-07",
+      "name": "Tanaija Price",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N748RR",
+      "date": "2026-05-07",
+      "name": "Tanaija Price",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N279MQ",
+      "date": "2026-05-07",
+      "name": "Tanaija Price",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N272NN",
+      "date": "2026-05-07",
+      "name": "Tanaija Price",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
     {
       "tail": "N276NN",
       "date": "2026-05-06",

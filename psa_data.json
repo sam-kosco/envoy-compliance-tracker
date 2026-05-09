@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-09T01:35:30.292388+00:00",
+  "generated": "2026-05-09T03:05:58.651144+00:00",
   "planes": [
     {
       "tail": "N500AE",
@@ -597,24 +597,24 @@
     },
     {
       "tail": "N527EA",
-      "lastService": "2026-05-07",
-      "lastCC": "2026-05-07",
-      "lastDSC": "2026-04-14",
-      "lastCE": "2026-04-14",
-      "lastED1": "2026-04-04",
-      "lastED2": "2026-03-10",
+      "lastService": "2026-05-08",
+      "lastCC": "2026-05-08",
+      "lastDSC": "2026-05-08",
+      "lastCE": "2026-05-08",
+      "lastED1": "2026-05-08",
+      "lastED2": "2026-05-08",
       "lastLav": "2025-11-16",
-      "lastIC": "2026-05-07",
-      "lastEC": "2026-05-07",
+      "lastIC": "2026-05-08",
+      "lastEC": "2026-05-08",
       "lastED3": null,
       "lastED4": null,
-      "lastLocation": "ORF",
-      "lastTech": "ELTON ANDREWS",
-      "CC": 28,
-      "DSC": 5,
-      "CE": 5,
-      "ED1": -5,
-      "ED2": -30,
+      "lastLocation": "GSP",
+      "lastTech": "gretchen anderson",
+      "CC": 29,
+      "DSC": 29,
+      "CE": 29,
+      "ED1": 29,
+      "ED2": 29,
       "Lav": -84
     },
     {
@@ -3413,6 +3413,22 @@
     }
   ],
   "debriefs": [
+    {
+      "tail": "N527EA",
+      "date": "2026-05-08",
+      "name": "gretchen anderson",
+      "location": "GSP",
+      "IC": 1,
+      "EC": 1,
+      "CC": 1,
+      "DSC": 1,
+      "CE": 1,
+      "ED1": 1,
+      "ED2": 1,
+      "ED3": 0,
+      "ED4": 0,
+      "Lav": 0
+    },
     {
       "tail": "N509AE",
       "date": "2026-05-07",

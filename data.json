@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-09T08:38:07.840141+00:00",
+  "generated": "2026-05-09T09:35:39.177752+00:00",
   "planes": [
     {
       "tail": "N740MR",
@@ -201,12 +201,12 @@
     },
     {
       "tail": "N270NN",
-      "lastService": "2026-05-03",
+      "lastService": "2026-05-08",
       "lastED1": "2026-03-25",
       "lastED2": "2026-04-04",
-      "lastIHC": "2026-05-03",
-      "lastLocation": "CMH",
-      "lastTech": "Alexander Hamilton",
+      "lastIHC": "2026-05-08",
+      "lastLocation": "CVG",
+      "lastTech": "Sellers Davis",
       "ED1": -15,
       "ED2": 25
     },
@@ -575,12 +575,12 @@
     },
     {
       "tail": "N313BS",
-      "lastService": "2026-05-05",
+      "lastService": "2026-05-08",
       "lastED1": "2026-04-24",
       "lastED2": "2026-03-21",
-      "lastIHC": "2026-05-05",
-      "lastLocation": "SGF",
-      "lastTech": "Steven Wilson",
+      "lastIHC": "2026-05-08",
+      "lastLocation": "CVG",
+      "lastTech": "Sellers Davis",
       "ED1": 15,
       "ED2": 11
     },
@@ -685,14 +685,14 @@
     },
     {
       "tail": "N751AB",
-      "lastService": "2026-04-19",
-      "lastED1": "2026-03-23",
-      "lastED2": "2026-03-23",
-      "lastIHC": "2026-04-19",
-      "lastLocation": "DFW",
-      "lastTech": "Sharmaine Brown",
-      "ED1": -17,
-      "ED2": 13
+      "lastService": "2026-05-08",
+      "lastED1": "2026-05-08",
+      "lastED2": "2026-05-08",
+      "lastIHC": "2026-05-08",
+      "lastLocation": "CVG",
+      "lastTech": "Sellers Davis",
+      "ED1": 29,
+      "ED2": 59
     },
     {
       "tail": "N327PG",
@@ -1378,12 +1378,12 @@
     },
     {
       "tail": "N279MQ",
-      "lastService": "2026-05-07",
+      "lastService": "2026-05-08",
       "lastED1": "2026-04-18",
       "lastED2": "2026-05-05",
-      "lastIHC": "2026-05-07",
-      "lastLocation": "CMH",
-      "lastTech": "Tanaija Price",
+      "lastIHC": "2026-05-08",
+      "lastLocation": "CVG",
+      "lastTech": "Sellers Davis",
       "ED1": 9,
       "ED2": 56
     },
@@ -1598,12 +1598,12 @@
     },
     {
       "tail": "N246NN",
-      "lastService": "2026-05-06",
+      "lastService": "2026-05-08",
       "lastED1": "2026-03-15",
       "lastED2": "2026-05-03",
-      "lastIHC": "2026-05-06",
+      "lastIHC": "2026-05-08",
       "lastLocation": "CVG",
-      "lastTech": "Todd Axle",
+      "lastTech": "Sellers Davis",
       "ED1": -25,
       "ED2": 54
     },
@@ -2260,6 +2260,51 @@
     },
     {
       "tail": "N792JB",
+      "date": "2026-05-08",
+      "name": "Sellers Davis",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N246NN",
+      "date": "2026-05-08",
+      "name": "Sellers Davis",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N279MQ",
+      "date": "2026-05-08",
+      "name": "Sellers Davis",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N751AB",
+      "date": "2026-05-08",
+      "name": "Sellers Davis",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 1
+    },
+    {
+      "tail": "N313BS",
+      "date": "2026-05-08",
+      "name": "Sellers Davis",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N270NN",
       "date": "2026-05-08",
       "name": "Sellers Davis",
       "location": "CVG",

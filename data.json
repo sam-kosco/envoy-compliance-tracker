@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-10T09:35:06.037506+00:00",
+  "generated": "2026-05-10T10:30:29.885850+00:00",
   "planes": [
     {
       "tail": "N740MR",
@@ -531,12 +531,12 @@
     },
     {
       "tail": "N209NN",
-      "lastService": "2026-05-04",
+      "lastService": "2026-05-09",
       "lastED1": "2026-04-10",
       "lastED2": "2026-02-24",
-      "lastIHC": "2026-05-04",
-      "lastLocation": "LIT",
-      "lastTech": "Dane  Clement",
+      "lastIHC": "2026-05-09",
+      "lastLocation": "CMH",
+      "lastTech": "Alexander Hamilton",
       "ED1": 0,
       "ED2": -15
     },
@@ -2305,6 +2305,15 @@
     },
     {
       "tail": "N200NN",
+      "date": "2026-05-09",
+      "name": "Alexander Hamilton",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N209NN",
       "date": "2026-05-09",
       "name": "Alexander Hamilton",
       "location": "CMH",

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-10T07:00:53.897724+00:00",
+  "generated": "2026-05-10T08:42:15.851942+00:00",
   "planes": [
     {
       "tail": "N740MR",
@@ -36,12 +36,12 @@
     },
     {
       "tail": "N205NN",
-      "lastService": "2026-05-05",
+      "lastService": "2026-05-09",
       "lastED1": "2026-04-27",
       "lastED2": "2026-03-26",
-      "lastIHC": "2026-05-05",
-      "lastLocation": "CVG",
-      "lastTech": "Bayleah Vogel",
+      "lastIHC": "2026-05-09",
+      "lastLocation": "SGF",
+      "lastTech": "Jeffrey Crookshanks",
       "ED1": 17,
       "ED2": 15
     },
@@ -872,12 +872,12 @@
     },
     {
       "tail": "N237NN",
-      "lastService": "2026-04-27",
+      "lastService": "2026-05-09",
       "lastED1": "2026-04-26",
       "lastED2": "2026-04-26",
-      "lastIHC": "2026-04-27",
-      "lastLocation": "LIT",
-      "lastTech": "Dane  Clement",
+      "lastIHC": "2026-05-09",
+      "lastLocation": "SGF",
+      "lastTech": "Jeffrey Crookshanks",
       "ED1": 16,
       "ED2": 46
     },
@@ -1004,12 +1004,12 @@
     },
     {
       "tail": "N307LH",
-      "lastService": "2026-05-08",
+      "lastService": "2026-05-09",
       "lastED1": "2026-04-29",
       "lastED2": "2026-04-02",
-      "lastIHC": "2026-05-08",
-      "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastIHC": "2026-05-09",
+      "lastLocation": "SGF",
+      "lastTech": "Jeffrey Crookshanks",
       "ED1": 19,
       "ED2": 22
     },
@@ -1367,12 +1367,12 @@
     },
     {
       "tail": "N322RC",
-      "lastService": "2026-05-01",
+      "lastService": "2026-05-09",
       "lastED1": "2026-05-01",
       "lastED2": "2026-05-01",
-      "lastIHC": "2026-05-01",
-      "lastLocation": "XNA",
-      "lastTech": "Dillon Greene",
+      "lastIHC": "2026-05-09",
+      "lastLocation": "SGF",
+      "lastTech": "Jeffrey Crookshanks",
       "ED1": 21,
       "ED2": 51
     },
@@ -1444,12 +1444,12 @@
     },
     {
       "tail": "N240NN",
-      "lastService": "2026-05-06",
+      "lastService": "2026-05-09",
       "lastED1": "2026-04-14",
       "lastED2": "2026-04-26",
-      "lastIHC": "2026-05-06",
+      "lastIHC": "2026-05-09",
       "lastLocation": "SGF",
-      "lastTech": "Steven Wilson",
+      "lastTech": "Jeffrey Crookshanks",
       "ED1": 4,
       "ED2": 46
     },
@@ -1653,12 +1653,12 @@
     },
     {
       "tail": "N298FR",
-      "lastService": "2026-05-06",
+      "lastService": "2026-05-09",
       "lastED1": "2026-05-06",
       "lastED2": "2026-03-01",
-      "lastIHC": "2026-05-06",
+      "lastIHC": "2026-05-09",
       "lastLocation": "SGF",
-      "lastTech": "Steven Wilson",
+      "lastTech": "Jeffrey Crookshanks",
       "ED1": 26,
       "ED2": -10
     },
@@ -2221,6 +2221,60 @@
       "IHC": 1,
       "ED1": 1,
       "ED2": 1
+    },
+    {
+      "tail": "N307LH",
+      "date": "2026-05-09",
+      "name": "Jeffrey Crookshanks",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N205NN",
+      "date": "2026-05-09",
+      "name": "Jeffrey Crookshanks",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N298FR",
+      "date": "2026-05-09",
+      "name": "Jeffrey Crookshanks",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N322RC",
+      "date": "2026-05-09",
+      "name": "Jeffrey Crookshanks",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N240NN",
+      "date": "2026-05-09",
+      "name": "Jeffrey Crookshanks",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N237NN",
+      "date": "2026-05-09",
+      "name": "Jeffrey Crookshanks",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
     },
     {
       "tail": "N245NN",

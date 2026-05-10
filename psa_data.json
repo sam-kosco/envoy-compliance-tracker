@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-10T01:35:09.889108+00:00",
+  "generated": "2026-05-10T03:06:11.464605+00:00",
   "planes": [
     {
       "tail": "N500AE",
@@ -1015,19 +1015,19 @@
     },
     {
       "tail": "N546FF",
-      "lastService": "2026-05-08",
+      "lastService": "2026-05-09",
       "lastCC": "2026-05-08",
       "lastDSC": "2026-05-08",
       "lastCE": "2026-04-16",
       "lastED1": "2026-04-12",
       "lastED2": "2026-04-16",
       "lastLav": "2026-02-16",
-      "lastIC": "2026-05-08",
+      "lastIC": "2026-05-09",
       "lastEC": "2026-05-08",
       "lastED3": null,
       "lastED4": null,
       "lastLocation": "CAK",
-      "lastTech": "Amy Gribble",
+      "lastTech": "Amy  Gribble",
       "CC": 28,
       "DSC": 28,
       "CE": 6,
@@ -3413,6 +3413,22 @@
     }
   ],
   "debriefs": [
+    {
+      "tail": "N546FF",
+      "date": "2026-05-09",
+      "name": "Amy  Gribble",
+      "location": "CAK",
+      "IC": 1,
+      "EC": 0,
+      "CC": 0,
+      "DSC": 0,
+      "CE": 0,
+      "ED1": 0,
+      "ED2": 0,
+      "ED3": 0,
+      "ED4": 0,
+      "Lav": 0
+    },
     {
       "tail": "N527EA",
       "date": "2026-05-08",

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-12T09:04:18.740971+00:00",
+  "generated": "2026-05-12T10:51:51.411283+00:00",
   "planes": [
     {
       "tail": "N740MR",
@@ -146,12 +146,12 @@
     },
     {
       "tail": "N280NN",
-      "lastService": "2026-05-07",
+      "lastService": "2026-05-11",
       "lastED1": "2026-04-29",
       "lastED2": "2026-04-14",
-      "lastIHC": "2026-05-07",
-      "lastLocation": "XNA",
-      "lastTech": "Casey Henry",
+      "lastIHC": "2026-05-11",
+      "lastLocation": "CMH",
+      "lastTech": "Alexander Hamilton",
       "ED1": 17,
       "ED2": 32
     },
@@ -674,12 +674,12 @@
     },
     {
       "tail": "N748RR",
-      "lastService": "2026-05-07",
+      "lastService": "2026-05-11",
       "lastED1": "2026-05-04",
       "lastED2": "2026-05-02",
-      "lastIHC": "2026-05-07",
+      "lastIHC": "2026-05-11",
       "lastLocation": "CMH",
-      "lastTech": "Tanaija Price",
+      "lastTech": "Alex Hamilton",
       "ED1": 22,
       "ED2": 50
     },
@@ -1070,12 +1070,12 @@
     },
     {
       "tail": "N282NN",
-      "lastService": "2026-04-30",
+      "lastService": "2026-05-11",
       "lastED1": "2026-04-30",
       "lastED2": "2026-04-12",
-      "lastIHC": "2026-04-30",
-      "lastLocation": "CVG",
-      "lastTech": "Bayleah Vogel",
+      "lastIHC": "2026-05-11",
+      "lastLocation": "CMH",
+      "lastTech": "Alexander Hamilton",
       "ED1": 18,
       "ED2": 30
     },
@@ -1103,14 +1103,14 @@
     },
     {
       "tail": "N202NN",
-      "lastService": "2026-04-17",
+      "lastService": "2026-05-11",
       "lastED1": "2026-04-04",
-      "lastED2": "2026-03-07",
-      "lastIHC": "2026-04-17",
-      "lastLocation": "XNA",
-      "lastTech": "Dillon Greene",
+      "lastED2": "2026-05-11",
+      "lastIHC": "2026-05-11",
+      "lastLocation": "CMH",
+      "lastTech": "Alexander Hamilton",
       "ED1": -8,
-      "ED2": -6
+      "ED2": 59
     },
     {
       "tail": "N265NN",
@@ -1400,12 +1400,12 @@
     },
     {
       "tail": "N248NN",
-      "lastService": "2026-05-08",
+      "lastService": "2026-05-11",
       "lastED1": "2026-04-17",
       "lastED2": "2026-05-05",
-      "lastIHC": "2026-05-08",
-      "lastLocation": "LIT",
-      "lastTech": "Charles Cobb",
+      "lastIHC": "2026-05-11",
+      "lastLocation": "CMH",
+      "lastTech": "Alexander Hamilton",
       "ED1": 5,
       "ED2": 53
     },
@@ -2263,6 +2263,51 @@
       "date": "2026-05-11",
       "name": "Bayleah Vogel",
       "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N748RR",
+      "date": "2026-05-11",
+      "name": "Alex Hamilton",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N202NN",
+      "date": "2026-05-11",
+      "name": "Alexander Hamilton",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 1
+    },
+    {
+      "tail": "N248NN",
+      "date": "2026-05-11",
+      "name": "Alexander Hamilton",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N280NN",
+      "date": "2026-05-11",
+      "name": "Alexander Hamilton",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N282NN",
+      "date": "2026-05-11",
+      "name": "Alexander Hamilton",
+      "location": "CMH",
       "IHC": 1,
       "ED1": 0,
       "ED2": 0

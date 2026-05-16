@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-16T06:52:44.207096+00:00",
+  "generated": "2026-05-16T07:39:45.978246+00:00",
   "planes": [
     {
       "tail": "N740MR",
@@ -91,12 +91,12 @@
     },
     {
       "tail": "N215NN",
-      "lastService": "2026-05-11",
+      "lastService": "2026-05-15",
       "lastED1": "2026-05-05",
       "lastED2": "2026-04-09",
-      "lastIHC": "2026-05-11",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
+      "lastIHC": "2026-05-15",
+      "lastLocation": "XNA",
+      "lastTech": "Dillon Greene",
       "ED1": 19,
       "ED2": 23
     },
@@ -1103,13 +1103,13 @@
     },
     {
       "tail": "N202NN",
-      "lastService": "2026-05-11",
-      "lastED1": "2026-04-04",
+      "lastService": "2026-05-15",
+      "lastED1": "2026-05-15",
       "lastED2": "2026-05-11",
-      "lastIHC": "2026-05-11",
-      "lastLocation": "CMH",
-      "lastTech": "Alexander Hamilton",
-      "ED1": -12,
+      "lastIHC": "2026-05-15",
+      "lastLocation": "XNA",
+      "lastTech": "Dillon Greene",
+      "ED1": 29,
       "ED2": 55
     },
     {
@@ -1147,14 +1147,14 @@
     },
     {
       "tail": "N249NN",
-      "lastService": "2026-05-09",
+      "lastService": "2026-05-15",
       "lastED1": "2026-04-10",
-      "lastED2": "2026-03-19",
-      "lastIHC": "2026-05-09",
+      "lastED2": "2026-05-15",
+      "lastIHC": "2026-05-15",
       "lastLocation": "XNA",
       "lastTech": "Dillon Greene",
       "ED1": -6,
-      "ED2": 2
+      "ED2": 59
     },
     {
       "tail": "N781EJ",
@@ -1312,10 +1312,10 @@
     },
     {
       "tail": "N743MB",
-      "lastService": "2026-05-14",
+      "lastService": "2026-05-15",
       "lastED1": "2026-05-07",
       "lastED2": "2026-05-07",
-      "lastIHC": "2026-05-14",
+      "lastIHC": "2026-05-15",
       "lastLocation": "XNA",
       "lastTech": "Dillon Greene",
       "ED1": 21,
@@ -1378,13 +1378,13 @@
     },
     {
       "tail": "N279MQ",
-      "lastService": "2026-05-10",
-      "lastED1": "2026-04-18",
+      "lastService": "2026-05-15",
+      "lastED1": "2026-05-15",
       "lastED2": "2026-05-05",
-      "lastIHC": "2026-05-10",
-      "lastLocation": "CVG",
-      "lastTech": "Bayleah Vogel",
-      "ED1": 2,
+      "lastIHC": "2026-05-15",
+      "lastLocation": "XNA",
+      "lastTech": "Dillon Greene",
+      "ED1": 29,
       "ED2": 49
     },
     {
@@ -1554,23 +1554,23 @@
     },
     {
       "tail": "N285NN",
-      "lastService": "2026-05-08",
-      "lastED1": "2026-04-10",
+      "lastService": "2026-05-15",
+      "lastED1": "2026-05-15",
       "lastED2": "2026-04-09",
-      "lastIHC": "2026-05-08",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
-      "ED1": -6,
+      "lastIHC": "2026-05-15",
+      "lastLocation": "XNA",
+      "lastTech": "Dillon Greene",
+      "ED1": 29,
       "ED2": 23
     },
     {
       "tail": "N234JW",
-      "lastService": "2026-05-13",
+      "lastService": "2026-05-15",
       "lastED1": "2026-05-08",
       "lastED2": "2026-03-25",
-      "lastIHC": "2026-05-13",
-      "lastLocation": "CMH",
-      "lastTech": "Tanaija Price",
+      "lastIHC": "2026-05-15",
+      "lastLocation": "XNA",
+      "lastTech": "Dillon Greene",
       "ED1": 22,
       "ED2": 8
     },
@@ -2132,6 +2132,69 @@
       "location": "CVG",
       "IHC": 1,
       "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N285NN",
+      "date": "2026-05-15",
+      "name": "Dillon Greene",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N215NN",
+      "date": "2026-05-15",
+      "name": "Dillon Greene",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N234JW",
+      "date": "2026-05-15",
+      "name": "Dillon Greene",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N743MB",
+      "date": "2026-05-15",
+      "name": "Dillon Greene",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N202NN",
+      "date": "2026-05-15",
+      "name": "Dillon Greene",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N249NN",
+      "date": "2026-05-15",
+      "name": "Dillon Greene",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 1
+    },
+    {
+      "tail": "N279MQ",
+      "date": "2026-05-15",
+      "name": "Dillon Greene",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 1,
       "ED2": 0
     },
     {

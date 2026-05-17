@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-17T08:48:09.591048+00:00",
+  "generated": "2026-05-17T09:38:18.941339+00:00",
   "planes": [
     {
       "tail": "N740MR",
@@ -850,12 +850,12 @@
     },
     {
       "tail": "N225NN",
-      "lastService": "2026-05-14",
+      "lastService": "2026-05-16",
       "lastED1": "2026-05-14",
       "lastED2": "2026-03-25",
-      "lastIHC": "2026-05-14",
-      "lastLocation": "XNA",
-      "lastTech": "Dillon Greene",
+      "lastIHC": "2026-05-16",
+      "lastLocation": "SGF",
+      "lastTech": "Jeffrey Crookshanks",
       "ED1": 27,
       "ED2": 7
     },
@@ -960,23 +960,23 @@
     },
     {
       "tail": "N245NN",
-      "lastService": "2026-05-12",
+      "lastService": "2026-05-16",
       "lastED1": "2026-04-20",
       "lastED2": "2026-05-11",
-      "lastIHC": "2026-05-12",
+      "lastIHC": "2026-05-16",
       "lastLocation": "SGF",
-      "lastTech": "Steven Wilson",
+      "lastTech": "Jeffrey Crookshanks",
       "ED1": 3,
       "ED2": 54
     },
     {
       "tail": "N271NN",
-      "lastService": "2026-05-12",
+      "lastService": "2026-05-16",
       "lastED1": "2026-05-11",
       "lastED2": "2026-05-11",
-      "lastIHC": "2026-05-12",
-      "lastLocation": "XNA",
-      "lastTech": "Casey Henry",
+      "lastIHC": "2026-05-16",
+      "lastLocation": "SGF",
+      "lastTech": "Jeffrey Crookshanks",
       "ED1": 24,
       "ED2": 54
     },
@@ -1345,23 +1345,23 @@
     },
     {
       "tail": "N284JN",
-      "lastService": "2026-05-05",
+      "lastService": "2026-05-16",
       "lastED1": "2026-04-11",
       "lastED2": "2026-03-29",
-      "lastIHC": "2026-05-05",
-      "lastLocation": "XNA",
-      "lastTech": "Shaun Neil",
+      "lastIHC": "2026-05-16",
+      "lastLocation": "SGF",
+      "lastTech": "Jeffrey Crookshanks",
       "ED1": -6,
       "ED2": 11
     },
     {
       "tail": "N325DM",
-      "lastService": "2026-05-13",
+      "lastService": "2026-05-16",
       "lastED1": "2026-05-11",
       "lastED2": "2026-03-23",
-      "lastIHC": "2026-05-13",
-      "lastLocation": "CMH",
-      "lastTech": "Tanaija Price",
+      "lastIHC": "2026-05-16",
+      "lastLocation": "SGF",
+      "lastTech": "Jeffrey Crookshanks",
       "ED1": 24,
       "ED2": 5
     },
@@ -1466,12 +1466,12 @@
     },
     {
       "tail": "N792JB",
-      "lastService": "2026-05-08",
+      "lastService": "2026-05-16",
       "lastED1": "2026-05-03",
       "lastED2": "2026-03-12",
-      "lastIHC": "2026-05-08",
-      "lastLocation": "CVG",
-      "lastTech": "Sellers Davis",
+      "lastIHC": "2026-05-16",
+      "lastLocation": "SGF",
+      "lastTech": "Jeffrey Crookshanks",
       "ED1": 16,
       "ED2": -6
     },
@@ -2249,6 +2249,69 @@
       "location": "LIT",
       "IHC": 1,
       "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N271NN",
+      "date": "2026-05-16",
+      "name": "Jeffrey Crookshanks",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N284JN",
+      "date": "2026-05-16",
+      "name": "Jeffrey Crookshanks",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N225NN",
+      "date": "2026-05-16",
+      "name": "Jeffrey Crookshanks",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N245NN",
+      "date": "2026-05-16",
+      "name": "Jeffrey Crookshanks",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N245NN",
+      "date": "2026-05-16",
+      "name": "Jeffrey Crookshanks",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N792JB",
+      "date": "2026-05-16",
+      "name": "Jeffrey Crookshanks",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N325DM",
+      "date": "2026-05-16",
+      "name": "Jeffrey Crookshanks",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
       "ED2": 0
     },
     {

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-18T01:41:27.258813+00:00",
+  "generated": "2026-05-18T03:07:46.796486+00:00",
   "planes": [
     {
       "tail": "N500AE",
@@ -2709,20 +2709,20 @@
     },
     {
       "tail": "N647NN",
-      "lastService": "2026-05-11",
-      "lastCC": "2026-05-11",
+      "lastService": "2026-05-17",
+      "lastCC": "2026-05-17",
       "lastDSC": "2026-04-29",
       "lastCE": "2026-05-02",
       "lastED1": "2026-05-11",
       "lastED2": "2026-05-11",
       "lastLav": null,
-      "lastIC": "2026-05-11",
-      "lastEC": "2026-05-11",
+      "lastIC": "2026-05-17",
+      "lastEC": "2026-05-17",
       "lastED3": null,
       "lastED4": null,
       "lastLocation": "CLT",
       "lastTech": "Brian Parker",
-      "CC": 23,
+      "CC": 29,
       "DSC": 11,
       "CE": 14,
       "ED1": 23,
@@ -3039,6 +3039,22 @@
     }
   ],
   "debriefs": [
+    {
+      "tail": "N647NN",
+      "date": "2026-05-17",
+      "name": "Brian Parker",
+      "location": "CLT",
+      "IC": 1,
+      "EC": 1,
+      "CC": 1,
+      "DSC": 0,
+      "CE": 0,
+      "ED1": 0,
+      "ED2": 0,
+      "ED3": 0,
+      "ED4": 0,
+      "Lav": 0
+    },
     {
       "tail": "N544EA",
       "date": "2026-05-16",

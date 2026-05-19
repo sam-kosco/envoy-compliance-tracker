@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-19T09:17:23.103075+00:00",
+  "generated": "2026-05-19T11:08:40.535577+00:00",
   "planes": [
     {
       "tail": "N740MR",
@@ -322,12 +322,12 @@
     },
     {
       "tail": "N276NN",
-      "lastService": "2026-05-15",
+      "lastService": "2026-05-18",
       "lastED1": "2026-04-27",
       "lastED2": "2026-03-28",
-      "lastIHC": "2026-05-15",
-      "lastLocation": "CVG",
-      "lastTech": "Todd Axle",
+      "lastIHC": "2026-05-18",
+      "lastLocation": "CMH",
+      "lastTech": "Alex Hamilton",
       "ED1": 8,
       "ED2": 8
     },
@@ -355,12 +355,12 @@
     },
     {
       "tail": "N744DB",
-      "lastService": "2026-05-15",
+      "lastService": "2026-05-18",
       "lastED1": "2026-05-07",
       "lastED2": "2026-04-13",
-      "lastIHC": "2026-05-15",
+      "lastIHC": "2026-05-18",
       "lastLocation": "CMH",
-      "lastTech": "Alex Hamilton",
+      "lastTech": "Alexander Hamilton",
       "ED1": 18,
       "ED2": 24
     },
@@ -476,12 +476,12 @@
     },
     {
       "tail": "N281NN",
-      "lastService": "2026-05-07",
+      "lastService": "2026-05-18",
       "lastED1": "2026-04-18",
       "lastED2": "2026-03-23",
-      "lastIHC": "2026-05-07",
-      "lastLocation": "XNA",
-      "lastTech": "Casey Henry",
+      "lastIHC": "2026-05-18",
+      "lastLocation": "CMH",
+      "lastTech": "Alexander Hamilton",
       "ED1": -1,
       "ED2": 3
     },
@@ -1037,12 +1037,12 @@
     },
     {
       "tail": "N305CL",
-      "lastService": "2026-05-14",
+      "lastService": "2026-05-18",
       "lastED1": "2026-05-14",
       "lastED2": "2026-05-14",
-      "lastIHC": "2026-05-14",
-      "lastLocation": "XNA",
-      "lastTech": "Dillon Greene",
+      "lastIHC": "2026-05-18",
+      "lastLocation": "CMH",
+      "lastTech": "Alexander Hamilton",
       "ED1": 25,
       "ED2": 55
     },
@@ -1213,12 +1213,12 @@
     },
     {
       "tail": "N231AN",
-      "lastService": "2026-05-12",
+      "lastService": "2026-05-18",
       "lastED1": "2026-04-15",
       "lastED2": "2026-04-15",
-      "lastIHC": "2026-05-12",
-      "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastIHC": "2026-05-18",
+      "lastLocation": "CMH",
+      "lastTech": "Alexander Hamilton",
       "ED1": -4,
       "ED2": 26
     },
@@ -2283,6 +2283,51 @@
       "date": "2026-05-18",
       "name": "Jeffrey Crookshanks",
       "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N276NN",
+      "date": "2026-05-18",
+      "name": "Alex Hamilton",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N281NN",
+      "date": "2026-05-18",
+      "name": "Alexander Hamilton",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N231AN",
+      "date": "2026-05-18",
+      "name": "Alexander Hamilton",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N305CL",
+      "date": "2026-05-18",
+      "name": "Alexander Hamilton",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N744DB",
+      "date": "2026-05-18",
+      "name": "Alexander Hamilton",
+      "location": "CMH",
       "IHC": 1,
       "ED1": 0,
       "ED2": 0

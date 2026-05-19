@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-19T07:12:53.672970+00:00",
+  "generated": "2026-05-19T09:09:20.311667+00:00",
   "planes": [
     {
       "tail": "N500AE",
@@ -2159,25 +2159,25 @@
     },
     {
       "tail": "N611NN",
-      "lastService": "2026-05-14",
-      "lastCC": "2026-05-14",
+      "lastService": "2026-05-18",
+      "lastCC": "2026-05-18",
       "lastDSC": "2026-05-06",
       "lastCE": "2026-05-06",
-      "lastED1": "2026-03-27",
-      "lastED2": "2026-03-04",
-      "lastLav": "2025-12-07",
-      "lastIC": "2026-05-14",
-      "lastEC": "2026-05-14",
+      "lastED1": "2026-05-18",
+      "lastED2": "2026-05-18",
+      "lastLav": "2026-05-18",
+      "lastIC": "2026-05-18",
+      "lastEC": "2026-05-18",
       "lastED3": null,
       "lastED4": null,
-      "lastLocation": "GSP",
-      "lastTech": "gretchen Anderson",
-      "CC": 25,
+      "lastLocation": "CAK",
+      "lastTech": "Ashton Conner",
+      "CC": 29,
       "DSC": 17,
       "CE": 17,
-      "ED1": -23,
-      "ED2": -46,
-      "Lav": -73
+      "ED1": 29,
+      "ED2": 29,
+      "Lav": 89
     },
     {
       "tail": "N612NN",
@@ -3448,6 +3448,22 @@
       "ED3": 0,
       "ED4": 0,
       "Lav": 0
+    },
+    {
+      "tail": "N611NN",
+      "date": "2026-05-18",
+      "name": "Ashton Conner",
+      "location": "CAK",
+      "IC": 1,
+      "EC": 1,
+      "CC": 1,
+      "DSC": 0,
+      "CE": 0,
+      "ED1": 1,
+      "ED2": 1,
+      "ED3": 0,
+      "ED4": 0,
+      "Lav": 1
     },
     {
       "tail": "N647NN",

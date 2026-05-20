@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-20T03:14:29.401394+00:00",
+  "generated": "2026-05-20T05:26:53.664526+00:00",
   "planes": [
     {
       "tail": "N740MR",
@@ -179,12 +179,12 @@
     },
     {
       "tail": "N310JZ",
-      "lastService": "2026-05-13",
+      "lastService": "2026-05-19",
       "lastED1": "2026-05-13",
       "lastED2": "2026-04-23",
-      "lastIHC": "2026-05-13",
-      "lastLocation": "LIT",
-      "lastTech": "Dane  Clement",
+      "lastIHC": "2026-05-19",
+      "lastLocation": "CMH",
+      "lastTech": "Tanaija Price",
       "ED1": 23,
       "ED2": 33
     },
@@ -1774,12 +1774,12 @@
     },
     {
       "tail": "N264NN",
-      "lastService": "2026-05-15",
+      "lastService": "2026-05-19",
       "lastED1": "2026-05-01",
       "lastED2": "2026-04-01",
-      "lastIHC": "2026-05-15",
-      "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastIHC": "2026-05-19",
+      "lastLocation": "CMH",
+      "lastTech": "Tanaija Price",
       "ED1": 11,
       "ED2": 11
     },
@@ -1972,12 +1972,12 @@
     },
     {
       "tail": "N330JT",
-      "lastService": "2026-05-13",
+      "lastService": "2026-05-19",
       "lastED1": "2026-05-06",
       "lastED2": "2026-01-12",
-      "lastIHC": "2026-05-13",
-      "lastLocation": "SGF",
-      "lastTech": "Steven Wilson",
+      "lastIHC": "2026-05-19",
+      "lastLocation": "CMH",
+      "lastTech": "Tanaija Price",
       "ED1": 16,
       "ED2": -68
     },
@@ -2076,6 +2076,33 @@
       "date": "2026-05-21",
       "name": "Casey Henry",
       "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N330JT",
+      "date": "2026-05-19",
+      "name": "Tanaija Price",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N264NN",
+      "date": "2026-05-19",
+      "name": "Tanaija Price",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N310JZ",
+      "date": "2026-05-19",
+      "name": "Tanaija Price",
+      "location": "CMH",
       "IHC": 1,
       "ED1": 0,
       "ED2": 0

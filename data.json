@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-20T09:15:05.632433+00:00",
+  "generated": "2026-05-20T11:06:34.706053+00:00",
   "planes": [
     {
       "tail": "N740MR",
@@ -542,24 +542,24 @@
     },
     {
       "tail": "N794JH",
-      "lastService": "2026-05-18",
+      "lastService": "2026-05-19",
       "lastED1": "2026-05-07",
       "lastED2": "2026-05-09",
-      "lastIHC": "2026-05-18",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
+      "lastIHC": "2026-05-19",
+      "lastLocation": "DFW",
+      "lastTech": "Aunyae Morrison",
       "ED1": 17,
       "ED2": 49
     },
     {
       "tail": "N741AK",
-      "lastService": "2026-04-26",
-      "lastED1": "2026-04-19",
+      "lastService": "2026-05-19",
+      "lastED1": "2026-05-19",
       "lastED2": "2026-04-26",
-      "lastIHC": "2026-04-26",
-      "lastLocation": "XNA",
-      "lastTech": "Todd Axle",
-      "ED1": -1,
+      "lastIHC": "2026-05-19",
+      "lastLocation": "DFW",
+      "lastTech": "Aunyae Morrison",
+      "ED1": 29,
       "ED2": 36
     },
     {
@@ -1356,12 +1356,12 @@
     },
     {
       "tail": "N325DM",
-      "lastService": "2026-05-18",
+      "lastService": "2026-05-19",
       "lastED1": "2026-05-11",
       "lastED2": "2026-03-23",
-      "lastIHC": "2026-05-18",
+      "lastIHC": "2026-05-19",
       "lastLocation": "DFW",
-      "lastTech": "Sharmaine Brown",
+      "lastTech": "Aunyae Morrison",
       "ED1": 21,
       "ED2": 2
     },
@@ -2312,6 +2312,33 @@
       "location": "SGF",
       "IHC": 1,
       "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N325DM",
+      "date": "2026-05-19",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N794JH",
+      "date": "2026-05-19",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N741AK",
+      "date": "2026-05-19",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 1,
       "ED2": 0
     },
     {

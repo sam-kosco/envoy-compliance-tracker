@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-21T09:15:01.354137+00:00",
+  "generated": "2026-05-21T11:09:26.929544+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -234,12 +234,12 @@
     },
     {
       "tail": "N221NN",
-      "lastService": "2026-05-10",
+      "lastService": "2026-05-20",
       "lastED1": "2026-04-14",
       "lastED2": "2026-03-20",
-      "lastIHC": "2026-05-10",
-      "lastLocation": "CMH",
-      "lastTech": "Alexander Hamilton",
+      "lastIHC": "2026-05-20",
+      "lastLocation": "DFW",
+      "lastTech": "Aunyae Morrison",
       "ED1": -7,
       "ED2": -2
     },
@@ -421,12 +421,12 @@
     },
     {
       "tail": "N238NN",
-      "lastService": "2026-05-15",
+      "lastService": "2026-05-20",
       "lastED1": "2026-05-05",
       "lastED2": "2026-04-04",
-      "lastIHC": "2026-05-15",
-      "lastLocation": "CMH",
-      "lastTech": "Alexander Hamilton",
+      "lastIHC": "2026-05-20",
+      "lastLocation": "DFW",
+      "lastTech": "Aunyae Morrison",
       "ED1": 14,
       "ED2": 13
     },
@@ -608,12 +608,12 @@
     },
     {
       "tail": "N255NN",
-      "lastService": "2026-04-29",
+      "lastService": "2026-05-20",
       "lastED1": "2026-04-26",
       "lastED2": "2026-03-19",
-      "lastIHC": "2026-04-29",
-      "lastLocation": "LIT",
-      "lastTech": "Dane  Clement",
+      "lastIHC": "2026-05-20",
+      "lastLocation": "DFW",
+      "lastTech": "Aunyae Morrison",
       "ED1": 5,
       "ED2": -3
     },
@@ -2277,6 +2277,33 @@
     },
     {
       "tail": "N740MR",
+      "date": "2026-05-20",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N221NN",
+      "date": "2026-05-20",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N238NN",
+      "date": "2026-05-20",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N255NN",
       "date": "2026-05-20",
       "name": "Aunyae Morrison",
       "location": "DFW",

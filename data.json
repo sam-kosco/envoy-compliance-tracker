@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-22T09:12:58.500699+00:00",
+  "generated": "2026-05-22T11:06:09.975045+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -157,12 +157,12 @@
     },
     {
       "tail": "N214NN",
-      "lastService": "2026-05-13",
+      "lastService": "2026-05-21",
       "lastED1": "2026-05-05",
       "lastED2": "2026-04-11",
-      "lastIHC": "2026-05-13",
-      "lastLocation": "LIT",
-      "lastTech": "Dane  Clement",
+      "lastIHC": "2026-05-21",
+      "lastLocation": "DFW",
+      "lastTech": "Natally  Garcia",
       "ED1": 13,
       "ED2": 19
     },
@@ -278,12 +278,12 @@
     },
     {
       "tail": "N225NN",
-      "lastService": "2026-05-20",
+      "lastService": "2026-05-21",
       "lastED1": "2026-05-14",
       "lastED2": "2026-05-20",
-      "lastIHC": "2026-05-20",
-      "lastLocation": "LIT",
-      "lastTech": "Dane  Clement",
+      "lastIHC": "2026-05-21",
+      "lastLocation": "DFW",
+      "lastTech": "Aunyae Morrison",
       "ED1": 22,
       "ED2": 58
     },
@@ -993,10 +993,10 @@
     },
     {
       "tail": "N290NN",
-      "lastService": "2026-05-16",
+      "lastService": "2026-05-21",
       "lastED1": "2026-05-03",
       "lastED2": "2026-03-08",
-      "lastIHC": "2026-05-16",
+      "lastIHC": "2026-05-21",
       "lastLocation": "DFW",
       "lastTech": "Aunyae Morrison",
       "ED1": 11,
@@ -1312,12 +1312,12 @@
     },
     {
       "tail": "N324ES",
-      "lastService": "2026-05-17",
+      "lastService": "2026-05-21",
       "lastED1": "2026-05-08",
       "lastED2": "2026-04-19",
-      "lastIHC": "2026-05-17",
-      "lastLocation": "LIT",
-      "lastTech": "Dane  Clement",
+      "lastIHC": "2026-05-21",
+      "lastLocation": "DFW",
+      "lastTech": "Aunyae Morrison",
       "ED1": 16,
       "ED2": 27
     },
@@ -1422,12 +1422,12 @@
     },
     {
       "tail": "N334CR",
-      "lastService": "2026-05-09",
+      "lastService": "2026-05-21",
       "lastED1": "2026-04-30",
       "lastED2": "2026-03-18",
-      "lastIHC": "2026-05-09",
-      "lastLocation": "CMH",
-      "lastTech": "Alexander Hamilton",
+      "lastIHC": "2026-05-21",
+      "lastLocation": "DFW",
+      "lastTech": "Natally  Garcia",
       "ED1": 8,
       "ED2": -5
     },
@@ -1543,12 +1543,12 @@
     },
     {
       "tail": "N740MR",
-      "lastService": "2026-05-20",
+      "lastService": "2026-05-21",
       "lastED1": "2026-05-11",
       "lastED2": "2025-11-27",
-      "lastIHC": "2026-05-20",
+      "lastIHC": "2026-05-21",
       "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastTech": "Natally  Garcia",
       "ED1": 19,
       "ED2": -116
     },
@@ -1730,12 +1730,12 @@
     },
     {
       "tail": "N766JM",
-      "lastService": "2026-05-18",
+      "lastService": "2026-05-21",
       "lastED1": "2026-05-05",
       "lastED2": "2025-11-20",
-      "lastIHC": "2026-05-18",
+      "lastIHC": "2026-05-21",
       "lastLocation": "DFW",
-      "lastTech": "Sharmaine Brown",
+      "lastTech": "Natally  Garcia",
       "ED1": 13,
       "ED2": -123
     },
@@ -1796,12 +1796,12 @@
     },
     {
       "tail": "N774JG",
-      "lastService": "2026-05-18",
+      "lastService": "2026-05-21",
       "lastED1": "2026-04-21",
       "lastED2": "2026-02-09",
-      "lastIHC": "2026-05-18",
+      "lastIHC": "2026-05-21",
       "lastLocation": "DFW",
-      "lastTech": "Sharmaine Brown",
+      "lastTech": "Natally  Garcia",
       "ED1": -1,
       "ED2": -42
     },
@@ -2262,6 +2262,78 @@
       "date": "2026-05-21",
       "name": "Alex Hamilton",
       "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N225NN",
+      "date": "2026-05-21",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N290NN",
+      "date": "2026-05-21",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N214NN",
+      "date": "2026-05-21",
+      "name": "Natally  Garcia",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N324ES",
+      "date": "2026-05-21",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N334CR",
+      "date": "2026-05-21",
+      "name": "Natally  Garcia",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N774JG",
+      "date": "2026-05-21",
+      "name": "Natally  Garcia",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N740MR",
+      "date": "2026-05-21",
+      "name": "Natally  Garcia",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N766JM",
+      "date": "2026-05-21",
+      "name": "Natally  Garcia",
+      "location": "DFW",
       "IHC": 1,
       "ED1": 0,
       "ED2": 0

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-22T05:27:10.417434+00:00",
+  "generated": "2026-05-22T07:21:39.880608+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -47,12 +47,12 @@
     },
     {
       "tail": "N204NN",
-      "lastService": "2026-05-19",
+      "lastService": "2026-05-21",
       "lastED1": "2026-05-03",
       "lastED2": "2026-04-10",
-      "lastIHC": "2026-05-19",
-      "lastLocation": "XNA",
-      "lastTech": "Casey Henry",
+      "lastIHC": "2026-05-21",
+      "lastLocation": "SGF",
+      "lastTech": "Steven Wilson",
       "ED1": 11,
       "ED2": 18
     },
@@ -696,12 +696,12 @@
     },
     {
       "tail": "N263NN",
-      "lastService": "2026-05-17",
+      "lastService": "2026-05-21",
       "lastED1": "2026-05-13",
       "lastED2": "2026-03-31",
-      "lastIHC": "2026-05-17",
+      "lastIHC": "2026-05-21",
       "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
+      "lastTech": "Steven Wilson",
       "ED1": 21,
       "ED2": 8
     },
@@ -1026,12 +1026,12 @@
     },
     {
       "tail": "N293NN",
-      "lastService": "2026-05-18",
+      "lastService": "2026-05-21",
       "lastED1": "2026-05-09",
       "lastED2": "2026-03-29",
-      "lastIHC": "2026-05-18",
+      "lastIHC": "2026-05-21",
       "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
+      "lastTech": "Steven Wilson",
       "ED1": 17,
       "ED2": 6
     },
@@ -1114,12 +1114,12 @@
     },
     {
       "tail": "N306DD",
-      "lastService": "2026-05-17",
+      "lastService": "2026-05-21",
       "lastED1": "2026-05-12",
       "lastED2": "2026-05-12",
-      "lastIHC": "2026-05-17",
-      "lastLocation": "LIT",
-      "lastTech": "Dane  Clement",
+      "lastIHC": "2026-05-21",
+      "lastLocation": "SGF",
+      "lastTech": "Steven Wilson",
       "ED1": 20,
       "ED2": 50
     },
@@ -1774,12 +1774,12 @@
     },
     {
       "tail": "N771JV",
-      "lastService": "2026-05-20",
+      "lastService": "2026-05-21",
       "lastED1": "2026-04-27",
       "lastED2": "2026-02-16",
-      "lastIHC": "2026-05-20",
+      "lastIHC": "2026-05-21",
       "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
+      "lastTech": "Steven Wilson",
       "ED1": 5,
       "ED2": -35
     },
@@ -2010,6 +2010,51 @@
       "date": "2026-05-21",
       "name": "Casey Henry",
       "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N204NN",
+      "date": "2026-05-21",
+      "name": "Steven Wilson",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N306DD",
+      "date": "2026-05-21",
+      "name": "Steven Wilson",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N263NN",
+      "date": "2026-05-21",
+      "name": "Steven Wilson",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N771JV",
+      "date": "2026-05-21",
+      "name": "Steven Wilson",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N293NN",
+      "date": "2026-05-21",
+      "name": "Steven Wilson",
+      "location": "SGF",
       "IHC": 1,
       "ED1": 0,
       "ED2": 0

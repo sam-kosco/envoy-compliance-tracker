@@ -12,9 +12,9 @@ What this script does:
        - If audit_id is new → append a new row
   3. Re-uploads the updated Excel to SharePoint
   4. Reads the FULL table (all history) to calculate rolling 7-day compliance
-  5. Writes crosswinds_data.json for the GitHub Pages dashboard
+  5. Writes crosswind_Data.json for the GitHub Pages dashboard
 
-SharePoint table columns (Crosswinds_Debriefs):
+SharePoint table columns (Crosswind_Debriefs):
   Date | Name | Location | Tail | Audit ID | Template ID | Report Link
 
 Environment variables (GitHub Secrets):
@@ -32,7 +32,7 @@ CLIENT_SECRET = os.environ["CLIENT_SECRET"]
 
 DRIVE_ID  = "b!_bzXaIx86kOufgJN3ih-BaDIDthKYuxJkJtLi1Bm5irGjCEnK-VHSpBRRm3_SDKU"
 FILE_PATH = "Power Flows/Debriefs/Crosswinds Debriefs.xlsx"
-TABLE_NAME = "Crosswinds_Debriefs"
+TABLE_NAME = "Crosswind_Debriefs"
 
 TAILS = [
     "N351DC","N383CA","N478DC","N2322Y","N536DC","N723AG","N830BS",
@@ -104,7 +104,7 @@ def upload_excel(token, buffer):
 
 # ── EXCEL HELPERS ─────────────────────────────────────────────────────────────
 def find_table_sheet(wb):
-    """Find the sheet containing the Crosswinds_Debriefs table."""
+    """Find the sheet containing the Crosswind_Debriefs table."""
     for ws in wb.worksheets:
         for tbl in ws.tables.values():
             if tbl.name == TABLE_NAME:
@@ -211,7 +211,7 @@ def upsert_records(ws, tbl, existing, incoming):
 def build_compliance(all_records):
     """
     Given the full debrief history, calculate rolling 7-day compliance per tail.
-    Returns list of plane dicts for crosswinds_data.json.
+    Returns list of plane dicts for crosswind_Data.json.
     """
     today = date.today()
     window_start = today - timedelta(days=WINDOW_DAYS - 1)
@@ -360,8 +360,8 @@ if __name__ == "__main__":
         "planes":    planes,
     }
 
-    with open("crosswinds_data.json", "w") as f:
+    with open("crosswind_Data.json", "w") as f:
         json.dump(output, f, indent=2)
 
-    print(f"\nWritten: crosswinds_data.json ({len(planes)} planes)")
+    print(f"\nWritten: crosswind_Data.json ({len(planes)} planes)")
     print("=== Done ===")

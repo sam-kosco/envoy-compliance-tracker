@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-23T04:00:20.467455+00:00",
+  "generated": "2026-05-23T05:00:22.932181+00:00",
   "planes": [
     {
       "tail": "N351DC",
@@ -496,13 +496,21 @@
     },
     {
       "tail": "N518MA",
-      "status": "noncompliant",
-      "count7d": 0,
-      "daysSinceLast": null,
-      "lastClean": null,
-      "lastLocation": null,
-      "lastTech": null,
-      "recentInspections": []
+      "status": "soon",
+      "count7d": 1,
+      "daysSinceLast": 1,
+      "lastClean": "2026-05-22",
+      "lastLocation": "KYIP",
+      "lastTech": "Jakendell Brown",
+      "recentInspections": [
+        {
+          "audit_id": "audit_a440279e607544e1b0f7d2dcacd93e39",
+          "date": "2026-05-22",
+          "location": "KYIP",
+          "tech": "Jakendell Brown",
+          "report_url": ""
+        }
+      ]
     },
     {
       "tail": "N123TV",

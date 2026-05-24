@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-24T09:42:54.242804+00:00",
+  "generated": "2026-05-24T10:36:48.377701+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -311,12 +311,12 @@
     },
     {
       "tail": "N228NN",
-      "lastService": "2026-05-12",
+      "lastService": "2026-05-23",
       "lastED1": "2026-04-18",
       "lastED2": "2026-05-01",
-      "lastIHC": "2026-05-12",
-      "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastIHC": "2026-05-23",
+      "lastLocation": "CMH",
+      "lastTech": "Alex Hamilton",
       "ED1": -6,
       "ED2": 37
     },
@@ -597,12 +597,12 @@
     },
     {
       "tail": "N254NN",
-      "lastService": "2026-05-15",
+      "lastService": "2026-05-23",
       "lastED1": "2026-04-30",
       "lastED2": "2026-03-28",
-      "lastIHC": "2026-05-15",
-      "lastLocation": "LIT",
-      "lastTech": "Charles Cobb",
+      "lastIHC": "2026-05-23",
+      "lastLocation": "DFW",
+      "lastTech": "Aunyae Morrison",
       "ED1": 6,
       "ED2": 3
     },
@@ -828,12 +828,12 @@
     },
     {
       "tail": "N275NN",
-      "lastService": "2026-05-20",
+      "lastService": "2026-05-23",
       "lastED1": "2026-05-08",
       "lastED2": "2026-03-05",
-      "lastIHC": "2026-05-20",
-      "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastIHC": "2026-05-23",
+      "lastLocation": "CMH",
+      "lastTech": "Alexander Hamilton",
       "ED1": 14,
       "ED2": -20
     },
@@ -861,12 +861,12 @@
     },
     {
       "tail": "N278NN",
-      "lastService": "2026-05-19",
+      "lastService": "2026-05-23",
       "lastED1": "2026-05-01",
       "lastED2": "2026-05-17",
-      "lastIHC": "2026-05-19",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
+      "lastIHC": "2026-05-23",
+      "lastLocation": "CMH",
+      "lastTech": "Alexander Hamilton",
       "ED1": 7,
       "ED2": 53
     },
@@ -1499,12 +1499,12 @@
     },
     {
       "tail": "N341MB",
-      "lastService": "2026-05-12",
+      "lastService": "2026-05-23",
       "lastED1": "2026-04-24",
       "lastED2": null,
-      "lastIHC": "2026-05-12",
-      "lastLocation": "XNA",
-      "lastTech": "Casey Henry",
+      "lastIHC": "2026-05-23",
+      "lastLocation": "CMH",
+      "lastTech": "Alexander Hamilton",
       "ED1": 0,
       "ED2": "No Service"
     },
@@ -1950,10 +1950,10 @@
     },
     {
       "tail": "N790MK",
-      "lastService": "2026-05-22",
+      "lastService": "2026-05-23",
       "lastED1": "2026-05-11",
       "lastED2": "2026-05-11",
-      "lastIHC": "2026-05-22",
+      "lastIHC": "2026-05-23",
       "lastLocation": "DFW",
       "lastTech": "Aunyae Morrison",
       "ED1": 17,
@@ -1994,12 +1994,12 @@
     },
     {
       "tail": "N798CC",
-      "lastService": "2026-05-20",
+      "lastService": "2026-05-23",
       "lastED1": "2026-03-29",
       "lastED2": "2026-02-11",
-      "lastIHC": "2026-05-20",
-      "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastIHC": "2026-05-23",
+      "lastLocation": "CMH",
+      "lastTech": "Alexander Hamilton",
       "ED1": -26,
       "ED2": -42
     }
@@ -2222,6 +2222,60 @@
       "ED2": 0
     },
     {
+      "tail": "N228NN",
+      "date": "2026-05-23",
+      "name": "Alex Hamilton",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N275NN",
+      "date": "2026-05-23",
+      "name": "Alexander Hamilton",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N278NN",
+      "date": "2026-05-23",
+      "name": "Alexander Hamilton",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N798CC",
+      "date": "2026-05-23",
+      "name": "Alexander Hamilton",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N341MB",
+      "date": "2026-05-23",
+      "name": "Alexander Hamilton",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N228NN",
+      "date": "2026-05-23",
+      "name": "Alexander Hamilton",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
       "tail": "N305CL",
       "date": "2026-05-23",
       "name": "Aunyae Morrison",
@@ -2268,6 +2322,24 @@
     },
     {
       "tail": "N340TC",
+      "date": "2026-05-23",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N790MK",
+      "date": "2026-05-23",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N254NN",
       "date": "2026-05-23",
       "name": "Aunyae Morrison",
       "location": "DFW",

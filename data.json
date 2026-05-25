@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-25T09:27:29.628995+00:00",
+  "generated": "2026-05-25T11:27:07.856066+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -377,10 +377,10 @@
     },
     {
       "tail": "N234JW",
-      "lastService": "2026-05-16",
+      "lastService": "2026-05-24",
       "lastED1": "2026-05-08",
       "lastED2": "2026-03-25",
-      "lastIHC": "2026-05-16",
+      "lastIHC": "2026-05-24",
       "lastLocation": "CMH",
       "lastTech": "Alex Hamilton",
       "ED1": 13,
@@ -553,12 +553,12 @@
     },
     {
       "tail": "N250NN",
-      "lastService": "2026-05-17",
+      "lastService": "2026-05-24",
       "lastED1": "2026-05-09",
       "lastED2": "2026-05-09",
-      "lastIHC": "2026-05-17",
-      "lastLocation": "CVG",
-      "lastTech": "Todd Axle",
+      "lastIHC": "2026-05-24",
+      "lastLocation": "CMH",
+      "lastTech": "Alex Hamilton",
       "ED1": 14,
       "ED2": 44
     },
@@ -718,12 +718,12 @@
     },
     {
       "tail": "N265NN",
-      "lastService": "2026-05-15",
+      "lastService": "2026-05-24",
       "lastED1": "2026-05-15",
       "lastED2": "2026-04-24",
-      "lastIHC": "2026-05-15",
-      "lastLocation": "LIT",
-      "lastTech": "Charles Cobb",
+      "lastIHC": "2026-05-24",
+      "lastLocation": "CMH",
+      "lastTech": "Alex Hamilton",
       "ED1": 20,
       "ED2": 29
     },
@@ -1169,12 +1169,12 @@
     },
     {
       "tail": "N311VE",
-      "lastService": "2026-05-18",
+      "lastService": "2026-05-24",
       "lastED1": "2026-04-27",
       "lastED2": "2026-03-27",
-      "lastIHC": "2026-05-18",
-      "lastLocation": "CVG",
-      "lastTech": "Sellers Davis",
+      "lastIHC": "2026-05-24",
+      "lastLocation": "CMH",
+      "lastTech": "Alex Hamilton",
       "ED1": 2,
       "ED2": 1
     },
@@ -2219,6 +2219,51 @@
       "location": "SGF",
       "IHC": 1,
       "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N311VE",
+      "date": "2026-05-24",
+      "name": "Alex Hamilton",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N265NN",
+      "date": "2026-05-24",
+      "name": "Alex Hamilton",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N250NN",
+      "date": "2026-05-24",
+      "name": "Alex Hamilton",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N311VE",
+      "date": "2026-05-24",
+      "name": "Alex Hamilton",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N234JW",
+      "date": "2026-05-24",
+      "name": "Alex Hamilton",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
       "ED2": 0
     },
     {

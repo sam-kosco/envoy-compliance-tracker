@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-25T00:00:21.642912+00:00",
+  "generated": "2026-05-25T01:00:17.750629+00:00",
   "planes": [
     {
       "tail": "N351DC",
@@ -588,23 +588,39 @@
     },
     {
       "tail": "N141DK",
-      "status": "noncompliant",
-      "count7d": 0,
-      "daysSinceLast": null,
-      "lastClean": null,
-      "lastLocation": null,
-      "lastTech": null,
-      "recentInspections": []
+      "status": "soon",
+      "count7d": 1,
+      "daysSinceLast": 0,
+      "lastClean": "2026-05-25",
+      "lastLocation": "KLAN",
+      "lastTech": "Jakendell Brown",
+      "recentInspections": [
+        {
+          "audit_id": "audit_d10515133360403db469aaa1b541836b",
+          "date": "2026-05-25",
+          "location": "KLAN",
+          "tech": "Jakendell Brown",
+          "report_url": ""
+        }
+      ]
     },
     {
       "tail": "N29FT",
-      "status": "noncompliant",
-      "count7d": 0,
-      "daysSinceLast": null,
-      "lastClean": null,
-      "lastLocation": null,
-      "lastTech": null,
-      "recentInspections": []
+      "status": "soon",
+      "count7d": 1,
+      "daysSinceLast": 0,
+      "lastClean": "2026-05-25",
+      "lastLocation": "KLAN",
+      "lastTech": "Jakendell Brown",
+      "recentInspections": [
+        {
+          "audit_id": "audit_8bdf823f27d64130b1de61092303cdb9",
+          "date": "2026-05-25",
+          "location": "KLAN",
+          "tech": "Jakendell Brown",
+          "report_url": ""
+        }
+      ]
     },
     {
       "tail": "N650KN",

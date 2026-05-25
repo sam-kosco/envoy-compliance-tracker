@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-25T11:27:07.856066+00:00",
+  "generated": "2026-05-25T13:17:00.498817+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -234,12 +234,12 @@
     },
     {
       "tail": "N221NN",
-      "lastService": "2026-05-22",
+      "lastService": "2026-05-24",
       "lastED1": "2026-05-22",
       "lastED2": "2026-05-22",
-      "lastIHC": "2026-05-22",
-      "lastLocation": "LIT",
-      "lastTech": "Charles Cobb",
+      "lastIHC": "2026-05-24",
+      "lastLocation": "DFW",
+      "lastTech": "Sharmaine Brown",
       "ED1": 27,
       "ED2": 57
     },
@@ -344,12 +344,12 @@
     },
     {
       "tail": "N231AN",
-      "lastService": "2026-05-23",
+      "lastService": "2026-05-24",
       "lastED1": "2026-04-15",
       "lastED2": "2026-04-15",
-      "lastIHC": "2026-05-23",
+      "lastIHC": "2026-05-24",
       "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastTech": "Sharmaine Brown",
       "ED1": -10,
       "ED2": 20
     },
@@ -531,12 +531,12 @@
     },
     {
       "tail": "N248NN",
-      "lastService": "2026-05-14",
+      "lastService": "2026-05-24",
       "lastED1": "2026-04-17",
       "lastED2": "2026-05-05",
-      "lastIHC": "2026-05-14",
+      "lastIHC": "2026-05-24",
       "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastTech": "Sharmaine Brown",
       "ED1": -8,
       "ED2": 40
     },
@@ -1180,12 +1180,12 @@
     },
     {
       "tail": "N312BT",
-      "lastService": "2026-05-18",
+      "lastService": "2026-05-24",
       "lastED1": "2026-05-10",
       "lastED2": "2026-04-28",
-      "lastIHC": "2026-05-18",
-      "lastLocation": "XNA",
-      "lastTech": "Casey Henry",
+      "lastIHC": "2026-05-24",
+      "lastLocation": "DFW",
+      "lastTech": "Sharmaine Brown",
       "ED1": 15,
       "ED2": 33
     },
@@ -1477,12 +1477,12 @@
     },
     {
       "tail": "N339HG",
-      "lastService": "2026-05-12",
+      "lastService": "2026-05-24",
       "lastED1": "2026-04-25",
       "lastED2": "2026-03-08",
-      "lastIHC": "2026-05-12",
-      "lastLocation": "SGF",
-      "lastTech": "Steven Wilson",
+      "lastIHC": "2026-05-24",
+      "lastLocation": "DFW",
+      "lastTech": "Sharmaine Brown",
       "ED1": 0,
       "ED2": -18
     },
@@ -1983,12 +1983,12 @@
     },
     {
       "tail": "N794JH",
-      "lastService": "2026-05-23",
+      "lastService": "2026-05-24",
       "lastED1": "2026-05-07",
       "lastED2": "2026-05-09",
-      "lastIHC": "2026-05-23",
+      "lastIHC": "2026-05-24",
       "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastTech": "Sharmaine Brown",
       "ED1": 12,
       "ED2": 44
     },
@@ -2262,6 +2262,60 @@
       "date": "2026-05-24",
       "name": "Alex Hamilton",
       "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N231AN",
+      "date": "2026-05-24",
+      "name": "Sharmaine Brown",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N248NN",
+      "date": "2026-05-24",
+      "name": "Sharmaine Brown",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N312BT",
+      "date": "2026-05-24",
+      "name": "Sharmaine Brown",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N339HG",
+      "date": "2026-05-24",
+      "name": "Sharmaine Brown",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N221NN",
+      "date": "2026-05-24",
+      "name": "Sharmaine Brown",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N794JH",
+      "date": "2026-05-24",
+      "name": "Sharmaine Brown",
+      "location": "DFW",
       "IHC": 1,
       "ED1": 0,
       "ED2": 0

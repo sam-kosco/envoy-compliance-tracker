@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-26T03:14:49.906097+00:00",
+  "generated": "2026-05-26T05:26:13.659921+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -619,12 +619,12 @@
     },
     {
       "tail": "N256NN",
-      "lastService": "2026-05-20",
+      "lastService": "2026-05-25",
       "lastED1": "2026-04-30",
       "lastED2": "2026-04-28",
-      "lastIHC": "2026-05-20",
-      "lastLocation": "XNA",
-      "lastTech": "Shaun Neil",
+      "lastIHC": "2026-05-25",
+      "lastLocation": "CVG",
+      "lastTech": "Precious Roberson",
       "ED1": 4,
       "ED2": 32
     },
@@ -828,12 +828,12 @@
     },
     {
       "tail": "N275NN",
-      "lastService": "2026-05-23",
+      "lastService": "2026-05-25",
       "lastED1": "2026-05-08",
       "lastED2": "2026-03-05",
-      "lastIHC": "2026-05-23",
-      "lastLocation": "CMH",
-      "lastTech": "Alexander Hamilton",
+      "lastIHC": "2026-05-25",
+      "lastLocation": "CVG",
+      "lastTech": "Precious Roberson",
       "ED1": 12,
       "ED2": -22
     },
@@ -872,12 +872,12 @@
     },
     {
       "tail": "N279MQ",
-      "lastService": "2026-05-17",
+      "lastService": "2026-05-25",
       "lastED1": "2026-05-15",
       "lastED2": "2026-05-05",
-      "lastIHC": "2026-05-17",
-      "lastLocation": "CMH",
-      "lastTech": "Alex Hamilton",
+      "lastIHC": "2026-05-25",
+      "lastLocation": "CVG",
+      "lastTech": "Precious Roberson",
       "ED1": 19,
       "ED2": 39
     },
@@ -1653,12 +1653,12 @@
     },
     {
       "tail": "N751AB",
-      "lastService": "2026-05-24",
+      "lastService": "2026-05-25",
       "lastED1": "2026-05-08",
       "lastED2": "2026-05-08",
-      "lastIHC": "2026-05-24",
+      "lastIHC": "2026-05-25",
       "lastLocation": "CVG",
-      "lastTech": "Todd Axle",
+      "lastTech": "Precious Roberson",
       "ED1": 12,
       "ED2": 42
     },
@@ -2005,6 +2005,42 @@
     }
   ],
   "debriefs": [
+    {
+      "tail": "N275NN",
+      "date": "2026-05-25",
+      "name": "Precious Roberson",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N751AB",
+      "date": "2026-05-25",
+      "name": "Precious Roberson",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N256NN",
+      "date": "2026-05-25",
+      "name": "Precious Roberson",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N279MQ",
+      "date": "2026-05-25",
+      "name": "Precious Roberson",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
     {
       "tail": "N280NN",
       "date": "2026-05-24",

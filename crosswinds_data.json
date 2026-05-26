@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-26T21:30:40.535149+00:00",
+  "generated": "2026-05-26T22:01:57.843563+00:00",
   "planes": [
     {
       "tail": "N351DC",
@@ -408,7 +408,7 @@
     {
       "tail": "N627DC",
       "status": "compliant",
-      "count7d": 2,
+      "count7d": 3,
       "daysSinceLast": 5,
       "lastClean": "2026-05-21",
       "lastLocation": "KFNT",
@@ -420,6 +420,13 @@
           "location": "KFNT",
           "tech": "Jakendell Brown",
           "report_url": "https://app.safetyculture.com/report/public/audit/ade84c37bb529430d0a4df16d957c3028720f9ec8d6f83e838b9bccc9e5527b1"
+        },
+        {
+          "audit_id": "https://app.safetyculture.com/report/public/audit/64e3781efdee2e5ad77b83748e3199f40e92bc7082a6c27c3ea7a062ae5246c3",
+          "date": "2026-05-21",
+          "location": "KFNT",
+          "tech": "Samuel Kosco",
+          "report_url": "https://app.safetyculture.com/report/public/audit/64e3781efdee2e5ad77b83748e3199f40e92bc7082a6c27c3ea7a062ae5246c3"
         },
         {
           "audit_id": "audit_0b9c3f2557564d339e4dd1441c578dbf",
@@ -635,7 +642,7 @@
     {
       "tail": "N714KJ",
       "status": "compliant",
-      "count7d": 2,
+      "count7d": 3,
       "daysSinceLast": 5,
       "lastClean": "2026-05-21",
       "lastLocation": "KLAN",
@@ -647,6 +654,13 @@
           "location": "KLAN",
           "tech": "Jakendell Brown",
           "report_url": "https://app.safetyculture.com/report/public/audit/0569717d3087e54aef3d49fa1ca0e7aeba80b36de16726cbd91d06662c55dc8c"
+        },
+        {
+          "audit_id": "https://app.safetyculture.com/report/public/audit/d0e5b14e1ba7ff014ce47c5dcaa6d7dcb7f6faf16fe2ff9bf804f2dceb8674d9",
+          "date": "2026-05-21",
+          "location": "KLAN",
+          "tech": "Jakendell Brown",
+          "report_url": "https://app.safetyculture.com/report/public/audit/d0e5b14e1ba7ff014ce47c5dcaa6d7dcb7f6faf16fe2ff9bf804f2dceb8674d9"
         },
         {
           "audit_id": "audit_0c475696d9c54f74b5366a4e8b36115d",

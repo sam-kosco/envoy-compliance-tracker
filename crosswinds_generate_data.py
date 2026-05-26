@@ -5,17 +5,12 @@ Called by crosswinds_refresh.yml with the PAYLOAD env var set to a JSON
 array of inspections from Power Automate (last 7 days from SafetyCulture).
 
 What this script does:
-  1. Downloads Crosswinds Debriefs.xlsx from SharePoint
-  2. Upserts the incoming inspections:
-       - If audit_id already exists in the table → update the row
-         (covers edits to a SafetyCulture inspection within the PA window)
-       - If audit_id is new → append a new row
-  3. Re-uploads the updated Excel to SharePoint
-  4. Reads the FULL table (all history) to calculate rolling 7-day compliance
+  1. Downloads Crosswind_Debriefs.xlsx from SharePoint (READ ONLY)
+  2. Reads all historical records from the Crosswind_Debriefs table
+  3. Merges incoming payload records with the historical data in memory
+     (Power Automate handles all Excel writes — this script never modifies the file)
+  4. Calculates rolling 7-day compliance for all 41 tails
   5. Writes crosswinds_data.json for the GitHub Pages dashboard
-
-SharePoint table columns (Crosswind_Debriefs):
-  Date | Name | Location | Tail | Audit ID | Template ID | Report Link
 
 Environment variables (GitHub Secrets):
   TENANT_ID, CLIENT_ID, CLIENT_SECRET
@@ -43,20 +38,8 @@ TAILS = [
     "N568DC","N58HH","N141DK","N29FT","N650KN","N714KJ"
 ]
 
-WINDOW_DAYS = 7   # rolling compliance window
-SOON_DAYS   = 4   # cleans this week warning threshold
-SHOW_HISTORY = 5  # recent inspections shown in detail panel
-
-# Column order in the Excel table (1-indexed position in the worksheet)
-COL = {
-    "Date":        1,
-    "Name":        2,
-    "Location":    3,
-    "Tail":        4,
-    "Audit ID":    5,
-    "Template ID": 6,
-    "Report Link": 7,
-}
+WINDOW_DAYS  = 7   # rolling compliance window
+SHOW_HISTORY = 5   # recent inspections shown in detail panel
 
 
 # ── GRAPH API HELPERS ─────────────────────────────────────────────────────────
@@ -86,192 +69,144 @@ def download_excel(token):
     return io.BytesIO(r.content)
 
 
-def upload_excel(token, buffer):
-    encoded = FILE_PATH.replace(" ", "%20")
-    url = f"https://graph.microsoft.com/v1.0/drives/{DRIVE_ID}/root:/{encoded}:/content"
-    print("Uploading updated Excel...")
-    r = requests.put(
-        url,
-        headers={
-            "Authorization": f"Bearer {token}",
-            "Content-Type":  "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-        },
-        data=buffer.getvalue()
-    )
-    r.raise_for_status()
-    print(f"  Uploaded successfully (status {r.status_code})")
+# ── EXCEL READING ─────────────────────────────────────────────────────────────
+def read_table(buffer):
+    """
+    Read all rows from the Crosswind_Debriefs table.
+    Returns a list of dicts with keys matching column headers.
+    """
+    wb = load_workbook(buffer, data_only=True)
 
-
-# ── EXCEL HELPERS ─────────────────────────────────────────────────────────────
-def find_table_sheet(wb):
-    """Find the sheet containing the Crosswind_Debriefs table."""
-    for ws in wb.worksheets:
-        for tbl in ws.tables.values():
+    # Find the sheet containing the table
+    ws = None
+    for sheet in wb.worksheets:
+        for tbl in sheet.tables.values():
             if tbl.name == TABLE_NAME:
-                return ws, tbl
-    raise ValueError(f"Table '{TABLE_NAME}' not found in workbook")
+                ws = sheet
+                break
+        if ws:
+            break
 
+    if ws is None:
+        # Fallback: just read the first sheet
+        print(f"  Warning: table '{TABLE_NAME}' not found — reading first sheet")
+        ws = wb.worksheets[0]
 
-def read_table(ws, tbl):
-    """Read the table into a list of dicts, keyed by Audit ID."""
-    ref = tbl.ref  # e.g. "A1:G100"
-    from openpyxl.utils import range_boundaries
-    min_col, min_row, max_col, max_row = range_boundaries(ref)
-
-    rows = list(ws.iter_rows(min_row=min_row, max_row=max_row,
-                              min_col=min_col, max_col=max_col, values_only=True))
+    rows = list(ws.iter_rows(values_only=True))
     if not rows:
-        return {}, min_row, min_col, max_row
+        return []
 
-    # First row is header
-    headers = [str(h).strip() if h else "" for h in rows[0]]
-    data = {}
+    headers = [str(h).strip() if h is not None else "" for h in rows[0]]
+    records = []
     for row in rows[1:]:
-        if not any(row):
+        if not any(v is not None for v in row):
             continue
         rec = dict(zip(headers, row))
+        records.append(rec)
+
+    print(f"  Read {len(records)} records from SharePoint")
+    return records
+
+
+# ── COMPLIANCE CALCULATION ────────────────────────────────────────────────────
+def parse_record_date(val):
+    """Parse a date value from the Excel cell — handles date objects, datetimes, and strings."""
+    if val is None:
+        return None
+    if isinstance(val, datetime):
+        return val.date()
+    if isinstance(val, date):
+        return val
+    try:
+        return datetime.fromisoformat(str(val).replace("Z", "+00:00")).date()
+    except Exception:
+        return None
+
+
+def normalize_records(excel_records, incoming):
+    """
+    Merge incoming payload into the Excel records in memory.
+    Incoming records take precedence (they are the freshest data).
+    Returns a unified list of normalized dicts.
+    """
+    # Build dict from Excel keyed by Audit ID
+    by_audit = {}
+    for rec in excel_records:
         aid = str(rec.get("Audit ID") or "").strip()
         if aid:
-            data[aid] = rec
+            by_audit[aid] = {
+                "audit_id":    aid,
+                "date":        parse_record_date(rec.get("Date")),
+                "tech":        str(rec.get("Name") or "").strip(),
+                "location":    str(rec.get("Location") or "").strip(),
+                "tail":        str(rec.get("Tail") or "").strip().upper(),
+                "template_id": str(rec.get("Template ID") or "").strip(),
+                "report_url":  str(rec.get("Report Link") or "").strip(),
+            }
 
-    return data, min_row, min_col, max_row
-
-
-def upsert_records(ws, tbl, existing, incoming):
-    """
-    Upsert incoming records into the worksheet.
-    - existing: dict of {audit_id: row_dict} already in the sheet
-    - incoming: list of dicts from Power Automate payload
-    Returns count of inserted and updated rows.
-    """
-    from openpyxl.utils import range_boundaries
-
-    ref = tbl.ref
-    min_col, min_row, max_col, max_row = range_boundaries(ref)
-
-    # Build a map of audit_id → row number for existing records
-    audit_to_row = {}
-    for row_idx in range(min_row + 1, max_row + 1):
-        aid_cell = ws.cell(row=row_idx, column=min_col + COL["Audit ID"] - 1)
-        if aid_cell.value:
-            audit_to_row[str(aid_cell.value).strip()] = row_idx
-
-    inserted = 0
-    updated  = 0
-
+    # Overlay with incoming payload (newer/corrected data)
     for insp in incoming:
-        audit_id = (insp.get("audit_id") or "").strip()
-        if not audit_id:
+        aid = (insp.get("audit_id") or "").strip()
+        if not aid:
             continue
-
-        # Parse date — store as date object so Excel formats it correctly
         date_val = insp.get("date", "")
         try:
-            dt = datetime.fromisoformat(date_val.replace("Z", "+00:00"))
-            date_obj = dt.date()
+            d = datetime.fromisoformat(date_val.replace("Z", "+00:00")).date()
         except Exception:
-            date_obj = None
+            d = None
+        by_audit[aid] = {
+            "audit_id":    aid,
+            "date":        d,
+            "tech":        insp.get("tech", ""),
+            "location":    insp.get("location", ""),
+            "tail":        (insp.get("tail") or "").strip().upper(),
+            "template_id": insp.get("template_id", ""),
+            "report_url":  insp.get("report_url", ""),
+        }
 
-        row_values = [
-            date_obj,
-            insp.get("tech", ""),
-            insp.get("location", ""),
-            (insp.get("tail") or "").strip().upper(),
-            audit_id,
-            insp.get("template_id", ""),
-            insp.get("report_url", ""),
-        ]
-
-        if audit_id in audit_to_row:
-            # Update existing row
-            row_idx = audit_to_row[audit_id]
-            for col_offset, val in enumerate(row_values):
-                ws.cell(row=row_idx, column=min_col + col_offset, value=val)
-            updated += 1
-        else:
-            # Append new row after the last row of the table
-            new_row = max_row + 1
-            for col_offset, val in enumerate(row_values):
-                ws.cell(row=new_row, column=min_col + col_offset, value=val)
-            # Expand the table reference to include the new row
-            new_ref = ref.split(":")[0] + ":" + \
-                      f"{chr(ord('A') + min_col - 1 + len(row_values) - 1)}{new_row}"
-            # Use openpyxl table ref update
-            from openpyxl.utils import get_column_letter
-            end_col = get_column_letter(min_col + len(row_values) - 1)
-            tbl.ref = f"{ref.split(':')[0]}:{end_col}{new_row}"
-            max_row = new_row
-            audit_to_row[audit_id] = new_row
-            inserted += 1
-
-    return inserted, updated
+    return list(by_audit.values())
 
 
-# ── COMPLIANCE CALCULATION ───────────────────────────────────────────────────
 def build_compliance(all_records):
     """
-    Given the full debrief history, calculate rolling 7-day compliance per tail.
-    Returns list of plane dicts for crosswinds_data.json.
+    Calculate rolling 7-day compliance for every tail in the master list.
     """
-    today = date.today()
+    today        = date.today()
     window_start = today - timedelta(days=WINDOW_DAYS - 1)
 
     # Group by tail, sorted newest-first
     by_tail = {}
     for rec in all_records:
-        tail = (str(rec.get("Tail") or "")).strip().upper()
+        tail = rec.get("tail", "")
         if tail not in TAILS:
             continue
-        raw_date = rec.get("Date")
-        if raw_date is None:
+        if rec.get("date") is None:
             continue
-        if isinstance(raw_date, datetime):
-            d = raw_date.date()
-        elif isinstance(raw_date, date):
-            d = raw_date
-        else:
-            try:
-                d = datetime.fromisoformat(str(raw_date)).date()
-            except Exception:
-                continue
-
         if tail not in by_tail:
             by_tail[tail] = []
-        by_tail[tail].append({
-            "date":        d,
-            "location":    str(rec.get("Location") or "").strip(),
-            "tech":        str(rec.get("Name") or "").strip(),
-            "audit_id":    str(rec.get("Audit ID") or "").strip(),
-            "template_id": str(rec.get("Template ID") or "").strip(),
-            "report_url":  str(rec.get("Report Link") or "").strip(),
-        })
+        by_tail[tail].append(rec)
 
     for tail in by_tail:
         by_tail[tail].sort(key=lambda x: x["date"], reverse=True)
 
     planes = []
     for tail in TAILS:
-        records = by_tail.get(tail, [])
-
-        # Count cleans in last 7 days
+        records   = by_tail.get(tail, [])
         recent_7d = [r for r in records if r["date"] >= window_start]
         count_7d  = len(recent_7d)
 
         last_clean    = records[0]["date"].isoformat() if records else None
-        last_location = records[0]["location"] if records else None
-        last_tech     = records[0]["tech"]     if records else None
+        last_location = records[0]["location"]         if records else None
+        last_tech     = records[0]["tech"]             if records else None
+        days_since    = (today - date.fromisoformat(last_clean)).days if last_clean else None
 
-        days_since = (today - date.fromisoformat(last_clean)).days if last_clean else None
-
-        # Status
         if count_7d >= 2:
             status = "compliant"
         elif count_7d == 1:
-            status = "soon"   # always due for second clean
+            status = "soon"
         else:
             status = "noncompliant"
 
-        # Recent inspections for detail panel
         recent_inspections = [
             {
                 "audit_id":   r["audit_id"],
@@ -284,14 +219,14 @@ def build_compliance(all_records):
         ]
 
         planes.append({
-            "tail":               tail,
-            "status":             status,
-            "count7d":            count_7d,
-            "daysSinceLast":      days_since,
-            "lastClean":          last_clean,
-            "lastLocation":       last_location,
-            "lastTech":           last_tech,
-            "recentInspections":  recent_inspections,
+            "tail":              tail,
+            "status":            status,
+            "count7d":           count_7d,
+            "daysSinceLast":     days_since,
+            "lastClean":         last_clean,
+            "lastLocation":      last_location,
+            "lastTech":          last_tech,
+            "recentInspections": recent_inspections,
         })
 
     return planes
@@ -302,7 +237,7 @@ if __name__ == "__main__":
     print("=== Crosswinds Compliance Data Relay ===")
     print(f"Run time: {datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC')}\n")
 
-    # Parse payload from Power Automate
+    # Parse incoming payload from Power Automate
     try:
         incoming = json.loads(os.environ["PAYLOAD"])
     except Exception as e:
@@ -310,43 +245,20 @@ if __name__ == "__main__":
         sys.exit(1)
 
     print(f"Incoming inspections from Power Automate: {len(incoming)}")
-
-    # Filter to known tails only
     incoming = [i for i in incoming if (i.get("tail") or "").strip().upper() in TAILS]
     print(f"  After tail validation: {len(incoming)}")
 
-    # ── Step 1: Download Excel ────────────────────────────────────────────────
-    token   = get_token()
-    buffer  = download_excel(token)
-    wb      = load_workbook(buffer)
-    ws, tbl = find_table_sheet(wb)
+    # Read full history from SharePoint (read-only)
+    token         = get_token()
+    excel_buffer  = download_excel(token)
+    excel_records = read_table(excel_buffer)
 
-    existing, *_ = read_table(ws, tbl)
-    print(f"\nExisting records in SharePoint: {len(existing)}")
+    # Merge Excel history with incoming payload in memory
+    print("\nMerging records...")
+    all_records = normalize_records(excel_records, incoming)
+    print(f"  Total unique records: {len(all_records)}")
 
-    # ── Step 2: Upsert incoming records ──────────────────────────────────────
-    print("\nUpserting records...")
-    inserted, updated = upsert_records(ws, tbl, existing, incoming)
-    print(f"  Inserted: {inserted}  |  Updated: {updated}")
-
-    # ── Step 3: Upload updated Excel ─────────────────────────────────────────
-    out_buffer = io.BytesIO()
-    wb.save(out_buffer)
-    out_buffer.seek(0)
-    # Re-acquire token in case of long run
-    token = get_token()
-    upload_excel(token, out_buffer)
-
-    # ── Step 4: Read full table for compliance calculation ───────────────────
-    print("\nReading full history for compliance calculation...")
-    # Re-read from the in-memory workbook (already updated)
-    wb2      = load_workbook(io.BytesIO(out_buffer.getvalue()))
-    ws2, tbl2 = find_table_sheet(wb2)
-    all_records_dict, *_ = read_table(ws2, tbl2)
-    all_records = list(all_records_dict.values())
-    print(f"  Total records: {len(all_records)}")
-
-    # ── Step 5: Build compliance and write JSON ───────────────────────────────
+    # Calculate compliance
     print("\nCalculating compliance...")
     planes = build_compliance(all_records)
 
@@ -355,11 +267,11 @@ if __name__ == "__main__":
     ok   = sum(1 for p in planes if p["status"] == "compliant")
     print(f"  Compliant: {ok}  |  Due soon: {soon}  |  Noncompliant: {nc}")
 
+    # Write dashboard JSON
     output = {
         "generated": datetime.now(timezone.utc).isoformat(),
         "planes":    planes,
     }
-
     with open("crosswinds_data.json", "w") as f:
         json.dump(output, f, indent=2)
 

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-26T01:38:45.398713+00:00",
+  "generated": "2026-05-26T03:07:08.727799+00:00",
   "planes": [
     {
       "tail": "N500AE",
@@ -399,20 +399,20 @@
     },
     {
       "tail": "N525AE",
-      "lastService": "2026-05-23",
-      "lastCC": "2026-05-23",
+      "lastService": "2026-05-25",
+      "lastCC": "2026-05-25",
       "lastDSC": "2026-05-11",
       "lastCE": "2026-05-11",
       "lastED1": "2026-05-11",
       "lastED2": "2026-05-11",
       "lastLav": "2026-02-27",
-      "lastIC": "2026-05-23",
-      "lastEC": "2026-05-23",
+      "lastIC": "2026-05-25",
+      "lastEC": "2026-05-25",
       "lastED3": null,
       "lastED4": null,
-      "lastLocation": "DCA",
-      "lastTech": "Levorn Smallwood",
-      "CC": 27,
+      "lastLocation": "CAK",
+      "lastTech": "Ashton Conner",
+      "CC": 29,
       "DSC": 15,
       "CE": 15,
       "ED1": 15,
@@ -3017,6 +3017,22 @@
     }
   ],
   "debriefs": [
+    {
+      "tail": "N525AE",
+      "date": "2026-05-25",
+      "name": "Ashton Conner",
+      "location": "CAK",
+      "IC": 1,
+      "EC": 1,
+      "CC": 1,
+      "DSC": 0,
+      "CE": 0,
+      "ED1": 0,
+      "ED2": 0,
+      "ED3": 0,
+      "ED4": 0,
+      "Lav": 0
+    },
     {
       "tail": "N615NN",
       "date": "2026-05-24",

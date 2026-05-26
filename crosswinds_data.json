@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-26T21:18:54.738839+00:00",
+  "generated": "2026-05-26T21:30:40.535149+00:00",
   "planes": [
     {
       "tail": "N351DC",
@@ -412,21 +412,21 @@
       "daysSinceLast": 5,
       "lastClean": "2026-05-21",
       "lastLocation": "KFNT",
-      "lastTech": "Samuel Kosco",
+      "lastTech": "Jakendell Brown",
       "recentInspections": [
-        {
-          "audit_id": "audit_0b9c3f2557564d339e4dd1441c578dbf",
-          "date": "2026-05-21",
-          "location": "KFNT",
-          "tech": "Samuel Kosco",
-          "report_url": "https://app.safetyculture.com/report/public/audit/64e3781efdee2e5ad77b83748e3199f40e92bc7082a6c27c3ea7a062ae5246c3"
-        },
         {
           "audit_id": "audit_94322ededde64d4b862b511e3468a4b8",
           "date": "2026-05-21",
           "location": "KFNT",
           "tech": "Jakendell Brown",
           "report_url": "https://app.safetyculture.com/report/public/audit/ade84c37bb529430d0a4df16d957c3028720f9ec8d6f83e838b9bccc9e5527b1"
+        },
+        {
+          "audit_id": "audit_0b9c3f2557564d339e4dd1441c578dbf",
+          "date": "2026-05-21",
+          "location": "KFNT",
+          "tech": "Samuel Kosco",
+          "report_url": "https://app.safetyculture.com/report/public/audit/64e3781efdee2e5ad77b83748e3199f40e92bc7082a6c27c3ea7a062ae5246c3"
         }
       ]
     },

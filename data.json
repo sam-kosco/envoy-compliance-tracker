@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-27T05:34:11.452354+00:00",
+  "generated": "2026-05-27T07:34:47.177307+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -190,12 +190,12 @@
     },
     {
       "tail": "N217NN",
-      "lastService": "2026-05-22",
+      "lastService": "2026-05-26",
       "lastED1": "2026-05-22",
       "lastED2": "2026-04-18",
-      "lastIHC": "2026-05-22",
-      "lastLocation": "LIT",
-      "lastTech": "Charles Cobb",
+      "lastIHC": "2026-05-26",
+      "lastLocation": "XNA",
+      "lastTech": "Casey Henry",
       "ED1": 25,
       "ED2": 21
     },
@@ -388,12 +388,12 @@
     },
     {
       "tail": "N235NN",
-      "lastService": "2026-05-21",
+      "lastService": "2026-05-26",
       "lastED1": "2026-04-10",
       "lastED2": "2026-03-11",
-      "lastIHC": "2026-05-21",
-      "lastLocation": "CMH",
-      "lastTech": "Alex Hamilton",
+      "lastIHC": "2026-05-26",
+      "lastLocation": "XNA",
+      "lastTech": "Casey Henry",
       "ED1": -17,
       "ED2": -17
     },
@@ -707,12 +707,12 @@
     },
     {
       "tail": "N264NN",
-      "lastService": "2026-05-23",
+      "lastService": "2026-05-27",
       "lastED1": "2026-05-01",
       "lastED2": "2026-04-01",
-      "lastIHC": "2026-05-23",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
+      "lastIHC": "2026-05-27",
+      "lastLocation": "XNA",
+      "lastTech": "Casey Henry",
       "ED1": 4,
       "ED2": 4
     },
@@ -729,10 +729,10 @@
     },
     {
       "tail": "N266NN",
-      "lastService": "2026-05-21",
+      "lastService": "2027-05-26",
       "lastED1": "2026-05-03",
       "lastED2": "2026-04-08",
-      "lastIHC": "2026-05-21",
+      "lastIHC": "2027-05-26",
       "lastLocation": "XNA",
       "lastTech": "Casey Henry",
       "ED1": 6,
@@ -861,10 +861,10 @@
     },
     {
       "tail": "N278NN",
-      "lastService": "2026-05-25",
+      "lastService": "2026-05-26",
       "lastED1": "2026-05-01",
       "lastED2": "2026-05-17",
-      "lastIHC": "2026-05-25",
+      "lastIHC": "2026-05-26",
       "lastLocation": "XNA",
       "lastTech": "Casey Henry",
       "ED1": 4,
@@ -1169,14 +1169,14 @@
     },
     {
       "tail": "N311VE",
-      "lastService": "2026-05-24",
+      "lastService": "2026-05-27",
       "lastED1": "2026-04-27",
-      "lastED2": "2026-03-27",
-      "lastIHC": "2026-05-24",
-      "lastLocation": "CMH",
-      "lastTech": "Alex Hamilton",
+      "lastED2": "2026-05-27",
+      "lastIHC": "2026-05-27",
+      "lastLocation": "XNA",
+      "lastTech": "Casey Henry",
       "ED1": 0,
-      "ED2": -1
+      "ED2": 60
     },
     {
       "tail": "N312BT",
@@ -1345,12 +1345,12 @@
     },
     {
       "tail": "N327PG",
-      "lastService": "2026-05-18",
+      "lastService": "2026-05-20",
       "lastED1": "2026-05-02",
       "lastED2": "2026-03-01",
-      "lastIHC": "2026-05-18",
-      "lastLocation": "DFW",
-      "lastTech": "Sharmaine Brown",
+      "lastIHC": "2026-05-20",
+      "lastLocation": "SGF",
+      "lastTech": "Jeffrey Crookshanks",
       "ED1": 5,
       "ED2": -27
     },
@@ -1400,10 +1400,10 @@
     },
     {
       "tail": "N331SC",
-      "lastService": "2026-05-19",
+      "lastService": "2026-05-26",
       "lastED1": "2026-04-28",
       "lastED2": "2026-05-02",
-      "lastIHC": "2026-05-19",
+      "lastIHC": "2026-05-26",
       "lastLocation": "XNA",
       "lastTech": "Casey Henry",
       "ED1": 1,
@@ -1928,12 +1928,12 @@
     },
     {
       "tail": "N787BP",
-      "lastService": "2026-05-24",
+      "lastService": "2026-05-26",
       "lastED1": "2026-05-18",
       "lastED2": "2026-04-25",
-      "lastIHC": "2026-05-24",
-      "lastLocation": "LIT",
-      "lastTech": "Dane  Clement",
+      "lastIHC": "2026-05-26",
+      "lastLocation": "XNA",
+      "lastTech": "Casey Henry",
       "ED1": 21,
       "ED2": 28
     },
@@ -2017,6 +2017,33 @@
   ],
   "debriefs": [
     {
+      "tail": "N266NN",
+      "date": "2027-05-26",
+      "name": "Casey Henry",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N311VE",
+      "date": "2026-05-27",
+      "name": "Casey Henry",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 1
+    },
+    {
+      "tail": "N264NN",
+      "date": "2026-05-27",
+      "name": "Casey Henry",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
       "tail": "N250NN",
       "date": "2026-05-26",
       "name": "Tanaija Price",
@@ -2075,6 +2102,51 @@
       "date": "2026-05-26",
       "name": "Todd Axle",
       "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N217NN",
+      "date": "2026-05-26",
+      "name": "Casey Henry",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N235NN",
+      "date": "2026-05-26",
+      "name": "Casey Henry",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N331SC",
+      "date": "2026-05-26",
+      "name": "Casey Henry",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N278NN",
+      "date": "2026-05-26",
+      "name": "Casey Henry",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N787BP",
+      "date": "2026-05-26",
+      "name": "Casey Henry",
+      "location": "XNA",
       "IHC": 1,
       "ED1": 0,
       "ED2": 0
@@ -3949,6 +4021,15 @@
       "location": "XNA",
       "IHC": 1,
       "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N327PG",
+      "date": "2026-05-20",
+      "name": "Jeffrey Crookshanks",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
       "ED2": 0
     },
     {

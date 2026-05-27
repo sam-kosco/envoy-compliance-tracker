@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-27T03:16:03.361252+00:00",
+  "generated": "2026-05-27T05:34:11.452354+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -58,12 +58,12 @@
     },
     {
       "tail": "N205NN",
-      "lastService": "2026-05-14",
+      "lastService": "2026-05-26",
       "lastED1": "2026-04-27",
       "lastED2": "2026-03-26",
-      "lastIHC": "2026-05-14",
-      "lastLocation": "CVG",
-      "lastTech": "Bayleah Vogel",
+      "lastIHC": "2026-05-26",
+      "lastLocation": "CMH",
+      "lastTech": "Todd Axle",
       "ED1": 0,
       "ED2": -2
     },
@@ -80,12 +80,12 @@
     },
     {
       "tail": "N207AN",
-      "lastService": "2026-05-23",
+      "lastService": "2026-05-26",
       "lastED1": "2026-05-19",
       "lastED2": "2026-05-22",
-      "lastIHC": "2026-05-23",
-      "lastLocation": "XNA",
-      "lastTech": "Casey Henry",
+      "lastIHC": "2026-05-26",
+      "lastLocation": "CVG",
+      "lastTech": "Todd Axle",
       "ED1": 22,
       "ED2": 55
     },
@@ -553,12 +553,12 @@
     },
     {
       "tail": "N250NN",
-      "lastService": "2026-05-24",
+      "lastService": "2026-05-26",
       "lastED1": "2026-05-09",
       "lastED2": "2026-05-09",
-      "lastIHC": "2026-05-24",
+      "lastIHC": "2026-05-26",
       "lastLocation": "CMH",
-      "lastTech": "Alex Hamilton",
+      "lastTech": "Tanaija Price",
       "ED1": 12,
       "ED2": 42
     },
@@ -597,12 +597,12 @@
     },
     {
       "tail": "N254NN",
-      "lastService": "2026-05-23",
+      "lastService": "2026-05-26",
       "lastED1": "2026-04-30",
       "lastED2": "2026-03-28",
-      "lastIHC": "2026-05-23",
-      "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastIHC": "2026-05-26",
+      "lastLocation": "CMH",
+      "lastTech": "Tanaija Price",
       "ED1": 3,
       "ED2": 0
     },
@@ -872,12 +872,12 @@
     },
     {
       "tail": "N279MQ",
-      "lastService": "2026-05-25",
+      "lastService": "2026-05-26",
       "lastED1": "2026-05-15",
       "lastED2": "2026-05-05",
-      "lastIHC": "2026-05-25",
+      "lastIHC": "2026-05-26",
       "lastLocation": "CVG",
-      "lastTech": "Precious Roberson",
+      "lastTech": "Todd Axle",
       "ED1": 18,
       "ED2": 38
     },
@@ -1752,12 +1752,12 @@
     },
     {
       "tail": "N768RD",
-      "lastService": "2026-05-01",
+      "lastService": "2026-05-26",
       "lastED1": "2026-04-23",
       "lastED2": "2026-04-07",
-      "lastIHC": "2026-05-01",
-      "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastIHC": "2026-05-26",
+      "lastLocation": "CMH",
+      "lastTech": "Tanaija Price",
       "ED1": -4,
       "ED2": 10
     },
@@ -2005,17 +2005,80 @@
     },
     {
       "tail": "N798CC",
-      "lastService": "2026-05-23",
+      "lastService": "2026-05-26",
       "lastED1": "2026-03-29",
       "lastED2": "2026-02-11",
-      "lastIHC": "2026-05-23",
-      "lastLocation": "CMH",
-      "lastTech": "Alexander Hamilton",
+      "lastIHC": "2026-05-26",
+      "lastLocation": "CVG",
+      "lastTech": "Todd Axle",
       "ED1": -29,
       "ED2": -45
     }
   ],
   "debriefs": [
+    {
+      "tail": "N250NN",
+      "date": "2026-05-26",
+      "name": "Tanaija Price",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N254NN",
+      "date": "2026-05-26",
+      "name": "Tanaija Price",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N768RD",
+      "date": "2026-05-26",
+      "name": "Tanaija Price",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N205NN",
+      "date": "2026-05-26",
+      "name": "Todd Axle",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N798CC",
+      "date": "2026-05-26",
+      "name": "Todd Axle",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N207AN",
+      "date": "2026-05-26",
+      "name": "Todd Axle",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N279MQ",
+      "date": "2026-05-26",
+      "name": "Todd Axle",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
     {
       "tail": "N275NN",
       "date": "2026-05-25",

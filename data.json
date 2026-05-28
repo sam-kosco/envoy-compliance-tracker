@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-28T03:17:11.835182+00:00",
+  "generated": "2026-05-28T05:30:14.221054+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -685,12 +685,12 @@
     },
     {
       "tail": "N262NN",
-      "lastService": "2026-05-20",
+      "lastService": "2026-05-27",
       "lastED1": "2026-05-07",
       "lastED2": "2026-05-07",
-      "lastIHC": "2026-05-20",
-      "lastLocation": "XNA",
-      "lastTech": "Shaun Neil",
+      "lastIHC": "2026-05-27",
+      "lastLocation": "CMH",
+      "lastTech": "Tanaija  Price",
       "ED1": 9,
       "ED2": 39
     },
@@ -1125,12 +1125,12 @@
     },
     {
       "tail": "N307LH",
-      "lastService": "2026-05-23",
+      "lastService": "2026-05-27",
       "lastED1": "2026-04-29",
       "lastED2": "2026-04-02",
-      "lastIHC": "2026-05-23",
-      "lastLocation": "CVG",
-      "lastTech": "Todd Axle",
+      "lastIHC": "2026-05-27",
+      "lastLocation": "CMH",
+      "lastTech": "Tanaija Price",
       "ED1": 1,
       "ED2": 4
     },
@@ -1532,23 +1532,23 @@
     },
     {
       "tail": "N346BB",
-      "lastService": "2026-05-23",
+      "lastService": "2026-05-27",
       "lastED1": "2026-05-16",
       "lastED2": "2026-04-18",
-      "lastIHC": "2026-05-23",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
+      "lastIHC": "2026-05-27",
+      "lastLocation": "CMH",
+      "lastTech": "Tanaija Price",
       "ED1": 18,
       "ED2": 20
     },
     {
       "tail": "N346BB",
-      "lastService": "2026-05-23",
+      "lastService": "2026-05-27",
       "lastED1": "2026-05-16",
       "lastED2": "2026-04-18",
-      "lastIHC": "2026-05-23",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
+      "lastIHC": "2026-05-27",
+      "lastLocation": "CMH",
+      "lastTech": "Tanaija Price",
       "ED1": 18,
       "ED2": 20
     },
@@ -1895,12 +1895,12 @@
     },
     {
       "tail": "N784DP",
-      "lastService": "2026-05-21",
+      "lastService": "2026-05-27",
       "lastED1": "2026-05-13",
       "lastED2": "2026-03-27",
-      "lastIHC": "2026-05-21",
-      "lastLocation": "CVG",
-      "lastTech": "Bayleah Vogel",
+      "lastIHC": "2026-05-27",
+      "lastLocation": "CMH",
+      "lastTech": "Tanaija Price",
       "ED1": 15,
       "ED2": -2
     },
@@ -2039,6 +2039,42 @@
       "date": "2026-05-27",
       "name": "Casey Henry",
       "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N346BB",
+      "date": "2026-05-27",
+      "name": "Tanaija Price",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N784DP",
+      "date": "2026-05-27",
+      "name": "Tanaija Price",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N262NN",
+      "date": "2026-05-27",
+      "name": "Tanaija  Price",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N307LH",
+      "date": "2026-05-27",
+      "name": "Tanaija Price",
+      "location": "CMH",
       "IHC": 1,
       "ED1": 0,
       "ED2": 0

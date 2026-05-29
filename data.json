@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-29T07:28:35.624325+00:00",
+  "generated": "2026-05-29T09:17:22.718725+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -718,12 +718,12 @@
     },
     {
       "tail": "N265NN",
-      "lastService": "2026-05-24",
+      "lastService": "2026-05-28",
       "lastED1": "2026-05-15",
       "lastED2": "2026-04-24",
-      "lastIHC": "2026-05-24",
-      "lastLocation": "CMH",
-      "lastTech": "Alex Hamilton",
+      "lastIHC": "2026-05-28",
+      "lastLocation": "LIT",
+      "lastTech": "Dane  Clement",
       "ED1": 16,
       "ED2": 25
     },
@@ -773,10 +773,10 @@
     },
     {
       "tail": "N270NN",
-      "lastService": "2026-05-21",
+      "lastService": "2026-05-28",
       "lastED1": "2026-05-20",
       "lastED2": "2026-04-04",
-      "lastIHC": "2026-05-21",
+      "lastIHC": "2026-05-28",
       "lastLocation": "LIT",
       "lastTech": "Dane  Clement",
       "ED1": 21,
@@ -1015,25 +1015,25 @@
     },
     {
       "tail": "N292NN",
-      "lastService": "2026-05-27",
+      "lastService": "2026-05-28",
       "lastED1": "2026-05-26",
       "lastED2": "2026-05-03",
-      "lastIHC": "2026-05-27",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
+      "lastIHC": "2026-05-28",
+      "lastLocation": "LIT",
+      "lastTech": "Dane  Clement",
       "ED1": 27,
       "ED2": 34
     },
     {
       "tail": "N293NN",
-      "lastService": "2026-05-21",
+      "lastService": "2026-05-28",
       "lastED1": "2026-05-09",
-      "lastED2": "2026-03-29",
-      "lastIHC": "2026-05-21",
-      "lastLocation": "SGF",
-      "lastTech": "Steven Wilson",
+      "lastED2": "2026-05-28",
+      "lastIHC": "2026-05-28",
+      "lastLocation": "LIT",
+      "lastTech": "Dane  Clement",
       "ED1": 10,
-      "ED2": -1
+      "ED2": 59
     },
     {
       "tail": "N298FR",
@@ -1158,12 +1158,12 @@
     },
     {
       "tail": "N310JZ",
-      "lastService": "2026-05-23",
+      "lastService": "2026-05-28",
       "lastED1": "2026-05-23",
       "lastED2": "2026-04-23",
-      "lastIHC": "2026-05-23",
-      "lastLocation": "CVG",
-      "lastTech": "Todd Axle",
+      "lastIHC": "2026-05-28",
+      "lastLocation": "LIT",
+      "lastTech": "Dane  Clement",
       "ED1": 24,
       "ED2": 24
     },
@@ -1642,13 +1642,13 @@
     },
     {
       "tail": "N749BM",
-      "lastService": "2026-05-12",
-      "lastED1": "2026-04-30",
+      "lastService": "2026-05-28",
+      "lastED1": "2026-05-28",
       "lastED2": "2026-04-05",
-      "lastIHC": "2026-05-12",
-      "lastLocation": "XNA",
-      "lastTech": "Casey Henry",
-      "ED1": 1,
+      "lastIHC": "2026-05-28",
+      "lastLocation": "LIT",
+      "lastTech": "Dane  Clement",
+      "ED1": 29,
       "ED2": 6
     },
     {
@@ -2213,6 +2213,60 @@
       "IHC": 1,
       "ED1": 0,
       "ED2": 0
+    },
+    {
+      "tail": "N270NN",
+      "date": "2026-05-28",
+      "name": "Dane  Clement",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N310JZ",
+      "date": "2026-05-28",
+      "name": "Dane  Clement",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N292NN",
+      "date": "2026-05-28",
+      "name": "Dane  Clement",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N749BM",
+      "date": "2026-05-28",
+      "name": "Dane  Clement",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N265NN",
+      "date": "2026-05-28",
+      "name": "Dane  Clement",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N293NN",
+      "date": "2026-05-28",
+      "name": "Dane  Clement",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 1
     },
     {
       "tail": "N311VE",

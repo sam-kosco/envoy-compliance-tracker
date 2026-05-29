@@ -1,22 +1,15 @@
 {
-  "generated": "2026-05-29T16:52:02.090943+00:00",
+  "generated": "2026-05-29T17:01:41.026424+00:00",
   "planes": [
     {
       "tail": "N351DC",
-      "status": "soon",
-      "count7d": 1,
-      "daysSinceLast": 0,
-      "lastClean": "2026-05-29",
+      "status": "noncompliant",
+      "count7d": 0,
+      "daysSinceLast": 8,
+      "lastClean": "2026-05-21",
       "lastLocation": "KPTK",
       "lastTech": "Jakendell Brown",
       "recentInspections": [
-        {
-          "audit_id": "audit_bacc5b0501fb47ce80cd18beeae2dc36",
-          "date": "2026-05-29",
-          "location": "KPTK",
-          "tech": "Jakendell Brown",
-          "report_url": "https://app.safetyculture.com/report/public/audit/acf6ec63c246f6282994e9463c6889c76697a7cb896def302cd36c29af063ea1"
-        },
         {
           "audit_id": "audit_c59f379f8bc74abaaab8442d2257ff72",
           "date": "2026-05-21",
@@ -28,20 +21,13 @@
     },
     {
       "tail": "N383CA",
-      "status": "soon",
-      "count7d": 1,
-      "daysSinceLast": 0,
-      "lastClean": "2026-05-29",
+      "status": "noncompliant",
+      "count7d": 0,
+      "daysSinceLast": 8,
+      "lastClean": "2026-05-21",
       "lastLocation": "KPTK",
       "lastTech": "Jakendell Brown",
       "recentInspections": [
-        {
-          "audit_id": "audit_393e9b7c88564e5695003dd16e09ec94",
-          "date": "2026-05-29",
-          "location": "KPTK",
-          "tech": "Jakendell Brown",
-          "report_url": "https://app.safetyculture.com/report/public/audit/1bd176737ab30cbf04ff8bc218d68f6504b87e5450a8b2b0e97396dc4a71ab11"
-        },
         {
           "audit_id": "audit_2fe280f8fbf146d58558ab458a22deac",
           "date": "2026-05-21",
@@ -53,38 +39,23 @@
     },
     {
       "tail": "N478DC",
-      "status": "soon",
-      "count7d": 1,
-      "daysSinceLast": 1,
-      "lastClean": "2026-05-28",
-      "lastLocation": "KPTK",
-      "lastTech": "Jakendell Brown",
-      "recentInspections": [
-        {
-          "audit_id": "audit_8cc3e3740b1c4c2880f6339a8d6e67cf",
-          "date": "2026-05-28",
-          "location": "KPTK",
-          "tech": "Jakendell Brown",
-          "report_url": "https://app.safetyculture.com/report/public/audit/dc4704bc51c5a7216d742da61823168f859d37d46adbc5daf92a2c0187838eff"
-        }
-      ]
+      "status": "noncompliant",
+      "count7d": 0,
+      "daysSinceLast": null,
+      "lastClean": null,
+      "lastLocation": null,
+      "lastTech": null,
+      "recentInspections": []
     },
     {
       "tail": "N2322Y",
-      "status": "soon",
-      "count7d": 1,
-      "daysSinceLast": 1,
-      "lastClean": "2026-05-28",
+      "status": "noncompliant",
+      "count7d": 0,
+      "daysSinceLast": 8,
+      "lastClean": "2026-05-21",
       "lastLocation": "KPTK",
       "lastTech": "Jakendell Brown",
       "recentInspections": [
-        {
-          "audit_id": "audit_68427882eeac4b6e8256548507649738",
-          "date": "2026-05-28",
-          "location": "KPTK",
-          "tech": "Jakendell Brown",
-          "report_url": "https://app.safetyculture.com/report/public/audit/0837201cebbf257aa7468f9874c206bc8747a6f0c571204ec60652d48a04eeb8"
-        },
         {
           "audit_id": "audit_ff4df3da3a0b4a0aa1adcc5243d7ec84",
           "date": "2026-05-21",
@@ -106,20 +77,13 @@
     },
     {
       "tail": "N723AG",
-      "status": "soon",
-      "count7d": 1,
-      "daysSinceLast": 1,
-      "lastClean": "2026-05-28",
+      "status": "noncompliant",
+      "count7d": 0,
+      "daysSinceLast": 8,
+      "lastClean": "2026-05-21",
       "lastLocation": "KPTK",
       "lastTech": "Jakendell Brown",
       "recentInspections": [
-        {
-          "audit_id": "audit_d13d6a9699984ac2965dd442421681d8",
-          "date": "2026-05-28",
-          "location": "KPTK",
-          "tech": "Jakendell Brown",
-          "report_url": "https://app.safetyculture.com/report/public/audit/c49cd51a9d9ed67e8244e0cc5c6c00639680d6ce27ccf81b8c8f531b196e457e"
-        },
         {
           "audit_id": "audit_30f6d2ed520546df866b7f7a7934e8e2",
           "date": "2026-05-21",
@@ -141,20 +105,13 @@
     },
     {
       "tail": "N390JA",
-      "status": "soon",
-      "count7d": 1,
-      "daysSinceLast": 0,
-      "lastClean": "2026-05-29",
+      "status": "noncompliant",
+      "count7d": 0,
+      "daysSinceLast": 8,
+      "lastClean": "2026-05-21",
       "lastLocation": "KPTK",
       "lastTech": "Jakendell Brown",
       "recentInspections": [
-        {
-          "audit_id": "audit_e368e4f86ec642b48931dee0b6c97651",
-          "date": "2026-05-29",
-          "location": "KPTK",
-          "tech": "Jakendell Brown",
-          "report_url": "https://app.safetyculture.com/report/public/audit/c3e5069fe57a26c7dba4157b86e881aa97def897d73a3162ed7959083653f760"
-        },
         {
           "audit_id": "audit_36e85dfcf28747b7a9a45eb985903e70",
           "date": "2026-05-21",
@@ -166,20 +123,13 @@
     },
     {
       "tail": "N727MZ",
-      "status": "soon",
-      "count7d": 1,
-      "daysSinceLast": 0,
-      "lastClean": "2026-05-29",
+      "status": "noncompliant",
+      "count7d": 0,
+      "daysSinceLast": 8,
+      "lastClean": "2026-05-21",
       "lastLocation": "KPTK",
       "lastTech": "Jakendell Brown",
       "recentInspections": [
-        {
-          "audit_id": "audit_0b4571e6bd2442f29a241b3b20572b8d",
-          "date": "2026-05-29",
-          "location": "KPTK",
-          "tech": "Jakendell Brown",
-          "report_url": "https://app.safetyculture.com/report/public/audit/b87e70725b250dfd6c43339b4df84065ca4670c7e224505d482f2eaf99bc1f40"
-        },
         {
           "audit_id": "audit_a561ffa25ccd47c88b364d3c8784eeb9",
           "date": "2026-05-21",
@@ -191,38 +141,23 @@
     },
     {
       "tail": "N705Q",
-      "status": "soon",
-      "count7d": 1,
-      "daysSinceLast": 0,
-      "lastClean": "2026-05-29",
-      "lastLocation": "KPTK",
-      "lastTech": "Jakendell Brown",
-      "recentInspections": [
-        {
-          "audit_id": "audit_2cdb9a1a42c8493da1eb66ba4f75969e",
-          "date": "2026-05-29",
-          "location": "KPTK",
-          "tech": "Jakendell Brown",
-          "report_url": "https://app.safetyculture.com/report/public/audit/a5f99e4368976e027c4ac0cc39fd714653990e6ef8ae7882d7cfaf00079b4a43"
-        }
-      ]
+      "status": "noncompliant",
+      "count7d": 0,
+      "daysSinceLast": null,
+      "lastClean": null,
+      "lastLocation": null,
+      "lastTech": null,
+      "recentInspections": []
     },
     {
       "tail": "N238E",
-      "status": "soon",
-      "count7d": 1,
-      "daysSinceLast": 0,
-      "lastClean": "2026-05-29",
+      "status": "noncompliant",
+      "count7d": 0,
+      "daysSinceLast": 8,
+      "lastClean": "2026-05-21",
       "lastLocation": "KPTK",
       "lastTech": "Jakendell Brown",
       "recentInspections": [
-        {
-          "audit_id": "audit_3e4c998624454dba8a62a23a91ad95a5",
-          "date": "2026-05-29",
-          "location": "KPTK",
-          "tech": "Jakendell Brown",
-          "report_url": "https://app.safetyculture.com/report/public/audit/db8190cc930b4e96432f45cb3327166d88ba976990c026b53450146aab7f63be"
-        },
         {
           "audit_id": "audit_fe63e55e893940b7b81aba78c7f0e1dc",
           "date": "2026-05-21",
@@ -252,20 +187,13 @@
     },
     {
       "tail": "N70KK",
-      "status": "soon",
-      "count7d": 1,
-      "daysSinceLast": 0,
-      "lastClean": "2026-05-29",
+      "status": "noncompliant",
+      "count7d": 0,
+      "daysSinceLast": 8,
+      "lastClean": "2026-05-21",
       "lastLocation": "KPTK",
       "lastTech": "Jakendell Brown",
       "recentInspections": [
-        {
-          "audit_id": "audit_73d3c9a1b2fd48d891ff4b2b9e18c5d0",
-          "date": "2026-05-29",
-          "location": "KPTK",
-          "tech": "Jakendell Brown",
-          "report_url": "https://app.safetyculture.com/report/public/audit/90afee12d6fc1ac785020a9bff922f249152de1d1f8bfbbf9f1d446335ffeb61"
-        },
         {
           "audit_id": "audit_44134861cfff41a5addc2b7c6b5bb28f",
           "date": "2026-05-21",
@@ -344,20 +272,13 @@
     },
     {
       "tail": "N82ZZ",
-      "status": "soon",
-      "count7d": 1,
-      "daysSinceLast": 3,
-      "lastClean": "2026-05-26",
+      "status": "noncompliant",
+      "count7d": 0,
+      "daysSinceLast": 9,
+      "lastClean": "2026-05-20",
       "lastLocation": "KFNT",
       "lastTech": "Jakendell Brown",
       "recentInspections": [
-        {
-          "audit_id": "audit_84c58db99a4042e08e66d1dc5ce87eeb",
-          "date": "2026-05-26",
-          "location": "KFNT",
-          "tech": "Jakendell Brown",
-          "report_url": "https://app.safetyculture.com/report/public/audit/b260260d9a9256f05884d6a80dc1d58c1c176fbe155a3fc348b36ad94771d7ec"
-        },
         {
           "audit_id": "audit_2b1d049118644d148c1af562ca5d6240",
           "date": "2026-05-20",
@@ -589,20 +510,13 @@
     },
     {
       "tail": "N625DC",
-      "status": "soon",
-      "count7d": 1,
-      "daysSinceLast": 3,
-      "lastClean": "2026-05-26",
+      "status": "noncompliant",
+      "count7d": 0,
+      "daysSinceLast": 8,
+      "lastClean": "2026-05-21",
       "lastLocation": "KFNT",
       "lastTech": "Jakendell Brown",
       "recentInspections": [
-        {
-          "audit_id": "audit_f940e75ee2e14627b4bd48c38f029b3d",
-          "date": "2026-05-26",
-          "location": "KFNT",
-          "tech": "Jakendell Brown",
-          "report_url": "https://app.safetyculture.com/report/public/audit/097a39e4af95aecde1ab2e6290b5c7d27f963c1a94c79aa112e52235fe76aa86"
-        },
         {
           "audit_id": "audit_11adccbbc60b4df0807dbdadfc196125",
           "date": "2026-05-21",
@@ -667,20 +581,13 @@
     },
     {
       "tail": "N90FF",
-      "status": "soon",
-      "count7d": 1,
-      "daysSinceLast": 1,
-      "lastClean": "2026-05-28",
+      "status": "noncompliant",
+      "count7d": 0,
+      "daysSinceLast": 7,
+      "lastClean": "2026-05-22",
       "lastLocation": "KYIP",
-      "lastTech": "Jakendell Brown",
+      "lastTech": "Samuel Kosco",
       "recentInspections": [
-        {
-          "audit_id": "audit_33a0515de54a43f8974ad7eaf5e4f330",
-          "date": "2026-05-28",
-          "location": "KYIP",
-          "tech": "Jakendell Brown",
-          "report_url": "https://app.safetyculture.com/report/public/audit/23a75b7ad09528117f6cae831a92fe8307601fe10900c7c75c8fced47c0784bd"
-        },
         {
           "audit_id": "audit_ac7ac7abeee24c9cbecb53dd865a18d2",
           "date": "2026-05-22",
@@ -728,21 +635,13 @@
     },
     {
       "tail": "N123TV",
-      "status": "soon",
-      "count7d": 1,
-      "daysSinceLast": 1,
-      "lastClean": "2026-05-28",
-      "lastLocation": "KYIP",
-      "lastTech": "Jakendell Brown",
-      "recentInspections": [
-        {
-          "audit_id": "audit_41ee5007a3da4c42ab97bb3615f34545",
-          "date": "2026-05-28",
-          "location": "KYIP",
-          "tech": "Jakendell Brown",
-          "report_url": "https://app.safetyculture.com/report/public/audit/9e7add06e97c0bb50ce18e4136392ea78352b2df77e1e3030db021ced2b5f0e2"
-        }
-      ]
+      "status": "noncompliant",
+      "count7d": 0,
+      "daysSinceLast": null,
+      "lastClean": null,
+      "lastLocation": null,
+      "lastTech": null,
+      "recentInspections": []
     },
     {
       "tail": "N321JE",
@@ -756,27 +655,13 @@
     },
     {
       "tail": "N84VV",
-      "status": "compliant",
-      "count7d": 2,
-      "daysSinceLast": 1,
-      "lastClean": "2026-05-28",
+      "status": "noncompliant",
+      "count7d": 0,
+      "daysSinceLast": 7,
+      "lastClean": "2026-05-22",
       "lastLocation": "KYIP",
-      "lastTech": "Jakendell Brown",
+      "lastTech": "Samuel Kosco",
       "recentInspections": [
-        {
-          "audit_id": "audit_8dedf291afd94e4ab363bf847620b0db",
-          "date": "2026-05-28",
-          "location": "KYIP",
-          "tech": "Jakendell Brown",
-          "report_url": "https://app.safetyculture.com/report/public/audit/f92200b73a16a16ebd14439c40538b76218f38a1d781058928b4c2b0c56e051f"
-        },
-        {
-          "audit_id": "audit_a5e4366566ed4383a2dfa15160c498f0",
-          "date": "2026-05-28",
-          "location": "KYIP",
-          "tech": "Jakendell Brown",
-          "report_url": "https://app.safetyculture.com/report/public/audit/ffca3e0fb6998d3c4582ecbe8f080f0aa8030ca4a58a1534d52e9c9602c9d936"
-        },
         {
           "audit_id": "audit_a312674582ea410ca29d9baac70f6687",
           "date": "2026-05-22",
@@ -788,20 +673,13 @@
     },
     {
       "tail": "N568DC",
-      "status": "soon",
-      "count7d": 1,
-      "daysSinceLast": 1,
-      "lastClean": "2026-05-28",
+      "status": "noncompliant",
+      "count7d": 0,
+      "daysSinceLast": 7,
+      "lastClean": "2026-05-22",
       "lastLocation": "KYIP",
-      "lastTech": "Jakendell Brown",
+      "lastTech": "Samuel Kosco",
       "recentInspections": [
-        {
-          "audit_id": "audit_58022b7463d6481896825cd36ccb9f35",
-          "date": "2026-05-28",
-          "location": "KYIP",
-          "tech": "Jakendell Brown",
-          "report_url": "https://app.safetyculture.com/report/public/audit/e4097887dcfb529f116ab8cdc26edb157ad34911f264f99af2d0620bfb4a6e5a"
-        },
         {
           "audit_id": "audit_e678c8ffb13041ef82837ce13d012631",
           "date": "2026-05-22",
@@ -813,20 +691,13 @@
     },
     {
       "tail": "N58HH",
-      "status": "soon",
-      "count7d": 1,
-      "daysSinceLast": 1,
-      "lastClean": "2026-05-28",
+      "status": "noncompliant",
+      "count7d": 0,
+      "daysSinceLast": 7,
+      "lastClean": "2026-05-22",
       "lastLocation": "KYIP",
-      "lastTech": "Jakendell Brown",
+      "lastTech": "Samuel Kosco",
       "recentInspections": [
-        {
-          "audit_id": "audit_13c4099192d54610aab1a3ab25951d3d",
-          "date": "2026-05-28",
-          "location": "KYIP",
-          "tech": "Jakendell Brown",
-          "report_url": "https://app.safetyculture.com/report/public/audit/a40c6ce9b91e7836769afe9b351f9557533eadb870b56ae36942a0250bbe999f"
-        },
         {
           "audit_id": "audit_35bb45b3c00a4da7a3d67267b29cfed9",
           "date": "2026-05-22",

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-30T03:13:07.089992+00:00",
+  "generated": "2026-05-30T05:22:02.191205+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -388,12 +388,12 @@
     },
     {
       "tail": "N235NN",
-      "lastService": "2026-05-26",
+      "lastService": "2026-05-29",
       "lastED1": "2026-04-10",
       "lastED2": "2026-03-11",
-      "lastIHC": "2026-05-26",
-      "lastLocation": "XNA",
-      "lastTech": "Casey Henry",
+      "lastIHC": "2026-05-29",
+      "lastLocation": "SGF",
+      "lastTech": "Steven  Wilson",
       "ED1": -20,
       "ED2": -20
     },
@@ -443,12 +443,12 @@
     },
     {
       "tail": "N240NN",
-      "lastService": "2026-05-21",
+      "lastService": "2026-05-29",
       "lastED1": "2026-05-16",
       "lastED2": "2026-04-26",
-      "lastIHC": "2026-05-21",
-      "lastLocation": "XNA",
-      "lastTech": "Casey Henry",
+      "lastIHC": "2026-05-29",
+      "lastLocation": "SGF",
+      "lastTech": "Steven  Wilson",
       "ED1": 16,
       "ED2": 26
     },
@@ -2021,6 +2021,24 @@
       "date": "2027-05-26",
       "name": "Casey Henry",
       "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N235NN",
+      "date": "2026-05-29",
+      "name": "Steven  Wilson",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N240NN",
+      "date": "2026-05-29",
+      "name": "Steven  Wilson",
+      "location": "SGF",
       "IHC": 1,
       "ED1": 0,
       "ED2": 0

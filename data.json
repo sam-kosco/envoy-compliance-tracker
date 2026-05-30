@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-30T08:53:40.287600+00:00",
+  "generated": "2026-05-30T09:40:52.294999+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -520,12 +520,12 @@
     },
     {
       "tail": "N247NN",
-      "lastService": "2026-05-25",
+      "lastService": "2026-05-29",
       "lastED1": "2026-05-23",
       "lastED2": "2026-04-22",
-      "lastIHC": "2026-05-25",
-      "lastLocation": "XNA",
-      "lastTech": "Casey Henry",
+      "lastIHC": "2026-05-29",
+      "lastLocation": "DFW",
+      "lastTech": "Sharmaine Brown",
       "ED1": 23,
       "ED2": 22
     },
@@ -960,12 +960,12 @@
     },
     {
       "tail": "N287NN",
-      "lastService": "2026-05-22",
+      "lastService": "2026-05-29",
       "lastED1": "2026-05-11",
       "lastED2": "2026-04-03",
-      "lastIHC": "2026-05-22",
-      "lastLocation": "CVG",
-      "lastTech": "Bayleah Vogel",
+      "lastIHC": "2026-05-29",
+      "lastLocation": "DFW",
+      "lastTech": "Sharmaine Brown",
       "ED1": 11,
       "ED2": 3
     },
@@ -1103,12 +1103,12 @@
     },
     {
       "tail": "N305CL",
-      "lastService": "2026-05-28",
+      "lastService": "2026-05-29",
       "lastED1": "2026-05-14",
       "lastED2": "2026-05-14",
-      "lastIHC": "2026-05-28",
+      "lastIHC": "2026-05-29",
       "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastTech": "Sharmaine Brown",
       "ED1": 14,
       "ED2": 44
     },
@@ -1774,12 +1774,12 @@
     },
     {
       "tail": "N770JM",
-      "lastService": "2026-05-27",
+      "lastService": "2026-05-29",
       "lastED1": "2026-04-10",
       "lastED2": "2026-04-10",
-      "lastIHC": "2026-05-27",
+      "lastIHC": "2026-05-29",
       "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastTech": "Sharmaine Brown",
       "ED1": -20,
       "ED2": 10
     },
@@ -2279,6 +2279,42 @@
     },
     {
       "tail": "N778RH",
+      "date": "2026-05-29",
+      "name": "Sharmaine Brown",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N305CL",
+      "date": "2026-05-29",
+      "name": "Sharmaine Brown",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N770JM",
+      "date": "2026-05-29",
+      "name": "Sharmaine Brown",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N247NN",
+      "date": "2026-05-29",
+      "name": "Sharmaine Brown",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N287NN",
       "date": "2026-05-29",
       "name": "Sharmaine Brown",
       "location": "DFW",

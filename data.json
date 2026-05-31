@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-31T07:25:30.892604+00:00",
+  "generated": "2026-05-31T09:08:19.964108+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -1268,12 +1268,12 @@
     },
     {
       "tail": "N320BK",
-      "lastService": "2026-05-25",
+      "lastService": "2026-05-30",
       "lastED1": "2026-05-09",
       "lastED2": "2026-04-15",
-      "lastIHC": "2026-05-25",
-      "lastLocation": "XNA",
-      "lastTech": "Casey Henry",
+      "lastIHC": "2026-05-30",
+      "lastLocation": "SGF",
+      "lastTech": "Jeffrey Crookshanks",
       "ED1": 8,
       "ED2": 14
     },
@@ -2225,6 +2225,15 @@
     },
     {
       "tail": "N334CR",
+      "date": "2026-05-30",
+      "name": "Jeffrey Crookshanks",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N320BK",
       "date": "2026-05-30",
       "name": "Jeffrey Crookshanks",
       "location": "SGF",

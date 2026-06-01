@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-01T03:17:21.944127+00:00",
+  "generated": "2026-06-01T05:43:37.403969+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -278,12 +278,12 @@
     },
     {
       "tail": "N225NN",
-      "lastService": "2026-05-27",
+      "lastService": "2026-05-31",
       "lastED1": "2026-05-14",
       "lastED2": "2026-05-20",
-      "lastIHC": "2026-05-27",
-      "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastIHC": "2026-05-31",
+      "lastLocation": "SGF",
+      "lastTech": "Jeffrey Crookshanks",
       "ED1": 12,
       "ED2": 48
     },
@@ -399,10 +399,10 @@
     },
     {
       "tail": "N236NN",
-      "lastService": "2026-05-27",
+      "lastService": "2026-06-01",
       "lastED1": "2026-05-09",
       "lastED2": "2026-05-09",
-      "lastIHC": "2026-05-27",
+      "lastIHC": "2026-06-01",
       "lastLocation": "LIT",
       "lastTech": "Dane  Clement",
       "ED1": 7,
@@ -740,12 +740,12 @@
     },
     {
       "tail": "N267NN",
-      "lastService": "2026-05-22",
+      "lastService": "2026-05-31",
       "lastED1": "2026-05-05",
       "lastED2": "2026-04-22",
-      "lastIHC": "2026-05-22",
+      "lastIHC": "2026-05-31",
       "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastTech": "Sharmaine Brown",
       "ED1": 3,
       "ED2": 20
     },
@@ -1092,10 +1092,10 @@
     },
     {
       "tail": "N304KM",
-      "lastService": "2026-05-24",
+      "lastService": "2026-05-31",
       "lastED1": "2026-05-18",
       "lastED2": "2026-02-21",
-      "lastIHC": "2026-05-24",
+      "lastIHC": "2026-05-31",
       "lastLocation": "LIT",
       "lastTech": "Dane  Clement",
       "ED1": 16,
@@ -1323,14 +1323,14 @@
     },
     {
       "tail": "N325DM",
-      "lastService": "2026-05-26",
+      "lastService": "2026-05-31",
       "lastED1": "2026-05-11",
-      "lastED2": "2026-03-23",
-      "lastIHC": "2026-05-26",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
+      "lastED2": "2026-05-31",
+      "lastIHC": "2026-05-31",
+      "lastLocation": "CMH",
+      "lastTech": "Dane  Clement",
       "ED1": 9,
-      "ED2": -10
+      "ED2": 59
     },
     {
       "tail": "N326CJ",
@@ -1686,13 +1686,13 @@
     },
     {
       "tail": "N761RW",
-      "lastService": "2026-05-30",
-      "lastED1": "2026-04-01",
+      "lastService": "2026-05-31",
+      "lastED1": "2026-05-31",
       "lastED2": "2026-04-22",
-      "lastIHC": "2026-05-30",
+      "lastIHC": "2026-05-31",
       "lastLocation": "DFW",
-      "lastTech": "Natally  Garcia",
-      "ED1": -31,
+      "lastTech": "Sharmaine Brown",
+      "ED1": 29,
       "ED2": 20
     },
     {
@@ -1774,12 +1774,12 @@
     },
     {
       "tail": "N770JM",
-      "lastService": "2026-05-30",
+      "lastService": "2026-05-31",
       "lastED1": "2026-04-10",
       "lastED2": "2026-04-10",
-      "lastIHC": "2026-05-30",
+      "lastIHC": "2026-05-31",
       "lastLocation": "DFW",
-      "lastTech": "Natally  Garcia",
+      "lastTech": "Sharmaine Brown",
       "ED1": -22,
       "ED2": 8
     },
@@ -1928,12 +1928,12 @@
     },
     {
       "tail": "N787BP",
-      "lastService": "2026-05-26",
+      "lastService": "2026-05-31",
       "lastED1": "2026-05-18",
       "lastED2": "2026-04-25",
-      "lastIHC": "2026-05-26",
-      "lastLocation": "XNA",
-      "lastTech": "Casey Henry",
+      "lastIHC": "2026-05-31",
+      "lastLocation": "SGF",
+      "lastTech": "Jeffrey Crookshanks",
       "ED1": 16,
       "ED2": 23
     },
@@ -2021,6 +2021,78 @@
       "date": "2027-05-26",
       "name": "Casey Henry",
       "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N236NN",
+      "date": "2026-06-01",
+      "name": "Dane  Clement",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N304KM",
+      "date": "2026-05-31",
+      "name": "Dane  Clement",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N325DM",
+      "date": "2026-05-31",
+      "name": "Dane  Clement",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 1
+    },
+    {
+      "tail": "N225NN",
+      "date": "2026-05-31",
+      "name": "Jeffrey Crookshanks",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N787BP",
+      "date": "2026-05-31",
+      "name": "Jeffrey Crookshanks",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N761RW",
+      "date": "2026-05-31",
+      "name": "Sharmaine Brown",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N770JM",
+      "date": "2026-05-31",
+      "name": "Sharmaine Brown",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N267NN",
+      "date": "2026-05-31",
+      "name": "Sharmaine Brown",
+      "location": "DFW",
       "IHC": 1,
       "ED1": 0,
       "ED2": 0

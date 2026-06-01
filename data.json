@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-01T10:01:36.627059+00:00",
+  "generated": "2026-06-01T12:54:46.107863+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -135,12 +135,12 @@
     },
     {
       "tail": "N212NN",
-      "lastService": "2026-05-17",
+      "lastService": "2026-05-29",
       "lastED1": "2026-05-09",
       "lastED2": "2026-04-03",
-      "lastIHC": "2026-05-17",
-      "lastLocation": "DFW",
-      "lastTech": "Sharmaine Brown",
+      "lastIHC": "2026-05-29",
+      "lastLocation": "CMH",
+      "lastTech": "Alexander Hamilton",
       "ED1": 7,
       "ED2": 1
     },
@@ -245,12 +245,12 @@
     },
     {
       "tail": "N222NS",
-      "lastService": "2026-05-25",
+      "lastService": "2026-05-29",
       "lastED1": "2026-05-06",
       "lastED2": "2026-01-16",
-      "lastIHC": "2026-05-25",
+      "lastIHC": "2026-05-29",
       "lastLocation": "CMH",
-      "lastTech": "Tanaija Price",
+      "lastTech": "Alex Hamilton",
       "ED1": 4,
       "ED2": -76
     },
@@ -1730,12 +1730,12 @@
     },
     {
       "tail": "N765ST",
-      "lastService": "2026-05-20",
+      "lastService": "2026-05-29",
       "lastED1": "2026-05-20",
       "lastED2": "2026-04-07",
-      "lastIHC": "2026-05-20",
-      "lastLocation": "XNA",
-      "lastTech": "Shaun Neil",
+      "lastIHC": "2026-05-29",
+      "lastLocation": "CMH",
+      "lastTech": "Alexander Hamilton",
       "ED1": 18,
       "ED2": 5
     },
@@ -2903,6 +2903,42 @@
       "date": "2026-05-29",
       "name": "Charles Cobb",
       "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N222NS",
+      "date": "2026-05-29",
+      "name": "Alex Hamilton",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N212NN",
+      "date": "2026-05-29",
+      "name": "Alexander Hamilton",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N765ST",
+      "date": "2026-05-29",
+      "name": "Alexander Hamilton",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N250NN",
+      "date": "2026-05-29",
+      "name": "Alexander Hamilton",
+      "location": "CMH",
       "IHC": 1,
       "ED1": 0,
       "ED2": 0

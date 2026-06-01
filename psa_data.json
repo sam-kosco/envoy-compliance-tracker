@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-01T18:55:23.589088+00:00",
+  "generated": "2026-06-01T20:27:33.726804+00:00",
   "planes": [
     {
       "tail": "N500AE",
@@ -575,25 +575,25 @@
     },
     {
       "tail": "N535EA",
-      "lastService": "2026-05-17",
-      "lastCC": "2026-05-17",
+      "lastService": "2026-05-30",
+      "lastCC": "2026-05-30",
       "lastDSC": "2026-05-17",
       "lastCE": "2026-05-10",
       "lastED1": "2026-05-10",
-      "lastED2": "2026-05-10",
-      "lastLav": "2025-12-09",
-      "lastIC": "2026-05-17",
-      "lastEC": "2026-05-17",
+      "lastED2": "2026-05-30",
+      "lastLav": "2026-05-30",
+      "lastIC": "2026-05-30",
+      "lastEC": "2026-05-30",
       "lastED3": null,
       "lastED4": null,
-      "lastLocation": "CLT",
-      "lastTech": "Brian Parker",
-      "CC": 15,
+      "lastLocation": "TYS",
+      "lastTech": "Alexandra Stalans",
+      "CC": 28,
       "DSC": 15,
       "CE": 8,
       "ED1": 8,
-      "ED2": 8,
-      "Lav": -84
+      "ED2": 28,
+      "Lav": 88
     },
     {
       "tail": "N536EA",
@@ -3992,6 +3992,22 @@
       "ED3": 0,
       "ED4": 0,
       "Lav": 0
+    },
+    {
+      "tail": "N535EA",
+      "date": "2026-05-30",
+      "name": "Alexandra Stalans",
+      "location": "TYS",
+      "IC": 1,
+      "EC": 1,
+      "CC": 1,
+      "DSC": 0,
+      "CE": 0,
+      "ED1": 0,
+      "ED2": 1,
+      "ED3": 0,
+      "ED4": 0,
+      "Lav": 1
     },
     {
       "tail": "N516AE",

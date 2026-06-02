@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-02T03:17:10.520143+00:00",
+  "generated": "2026-06-02T05:40:05.974237+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -982,13 +982,13 @@
     },
     {
       "tail": "N289MW",
-      "lastService": "2026-05-28",
-      "lastED1": "2026-05-19",
+      "lastService": "2026-06-01",
+      "lastED1": "2026-06-01",
       "lastED2": "2026-05-19",
-      "lastIHC": "2026-05-28",
-      "lastLocation": "XNA",
-      "lastTech": "Riley Woods",
-      "ED1": 16,
+      "lastIHC": "2026-06-01",
+      "lastLocation": "LIT",
+      "lastTech": "Dane  Clement",
+      "ED1": 29,
       "ED2": 46
     },
     {
@@ -1323,12 +1323,12 @@
     },
     {
       "tail": "N325DM",
-      "lastService": "2026-05-31",
+      "lastService": "2026-06-01",
       "lastED1": "2026-05-11",
       "lastED2": "2026-05-31",
-      "lastIHC": "2026-05-31",
-      "lastLocation": "CMH",
-      "lastTech": "Dane  Clement",
+      "lastIHC": "2026-06-01",
+      "lastLocation": "SGF",
+      "lastTech": "Jeffrey Crookshanks",
       "ED1": 8,
       "ED2": 58
     },
@@ -1499,14 +1499,14 @@
     },
     {
       "tail": "N340TC",
-      "lastService": "2026-05-28",
-      "lastED1": null,
-      "lastED2": null,
-      "lastIHC": "2026-05-28",
-      "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
-      "ED1": "No Service",
-      "ED2": "No Service"
+      "lastService": "2026-06-01",
+      "lastED1": "2026-06-01",
+      "lastED2": "2026-06-01",
+      "lastIHC": "2026-06-01",
+      "lastLocation": "LIT",
+      "lastTech": "Dane  Clement",
+      "ED1": 29,
+      "ED2": 59
     },
     {
       "tail": "N341MB",
@@ -2069,6 +2069,33 @@
       "IHC": 1,
       "ED1": 0,
       "ED2": 0
+    },
+    {
+      "tail": "N289MW",
+      "date": "2026-06-01",
+      "name": "Dane  Clement",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N325DM",
+      "date": "2026-06-01",
+      "name": "Jeffrey Crookshanks",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N340TC",
+      "date": "2026-06-01",
+      "name": "Dane  Clement",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 1
     },
     {
       "tail": "N304KM",

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-02T19:21:34.246668+00:00",
+  "generated": "2026-06-02T21:08:58.893664+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -1015,12 +1015,12 @@
     },
     {
       "tail": "N292NN",
-      "lastService": "2026-05-29",
+      "lastService": "2026-06-01",
       "lastED1": "2026-05-26",
       "lastED2": "2026-05-03",
-      "lastIHC": "2026-05-29",
-      "lastLocation": "XNA",
-      "lastTech": "Riley Woods",
+      "lastIHC": "2026-06-01",
+      "lastLocation": "CVG",
+      "lastTech": "Todd Axle",
       "ED1": 23,
       "ED2": 30
     },
@@ -2299,6 +2299,24 @@
     },
     {
       "tail": "N743MB",
+      "date": "2026-06-01",
+      "name": "Todd Axle",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N739AE",
+      "date": "2026-06-01",
+      "name": "Todd Axle",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N292NN",
       "date": "2026-06-01",
       "name": "Todd Axle",
       "location": "CVG",

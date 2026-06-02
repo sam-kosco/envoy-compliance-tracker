@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-02T17:38:23.627914+00:00",
+  "generated": "2026-06-02T19:21:34.246668+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -784,12 +784,12 @@
     },
     {
       "tail": "N271NN",
-      "lastService": "2026-05-28",
+      "lastService": "2026-06-01",
       "lastED1": "2026-05-11",
       "lastED2": "2026-05-11",
-      "lastIHC": "2026-05-28",
-      "lastLocation": "XNA",
-      "lastTech": "Casey Henry",
+      "lastIHC": "2026-06-01",
+      "lastLocation": "CVG",
+      "lastTech": "Todd Axle",
       "ED1": 8,
       "ED2": 38
     },
@@ -1520,6 +1520,17 @@
       "ED2": 59
     },
     {
+      "tail": "N342KR",
+      "lastService": null,
+      "lastED1": null,
+      "lastED2": null,
+      "lastIHC": null,
+      "lastLocation": null,
+      "lastTech": null,
+      "ED1": "No Service",
+      "ED2": "No Service"
+    },
+    {
       "tail": "N344JA",
       "lastService": "2026-05-26",
       "lastED1": null,
@@ -1587,12 +1598,12 @@
     },
     {
       "tail": "N743MB",
-      "lastService": "2026-05-21",
+      "lastService": "2026-06-01",
       "lastED1": "2026-05-07",
       "lastED2": "2026-05-07",
-      "lastIHC": "2026-05-21",
+      "lastIHC": "2026-06-01",
       "lastLocation": "CVG",
-      "lastTech": "Bayleah Vogel",
+      "lastTech": "Todd Axle",
       "ED1": 4,
       "ED2": 34
     },
@@ -2273,6 +2284,24 @@
       "date": "2026-06-01",
       "name": "Alex Hamilton",
       "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N271NN",
+      "date": "2026-06-01",
+      "name": "Todd Axle",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N743MB",
+      "date": "2026-06-01",
+      "name": "Todd Axle",
+      "location": "CVG",
       "IHC": 1,
       "ED1": 0,
       "ED2": 0

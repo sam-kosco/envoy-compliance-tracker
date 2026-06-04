@@ -1,0 +1,150 @@
+name: Manage PSA Fleet
+
+on:
+  workflow_dispatch:
+    inputs:
+      action:
+        description: "Action to perform: add_tail"
+        required: true
+        type: string
+      tail:
+        description: "Tail number (dashboard normalizes + validates; workflow re-checks defensively)"
+        required: true
+        type: string
+
+jobs:
+  manage:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run fleet action
+        env:
+          ACTION:              ${{ github.event.inputs.action }}
+          TAIL_INPUT:          ${{ github.event.inputs.tail }}
+          SAFETYCULTURE_KEY:   ${{ secrets.SAFETYCULTURE_KEY }}
+          JOTFORM_KEY:         ${{ secrets.JOTFORM_KEY }}
+          PSA_TAILS_SET_ID:    responseset_0602a202a6a2458cae66ab6b46640d28
+          JOTFORM_BASE:        https://foxtrotaviation.jotform.com/API
+          JOTFORM_FORM_ID:     "213263365115146"
+          JOTFORM_TAIL_QID:    "53"
+        run: |
+          python3 - << 'PYEOF'
+          import json, os, re, sys
+          from datetime import datetime, timezone
+          import requests
+
+          action = os.environ["ACTION"].strip()
+          tail   = os.environ["TAIL_INPUT"].strip().upper()
+
+          if action != "add_tail":
+              print(f"Unsupported action: {action}", file=sys.stderr); sys.exit(1)
+          if not re.match(r'^N\d{1,5}[A-Z]{0,2}$', tail):
+              print(f"Invalid tail format: {tail!r}", file=sys.stderr); sys.exit(1)
+
+          print(f"Action: {action}  |  Tail: {tail}")
+
+          result = {
+              "tail": tail,
+              "action": action,
+              "timestamp": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+              "safetyculture": {"status": "skipped", "message": ""},
+              "jotform":       {"status": "skipped", "message": ""},
+              # SharePoint is handled by the Power Automate flow directly (after
+              # it dispatches this workflow), so the workflow doesn't touch it.
+          }
+
+          # ── 1. SafetyCulture ─────────────────────────────────────
+          try:
+              key    = os.environ["SAFETYCULTURE_KEY"]
+              set_id = os.environ["PSA_TAILS_SET_ID"]
+              H = {"Authorization": f"Bearer {key}", "Content-Type": "application/json"}
+              r = requests.get(f"https://api.safetyculture.io/response_sets/{set_id}", headers=H, timeout=30)
+              r.raise_for_status()
+              current = r.json()
+              labels = [x["label"] for x in current.get("responses", [])]
+              if tail in labels:
+                  result["safetyculture"] = {"status": "noop", "message": f"already present ({len(labels)} total)"}
+              else:
+                  labels.append(tail)
+                  r = requests.put(
+                      f"https://api.safetyculture.io/response_sets/{set_id}",
+                      headers=H,
+                      json={"name": current.get("name", "PSA Tails"),
+                            "responses": [{"label": l} for l in labels]},
+                      timeout=30,
+                  )
+                  r.raise_for_status()
+                  result["safetyculture"] = {"status": "ok", "message": f"added (now {len(labels)} total)"}
+              print(f"SafetyCulture: {result['safetyculture']}")
+          except Exception as e:
+              result["safetyculture"] = {"status": "error", "message": str(e)[:200]}
+              print(f"SafetyCulture ERROR: {e}")
+
+          # ── 2. JotForm ──────────────────────────────────────────
+          try:
+              key     = os.environ["JOTFORM_KEY"]
+              base    = os.environ["JOTFORM_BASE"]
+              form_id = os.environ["JOTFORM_FORM_ID"]
+              qid     = os.environ["JOTFORM_TAIL_QID"]
+              r = requests.get(f"{base}/form/{form_id}/question/{qid}?apiKey={key}", timeout=30)
+              r.raise_for_status()
+              opts_raw = r.json().get("content", {}).get("options", "")
+              opts = opts_raw.split("|") if isinstance(opts_raw, str) and opts_raw else []
+              had_not_listed = "Not Listed" in opts
+              others = [o for o in opts if o != "Not Listed"]
+              if tail in others:
+                  result["jotform"] = {"status": "noop", "message": f"already present ({len(opts)} total)"}
+              else:
+                  others.append(tail)
+                  final = others + (["Not Listed"] if had_not_listed else [])
+                  r = requests.post(
+                      f"{base}/form/{form_id}/question/{qid}?apiKey={key}",
+                      data={"question[options]": "|".join(final)},
+                      timeout=30,
+                  )
+                  r.raise_for_status()
+                  result["jotform"] = {"status": "ok", "message": f"added (now {len(final)} options)"}
+              print(f"JotForm: {result['jotform']}")
+          except Exception as e:
+              result["jotform"] = {"status": "error", "message": str(e)[:200]}
+              print(f"JotForm ERROR: {e}")
+
+          # ── Write result file ────────────────────────────────────
+          with open("fleet_action_result.json", "w") as f:
+              json.dump(result, f, indent=2)
+
+          # ── Job summary ──────────────────────────────────────────
+          summary_path = os.environ.get("GITHUB_STEP_SUMMARY")
+          if summary_path:
+              with open(summary_path, "a") as f:
+                  f.write(f"## {action}: `{tail}`\n\n")
+                  f.write("| System | Status | Detail |\n|---|---|---|\n")
+                  for k in ("safetyculture", "jotform"):
+                      s = result[k]
+                      icon = {"ok":"✅","noop":"➖","error":"❌","skipped":"⏭"}.get(s["status"], "?")
+                      f.write(f"| {k} | {icon} {s['status']} | {s['message']} |\n")
+
+          if all(result[k]["status"] == "error" for k in ("safetyculture","jotform")):
+              sys.exit(1)
+          PYEOF
+
+      - name: Commit result file
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add fleet_action_result.json
+          git diff --cached --quiet || git commit -m "chore: ${{ github.event.inputs.action }} ${{ github.event.inputs.tail }} [$(date -u '+%Y-%m-%d %H:%M UTC')]"
+          git push

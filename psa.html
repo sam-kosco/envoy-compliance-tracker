@@ -500,7 +500,7 @@
     <div id="admin-content" style="display:none">
       <div class="admin-section">
         <h2>Add Tail to Fleet</h2>
-        <p class="hint">Adds the tail to SafetyCulture "PSA Tails", JotForm PSA Debrief dropdown (Q53), and the SharePoint Tail List via Power Automate. Format: N + 1-5 digits + 0-2 letters (e.g. N205JK).</p>
+        <p class="hint">Adds the tail to SafetyCulture "PSA Tails", JotForm PSA Debrief dropdown (Q53), and the SharePoint Tail List. Format: N + 1-5 digits + 0-2 letters (e.g. N205JK).</p>
         <div class="admin-tail-row">
           <input type="text" class="admin-tail-input" id="admin-tail-input" placeholder="N123AB" maxlength="8"
                  onkeydown="if(event.key==='Enter')submitAddTail()" oninput="this.value=this.value.toUpperCase()">
@@ -849,9 +849,11 @@ function selectTail(tail) {
 
 // ── Admin tab ────────────────────────────────────────────
 const ADMIN_PASSWORD = 'PSA2026';
-// Power Automate HTTP trigger. SAS-style signature in the URL acts as auth.
-// PA flow validates, calls SafetyCulture/JotForm/SharePoint, returns a JSON result.
-const PA_WEBHOOK_URL = 'https://defaultede0c57f549f4a909f8c7ea130346f.95.environment.api.powerplatform.com:443/powerautomate/automations/direct/workflows/8c7bff0043a342178476d1423d8f72a5/triggers/manual/paths/invoke?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=Qud5fETiCiHCAE-M2SWS1dZye06OYYMCIZhr8pNbKf4';
+// Power Automate dispatcher flow. Holds a GitHub PAT server-side and calls
+// workflow_dispatch on manage_fleet.yml. Fire-and-forget — the dashboard then
+// polls fleet_action_result.json for the workflow's per-step result.
+const PA_TAIL_WEBHOOK_URL = 'https://defaultede0c57f549f4a909f8c7ea130346f.95.environment.api.powerplatform.com:443/powerautomate/automations/direct/workflows/8c7bff0043a342178476d1423d8f72a5/triggers/manual/paths/invoke?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=Qud5fETiCiHCAE-M2SWS1dZye06OYYMCIZhr8pNbKf4';
+const RESULT_URL      = 'fleet_action_result.json';
 
 function switchTab(name) {
   document.querySelectorAll('.tab-page').forEach(p => p.classList.remove('active'));
@@ -895,23 +897,44 @@ async function submitAddTail() {
   btn.disabled = true;
   result.classList.remove('show');
   status.style.color = '#555';
-  status.textContent = `Submitting ${tail}...`;
+  status.textContent = `Dispatching workflow for ${tail}...`;
   const startedAt = Date.now();
 
   try {
-    const r = await fetch(PA_WEBHOOK_URL, {
+    const dispatchRes = await fetch(PA_TAIL_WEBHOOK_URL, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ tail: tail }),
     });
-    if (!r.ok) {
-      const txt = await r.text();
-      throw new Error(`HTTP ${r.status}: ${txt.slice(0, 200)}`);
+    if (!dispatchRes.ok) {
+      const txt = await dispatchRes.text();
+      throw new Error(`Dispatcher failed: HTTP ${dispatchRes.status} ${txt.slice(0, 200)}`);
     }
-    const data = await r.json();
-    renderAdminResult(data);
-    status.textContent = `Completed in ${Math.round((Date.now()-startedAt)/1000)}s.`;
-    input.value = '';
+
+    status.textContent = `Workflow dispatched. Waiting for result (30-60s)...`;
+
+    let attempt = 0;
+    const maxAttempts = 40; // ~2 min at 3s
+    while (attempt < maxAttempts) {
+      attempt++;
+      await new Promise(r => setTimeout(r, 3000));
+      try {
+        const r = await fetch(RESULT_URL + '?t=' + Date.now());
+        if (r.ok) {
+          const data = await r.json();
+          const ts = new Date(data.timestamp).getTime();
+          if (data.tail === tail && ts >= startedAt - 5000) {
+            renderAdminResult(data);
+            status.textContent = `Completed in ${Math.round((Date.now()-startedAt)/1000)}s.`;
+            input.value = '';
+            return;
+          }
+        }
+      } catch (e) { /* keep polling */ }
+      status.textContent = `Waiting for result... (${attempt * 3}s elapsed)`;
+    }
+    status.textContent = `Timed out waiting for result. Check Actions tab for the run status.`;
+    status.style.color = '#DC2626';
   } catch (e) {
     status.textContent = `Error: ${e.message}`;
     status.style.color = '#DC2626';
@@ -922,9 +945,9 @@ async function submitAddTail() {
 
 function renderAdminResult(data) {
   const result = document.getElementById('admin-result');
-  const labels = { safetyculture: 'SafetyCulture', jotform: 'JotForm', sharepoint: 'SharePoint' };
+  const labels = { safetyculture: 'SafetyCulture', jotform: 'JotForm' };
   let html = `<table><thead><tr><th>System</th><th>Status</th><th>Detail</th></tr></thead><tbody>`;
-  for (const key of ['safetyculture','jotform','sharepoint']) {
+  for (const key of ['safetyculture','jotform']) {
     const s = data[key] || {status:'?', message:''};
     html += `<tr><td>${labels[key]}</td><td class="st-${s.status}">${s.status.toUpperCase()}</td><td>${s.message || ''}</td></tr>`;
   }

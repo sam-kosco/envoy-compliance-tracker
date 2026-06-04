@@ -28,6 +28,7 @@ envoy-compliance-tracker/
 ├── data.json                     # Envoy compliance data (auto-generated)
 ├── psa_data.json                 # PSA compliance data (auto-generated)
 ├── crosswinds_data.json          # Crosswinds compliance data (auto-generated)
+├── fleet_action_result.json      # Last result from manage_fleet.yml (auto-generated)
 ├── envoy_generate_data.py        # Envoy data relay script
 ├── psa_generate_data.py          # PSA data relay script
 ├── crosswinds_generate_data.py   # Crosswinds data relay script
@@ -35,7 +36,8 @@ envoy-compliance-tracker/
     └── workflows/
         ├── data_refresh.yml          # Envoy hourly cron
         ├── psa_data_refresh.yml      # PSA hourly cron
-        └── crosswinds_refresh.yml    # Crosswinds — triggered by Power Automate webhook
+        ├── crosswinds_refresh.yml    # Crosswinds — triggered by Power Automate webhook
+        └── manage_fleet.yml          # PSA admin actions (add tail) — workflow_dispatch
 ```
 
 ---
@@ -129,7 +131,14 @@ All three compliance programs share these three secrets:
 | `CLIENT_ID` | `58191600-ab56-4141-bff6-806805fcbff4` — Foxtrot Report Automation app |
 | `CLIENT_SECRET` | App secret — **expires every 24 months**, set a renewal reminder |
 
-The PSA Admin tab does **not** add any GitHub Secrets — all keys it would need (SafetyCulture, JotForm) live inside the Power Automate flow it calls. The PA HTTP-trigger URL is embedded in `psa.html` (the SAS-style signature in the URL is the auth). See "PSA Admin → Add Tail" below.
+The PSA Admin tab / `manage_fleet.yml` workflow additionally requires:
+
+| Secret | Description |
+|--------|-------------|
+| `SAFETYCULTURE_KEY` | SafetyCulture API token |
+| `JOTFORM_KEY` | JotForm API key (Full Access, Enterprise tenant) — API host is `https://foxtrotaviation.jotform.com/API` |
+
+The Power Automate flow URL is embedded in `psa.html` as `PA_TAIL_WEBHOOK_URL` (same value that lives in `Secrets.env` under the same name). That flow holds a GitHub PAT (stored as a secure variable inside PA), calls `workflow_dispatch` on `manage_fleet.yml`, responds to the dashboard, then appends a row to the SharePoint Tail List itself. See "PSA Admin → Add Tail" below.
 
 The SharePoint Drive ID used by the compliance refresh scripts:  
 `b!_bzXaIx86kOufgJN3ih-BaDIDthKYuxJkJtLi1Bm5irGjCEnK-VHSpBRRm3_SDKU`
@@ -160,64 +169,74 @@ The SharePoint Drive ID used by the compliance refresh scripts:
 
 ## PSA Admin → Add Tail
 
-The PSA dashboard has a password-gated **Admin** tab with an "Add Tail" form. When a tail is submitted, the dashboard does a single synchronous POST to a Power Automate HTTP-trigger flow. PA orchestrates everything; there is no GitHub Actions workflow involved.
+The PSA dashboard has a password-gated **Admin** tab with an "Add Tail" form. Architecture:
 
-**Why PA does it all:** an earlier design dispatched a GitHub workflow that called all three APIs. That required embedding a `ghp_...` PAT in `psa.html`. GitHub's secret scanner auto-revoked the PAT the moment it landed in the public repo. Moving the orchestration into PA eliminates the client-side GitHub token entirely; the only secret in the HTML is the PA HTTP-trigger URL (which carries its own SAS-style signature and is not auto-scanned).
+```
+psa.html (browser)
+   ↓  POST {tail}
+PA Flow  ──── holds GitHub PAT (secure var) ────┐
+   │                                              │
+   │  1. HTTP: POST workflow_dispatch  ──────────┘
+   │     ↓                  (fires GH workflow async)
+   │  2. Condition: dispatch succeeded?
+   │     ├─ true  → Response 200 to dashboard → Add row in SharePoint Tail List
+   │     └─ false → Response 502 to dashboard
 
-### Flow contract
+GH Workflow (manage_fleet.yml, Python, runs ~30-60s):
+   ├──→ SafetyCulture API   (GET set, append, PUT)
+   └──→ JotForm API         (GET Q53, append, POST)
+       ↓
+   commits fleet_action_result.json
 
-**Request** (from `psa.html` → PA):
+psa.html polls fleet_action_result.json for matching tail+timestamp,
+displays a 2-row result table (SC + JotForm).
+```
 
+**Why this shape:** the dashboard is on public GitHub Pages, so a GitHub PAT can't live in `psa.html` — GitHub's secret scanner auto-revokes any PAT it finds in a public commit (verified empirically). PA's HTTP-trigger URL has its own SAS-style signature that GH doesn't scan, so the URL embedded in `psa.html` is safe. The PA flow holds the PAT server-side.
+
+**Why PA does the SharePoint append directly** (instead of the workflow calling back to PA): the Excel "Add a row" connector in PA is the most reliable way to write to a SharePoint Excel table. The workflow Python skips SharePoint entirely; PA does it as a post-Response action.
+
+**SharePoint failure visibility:** PA's Add-row runs **after** the Response is sent, so if it fails the dashboard won't know — the user will see SC + JotForm both succeed. Check the PA flow's run history if a tail is missing from the Tail List.
+
+**Tails are appended (not sorted).** SafetyCulture's web UI supports drag-and-drop reorder for manual cleanup. JotForm preserves `Not Listed` as the final option by removing-then-re-appending it.
+
+### PA Flow shape (4 actions inside the trigger)
+
+1. **Trigger** — When a HTTP request is received. Body schema: `{ "tail": "string" }`.
+2. **HTTP** — POST to `https://api.github.com/repos/sam-kosco/envoy-compliance-tracker/actions/workflows/manage_fleet.yml/dispatches`. Auth header uses the GH PAT held in a secure variable.
+3. **Condition** — `outputs('HTTP')?['statusCode']` equals `204`:
+   - **True branch:** Response `200 {"dispatched": true}` → Excel Online **Add a row into a table** on PSA Debriefs Tail List with `Tails = triggerBody()?['tail']`
+   - **False branch:** Response `502 {"dispatched": false, github_status: ..., github_body: ...}`
+
+### Flow contract (dashboard ↔ PA)
+
+**Request:**
 ```json
-POST {PA_WEBHOOK_URL}
+POST {PA_TAIL_WEBHOOK_URL}
 Content-Type: application/json
 
 {"tail": "N205JK"}
 ```
 
-The dashboard normalizes (`.strip().toUpperCase()`) and regex-validates (`^N\d{1,5}[A-Z]{0,2}$`) before sending. PA should re-validate.
+The dashboard normalizes (`.trim().toUpperCase()`) and regex-validates (`^N\d{1,5}[A-Z]{0,2}$`) before sending. The workflow re-validates defensively.
 
-**Response** (PA → dashboard, returned synchronously via the "Response" action):
+**Response:** `200 {"dispatched": true}` (or `502` on dispatch failure). Fire-and-forget — the dashboard then polls `fleet_action_result.json` for a matching tail+timestamp.
+
+### Result file format
+
+`fleet_action_result.json` (committed by `manage_fleet.yml` after each run):
 
 ```json
 {
-  "safetyculture": {"status": "ok|noop|error", "message": "free-text detail"},
-  "jotform":       {"status": "ok|noop|error", "message": "free-text detail"},
-  "sharepoint":    {"status": "ok|noop|error", "message": "free-text detail"}
+  "tail": "N205JK",
+  "action": "add_tail",
+  "timestamp": "2026-06-04T15:30:00+00:00",
+  "safetyculture": {"status": "ok|noop|error", "message": "..."},
+  "jotform":       {"status": "ok|noop|error", "message": "..."}
 }
 ```
 
-`ok` = added; `noop` = already present; `error` = failure (display the message). Dashboard renders a 3-row table from this.
-
-### What the PA flow needs to do
-
-**Constants** (store in PA as connection references, environment variables, or just hardcode in the flow):
-- `PSA_TAILS_SET_ID` = `responseset_0602a202a6a2458cae66ab6b46640d28`
-- `JOTFORM_BASE` = `https://foxtrotaviation.jotform.com/API`
-- `JOTFORM_FORM_ID` = `213263365115146`
-- `JOTFORM_TAIL_QID` = `53`
-- `SAFETYCULTURE_KEY` — secret string variable
-- `JOTFORM_KEY` — secret string variable
-
-**Sort key** (for both SafetyCulture and JotForm): extract numeric portion after `N`, sort numerically; non-N-format entries sort to the end. JotForm only: keep `Not Listed` as the final option regardless.
-
-**Step 1 — SafetyCulture**
-- `GET https://api.safetyculture.io/response_sets/{PSA_TAILS_SET_ID}` with `Authorization: Bearer {SAFETYCULTURE_KEY}`
-- Extract `responses[].label` into a list
-- If tail already in list → `safetyculture = {status: "noop", message: "already present"}`
-- Else append, sort, then `PUT https://api.safetyculture.io/response_sets/{PSA_TAILS_SET_ID}` with body `{"name": "PSA Tails", "responses": [{"label": "..."}, ...]}`. **PUT preserves response IDs by label match** — existing template bindings and inspection references stay intact.
-
-**Step 2 — JotForm**
-- `GET {JOTFORM_BASE}/form/{JOTFORM_FORM_ID}/question/{JOTFORM_TAIL_QID}?apiKey={JOTFORM_KEY}`
-- Split `content.options` on `|`
-- Separate `Not Listed` from the rest; if tail already in the rest → `jotform = {status: "noop"}`
-- Append, sort, append `Not Listed` last, join with `|`
-- `POST {JOTFORM_BASE}/form/{JOTFORM_FORM_ID}/question/{JOTFORM_TAIL_QID}?apiKey={JOTFORM_KEY}` with form-urlencoded body `question[options]=...`
-
-**Step 3 — SharePoint**
-- Append a row to the PSA Debriefs Tail List with the new tail (existing Excel "Add row" action). If row already exists, treat as `noop`.
-
-**Failure handling:** each step in its own try/scope. Failures populate `{status: "error", message: "..."}` but the flow continues. The Response action returns the combined object regardless. Only return non-200 to the dashboard if the whole flow crashes unexpectedly.
+The dashboard polls every 3s for up to 2 min, displaying a 2-row table (SC + JotForm) once it sees a result whose `tail` matches the submitted value and whose `timestamp` is newer than the dispatch.
 
 ---
 

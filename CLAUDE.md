@@ -198,7 +198,7 @@ displays a 2-row result table (SC + JotForm).
 
 **SharePoint failure visibility:** PA's Add-row runs **after** the Response is sent, so if it fails the dashboard won't know — the user will see SC + JotForm both succeed. Check the PA flow's run history if a tail is missing from the Tail List.
 
-**Tails are appended (not sorted).** SafetyCulture's web UI supports drag-and-drop reorder for manual cleanup. JotForm preserves `Not Listed` as the final option by removing-then-re-appending it.
+**Tails are inserted in numerical order.** The workflow sorts by the numeric portion after `N` (so `N205JK` lands between `N204NN` and `N206IR`, not after `N1999`). JotForm preserves `Not Listed` as the final option by removing it before the sort and re-appending it after. SafetyCulture's `PUT /response_sets/{id}` preserves response IDs by label-match, so reordering does not invalidate existing template bindings or historical inspection answers.
 
 ### PA Flow shape (4 actions inside the trigger)
 

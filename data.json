@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-04T01:09:35.644905+00:00",
+  "generated": "2026-06-04T03:16:50.449154+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -949,12 +949,12 @@
     },
     {
       "tail": "N286NN",
-      "lastService": "2026-06-01",
+      "lastService": "2026-06-03",
       "lastED1": "2026-05-11",
       "lastED2": "2026-04-17",
-      "lastIHC": "2026-06-01",
+      "lastIHC": "2026-06-03",
       "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
+      "lastTech": "Steven Wilson",
       "ED1": 6,
       "ED2": 12
     },
@@ -2032,6 +2032,15 @@
       "date": "2027-05-26",
       "name": "Casey Henry",
       "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N286NN",
+      "date": "2026-06-03",
+      "name": "Steven Wilson",
+      "location": "SGF",
       "IHC": 1,
       "ED1": 0,
       "ED2": 0

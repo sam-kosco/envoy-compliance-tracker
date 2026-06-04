@@ -48,7 +48,7 @@
   .band-date { font-family:var(--cond); font-size:14px; font-weight:700; color:white; }
 
   /* LAYOUT */
-  main { max-width:1440px; margin:0 auto; padding:24px 28px; display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+  main { width:66.66vw; margin:0 auto; padding:24px 28px; display:grid; grid-template-columns:1fr 1fr; gap:20px; }
   .col-full { grid-column:1/-1; }
 
   /* CARD */
@@ -180,7 +180,8 @@
   .fade-in { animation:fadeIn 0.25s ease forwards; }
 
   @media(max-width:960px){
-    main{grid-template-columns:1fr;padding:16px;}
+    main{width:auto;grid-template-columns:1fr;padding:16px;}
+    .hdr-inner,.band-inner{width:auto;padding:0 16px;}
     .stat-strip{grid-template-columns:repeat(2,1fr);}
     .compliance-grid{grid-template-columns:1fr 1fr;}
     .history-row{grid-template-columns:1fr 1fr;}
@@ -295,9 +296,8 @@
 
   /* Constrain header and band content to match main grid width */
   .hdr-inner, .band-inner {
-    max-width: 1440px;
+    width: 66.66vw;
     margin: 0 auto;
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;

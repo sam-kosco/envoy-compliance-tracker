@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-04T01:02:00.166456+00:00",
+  "generated": "2026-06-04T02:01:30.903000+00:00",
   "planes": [
     {
       "tail": "N351DC",
@@ -942,13 +942,20 @@
     },
     {
       "tail": "N141DK",
-      "status": "soon",
-      "count7d": 1,
-      "daysSinceLast": 6,
-      "lastClean": "2026-05-29",
+      "status": "compliant",
+      "count7d": 2,
+      "daysSinceLast": 0,
+      "lastClean": "2026-06-04",
       "lastLocation": "KLAN",
       "lastTech": "Jakendell Brown",
       "recentInspections": [
+        {
+          "audit_id": "audit_003028f072b34c64a1d6f313ae3bcaf5",
+          "date": "2026-06-04",
+          "location": "KLAN",
+          "tech": "Jakendell Brown",
+          "report_url": "https://app.safetyculture.com/report/public/audit/904352e5803429797c38dc85af03d97f4fad2d4629b98df30e39ae41ac1d85b1"
+        },
         {
           "audit_id": "audit_89e4c798344940b397fc6275e10b100e",
           "date": "2026-05-29",
@@ -999,13 +1006,21 @@
     },
     {
       "tail": "N650KN",
-      "status": "noncompliant",
-      "count7d": 0,
-      "daysSinceLast": null,
-      "lastClean": null,
-      "lastLocation": null,
-      "lastTech": null,
-      "recentInspections": []
+      "status": "soon",
+      "count7d": 1,
+      "daysSinceLast": 0,
+      "lastClean": "2026-06-04",
+      "lastLocation": "KLAN",
+      "lastTech": "Jakendell Brown",
+      "recentInspections": [
+        {
+          "audit_id": "audit_0f46fc1ea44b46bc936ea4b436df6fd6",
+          "date": "2026-06-04",
+          "location": "KLAN",
+          "tech": "Jakendell Brown",
+          "report_url": "https://app.safetyculture.com/report/public/audit/85ad05993cd596546238aabc3dfd8b51c861c28026243e64b261ce6a8b3b3bb3"
+        }
+      ]
     },
     {
       "tail": "N714KJ",

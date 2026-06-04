@@ -326,6 +326,42 @@
   .band-inner {
     justify-content: center;
   }
+
+  /* === Tabs & Admin (added) === */
+  .tab-bar{background:var(--navy);border-top:1px solid rgba(255,255,255,0.1);display:flex;padding:0 28px;gap:0;}
+  .tab-btn{font-family:var(--cond);font-size:14px;font-weight:700;color:rgba(255,255,255,0.5);padding:12px 20px;cursor:pointer;border:none;background:none;border-bottom:3px solid transparent;letter-spacing:0.5px;transition:color 0.15s,border-color 0.15s;text-transform:uppercase;}
+  .tab-btn:hover{color:rgba(255,255,255,0.8);}
+  .tab-btn.active{color:white;border-bottom-color:var(--orange);}
+  .tab-page{display:none;}
+  .tab-page.active{display:block;}
+  .admin-gate{max-width:420px;margin:60px auto;background:white;padding:32px;border-radius:var(--radius);box-shadow:var(--shadow-md);border:1px solid #E5E7EB;}
+  .admin-gate h2{font-family:var(--cond);font-size:18px;color:var(--navy);text-transform:uppercase;letter-spacing:1px;margin:0 0 8px;}
+  .admin-gate p{color:#666;font-size:13px;margin:0 0 20px;}
+  .admin-pw-input{width:100%;padding:11px 14px;font-size:14px;border:1.5px solid #D1D5DB;border-radius:6px;outline:none;font-family:inherit;box-sizing:border-box;}
+  .admin-pw-input:focus{border-color:var(--orange);}
+  .admin-pw-btn{margin-top:12px;width:100%;padding:11px;background:var(--navy);color:white;font-family:var(--cond);font-size:14px;font-weight:700;letter-spacing:1px;text-transform:uppercase;border:none;border-radius:6px;cursor:pointer;}
+  .admin-pw-btn:hover{background:#2A3D6B;}
+  .admin-pw-error{color:#DC2626;font-size:13px;margin-top:10px;display:none;}
+  .admin-section{max-width:560px;margin:32px auto;background:white;padding:28px;border-radius:var(--radius);box-shadow:var(--shadow-md);border:1px solid #E5E7EB;}
+  .admin-section h2{font-family:var(--cond);font-size:18px;color:var(--navy);text-transform:uppercase;letter-spacing:1px;margin:0 0 6px;}
+  .admin-section .hint{color:#666;font-size:13px;margin:0 0 18px;}
+  .admin-tail-row{display:flex;gap:8px;}
+  .admin-tail-input{flex:1;padding:11px 14px;font-size:15px;border:1.5px solid #D1D5DB;border-radius:6px;outline:none;font-family:inherit;text-transform:uppercase;letter-spacing:0.5px;}
+  .admin-tail-input:focus{border-color:var(--orange);}
+  .admin-tail-btn{padding:11px 22px;background:var(--orange);color:white;font-family:var(--cond);font-size:14px;font-weight:700;letter-spacing:1px;text-transform:uppercase;border:none;border-radius:6px;cursor:pointer;}
+  .admin-tail-btn:hover{background:var(--orange-light);}
+  .admin-tail-btn:disabled{background:#9CA3AF;cursor:not-allowed;}
+  .admin-status{margin-top:18px;font-size:13px;color:#555;min-height:20px;}
+  .admin-result{margin-top:18px;border:1px solid #E5E7EB;border-radius:6px;overflow:hidden;display:none;}
+  .admin-result.show{display:block;}
+  .admin-result table{width:100%;border-collapse:collapse;font-size:13px;}
+  .admin-result th{background:var(--off-white);text-align:left;padding:8px 12px;font-family:var(--cond);font-size:11px;text-transform:uppercase;letter-spacing:0.5px;color:#555;border-bottom:1px solid #E5E7EB;}
+  .admin-result td{padding:8px 12px;border-bottom:1px solid #F3F4F6;}
+  .admin-result tr:last-child td{border-bottom:none;}
+  .admin-result .st-ok{color:#16A34A;font-weight:700;}
+  .admin-result .st-noop{color:#6B7280;font-weight:700;}
+  .admin-result .st-error{color:#DC2626;font-weight:700;}
+  .admin-result .st-skipped{color:#9CA3AF;font-weight:700;}
 </style>
 </head>
 <body>
@@ -353,7 +389,14 @@
 </div>
 </div>
 
+
+<div class="tab-bar">
+  <button class="tab-btn active" onclick="switchTab('fleet')">Fleet Tracker</button>
+  <button class="tab-btn" onclick="switchTab('admin')">Admin</button>
+</div>
+
 <main>
+  <div class="tab-page active" id="tab-fleet">
   <div class="stat-strip col-full">
     <div class="stat-card s-total"><div class="stat-label">Total Aircraft</div><div class="stat-value" id="stat-total">—</div><div class="stat-sub">in fleet</div></div>
     <div class="stat-card s-red"><div class="stat-label">Noncompliant</div><div class="stat-value" id="stat-noncomp">—</div><div class="stat-sub">overdue or no service</div></div>
@@ -441,6 +484,34 @@
       </table>
     </div>
   </div>
+  </div><!-- /tab-fleet -->
+
+  <div class="tab-page" id="tab-admin">
+    <!-- Password gate (visible until correct password entered) -->
+    <div class="admin-gate" id="admin-gate">
+      <h2>Admin Access</h2>
+      <p>Enter the admin password to manage the PSA fleet.</p>
+      <input type="password" class="admin-pw-input" id="admin-pw-input" placeholder="Password" onkeydown="if(event.key==='Enter')tryAdminLogin()">
+      <button class="admin-pw-btn" onclick="tryAdminLogin()">Unlock</button>
+      <div class="admin-pw-error" id="admin-pw-error">Incorrect password.</div>
+    </div>
+
+    <!-- Admin content (hidden until unlocked) -->
+    <div id="admin-content" style="display:none">
+      <div class="admin-section">
+        <h2>Add Tail to Fleet</h2>
+        <p class="hint">Adds the tail to SafetyCulture "PSA Tails", JotForm PSA Debrief dropdown (Q53), and the SharePoint Tail List. Format: N + 1-5 digits + 0-2 letters (e.g. N205JK).</p>
+        <div class="admin-tail-row">
+          <input type="text" class="admin-tail-input" id="admin-tail-input" placeholder="N123AB" maxlength="8"
+                 onkeydown="if(event.key==='Enter')submitAddTail()" oninput="this.value=this.value.toUpperCase()">
+          <button class="admin-tail-btn" id="admin-tail-btn" onclick="submitAddTail()">Add</button>
+        </div>
+        <div class="admin-status" id="admin-status"></div>
+        <div class="admin-result" id="admin-result"></div>
+      </div>
+    </div>
+  </div><!-- /tab-admin -->
+
 </main>
 
 <footer>&copy; Foxtrot Aviation Services &nbsp;·&nbsp; PSA Fleet Compliance Portal &nbsp;·&nbsp; Confidential</footer>
@@ -774,6 +845,124 @@ function selectTail(tail) {
     </div>
   `;
   panel.scrollIntoView({behavior:'smooth',block:'nearest'});
+}
+
+// ── Admin tab ────────────────────────────────────────────
+const ADMIN_PASSWORD = 'PSA2026';
+const GH_REPO        = 'sam-kosco/envoy-compliance-tracker';
+const GH_WORKFLOW    = 'manage_fleet.yml';
+const GH_PAT         = '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'; // workflow scope only
+const RESULT_URL     = 'fleet_action_result.json';
+
+function switchTab(name) {
+  document.querySelectorAll('.tab-page').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('tab-' + name).classList.add('active');
+  document.querySelectorAll('.tab-btn').forEach(b => {
+    const label = b.textContent.trim().toLowerCase();
+    if ((name === 'fleet' && label.includes('fleet')) ||
+        (name === 'admin' && label.includes('admin'))) {
+      b.classList.add('active');
+    }
+  });
+}
+
+function tryAdminLogin() {
+  const input = document.getElementById('admin-pw-input');
+  const err   = document.getElementById('admin-pw-error');
+  if (input.value === ADMIN_PASSWORD) {
+    document.getElementById('admin-gate').style.display = 'none';
+    document.getElementById('admin-content').style.display = 'block';
+  } else {
+    err.style.display = 'block';
+    input.value = '';
+    setTimeout(() => err.style.display = 'none', 3000);
+  }
+}
+
+async function submitAddTail() {
+  const input  = document.getElementById('admin-tail-input');
+  const btn    = document.getElementById('admin-tail-btn');
+  const status = document.getElementById('admin-status');
+  const result = document.getElementById('admin-result');
+
+  const tail = input.value.trim().toUpperCase();
+  if (!/^N\d{1,5}[A-Z]{0,2}$/.test(tail)) {
+    status.textContent = 'Invalid tail format. Expected N + 1-5 digits + 0-2 letters (e.g. N205JK).';
+    status.style.color = '#DC2626';
+    return;
+  }
+
+  btn.disabled = true;
+  result.classList.remove('show');
+  status.style.color = '#555';
+  status.textContent = `Dispatching workflow for ${tail}...`;
+
+  const startedAt = Date.now();
+
+  try {
+    const dispatchRes = await fetch(
+      `https://api.github.com/repos/${GH_REPO}/actions/workflows/${GH_WORKFLOW}/dispatches`,
+      {
+        method: 'POST',
+        headers: {
+          'Authorization': 'Bearer ' + GH_PAT,
+          'Accept': 'application/vnd.github.v3+json',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ ref: 'main', inputs: { action: 'add_tail', tail: tail } }),
+      }
+    );
+    if (!dispatchRes.ok) {
+      const txt = await dispatchRes.text();
+      throw new Error(`Workflow dispatch failed: ${dispatchRes.status} ${txt}`);
+    }
+
+    status.textContent = `Workflow dispatched. Waiting for result (this can take 30-60s)...`;
+
+    // Poll fleet_action_result.json until we see one with our tail dated after startedAt.
+    let attempt = 0;
+    const maxAttempts = 40; // ~2 min at 3s/attempt
+    while (attempt < maxAttempts) {
+      attempt++;
+      await new Promise(r => setTimeout(r, 3000));
+      try {
+        const r = await fetch(RESULT_URL + '?t=' + Date.now());
+        if (r.ok) {
+          const data = await r.json();
+          const ts = new Date(data.timestamp).getTime();
+          if (data.tail === tail && ts >= startedAt - 5000) {
+            renderAdminResult(data);
+            status.textContent = `Completed in ${Math.round((Date.now()-startedAt)/1000)}s.`;
+            input.value = '';
+            btn.disabled = false;
+            return;
+          }
+        }
+      } catch (e) { /* ignore, keep polling */ }
+      status.textContent = `Waiting for result... (${attempt * 3}s elapsed)`;
+    }
+    status.textContent = `Timed out waiting for result. Check the GitHub Actions tab for the run status.`;
+    status.style.color = '#DC2626';
+  } catch (e) {
+    status.textContent = `Error: ${e.message}`;
+    status.style.color = '#DC2626';
+  } finally {
+    btn.disabled = false;
+  }
+}
+
+function renderAdminResult(data) {
+  const result = document.getElementById('admin-result');
+  const labels = { safetyculture: 'SafetyCulture', jotform: 'JotForm', powerautomate: 'Power Automate' };
+  let html = `<table><thead><tr><th>System</th><th>Status</th><th>Detail</th></tr></thead><tbody>`;
+  for (const key of ['safetyculture','jotform','powerautomate']) {
+    const s = data[key] || {status:'?', message:''};
+    html += `<tr><td>${labels[key]}</td><td class="st-${s.status}">${s.status.toUpperCase()}</td><td>${s.message || ''}</td></tr>`;
+  }
+  html += `</tbody></table>`;
+  result.innerHTML = html;
+  result.classList.add('show');
 }
 </script>
 </body>

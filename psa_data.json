@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-05T01:44:40.854954+00:00",
+  "generated": "2026-06-05T03:07:58.028474+00:00",
   "planes": [
     {
       "tail": "N500AE",
@@ -1455,20 +1455,20 @@
     },
     {
       "tail": "N578NN",
-      "lastService": "2026-06-02",
-      "lastCC": "2026-06-02",
+      "lastService": "2026-06-04",
+      "lastCC": "2026-06-04",
       "lastDSC": "2026-05-27",
       "lastCE": "2026-05-27",
       "lastED1": "2026-06-02",
       "lastED2": "2026-06-02",
       "lastLav": "2026-05-06",
-      "lastIC": "2026-06-02",
-      "lastEC": "2026-06-02",
+      "lastIC": "2026-06-04",
+      "lastEC": "2026-06-04",
       "lastED3": null,
       "lastED4": null,
-      "lastLocation": "GSP",
-      "lastTech": "Brittany Eckelberry",
-      "CC": 27,
+      "lastLocation": "CAK",
+      "lastTech": "Ashton Conner",
+      "CC": 29,
       "DSC": 21,
       "CE": 21,
       "ED1": 27,
@@ -3039,6 +3039,22 @@
     }
   ],
   "debriefs": [
+    {
+      "tail": "N578NN",
+      "date": "2026-06-04",
+      "name": "Ashton Conner",
+      "location": "CAK",
+      "IC": 1,
+      "EC": 1,
+      "CC": 1,
+      "DSC": 0,
+      "CE": 0,
+      "ED1": 0,
+      "ED2": 0,
+      "ED3": 0,
+      "ED4": 0,
+      "Lav": 0
+    },
     {
       "tail": "N570NN",
       "date": "2026-06-03",

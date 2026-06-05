@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-05T01:00:36.880218+00:00",
+  "generated": "2026-06-05T03:15:57.602110+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -1543,23 +1543,23 @@
     },
     {
       "tail": "N346BB",
-      "lastService": "2026-05-28",
+      "lastService": "2026-06-04",
       "lastED1": "2026-05-16",
       "lastED2": "2026-04-18",
-      "lastIHC": "2026-05-28",
-      "lastLocation": "XNA",
-      "lastTech": "Casey Henry",
+      "lastIHC": "2026-06-04",
+      "lastLocation": "LIT",
+      "lastTech": "Dane  Clement",
       "ED1": 10,
       "ED2": 12
     },
     {
       "tail": "N346BB",
-      "lastService": "2026-05-28",
+      "lastService": "2026-06-04",
       "lastED1": "2026-05-16",
       "lastED2": "2026-04-18",
-      "lastIHC": "2026-05-28",
-      "lastLocation": "XNA",
-      "lastTech": "Casey Henry",
+      "lastIHC": "2026-06-04",
+      "lastLocation": "LIT",
+      "lastTech": "Dane  Clement",
       "ED1": 10,
       "ED2": 12
     },
@@ -2032,6 +2032,15 @@
       "date": "2027-05-26",
       "name": "Casey Henry",
       "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N346BB",
+      "date": "2026-06-04",
+      "name": "Dane  Clement",
+      "location": "LIT",
       "IHC": 1,
       "ED1": 0,
       "ED2": 0

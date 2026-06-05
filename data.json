@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-05T05:37:11.816993+00:00",
+  "generated": "2026-06-05T07:37:34.540117+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -366,13 +366,13 @@
     },
     {
       "tail": "N233NN",
-      "lastService": "2026-05-25",
-      "lastED1": "2026-03-15",
+      "lastService": "2026-06-04",
+      "lastED1": "2026-06-04",
       "lastED2": "2026-02-16",
-      "lastIHC": "2026-05-25",
-      "lastLocation": "CMH",
-      "lastTech": "Tanaija Price",
-      "ED1": -52,
+      "lastIHC": "2026-06-04",
+      "lastLocation": "XNA",
+      "lastTech": "Shaun Neil",
+      "ED1": 29,
       "ED2": -49
     },
     {
@@ -421,12 +421,12 @@
     },
     {
       "tail": "N238NN",
-      "lastService": "2026-06-03",
+      "lastService": "2026-06-04",
       "lastED1": "2026-06-03",
       "lastED2": "2026-06-03",
-      "lastIHC": "2026-06-03",
-      "lastLocation": "XNA",
-      "lastTech": "Riley Woods",
+      "lastIHC": "2026-06-04",
+      "lastLocation": "CMH",
+      "lastTech": "Dane  Clement",
       "ED1": 28,
       "ED2": 58
     },
@@ -630,12 +630,12 @@
     },
     {
       "tail": "N257NN",
-      "lastService": "2026-06-01",
+      "lastService": "2026-06-04",
       "lastED1": "2026-05-11",
       "lastED2": "2026-04-28",
-      "lastIHC": "2026-06-01",
-      "lastLocation": "CMH",
-      "lastTech": "Alex Hamilton",
+      "lastIHC": "2026-06-04",
+      "lastLocation": "CVG",
+      "lastTech": "Precious Roberson",
       "ED1": 5,
       "ED2": 22
     },
@@ -1246,14 +1246,14 @@
     },
     {
       "tail": "N318JE",
-      "lastService": "2026-05-28",
-      "lastED1": "2026-04-30",
-      "lastED2": "2026-03-31",
-      "lastIHC": "2026-05-28",
-      "lastLocation": "SGF",
-      "lastTech": "Steven  Wilson",
-      "ED1": -6,
-      "ED2": -6
+      "lastService": "2026-06-04",
+      "lastED1": "2026-06-04",
+      "lastED2": "2026-06-04",
+      "lastIHC": "2026-06-04",
+      "lastLocation": "LIT",
+      "lastTech": "Dane  Clement",
+      "ED1": 29,
+      "ED2": 59
     },
     {
       "tail": "N319RG",
@@ -1433,14 +1433,14 @@
     },
     {
       "tail": "N334CR",
-      "lastService": "2026-06-01",
-      "lastED1": "2026-04-30",
-      "lastED2": "2026-03-18",
-      "lastIHC": "2026-06-01",
-      "lastLocation": "DFW",
-      "lastTech": "Sharmaine Brown",
-      "ED1": -6,
-      "ED2": -19
+      "lastService": "2026-06-04",
+      "lastED1": "2026-06-04",
+      "lastED2": "2026-06-04",
+      "lastIHC": "2026-06-04",
+      "lastLocation": "LIT",
+      "lastTech": "Dane  Clement",
+      "ED1": 29,
+      "ED2": 59
     },
     {
       "tail": "N335JS",
@@ -1862,12 +1862,12 @@
     },
     {
       "tail": "N780AH",
-      "lastService": "2026-05-31",
+      "lastService": "2026-06-04",
       "lastED1": "2026-05-31",
       "lastED2": "2026-02-06",
-      "lastIHC": "2026-05-31",
+      "lastIHC": "2026-06-04",
       "lastLocation": "CVG",
-      "lastTech": "Todd Axle",
+      "lastTech": "Precious Roberson",
       "ED1": 25,
       "ED2": -59
     },
@@ -2149,6 +2149,60 @@
       "date": "2026-06-04",
       "name": "Casey Henry",
       "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N233NN",
+      "date": "2026-06-04",
+      "name": "Shaun Neil",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N334CR",
+      "date": "2026-06-04",
+      "name": "Dane  Clement",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 1
+    },
+    {
+      "tail": "N318JE",
+      "date": "2026-06-04",
+      "name": "Dane  Clement",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 1
+    },
+    {
+      "tail": "N238NN",
+      "date": "2026-06-04",
+      "name": "Dane  Clement",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N780AH",
+      "date": "2026-06-04",
+      "name": "Precious Roberson",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N257NN",
+      "date": "2026-06-04",
+      "name": "Precious Roberson",
+      "location": "CVG",
       "IHC": 1,
       "ED1": 0,
       "ED2": 0

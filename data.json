@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-06T08:58:21.886868+00:00",
+  "generated": "2026-06-06T09:46:58.686722+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -201,12 +201,12 @@
     },
     {
       "tail": "N218NN",
-      "lastService": "2026-06-03",
+      "lastService": "2026-06-05",
       "lastED1": "2026-05-29",
       "lastED2": "2026-05-30",
-      "lastIHC": "2026-06-03",
-      "lastLocation": "XNA",
-      "lastTech": "Riley Woods",
+      "lastIHC": "2026-06-05",
+      "lastLocation": "DFW",
+      "lastTech": "Aunyae Morrison",
       "ED1": 22,
       "ED2": 53
     },
@@ -1499,12 +1499,12 @@
     },
     {
       "tail": "N340TC",
-      "lastService": "2026-06-01",
+      "lastService": "2026-06-05",
       "lastED1": "2026-06-01",
       "lastED2": "2026-06-01",
-      "lastIHC": "2026-06-01",
-      "lastLocation": "LIT",
-      "lastTech": "Dane  Clement",
+      "lastIHC": "2026-06-05",
+      "lastLocation": "DFW",
+      "lastTech": "Aunyae Morrison",
       "ED1": 25,
       "ED2": 55
     },
@@ -1686,13 +1686,13 @@
     },
     {
       "tail": "N760MQ",
-      "lastService": "2026-05-21",
-      "lastED1": "2026-04-26",
+      "lastService": "2026-06-05",
+      "lastED1": "2026-06-05",
       "lastED2": "2026-04-15",
-      "lastIHC": "2026-05-21",
-      "lastLocation": "CMH",
-      "lastTech": "Alex Hamilton",
-      "ED1": -11,
+      "lastIHC": "2026-06-05",
+      "lastLocation": "DFW",
+      "lastTech": "Aunyae Morrison",
+      "ED1": 29,
       "ED2": 8
     },
     {
@@ -2322,6 +2322,33 @@
       "location": "DFW",
       "IHC": 1,
       "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N218NN",
+      "date": "2026-06-05",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N340TC",
+      "date": "2026-06-05",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N760MQ",
+      "date": "2026-06-05",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 1,
       "ED2": 0
     },
     {

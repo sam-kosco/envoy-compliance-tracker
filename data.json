@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-07T10:49:24.294141+00:00",
+  "generated": "2026-06-07T11:37:01.872342+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -168,12 +168,12 @@
     },
     {
       "tail": "N215NN",
-      "lastService": "2026-06-05",
+      "lastService": "2026-06-06",
       "lastED1": "2026-06-04",
       "lastED2": "2026-04-09",
-      "lastIHC": "2026-06-05",
+      "lastIHC": "2026-06-06",
       "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastTech": "Natally  Garcia",
       "ED1": 27,
       "ED2": 1
     },
@@ -806,12 +806,12 @@
     },
     {
       "tail": "N273NN",
-      "lastService": "2026-05-31",
+      "lastService": "2026-06-06",
       "lastED1": "2026-05-26",
       "lastED2": "2026-04-05",
-      "lastIHC": "2026-05-31",
-      "lastLocation": "CMH",
-      "lastTech": "Alexander Hamilton",
+      "lastIHC": "2026-06-06",
+      "lastLocation": "DFW",
+      "lastTech": "Natally  Garcia",
       "ED1": 18,
       "ED2": -3
     },
@@ -1840,12 +1840,12 @@
     },
     {
       "tail": "N778RH",
-      "lastService": "2026-05-29",
+      "lastService": "2026-06-06",
       "lastED1": "2026-05-06",
       "lastED2": "2026-05-01",
-      "lastIHC": "2026-05-29",
+      "lastIHC": "2026-06-06",
       "lastLocation": "DFW",
-      "lastTech": "Sharmaine Brown",
+      "lastTech": "Natally  Garcia",
       "ED1": -2,
       "ED2": 23
     },
@@ -2353,6 +2353,33 @@
     },
     {
       "tail": "N770JM",
+      "date": "2026-06-06",
+      "name": "Natally  Garcia",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N273NN",
+      "date": "2026-06-06",
+      "name": "Natally  Garcia",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N215NN",
+      "date": "2026-06-06",
+      "name": "Natally  Garcia",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N778RH",
       "date": "2026-06-06",
       "name": "Natally  Garcia",
       "location": "DFW",

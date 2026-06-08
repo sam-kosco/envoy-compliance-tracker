@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-08T09:43:17.856541+00:00",
+  "generated": "2026-06-08T11:40:56.125320+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -113,12 +113,12 @@
     },
     {
       "tail": "N210NN",
-      "lastService": "2026-06-02",
+      "lastService": "2026-06-07",
       "lastED1": "2026-05-27",
       "lastED2": "2026-05-27",
-      "lastIHC": "2026-06-02",
-      "lastLocation": "XNA",
-      "lastTech": "Riley Woods",
+      "lastIHC": "2026-06-07",
+      "lastLocation": "DFW",
+      "lastTech": "Sharmaine Brown",
       "ED1": 18,
       "ED2": 48
     },
@@ -355,25 +355,25 @@
     },
     {
       "tail": "N232NN",
-      "lastService": "2026-06-02",
+      "lastService": "2026-06-07",
       "lastED1": "2026-04-16",
       "lastED2": "2026-05-13",
-      "lastIHC": "2026-06-02",
-      "lastLocation": "CMH",
-      "lastTech": "Tanaija Price",
+      "lastIHC": "2026-06-07",
+      "lastLocation": "DFW",
+      "lastTech": "Sharmaine Brown",
       "ED1": -23,
       "ED2": 34
     },
     {
       "tail": "N233NN",
-      "lastService": "2026-06-06",
+      "lastService": "2026-06-07",
       "lastED1": "2026-06-04",
-      "lastED2": "2026-02-16",
-      "lastIHC": "2026-06-06",
-      "lastLocation": "XNA",
-      "lastTech": "Riley Woods",
+      "lastED2": "2026-06-07",
+      "lastIHC": "2026-06-07",
+      "lastLocation": "DFW",
+      "lastTech": "Sharmaine Brown",
       "ED1": 26,
-      "ED2": -52
+      "ED2": 59
     },
     {
       "tail": "N234JW",
@@ -806,14 +806,14 @@
     },
     {
       "tail": "N273NN",
-      "lastService": "2026-06-06",
+      "lastService": "2026-06-07",
       "lastED1": "2026-05-26",
-      "lastED2": "2026-04-05",
-      "lastIHC": "2026-06-06",
+      "lastED2": "2026-06-07",
+      "lastIHC": "2026-06-07",
       "lastLocation": "DFW",
-      "lastTech": "Natally  Garcia",
+      "lastTech": "Sharmaine Brown",
       "ED1": 17,
-      "ED2": -4
+      "ED2": 59
     },
     {
       "tail": "N274NN",
@@ -1928,14 +1928,14 @@
     },
     {
       "tail": "N786SM",
-      "lastService": "2026-05-17",
-      "lastED1": "2026-03-09",
-      "lastED2": "2026-01-30",
-      "lastIHC": "2026-05-17",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
-      "ED1": -61,
-      "ED2": -69
+      "lastService": "2026-06-07",
+      "lastED1": "2026-06-07",
+      "lastED2": "2026-06-07",
+      "lastIHC": "2026-06-07",
+      "lastLocation": "DFW",
+      "lastTech": "Sharmaine Brown",
+      "ED1": 29,
+      "ED2": 59
     },
     {
       "tail": "N787BP",
@@ -2341,6 +2341,60 @@
       "IHC": 1,
       "ED1": 0,
       "ED2": 0
+    },
+    {
+      "tail": "N233NN",
+      "date": "2026-06-07",
+      "name": "Sharmaine Brown",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 1
+    },
+    {
+      "tail": "N273NN",
+      "date": "2026-06-07",
+      "name": "Sharmaine Brown",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 1
+    },
+    {
+      "tail": "N232NN",
+      "date": "2026-06-07",
+      "name": "Sharmaine Brown",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N786SM",
+      "date": "2026-06-07",
+      "name": "Sharmaine Brown",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 1
+    },
+    {
+      "tail": "N210NN",
+      "date": "2026-06-07",
+      "name": "Sharmaine Brown",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N233NN",
+      "date": "2026-06-07",
+      "name": "Sharmaine Brown",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 1
     },
     {
       "tail": "N772MR",

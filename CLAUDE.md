@@ -4,7 +4,7 @@
 **Repo:** `sam-kosco/envoy-compliance-tracker`  
 **Hosted at:** `sam-kosco.github.io/envoy-compliance-tracker/`
 
-This repo hosts three separate aircraft detailing compliance dashboards for Foxtrot Aviation Services. All three share the same GitHub repository, GitHub Secrets, and Microsoft Entra app registration.
+This repo hosts four separate aircraft detailing compliance dashboards for Foxtrot Aviation Services. All four share the same GitHub repository, GitHub Secrets, and Microsoft Entra app registration.
 
 ---
 
@@ -14,6 +14,7 @@ This repo hosts three separate aircraft detailing compliance dashboards for Foxt
 |---------|--------|---------------|------|
 | Envoy | Envoy Air | `/` (index.html) | `index.html` |
 | PSA | PSA Airlines | `/psa.html` | `psa.html` |
+| Mesa | Mesa Airlines | `/mesa.html` | `mesa.html` |
 | Crosswinds | Crosswinds Flight School | `/crosswinds.html` | `crosswinds.html` |
 
 ---
@@ -24,18 +25,22 @@ This repo hosts three separate aircraft detailing compliance dashboards for Foxt
 envoy-compliance-tracker/
 ├── index.html                    # Envoy compliance dashboard
 ├── psa.html                      # PSA compliance dashboard (incl. Admin tab)
+├── mesa.html                     # Mesa compliance dashboard
 ├── crosswinds.html               # Crosswinds compliance dashboard
 ├── data.json                     # Envoy compliance data (auto-generated)
 ├── psa_data.json                 # PSA compliance data (auto-generated)
+├── mesa_data.json                # Mesa compliance data (auto-generated)
 ├── crosswinds_data.json          # Crosswinds compliance data (auto-generated)
 ├── fleet_action_result.json      # Last result from manage_fleet.yml (auto-generated)
 ├── envoy_generate_data.py        # Envoy data relay script
 ├── psa_generate_data.py          # PSA data relay script
+├── mesa_generate_data.py         # Mesa data relay script
 ├── crosswinds_generate_data.py   # Crosswinds data relay script
 └── .github/
     └── workflows/
         ├── data_refresh.yml          # Envoy hourly cron
         ├── psa_data_refresh.yml      # PSA hourly cron
+        ├── mesa_data_refresh.yml     # Mesa hourly cron
         ├── crosswinds_refresh.yml    # Crosswinds — triggered by Power Automate webhook
         └── manage_fleet.yml          # PSA admin actions (add tail) — workflow_dispatch
 ```
@@ -44,17 +49,18 @@ envoy-compliance-tracker/
 
 ## How Each Program Works
 
-### Envoy & PSA
+### Envoy, PSA & Mesa
 1. Field techs submit JotForm debriefs after each service
 2. Power Automate appends submissions to Excel workbooks on SharePoint
-3. GitHub Actions runs hourly (`data_refresh.yml` / `psa_data_refresh.yml`)
+3. GitHub Actions runs hourly (`data_refresh.yml` / `psa_data_refresh.yml` / `mesa_data_refresh.yml`)
 4. Python script downloads Excel from SharePoint via Microsoft Graph API
-5. Script calculates compliance windows and writes `data.json` / `psa_data.json`
+5. Script calculates compliance windows and writes `data.json` / `psa_data.json` / `mesa_data.json`
 6. GitHub commits the JSON; GitHub Pages serves the updated dashboard
 
 **SharePoint source files:**
 - Envoy: `Power Flows/Debriefs/Envoy Debriefs.xlsx`
 - PSA: `Power Flows/Debriefs/PSA Debriefs.xlsx`
+- Mesa: `Power Flows/Debriefs/Mesa Debriefs.xlsx`
 
 ### Crosswinds
 1. Field techs complete SafetyCulture audits on mobile
@@ -83,7 +89,7 @@ envoy-compliance-tracker/
 
 ---
 
-## Compliance Logic (Envoy & PSA)
+## Compliance Logic (Envoy, PSA & Mesa)
 
 Each tracked service has a cycle length. The compliance window is:
 
@@ -118,6 +124,21 @@ Window = Cycle Length - Days Since Last Service
 | ED2 | Exterior Detail #2 | 30 days |
 | Lav | Lav Tank Pressure Wash | 90 days |
 | IC/EC/ED3/ED4 | Various | Info only |
+
+### Mesa Tracked Services
+Cycles come from the **Service WIndow** sheet in `Mesa Debriefs.xlsx` (read dynamically by the script — edit the sheet to change a window).
+
+| Code | Service | Cycle |
+|------|---------|-------|
+| IHC | Interior Heavy Clean | 45 days |
+| ED | Exterior Detail | 30 days |
+| DSC | Deep Seat Clean | 30 days |
+| FD | Detailed Flight Deck Clean | 30 days |
+| CE | Carpet Extraction | 30 days |
+| RON/EC/ESS | RON Clean / Exterior Clean / Disinfection | Info only |
+| FCD | Fleet Campaign Decal | **Ignored** (not shown) |
+
+**Mesa specifics:** the Debriefs sheet has **no Location column** (PSA/Envoy do), so the dashboard shows no last-location. Service cells are recorded as `Yes. <number>`; the trailing number is not used for compliance. Flight Deck is the **last** debriefs column (after Sub ID). Tail roster comes from the **Tails** sheet (column A). No Admin/Add-Tail tab — onboard new tails by adding them to the Tails sheet.
 
 ---
 
@@ -156,6 +177,11 @@ The SharePoint Drive ID used by the compliance refresh scripts:
 - **Trigger:** Hourly cron + manual dispatch
 - **Script:** `psa_generate_data.py`
 - **Output:** commits `psa_data.json`
+
+### `mesa_data_refresh.yml` — Mesa
+- **Trigger:** Hourly cron + manual dispatch
+- **Script:** `mesa_generate_data.py`
+- **Output:** commits `mesa_data.json`
 
 ### `crosswinds_refresh.yml` — Crosswinds
 - **Trigger:** `workflow_dispatch` only (called by Power Automate via GitHub API)
@@ -265,6 +291,7 @@ The script no longer writes to Excel — Power Automate handles all writes using
 |------|------|--------|
 | Renew CLIENT_SECRET | Every 24 months | Entra → App registrations → Foxtrot Report Automation → new secret → update GitHub Secret |
 | Add tail to Envoy fleet | As needed | Add to Tail List sheet in the Envoy SharePoint Excel |
+| Add tail to Mesa fleet | As needed | Add to the Tails sheet (column A) in the Mesa SharePoint Excel |
 | Add tail to PSA fleet | As needed | Use the PSA dashboard → Admin tab (password-gated). One submit updates SafetyCulture, JotForm, and SharePoint together. |
 | Add tail to Crosswinds fleet | As needed | Add to the Crosswinds Tail Numbers global response set in SafetyCulture AND the `TAILS` list in `crosswinds_generate_data.py` |
 | Pause a refresh | As needed | Comment out the `cron:` line in the relevant workflow YAML |

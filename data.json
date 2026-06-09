@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-09T03:14:20.824306+00:00",
+  "generated": "2026-06-09T05:28:12.310078+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -344,14 +344,14 @@
     },
     {
       "tail": "N231AN",
-      "lastService": "2026-06-04",
+      "lastService": "2026-06-08",
       "lastED1": "2026-06-04",
-      "lastED2": "2026-04-15",
-      "lastIHC": "2026-06-04",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
+      "lastED2": "2026-06-08",
+      "lastIHC": "2026-06-08",
+      "lastLocation": "LIT",
+      "lastTech": "Dane  Clement",
       "ED1": 25,
-      "ED2": 5
+      "ED2": 59
     },
     {
       "tail": "N232NN",
@@ -553,23 +553,23 @@
     },
     {
       "tail": "N250NN",
-      "lastService": "2026-05-31",
-      "lastED1": "2026-05-09",
+      "lastService": "2026-06-08",
+      "lastED1": "2026-06-08",
       "lastED2": "2026-05-09",
-      "lastIHC": "2026-05-31",
-      "lastLocation": "XNA",
-      "lastTech": "Shaun Neil",
-      "ED1": -1,
+      "lastIHC": "2026-06-08",
+      "lastLocation": "CVG",
+      "lastTech": "Precious Valadez- Roberson",
+      "ED1": 29,
       "ED2": 29
     },
     {
       "tail": "N251NN",
-      "lastService": "2026-06-04",
+      "lastService": "2026-06-08",
       "lastED1": "2026-05-25",
       "lastED2": "2026-05-25",
-      "lastIHC": "2026-06-04",
+      "lastIHC": "2026-06-08",
       "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastTech": "Sharmaine Brown",
       "ED1": 15,
       "ED2": 45
     },
@@ -718,12 +718,12 @@
     },
     {
       "tail": "N265NN",
-      "lastService": "2026-06-02",
+      "lastService": "2026-06-08",
       "lastED1": "2026-05-15",
       "lastED2": "2026-04-24",
-      "lastIHC": "2026-06-02",
-      "lastLocation": "LIT",
-      "lastTech": "Charles Cobb",
+      "lastIHC": "2026-06-08",
+      "lastLocation": "DFW",
+      "lastTech": "Sharmaine Brown",
       "ED1": 5,
       "ED2": 14
     },
@@ -960,14 +960,14 @@
     },
     {
       "tail": "N287NN",
-      "lastService": "2026-06-07",
+      "lastService": "2026-06-08",
       "lastED1": "2026-06-04",
-      "lastED2": "2026-04-03",
-      "lastIHC": "2026-06-07",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
+      "lastED2": "2026-06-08",
+      "lastIHC": "2026-06-08",
+      "lastLocation": "LIT",
+      "lastTech": "Dane  Clement",
       "ED1": 25,
-      "ED2": -7
+      "ED2": 59
     },
     {
       "tail": "N288NN",
@@ -1279,13 +1279,13 @@
     },
     {
       "tail": "N321JS",
-      "lastService": "2026-06-06",
-      "lastED1": "2026-04-18",
+      "lastService": "2026-06-08",
+      "lastED1": "2026-06-08",
       "lastED2": "2026-03-08",
-      "lastIHC": "2026-06-06",
-      "lastLocation": "CMH",
-      "lastTech": "Alexander Hamilton",
-      "ED1": -22,
+      "lastIHC": "2026-06-08",
+      "lastLocation": "CVG",
+      "lastTech": "Precious Valadez- Roberson",
+      "ED1": 29,
       "ED2": -33
     },
     {
@@ -1455,11 +1455,11 @@
     },
     {
       "tail": "N336TS",
-      "lastService": "2026-06-01",
+      "lastService": "2026-06-08",
       "lastED1": "2026-05-24",
       "lastED2": "2026-05-24",
-      "lastIHC": "2026-06-01",
-      "lastLocation": "LIT",
+      "lastIHC": "2026-06-08",
+      "lastLocation": "CMH",
       "lastTech": "Dane  Clement",
       "ED1": 14,
       "ED2": 44
@@ -1961,14 +1961,14 @@
     },
     {
       "tail": "N789SS",
-      "lastService": "2026-06-07",
-      "lastED1": "2026-04-25",
-      "lastED2": "2026-02-27",
-      "lastIHC": "2026-06-07",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
-      "ED1": -15,
-      "ED2": -42
+      "lastService": "2026-06-08",
+      "lastED1": "2026-06-08",
+      "lastED2": "2026-06-08",
+      "lastIHC": "2026-06-08",
+      "lastLocation": "LIT",
+      "lastTech": "Dane  Clement",
+      "ED1": 29,
+      "ED2": 59
     },
     {
       "tail": "N790MK",
@@ -2032,6 +2032,78 @@
       "date": "2027-05-26",
       "name": "Casey Henry",
       "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N231AN",
+      "date": "2026-06-08",
+      "name": "Dane  Clement",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 1
+    },
+    {
+      "tail": "N336TS",
+      "date": "2026-06-08",
+      "name": "Dane  Clement",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N250NN",
+      "date": "2026-06-08",
+      "name": "Precious Valadez- Roberson",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N321JS",
+      "date": "2026-06-08",
+      "name": "Precious Valadez- Roberson",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N789SS",
+      "date": "2026-06-08",
+      "name": "Dane  Clement",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 1
+    },
+    {
+      "tail": "N287NN",
+      "date": "2026-06-08",
+      "name": "Dane  Clement",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 1
+    },
+    {
+      "tail": "N265NN",
+      "date": "2026-06-08",
+      "name": "Sharmaine Brown",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N251NN",
+      "date": "2026-06-08",
+      "name": "Sharmaine Brown",
+      "location": "DFW",
       "IHC": 1,
       "ED1": 0,
       "ED2": 0

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-09T09:15:27.670097+00:00",
+  "generated": "2026-06-09T11:07:54.443560+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -1037,10 +1037,10 @@
     },
     {
       "tail": "N298FR",
-      "lastService": "2026-06-07",
+      "lastService": "2026-06-08",
       "lastED1": "2026-06-05",
       "lastED2": "2026-05-14",
-      "lastIHC": "2026-06-07",
+      "lastIHC": "2026-06-08",
       "lastLocation": "DFW",
       "lastTech": "Sharmaine Brown",
       "ED1": 26,
@@ -1510,10 +1510,10 @@
     },
     {
       "tail": "N341MB",
-      "lastService": "2026-06-07",
+      "lastService": "2026-06-08",
       "lastED1": "2026-06-01",
       "lastED2": "2026-06-01",
-      "lastIHC": "2026-06-07",
+      "lastIHC": "2026-06-08",
       "lastLocation": "DFW",
       "lastTech": "Sharmaine Brown",
       "ED1": 22,
@@ -1840,13 +1840,13 @@
     },
     {
       "tail": "N778RH",
-      "lastService": "2026-06-06",
-      "lastED1": "2026-05-06",
+      "lastService": "2026-06-08",
+      "lastED1": "2026-06-08",
       "lastED2": "2026-05-01",
-      "lastIHC": "2026-06-06",
+      "lastIHC": "2026-06-08",
       "lastLocation": "DFW",
-      "lastTech": "Natally  Garcia",
-      "ED1": -4,
+      "lastTech": "Sharmaine Brown",
+      "ED1": 29,
       "ED2": 21
     },
     {
@@ -2335,6 +2335,33 @@
     },
     {
       "tail": "N787BP",
+      "date": "2026-06-08",
+      "name": "Sharmaine Brown",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N778RH",
+      "date": "2026-06-08",
+      "name": "Sharmaine Brown",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N298FR",
+      "date": "2026-06-08",
+      "name": "Sharmaine Brown",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N341MB",
       "date": "2026-06-08",
       "name": "Sharmaine Brown",
       "location": "DFW",

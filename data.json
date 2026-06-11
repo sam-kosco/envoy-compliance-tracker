@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-11T13:28:29.813304+00:00",
+  "generated": "2026-06-11T15:15:25.035173+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -234,12 +234,12 @@
     },
     {
       "tail": "N221NN",
-      "lastService": "2026-06-09",
+      "lastService": "2026-06-10",
       "lastED1": "2026-06-04",
       "lastED2": "2026-05-22",
-      "lastIHC": "2026-06-09",
+      "lastIHC": "2026-06-10",
       "lastLocation": "LIT",
-      "lastTech": "Dane  Clement",
+      "lastTech": "Charles Cobb",
       "ED1": 23,
       "ED2": 40
     },
@@ -2284,6 +2284,15 @@
       "date": "2026-06-10",
       "name": "Alexander Hamilton",
       "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N221NN",
+      "date": "2026-06-10",
+      "name": "Charles Cobb",
+      "location": "LIT",
       "IHC": 1,
       "ED1": 0,
       "ED2": 0

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-11T07:49:58.578685+00:00",
+  "generated": "2026-06-11T09:36:47.675907+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -14,12 +14,12 @@
     },
     {
       "tail": "N201NN",
-      "lastService": "2026-06-05",
+      "lastService": "2026-06-10",
       "lastED1": "2026-06-05",
       "lastED2": "2026-04-27",
-      "lastIHC": "2026-06-05",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
+      "lastIHC": "2026-06-10",
+      "lastLocation": "CMH",
+      "lastTech": "Alex Hamilton",
       "ED1": 24,
       "ED2": 15
     },
@@ -641,12 +641,12 @@
     },
     {
       "tail": "N258NN",
-      "lastService": "2026-06-05",
+      "lastService": "2026-06-10",
       "lastED1": "2026-06-05",
       "lastED2": "2026-04-24",
-      "lastIHC": "2026-06-05",
-      "lastLocation": "XNA",
-      "lastTech": "Riley Woods",
+      "lastIHC": "2026-06-10",
+      "lastLocation": "CMH",
+      "lastTech": "Alexander Hamilton",
       "ED1": 24,
       "ED2": 12
     },
@@ -938,13 +938,13 @@
     },
     {
       "tail": "N285NN",
-      "lastService": "2026-06-09",
-      "lastED1": "2026-05-15",
+      "lastService": "2026-06-10",
+      "lastED1": "2026-06-10",
       "lastED2": "2026-04-09",
-      "lastIHC": "2026-06-09",
-      "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
-      "ED1": 3,
+      "lastIHC": "2026-06-10",
+      "lastLocation": "SGF",
+      "lastTech": "Steven Wilson",
+      "ED1": 29,
       "ED2": -3
     },
     {
@@ -1147,10 +1147,10 @@
     },
     {
       "tail": "N309JR",
-      "lastService": "2026-06-06",
+      "lastService": "2026-06-10",
       "lastED1": "2026-05-11",
       "lastED2": "2026-04-23",
-      "lastIHC": "2026-06-06",
+      "lastIHC": "2026-06-10",
       "lastLocation": "CMH",
       "lastTech": "Alexander Hamilton",
       "ED1": -1,
@@ -1180,13 +1180,13 @@
     },
     {
       "tail": "N312BT",
-      "lastService": "2026-06-05",
-      "lastED1": "2026-05-10",
+      "lastService": "2026-06-10",
+      "lastED1": "2026-06-10",
       "lastED2": "2026-04-28",
-      "lastIHC": "2026-06-05",
-      "lastLocation": "CVG",
-      "lastTech": "Precious Roberson",
-      "ED1": -2,
+      "lastIHC": "2026-06-10",
+      "lastLocation": "LIT",
+      "lastTech": "Dane  Clement",
+      "ED1": 29,
       "ED2": 16
     },
     {
@@ -1389,10 +1389,10 @@
     },
     {
       "tail": "N330JT",
-      "lastService": "2026-06-08",
+      "lastService": "2026-06-10",
       "lastED1": "2026-06-07",
       "lastED2": "2026-01-12",
-      "lastIHC": "2026-06-08",
+      "lastIHC": "2026-06-10",
       "lastLocation": "LIT",
       "lastTech": "Dane  Clement",
       "ED1": 26,
@@ -1983,12 +1983,12 @@
     },
     {
       "tail": "N791DK",
-      "lastService": "2026-05-27",
+      "lastService": "2026-06-10",
       "lastED1": "2026-05-13",
       "lastED2": "2026-04-27",
-      "lastIHC": "2026-05-27",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
+      "lastIHC": "2026-06-10",
+      "lastLocation": "CMH",
+      "lastTech": "Alexander Hamilton",
       "ED1": 1,
       "ED2": 15
     },
@@ -2221,6 +2221,69 @@
       "date": "2026-06-10",
       "name": "Riley Woods",
       "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N285NN",
+      "date": "2026-06-10",
+      "name": "Steven Wilson",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N312BT",
+      "date": "2026-06-10",
+      "name": "Dane  Clement",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N330JT",
+      "date": "2026-06-10",
+      "name": "Dane  Clement",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N201NN",
+      "date": "2026-06-10",
+      "name": "Alex Hamilton",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N258NN",
+      "date": "2026-06-10",
+      "name": "Alexander Hamilton",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N309JR",
+      "date": "2026-06-10",
+      "name": "Alexander Hamilton",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N791DK",
+      "date": "2026-06-10",
+      "name": "Alexander Hamilton",
+      "location": "CMH",
       "IHC": 1,
       "ED1": 0,
       "ED2": 0

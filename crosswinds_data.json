@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-11T16:01:55.521694+00:00",
+  "generated": "2026-06-11T17:02:03.203234+00:00",
   "planes": [
     {
       "tail": "N351DC",
@@ -333,13 +333,20 @@
     },
     {
       "tail": "N154DS",
-      "status": "noncompliant",
-      "count7d": 0,
-      "daysSinceLast": 7,
-      "lastClean": "2026-06-04",
+      "status": "soon",
+      "count7d": 1,
+      "daysSinceLast": 0,
+      "lastClean": "2026-06-11",
       "lastLocation": "KPTK",
-      "lastTech": "Garrett Mclane",
+      "lastTech": "Jakendell Brown",
       "recentInspections": [
+        {
+          "audit_id": "audit_91a775c5a7934c4899265e5b5ed72e50",
+          "date": "2026-06-11",
+          "location": "KPTK",
+          "tech": "Jakendell Brown",
+          "report_url": "https://app.safetyculture.com/report/public/audit/1dc19a5c0074aa30b1ac14826458ca4e8366333d0cf2e92945919b35c4ca5c31"
+        },
         {
           "audit_id": "audit_73bc9937a26f40479140a982d2a8cedb",
           "date": "2026-06-04",

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-12T21:37:48.561031+00:00",
+  "generated": "2026-06-12T22:35:53.206395+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -532,12 +532,12 @@
     {
       "tail": "N248NN",
       "lastService": "2026-06-11",
-      "lastED1": "2026-06-11",
+      "lastED1": "2026-04-17",
       "lastED2": "2026-05-05",
       "lastIHC": "2026-06-11",
       "lastLocation": "CVG",
       "lastTech": "Sellers Davis",
-      "ED1": 29,
+      "ED1": -26,
       "ED2": 22
     },
     {
@@ -2060,7 +2060,7 @@
       "name": "Sellers Davis",
       "location": "CVG",
       "IHC": 1,
-      "ED1": 1,
+      "ED1": 0,
       "ED2": 0
     },
     {
@@ -2457,15 +2457,6 @@
       "location": "XNA",
       "IHC": 1,
       "ED1": 1,
-      "ED2": 1
-    },
-    {
-      "tail": "N254NN",
-      "date": "2026-06-10",
-      "name": "Riley Woods",
-      "location": "XNA",
-      "IHC": 1,
-      "ED1": 0,
       "ED2": 1
     },
     {

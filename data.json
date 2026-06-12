@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-12T09:31:01.454369+00:00",
+  "generated": "2026-06-12T15:08:48.919402+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -685,12 +685,12 @@
     },
     {
       "tail": "N262NN",
-      "lastService": "2026-06-10",
+      "lastService": "2026-06-11",
       "lastED1": "2026-06-02",
       "lastED2": "2026-05-07",
-      "lastIHC": "2026-06-10",
-      "lastLocation": "SGF",
-      "lastTech": "Steven Wilson",
+      "lastIHC": "2026-06-11",
+      "lastLocation": "DFW",
+      "lastTech": "Aunyae Morrison",
       "ED1": 20,
       "ED2": 24
     },
@@ -1697,10 +1697,10 @@
     },
     {
       "tail": "N761RW",
-      "lastService": "2026-06-10",
+      "lastService": "2026-06-11",
       "lastED1": "2026-05-31",
       "lastED2": "2026-04-22",
-      "lastIHC": "2026-06-10",
+      "lastIHC": "2026-06-11",
       "lastLocation": "DFW",
       "lastTech": "Aunyae Morrison",
       "ED1": 18,
@@ -1785,12 +1785,12 @@
     },
     {
       "tail": "N770JM",
-      "lastService": "2026-06-07",
+      "lastService": "2026-06-11",
       "lastED1": "2026-06-02",
       "lastED2": "2026-04-10",
-      "lastIHC": "2026-06-07",
+      "lastIHC": "2026-06-11",
       "lastLocation": "DFW",
-      "lastTech": "Sharmaine Brown",
+      "lastTech": "Aunyae Morrison",
       "ED1": 20,
       "ED2": -3
     },
@@ -2335,6 +2335,33 @@
     },
     {
       "tail": "N329DD",
+      "date": "2026-06-11",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N761RW",
+      "date": "2026-06-11",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N770JM",
+      "date": "2026-06-11",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N262NN",
       "date": "2026-06-11",
       "name": "Aunyae Morrison",
       "location": "DFW",

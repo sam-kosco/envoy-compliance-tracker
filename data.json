@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-12T03:16:10.580652+00:00",
+  "generated": "2026-06-12T05:40:17.983887+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -113,12 +113,12 @@
     },
     {
       "tail": "N210NN",
-      "lastService": "2026-06-07",
+      "lastService": "2026-06-11",
       "lastED1": "2026-05-27",
       "lastED2": "2026-05-27",
-      "lastIHC": "2026-06-07",
-      "lastLocation": "DFW",
-      "lastTech": "Sharmaine Brown",
+      "lastIHC": "2026-06-11",
+      "lastLocation": "XNA",
+      "lastTech": "Riley Woods",
       "ED1": 14,
       "ED2": 44
     },
@@ -388,11 +388,11 @@
     },
     {
       "tail": "N235NN",
-      "lastService": "2026-06-03",
+      "lastService": "2026-06-11",
       "lastED1": "2026-04-10",
       "lastED2": "2026-03-11",
-      "lastIHC": "2026-06-03",
-      "lastLocation": "XNA",
+      "lastIHC": "2026-06-11",
+      "lastLocation": "LIT",
       "lastTech": "Riley Woods",
       "ED1": -33,
       "ED2": -33
@@ -531,13 +531,13 @@
     },
     {
       "tail": "N248NN",
-      "lastService": "2026-06-07",
-      "lastED1": "2026-04-17",
+      "lastService": "2026-06-11",
+      "lastED1": "2026-06-11",
       "lastED2": "2026-05-05",
-      "lastIHC": "2026-06-07",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
-      "ED1": -26,
+      "lastIHC": "2026-06-11",
+      "lastLocation": "CVG",
+      "lastTech": "Sellers Davis",
+      "ED1": 29,
       "ED2": 22
     },
     {
@@ -2034,6 +2034,33 @@
       "location": "XNA",
       "IHC": 1,
       "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N210NN",
+      "date": "2026-06-11",
+      "name": "Riley Woods",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N235NN",
+      "date": "2026-06-11",
+      "name": "Riley Woods",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N248NN",
+      "date": "2026-06-11",
+      "name": "Sellers Davis",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 1,
       "ED2": 0
     },
     {

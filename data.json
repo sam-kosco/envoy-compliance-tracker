@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-13T09:10:08.249011+00:00",
+  "generated": "2026-06-13T11:39:50.977863+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -168,23 +168,23 @@
     },
     {
       "tail": "N215NN",
-      "lastService": "2026-06-10",
+      "lastService": "2026-06-12",
       "lastED1": "2026-06-04",
       "lastED2": "2026-06-10",
-      "lastIHC": "2026-06-10",
-      "lastLocation": "XNA",
-      "lastTech": "Shaun Neil",
+      "lastIHC": "2026-06-12",
+      "lastLocation": "CMH",
+      "lastTech": "Alex Hamilton",
       "ED1": 21,
       "ED2": 57
     },
     {
       "tail": "N216NN",
-      "lastService": "2026-05-29",
+      "lastService": "2026-06-12",
       "lastED1": "2026-04-01",
       "lastED2": "2026-04-01",
-      "lastIHC": "2026-05-29",
-      "lastLocation": "XNA",
-      "lastTech": "Riley Woods",
+      "lastIHC": "2026-06-12",
+      "lastLocation": "CMH",
+      "lastTech": "Alex Hamilton",
       "ED1": -43,
       "ED2": -13
     },
@@ -1048,12 +1048,12 @@
     },
     {
       "tail": "N299JJ",
-      "lastService": "2026-05-09",
+      "lastService": "2026-06-12",
       "lastED1": "2026-03-20",
       "lastED2": "2026-04-19",
-      "lastIHC": "2026-05-09",
-      "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastIHC": "2026-06-12",
+      "lastLocation": "CMH",
+      "lastTech": "Alex Hamilton",
       "ED1": -55,
       "ED2": 5
     },
@@ -1191,12 +1191,12 @@
     },
     {
       "tail": "N313BS",
-      "lastService": "2026-06-06",
+      "lastService": "2026-06-12",
       "lastED1": "2026-05-21",
       "lastED2": "2026-05-26",
-      "lastIHC": "2026-06-06",
+      "lastIHC": "2026-06-12",
       "lastLocation": "CMH",
-      "lastTech": "Alexander Hamilton",
+      "lastTech": "Alex Hamilton",
       "ED1": 7,
       "ED2": 42
     },
@@ -2016,12 +2016,12 @@
     },
     {
       "tail": "N798CC",
-      "lastService": "2026-06-02",
+      "lastService": "2026-06-12",
       "lastED1": "2026-06-02",
       "lastED2": "2026-02-11",
-      "lastIHC": "2026-06-02",
-      "lastLocation": "XNA",
-      "lastTech": "Riley Woods",
+      "lastIHC": "2026-06-12",
+      "lastLocation": "CMH",
+      "lastTech": "Alex Hamilton",
       "ED1": 19,
       "ED2": -62
     }
@@ -2248,6 +2248,51 @@
       "date": "2026-06-12",
       "name": "Dane  Clement",
       "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N299JJ",
+      "date": "2026-06-12",
+      "name": "Alex Hamilton",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N215NN",
+      "date": "2026-06-12",
+      "name": "Alex Hamilton",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N216NN",
+      "date": "2026-06-12",
+      "name": "Alex Hamilton",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N313BS",
+      "date": "2026-06-12",
+      "name": "Alex Hamilton",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N798CC",
+      "date": "2026-06-12",
+      "name": "Alex Hamilton",
+      "location": "CMH",
       "IHC": 1,
       "ED1": 0,
       "ED2": 0

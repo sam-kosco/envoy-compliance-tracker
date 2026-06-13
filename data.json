@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-13T03:14:15.063055+00:00",
+  "generated": "2026-06-13T05:36:35.032987+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -80,12 +80,12 @@
     },
     {
       "tail": "N207AN",
-      "lastService": "2026-06-10",
+      "lastService": "2026-06-12",
       "lastED1": "2026-05-19",
       "lastED2": "2026-05-22",
-      "lastIHC": "2026-06-10",
-      "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastIHC": "2026-06-12",
+      "lastLocation": "CVG",
+      "lastTech": "Precious Valadez-Roberson",
       "ED1": 5,
       "ED2": 38
     },
@@ -333,13 +333,13 @@
     },
     {
       "tail": "N230NN",
-      "lastService": "2026-06-09",
-      "lastED1": "2026-05-11",
+      "lastService": "2026-06-12",
+      "lastED1": "2026-06-12",
       "lastED2": "2026-05-03",
-      "lastIHC": "2026-06-09",
-      "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
-      "ED1": -3,
+      "lastIHC": "2026-06-12",
+      "lastLocation": "XNA",
+      "lastTech": "Riley Woods",
+      "ED1": 29,
       "ED2": 19
     },
     {
@@ -795,13 +795,13 @@
     },
     {
       "tail": "N272NN",
-      "lastService": "2026-06-08",
-      "lastED1": "2026-05-11",
+      "lastService": "2026-06-12",
+      "lastED1": "2026-06-12",
       "lastED2": "2026-06-03",
-      "lastIHC": "2026-06-08",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
-      "ED1": -3,
+      "lastIHC": "2026-06-12",
+      "lastLocation": "CVG",
+      "lastTech": "Precious Valadez-Roberson",
+      "ED1": 29,
       "ED2": 50
     },
     {
@@ -993,12 +993,12 @@
     },
     {
       "tail": "N290NN",
-      "lastService": "2026-06-08",
+      "lastService": "2026-06-12",
       "lastED1": "2026-06-02",
       "lastED2": "2026-05-26",
-      "lastIHC": "2026-06-08",
-      "lastLocation": "XNA",
-      "lastTech": "Shaun Neil",
+      "lastIHC": "2026-06-12",
+      "lastLocation": "CVG",
+      "lastTech": "Precious Valadez-Roberson",
       "ED1": 19,
       "ED2": 42
     },
@@ -1070,14 +1070,14 @@
     },
     {
       "tail": "N302RN",
-      "lastService": "2026-06-06",
-      "lastED1": "2026-05-17",
-      "lastED2": "2026-04-10",
-      "lastIHC": "2026-06-06",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
-      "ED1": 3,
-      "ED2": -4
+      "lastService": "2026-06-12",
+      "lastED1": "2026-06-12",
+      "lastED2": "2026-06-12",
+      "lastIHC": "2026-06-12",
+      "lastLocation": "XNA",
+      "lastTech": "Riley Woods",
+      "ED1": 29,
+      "ED2": 59
     },
     {
       "tail": "N303DD",
@@ -1268,14 +1268,14 @@
     },
     {
       "tail": "N320BK",
-      "lastService": "2026-05-30",
-      "lastED1": "2026-05-09",
-      "lastED2": "2026-04-15",
-      "lastIHC": "2026-05-30",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
-      "ED1": -5,
-      "ED2": 1
+      "lastService": "2026-06-12",
+      "lastED1": "2026-06-12",
+      "lastED2": "2026-06-12",
+      "lastIHC": "2026-06-12",
+      "lastLocation": "CVG",
+      "lastTech": "Precious Valadez-Roberson",
+      "ED1": 29,
+      "ED2": 59
     },
     {
       "tail": "N321JS",
@@ -1367,12 +1367,12 @@
     },
     {
       "tail": "N328DS",
-      "lastService": "2026-06-09",
+      "lastService": "2026-06-12",
       "lastED1": "2026-06-06",
       "lastED2": "2026-06-06",
-      "lastIHC": "2026-06-09",
-      "lastLocation": "XNA",
-      "lastTech": "Shaun Neil",
+      "lastIHC": "2026-06-12",
+      "lastLocation": "SGF",
+      "lastTech": "Jeffrey Crookshanks",
       "ED1": 23,
       "ED2": 53
     },
@@ -2032,6 +2032,78 @@
       "date": "2027-05-26",
       "name": "Casey Henry",
       "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N266NN",
+      "date": "2026-06-12",
+      "name": "Riley Woods",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N230NN",
+      "date": "2026-06-12",
+      "name": "Riley Woods",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N302RN",
+      "date": "2026-06-12",
+      "name": "Riley Woods",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 1
+    },
+    {
+      "tail": "N328DS",
+      "date": "2026-06-12",
+      "name": "Jeffrey Crookshanks",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N272NN",
+      "date": "2026-06-12",
+      "name": "Precious Valadez-Roberson",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N207AN",
+      "date": "2026-06-12",
+      "name": "Precious Valadez-Roberson",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N320BK",
+      "date": "2026-06-12",
+      "name": "Precious Valadez-Roberson",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 1
+    },
+    {
+      "tail": "N290NN",
+      "date": "2026-06-12",
+      "name": "Precious Valadez-Roberson",
+      "location": "CVG",
       "IHC": 1,
       "ED1": 0,
       "ED2": 0

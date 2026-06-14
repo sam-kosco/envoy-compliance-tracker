@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-14T05:39:49.219472+00:00",
+  "generated": "2026-06-14T07:43:06.117484+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -1312,12 +1312,12 @@
     },
     {
       "tail": "N324ES",
-      "lastService": "2026-05-21",
+      "lastService": "2026-06-13",
       "lastED1": "2026-05-08",
       "lastED2": "2026-04-19",
-      "lastIHC": "2026-05-21",
-      "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastIHC": "2026-06-13",
+      "lastLocation": "XNA",
+      "lastTech": "Riley Woods",
       "ED1": -7,
       "ED2": 4
     },
@@ -2119,6 +2119,15 @@
     },
     {
       "tail": "N275NN",
+      "date": "2026-06-13",
+      "name": "Riley Woods",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N324ES",
       "date": "2026-06-13",
       "name": "Riley Woods",
       "location": "XNA",

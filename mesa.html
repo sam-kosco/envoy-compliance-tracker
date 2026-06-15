@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mesa Fleet Compliance Tracker</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Barlow+Condensed:wght@600;700;800&display=swap" rel="stylesheet">
 <style>
@@ -56,7 +57,16 @@
   .orange-band{background:var(--orange);padding:10px 28px;display:flex;align-items:center;justify-content:space-between;}
   .band-label{font-family:var(--cond);font-size:13px;font-weight:700;color:white;letter-spacing:1px;text-transform:uppercase;opacity:0.9;}
   .band-date{font-family:var(--cond);font-size:14px;font-weight:700;color:white;}
-  main{width:66.66vw;margin:0 auto;padding:24px 28px;display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+  main{width:auto;margin:0;padding:0;}
+  #tab-fleet,#tab-work{width:66.66vw;margin:0 auto;padding:24px 28px;grid-template-columns:1fr 1fr;gap:20px;}
+  #tab-fleet.active,#tab-work.active{display:grid;}
+  .tab-bar{background:var(--navy);border-top:1px solid rgba(255,255,255,0.1);}
+  .tab-bar-inner{width:66.66vw;margin:0 auto;display:flex;gap:0;}
+  .tab-btn{font-family:var(--cond);font-size:14px;font-weight:700;color:rgba(255,255,255,0.5);padding:12px 20px;cursor:pointer;border:none;background:none;border-bottom:3px solid transparent;letter-spacing:0.5px;transition:color 0.15s,border-color 0.15s;text-transform:uppercase;}
+  .tab-btn:hover{color:rgba(255,255,255,0.8);}
+  .tab-btn.active{color:white;border-bottom-color:var(--orange);}
+  .tab-page{display:none;}
+  .tab-page.active{display:block;}
   .col-full{grid-column:1/-1;}
   .card{background:var(--white);border-radius:var(--radius);box-shadow:var(--shadow-sm);border:1px solid var(--gray-light);overflow:hidden;}
   .card-header{padding:14px 18px 12px;border-bottom:1px solid var(--gray-light);display:flex;align-items:center;justify-content:space-between;}
@@ -168,7 +178,7 @@
   footer{text-align:center;padding:20px;font-size:11px;color:var(--text-light);font-weight:500;border-top:1px solid var(--gray-light);margin-top:8px;letter-spacing:0.5px;}
   @keyframes fadeIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
   .fade-in{animation:fadeIn 0.25s ease forwards;}
-  @media(max-width:960px){main{width:auto;grid-template-columns:1fr;padding:16px;}.hdr-inner,.band-inner,.tab-bar-inner{width:auto;padding:0 16px;}.stat-strip{grid-template-columns:repeat(2,1fr);}.compliance-grid{grid-template-columns:repeat(2,1fr);}.history-row{grid-template-columns:1fr 1fr;}}
+  @media(max-width:960px){#tab-fleet,#tab-work{width:auto;grid-template-columns:1fr;padding:16px;}.hdr-inner,.band-inner,.tab-bar-inner{width:auto;padding:0 16px;}.stat-strip{grid-template-columns:repeat(2,1fr);}.compliance-grid{grid-template-columns:repeat(2,1fr);}.history-row{grid-template-columns:1fr 1fr;}}
 
   /* FILTER BUTTONS */
   .filter-bar { display:flex; align-items:center; gap:8px; flex-wrap:wrap; padding:12px 18px; border-top:1px solid var(--gray-light); background:var(--off-white); }
@@ -325,6 +335,28 @@
     justify-content: center;
   }
 
+  /* ===== WORK ORDER TAB ===== */
+  .wo-intro{font-size:13px;color:var(--text-mid);line-height:1.55;margin-bottom:18px;}
+  .wo-multi-wrap{position:relative;}
+  .wo-control{display:flex;flex-wrap:wrap;align-items:center;gap:6px;border:1.5px solid var(--gray);border-radius:4px;padding:8px 10px;min-height:48px;background:var(--white);cursor:text;}
+  .wo-control:focus-within{border-color:var(--orange);}
+  #wo-chips{display:contents;}
+  .wo-chip{display:inline-flex;align-items:center;gap:7px;background:var(--navy);color:#fff;font-family:var(--cond);font-weight:700;font-size:13px;letter-spacing:0.5px;padding:5px 8px 5px 11px;border-radius:4px;}
+  .wo-chip-x{cursor:pointer;font-size:16px;line-height:1;opacity:0.65;}
+  .wo-chip-x:hover{opacity:1;}
+  .wo-input{flex:1;min-width:160px;border:none;outline:none;font-family:var(--sans);font-size:15px;padding:5px 4px;text-transform:uppercase;background:transparent;color:var(--text);}
+  .wo-dropdown{position:absolute;top:calc(100% + 2px);left:0;right:0;background:var(--white);border:1.5px solid var(--orange);border-radius:0 0 4px 4px;box-shadow:var(--shadow-md);max-height:280px;overflow-y:auto;z-index:200;display:none;}
+  .wo-dropdown-item{padding:9px 14px;font-size:14px;font-family:var(--sans);cursor:pointer;border-bottom:1px solid var(--gray-light);text-transform:uppercase;letter-spacing:0.3px;color:var(--text);}
+  .wo-dropdown-item:hover{background:var(--orange-pale);color:var(--orange);}
+  .wo-dropdown-empty{padding:12px 14px;font-size:13px;color:var(--text-light);}
+  .wo-row2{display:flex;align-items:center;justify-content:space-between;margin-top:12px;}
+  .wo-count{font-size:12px;font-weight:600;color:var(--text-light);}
+  .wo-clear{font-size:12px;color:var(--orange);cursor:pointer;font-weight:600;display:none;}
+  .wo-clear:hover{text-decoration:underline;}
+  .wo-generate{margin-top:18px;width:100%;padding:14px;background:var(--orange);color:#fff;font-family:var(--cond);font-size:15px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;border:none;border-radius:6px;cursor:pointer;transition:background 0.15s;}
+  .wo-generate:hover{background:var(--orange-light);}
+  .wo-generate:disabled{background:var(--gray);cursor:not-allowed;}
+
 </style>
 </head>
 <body>
@@ -353,7 +385,15 @@
 </div>
 
 
+<div class="tab-bar">
+  <div class="tab-bar-inner">
+    <button class="tab-btn active" onclick="switchTab('fleet')">Fleet Tracker</button>
+    <button class="tab-btn" onclick="switchTab('work')">Work Order</button>
+  </div>
+</div>
+
 <main>
+<div class="tab-page active" id="tab-fleet">
   <div class="stat-strip col-full">
     <div class="stat-card s-total"><div class="stat-label">Total Aircraft</div><div class="stat-value" id="stat-total">—</div><div class="stat-sub">in fleet</div></div>
     <div class="stat-card s-red"><div class="stat-label">Noncompliant</div><div class="stat-value" id="stat-noncomp">—</div><div class="stat-sub">overdue or no service</div></div>
@@ -438,6 +478,28 @@
       </table>
     </div>
   </div>
+</div><!-- /tab-fleet -->
+
+<div class="tab-page" id="tab-work">
+  <div class="card col-full">
+    <div class="card-header"><div class="card-title">📋 Work Order Builder</div></div>
+    <div class="card-body">
+      <p class="wo-intro">Select the tail numbers on site for tonight's shift, then generate a printable work order. Jobs are prioritized by how far each tail is past compliance — the most overdue aircraft come first.</p>
+      <div class="wo-multi-wrap">
+        <div class="wo-control" id="wo-control" onclick="document.getElementById('wo-input').focus()">
+          <span id="wo-chips"></span>
+          <input type="text" id="wo-input" class="wo-input" placeholder="Search and add tail numbers…" autocomplete="off" oninput="woRenderDropdown(this.value)" onfocus="woOpen()" onblur="woClose()" onkeydown="woKey(event)">
+        </div>
+        <div class="wo-dropdown" id="wo-dropdown"></div>
+      </div>
+      <div class="wo-row2">
+        <span class="wo-count" id="wo-count">0 tails selected</span>
+        <span class="wo-clear" id="wo-clear" onclick="woClear()">Clear all</span>
+      </div>
+      <button class="wo-generate" id="wo-generate" onclick="woGenerate()" disabled>Generate Work Order&nbsp;&darr;</button>
+    </div>
+  </div>
+</div><!-- /tab-work -->
 
 </main>
 
@@ -767,6 +829,166 @@ function selectTail(tail) {
     </div>
   `;
   panel.scrollIntoView({behavior:'smooth',block:'nearest'});
+}
+
+/* ===== TABS ===== */
+function switchTab(name) {
+  document.querySelectorAll('.tab-page').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('tab-' + name).classList.add('active');
+  document.querySelectorAll('.tab-btn').forEach(b => {
+    if (b.getAttribute('onclick') && b.getAttribute('onclick').includes("'" + name + "'")) b.classList.add('active');
+  });
+}
+
+/* ===== WORK ORDER ===== */
+const WO_PROGRAM = 'Mesa';
+const WO_TRACKED = (typeof TRACKED !== 'undefined') ? TRACKED : Object.keys(JOB_NAMES);
+let woSelected = [];
+
+function woAvail(){ return (window._allTails||[]).filter(t=>!woSelected.includes(t)); }
+function woRenderChips(){
+  document.getElementById('wo-chips').innerHTML = woSelected.map(t=>
+    '<span class="wo-chip">'+t+'<span class="wo-chip-x" onmousedown="event.preventDefault();woRemove(\''+t+'\')">×</span></span>').join('');
+  document.getElementById('wo-count').textContent = woSelected.length+' tail'+(woSelected.length===1?'':'s')+' selected';
+  document.getElementById('wo-generate').disabled = woSelected.length===0;
+  document.getElementById('wo-clear').style.display = woSelected.length? 'inline':'none';
+}
+function woRenderDropdown(query){
+  const dd=document.getElementById('wo-dropdown'); if(!dd) return;
+  const q=(query||'').trim().toUpperCase();
+  const list=woAvail().filter(t=> q? t.toUpperCase().includes(q): true);
+  dd.innerHTML = list.length
+    ? list.map(t=>'<div class="wo-dropdown-item" onmousedown="event.preventDefault();woAdd(\''+t+'\')">'+t+'</div>').join('')
+    : '<div class="wo-dropdown-empty">No matching tails</div>';
+  dd.style.display='block';
+}
+function woOpen(){ woRenderDropdown(document.getElementById('wo-input').value); }
+function woClose(){ const dd=document.getElementById('wo-dropdown'); if(dd) setTimeout(function(){dd.style.display='none';},150); }
+function woAdd(t){ if(!woSelected.includes(t)) woSelected.push(t); const inp=document.getElementById('wo-input'); inp.value=''; woRenderChips(); woRenderDropdown(''); inp.focus(); }
+function woRemove(t){ woSelected=woSelected.filter(x=>x!==t); woRenderChips(); }
+function woClear(){ woSelected=[]; woRenderChips(); const dd=document.getElementById('wo-dropdown'); if(dd) dd.style.display='none'; }
+function woKey(e){
+  const inp=document.getElementById('wo-input');
+  if(e.key==='Enter'){ e.preventDefault(); const q=inp.value.trim().toUpperCase(); const list=woAvail().filter(t=>t.toUpperCase().includes(q)); if(list.length) woAdd(list[0]); }
+  else if(e.key==='Backspace' && !inp.value && woSelected.length){ woRemove(woSelected[woSelected.length-1]); }
+}
+
+function woClassify(p){
+  const overdue=[],noService=[],dueSoon=[];
+  WO_TRACKED.forEach(function(code){
+    const v=p[code];
+    if(v==='No Service'||v===null||v===undefined) noService.push(code);
+    else if(typeof v==='number'){ if(v<0) overdue.push({code:code,days:-v}); else if(v<=7) dueSoon.push({code:code,days:v}); }
+  });
+  return {overdue:overdue,noService:noService,dueSoon:dueSoon};
+}
+function woBuildLines(e){
+  const out=[];
+  e.noService.forEach(function(code){ out.push({txt:(JOB_NAMES[code]||code)+'  —  never serviced', t:'od'}); });
+  e.overdue.slice().sort(function(a,b){return b.days-a.days;}).forEach(function(o){ out.push({txt:(JOB_NAMES[o.code]||o.code)+'  —  '+o.days+' day'+(o.days===1?'':'s')+' overdue', t:'od'}); });
+  e.dueSoon.slice().sort(function(a,b){return a.days-b.days;}).forEach(function(d){ out.push({txt:(JOB_NAMES[d.code]||d.code)+'  —  '+(d.days===0?'due today':'due in '+d.days+' day'+(d.days===1?'':'s')), t:'ds'}); });
+  return out;
+}
+function woGenerate(){
+  if(!woSelected.length || typeof DATA==='undefined' || !DATA){ return; }
+  if(!window.jspdf){ alert('PDF library not loaded — check your connection and try again.'); return; }
+  const byTail={}; DATA.planes.forEach(function(p){ byTail[p.tail]=p; });
+  const entries=woSelected.map(function(t){
+    const p=byTail[t]||{tail:t};
+    const c=woClassify(p);
+    const overdueSum=c.overdue.reduce(function(s,o){return s+o.days;},0);
+    let tier;
+    if(c.noService.length) tier='ncNo';
+    else if(c.overdue.length) tier='ncNum';
+    else if(c.dueSoon.length) tier='ds';
+    else tier='ok';
+    return {tail:t,p:p,overdue:c.overdue,noService:c.noService,dueSoon:c.dueSoon,overdueSum:overdueSum,tier:tier};
+  });
+  const ncNo=entries.filter(function(e){return e.tier==='ncNo';}).sort(function(a,b){ return (b.noService.length-a.noService.length) || (b.overdueSum-a.overdueSum) || a.tail.localeCompare(b.tail); });
+  const ncNum=entries.filter(function(e){return e.tier==='ncNum';}).sort(function(a,b){ return (b.overdueSum-a.overdueSum) || a.tail.localeCompare(b.tail); });
+  const noncompliant=ncNo.concat(ncNum);
+  const dueSoon=entries.filter(function(e){return e.tier==='ds';}).sort(function(a,b){ return (Math.min.apply(null,a.dueSoon.map(function(d){return d.days;}))-Math.min.apply(null,b.dueSoon.map(function(d){return d.days;}))) || a.tail.localeCompare(b.tail); });
+  const compliant=entries.filter(function(e){return e.tier==='ok';}).sort(function(a,b){return a.tail.localeCompare(b.tail);});
+
+  const jsPDF=window.jspdf.jsPDF;
+  const doc=new jsPDF({unit:'pt',format:'letter'});
+  const PW=doc.internal.pageSize.getWidth(), PH=doc.internal.pageSize.getHeight(), M=48;
+  const NAVY=[27,42,74],ORANGE=[224,123,32],RED=[198,48,48],AMBER=[181,99,0],GREEN=[22,128,58],MID=[74,90,120],GRAY=[138,149,168],LINE=[228,231,238];
+  let y=M;
+  function np(){ doc.addPage(); y=M; }
+  function need(h){ if(y+h>PH-M) np(); }
+
+  doc.setFont('helvetica','bold'); doc.setFontSize(19); doc.setTextColor.apply(doc,NAVY);
+  doc.text(WO_PROGRAM+' Fleet — Nightly Work Order', M, y+4);
+  const now=new Date();
+  const disp=(now.getMonth()+1)+'/'+now.getDate()+'/'+String(now.getFullYear()).slice(2);
+  doc.setFont('helvetica','normal'); doc.setFontSize(11); doc.setTextColor.apply(doc,MID);
+  doc.text(disp, PW-M, y+4, {align:'right'});
+  y+=16;
+  doc.setFontSize(9); doc.setTextColor.apply(doc,GRAY);
+  doc.text('Foxtrot Aviation Services — Detailing Compliance', M, y+4);
+  y+=12;
+  doc.setDrawColor.apply(doc,ORANGE); doc.setLineWidth(2); doc.line(M,y,PW-M,y);
+  y+=20;
+
+  doc.setFont('helvetica','bold'); doc.setFontSize(10); doc.setTextColor.apply(doc,NAVY);
+  doc.text('Tails on shift ('+woSelected.length+'):', M, y);
+  y+=15;
+  doc.setFont('helvetica','normal'); doc.setFontSize(10); doc.setTextColor.apply(doc,MID);
+  doc.splitTextToSize(woSelected.slice().sort(function(a,b){return a.localeCompare(b);}).join('     '), PW-2*M).forEach(function(ln){ need(14); doc.text(ln,M,y); y+=13; });
+  y+=12;
+
+  function sectionHeader(title,count,color){
+    need(42);
+    doc.setFillColor.apply(doc,color); doc.rect(M,y-1,4,17,'F');
+    doc.setFont('helvetica','bold'); doc.setFontSize(12); doc.setTextColor.apply(doc,NAVY);
+    doc.text(title, M+12, y+12);
+    doc.setFont('helvetica','normal'); doc.setFontSize(9); doc.setTextColor.apply(doc,GRAY);
+    doc.text(count+(count===1?' tail':' tails'), PW-M, y+12, {align:'right'});
+    y+=22;
+    doc.setDrawColor.apply(doc,LINE); doc.setLineWidth(0.6); doc.line(M,y,PW-M,y); y+=12;
+  }
+  function tailBlock(e){
+    const lines=woBuildLines(e);
+    need(20+lines.length*13+10);
+    doc.setFont('helvetica','bold'); doc.setFontSize(11); doc.setTextColor.apply(doc,NAVY);
+    doc.text(e.tail, M+6, y+8);
+    const lw=doc.getTextWidth(e.tail);
+    if(e.p && e.p.lastLocation){ doc.setFont('helvetica','normal'); doc.setFontSize(9); doc.setTextColor.apply(doc,GRAY); doc.text('   '+e.p.lastLocation, M+6+lw, y+8); }
+    y+=18;
+    lines.forEach(function(ln){
+      need(13);
+      const col= ln.t==='od'?RED:AMBER;
+      doc.setFillColor.apply(doc,col); doc.circle(M+14,y+2,1.8,'F');
+      doc.setFont('helvetica','normal'); doc.setFontSize(10); doc.setTextColor.apply(doc,col);
+      doc.text(ln.txt, M+22, y+5);
+      y+=13;
+    });
+    y+=10;
+  }
+  function okBlock(e){
+    need(15);
+    doc.setFillColor.apply(doc,GREEN); doc.circle(M+8,y+2,1.8,'F');
+    doc.setFont('helvetica','bold'); doc.setFontSize(10); doc.setTextColor.apply(doc,NAVY);
+    doc.text(e.tail, M+16, y+5);
+    const lw=doc.getTextWidth(e.tail);
+    doc.setFont('helvetica','normal'); doc.setTextColor.apply(doc,MID);
+    doc.text('   No additional services required', M+16+lw, y+5);
+    y+=15;
+  }
+
+  if(noncompliant.length){ sectionHeader('NONCOMPLIANT — PRIORITY', noncompliant.length, RED); noncompliant.forEach(tailBlock); y+=4; }
+  if(dueSoon.length){ sectionHeader('DUE SOON', dueSoon.length, AMBER); dueSoon.forEach(tailBlock); y+=4; }
+  if(compliant.length){ sectionHeader('COMPLIANT', compliant.length, GREEN); compliant.forEach(okBlock); }
+
+  const pages=doc.internal.getNumberOfPages();
+  for(let i=1;i<=pages;i++){ doc.setPage(i); doc.setFont('helvetica','normal'); doc.setFontSize(8); doc.setTextColor.apply(doc,GRAY);
+    doc.text('Generated '+now.toLocaleString(), M, PH-22);
+    doc.text('Page '+i+' of '+pages, PW-M, PH-22, {align:'right'}); }
+
+  const iso=now.getFullYear()+'-'+String(now.getMonth()+1).padStart(2,'0')+'-'+String(now.getDate()).padStart(2,'0');
+  doc.save(WO_PROGRAM+'_Work_Order_'+iso+'.pdf');
 }
 
 </script>

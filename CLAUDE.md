@@ -4,7 +4,7 @@
 **Repo:** `sam-kosco/envoy-compliance-tracker`  
 **Hosted at:** `sam-kosco.github.io/envoy-compliance-tracker/`
 
-This repo hosts four separate aircraft detailing compliance dashboards for Foxtrot Aviation Services. All four share the same GitHub repository, GitHub Secrets, and Microsoft Entra app registration.
+This repo hosts five separate aircraft detailing compliance dashboards for Foxtrot Aviation Services. All share the same GitHub repository, GitHub Secrets, and Microsoft Entra app registration.
 
 ---
 
@@ -15,7 +15,10 @@ This repo hosts four separate aircraft detailing compliance dashboards for Foxtr
 | Envoy | Envoy Air | `/` (index.html) | `index.html` |
 | PSA | PSA Airlines | `/psa.html` | `psa.html` |
 | Mesa | Mesa Airlines | `/mesa.html` | `mesa.html` |
+| GoJet | GoJet Airlines | `/gojet.html` | `gojet.html` |
 | Crosswinds | Crosswinds Flight School | `/crosswinds.html` | `crosswinds.html` |
+
+> **Tabs:** Envoy, PSA, Mesa, and GoJet each have a **Fleet Tracker** tab and a **Work Order** tab (see "Work Order tab" below). PSA additionally has an **Admin** tab. The tab bar sits between the orange band and `<main>`; `<main>` is a plain block and each `#tab-fleet` / `#tab-work` is the 66.66vw grid container (this is why content must live inside a tab page, not directly in `<main>`).
 
 ---
 
@@ -23,24 +26,28 @@ This repo hosts four separate aircraft detailing compliance dashboards for Foxtr
 
 ```
 envoy-compliance-tracker/
-├── index.html                    # Envoy compliance dashboard
-├── psa.html                      # PSA compliance dashboard (incl. Admin tab)
-├── mesa.html                     # Mesa compliance dashboard
+├── index.html                    # Envoy compliance dashboard (incl. Work Order tab)
+├── psa.html                      # PSA compliance dashboard (incl. Admin + Work Order tabs)
+├── mesa.html                     # Mesa compliance dashboard (incl. Work Order tab)
+├── gojet.html                    # GoJet compliance dashboard (incl. Work Order tab)
 ├── crosswinds.html               # Crosswinds compliance dashboard
 ├── data.json                     # Envoy compliance data (auto-generated)
 ├── psa_data.json                 # PSA compliance data (auto-generated)
 ├── mesa_data.json                # Mesa compliance data (auto-generated)
+├── gojet_data.json               # GoJet compliance data (auto-generated)
 ├── crosswinds_data.json          # Crosswinds compliance data (auto-generated)
 ├── fleet_action_result.json      # Last result from manage_fleet.yml (auto-generated)
 ├── envoy_generate_data.py        # Envoy data relay script
 ├── psa_generate_data.py          # PSA data relay script
 ├── mesa_generate_data.py         # Mesa data relay script
+├── gojet_generate_data.py        # GoJet data relay script
 ├── crosswinds_generate_data.py   # Crosswinds data relay script
 └── .github/
     └── workflows/
         ├── data_refresh.yml          # Envoy hourly cron
         ├── psa_data_refresh.yml      # PSA hourly cron
         ├── mesa_data_refresh.yml     # Mesa hourly cron
+        ├── gojet_data_refresh.yml    # GoJet hourly cron
         ├── crosswinds_refresh.yml    # Crosswinds — triggered by Power Automate webhook
         └── manage_fleet.yml          # PSA admin actions (add tail) — workflow_dispatch
 ```
@@ -49,18 +56,19 @@ envoy-compliance-tracker/
 
 ## How Each Program Works
 
-### Envoy, PSA & Mesa
+### Envoy, PSA, Mesa & GoJet
 1. Field techs submit JotForm debriefs after each service
 2. Power Automate appends submissions to Excel workbooks on SharePoint
-3. GitHub Actions runs hourly (`data_refresh.yml` / `psa_data_refresh.yml` / `mesa_data_refresh.yml`)
+3. GitHub Actions runs hourly (`data_refresh.yml` / `psa_data_refresh.yml` / `mesa_data_refresh.yml` / `gojet_data_refresh.yml`)
 4. Python script downloads Excel from SharePoint via Microsoft Graph API
-5. Script calculates compliance windows and writes `data.json` / `psa_data.json` / `mesa_data.json`
+5. Script calculates compliance windows and writes `data.json` / `psa_data.json` / `mesa_data.json` / `gojet_data.json`
 6. GitHub commits the JSON; GitHub Pages serves the updated dashboard
 
 **SharePoint source files:**
 - Envoy: `Power Flows/Debriefs/Envoy Debriefs.xlsx`
 - PSA: `Power Flows/Debriefs/PSA Debriefs.xlsx`
 - Mesa: `Power Flows/Debriefs/Mesa Debriefs.xlsx`
+- GoJet: `Power Flows/Debriefs/GoJet Debriefs.xlsx`
 
 ### Crosswinds
 1. Field techs complete SafetyCulture audits on mobile
@@ -140,6 +148,18 @@ Cycles come from the **Service WIndow** sheet in `Mesa Debriefs.xlsx` (read dyna
 
 **Mesa specifics:** the Debriefs sheet has **no Location column** (PSA/Envoy do), so the dashboard shows no last-location. Service cells are recorded as `Yes. <number>`; the trailing number is not used for compliance. Flight Deck is the **last** debriefs column (after Sub ID). Tail roster comes from the **Tails** sheet (column A). No Admin/Add-Tail tab — onboard new tails by adding them to the Tails sheet.
 
+### GoJet Tracked Services
+GoJet uses the same Input-sheet + Tails-roster shape as Mesa, but **has a Location column** (so last-location is shown, like Envoy/PSA). Cycles are fixed at 60 days (no Service Window sheet). Tail numbers are bare (`501`, `534`, …).
+
+| Code | Service | Cycle |
+|------|---------|-------|
+| ED1 | Exterior Detail #1 | 60 days |
+| ED2 | Exterior Detail #2 | 60 days |
+| CE | Carpet Extraction | 60 days |
+| IHC / RON | Interior Heavy Clean / RON Clean | Info only |
+
+**GoJet specifics:** Debriefs live on the **Input** sheet (cols `Date, Name, Location, Tail Number, IHC, RON, ED1, ED2, CE, Sub ID`); service cells are `Yes. <model>` (same `flag()` logic as Mesa). Tail roster is the **Tails** sheet (column A). No Admin tab — onboard new tails by adding them to the Tails sheet. The relay script supports `GOJET_LOCAL_XLSX=<path>` to read a local workbook instead of SharePoint (used to seed the initial committed `gojet_data.json`).
+
 ---
 
 ## GitHub Secrets
@@ -183,6 +203,11 @@ The SharePoint Drive ID used by the compliance refresh scripts:
 - **Script:** `mesa_generate_data.py`
 - **Output:** commits `mesa_data.json`
 
+### `gojet_data_refresh.yml` — GoJet
+- **Trigger:** Hourly cron + manual dispatch
+- **Script:** `gojet_generate_data.py`
+- **Output:** commits `gojet_data.json`
+
 ### `crosswinds_refresh.yml` — Crosswinds
 - **Trigger:** `workflow_dispatch` only (called by Power Automate via GitHub API)
 - **Input:** `payload` — JSON array of inspections from Power Automate
@@ -190,6 +215,22 @@ The SharePoint Drive ID used by the compliance refresh scripts:
 - **Output:** commits `crosswinds_data.json`
 
 > **Note:** Every commit to main triggers `pages-build-deployment` automatically. This is expected — GitHub Pages rebuilds on every push.
+
+---
+
+## Work Order tab (Envoy, PSA, Mesa, GoJet)
+
+A client-side tab that lets location staff build a nightly priority work order. No backend — it runs entirely off the already-loaded `DATA.planes` and `window._allTails`, and renders a PDF with **jsPDF** (loaded from cdnjs in `<head>`).
+
+**Flow:** a multi-select search box (chips, styled like the main lookup bar) → **Generate Work Order** → a PDF auto-downloads as `<Program>_Work_Order_<YYYY-MM-DD>.pdf`.
+
+**PDF contents & ordering** (`woGenerate()` in each dashboard's inline script):
+- Header (program + "Nightly Work Order" + date), then the full list of tails on shift.
+- **NONCOMPLIANT — PRIORITY**, then **DUE SOON**, then **COMPLIANT** ("No additional services required").
+- Each noncompliant/due-soon tail lists its overdue **and** due-soon services (red = overdue/never-serviced, amber = due soon), most-overdue service first.
+- **Severity ranking:** a tail's score = **total days over compliance summed across all services** (so two services 15d overdue outranks one service 20d overdue). **Any tail with a `"No Service"` service ranks above all tails whose overdue is only numeric** (decision by program owner). Due-soon tails are ordered by soonest service.
+
+The logic is generic over each file's `TRACKED` / `JOB_NAMES` / `CYCLES` constants; the only per-file difference is `const WO_PROGRAM`. To change the feature, edit the `// ===== WORK ORDER =====` block (identical across the four files).
 
 ---
 
@@ -292,6 +333,7 @@ The script no longer writes to Excel — Power Automate handles all writes using
 | Renew CLIENT_SECRET | Every 24 months | Entra → App registrations → Foxtrot Report Automation → new secret → update GitHub Secret |
 | Add tail to Envoy fleet | As needed | Add to Tail List sheet in the Envoy SharePoint Excel |
 | Add tail to Mesa fleet | As needed | Add to the Tails sheet (column A) in the Mesa SharePoint Excel |
+| Add tail to GoJet fleet | As needed | Add to the Tails sheet (column A) in the GoJet SharePoint Excel |
 | Add tail to PSA fleet | As needed | Use the PSA dashboard → Admin tab (password-gated). One submit updates SafetyCulture, JotForm, and SharePoint together. |
 | Add tail to Crosswinds fleet | As needed | Add to the Crosswinds Tail Numbers global response set in SafetyCulture AND the `TAILS` list in `crosswinds_generate_data.py` |
 | Pause a refresh | As needed | Comment out the `cron:` line in the relevant workflow YAML |

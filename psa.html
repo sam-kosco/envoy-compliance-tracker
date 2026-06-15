@@ -1155,6 +1155,7 @@ function woGenerate(){
 
   const iso=now.getFullYear()+'-'+String(now.getMonth()+1).padStart(2,'0')+'-'+String(now.getDate()).padStart(2,'0');
   doc.save(WO_PROGRAM+'_Work_Order_'+iso+'.pdf');
+  woClear();
 }
 </script>
 </body>

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-17T03:15:32.312612+00:00",
+  "generated": "2026-06-17T05:45:31.869537+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -80,13 +80,13 @@
     },
     {
       "tail": "N207AN",
-      "lastService": "2026-06-12",
-      "lastED1": "2026-05-19",
+      "lastService": "2026-06-16",
+      "lastED1": "2026-06-16",
       "lastED2": "2026-05-22",
-      "lastIHC": "2026-06-12",
-      "lastLocation": "CVG",
-      "lastTech": "Precious Valadez-Roberson",
-      "ED1": 1,
+      "lastIHC": "2026-06-16",
+      "lastLocation": "LIT",
+      "lastTech": "Dane  Clement",
+      "ED1": 29,
       "ED2": 34
     },
     {
@@ -630,12 +630,12 @@
     },
     {
       "tail": "N257NN",
-      "lastService": "2026-06-15",
+      "lastService": "2026-06-16",
       "lastED1": "2026-05-11",
       "lastED2": "2026-04-28",
-      "lastIHC": "2026-06-15",
+      "lastIHC": "2026-06-16",
       "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
+      "lastTech": "Steven Wilson",
       "ED1": -7,
       "ED2": 10
     },
@@ -1125,12 +1125,12 @@
     },
     {
       "tail": "N307LH",
-      "lastService": "2026-06-13",
+      "lastService": "2026-06-16",
       "lastED1": "2026-06-10",
       "lastED2": "2026-06-10",
-      "lastIHC": "2026-06-13",
-      "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastIHC": "2026-06-16",
+      "lastLocation": "SGF",
+      "lastTech": "Steven Wilson",
       "ED1": 23,
       "ED2": 53
     },
@@ -1389,12 +1389,12 @@
     },
     {
       "tail": "N330JT",
-      "lastService": "2026-06-13",
+      "lastService": "2026-06-16",
       "lastED1": "2026-06-07",
       "lastED2": "2026-01-12",
-      "lastIHC": "2026-06-13",
-      "lastLocation": "LIT",
-      "lastTech": "Dane  Clement",
+      "lastIHC": "2026-06-16",
+      "lastLocation": "SGF",
+      "lastTech": "Steven Wilson",
       "ED1": 20,
       "ED2": -96
     },
@@ -1499,12 +1499,12 @@
     },
     {
       "tail": "N340TC",
-      "lastService": "2026-06-15",
+      "lastService": "2026-06-16",
       "lastED1": "2026-06-01",
       "lastED2": "2026-06-01",
-      "lastIHC": "2026-06-15",
-      "lastLocation": "XNA",
-      "lastTech": "Shaun Neil",
+      "lastIHC": "2026-06-16",
+      "lastLocation": "LIT",
+      "lastTech": "Dane  Clement",
       "ED1": 14,
       "ED2": 44
     },
@@ -1851,12 +1851,12 @@
     },
     {
       "tail": "N779RN",
-      "lastService": "2026-06-08",
+      "lastService": "2026-06-16",
       "lastED1": "2026-05-30",
       "lastED2": "2026-06-08",
-      "lastIHC": "2026-06-08",
-      "lastLocation": "XNA",
-      "lastTech": "Shaun Neil",
+      "lastIHC": "2026-06-16",
+      "lastLocation": "SGF",
+      "lastTech": "Steven Wilson",
       "ED1": 12,
       "ED2": 51
     },
@@ -2027,6 +2027,60 @@
     }
   ],
   "debriefs": [
+    {
+      "tail": "N307LH",
+      "date": "2026-06-16",
+      "name": "Steven Wilson",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N207AN",
+      "date": "2026-06-16",
+      "name": "Dane  Clement",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N340TC",
+      "date": "2026-06-16",
+      "name": "Dane  Clement",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N330JT",
+      "date": "2026-06-16",
+      "name": "Steven Wilson",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N257NN",
+      "date": "2026-06-16",
+      "name": "Steven Wilson",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N779RN",
+      "date": "2026-06-16",
+      "name": "Steven Wilson",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
     {
       "tail": "N263NN",
       "date": "2026-06-15",

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-18T09:36:34.513022+00:00",
+  "generated": "2026-06-18T13:18:08.043205+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -1114,12 +1114,12 @@
     },
     {
       "tail": "N306DD",
-      "lastService": "2026-06-13",
+      "lastService": "2026-06-17",
       "lastED1": "2026-06-09",
       "lastED2": "2026-05-12",
-      "lastIHC": "2026-06-13",
+      "lastIHC": "2026-06-17",
       "lastLocation": "CMH",
-      "lastTech": "Alex Hamilton",
+      "lastTech": "Tanaija Price",
       "ED1": 21,
       "ED2": 23
     },
@@ -1378,12 +1378,12 @@
     },
     {
       "tail": "N329DD",
-      "lastService": "2026-06-15",
+      "lastService": "2026-06-17",
       "lastED1": "2026-05-20",
       "lastED2": "2026-03-13",
-      "lastIHC": "2026-06-15",
+      "lastIHC": "2026-06-17",
       "lastLocation": "DFW",
-      "lastTech": "Sharmaine Brown",
+      "lastTech": "Aunyae Morrison",
       "ED1": 1,
       "ED2": -37
     },
@@ -2325,6 +2325,24 @@
       "ED2": 0
     },
     {
+      "tail": "N306DD",
+      "date": "2026-06-17",
+      "name": "Tanaija Price",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N324ES",
+      "date": "2026-06-17",
+      "name": "Precious Valadez-Roberson",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
       "tail": "N322RC",
       "date": "2026-06-17",
       "name": "Aunyae Morrison",
@@ -2398,6 +2416,15 @@
     },
     {
       "tail": "N770JM",
+      "date": "2026-06-17",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N329DD",
       "date": "2026-06-17",
       "name": "Aunyae Morrison",
       "location": "DFW",

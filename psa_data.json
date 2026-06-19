@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-19T13:11:09.487246+00:00",
+  "generated": "2026-06-19T14:29:14.174602+00:00",
   "planes": [
     {
       "tail": "N500AE",
@@ -376,6 +376,28 @@
       "Lav": 64
     },
     {
+      "tail": "N522AE",
+      "lastService": "2026-06-16",
+      "lastCC": "2026-06-15",
+      "lastDSC": "2025-12-18",
+      "lastCE": "2025-12-18",
+      "lastED1": "2025-11-22",
+      "lastED2": "2025-12-27",
+      "lastLav": "2025-09-28",
+      "lastIC": "2026-06-16",
+      "lastEC": "2026-06-15",
+      "lastED3": "2025-10-15",
+      "lastED4": "2025-10-15",
+      "lastLocation": "GSP",
+      "lastTech": "Brittany Eckelberry",
+      "CC": 26,
+      "DSC": -153,
+      "CE": -153,
+      "ED1": -179,
+      "ED2": -144,
+      "Lav": -174
+    },
+    {
       "tail": "N524AE",
       "lastService": "2026-06-08",
       "lastCC": "2026-06-08",
@@ -449,7 +471,7 @@
       "lastCE": "2026-06-17",
       "lastED1": "2026-06-17",
       "lastED2": "2026-06-17",
-      "lastLav": "2025-11-16",
+      "lastLav": "2026-06-17",
       "lastIC": "2026-06-17",
       "lastEC": "2026-06-17",
       "lastED3": null,
@@ -461,7 +483,7 @@
       "CE": 28,
       "ED1": 28,
       "ED2": 28,
-      "Lav": -125
+      "Lav": 88
     },
     {
       "tail": "N528EG",
@@ -3036,28 +3058,6 @@
       "ED1": 13,
       "ED2": 25,
       "Lav": 54
-    },
-    {
-      "tail": "N522AE",
-      "lastService": "2026-06-16",
-      "lastCC": "2026-06-15",
-      "lastDSC": "2025-12-18",
-      "lastCE": "2025-12-18",
-      "lastED1": "2025-11-22",
-      "lastED2": "2025-12-27",
-      "lastLav": "2025-09-28",
-      "lastIC": "2026-06-16",
-      "lastEC": "2026-06-15",
-      "lastED3": "2025-10-15",
-      "lastED4": "2025-10-15",
-      "lastLocation": "GSP",
-      "lastTech": "Brittany Eckelberry",
-      "CC": 26,
-      "DSC": -153,
-      "CE": -153,
-      "ED1": -179,
-      "ED2": -144,
-      "Lav": -174
     }
   ],
   "debriefs": [
@@ -3635,7 +3635,7 @@
       "ED2": 1,
       "ED3": 0,
       "ED4": 0,
-      "Lav": 0
+      "Lav": 1
     },
     {
       "tail": "N581NN",

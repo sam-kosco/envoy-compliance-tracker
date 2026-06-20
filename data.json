@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-20T03:14:12.112439+00:00",
+  "generated": "2026-06-20T05:34:47.239443+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -1103,13 +1103,13 @@
     },
     {
       "tail": "N305CL",
-      "lastService": "2026-06-14",
-      "lastED1": "2026-05-14",
+      "lastService": "2026-06-19",
+      "lastED1": "2026-06-19",
       "lastED2": "2026-05-14",
-      "lastIHC": "2026-06-14",
-      "lastLocation": "CMH",
-      "lastTech": "Alexander Hamilton",
-      "ED1": -7,
+      "lastIHC": "2026-06-19",
+      "lastLocation": "DFW",
+      "lastTech": "Aunyae Morrison",
+      "ED1": 29,
       "ED2": 23
     },
     {
@@ -1169,12 +1169,12 @@
     },
     {
       "tail": "N311VE",
-      "lastService": "2026-06-15",
+      "lastService": "2026-06-19",
       "lastED1": "2026-04-27",
       "lastED2": "2026-05-27",
-      "lastIHC": "2026-06-15",
-      "lastLocation": "DFW",
-      "lastTech": "Sharmaine Brown",
+      "lastIHC": "2026-06-19",
+      "lastLocation": "SGF",
+      "lastTech": "Steven Wilson",
       "ED1": -24,
       "ED2": 36
     },
@@ -2027,6 +2027,33 @@
     }
   ],
   "debriefs": [
+    {
+      "tail": "N311VE",
+      "date": "2026-06-19",
+      "name": "Steven Wilson",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N305CL",
+      "date": "2026-06-19",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N305CL",
+      "date": "2026-06-19",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 0,
+      "ED1": 1,
+      "ED2": 0
+    },
     {
       "tail": "N212NN",
       "date": "2026-06-18",

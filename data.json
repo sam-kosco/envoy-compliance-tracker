@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-21T07:46:06.235541+00:00",
+  "generated": "2026-06-21T09:21:17.061490+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -157,12 +157,12 @@
     },
     {
       "tail": "N214NN",
-      "lastService": "2026-06-13",
+      "lastService": "2026-06-20",
       "lastED1": "2026-05-30",
       "lastED2": "2026-06-09",
-      "lastIHC": "2026-06-13",
-      "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastIHC": "2026-06-20",
+      "lastLocation": "LIT",
+      "lastTech": "Riley Woods",
       "ED1": 8,
       "ED2": 48
     },
@@ -212,12 +212,12 @@
     },
     {
       "tail": "N219NN",
-      "lastService": "2026-06-18",
+      "lastService": "2026-06-20",
       "lastED1": "2026-06-02",
       "lastED2": "2026-05-02",
-      "lastIHC": "2026-06-18",
-      "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastIHC": "2026-06-20",
+      "lastLocation": "LIT",
+      "lastTech": "Riley Woods",
       "ED1": 11,
       "ED2": 10
     },
@@ -806,12 +806,12 @@
     },
     {
       "tail": "N273NN",
-      "lastService": "2026-06-18",
+      "lastService": "2026-06-20",
       "lastED1": "2026-05-26",
       "lastED2": "2026-06-07",
-      "lastIHC": "2026-06-18",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
+      "lastIHC": "2026-06-20",
+      "lastLocation": "LIT",
+      "lastTech": "Riley Woods",
       "ED1": 4,
       "ED2": 46
     },
@@ -1235,13 +1235,13 @@
     },
     {
       "tail": "N317TB",
-      "lastService": "2026-06-18",
-      "lastED1": "2026-05-24",
+      "lastService": "2026-06-20",
+      "lastED1": "2026-06-20",
       "lastED2": "2026-04-29",
-      "lastIHC": "2026-06-18",
-      "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
-      "ED1": 2,
+      "lastIHC": "2026-06-20",
+      "lastLocation": "LIT",
+      "lastTech": "Riley Woods",
+      "ED1": 29,
       "ED2": 7
     },
     {
@@ -1257,12 +1257,12 @@
     },
     {
       "tail": "N319RG",
-      "lastService": "2026-06-15",
+      "lastService": "2026-06-20",
       "lastED1": "2026-06-14",
       "lastED2": "2026-06-01",
-      "lastIHC": "2026-06-15",
-      "lastLocation": "DFW",
-      "lastTech": "Sharmaine Brown",
+      "lastIHC": "2026-06-20",
+      "lastLocation": "LIT",
+      "lastTech": "Riley Woods",
       "ED1": 23,
       "ED2": 40
     },
@@ -1774,13 +1774,13 @@
     },
     {
       "tail": "N769KW",
-      "lastService": "2026-06-15",
-      "lastED1": "2026-05-23",
+      "lastService": "2026-06-20",
+      "lastED1": "2026-06-20",
       "lastED2": "2026-04-21",
-      "lastIHC": "2026-06-15",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
-      "ED1": 1,
+      "lastIHC": "2026-06-20",
+      "lastLocation": "LIT",
+      "lastTech": "Riley Woods",
+      "ED1": 29,
       "ED2": -1
     },
     {
@@ -2142,6 +2142,60 @@
       "location": "CVG",
       "IHC": 1,
       "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N214NN",
+      "date": "2026-06-20",
+      "name": "Riley Woods",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N319RG",
+      "date": "2026-06-20",
+      "name": "Riley Woods",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N219NN",
+      "date": "2026-06-20",
+      "name": "Riley Woods",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N769KW",
+      "date": "2026-06-20",
+      "name": "Riley Woods",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N273NN",
+      "date": "2026-06-20",
+      "name": "Riley Woods",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N317TB",
+      "date": "2026-06-20",
+      "name": "Riley Woods",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 1,
       "ED2": 0
     },
     {

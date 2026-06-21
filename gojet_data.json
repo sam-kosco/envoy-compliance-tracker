@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-21T05:33:47.524612+00:00",
+  "generated": "2026-06-21T07:33:07.826172+00:00",
   "cycles": {
     "ED1": 60,
     "ED2": 60,
@@ -106,12 +106,12 @@
     },
     {
       "tail": "511",
-      "lastService": "2026-06-17",
+      "lastService": "2026-06-20",
       "lastED1": "2026-05-23",
       "lastED2": "2026-05-23",
       "lastCE": "2026-04-21",
       "lastIHC": "2026-05-23",
-      "lastRON": "2026-06-17",
+      "lastRON": "2026-06-20",
       "lastLocation": "STL",
       "lastTech": "Genesis King",
       "ED1": 31,
@@ -260,14 +260,14 @@
     },
     {
       "tail": "534",
-      "lastService": "2026-06-12",
+      "lastService": "2026-06-20",
       "lastED1": "2026-03-27",
       "lastED2": "2026-03-27",
       "lastCE": "2026-06-12",
       "lastIHC": "2026-06-12",
-      "lastRON": "2026-06-04",
+      "lastRON": "2026-06-20",
       "lastLocation": "STL",
-      "lastTech": "Tiffany Hudson",
+      "lastTech": "Genesis King",
       "ED1": -26,
       "ED2": -26,
       "CE": 51
@@ -302,14 +302,14 @@
     },
     {
       "tail": "537",
-      "lastService": "2026-06-01",
+      "lastService": "2026-06-20",
       "lastED1": "2026-06-01",
       "lastED2": "2026-06-01",
       "lastCE": "2026-01-07",
       "lastIHC": "2026-06-01",
-      "lastRON": "2026-06-01",
+      "lastRON": "2026-06-20",
       "lastLocation": "STL",
-      "lastTech": "Quarletta Henderson",
+      "lastTech": "Genesis King",
       "ED1": 40,
       "ED2": 40,
       "CE": -105
@@ -456,14 +456,14 @@
     },
     {
       "tail": "548",
-      "lastService": "2026-06-15",
+      "lastService": "2026-06-20",
       "lastED1": "2026-04-05",
       "lastED2": "2026-04-05",
       "lastCE": "2026-01-09",
-      "lastIHC": "2026-05-13",
+      "lastIHC": "2026-06-20",
       "lastRON": "2026-06-15",
       "lastLocation": "STL",
-      "lastTech": "Tiffany Hudson",
+      "lastTech": "Genesis King",
       "ED1": -17,
       "ED2": -17,
       "CE": -103
@@ -736,14 +736,14 @@
     },
     {
       "tail": "578",
-      "lastService": "2026-06-16",
+      "lastService": "2026-06-20",
       "lastED1": "2026-06-07",
       "lastED2": "2026-06-07",
       "lastCE": "2026-06-07",
       "lastIHC": "2026-06-07",
-      "lastRON": "2026-06-16",
+      "lastRON": "2026-06-20",
       "lastLocation": "STL",
-      "lastTech": "Tiffany Hudson",
+      "lastTech": "Genesis King",
       "ED1": 46,
       "ED2": 46,
       "CE": 46
@@ -778,6 +778,61 @@
     }
   ],
   "debriefs": [
+    {
+      "tail": "511",
+      "date": "2026-06-20",
+      "name": "Genesis King",
+      "location": "STL",
+      "ED1": 0,
+      "ED2": 0,
+      "CE": 0,
+      "IHC": 0,
+      "RON": 1
+    },
+    {
+      "tail": "534",
+      "date": "2026-06-20",
+      "name": "Genesis King",
+      "location": "STL",
+      "ED1": 0,
+      "ED2": 0,
+      "CE": 0,
+      "IHC": 0,
+      "RON": 1
+    },
+    {
+      "tail": "537",
+      "date": "2026-06-20",
+      "name": "Genesis King",
+      "location": "STL",
+      "ED1": 0,
+      "ED2": 0,
+      "CE": 0,
+      "IHC": 0,
+      "RON": 1
+    },
+    {
+      "tail": "548",
+      "date": "2026-06-20",
+      "name": "Genesis King",
+      "location": "STL",
+      "ED1": 0,
+      "ED2": 0,
+      "CE": 0,
+      "IHC": 1,
+      "RON": 0
+    },
+    {
+      "tail": "578",
+      "date": "2026-06-20",
+      "name": "Genesis King",
+      "location": "STL",
+      "ED1": 0,
+      "ED2": 0,
+      "CE": 0,
+      "IHC": 0,
+      "RON": 1
+    },
     {
       "tail": "519",
       "date": "2026-06-19",

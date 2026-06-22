@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-22T19:06:22.120114+00:00",
+  "generated": "2026-06-22T21:01:13.423820+00:00",
   "planes": [
     {
       "tail": "N500AE",
@@ -916,8 +916,8 @@
       "lastEC": "2026-06-21",
       "lastED3": null,
       "lastED4": null,
-      "lastLocation": "CAK",
-      "lastTech": "Amy Gribble",
+      "lastLocation": "CLT",
+      "lastTech": "Makayla Walker",
       "CC": 29,
       "DSC": 16,
       "CE": 16,
@@ -930,8 +930,8 @@
       "lastService": "2026-06-20",
       "lastCC": "2026-06-20",
       "lastDSC": "2026-05-31",
-      "lastCE": "2026-06-19",
-      "lastED1": "2026-06-19",
+      "lastCE": "2026-06-18",
+      "lastED1": "2026-06-18",
       "lastED2": "2026-05-31",
       "lastLav": "2026-06-17",
       "lastIC": "2026-06-20",
@@ -942,8 +942,8 @@
       "lastTech": "Alexandra Stalans",
       "CC": 28,
       "DSC": 8,
-      "CE": 27,
-      "ED1": 27,
+      "CE": 26,
+      "ED1": 26,
       "ED2": 8,
       "Lav": 85
     },
@@ -3106,22 +3106,6 @@
   ],
   "debriefs": [
     {
-      "tail": "N550NN",
-      "date": "2026-06-21",
-      "name": "Amy Gribble",
-      "location": "CAK",
-      "IC": 1,
-      "EC": 1,
-      "CC": 1,
-      "DSC": 0,
-      "CE": 0,
-      "ED1": 0,
-      "ED2": 0,
-      "ED3": 0,
-      "ED4": 0,
-      "Lav": 0
-    },
-    {
       "tail": "N716PS",
       "date": "2026-06-21",
       "name": "Saphire Wagner",
@@ -3586,6 +3570,22 @@
       "Lav": 0
     },
     {
+      "tail": "N550NN",
+      "date": "2026-06-20",
+      "name": "Amy Gribble",
+      "location": "CAK",
+      "IC": 1,
+      "EC": 1,
+      "CC": 1,
+      "DSC": 0,
+      "CE": 0,
+      "ED1": 0,
+      "ED2": 0,
+      "ED3": 0,
+      "ED4": 0,
+      "Lav": 0
+    },
+    {
       "tail": "N528EG",
       "date": "2026-06-20",
       "name": "Makayla Walker",
@@ -4034,22 +4034,6 @@
       "Lav": 0
     },
     {
-      "tail": "N551NN",
-      "date": "2026-06-19",
-      "name": "Elton Andrews",
-      "location": "ORF",
-      "IC": 1,
-      "EC": 1,
-      "CC": 1,
-      "DSC": 0,
-      "CE": 1,
-      "ED1": 1,
-      "ED2": 0,
-      "ED3": 0,
-      "ED4": 0,
-      "Lav": 0
-    },
-    {
       "tail": "N618NN",
       "date": "2026-06-19",
       "name": "Makayla Walker",
@@ -4386,22 +4370,6 @@
       "Lav": 0
     },
     {
-      "tail": "N608NN",
-      "date": "2026-06-19",
-      "name": "Saphire Wagner",
-      "location": "DAY",
-      "IC": 1,
-      "EC": 1,
-      "CC": 1,
-      "DSC": 0,
-      "CE": 0,
-      "ED1": 1,
-      "ED2": 1,
-      "ED3": 0,
-      "ED4": 0,
-      "Lav": 0
-    },
-    {
       "tail": "N587NN",
       "date": "2026-06-19",
       "name": "Saphire Wagner",
@@ -4466,7 +4434,7 @@
       "Lav": 0
     },
     {
-      "tail": "N549NN",
+      "tail": "N594NN",
       "date": "2026-06-19",
       "name": "Savannah Atkins",
       "location": "GSP",
@@ -4620,6 +4588,22 @@
       "DSC": 0,
       "CE": 1,
       "ED1": 0,
+      "ED2": 0,
+      "ED3": 0,
+      "ED4": 0,
+      "Lav": 0
+    },
+    {
+      "tail": "N551NN",
+      "date": "2026-06-18",
+      "name": "Elton Andrews",
+      "location": "ORF",
+      "IC": 1,
+      "EC": 1,
+      "CC": 1,
+      "DSC": 0,
+      "CE": 1,
+      "ED1": 1,
       "ED2": 0,
       "ED3": 0,
       "ED4": 0,

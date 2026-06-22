@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-22T15:01:09.937882+00:00",
+  "generated": "2026-06-22T17:32:12.693716+00:00",
   "planes": [
     {
       "tail": "N500AE",
@@ -660,6 +660,28 @@
       "ED1": 10,
       "ED2": 10,
       "Lav": 80
+    },
+    {
+      "tail": "N538EA",
+      "lastService": null,
+      "lastCC": null,
+      "lastDSC": null,
+      "lastCE": null,
+      "lastED1": null,
+      "lastED2": null,
+      "lastLav": null,
+      "lastIC": null,
+      "lastEC": null,
+      "lastED3": null,
+      "lastED4": null,
+      "lastLocation": null,
+      "lastTech": null,
+      "CC": "No Service",
+      "DSC": "No Service",
+      "CE": "No Service",
+      "ED1": "No Service",
+      "ED2": "No Service",
+      "Lav": "No Service"
     },
     {
       "tail": "N539EA",
@@ -2771,6 +2793,28 @@
       "CE": 29,
       "ED1": 21,
       "ED2": 21,
+      "Lav": "No Service"
+    },
+    {
+      "tail": "N649NN",
+      "lastService": "2026-06-19",
+      "lastCC": "2026-06-19",
+      "lastDSC": null,
+      "lastCE": null,
+      "lastED1": null,
+      "lastED2": null,
+      "lastLav": null,
+      "lastIC": "2026-06-19",
+      "lastEC": "2026-06-19",
+      "lastED3": null,
+      "lastED4": null,
+      "lastLocation": "DAY",
+      "lastTech": "Saphire Wagner",
+      "CC": 27,
+      "DSC": "No Service",
+      "CE": "No Service",
+      "ED1": "No Service",
+      "ED2": "No Service",
       "Lav": "No Service"
     },
     {

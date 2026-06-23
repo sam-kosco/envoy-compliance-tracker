@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-23T18:41:45.897396+00:00",
+  "generated": "2026-06-23T19:36:35.309123+00:00",
   "planes": [
     {
       "tail": "N500AE",
@@ -2472,8 +2472,8 @@
       "lastDSC": "2026-05-24",
       "lastCE": "2026-06-22",
       "lastED1": "2026-06-22",
-      "lastED2": "2026-06-02",
-      "lastLav": "2026-06-02",
+      "lastED2": "2026-06-01",
+      "lastLav": "2026-06-01",
       "lastIC": "2026-06-22",
       "lastEC": "2026-06-22",
       "lastED3": null,
@@ -2484,8 +2484,8 @@
       "DSC": 0,
       "CE": 29,
       "ED1": 29,
-      "ED2": 9,
-      "Lav": 69
+      "ED2": 8,
+      "Lav": 68
     },
     {
       "tail": "N632NN",
@@ -7177,13 +7177,13 @@
       "IC": 1,
       "EC": 1,
       "CC": 1,
-      "DSC": 0,
-      "CE": 0,
+      "DSC": 1,
+      "CE": 1,
       "ED1": 0,
       "ED2": 0,
       "ED3": 0,
       "ED4": 0,
-      "Lav": 0
+      "Lav": 1
     },
     {
       "tail": "N549NN",
@@ -12434,22 +12434,6 @@
       "Lav": 0
     },
     {
-      "tail": "N631NN",
-      "date": "2026-06-02",
-      "name": "Katherine Reynolds",
-      "location": "CAK",
-      "IC": 1,
-      "EC": 1,
-      "CC": 1,
-      "DSC": 0,
-      "CE": 0,
-      "ED1": 0,
-      "ED2": 1,
-      "ED3": 0,
-      "ED4": 0,
-      "Lav": 1
-    },
-    {
       "tail": "N725PS",
       "date": "2026-06-02",
       "name": "Katherine Reynolds",
@@ -13024,6 +13008,22 @@
       "ED3": 0,
       "ED4": 0,
       "Lav": 0
+    },
+    {
+      "tail": "N631NN",
+      "date": "2026-06-01",
+      "name": "Katherine Reynolds",
+      "location": "CAK",
+      "IC": 1,
+      "EC": 1,
+      "CC": 1,
+      "DSC": 0,
+      "CE": 0,
+      "ED1": 0,
+      "ED2": 1,
+      "ED3": 0,
+      "ED4": 0,
+      "Lav": 1
     },
     {
       "tail": "N723PS",

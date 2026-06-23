@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-23T05:26:34.876647+00:00",
+  "generated": "2026-06-23T07:22:58.836803+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -25,13 +25,13 @@
     },
     {
       "tail": "N202NN",
-      "lastService": "2026-06-18",
-      "lastED1": "2026-05-15",
+      "lastService": "2026-06-22",
+      "lastED1": "2026-06-22",
       "lastED2": "2026-05-11",
-      "lastIHC": "2026-06-18",
-      "lastLocation": "CMH",
-      "lastTech": "Alex Hamilton",
-      "ED1": -9,
+      "lastIHC": "2026-06-22",
+      "lastLocation": "CVG",
+      "lastTech": "Sellers Davis",
+      "ED1": 29,
       "ED2": 17
     },
     {
@@ -146,12 +146,12 @@
     },
     {
       "tail": "N213NN",
-      "lastService": "2026-06-19",
+      "lastService": "2026-06-22",
       "lastED1": "2026-06-02",
       "lastED2": "2026-06-02",
-      "lastIHC": "2026-06-19",
-      "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastIHC": "2026-06-22",
+      "lastLocation": "CVG",
+      "lastTech": "Sellers Davis",
       "ED1": 9,
       "ED2": 39
     },
@@ -1950,12 +1950,12 @@
     },
     {
       "tail": "N788CL",
-      "lastService": "2026-06-17",
+      "lastService": "2026-06-22",
       "lastED1": "2026-06-15",
       "lastED2": "2026-06-15",
-      "lastIHC": "2026-06-17",
-      "lastLocation": "XNA",
-      "lastTech": "Shaun Neil",
+      "lastIHC": "2026-06-22",
+      "lastLocation": "CVG",
+      "lastTech": "Sellers Davis",
       "ED1": 22,
       "ED2": 52
     },
@@ -2031,6 +2031,33 @@
       "tail": "N344JA",
       "date": "2026-06-22",
       "name": "Dvion Davis",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N202NN",
+      "date": "2026-06-22",
+      "name": "Sellers Davis",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N213NN",
+      "date": "2026-06-22",
+      "name": "Sellers Davis",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N788CL",
+      "date": "2026-06-22",
+      "name": "Sellers Davis",
       "location": "CVG",
       "IHC": 1,
       "ED1": 0,

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-23T16:53:51.301499+00:00",
+  "generated": "2026-06-23T18:48:35.895385+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -26,12 +26,12 @@
     {
       "tail": "N202NN",
       "lastService": "2026-06-22",
-      "lastED1": "2026-06-22",
+      "lastED1": "2026-05-15",
       "lastED2": "2026-05-11",
       "lastIHC": "2026-06-22",
       "lastLocation": "CVG",
       "lastTech": "Sellers Davis",
-      "ED1": 29,
+      "ED1": -9,
       "ED2": 17
     },
     {
@@ -1950,12 +1950,12 @@
     },
     {
       "tail": "N788CL",
-      "lastService": "2026-06-22",
+      "lastService": "2026-06-17",
       "lastED1": "2026-06-15",
       "lastED2": "2026-06-15",
-      "lastIHC": "2026-06-22",
-      "lastLocation": "CVG",
-      "lastTech": "Sellers Davis",
+      "lastIHC": "2026-06-17",
+      "lastLocation": "XNA",
+      "lastTech": "Shaun Neil",
       "ED1": 22,
       "ED2": 52
     },
@@ -2042,7 +2042,7 @@
       "name": "Sellers Davis",
       "location": "CVG",
       "IHC": 1,
-      "ED1": 1,
+      "ED1": 0,
       "ED2": 0
     },
     {
@@ -2055,7 +2055,7 @@
       "ED2": 0
     },
     {
-      "tail": "N788CL",
+      "tail": "N788CJ",
       "date": "2026-06-22",
       "name": "Sellers Davis",
       "location": "CVG",

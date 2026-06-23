@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-23T03:13:41.389637+00:00",
+  "generated": "2026-06-23T05:26:34.876647+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -1532,12 +1532,12 @@
     },
     {
       "tail": "N344JA",
-      "lastService": "2026-06-16",
+      "lastService": "2026-06-22",
       "lastED1": null,
       "lastED2": null,
-      "lastIHC": "2026-06-16",
-      "lastLocation": "XNA",
-      "lastTech": "Shaun Neil",
+      "lastIHC": "2026-06-22",
+      "lastLocation": "CVG",
+      "lastTech": "Dvion Davis",
       "ED1": "No Service",
       "ED2": "No Service"
     },
@@ -2027,6 +2027,15 @@
     }
   ],
   "debriefs": [
+    {
+      "tail": "N344JA",
+      "date": "2026-06-22",
+      "name": "Dvion Davis",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
     {
       "tail": "N311VE",
       "date": "2026-06-21",

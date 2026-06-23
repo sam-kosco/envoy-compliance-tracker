@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-23T22:02:14.484523+00:00",
+  "generated": "2026-06-23T23:01:40.295535+00:00",
   "planes": [
     {
       "tail": "N351DC",
@@ -485,7 +485,7 @@
           "date": "2026-06-12",
           "location": "KPTK",
           "tech": "Jakendell Brown",
-          "report_url": "https://app.safetyculture.com/report/public/audit/4e6b83b82d39ade902c91df53f57ad21e04faf55604322921348801ecf162cf1"
+          "report_url": "https://app.safetyculture.com/report/public/audit/4a4205ab73cb7115e38c51daf740e9d8f40298b7633079989e0b06169364d7a7"
         },
         {
           "audit_id": "audit_91a775c5a7934c4899265e5b5ed72e50",
@@ -1145,13 +1145,20 @@
     },
     {
       "tail": "N419JS",
-      "status": "soon",
-      "count7d": 1,
-      "daysSinceLast": 5,
-      "lastClean": "2026-06-18",
+      "status": "compliant",
+      "count7d": 2,
+      "daysSinceLast": 0,
+      "lastClean": "2026-06-23",
       "lastLocation": "KFNT",
       "lastTech": "Jakendell Brown",
       "recentInspections": [
+        {
+          "audit_id": "audit_46eb7f7c78f74d70ada151ddeabde242",
+          "date": "2026-06-23",
+          "location": "KFNT",
+          "tech": "Jakendell Brown",
+          "report_url": "https://app.safetyculture.com/report/public/audit/0e86419e2836d8ac44123377be078c90411f96fb325c2946831d6cd7f30f3c84"
+        },
         {
           "audit_id": "audit_11e5bb8cc891485d80be20299ee40e80",
           "date": "2026-06-18",
@@ -1179,13 +1186,6 @@
           "location": "KFNT",
           "tech": "Jakendell Brown",
           "report_url": "https://app.safetyculture.com/report/public/audit/1d640196a17edcc99ad5b79e8c01a776ea1eb3ab36060b9bd1a7291f798b5508"
-        },
-        {
-          "audit_id": "audit_5138c26ba8784c26855f7599efe36264",
-          "date": "2026-06-01",
-          "location": "KFNT",
-          "tech": "Jakendell Brown",
-          "report_url": "https://app.safetyculture.com/report/public/audit/55e8804f24047472cc9ea2e78dc09027194882336c7546969ea02fbd7e65d490"
         }
       ]
     },

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-23T07:08:24.881159+00:00",
+  "generated": "2026-06-23T09:03:00.214851+00:00",
   "cycles": {
     "ED1": 60,
     "ED2": 60,
@@ -176,16 +176,16 @@
     },
     {
       "tail": "521",
-      "lastService": "2026-06-01",
-      "lastED1": "2026-06-01",
-      "lastED2": "2026-06-01",
+      "lastService": "2026-06-22",
+      "lastED1": "2026-06-22",
+      "lastED2": "2026-06-22",
       "lastCE": "2025-12-13",
-      "lastIHC": "2026-06-01",
+      "lastIHC": "2026-06-22",
       "lastRON": "2026-06-01",
       "lastLocation": "STL",
-      "lastTech": "Quarletta Henderson",
-      "ED1": 38,
-      "ED2": 38,
+      "lastTech": "Tiffany Hudson",
+      "ED1": 59,
+      "ED2": 59,
       "CE": -132
     },
     {
@@ -708,14 +708,14 @@
     },
     {
       "tail": "576",
-      "lastService": "2026-06-06",
+      "lastService": "2026-06-22",
       "lastED1": "2026-06-06",
       "lastED2": "2026-06-06",
       "lastCE": "2026-06-06",
       "lastIHC": "2026-06-06",
-      "lastRON": "2026-05-09",
+      "lastRON": "2026-06-22",
       "lastLocation": "STL",
-      "lastTech": "Genesis King",
+      "lastTech": "Tiffany Hudson",
       "ED1": 43,
       "ED2": 43,
       "CE": 43
@@ -788,6 +788,39 @@
       "CE": 0,
       "IHC": 0,
       "RON": 1
+    },
+    {
+      "tail": "529",
+      "date": "2026-06-22",
+      "name": "Tiffany Hudson",
+      "location": "STL",
+      "ED1": 0,
+      "ED2": 0,
+      "CE": 0,
+      "IHC": 0,
+      "RON": 1
+    },
+    {
+      "tail": "576",
+      "date": "2026-06-22",
+      "name": "Tiffany Hudson",
+      "location": "STL",
+      "ED1": 0,
+      "ED2": 0,
+      "CE": 0,
+      "IHC": 0,
+      "RON": 1
+    },
+    {
+      "tail": "521",
+      "date": "2026-06-22",
+      "name": "Tiffany Hudson",
+      "location": "STL",
+      "ED1": 1,
+      "ED2": 1,
+      "CE": 0,
+      "IHC": 1,
+      "RON": 0
     },
     {
       "tail": "504",

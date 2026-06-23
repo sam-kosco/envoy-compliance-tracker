@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-23T18:48:35.895385+00:00",
+  "generated": "2026-06-23T20:48:28.405285+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -632,12 +632,12 @@
       "tail": "N257NN",
       "lastService": "2026-06-16",
       "lastED1": "2026-05-11",
-      "lastED2": "2026-04-28",
+      "lastED2": "2026-06-04",
       "lastIHC": "2026-06-16",
       "lastLocation": "SGF",
       "lastTech": "Steven Wilson",
       "ED1": -13,
-      "ED2": 4
+      "ED2": 41
     },
     {
       "tail": "N258NN",
@@ -1564,6 +1564,17 @@
       "ED2": -6
     },
     {
+      "tail": "N348RA",
+      "lastService": "2026-06-23",
+      "lastED1": null,
+      "lastED2": null,
+      "lastIHC": null,
+      "lastLocation": "",
+      "lastTech": "Fleet Addition",
+      "ED1": "No Service",
+      "ED2": "No Service"
+    },
+    {
       "tail": "N740MR",
       "lastService": "2026-06-18",
       "lastED1": "2026-06-07",
@@ -2027,6 +2038,15 @@
     }
   ],
   "debriefs": [
+    {
+      "tail": "N348RA",
+      "date": "2026-06-23",
+      "name": "Fleet Addition",
+      "location": "",
+      "IHC": 0,
+      "ED1": 0,
+      "ED2": 0
+    },
     {
       "tail": "N344JA",
       "date": "2026-06-22",
@@ -5259,11 +5279,11 @@
       "ED2": 0
     },
     {
-      "tail": "N275NN",
+      "tail": "N342KR",
       "date": "2026-06-13",
-      "name": "Riley Woods",
-      "location": "XNA",
-      "IHC": 1,
+      "name": "Fleet Addition",
+      "location": "",
+      "IHC": 0,
       "ED1": 0,
       "ED2": 0
     },
@@ -6118,6 +6138,15 @@
       "date": "2026-06-11",
       "name": "Alexander Hamilton",
       "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N275NN",
+      "date": "2026-06-11",
+      "name": "Riley Woods",
+      "location": "XNA",
       "IHC": 1,
       "ED1": 0,
       "ED2": 0
@@ -8424,7 +8453,7 @@
       "location": "CVG",
       "IHC": 1,
       "ED1": 0,
-      "ED2": 0
+      "ED2": 1
     },
     {
       "tail": "N256NN",
@@ -13436,6 +13465,15 @@
       "name": "Jeffrey Crookshanks",
       "location": "SGF",
       "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N344JA",
+      "date": "2026-05-20",
+      "name": "Fleet Addition",
+      "location": "",
+      "IHC": 0,
       "ED1": 0,
       "ED2": 0
     },

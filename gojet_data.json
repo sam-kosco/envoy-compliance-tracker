@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-24T05:17:06.780169+00:00",
+  "generated": "2026-06-24T07:05:50.203090+00:00",
   "cycles": {
     "ED1": 60,
     "ED2": 60,
@@ -176,12 +176,12 @@
     },
     {
       "tail": "521",
-      "lastService": "2026-06-22",
+      "lastService": "2026-06-23",
       "lastED1": "2026-06-22",
       "lastED2": "2026-06-22",
       "lastCE": "2025-12-13",
       "lastIHC": "2026-06-22",
-      "lastRON": "2026-06-01",
+      "lastRON": "2026-06-23",
       "lastLocation": "STL",
       "lastTech": "Tiffany Hudson",
       "ED1": 58,
@@ -190,12 +190,12 @@
     },
     {
       "tail": "522",
-      "lastService": "2026-06-15",
+      "lastService": "2026-06-23",
       "lastED1": "2026-06-15",
       "lastED2": "2026-06-15",
       "lastCE": "2026-03-02",
       "lastIHC": "2026-06-15",
-      "lastRON": "2026-06-06",
+      "lastRON": "2026-06-23",
       "lastLocation": "STL",
       "lastTech": "Tiffany Hudson",
       "ED1": 51,
@@ -232,14 +232,14 @@
     },
     {
       "tail": "526",
-      "lastService": "2026-06-05",
+      "lastService": "2026-06-23",
       "lastED1": "2026-05-27",
       "lastED2": "2026-05-27",
       "lastCE": "2026-06-04",
       "lastIHC": "2026-06-04",
-      "lastRON": "2026-06-05",
+      "lastRON": "2026-06-23",
       "lastLocation": "STL",
-      "lastTech": "Genesis King",
+      "lastTech": "Tiffany Hudson",
       "ED1": 32,
       "ED2": 32,
       "CE": 40
@@ -778,6 +778,39 @@
     }
   ],
   "debriefs": [
+    {
+      "tail": "521",
+      "date": "2026-06-23",
+      "name": "Tiffany Hudson",
+      "location": "STL",
+      "ED1": 0,
+      "ED2": 0,
+      "CE": 0,
+      "IHC": 0,
+      "RON": 1
+    },
+    {
+      "tail": "522",
+      "date": "2026-06-23",
+      "name": "Tiffany Hudson",
+      "location": "STL",
+      "ED1": 0,
+      "ED2": 0,
+      "CE": 0,
+      "IHC": 0,
+      "RON": 1
+    },
+    {
+      "tail": "526",
+      "date": "2026-06-23",
+      "name": "Tiffany Hudson",
+      "location": "STL",
+      "ED1": 0,
+      "ED2": 0,
+      "CE": 0,
+      "IHC": 0,
+      "RON": 1
+    },
     {
       "tail": "523",
       "date": "2026-06-22",

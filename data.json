@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-24T01:43:38.890743+00:00",
+  "generated": "2026-06-24T03:13:53.302126+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -135,12 +135,12 @@
     },
     {
       "tail": "N212NN",
-      "lastService": "2026-06-21",
+      "lastService": "2026-06-23",
       "lastED1": "2026-06-10",
       "lastED2": "2026-06-03",
-      "lastIHC": "2026-06-21",
-      "lastLocation": "LIT",
-      "lastTech": "Dane  Clement",
+      "lastIHC": "2026-06-23",
+      "lastLocation": "SGF",
+      "lastTech": "Steven Wilson",
       "ED1": 16,
       "ED2": 39
     },
@@ -2044,6 +2044,15 @@
       "name": "Fleet Addition",
       "location": "",
       "IHC": 0,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N212NN",
+      "date": "2026-06-23",
+      "name": "Steven Wilson",
+      "location": "SGF",
+      "IHC": 1,
       "ED1": 0,
       "ED2": 0
     },

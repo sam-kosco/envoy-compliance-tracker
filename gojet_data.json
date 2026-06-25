@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-25T14:56:30.854180+00:00",
+  "generated": "2026-06-25T15:52:08.606166+00:00",
   "cycles": {
     "ED1": 60,
     "ED2": 60,
@@ -446,7 +446,7 @@
       "lastED1": "2026-02-06",
       "lastED2": "2026-02-06",
       "lastCE": "2026-04-28",
-      "lastIHC": "2026-06-02",
+      "lastIHC": "2026-05-23",
       "lastRON": "2026-06-18",
       "lastLocation": "STL",
       "lastTech": "Tiffany Hudson",
@@ -684,7 +684,7 @@
       "lastED1": "2026-01-08",
       "lastED2": "2026-01-08",
       "lastCE": "2025-09-18",
-      "lastIHC": "2026-06-02",
+      "lastIHC": "2026-03-20",
       "lastRON": "2026-06-02",
       "lastLocation": "STL",
       "lastTech": "Tiffany Hudson",
@@ -751,14 +751,14 @@
     {
       "tail": "579",
       "lastService": "2026-06-08",
-      "lastED1": "2026-06-03",
+      "lastED1": "2026-04-13",
       "lastED2": "2026-04-13",
       "lastCE": "2026-03-09",
-      "lastIHC": "2026-06-03",
+      "lastIHC": "2026-06-01",
       "lastRON": "2026-06-08",
       "lastLocation": "STL",
       "lastTech": "Tiffany Hudson",
-      "ED1": 38,
+      "ED1": -13,
       "ED2": -13,
       "CE": -48
     },
@@ -2033,28 +2033,6 @@
       "RON": 0
     },
     {
-      "tail": "579",
-      "date": "2026-06-03",
-      "name": "Tiffany Hudson",
-      "location": "STL",
-      "ED1": 0,
-      "ED2": 0,
-      "CE": 0,
-      "IHC": 1,
-      "RON": 1
-    },
-    {
-      "tail": "579",
-      "date": "2026-06-03",
-      "name": "Tiffany Hudson",
-      "location": "STL",
-      "ED1": 1,
-      "ED2": 0,
-      "CE": 0,
-      "IHC": 1,
-      "RON": 1
-    },
-    {
       "tail": "523",
       "date": "2026-06-02",
       "name": "Tiffany Hudson",
@@ -2073,7 +2051,7 @@
       "ED1": 0,
       "ED2": 0,
       "CE": 0,
-      "IHC": 1,
+      "IHC": 0,
       "RON": 1
     },
     {
@@ -2084,7 +2062,18 @@
       "ED1": 0,
       "ED2": 0,
       "CE": 0,
-      "IHC": 1,
+      "IHC": 0,
+      "RON": 1
+    },
+    {
+      "tail": "579",
+      "date": "2026-06-02",
+      "name": "Tiffany Hudson",
+      "location": "STL",
+      "ED1": 0,
+      "ED2": 0,
+      "CE": 0,
+      "IHC": 0,
       "RON": 1
     },
     {
@@ -2129,7 +2118,7 @@
       "ED2": 1,
       "CE": 0,
       "IHC": 1,
-      "RON": 1
+      "RON": 0
     },
     {
       "tail": "537",
@@ -2140,7 +2129,7 @@
       "ED2": 1,
       "CE": 0,
       "IHC": 1,
-      "RON": 1
+      "RON": 0
     },
     {
       "tail": "579",
@@ -2151,7 +2140,7 @@
       "ED2": 0,
       "CE": 0,
       "IHC": 1,
-      "RON": 1
+      "RON": 0
     },
     {
       "tail": "520",

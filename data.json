@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-25T16:50:47.796996+00:00",
+  "generated": "2026-06-25T20:44:05.185737+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -1531,6 +1531,17 @@
       "ED2": "No Service"
     },
     {
+      "tail": "N343JS",
+      "lastService": "2026-06-15",
+      "lastED1": "2026-04-24",
+      "lastED2": "2026-05-05",
+      "lastIHC": "2026-06-15",
+      "lastLocation": "CVG",
+      "lastTech": "Todd Axle",
+      "ED1": -32,
+      "ED2": 9
+    },
+    {
       "tail": "N344JA",
       "lastService": "2026-06-22",
       "lastED1": null,
@@ -1540,17 +1551,6 @@
       "lastTech": "Dvion Davis",
       "ED1": "No Service",
       "ED2": "No Service"
-    },
-    {
-      "tail": "N346BB",
-      "lastService": "2026-06-11",
-      "lastED1": "2026-05-16",
-      "lastED2": "2026-04-18",
-      "lastIHC": "2026-06-11",
-      "lastLocation": "LIT",
-      "lastTech": "Dane  Clement",
-      "ED1": -10,
-      "ED2": -8
     },
     {
       "tail": "N346BB",

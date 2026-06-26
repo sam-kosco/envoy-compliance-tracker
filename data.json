@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-26T05:31:08.472326+00:00",
+  "generated": "2026-06-26T07:25:36.413404+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -212,12 +212,12 @@
     },
     {
       "tail": "N219NN",
-      "lastService": "2026-06-21",
+      "lastService": "2026-06-25",
       "lastED1": "2026-06-02",
       "lastED2": "2026-05-02",
-      "lastIHC": "2026-06-21",
-      "lastLocation": "LIT",
-      "lastTech": "Dane  Clement",
+      "lastIHC": "2026-06-25",
+      "lastLocation": "CVG",
+      "lastTech": "Precious Roberson",
       "ED1": 6,
       "ED2": 5
     },
@@ -696,12 +696,12 @@
     },
     {
       "tail": "N263NN",
-      "lastService": "2026-06-16",
+      "lastService": "2026-06-25",
       "lastED1": "2026-06-08",
       "lastED2": "2026-05-24",
-      "lastIHC": "2026-06-16",
-      "lastLocation": "LIT",
-      "lastTech": "Dane  Clement",
+      "lastIHC": "2026-06-25",
+      "lastLocation": "CVG",
+      "lastTech": "Precious Valadez-Roberson",
       "ED1": 12,
       "ED2": 27
     },
@@ -1048,12 +1048,12 @@
     },
     {
       "tail": "N299JJ",
-      "lastService": "2026-06-23",
+      "lastService": "2026-06-25",
       "lastED1": "2026-06-23",
       "lastED2": "2026-04-19",
-      "lastIHC": "2026-06-23",
+      "lastIHC": "2026-06-25",
       "lastLocation": "CVG",
-      "lastTech": "Precious Valadez-Roberson",
+      "lastTech": "Precious Roberson",
       "ED1": 27,
       "ED2": -8
     },
@@ -1631,12 +1631,12 @@
     },
     {
       "tail": "N745JB",
-      "lastService": "2026-06-21",
+      "lastService": "2026-06-25",
       "lastED1": "2026-06-21",
       "lastED2": "2026-06-21",
-      "lastIHC": "2026-06-21",
-      "lastLocation": "LIT",
-      "lastTech": "Dane  Clement",
+      "lastIHC": "2026-06-25",
+      "lastLocation": "CVG",
+      "lastTech": "Precious Roberson",
       "ED1": 25,
       "ED2": 55
     },
@@ -2038,6 +2038,42 @@
     }
   ],
   "debriefs": [
+    {
+      "tail": "N263NN",
+      "date": "2026-06-25",
+      "name": "Precious Valadez-Roberson",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N745JB",
+      "date": "2026-06-25",
+      "name": "Precious Roberson",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N299JJ",
+      "date": "2026-06-25",
+      "name": "Precious Roberson",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N219NN",
+      "date": "2026-06-25",
+      "name": "Precious Roberson",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
     {
       "tail": "N222NS",
       "date": "2026-06-24",

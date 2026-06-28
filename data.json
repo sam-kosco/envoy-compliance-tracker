@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-28T05:35:24.895962+00:00",
+  "generated": "2026-06-28T07:28:08.456016+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -366,12 +366,12 @@
     },
     {
       "tail": "N233NN",
-      "lastService": "2026-06-26",
+      "lastService": "2026-06-27",
       "lastED1": "2026-06-04",
       "lastED2": "2026-06-07",
-      "lastIHC": "2026-06-26",
-      "lastLocation": "LIT",
-      "lastTech": "Shaun Neil",
+      "lastIHC": "2026-06-27",
+      "lastLocation": "XNA",
+      "lastTech": "Riley Woods",
       "ED1": 6,
       "ED2": 39
     },
@@ -850,14 +850,14 @@
     },
     {
       "tail": "N277NN",
-      "lastService": "2026-06-24",
+      "lastService": "2026-06-27",
       "lastED1": "2026-06-03",
-      "lastED2": "2026-05-04",
-      "lastIHC": "2026-06-24",
-      "lastLocation": "CMH",
-      "lastTech": "Tanaija Price",
+      "lastED2": "2026-06-27",
+      "lastIHC": "2026-06-27",
+      "lastLocation": "CVG",
+      "lastTech": "Todd Axle",
       "ED1": 5,
-      "ED2": 5
+      "ED2": 59
     },
     {
       "tail": "N278NN",
@@ -883,13 +883,13 @@
     },
     {
       "tail": "N280NN",
-      "lastService": "2026-06-18",
-      "lastED1": "2026-06-01",
+      "lastService": "2026-06-27",
+      "lastED1": "2026-06-27",
       "lastED2": "2026-06-18",
-      "lastIHC": "2026-06-18",
+      "lastIHC": "2026-06-27",
       "lastLocation": "XNA",
-      "lastTech": "Casey Henry",
-      "ED1": 3,
+      "lastTech": "Riley Woods",
+      "ED1": 29,
       "ED2": 50
     },
     {
@@ -949,12 +949,12 @@
     },
     {
       "tail": "N286NN",
-      "lastService": "2026-06-21",
+      "lastService": "2026-06-27",
       "lastED1": "2026-06-07",
       "lastED2": "2026-06-21",
-      "lastIHC": "2026-06-21",
-      "lastLocation": "XNA",
-      "lastTech": "Shaun Neil",
+      "lastIHC": "2026-06-27",
+      "lastLocation": "CVG",
+      "lastTech": "Todd Axle",
       "ED1": 9,
       "ED2": 53
     },
@@ -993,12 +993,12 @@
     },
     {
       "tail": "N290NN",
-      "lastService": "2026-06-21",
+      "lastService": "2026-06-27",
       "lastED1": "2026-06-02",
       "lastED2": "2026-05-26",
-      "lastIHC": "2026-06-21",
-      "lastLocation": "XNA",
-      "lastTech": "Shaun Neil",
+      "lastIHC": "2026-06-27",
+      "lastLocation": "CVG",
+      "lastTech": "Todd Axle",
       "ED1": 4,
       "ED2": 27
     },
@@ -1466,24 +1466,24 @@
     },
     {
       "tail": "N337MR",
-      "lastService": "2026-06-19",
-      "lastED1": "2026-06-15",
+      "lastService": "2026-06-27",
+      "lastED1": "2026-06-27",
       "lastED2": "2026-06-15",
-      "lastIHC": "2026-06-19",
-      "lastLocation": "CMH",
-      "lastTech": "Alexander Hamilton",
-      "ED1": 17,
+      "lastIHC": "2026-06-27",
+      "lastLocation": "XNA",
+      "lastTech": "Riley Woods",
+      "ED1": 29,
       "ED2": 47
     },
     {
       "tail": "N338AS",
-      "lastService": "2026-06-21",
-      "lastED1": "2026-06-21",
+      "lastService": "2026-06-27",
+      "lastED1": "2026-06-27",
       "lastED2": "2026-06-21",
-      "lastIHC": "2026-06-21",
+      "lastIHC": "2026-06-27",
       "lastLocation": "XNA",
-      "lastTech": "Shaun Neil",
-      "ED1": 23,
+      "lastTech": "Riley Woods",
+      "ED1": 29,
       "ED2": 53
     },
     {
@@ -1587,12 +1587,12 @@
     },
     {
       "tail": "N741AK",
-      "lastService": "2026-06-09",
+      "lastService": "2026-06-27",
       "lastED1": "2026-05-19",
       "lastED2": "2026-06-02",
-      "lastIHC": "2026-06-09",
-      "lastLocation": "SGF",
-      "lastTech": "Steven Wilson",
+      "lastIHC": "2026-06-27",
+      "lastLocation": "CVG",
+      "lastTech": "Todd Axle",
       "ED1": -10,
       "ED2": 34
     },
@@ -2052,6 +2052,78 @@
       "date": "2026-06-27",
       "name": "Riley Woods",
       "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N280NN",
+      "date": "2026-06-27",
+      "name": "Riley Woods",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N337MR",
+      "date": "2026-06-27",
+      "name": "Riley Woods",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N338AS",
+      "date": "2026-06-27",
+      "name": "Riley Woods",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N233NN",
+      "date": "2026-06-27",
+      "name": "Riley Woods",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N277NN",
+      "date": "2026-06-27",
+      "name": "Todd Axle",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 1
+    },
+    {
+      "tail": "N286NN",
+      "date": "2026-06-27",
+      "name": "Todd Axle",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N290NN",
+      "date": "2026-06-27",
+      "name": "Todd Axle",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N741AK",
+      "date": "2026-06-27",
+      "name": "Todd Axle",
+      "location": "CVG",
       "IHC": 1,
       "ED1": 0,
       "ED2": 0

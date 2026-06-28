@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-28T03:15:06.661533+00:00",
+  "generated": "2026-06-28T05:35:24.895962+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -300,12 +300,12 @@
     },
     {
       "tail": "N227NN",
-      "lastService": "2026-06-24",
+      "lastService": "2026-06-27",
       "lastED1": "2026-06-15",
       "lastED2": "2026-05-08",
-      "lastIHC": "2026-06-24",
-      "lastLocation": "SGF",
-      "lastTech": "Steven Wilson",
+      "lastIHC": "2026-06-27",
+      "lastLocation": "XNA",
+      "lastTech": "Riley Woods",
       "ED1": 17,
       "ED2": 9
     },
@@ -1235,12 +1235,12 @@
     },
     {
       "tail": "N317TB",
-      "lastService": "2026-06-23",
+      "lastService": "2026-06-27",
       "lastED1": "2026-06-20",
       "lastED2": "2026-04-29",
-      "lastIHC": "2026-06-23",
-      "lastLocation": "CMH",
-      "lastTech": "Alexander Hamilton",
+      "lastIHC": "2026-06-27",
+      "lastLocation": "XNA",
+      "lastTech": "Riley Woods",
       "ED1": 22,
       "ED2": 0
     },
@@ -2038,6 +2038,24 @@
     }
   ],
   "debriefs": [
+    {
+      "tail": "N317TB",
+      "date": "2026-06-27",
+      "name": "Riley Woods",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N227NN",
+      "date": "2026-06-27",
+      "name": "Riley Woods",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
     {
       "tail": "N228NN",
       "date": "2026-06-26",

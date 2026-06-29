@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-29T03:02:55.595528+00:00",
+  "generated": "2026-06-29T05:31:48.406068+00:00",
   "cycles": {
     "ED1": 60,
     "ED2": 60,
@@ -316,12 +316,12 @@
     },
     {
       "tail": "538",
-      "lastService": "2026-06-19",
+      "lastService": "2026-06-28",
       "lastED1": "2026-05-24",
       "lastED2": "2026-05-24",
       "lastCE": "2025-12-01",
       "lastIHC": "2026-05-24",
-      "lastRON": "2026-06-19",
+      "lastRON": "2026-06-28",
       "lastLocation": "STL",
       "lastTech": "Genesis King",
       "ED1": 24,
@@ -358,12 +358,12 @@
     },
     {
       "tail": "541",
-      "lastService": "2026-06-25",
+      "lastService": "2026-06-28",
       "lastED1": "2026-06-09",
       "lastED2": "2026-06-09",
       "lastCE": "2026-06-09",
       "lastIHC": "2026-06-09",
-      "lastRON": "2026-06-25",
+      "lastRON": "2026-06-28",
       "lastLocation": "STL",
       "lastTech": "Genesis King",
       "ED1": 40,
@@ -596,12 +596,12 @@
     },
     {
       "tail": "561",
-      "lastService": "2026-06-21",
+      "lastService": "2026-06-28",
       "lastED1": "2026-06-19",
       "lastED2": "2026-06-19",
       "lastCE": "2025-11-15",
       "lastIHC": "2026-05-19",
-      "lastRON": "2026-06-21",
+      "lastRON": "2026-06-28",
       "lastLocation": "STL",
       "lastTech": "Genesis King",
       "ED1": 50,
@@ -610,17 +610,17 @@
     },
     {
       "tail": "562",
-      "lastService": "2026-06-05",
+      "lastService": "2026-06-28",
       "lastED1": "2025-12-22",
       "lastED2": "2025-12-22",
-      "lastCE": "2026-02-05",
-      "lastIHC": "2026-05-28",
+      "lastCE": "2026-06-28",
+      "lastIHC": "2026-06-28",
       "lastRON": "2026-06-05",
       "lastLocation": "STL",
       "lastTech": "Genesis King",
       "ED1": -129,
       "ED2": -129,
-      "CE": -84
+      "CE": 59
     },
     {
       "tail": "563",
@@ -652,12 +652,12 @@
     },
     {
       "tail": "565",
-      "lastService": "2026-06-27",
+      "lastService": "2026-06-28",
       "lastED1": "2026-05-07",
       "lastED2": "2026-05-07",
       "lastCE": "2026-05-07",
       "lastIHC": "2026-06-10",
-      "lastRON": "2026-06-27",
+      "lastRON": "2026-06-28",
       "lastLocation": "STL",
       "lastTech": "Genesis King",
       "ED1": 7,
@@ -778,6 +778,61 @@
     }
   ],
   "debriefs": [
+    {
+      "tail": "565",
+      "date": "2026-06-28",
+      "name": "Genesis King",
+      "location": "STL",
+      "ED1": 0,
+      "ED2": 0,
+      "CE": 0,
+      "IHC": 0,
+      "RON": 1
+    },
+    {
+      "tail": "541",
+      "date": "2026-06-28",
+      "name": "Genesis King",
+      "location": "STL",
+      "ED1": 0,
+      "ED2": 0,
+      "CE": 0,
+      "IHC": 0,
+      "RON": 1
+    },
+    {
+      "tail": "538",
+      "date": "2026-06-28",
+      "name": "Genesis King",
+      "location": "STL",
+      "ED1": 0,
+      "ED2": 0,
+      "CE": 0,
+      "IHC": 0,
+      "RON": 1
+    },
+    {
+      "tail": "561",
+      "date": "2026-06-28",
+      "name": "Genesis King",
+      "location": "STL",
+      "ED1": 0,
+      "ED2": 0,
+      "CE": 0,
+      "IHC": 0,
+      "RON": 1
+    },
+    {
+      "tail": "562",
+      "date": "2026-06-28",
+      "name": "Genesis King",
+      "location": "STL",
+      "ED1": 0,
+      "ED2": 0,
+      "CE": 1,
+      "IHC": 1,
+      "RON": 0
+    },
     {
       "tail": "580",
       "date": "2026-06-27",

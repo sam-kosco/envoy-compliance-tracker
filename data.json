@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-30T03:14:01.391763+00:00",
+  "generated": "2026-06-30T05:28:37.888702+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -212,14 +212,14 @@
     },
     {
       "tail": "N219NN",
-      "lastService": "2026-06-25",
-      "lastED1": "2026-06-02",
-      "lastED2": "2026-05-02",
-      "lastIHC": "2026-06-25",
-      "lastLocation": "CVG",
-      "lastTech": "Precious Roberson",
-      "ED1": 2,
-      "ED2": 1
+      "lastService": "2026-06-29",
+      "lastED1": "2026-06-29",
+      "lastED2": "2026-06-29",
+      "lastIHC": "2026-06-29",
+      "lastLocation": "LIT",
+      "lastTech": "Dane  Clement",
+      "ED1": 29,
+      "ED2": 59
     },
     {
       "tail": "N220NN",
@@ -289,13 +289,13 @@
     },
     {
       "tail": "N226NN",
-      "lastService": "2026-06-25",
-      "lastED1": "2026-06-03",
+      "lastService": "2026-06-29",
+      "lastED1": "2026-06-29",
       "lastED2": "2026-06-03",
-      "lastIHC": "2026-06-25",
-      "lastLocation": "XNA",
-      "lastTech": "Riley Woods",
-      "ED1": 3,
+      "lastIHC": "2026-06-29",
+      "lastLocation": "LIT",
+      "lastTech": "Dane  Clement",
+      "ED1": 29,
       "ED2": 33
     },
     {
@@ -564,12 +564,12 @@
     },
     {
       "tail": "N251NN",
-      "lastService": "2026-06-23",
+      "lastService": "2026-06-29",
       "lastED1": "2026-05-25",
       "lastED2": "2026-05-25",
-      "lastIHC": "2026-06-23",
-      "lastLocation": "XNA",
-      "lastTech": "Casey Henry",
+      "lastIHC": "2026-06-29",
+      "lastLocation": "DFW",
+      "lastTech": "Sharmaine Brown",
       "ED1": -6,
       "ED2": 24
     },
@@ -1400,12 +1400,12 @@
     },
     {
       "tail": "N331SC",
-      "lastService": "2026-06-26",
+      "lastService": "2026-06-29",
       "lastED1": "2026-06-02",
       "lastED2": "2026-05-02",
-      "lastIHC": "2026-06-26",
+      "lastIHC": "2026-06-29",
       "lastLocation": "LIT",
-      "lastTech": "Shaun Neil",
+      "lastTech": "Dane  Clement",
       "ED1": 2,
       "ED2": 1
     },
@@ -2086,6 +2086,42 @@
       "name": "Fleet Addition",
       "location": "",
       "IHC": 0,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N219NN",
+      "date": "2026-06-29",
+      "name": "Dane  Clement",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 1
+    },
+    {
+      "tail": "N226NN",
+      "date": "2026-06-29",
+      "name": "Dane  Clement",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N331SC",
+      "date": "2026-06-29",
+      "name": "Dane  Clement",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N251NN",
+      "date": "2026-06-29",
+      "name": "Sharmaine Brown",
+      "location": "DFW",
+      "IHC": 1,
       "ED1": 0,
       "ED2": 0
     },

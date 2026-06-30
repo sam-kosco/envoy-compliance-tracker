@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-30T09:13:49.280599+00:00",
+  "generated": "2026-06-30T11:06:26.202742+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -234,13 +234,13 @@
     },
     {
       "tail": "N221NN",
-      "lastService": "2026-06-27",
-      "lastED1": "2026-06-04",
+      "lastService": "2026-06-29",
+      "lastED1": "2026-06-29",
       "lastED2": "2026-05-22",
-      "lastIHC": "2026-06-27",
+      "lastIHC": "2026-06-29",
       "lastLocation": "DFW",
       "lastTech": "Sharmaine Brown",
-      "ED1": 4,
+      "ED1": 29,
       "ED2": 21
     },
     {
@@ -1598,12 +1598,12 @@
     },
     {
       "tail": "N739AE",
-      "lastService": "2026-06-21",
+      "lastService": "2026-06-28",
       "lastED1": "2026-06-01",
       "lastED2": "2026-06-09",
-      "lastIHC": "2026-06-21",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
+      "lastIHC": "2026-06-28",
+      "lastLocation": "DFW",
+      "lastTech": "Sharmaine Brown",
       "ED1": 1,
       "ED2": 39
     },
@@ -2441,6 +2441,15 @@
       "ED2": 1
     },
     {
+      "tail": "N221NN",
+      "date": "2026-06-29",
+      "name": "Sharmaine Brown",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
       "tail": "N203NN",
       "date": "2026-06-28",
       "name": "Shaun Neil",
@@ -2766,6 +2775,15 @@
     },
     {
       "tail": "N328DS",
+      "date": "2026-06-28",
+      "name": "Sharmaine Brown",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N739AE",
       "date": "2026-06-28",
       "name": "Sharmaine Brown",
       "location": "DFW",

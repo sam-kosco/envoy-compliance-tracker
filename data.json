@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-30T05:28:37.888702+00:00",
+  "generated": "2026-06-30T07:25:47.975937+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -201,12 +201,12 @@
     },
     {
       "tail": "N218NN",
-      "lastService": "2026-06-28",
+      "lastService": "2026-06-29",
       "lastED1": "2026-06-28",
       "lastED2": "2026-05-30",
-      "lastIHC": "2026-06-28",
-      "lastLocation": "XNA",
-      "lastTech": "Shaun Neil",
+      "lastIHC": "2026-06-29",
+      "lastLocation": "LIT",
+      "lastTech": "Dane  Clement",
       "ED1": 28,
       "ED2": 29
     },
@@ -883,10 +883,10 @@
     },
     {
       "tail": "N280NN",
-      "lastService": "2026-06-28",
+      "lastService": "2026-06-29",
       "lastED1": "2026-06-27",
       "lastED2": "2026-06-18",
-      "lastIHC": "2026-06-28",
+      "lastIHC": "2026-06-29",
       "lastLocation": "CVG",
       "lastTech": "Todd Axle",
       "ED1": 27,
@@ -1224,13 +1224,13 @@
     },
     {
       "tail": "N316GS",
-      "lastService": "2026-06-19",
-      "lastED1": "2026-06-03",
+      "lastService": "2026-06-29",
+      "lastED1": "2026-06-29",
       "lastED2": "2026-06-03",
-      "lastIHC": "2026-06-19",
+      "lastIHC": "2026-06-29",
       "lastLocation": "LIT",
-      "lastTech": "Riley Woods",
-      "ED1": 3,
+      "lastTech": "Dane  Clement",
+      "ED1": 29,
       "ED2": 33
     },
     {
@@ -1268,12 +1268,12 @@
     },
     {
       "tail": "N320BK",
-      "lastService": "2026-06-19",
+      "lastService": "2026-06-29",
       "lastED1": "2026-06-12",
       "lastED2": "2026-06-12",
-      "lastIHC": "2026-06-19",
-      "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastIHC": "2026-06-29",
+      "lastLocation": "LIT",
+      "lastTech": "Dane  Clement",
       "ED1": 12,
       "ED2": 42
     },
@@ -2112,6 +2112,42 @@
       "date": "2026-06-29",
       "name": "Dane  Clement",
       "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N316GS",
+      "date": "2026-06-29",
+      "name": "Dane  Clement",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N320BK",
+      "date": "2026-06-29",
+      "name": "Dane  Clement",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N218NN",
+      "date": "2026-06-29",
+      "name": "Dane  Clement",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N280NN",
+      "date": "2026-06-29",
+      "name": "Todd Axle",
+      "location": "CVG",
       "IHC": 1,
       "ED1": 0,
       "ED2": 0

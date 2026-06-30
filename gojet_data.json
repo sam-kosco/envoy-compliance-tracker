@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-30T09:02:18.283374+00:00",
+  "generated": "2026-06-30T10:59:49.292986+00:00",
   "cycles": {
     "ED1": 60,
     "ED2": 60,
@@ -526,16 +526,16 @@
     },
     {
       "tail": "553",
-      "lastService": "2026-06-18",
-      "lastED1": "2025-08-04",
-      "lastED2": "2025-08-04",
+      "lastService": "2026-06-29",
+      "lastED1": "2026-06-29",
+      "lastED2": "2026-06-29",
       "lastCE": "2026-04-13",
-      "lastIHC": "2026-05-26",
+      "lastIHC": "2026-06-29",
       "lastRON": "2026-06-18",
       "lastLocation": "STL",
       "lastTech": "Tiffany Hudson",
-      "ED1": -270,
-      "ED2": -270,
+      "ED1": 59,
+      "ED2": 59,
       "CE": -18
     },
     {
@@ -829,6 +829,17 @@
       "location": "STL",
       "ED1": 0,
       "ED2": 0,
+      "CE": 0,
+      "IHC": 1,
+      "RON": 0
+    },
+    {
+      "tail": "553",
+      "date": "2026-06-29",
+      "name": "Tiffany Hudson",
+      "location": "STL",
+      "ED1": 1,
+      "ED2": 1,
       "CE": 0,
       "IHC": 1,
       "RON": 0

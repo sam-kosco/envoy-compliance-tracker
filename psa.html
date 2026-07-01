@@ -153,6 +153,9 @@
   .svc-chip.done{background:var(--green-bg);color:var(--green);border-color:var(--green-border);}
   .svc-chip.skip{background:var(--gray-light);color:var(--text-light);}
   .latest-tag{font-size:9px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:var(--orange);background:rgba(224,123,32,0.12);padding:2px 7px;border-radius:3px;border:1px solid var(--orange-light);white-space:nowrap;}
+  .svc-report{display:inline-flex;align-items:center;gap:3px;font-size:9px;font-weight:800;letter-spacing:.3px;text-decoration:none;padding:2px 7px;border-radius:3px;background:var(--teal-bg);color:var(--teal);border:1px solid var(--teal-border);white-space:nowrap;transition:background .15s,color .15s;}
+  .svc-report:hover{background:var(--teal);color:#fff;}
+  .svc-chip.inspected{box-shadow:0 0 0 1.5px var(--teal);}
   .fleet-table{width:100%;border-collapse:collapse;font-size:12px;}
   .fleet-table th{padding:9px 12px;font-size:9px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--text-light);background:var(--off-white);border-bottom:2px solid var(--gray-light);text-align:left;}
   .fleet-table th.r{text-align:right;}
@@ -867,12 +870,18 @@ function selectTail(tail) {
 
   const ALL_SVCS = ['CC','DSC','CE','ED1','ED2','Lav','IC','EC','ED3','ED4'];
   const rows = debriefs.length ? debriefs.map((d,i)=>{
-    const svcs=ALL_SVCS.map(s=>`<span class="svc-chip ${d[s]?'done':'skip'}">${s}</span>`).join('');
+    const audits    = d.audits || [];
+    const inspected = new Set(audits.map(a=>a.service));
+    const svcs=ALL_SVCS.map(s=>`<span class="svc-chip ${d[s]?'done':'skip'}${inspected.has(s)?' inspected':''}">${s}</span>`).join('');
+    const reports = audits.map(a=>{
+      const meta=[a.status,a.submitter].filter(Boolean).join(' · ');
+      return `<a class="svc-report" href="${a.url}" target="_blank" rel="noopener" title="SafetyCulture ${a.service} inspection${meta?' — '+meta:''}">${a.service} ↗</a>`;
+    }).join('');
     return `<div class="history-row ${i===0?'latest':''}">
       <div class="hr-date">${fmtDate(d.date)}</div>
       <div class="hr-loc">${d.location}</div>
       <div class="hr-tech">${d.name}</div>
-      <div class="hr-services">${svcs}${i===0?' <span class="latest-tag">Latest</span>':''}</div>
+      <div class="hr-services">${svcs}${reports}${i===0?' <span class="latest-tag">Latest</span>':''}</div>
     </div>`;
   }).join('') : '<div class="empty-state">No service records found for this aircraft</div>';
 

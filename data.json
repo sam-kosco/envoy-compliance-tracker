@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-01T09:14:48.068322+00:00",
+  "generated": "2026-07-01T11:10:08.120060+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -223,12 +223,12 @@
     },
     {
       "tail": "N220NN",
-      "lastService": "2026-06-29",
+      "lastService": "2026-06-30",
       "lastED1": "2026-06-06",
       "lastED2": "2026-06-06",
-      "lastIHC": "2026-06-29",
-      "lastLocation": "DFW",
-      "lastTech": "Sharmaine Brown",
+      "lastIHC": "2026-06-30",
+      "lastLocation": "CMH",
+      "lastTech": "Tanaija Price",
       "ED1": 5,
       "ED2": 35
     },
@@ -938,12 +938,12 @@
     },
     {
       "tail": "N285NN",
-      "lastService": "2026-06-22",
+      "lastService": "2026-06-30",
       "lastED1": "2026-06-10",
       "lastED2": "2026-06-14",
-      "lastIHC": "2026-06-22",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
+      "lastIHC": "2026-06-30",
+      "lastLocation": "CMH",
+      "lastTech": "Tanaija Price",
       "ED1": 9,
       "ED2": 43
     },
@@ -1389,12 +1389,12 @@
     },
     {
       "tail": "N330JT",
-      "lastService": "2026-06-16",
+      "lastService": "2026-06-30",
       "lastED1": "2026-06-07",
       "lastED2": "2026-01-12",
-      "lastIHC": "2026-06-16",
-      "lastLocation": "SGF",
-      "lastTech": "Steven Wilson",
+      "lastIHC": "2026-06-30",
+      "lastLocation": "CMH",
+      "lastTech": "Tanaija Price",
       "ED1": 6,
       "ED2": -110
     },
@@ -1433,12 +1433,12 @@
     },
     {
       "tail": "N334CR",
-      "lastService": "2026-06-17",
+      "lastService": "2026-06-30",
       "lastED1": "2026-06-04",
       "lastED2": "2026-06-04",
-      "lastIHC": "2026-06-17",
-      "lastLocation": "CVG",
-      "lastTech": "Precious Valadez-Roberson",
+      "lastIHC": "2026-06-30",
+      "lastLocation": "CMH",
+      "lastTech": "Tanaija Price",
       "ED1": 3,
       "ED2": 33
     },
@@ -2292,6 +2292,42 @@
       "date": "2026-06-30",
       "name": "Riley Woods",
       "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N220NN",
+      "date": "2026-06-30",
+      "name": "Tanaija Price",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N285NN",
+      "date": "2026-06-30",
+      "name": "Tanaija Price",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N330JT",
+      "date": "2026-06-30",
+      "name": "Tanaija Price",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N334CR",
+      "date": "2026-06-30",
+      "name": "Tanaija Price",
+      "location": "CMH",
       "IHC": 1,
       "ED1": 0,
       "ED2": 0

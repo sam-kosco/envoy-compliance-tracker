@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-01T03:15:20.849298+00:00",
+  "generated": "2026-07-01T05:38:30.244967+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -322,12 +322,12 @@
     },
     {
       "tail": "N229NN",
-      "lastService": "2026-06-25",
+      "lastService": "2026-06-30",
       "lastED1": "2026-06-21",
       "lastED2": "2026-06-25",
-      "lastIHC": "2026-06-25",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
+      "lastIHC": "2026-06-30",
+      "lastLocation": "CVG",
+      "lastTech": "Precious Valadez-Roberson",
       "ED1": 20,
       "ED2": 54
     },
@@ -476,12 +476,12 @@
     },
     {
       "tail": "N243NN",
-      "lastService": "2026-06-27",
+      "lastService": "2026-06-30",
       "lastED1": "2026-06-13",
       "lastED2": "2026-06-27",
-      "lastIHC": "2026-06-27",
-      "lastLocation": "DFW",
-      "lastTech": "Sharmaine Brown",
+      "lastIHC": "2026-06-30",
+      "lastLocation": "CVG",
+      "lastTech": "Precious Valadez-Roberson",
       "ED1": 12,
       "ED2": 56
     },
@@ -2071,6 +2071,24 @@
     }
   ],
   "debriefs": [
+    {
+      "tail": "N229NN",
+      "date": "2026-06-30",
+      "name": "Precious Valadez-Roberson",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N243NN",
+      "date": "2026-06-30",
+      "name": "Precious Valadez-Roberson",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
     {
       "tail": "N347JT",
       "date": "2026-06-29",

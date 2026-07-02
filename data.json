@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-02T10:10:38.780551+00:00",
+  "generated": "2026-07-02T12:58:48.217977+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -190,12 +190,12 @@
     },
     {
       "tail": "N217NN",
-      "lastService": "2026-06-26",
+      "lastService": "2026-07-01",
       "lastED1": "2026-06-19",
       "lastED2": "2026-06-19",
-      "lastIHC": "2026-06-26",
-      "lastLocation": "CVG",
-      "lastTech": "Todd Axle",
+      "lastIHC": "2026-07-01",
+      "lastLocation": "DFW",
+      "lastTech": "Aunyae Morrison",
       "ED1": 17,
       "ED2": 47
     },
@@ -1246,12 +1246,12 @@
     },
     {
       "tail": "N318JE",
-      "lastService": "2026-06-23",
+      "lastService": "2026-07-01",
       "lastED1": "2026-06-04",
       "lastED2": "2026-06-04",
-      "lastIHC": "2026-06-23",
-      "lastLocation": "SGF",
-      "lastTech": "Steven Wilson",
+      "lastIHC": "2026-07-01",
+      "lastLocation": "DFW",
+      "lastTech": "Aunyae Morrison",
       "ED1": 2,
       "ED2": 32
     },
@@ -1345,12 +1345,12 @@
     },
     {
       "tail": "N327PG",
-      "lastService": "2026-06-29",
+      "lastService": "2026-07-01",
       "lastED1": "2026-06-07",
       "lastED2": "2026-06-08",
-      "lastIHC": "2026-06-29",
+      "lastIHC": "2026-07-01",
       "lastLocation": "DFW",
-      "lastTech": "Sharmaine Brown",
+      "lastTech": "Aunyae Morrison",
       "ED1": 5,
       "ED2": 36
     },
@@ -1378,12 +1378,12 @@
     },
     {
       "tail": "N329DD",
-      "lastService": "2026-06-27",
+      "lastService": "2026-07-01",
       "lastED1": "2026-06-21",
       "lastED2": "2026-03-13",
-      "lastIHC": "2026-06-27",
-      "lastLocation": "LIT",
-      "lastTech": "Dane  Clement",
+      "lastIHC": "2026-07-01",
+      "lastLocation": "DFW",
+      "lastTech": "Aunyae Morrison",
       "ED1": 19,
       "ED2": -51
     },
@@ -1521,12 +1521,12 @@
     },
     {
       "tail": "N342KR",
-      "lastService": "2026-06-19",
+      "lastService": "2026-07-01",
       "lastED1": null,
       "lastED2": null,
-      "lastIHC": "2026-06-19",
-      "lastLocation": "LIT",
-      "lastTech": "Riley Woods",
+      "lastIHC": "2026-07-01",
+      "lastLocation": "DFW",
+      "lastTech": "Aunyae Morrison",
       "ED1": "No Service",
       "ED2": "No Service"
     },
@@ -1543,12 +1543,12 @@
     },
     {
       "tail": "N344JA",
-      "lastService": "2026-06-22",
+      "lastService": "2026-07-01",
       "lastED1": null,
       "lastED2": null,
-      "lastIHC": "2026-06-22",
-      "lastLocation": "CVG",
-      "lastTech": "Dvion Davis",
+      "lastIHC": "2026-07-01",
+      "lastLocation": "DFW",
+      "lastTech": "Aunyae Morrison",
       "ED1": "No Service",
       "ED2": "No Service"
     },
@@ -1565,23 +1565,23 @@
     },
     {
       "tail": "N347JT",
-      "lastService": "2026-06-29",
+      "lastService": "2026-07-01",
       "lastED1": null,
       "lastED2": null,
-      "lastIHC": null,
-      "lastLocation": "",
-      "lastTech": "Fleet Addition",
+      "lastIHC": "2026-07-01",
+      "lastLocation": "DFW",
+      "lastTech": "Aunyae Morrison",
       "ED1": "No Service",
       "ED2": "No Service"
     },
     {
       "tail": "N348RA",
-      "lastService": "2026-06-23",
+      "lastService": "2026-07-01",
       "lastED1": null,
       "lastED2": null,
-      "lastIHC": null,
-      "lastLocation": "",
-      "lastTech": "Fleet Addition",
+      "lastIHC": "2026-07-01",
+      "lastLocation": "DFW",
+      "lastTech": "Aunyae Morrison",
       "ED1": "No Service",
       "ED2": "No Service"
     },
@@ -1983,10 +1983,10 @@
     },
     {
       "tail": "N787BP",
-      "lastService": "2026-06-30",
+      "lastService": "2026-07-01",
       "lastED1": "2026-06-30",
       "lastED2": "2026-04-25",
-      "lastIHC": "2026-06-30",
+      "lastIHC": "2026-07-01",
       "lastLocation": "DFW",
       "lastTech": "Aunyae Morrison",
       "ED1": 28,
@@ -2328,6 +2328,87 @@
       "date": "2026-07-01",
       "name": "Tanaija  Price",
       "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N342KR",
+      "date": "2026-07-01",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N217NN",
+      "date": "2026-07-01",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N344JA",
+      "date": "2026-07-01",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N318JE",
+      "date": "2026-07-01",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N329DD",
+      "date": "2026-07-01",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N327PG",
+      "date": "2026-07-01",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N787BP",
+      "date": "2026-07-01",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N347JT",
+      "date": "2026-07-01",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N348RA",
+      "date": "2026-07-01",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
       "IHC": 1,
       "ED1": 0,
       "ED2": 0

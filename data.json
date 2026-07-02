@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-02T01:48:32.486430+00:00",
+  "generated": "2026-07-02T06:01:06.925497+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -146,12 +146,12 @@
     },
     {
       "tail": "N213NN",
-      "lastService": "2026-06-22",
+      "lastService": "2026-07-01",
       "lastED1": "2026-06-02",
       "lastED2": "2026-06-02",
-      "lastIHC": "2026-06-22",
-      "lastLocation": "CVG",
-      "lastTech": "Sellers Davis",
+      "lastIHC": "2026-07-01",
+      "lastLocation": "LIT",
+      "lastTech": "Riley Woods",
       "ED1": 0,
       "ED2": 30
     },
@@ -1422,12 +1422,12 @@
     },
     {
       "tail": "N333RQ",
-      "lastService": "2026-06-26",
+      "lastService": "2026-07-01",
       "lastED1": "2026-06-17",
       "lastED2": "2026-05-15",
-      "lastIHC": "2026-06-26",
+      "lastIHC": "2026-07-01",
       "lastLocation": "LIT",
-      "lastTech": "Shaun Neil",
+      "lastTech": "Riley Woods",
       "ED1": 15,
       "ED2": 12
     },
@@ -2076,6 +2076,24 @@
       "date": "2026-12-30",
       "name": "Aunyae Morrison",
       "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N333RQ",
+      "date": "2026-07-01",
+      "name": "Riley Woods",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N213NN",
+      "date": "2026-07-01",
+      "name": "Riley Woods",
+      "location": "LIT",
       "IHC": 1,
       "ED1": 0,
       "ED2": 0

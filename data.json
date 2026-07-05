@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-05T00:02:34.201980+00:00",
+  "generated": "2026-07-05T04:57:42.053648+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -102,12 +102,12 @@
     },
     {
       "tail": "N209NN",
-      "lastService": "2026-05-14",
+      "lastService": "2026-07-04",
       "lastED1": "2026-04-10",
       "lastED2": "2026-02-24",
-      "lastIHC": "2026-05-14",
-      "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastIHC": "2026-07-04",
+      "lastLocation": "SGF",
+      "lastTech": "Steven Wilson",
       "ED1": -56,
       "ED2": -71
     },
@@ -168,13 +168,13 @@
     },
     {
       "tail": "N215NN",
-      "lastService": "2026-07-02",
-      "lastED1": "2026-06-04",
+      "lastService": "2026-07-04",
+      "lastED1": "2026-07-04",
       "lastED2": "2026-06-10",
-      "lastIHC": "2026-07-02",
-      "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
-      "ED1": -1,
+      "lastIHC": "2026-07-04",
+      "lastLocation": "XNA",
+      "lastTech": "Riley Woods",
+      "ED1": 29,
       "ED2": 35
     },
     {
@@ -388,12 +388,12 @@
     },
     {
       "tail": "N235NN",
-      "lastService": "2026-06-30",
+      "lastService": "2026-07-04",
       "lastED1": "2026-06-29",
       "lastED2": "2026-03-11",
-      "lastIHC": "2026-06-30",
+      "lastIHC": "2026-07-04",
       "lastLocation": "XNA",
-      "lastTech": "Casey Henry",
+      "lastTech": "Riley Woods",
       "ED1": 24,
       "ED2": -56
     },
@@ -597,12 +597,12 @@
     },
     {
       "tail": "N254NN",
-      "lastService": "2026-06-29",
+      "lastService": "2026-07-04",
       "lastED1": "2026-06-28",
       "lastED2": "2026-06-10",
-      "lastIHC": "2026-06-29",
-      "lastLocation": "CMH",
-      "lastTech": "Alex Hamilton",
+      "lastIHC": "2026-07-04",
+      "lastLocation": "CVG",
+      "lastTech": "Todd Axle",
       "ED1": 23,
       "ED2": 35
     },
@@ -894,12 +894,12 @@
     },
     {
       "tail": "N281NN",
-      "lastService": "2026-06-22",
+      "lastService": "2026-07-04",
       "lastED1": "2026-06-15",
       "lastED2": "2026-05-19",
-      "lastIHC": "2026-06-22",
+      "lastIHC": "2026-07-04",
       "lastLocation": "XNA",
-      "lastTech": "Shaun Neil",
+      "lastTech": "Riley Woods",
       "ED1": 10,
       "ED2": 13
     },
@@ -1367,12 +1367,12 @@
     },
     {
       "tail": "N328DS",
-      "lastService": "2026-07-01",
+      "lastService": "2026-07-04",
       "lastED1": "2026-06-06",
       "lastED2": "2026-06-06",
-      "lastIHC": "2026-07-01",
+      "lastIHC": "2026-07-04",
       "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
+      "lastTech": "Steven Wilson",
       "ED1": 1,
       "ED2": 31
     },
@@ -1510,12 +1510,12 @@
     },
     {
       "tail": "N341MB",
-      "lastService": "2026-07-03",
+      "lastService": "2026-07-04",
       "lastED1": "2026-06-28",
       "lastED2": "2026-06-01",
-      "lastIHC": "2026-07-03",
-      "lastLocation": "CMH",
-      "lastTech": "Alex Hamilton",
+      "lastIHC": "2026-07-04",
+      "lastLocation": "XNA",
+      "lastTech": "Riley Woods",
       "ED1": 23,
       "ED2": 26
     },
@@ -2076,6 +2076,69 @@
       "date": "2026-12-30",
       "name": "Aunyae Morrison",
       "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N215NN",
+      "date": "2026-07-04",
+      "name": "Riley Woods",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N235NN",
+      "date": "2026-07-04",
+      "name": "Riley Woods",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N281NN",
+      "date": "2026-07-04",
+      "name": "Riley Woods",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N341MB",
+      "date": "2026-07-04",
+      "name": "Riley Woods",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N254NN",
+      "date": "2026-07-04",
+      "name": "Todd Axle",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N209NN",
+      "date": "2026-07-04",
+      "name": "Steven Wilson",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N328DS",
+      "date": "2026-07-04",
+      "name": "Steven Wilson",
+      "location": "SGF",
       "IHC": 1,
       "ED1": 0,
       "ED2": 0

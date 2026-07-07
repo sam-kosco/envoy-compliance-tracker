@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-07T16:24:56.915349+00:00",
+  "generated": "2026-07-07T18:58:13.796807+00:00",
   "planes": [
     {
       "tail": "N500AE",
@@ -2868,7 +2868,7 @@
       "lastDSC": "2026-07-02",
       "lastCE": "2026-06-07",
       "lastED1": "2026-07-02",
-      "lastED2": "2026-07-02",
+      "lastED2": "2026-06-07",
       "lastLav": "2026-06-09",
       "lastIC": "2026-07-02",
       "lastEC": "2026-07-02",
@@ -2880,7 +2880,7 @@
       "DSC": 25,
       "CE": 0,
       "ED1": 25,
-      "ED2": 25,
+      "ED2": 0,
       "Lav": 62
     },
     {
@@ -3218,23 +3218,6 @@
       "audits": []
     },
     {
-      "tail": "N562NN",
-      "date": "2026-07-06",
-      "name": "Saphire Wagner",
-      "location": "DAY",
-      "IC": 1,
-      "EC": 1,
-      "CC": 1,
-      "DSC": 0,
-      "CE": 0,
-      "ED1": 0,
-      "ED2": 0,
-      "ED3": 0,
-      "ED4": 0,
-      "Lav": 0,
-      "audits": []
-    },
-    {
       "tail": "N560NN",
       "date": "2026-07-06",
       "name": "Saphire Wagner",
@@ -3344,40 +3327,6 @@
           "date": "2026-07-07"
         }
       ]
-    },
-    {
-      "tail": "N557NN",
-      "date": "2026-07-06",
-      "name": "Saphire Wagner",
-      "location": "DAY",
-      "IC": 1,
-      "EC": 1,
-      "CC": 1,
-      "DSC": 0,
-      "CE": 0,
-      "ED1": 0,
-      "ED2": 0,
-      "ED3": 0,
-      "ED4": 0,
-      "Lav": 0,
-      "audits": []
-    },
-    {
-      "tail": "N585NN",
-      "date": "2026-07-06",
-      "name": "Saphire Wagner",
-      "location": "DAY",
-      "IC": 1,
-      "EC": 1,
-      "CC": 1,
-      "DSC": 0,
-      "CE": 0,
-      "ED1": 0,
-      "ED2": 0,
-      "ED3": 0,
-      "ED4": 0,
-      "Lav": 0,
-      "audits": []
     },
     {
       "tail": "N706PS",
@@ -5517,7 +5466,7 @@
       "DSC": 1,
       "CE": 0,
       "ED1": 1,
-      "ED2": 1,
+      "ED2": 0,
       "ED3": 0,
       "ED4": 0,
       "Lav": 0,

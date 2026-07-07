@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-07T17:15:54.665323+00:00",
+  "generated": "2026-07-07T19:57:09.719350+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -774,12 +774,12 @@
     {
       "tail": "N270NN",
       "lastService": "2026-07-05",
-      "lastED1": "2026-05-20",
+      "lastED1": "2026-07-05",
       "lastED2": "2026-06-05",
       "lastIHC": "2026-07-05",
       "lastLocation": "CVG",
       "lastTech": "Todd Axle",
-      "ED1": -18,
+      "ED1": 28,
       "ED2": 28
     },
     {
@@ -1763,14 +1763,14 @@
     },
     {
       "tail": "N763CC",
-      "lastService": "2026-07-06",
-      "lastED1": "2026-07-06",
-      "lastED2": "2026-07-06",
-      "lastIHC": "2026-07-06",
-      "lastLocation": "XNA",
-      "lastTech": "Shaun Neil",
-      "ED1": 29,
-      "ED2": 59
+      "lastService": "2026-06-24",
+      "lastED1": "2026-05-22",
+      "lastED2": "2026-04-06",
+      "lastIHC": "2026-06-24",
+      "lastLocation": "SGF",
+      "lastTech": "Steven Wilson",
+      "ED1": -16,
+      "ED2": -32
     },
     {
       "tail": "N764JD",
@@ -1873,14 +1873,14 @@
     },
     {
       "tail": "N776MS",
-      "lastService": "2026-06-26",
-      "lastED1": "2026-04-29",
-      "lastED2": "2026-04-29",
-      "lastIHC": "2026-06-26",
-      "lastLocation": "LIT",
+      "lastService": "2026-07-06",
+      "lastED1": "2026-07-06",
+      "lastED2": "2026-07-06",
+      "lastIHC": "2026-07-06",
+      "lastLocation": "XNA",
       "lastTech": "Shaun Neil",
-      "ED1": -39,
-      "ED2": -9
+      "ED1": 29,
+      "ED2": 59
     },
     {
       "tail": "N778RH",
@@ -2017,12 +2017,12 @@
     {
       "tail": "N790MK",
       "lastService": "2026-07-05",
-      "lastED1": "2026-06-05",
+      "lastED1": "2026-07-05",
       "lastED2": "2026-05-11",
       "lastIHC": "2026-07-05",
       "lastLocation": "CVG",
       "lastTech": "Todd Axle",
-      "ED1": -2,
+      "ED1": 28,
       "ED2": 3
     },
     {
@@ -2162,7 +2162,7 @@
       "ED2": 1
     },
     {
-      "tail": "N763CC",
+      "tail": "N776MS",
       "date": "2026-07-06",
       "name": "Shaun Neil",
       "location": "XNA",
@@ -2428,7 +2428,7 @@
       "name": "Todd Axle",
       "location": "CVG",
       "IHC": 1,
-      "ED1": 0,
+      "ED1": 1,
       "ED2": 0
     },
     {
@@ -2446,7 +2446,7 @@
       "name": "Todd Axle",
       "location": "CVG",
       "IHC": 1,
-      "ED1": 0,
+      "ED1": 1,
       "ED2": 0
     },
     {

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-09T00:11:51.533424+00:00",
+  "generated": "2026-07-09T04:54:36.446889+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -1455,13 +1455,13 @@
     },
     {
       "tail": "N336TS",
-      "lastService": "2026-07-03",
-      "lastED1": "2026-05-24",
+      "lastService": "2026-07-08",
+      "lastED1": "2026-07-08",
       "lastED2": "2026-05-24",
-      "lastIHC": "2026-07-03",
-      "lastLocation": "LIT",
-      "lastTech": "Casey Henry",
-      "ED1": -16,
+      "lastIHC": "2026-07-08",
+      "lastLocation": "CVG",
+      "lastTech": "Precious Valadez-Roberson",
+      "ED1": 29,
       "ED2": 14
     },
     {
@@ -2078,6 +2078,24 @@
       "location": "DFW",
       "IHC": 1,
       "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N336TS",
+      "date": "2026-07-08",
+      "name": "Precious Valadez-Roberson",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N336TS",
+      "date": "2026-07-08",
+      "name": "Precious Valadez-Roberson",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 1,
       "ED2": 0
     },
     {

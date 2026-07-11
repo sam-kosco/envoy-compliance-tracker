@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-11T06:13:20.712647+00:00",
+  "generated": "2026-07-11T08:47:30.518484+00:00",
   "cycles": {
     "IHC": 45,
     "ED": 30,
@@ -982,20 +982,20 @@
     },
     {
       "tail": "N89317",
-      "lastService": "2026-07-08",
-      "lastIHC": "2026-05-13",
+      "lastService": "2026-07-10",
+      "lastIHC": "2026-07-10",
       "lastED": "2026-06-06",
       "lastDSC": "2026-06-06",
-      "lastFD": "2026-07-08",
+      "lastFD": "2026-07-10",
       "lastCE": "2026-06-14",
       "lastRON": "2026-07-08",
-      "lastEC": "2026-07-08",
-      "lastESS": "2026-07-08",
-      "lastTech": "Raenita Jasper",
-      "IHC": -14,
+      "lastEC": "2026-07-10",
+      "lastESS": "2026-07-10",
+      "lastTech": "David Blatt",
+      "IHC": 44,
       "ED": -5,
       "DSC": -5,
-      "FD": 27,
+      "FD": 29,
       "CE": 3
     },
     {
@@ -1178,6 +1178,19 @@
       "FD": 1,
       "CE": 0,
       "RON": 1,
+      "EC": 1,
+      "ESS": 1
+    },
+    {
+      "tail": "N89317",
+      "date": "2026-07-10",
+      "name": "David Blatt",
+      "IHC": 1,
+      "ED": 0,
+      "DSC": 0,
+      "FD": 1,
+      "CE": 0,
+      "RON": 0,
       "EC": 1,
       "ESS": 1
     },

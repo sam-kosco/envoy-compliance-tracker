@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-11T10:15:54.347514+00:00",
+  "generated": "2026-07-11T11:53:23.015768+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -696,13 +696,13 @@
     },
     {
       "tail": "N263NN",
-      "lastService": "2026-07-07",
-      "lastED1": "2026-06-08",
+      "lastService": "2026-07-10",
+      "lastED1": "2026-07-10",
       "lastED2": "2026-05-24",
-      "lastIHC": "2026-07-07",
-      "lastLocation": "CVG",
-      "lastTech": "Sellers Davis",
-      "ED1": -3,
+      "lastIHC": "2026-07-10",
+      "lastLocation": "CMH",
+      "lastTech": "Alexander HAMILTON",
+      "ED1": 29,
       "ED2": 12
     },
     {
@@ -1180,14 +1180,14 @@
     },
     {
       "tail": "N312BT",
-      "lastService": "2026-07-05",
-      "lastED1": "2026-06-10",
-      "lastED2": "2026-04-28",
-      "lastIHC": "2026-07-05",
-      "lastLocation": "CVG",
-      "lastTech": "Todd Axle",
-      "ED1": -1,
-      "ED2": -14
+      "lastService": "2026-07-10",
+      "lastED1": "2026-07-10",
+      "lastED2": "2026-07-10",
+      "lastIHC": "2026-07-10",
+      "lastLocation": "CMH",
+      "lastTech": "Alexander HAMILTON",
+      "ED1": 29,
+      "ED2": 59
     },
     {
       "tail": "N313BS",
@@ -1576,14 +1576,14 @@
     },
     {
       "tail": "N348RA",
-      "lastService": "2026-07-01",
-      "lastED1": null,
-      "lastED2": null,
-      "lastIHC": "2026-07-01",
-      "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
-      "ED1": "No Service",
-      "ED2": "No Service"
+      "lastService": "2026-07-10",
+      "lastED1": "2026-07-10",
+      "lastED2": "2026-07-10",
+      "lastIHC": "2026-07-10",
+      "lastLocation": "CMH",
+      "lastTech": "Alex Hamilton",
+      "ED1": 29,
+      "ED2": 59
     },
     {
       "tail": "N349DD",
@@ -1950,12 +1950,12 @@
     },
     {
       "tail": "N784DP",
-      "lastService": "2026-07-04",
+      "lastService": "2026-07-10",
       "lastED1": "2026-07-04",
       "lastED2": "2026-06-04",
-      "lastIHC": "2026-07-04",
-      "lastLocation": "LIT",
-      "lastTech": "Dane  Clement",
+      "lastIHC": "2026-07-10",
+      "lastLocation": "CMH",
+      "lastTech": "Alexander HAMILTON",
       "ED1": 23,
       "ED2": 23
     },
@@ -2313,6 +2313,42 @@
       "IHC": 1,
       "ED1": 1,
       "ED2": 1
+    },
+    {
+      "tail": "N348RA",
+      "date": "2026-07-10",
+      "name": "Alex Hamilton",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 1
+    },
+    {
+      "tail": "N263NN",
+      "date": "2026-07-10",
+      "name": "Alexander HAMILTON",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N312BT",
+      "date": "2026-07-10",
+      "name": "Alexander HAMILTON",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 1
+    },
+    {
+      "tail": "N784DP",
+      "date": "2026-07-10",
+      "name": "Alexander HAMILTON",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
     },
     {
       "tail": "N215NN",

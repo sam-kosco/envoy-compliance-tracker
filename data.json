@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-12T11:11:30.299149+00:00",
+  "generated": "2026-07-12T13:22:39.341642+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -14,12 +14,12 @@
     },
     {
       "tail": "N201NN",
-      "lastService": "2026-07-05",
+      "lastService": "2026-07-11",
       "lastED1": "2026-07-05",
       "lastED2": "2026-07-05",
-      "lastIHC": "2026-07-05",
-      "lastLocation": "XNA",
-      "lastTech": "Riley Woods",
+      "lastIHC": "2026-07-11",
+      "lastLocation": "LIT",
+      "lastTech": "Dane  Clement",
       "ED1": 23,
       "ED2": 53
     },
@@ -212,10 +212,10 @@
     },
     {
       "tail": "N219NN",
-      "lastService": "2026-07-08",
+      "lastService": "2026-07-11",
       "lastED1": "2026-06-29",
       "lastED2": "2026-06-29",
-      "lastIHC": "2026-07-08",
+      "lastIHC": "2026-07-11",
       "lastLocation": "LIT",
       "lastTech": "Dane  Clement",
       "ED1": 17,
@@ -322,12 +322,12 @@
     },
     {
       "tail": "N229NN",
-      "lastService": "2026-07-07",
+      "lastService": "2026-07-11",
       "lastED1": "2026-06-21",
       "lastED2": "2026-06-25",
-      "lastIHC": "2026-07-07",
-      "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastIHC": "2026-07-11",
+      "lastLocation": "LIT",
+      "lastTech": "Dane  Clement",
       "ED1": 9,
       "ED2": 43
     },
@@ -707,12 +707,12 @@
     },
     {
       "tail": "N264NN",
-      "lastService": "2026-07-10",
+      "lastService": "2026-07-11",
       "lastED1": "2026-06-29",
       "lastED2": "2026-05-27",
-      "lastIHC": "2026-07-10",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
+      "lastIHC": "2026-07-11",
+      "lastLocation": "LIT",
+      "lastTech": "Dane  Clement",
       "ED1": 17,
       "ED2": 14
     },
@@ -872,23 +872,23 @@
     },
     {
       "tail": "N279MQ",
-      "lastService": "2026-07-09",
+      "lastService": "2026-07-11",
       "lastED1": "2026-06-27",
       "lastED2": "2026-07-05",
-      "lastIHC": "2026-07-09",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
+      "lastIHC": "2026-07-11",
+      "lastLocation": "LIT",
+      "lastTech": "Dane  Clement",
       "ED1": 15,
       "ED2": 53
     },
     {
       "tail": "N280NN",
-      "lastService": "2026-06-29",
+      "lastService": "2026-07-11",
       "lastED1": "2026-06-27",
       "lastED2": "2026-06-18",
-      "lastIHC": "2026-06-29",
-      "lastLocation": "CVG",
-      "lastTech": "Todd Axle",
+      "lastIHC": "2026-07-11",
+      "lastLocation": "LIT",
+      "lastTech": "Dane  Clement",
       "ED1": 15,
       "ED2": 36
     },
@@ -1785,14 +1785,14 @@
     },
     {
       "tail": "N765ST",
-      "lastService": "2026-07-03",
-      "lastED1": "2026-05-20",
-      "lastED2": "2026-04-07",
-      "lastIHC": "2026-07-03",
-      "lastLocation": "CVG",
-      "lastTech": "Precious Valadez-Roberson",
-      "ED1": -23,
-      "ED2": -36
+      "lastService": "2026-07-11",
+      "lastED1": "2026-07-11",
+      "lastED2": "2026-07-11",
+      "lastIHC": "2026-07-11",
+      "lastLocation": "LIT",
+      "lastTech": "Dane  Clement",
+      "ED1": 29,
+      "ED2": 59
     },
     {
       "tail": "N766JM",
@@ -2283,6 +2283,69 @@
       "date": "2026-07-11",
       "name": "Alexander HAMILTON",
       "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N280NN",
+      "date": "2026-07-11",
+      "name": "Dane  Clement",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N765ST",
+      "date": "2026-07-11",
+      "name": "Dane  Clement",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 1
+    },
+    {
+      "tail": "N229NN",
+      "date": "2026-07-11",
+      "name": "Dane  Clement",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N201NN",
+      "date": "2026-07-11",
+      "name": "Dane  Clement",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N219NN",
+      "date": "2026-07-11",
+      "name": "Dane  Clement",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N264NN",
+      "date": "2026-07-11",
+      "name": "Dane  Clement",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N279MQ",
+      "date": "2026-07-11",
+      "name": "Dane  Clement",
+      "location": "LIT",
       "IHC": 1,
       "ED1": 0,
       "ED2": 0

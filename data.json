@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-13T03:22:54.008922+00:00",
+  "generated": "2026-07-13T06:54:14.692969+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -69,12 +69,12 @@
     },
     {
       "tail": "N206NN",
-      "lastService": "2026-07-11",
+      "lastService": "2026-07-12",
       "lastED1": "2026-06-24",
       "lastED2": "2026-05-21",
-      "lastIHC": "2026-07-11",
-      "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastIHC": "2026-07-12",
+      "lastLocation": "XNA",
+      "lastTech": "Riley Woods",
       "ED1": 11,
       "ED2": 7
     },
@@ -388,12 +388,12 @@
     },
     {
       "tail": "N235NN",
-      "lastService": "2026-07-10",
+      "lastService": "2026-07-12",
       "lastED1": "2026-06-29",
       "lastED2": "2026-03-11",
-      "lastIHC": "2026-07-10",
-      "lastLocation": "XNA",
-      "lastTech": "Riley Woods",
+      "lastIHC": "2026-07-12",
+      "lastLocation": "SGF",
+      "lastTech": "Todd Axle",
       "ED1": 16,
       "ED2": -64
     },
@@ -1015,12 +1015,12 @@
     },
     {
       "tail": "N292NN",
-      "lastService": "2026-07-02",
+      "lastService": "2026-07-12",
       "lastED1": "2026-06-25",
       "lastED2": "2026-06-30",
-      "lastIHC": "2026-07-02",
+      "lastIHC": "2026-07-12",
       "lastLocation": "CVG",
-      "lastTech": "Precious Valadez-Roberson",
+      "lastTech": "Todd Axle",
       "ED1": 12,
       "ED2": 47
     },
@@ -1444,14 +1444,14 @@
     },
     {
       "tail": "N335JS",
-      "lastService": "2026-07-11",
-      "lastED1": "2026-06-08",
-      "lastED2": "2026-05-13",
-      "lastIHC": "2026-07-11",
-      "lastLocation": "CMH",
-      "lastTech": "Alexander HAMILTON",
-      "ED1": -5,
-      "ED2": -1
+      "lastService": "2026-07-12",
+      "lastED1": "2026-07-12",
+      "lastED2": "2026-07-12",
+      "lastIHC": "2026-07-12",
+      "lastLocation": "XNA",
+      "lastTech": "Riley Woods",
+      "ED1": 29,
+      "ED2": 59
     },
     {
       "tail": "N336TS",
@@ -1565,12 +1565,12 @@
     },
     {
       "tail": "N347JT",
-      "lastService": "2026-07-08",
+      "lastService": "2026-07-12",
       "lastED1": "2026-07-08",
       "lastED2": null,
-      "lastIHC": "2026-07-08",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
+      "lastIHC": "2026-07-12",
+      "lastLocation": "CVG",
+      "lastTech": "Todd Axle",
       "ED1": 25,
       "ED2": "No Service"
     },
@@ -1785,12 +1785,12 @@
     },
     {
       "tail": "N765ST",
-      "lastService": "2026-07-11",
+      "lastService": "2026-07-12",
       "lastED1": "2026-07-11",
       "lastED2": "2026-07-11",
-      "lastIHC": "2026-07-11",
-      "lastLocation": "LIT",
-      "lastTech": "Dane  Clement",
+      "lastIHC": "2026-07-12",
+      "lastLocation": "CVG",
+      "lastTech": "Todd Axle",
       "ED1": 28,
       "ED2": 58
     },
@@ -2076,6 +2076,60 @@
       "date": "2026-12-30",
       "name": "Aunyae Morrison",
       "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N347JT",
+      "date": "2026-07-12",
+      "name": "Todd Axle",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N292NN",
+      "date": "2026-07-12",
+      "name": "Todd Axle",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N235NN",
+      "date": "2026-07-12",
+      "name": "Todd Axle",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N765ST",
+      "date": "2026-07-12",
+      "name": "Todd Axle",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N335JS",
+      "date": "2026-07-12",
+      "name": "Riley Woods",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 1
+    },
+    {
+      "tail": "N206NN",
+      "date": "2026-07-12",
+      "name": "Riley Woods",
+      "location": "XNA",
       "IHC": 1,
       "ED1": 0,
       "ED2": 0

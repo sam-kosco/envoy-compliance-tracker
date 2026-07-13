@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-13T16:35:15.037745+00:00",
+  "generated": "2026-07-13T18:44:20.123392+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -1114,12 +1114,12 @@
     },
     {
       "tail": "N306DD",
-      "lastService": "2026-07-08",
+      "lastService": "2026-07-10",
       "lastED1": "2026-07-08",
       "lastED2": "2026-07-08",
-      "lastIHC": "2026-07-08",
-      "lastLocation": "XNA",
-      "lastTech": "Shaun Neil",
+      "lastIHC": "2026-07-10",
+      "lastLocation": "CMH",
+      "lastTech": "Alexander HAMILTON",
       "ED1": 25,
       "ED2": 55
     },
@@ -1202,12 +1202,12 @@
     },
     {
       "tail": "N314AD",
-      "lastService": "2026-07-09",
+      "lastService": "2026-07-12",
       "lastED1": "2026-07-07",
       "lastED2": "2026-06-10",
-      "lastIHC": "2026-07-09",
+      "lastIHC": "2026-07-12",
       "lastLocation": "CMH",
-      "lastTech": "Alexander HAMILTON",
+      "lastTech": "Alex Hamilton",
       "ED1": 24,
       "ED2": 27
     },
@@ -2324,6 +2324,15 @@
       "ED2": 0
     },
     {
+      "tail": "N314AD",
+      "date": "2026-07-12",
+      "name": "Alex Hamilton",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
       "tail": "N253NN",
       "date": "2026-07-12",
       "name": "Sharmaine Brown",
@@ -2900,15 +2909,6 @@
       "ED2": 0
     },
     {
-      "tail": "N789SS",
-      "date": "2026-07-10",
-      "name": "Precious Valadez-Roberson",
-      "location": "CVG",
-      "IHC": 1,
-      "ED1": 0,
-      "ED2": 0
-    },
-    {
       "tail": "N287NN",
       "date": "2026-07-10",
       "name": "Precious Valadez-Roberson",
@@ -3090,6 +3090,15 @@
     },
     {
       "tail": "N784DP",
+      "date": "2026-07-10",
+      "name": "Alexander HAMILTON",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N306DD",
       "date": "2026-07-10",
       "name": "Alexander HAMILTON",
       "location": "CMH",

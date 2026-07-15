@@ -1,14 +1,14 @@
 {
-  "generated": "2026-07-15T08:13:02.466048+00:00",
+  "generated": "2026-07-15T10:51:22.037887+00:00",
   "planes": [
     {
       "tail": "N200NN",
-      "lastService": "2026-06-30",
+      "lastService": "2026-07-14",
       "lastED1": "2026-06-21",
       "lastED2": "2026-05-23",
-      "lastIHC": "2026-06-30",
-      "lastLocation": "CVG",
-      "lastTech": "Todd Axle",
+      "lastIHC": "2026-07-14",
+      "lastLocation": "CMH",
+      "lastTech": "darian eiland",
       "ED1": 6,
       "ED2": 7
     },
@@ -300,12 +300,12 @@
     },
     {
       "tail": "N227NN",
-      "lastService": "2026-07-12",
+      "lastService": "2026-07-14",
       "lastED1": "2026-06-15",
       "lastED2": "2026-07-08",
-      "lastIHC": "2026-07-12",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
+      "lastIHC": "2026-07-14",
+      "lastLocation": "DFW",
+      "lastTech": "Sharmaine Brown",
       "ED1": 0,
       "ED2": 53
     },
@@ -366,12 +366,12 @@
     },
     {
       "tail": "N233NN",
-      "lastService": "2026-07-08",
+      "lastService": "2026-07-14",
       "lastED1": "2026-06-29",
       "lastED2": "2026-06-07",
-      "lastIHC": "2026-07-08",
-      "lastLocation": "LIT",
-      "lastTech": "Dane  Clement",
+      "lastIHC": "2026-07-14",
+      "lastLocation": "CMH",
+      "lastTech": "darian eiland",
       "ED1": 14,
       "ED2": 22
     },
@@ -982,12 +982,12 @@
     },
     {
       "tail": "N289MW",
-      "lastService": "2026-07-04",
+      "lastService": "2026-07-14",
       "lastED1": "2026-06-28",
       "lastED2": "2026-06-28",
-      "lastIHC": "2026-07-04",
-      "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastIHC": "2026-07-14",
+      "lastLocation": "CMH",
+      "lastTech": "darian eiland",
       "ED1": 13,
       "ED2": 43
     },
@@ -1081,12 +1081,12 @@
     },
     {
       "tail": "N303DD",
-      "lastService": "2026-07-07",
+      "lastService": "2026-07-14",
       "lastED1": "2026-07-01",
       "lastED2": "2026-07-01",
-      "lastIHC": "2026-07-07",
-      "lastLocation": "LIT",
-      "lastTech": "Dane  Clement",
+      "lastIHC": "2026-07-14",
+      "lastLocation": "CMH",
+      "lastTech": "darian eiland",
       "ED1": 16,
       "ED2": 46
     },
@@ -1488,12 +1488,12 @@
     },
     {
       "tail": "N339HG",
-      "lastService": "2026-07-10",
+      "lastService": "2026-07-14",
       "lastED1": "2026-06-05",
       "lastED2": "2026-06-05",
-      "lastIHC": "2026-07-10",
+      "lastIHC": "2026-07-14",
       "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastTech": "Sharmaine Brown",
       "ED1": -10,
       "ED2": 20
     },
@@ -2016,12 +2016,12 @@
     },
     {
       "tail": "N790MK",
-      "lastService": "2026-07-05",
+      "lastService": "2026-07-14",
       "lastED1": "2026-07-05",
       "lastED2": "2026-05-11",
-      "lastIHC": "2026-07-05",
-      "lastLocation": "CVG",
-      "lastTech": "Todd Axle",
+      "lastIHC": "2026-07-14",
+      "lastLocation": "DFW",
+      "lastTech": "Sharmaine Brown",
       "ED1": 20,
       "ED2": -5
     },
@@ -2288,6 +2288,42 @@
       "ED2": 1
     },
     {
+      "tail": "N233NN",
+      "date": "2026-07-14",
+      "name": "darian eiland",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N289MW",
+      "date": "2026-07-14",
+      "name": "darian eiland",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N200NN",
+      "date": "2026-07-14",
+      "name": "darian eiland",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N303DD",
+      "date": "2026-07-14",
+      "name": "darian eiland",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
       "tail": "N310JZ",
       "date": "2026-07-14",
       "name": "Sharmaine Brown",
@@ -2325,6 +2361,33 @@
     },
     {
       "tail": "N232NN",
+      "date": "2026-07-14",
+      "name": "Sharmaine Brown",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N227NN",
+      "date": "2026-07-14",
+      "name": "Sharmaine Brown",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N790MK",
+      "date": "2026-07-14",
+      "name": "Sharmaine Brown",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N339HG",
       "date": "2026-07-14",
       "name": "Sharmaine Brown",
       "location": "DFW",

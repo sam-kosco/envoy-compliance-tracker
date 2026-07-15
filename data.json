@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-15T02:35:08.007709+00:00",
+  "generated": "2026-07-15T05:33:19.707286+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -168,10 +168,10 @@
     },
     {
       "tail": "N215NN",
-      "lastService": "2026-07-13",
+      "lastService": "2026-07-14",
       "lastED1": "2026-07-04",
       "lastED2": "2026-06-10",
-      "lastIHC": "2026-07-13",
+      "lastIHC": "2026-07-14",
       "lastLocation": "XNA",
       "lastTech": "Casey Henry",
       "ED1": 19,
@@ -740,12 +740,12 @@
     },
     {
       "tail": "N267NN",
-      "lastService": "2026-07-13",
+      "lastService": "2026-07-14",
       "lastED1": "2026-07-13",
       "lastED2": "2026-07-13",
-      "lastIHC": "2026-07-13",
-      "lastLocation": "CMH",
-      "lastTech": "Alex Hamilton",
+      "lastIHC": "2026-07-14",
+      "lastLocation": "XNA",
+      "lastTech": "Casey Henry",
       "ED1": 28,
       "ED2": 58
     },
@@ -916,10 +916,10 @@
     },
     {
       "tail": "N283NN",
-      "lastService": "2026-07-13",
+      "lastService": "2026-07-14",
       "lastED1": "2026-07-13",
       "lastED2": "2026-06-28",
-      "lastIHC": "2026-07-13",
+      "lastIHC": "2026-07-14",
       "lastLocation": "XNA",
       "lastTech": "Casey Henry",
       "ED1": 28,
@@ -1158,12 +1158,12 @@
     },
     {
       "tail": "N310JZ",
-      "lastService": "2026-07-11",
+      "lastService": "2026-07-14",
       "lastED1": "2026-06-20",
       "lastED2": "2026-07-05",
-      "lastIHC": "2026-07-11",
-      "lastLocation": "XNA",
-      "lastTech": "Riley Woods",
+      "lastIHC": "2026-07-14",
+      "lastLocation": "DFW",
+      "lastTech": "Sharmaine Brown",
       "ED1": 5,
       "ED2": 50
     },
@@ -1345,12 +1345,12 @@
     },
     {
       "tail": "N327PG",
-      "lastService": "2026-07-08",
+      "lastService": "2026-07-14",
       "lastED1": "2026-07-08",
       "lastED2": "2026-06-08",
-      "lastIHC": "2026-07-08",
-      "lastLocation": "CMH",
-      "lastTech": "Alexander HAMILTON",
+      "lastIHC": "2026-07-14",
+      "lastLocation": "XNA",
+      "lastTech": "Casey Henry",
       "ED1": 23,
       "ED2": 23
     },
@@ -1433,12 +1433,12 @@
     },
     {
       "tail": "N334CR",
-      "lastService": "2026-07-05",
+      "lastService": "2026-07-14",
       "lastED1": "2026-07-05",
       "lastED2": "2026-06-04",
-      "lastIHC": "2026-07-05",
-      "lastLocation": "XNA",
-      "lastTech": "Riley Woods",
+      "lastIHC": "2026-07-14",
+      "lastLocation": "DFW",
+      "lastTech": "Sharmaine Brown",
       "ED1": 20,
       "ED2": 19
     },
@@ -2075,6 +2075,60 @@
       "tail": "N226NN",
       "date": "2026-12-30",
       "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N215NN",
+      "date": "2026-07-14",
+      "name": "Casey Henry",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N327PG",
+      "date": "2026-07-14",
+      "name": "Casey Henry",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N283NN",
+      "date": "2026-07-14",
+      "name": "Casey Henry",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N267NN",
+      "date": "2026-07-14",
+      "name": "Casey Henry",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N310JZ",
+      "date": "2026-07-14",
+      "name": "Sharmaine Brown",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N334CR",
+      "date": "2026-07-14",
+      "name": "Sharmaine Brown",
       "location": "DFW",
       "IHC": 1,
       "ED1": 0,

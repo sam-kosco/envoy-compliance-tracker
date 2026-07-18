@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-18T03:18:06.648510+00:00",
+  "generated": "2026-07-18T06:05:56.809198+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -91,12 +91,12 @@
     },
     {
       "tail": "N208AN",
-      "lastService": "2026-07-10",
+      "lastService": "2026-07-17",
       "lastED1": "2026-07-01",
       "lastED2": "2026-07-05",
-      "lastIHC": "2026-07-10",
-      "lastLocation": "CVG",
-      "lastTech": "Precious Valadez-Roberson",
+      "lastIHC": "2026-07-17",
+      "lastLocation": "XNA",
+      "lastTech": "Casey Henry",
       "ED1": 13,
       "ED2": 47
     },
@@ -487,12 +487,12 @@
     },
     {
       "tail": "N244NN",
-      "lastService": "2026-07-14",
+      "lastService": "2026-07-17",
       "lastED1": "2026-07-02",
       "lastED2": "2026-07-02",
-      "lastIHC": "2026-07-14",
-      "lastLocation": "LIT",
-      "lastTech": "Dane  Clement",
+      "lastIHC": "2026-07-17",
+      "lastLocation": "XNA",
+      "lastTech": "Casey Henry",
       "ED1": 14,
       "ED2": 44
     },
@@ -564,12 +564,12 @@
     },
     {
       "tail": "N251NN",
-      "lastService": "2026-07-06",
+      "lastService": "2026-07-17",
       "lastED1": "2026-07-06",
       "lastED2": "2026-05-25",
-      "lastIHC": "2026-07-06",
-      "lastLocation": "XNA",
-      "lastTech": "Shaun Neil",
+      "lastIHC": "2026-07-17",
+      "lastLocation": "CVG",
+      "lastTech": "Sellers Davis",
       "ED1": 18,
       "ED2": 6
     },
@@ -652,12 +652,12 @@
     },
     {
       "tail": "N259NN",
-      "lastService": "2026-07-16",
+      "lastService": "2026-07-17",
       "lastED1": "2026-07-09",
       "lastED2": "2026-06-09",
-      "lastIHC": "2026-07-16",
+      "lastIHC": "2026-07-17",
       "lastLocation": "CVG",
-      "lastTech": "Precious Roberson",
+      "lastTech": "Sellers Davis",
       "ED1": 21,
       "ED2": 21
     },
@@ -927,14 +927,14 @@
     },
     {
       "tail": "N284JN",
-      "lastService": "2026-07-15",
-      "lastED1": "2026-06-14",
-      "lastED2": "2026-05-24",
-      "lastIHC": "2026-07-15",
-      "lastLocation": "CVG",
-      "lastTech": "Todd Axle",
-      "ED1": -4,
-      "ED2": 5
+      "lastService": "2026-07-17",
+      "lastED1": "2026-07-17",
+      "lastED2": "2026-07-17",
+      "lastIHC": "2026-07-17",
+      "lastLocation": "XNA",
+      "lastTech": "Casey Henry",
+      "ED1": 29,
+      "ED2": 59
     },
     {
       "tail": "N285NN",
@@ -1147,13 +1147,13 @@
     },
     {
       "tail": "N309JR",
-      "lastService": "2026-07-16",
-      "lastED1": "2026-06-21",
+      "lastService": "2026-07-17",
+      "lastED1": "2026-07-17",
       "lastED2": "2026-07-02",
-      "lastIHC": "2026-07-16",
-      "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
-      "ED1": 3,
+      "lastIHC": "2026-07-17",
+      "lastLocation": "XNA",
+      "lastTech": "Casey Henry",
+      "ED1": 29,
       "ED2": 44
     },
     {
@@ -1191,13 +1191,13 @@
     },
     {
       "tail": "N313BS",
-      "lastService": "2026-07-11",
-      "lastED1": "2026-06-17",
+      "lastService": "2026-07-17",
+      "lastED1": "2026-07-17",
       "lastED2": "2026-05-26",
-      "lastIHC": "2026-07-11",
+      "lastIHC": "2026-07-17",
       "lastLocation": "CVG",
-      "lastTech": "Todd Axle",
-      "ED1": -1,
+      "lastTech": "Sellers Davis",
+      "ED1": 29,
       "ED2": 7
     },
     {
@@ -1466,12 +1466,12 @@
     },
     {
       "tail": "N337MR",
-      "lastService": "2026-07-08",
+      "lastService": "2026-07-17",
       "lastED1": "2026-06-27",
       "lastED2": "2026-07-04",
-      "lastIHC": "2026-07-08",
-      "lastLocation": "LIT",
-      "lastTech": "Dane  Clement",
+      "lastIHC": "2026-07-17",
+      "lastLocation": "XNA",
+      "lastTech": "Casey Henry",
       "ED1": 9,
       "ED2": 46
     },
@@ -1796,13 +1796,13 @@
     },
     {
       "tail": "N766JM",
-      "lastService": "2026-07-15",
-      "lastED1": "2026-07-15",
+      "lastService": "2026-07-17",
+      "lastED1": "2026-07-17",
       "lastED2": "2026-06-14",
-      "lastIHC": "2026-07-15",
-      "lastLocation": "XNA",
-      "lastTech": "Casey Henry",
-      "ED1": 27,
+      "lastIHC": "2026-07-17",
+      "lastLocation": "CVG",
+      "lastTech": "Sellers Davis",
+      "ED1": 29,
       "ED2": 26
     },
     {
@@ -2087,6 +2087,96 @@
       "date": "2026-12-30",
       "name": "Aunyae Morrison",
       "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N244NN",
+      "date": "2026-07-17",
+      "name": "Casey Henry",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N309JR",
+      "date": "2026-07-17",
+      "name": "Casey Henry",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N259NN",
+      "date": "2026-07-17",
+      "name": "Sellers Davis",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N251NN",
+      "date": "2026-07-17",
+      "name": "Sellers Davis",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N208AN",
+      "date": "2026-07-17",
+      "name": "Casey Henry",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N313BS",
+      "date": "2026-07-17",
+      "name": "Sellers Davis",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N766JM",
+      "date": "2026-07-17",
+      "name": "Sellers Davis",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N337MR",
+      "date": "2026-07-17",
+      "name": "Casey Henry",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N284JN",
+      "date": "2026-07-17",
+      "name": "Casey Henry",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 1
+    },
+    {
+      "tail": "N766JM",
+      "date": "2026-07-17",
+      "name": "Sellers Davis",
+      "location": "CVG",
       "IHC": 1,
       "ED1": 0,
       "ED2": 0

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-18T06:52:27.514505+00:00",
+  "generated": "2026-07-18T08:41:43.317773+00:00",
   "cycles": {
     "ED1": 60,
     "ED2": 60,
@@ -344,17 +344,17 @@
     },
     {
       "tail": "540",
-      "lastService": "2026-07-15",
+      "lastService": "2026-07-17",
       "lastED1": "2026-06-08",
       "lastED2": "2026-06-08",
-      "lastCE": "2026-05-06",
-      "lastIHC": "2026-06-08",
+      "lastCE": "2026-07-17",
+      "lastIHC": "2026-07-17",
       "lastRON": "2026-07-15",
       "lastLocation": "STL",
       "lastTech": "Genesis King",
       "ED1": 20,
       "ED2": 20,
-      "CE": -13
+      "CE": 59
     },
     {
       "tail": "541",
@@ -846,6 +846,17 @@
       "CE": 0,
       "IHC": 0,
       "RON": 1
+    },
+    {
+      "tail": "540",
+      "date": "2026-07-17",
+      "name": "Genesis King",
+      "location": "STL",
+      "ED1": 0,
+      "ED2": 0,
+      "CE": 1,
+      "IHC": 1,
+      "RON": 0
     },
     {
       "tail": "516",

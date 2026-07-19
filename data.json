@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-19T02:51:33.103569+00:00",
+  "generated": "2026-07-19T05:55:07.791643+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -454,12 +454,12 @@
     },
     {
       "tail": "N241NN",
-      "lastService": "2026-07-15",
+      "lastService": "2026-07-18",
       "lastED1": "2026-06-27",
       "lastED2": "2026-06-22",
-      "lastIHC": "2026-07-15",
-      "lastLocation": "CMH",
-      "lastTech": "Alexander HAMILTON",
+      "lastIHC": "2026-07-18",
+      "lastLocation": "CVG",
+      "lastTech": "Todd Axle",
       "ED1": 8,
       "ED2": 33
     },
@@ -520,12 +520,12 @@
     },
     {
       "tail": "N247NN",
-      "lastService": "2026-07-13",
+      "lastService": "2026-07-18",
       "lastED1": "2026-06-30",
       "lastED2": "2026-06-23",
-      "lastIHC": "2026-07-13",
+      "lastIHC": "2026-07-18",
       "lastLocation": "DFW",
-      "lastTech": "Sharmaine Brown",
+      "lastTech": "Aunyae Morrison",
       "ED1": 11,
       "ED2": 34
     },
@@ -685,12 +685,12 @@
     },
     {
       "tail": "N262NN",
-      "lastService": "2026-07-17",
+      "lastService": "2026-07-18",
       "lastED1": "2026-07-02",
       "lastED2": "2026-07-08",
-      "lastIHC": "2026-07-17",
+      "lastIHC": "2026-07-18",
       "lastLocation": "DFW",
-      "lastTech": "Natally  Garcia",
+      "lastTech": "Aunyae Morrison",
       "ED1": 13,
       "ED2": 49
     },
@@ -850,12 +850,12 @@
     },
     {
       "tail": "N277NN",
-      "lastService": "2026-07-13",
+      "lastService": "2026-07-18",
       "lastED1": "2026-07-06",
       "lastED2": "2026-06-27",
-      "lastIHC": "2026-07-13",
-      "lastLocation": "XNA",
-      "lastTech": "Casey Henry",
+      "lastIHC": "2026-07-18",
+      "lastLocation": "CVG",
+      "lastTech": "Todd Axle",
       "ED1": 17,
       "ED2": 38
     },
@@ -1345,12 +1345,12 @@
     },
     {
       "tail": "N327PG",
-      "lastService": "2026-07-14",
+      "lastService": "2026-07-18",
       "lastED1": "2026-07-08",
       "lastED2": "2026-06-08",
-      "lastIHC": "2026-07-14",
-      "lastLocation": "XNA",
-      "lastTech": "Casey Henry",
+      "lastIHC": "2026-07-18",
+      "lastLocation": "CVG",
+      "lastTech": "Todd Axle",
       "ED1": 19,
       "ED2": 19
     },
@@ -1686,12 +1686,12 @@
     },
     {
       "tail": "N748RR",
-      "lastService": "2026-07-17",
+      "lastService": "2026-07-18",
       "lastED1": "2026-07-07",
       "lastED2": "2026-07-07",
-      "lastIHC": "2026-07-17",
+      "lastIHC": "2026-07-18",
       "lastLocation": "DFW",
-      "lastTech": "Natally  Garcia",
+      "lastTech": "Aunyae Morrison",
       "ED1": 18,
       "ED2": 48
     },
@@ -1752,13 +1752,13 @@
     },
     {
       "tail": "N762DT",
-      "lastService": "2026-07-02",
-      "lastED1": "2026-05-09",
+      "lastService": "2026-07-18",
+      "lastED1": "2026-07-18",
       "lastED2": "2026-04-11",
-      "lastIHC": "2026-07-02",
-      "lastLocation": "LIT",
-      "lastTech": "Dane  Clement",
-      "ED1": -41,
+      "lastIHC": "2026-07-18",
+      "lastLocation": "XNA",
+      "lastTech": "Todd Axle",
+      "ED1": 29,
       "ED2": -39
     },
     {
@@ -2027,12 +2027,12 @@
     },
     {
       "tail": "N790MK",
-      "lastService": "2026-07-14",
+      "lastService": "2026-07-18",
       "lastED1": "2026-07-05",
       "lastED2": "2026-05-11",
-      "lastIHC": "2026-07-14",
+      "lastIHC": "2026-07-18",
       "lastLocation": "DFW",
-      "lastTech": "Sharmaine Brown",
+      "lastTech": "Aunyae Morrison",
       "ED1": 16,
       "ED2": -9
     },
@@ -2085,6 +2085,78 @@
     {
       "tail": "N226NN",
       "date": "2026-12-30",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N241NN",
+      "date": "2026-07-18",
+      "name": "Todd Axle",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N277NN",
+      "date": "2026-07-18",
+      "name": "Todd Axle",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N762DT",
+      "date": "2026-07-18",
+      "name": "Todd Axle",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N327PG",
+      "date": "2026-07-18",
+      "name": "Todd Axle",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N748RR",
+      "date": "2026-07-18",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N790MK",
+      "date": "2026-07-18",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N247NN",
+      "date": "2026-07-18",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N262NN",
+      "date": "2026-07-18",
       "name": "Aunyae Morrison",
       "location": "DFW",
       "IHC": 1,

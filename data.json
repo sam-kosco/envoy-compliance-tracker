@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-19T10:35:28.694139+00:00",
+  "generated": "2026-07-19T11:59:37.087192+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -465,14 +465,14 @@
     },
     {
       "tail": "N242NN",
-      "lastService": "2026-07-10",
+      "lastService": "2026-07-18",
       "lastED1": "2026-06-28",
-      "lastED2": "2026-05-08",
-      "lastIHC": "2026-07-10",
-      "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastED2": "2026-07-18",
+      "lastIHC": "2026-07-18",
+      "lastLocation": "LIT",
+      "lastTech": "Wayne Bell",
       "ED1": 9,
-      "ED2": -12
+      "ED2": 59
     },
     {
       "tail": "N243NN",
@@ -806,12 +806,12 @@
     },
     {
       "tail": "N273NN",
-      "lastService": "2026-07-17",
+      "lastService": "2026-07-18",
       "lastED1": "2026-07-04",
       "lastED2": "2026-06-07",
-      "lastIHC": "2026-07-17",
+      "lastIHC": "2026-07-18",
       "lastLocation": "LIT",
-      "lastTech": "Dane  Clement",
+      "lastTech": "Wayne Bell",
       "ED1": 15,
       "ED2": 18
     },
@@ -993,12 +993,12 @@
     },
     {
       "tail": "N290NN",
-      "lastService": "2026-07-07",
+      "lastService": "2026-07-18",
       "lastED1": "2026-07-02",
       "lastED2": "2026-05-26",
-      "lastIHC": "2026-07-07",
-      "lastLocation": "XNA",
-      "lastTech": "Shaun Neil",
+      "lastIHC": "2026-07-18",
+      "lastLocation": "LIT",
+      "lastTech": "Wayne Bell",
       "ED1": 13,
       "ED2": 6
     },
@@ -1015,12 +1015,12 @@
     },
     {
       "tail": "N292NN",
-      "lastService": "2026-07-12",
+      "lastService": "2026-07-18",
       "lastED1": "2026-06-25",
       "lastED2": "2026-06-30",
-      "lastIHC": "2026-07-12",
-      "lastLocation": "CVG",
-      "lastTech": "Todd Axle",
+      "lastIHC": "2026-07-18",
+      "lastLocation": "LIT",
+      "lastTech": "Wayne Bell",
       "ED1": 6,
       "ED2": 41
     },
@@ -1136,12 +1136,12 @@
     },
     {
       "tail": "N308LD",
-      "lastService": "2026-07-15",
+      "lastService": "2026-07-18",
       "lastED1": "2026-07-13",
       "lastED2": "2026-06-24",
-      "lastIHC": "2026-07-15",
-      "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastIHC": "2026-07-18",
+      "lastLocation": "LIT",
+      "lastTech": "Wayne Bell",
       "ED1": 24,
       "ED2": 35
     },
@@ -1477,12 +1477,12 @@
     },
     {
       "tail": "N338AS",
-      "lastService": "2026-07-08",
+      "lastService": "2026-07-18",
       "lastED1": "2026-06-27",
       "lastED2": "2026-07-08",
-      "lastIHC": "2026-07-08",
-      "lastLocation": "CVG",
-      "lastTech": "Todd Axle",
+      "lastIHC": "2026-07-18",
+      "lastLocation": "LIT",
+      "lastTech": "Wayne Bell",
       "ED1": 8,
       "ED2": 49
     },
@@ -1708,12 +1708,12 @@
     },
     {
       "tail": "N750BD",
-      "lastService": "2026-07-06",
+      "lastService": "2026-07-18",
       "lastED1": "2026-07-06",
       "lastED2": "2026-06-09",
-      "lastIHC": "2026-07-06",
-      "lastLocation": "CVG",
-      "lastTech": "Todd Axle",
+      "lastIHC": "2026-07-18",
+      "lastLocation": "LIT",
+      "lastTech": "Wayne Bell",
       "ED1": 17,
       "ED2": 20
     },
@@ -2243,6 +2243,69 @@
       "IHC": 1,
       "ED1": 0,
       "ED2": 0
+    },
+    {
+      "tail": "N338AS",
+      "date": "2026-07-18",
+      "name": "Wayne Bell",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N290NN",
+      "date": "2026-07-18",
+      "name": "Wayne Bell",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N292NN",
+      "date": "2026-07-18",
+      "name": "Wayne Bell",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N273NN",
+      "date": "2026-07-18",
+      "name": "Wayne Bell",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N308LD",
+      "date": "2026-07-18",
+      "name": "Wayne Bell",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N750BD",
+      "date": "2026-07-18",
+      "name": "Wayne Bell",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N242NN",
+      "date": "2026-07-18",
+      "name": "Wayne Bell",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 1
     },
     {
       "tail": "N748RR",

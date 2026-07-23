@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-23T11:11:14.771478+00:00",
+  "generated": "2026-07-23T14:03:49.978129+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -619,13 +619,13 @@
     },
     {
       "tail": "N256NN",
-      "lastService": "2026-07-10",
-      "lastED1": "2026-06-25",
+      "lastService": "2026-07-22",
+      "lastED1": "2026-07-22",
       "lastED2": "2026-06-25",
-      "lastIHC": "2026-07-10",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
-      "ED1": 2,
+      "lastIHC": "2026-07-22",
+      "lastLocation": "CMH",
+      "lastTech": "Alexander Hamilton",
+      "ED1": 29,
       "ED2": 32
     },
     {
@@ -707,12 +707,12 @@
     },
     {
       "tail": "N264NN",
-      "lastService": "2026-07-14",
+      "lastService": "2026-07-22",
       "lastED1": "2026-06-29",
       "lastED2": "2026-05-27",
-      "lastIHC": "2026-07-14",
-      "lastLocation": "XNA",
-      "lastTech": "Casey Henry",
+      "lastIHC": "2026-07-22",
+      "lastLocation": "CMH",
+      "lastTech": "Alexander Hamilton",
       "ED1": 6,
       "ED2": 3
     },
@@ -784,13 +784,13 @@
     },
     {
       "tail": "N271NN",
-      "lastService": "2026-07-18",
-      "lastED1": "2026-06-28",
+      "lastService": "2026-07-22",
+      "lastED1": "2026-07-22",
       "lastED2": "2026-07-07",
-      "lastIHC": "2026-07-18",
-      "lastLocation": "XNA",
-      "lastTech": "Riley Woods",
-      "ED1": 5,
+      "lastIHC": "2026-07-22",
+      "lastLocation": "CMH",
+      "lastTech": "Alexander Hamilton",
+      "ED1": 29,
       "ED2": 44
     },
     {
@@ -916,12 +916,12 @@
     },
     {
       "tail": "N283NN",
-      "lastService": "2026-07-14",
+      "lastService": "2026-07-22",
       "lastED1": "2026-07-13",
       "lastED2": "2026-06-28",
-      "lastIHC": "2026-07-14",
-      "lastLocation": "XNA",
-      "lastTech": "Casey Henry",
+      "lastIHC": "2026-07-22",
+      "lastLocation": "CMH",
+      "lastTech": "Alexander Hamilton",
       "ED1": 20,
       "ED2": 35
     },
@@ -1906,12 +1906,12 @@
     },
     {
       "tail": "N780AH",
-      "lastService": "2026-07-07",
+      "lastService": "2026-07-22",
       "lastED1": "2026-07-02",
       "lastED2": "2026-07-07",
-      "lastIHC": "2026-07-07",
+      "lastIHC": "2026-07-22",
       "lastLocation": "CMH",
-      "lastTech": "Tanaija Price",
+      "lastTech": "Alexander Hamilton",
       "ED1": 9,
       "ED2": 44
     },
@@ -2294,6 +2294,51 @@
       "date": "2026-07-22",
       "name": "Wayne Bell",
       "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N256NN",
+      "date": "2026-07-22",
+      "name": "Alexander Hamilton",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N264NN",
+      "date": "2026-07-22",
+      "name": "Alexander Hamilton",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N271NN",
+      "date": "2026-07-22",
+      "name": "Alexander Hamilton",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N780AH",
+      "date": "2026-07-22",
+      "name": "Alexander Hamilton",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N283NN",
+      "date": "2026-07-22",
+      "name": "Alexander Hamilton",
+      "location": "CMH",
       "IHC": 1,
       "ED1": 0,
       "ED2": 0

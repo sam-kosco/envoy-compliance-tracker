@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-23T05:56:02.519954+00:00",
+  "generated": "2026-07-23T08:34:41.276123+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -212,12 +212,12 @@
     },
     {
       "tail": "N219NN",
-      "lastService": "2026-07-20",
+      "lastService": "2026-07-22",
       "lastED1": "2026-06-29",
       "lastED2": "2026-06-29",
-      "lastIHC": "2026-07-20",
+      "lastIHC": "2026-07-22",
       "lastLocation": "DFW",
-      "lastTech": "Sharmaine Brown",
+      "lastTech": "Aunyae Morrison",
       "ED1": 6,
       "ED2": 36
     },
@@ -520,12 +520,12 @@
     },
     {
       "tail": "N247NN",
-      "lastService": "2026-07-18",
+      "lastService": "2026-07-22",
       "lastED1": "2026-06-30",
       "lastED2": "2026-06-23",
-      "lastIHC": "2026-07-18",
-      "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastIHC": "2026-07-22",
+      "lastLocation": "SGF",
+      "lastTech": "Steven Wilson",
       "ED1": 7,
       "ED2": 30
     },
@@ -674,12 +674,12 @@
     },
     {
       "tail": "N261NN",
-      "lastService": "2026-07-12",
+      "lastService": "2026-07-22",
       "lastED1": "2026-07-09",
       "lastED2": "2026-06-30",
-      "lastIHC": "2026-07-12",
-      "lastLocation": "LIT",
-      "lastTech": "Dane  Clement",
+      "lastIHC": "2026-07-22",
+      "lastLocation": "SGF",
+      "lastTech": "Steven Wilson",
       "ED1": 16,
       "ED2": 37
     },
@@ -696,12 +696,12 @@
     },
     {
       "tail": "N263NN",
-      "lastService": "2026-07-20",
+      "lastService": "2026-07-22",
       "lastED1": "2026-07-10",
       "lastED2": "2026-07-18",
-      "lastIHC": "2026-07-20",
-      "lastLocation": "LIT",
-      "lastTech": "Wayne Bell",
+      "lastIHC": "2026-07-22",
+      "lastLocation": "DFW",
+      "lastTech": "Aunyae Morrison",
       "ED1": 17,
       "ED2": 55
     },
@@ -817,12 +817,12 @@
     },
     {
       "tail": "N274NN",
-      "lastService": "2026-07-16",
+      "lastService": "2026-07-22",
       "lastED1": "2026-06-28",
       "lastED2": "2026-05-31",
-      "lastIHC": "2026-07-16",
-      "lastLocation": "SGF",
-      "lastTech": "Steven Wilson",
+      "lastIHC": "2026-07-22",
+      "lastLocation": "DFW",
+      "lastTech": "Aunyae Morrison",
       "ED1": 5,
       "ED2": 7
     },
@@ -1180,12 +1180,12 @@
     },
     {
       "tail": "N312BT",
-      "lastService": "2026-07-19",
+      "lastService": "2026-07-22",
       "lastED1": "2026-07-10",
       "lastED2": "2026-07-10",
-      "lastIHC": "2026-07-19",
-      "lastLocation": "DFW",
-      "lastTech": "Sharmaine Brown",
+      "lastIHC": "2026-07-22",
+      "lastLocation": "SGF",
+      "lastTech": "Steven Wilson",
       "ED1": 17,
       "ED2": 47
     },
@@ -1488,12 +1488,12 @@
     },
     {
       "tail": "N339HG",
-      "lastService": "2026-07-14",
+      "lastService": "2026-07-22",
       "lastED1": "2026-06-05",
       "lastED2": "2026-06-05",
-      "lastIHC": "2026-07-14",
+      "lastIHC": "2026-07-22",
       "lastLocation": "DFW",
-      "lastTech": "Sharmaine Brown",
+      "lastTech": "Aunyae Morrison",
       "ED1": -18,
       "ED2": 12
     },
@@ -1884,12 +1884,12 @@
     },
     {
       "tail": "N778RH",
-      "lastService": "2026-07-17",
+      "lastService": "2026-07-22",
       "lastED1": "2026-06-08",
       "lastED2": "2026-06-28",
-      "lastIHC": "2026-07-17",
+      "lastIHC": "2026-07-22",
       "lastLocation": "DFW",
-      "lastTech": "Natally  Garcia",
+      "lastTech": "Aunyae Morrison",
       "ED1": -15,
       "ED2": 35
     },
@@ -1939,12 +1939,12 @@
     },
     {
       "tail": "N783LC",
-      "lastService": "2026-07-20",
+      "lastService": "2026-07-22",
       "lastED1": "2026-07-20",
       "lastED2": "2026-06-04",
-      "lastIHC": "2026-07-20",
-      "lastLocation": "CVG",
-      "lastTech": "Sellers Davis",
+      "lastIHC": "2026-07-22",
+      "lastLocation": "SGF",
+      "lastTech": "Steven Wilson",
       "ED1": 27,
       "ED2": 11
     },
@@ -2132,6 +2132,87 @@
       "date": "2026-07-22",
       "name": "Sellers Davis",
       "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N261NN",
+      "date": "2026-07-22",
+      "name": "Steven Wilson",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N312BT",
+      "date": "2026-07-22",
+      "name": "Steven Wilson",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N783LC",
+      "date": "2026-07-22",
+      "name": "Steven Wilson",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N247NN",
+      "date": "2026-07-22",
+      "name": "Steven Wilson",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N339HG",
+      "date": "2026-07-22",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N219NN",
+      "date": "2026-07-22",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N263NN",
+      "date": "2026-07-22",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N778RH",
+      "date": "2026-07-22",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N274NN",
+      "date": "2026-07-22",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
       "IHC": 1,
       "ED1": 0,
       "ED2": 0

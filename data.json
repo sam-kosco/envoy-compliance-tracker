@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-24T04:15:17.177057+00:00",
+  "generated": "2026-07-24T07:32:13.211824+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -80,12 +80,12 @@
     },
     {
       "tail": "N207AN",
-      "lastService": "2026-07-20",
+      "lastService": "2026-07-23",
       "lastED1": "2026-07-12",
       "lastED2": "2026-07-19",
-      "lastIHC": "2026-07-20",
+      "lastIHC": "2026-07-23",
       "lastLocation": "CVG",
-      "lastTech": "Sellers Davis",
+      "lastTech": "Precious Roberson",
       "ED1": 18,
       "ED2": 55
     },
@@ -300,12 +300,12 @@
     },
     {
       "tail": "N227NN",
-      "lastService": "2026-07-21",
+      "lastService": "2026-07-23",
       "lastED1": "2026-07-19",
       "lastED2": "2026-07-08",
-      "lastIHC": "2026-07-21",
-      "lastLocation": "SGF",
-      "lastTech": "Steven Wilson",
+      "lastIHC": "2026-07-23",
+      "lastLocation": "DFW",
+      "lastTech": "Aunyae Morrison",
       "ED1": 25,
       "ED2": 44
     },
@@ -366,12 +366,12 @@
     },
     {
       "tail": "N233NN",
-      "lastService": "2026-07-17",
+      "lastService": "2026-07-23",
       "lastED1": "2026-06-29",
       "lastED2": "2026-06-07",
-      "lastIHC": "2026-07-17",
-      "lastLocation": "CMH",
-      "lastTech": "Alex Hamilton",
+      "lastIHC": "2026-07-23",
+      "lastLocation": "CVG",
+      "lastTech": "Precious Roberson",
       "ED1": 5,
       "ED2": 13
     },
@@ -586,12 +586,12 @@
     },
     {
       "tail": "N253NN",
-      "lastService": "2026-07-19",
+      "lastService": "2026-07-23",
       "lastED1": "2026-07-15",
       "lastED2": "2026-07-11",
-      "lastIHC": "2026-07-19",
-      "lastLocation": "XNA",
-      "lastTech": "Riley Woods",
+      "lastIHC": "2026-07-23",
+      "lastLocation": "DFW",
+      "lastTech": "Aunyae Morrison",
       "ED1": 21,
       "ED2": 47
     },
@@ -960,12 +960,12 @@
     },
     {
       "tail": "N287NN",
-      "lastService": "2026-07-19",
+      "lastService": "2026-07-23",
       "lastED1": "2026-07-01",
       "lastED2": "2026-06-08",
-      "lastIHC": "2026-07-19",
+      "lastIHC": "2026-07-23",
       "lastLocation": "CVG",
-      "lastTech": "Todd Axle",
+      "lastTech": "Precious Roberson",
       "ED1": 7,
       "ED2": 14
     },
@@ -1499,12 +1499,12 @@
     },
     {
       "tail": "N340TC",
-      "lastService": "2026-07-17",
+      "lastService": "2026-07-23",
       "lastED1": "2026-06-26",
       "lastED2": "2026-06-01",
-      "lastIHC": "2026-07-17",
+      "lastIHC": "2026-07-23",
       "lastLocation": "DFW",
-      "lastTech": "Natally  Garcia",
+      "lastTech": "Aunyae Morrison",
       "ED1": 2,
       "ED2": 7
     },
@@ -1554,12 +1554,12 @@
     },
     {
       "tail": "N346BB",
-      "lastService": "2026-07-17",
+      "lastService": "2026-07-23",
       "lastED1": "2026-07-17",
       "lastED2": "2026-04-18",
-      "lastIHC": "2026-07-17",
-      "lastLocation": "SGF",
-      "lastTech": "Steven Wilson",
+      "lastIHC": "2026-07-23",
+      "lastLocation": "DFW",
+      "lastTech": "Aunyae Morrison",
       "ED1": 23,
       "ED2": -37
     },
@@ -1785,12 +1785,12 @@
     },
     {
       "tail": "N765ST",
-      "lastService": "2026-07-14",
+      "lastService": "2026-07-23",
       "lastED1": "2026-07-11",
       "lastED2": "2026-07-11",
-      "lastIHC": "2026-07-14",
-      "lastLocation": "SGF",
-      "lastTech": "Steven Wilson",
+      "lastIHC": "2026-07-23",
+      "lastLocation": "DFW",
+      "lastTech": "Aunyae Morrison",
       "ED1": 17,
       "ED2": 47
     },
@@ -2016,12 +2016,12 @@
     },
     {
       "tail": "N789SS",
-      "lastService": "2026-07-17",
+      "lastService": "2026-07-23",
       "lastED1": "2026-07-10",
       "lastED2": "2026-06-08",
-      "lastIHC": "2026-07-17",
-      "lastLocation": "CMH",
-      "lastTech": "Alexander HAMILTON",
+      "lastIHC": "2026-07-23",
+      "lastLocation": "CVG",
+      "lastTech": "Precious Roberson",
       "ED1": 16,
       "ED2": 14
     },
@@ -2085,6 +2085,87 @@
     {
       "tail": "N226NN",
       "date": "2026-12-30",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N287NN",
+      "date": "2026-07-23",
+      "name": "Precious Roberson",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N789SS",
+      "date": "2026-07-23",
+      "name": "Precious Roberson",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N207AN",
+      "date": "2026-07-23",
+      "name": "Precious Roberson",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N233NN",
+      "date": "2026-07-23",
+      "name": "Precious Roberson",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N346BB",
+      "date": "2026-07-23",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N765ST",
+      "date": "2026-07-23",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N253NN",
+      "date": "2026-07-23",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N227NN",
+      "date": "2026-07-23",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N340TC",
+      "date": "2026-07-23",
       "name": "Aunyae Morrison",
       "location": "DFW",
       "IHC": 1,

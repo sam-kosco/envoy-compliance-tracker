@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-24T12:19:32.261115+00:00",
+  "generated": "2026-07-24T14:56:13.346115+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -839,14 +839,14 @@
     },
     {
       "tail": "N276NN",
-      "lastService": "2026-07-23",
+      "lastService": "2026-07-20",
       "lastED1": "2026-07-02",
-      "lastED2": "2026-07-23",
-      "lastIHC": "2026-07-23",
-      "lastLocation": "CMH",
-      "lastTech": "Alexander HAMILTON",
+      "lastED2": "2026-06-06",
+      "lastIHC": "2026-07-20",
+      "lastLocation": "DFW",
+      "lastTech": "Sharmaine Brown",
       "ED1": 8,
-      "ED2": 59
+      "ED2": 12
     },
     {
       "tail": "N277NN",
@@ -861,14 +861,14 @@
     },
     {
       "tail": "N278NN",
-      "lastService": "2026-07-14",
+      "lastService": "2026-07-23",
       "lastED1": "2026-07-01",
-      "lastED2": "2026-05-17",
-      "lastIHC": "2026-07-14",
-      "lastLocation": "CVG",
-      "lastTech": "Todd Axle",
+      "lastED2": "2026-07-23",
+      "lastIHC": "2026-07-23",
+      "lastLocation": "CMH",
+      "lastTech": "Alex Hamilton",
       "ED1": 7,
-      "ED2": -8
+      "ED2": 59
     },
     {
       "tail": "N279MQ",
@@ -2326,9 +2326,9 @@
       "ED2": 0
     },
     {
-      "tail": "N276NN",
+      "tail": "N278NN",
       "date": "2026-07-23",
-      "name": "Alexander HAMILTON",
+      "name": "Alex Hamilton",
       "location": "CMH",
       "IHC": 1,
       "ED1": 0,

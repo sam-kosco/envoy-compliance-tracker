@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-25T00:04:32.542774+00:00",
+  "generated": "2026-07-25T04:11:48.331812+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -223,23 +223,23 @@
     },
     {
       "tail": "N220NN",
-      "lastService": "2026-07-21",
+      "lastService": "2026-07-24",
       "lastED1": "2026-07-09",
       "lastED2": "2026-06-06",
-      "lastIHC": "2026-07-21",
+      "lastIHC": "2026-07-24",
       "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastTech": "Raenita Jasper",
       "ED1": 14,
       "ED2": 11
     },
     {
       "tail": "N221NN",
-      "lastService": "2026-07-23",
+      "lastService": "2026-07-30",
       "lastED1": "2026-06-29",
       "lastED2": "2026-07-21",
-      "lastIHC": "2026-07-23",
+      "lastIHC": "2026-07-30",
       "lastLocation": "LIT",
-      "lastTech": "Wayne Bell",
+      "lastTech": "Tracy Fears",
       "ED1": 4,
       "ED2": 56
     },
@@ -608,12 +608,12 @@
     },
     {
       "tail": "N255NN",
-      "lastService": "2026-07-19",
+      "lastService": "2026-07-23",
       "lastED1": "2026-06-28",
       "lastED2": "2026-06-13",
-      "lastIHC": "2026-07-19",
-      "lastLocation": "CVG",
-      "lastTech": "Todd Axle",
+      "lastIHC": "2026-07-23",
+      "lastLocation": "LIT",
+      "lastTech": "Tracy Fears",
       "ED1": 3,
       "ED2": 18
     },
@@ -2092,6 +2092,24 @@
       "ED2": 0
     },
     {
+      "tail": "N221NN",
+      "date": "2026-07-30",
+      "name": "Tracy Fears",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N220NN",
+      "date": "2026-07-24",
+      "name": "Raenita Jasper",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
       "tail": "N287NN",
       "date": "2026-07-23",
       "name": "Precious Roberson",
@@ -2333,6 +2351,60 @@
       "IHC": 1,
       "ED1": 0,
       "ED2": 1
+    },
+    {
+      "tail": "N250NN",
+      "date": "2026-07-23",
+      "name": "Tracy Fears",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N255NN",
+      "date": "2026-07-23",
+      "name": "Tracy Fears",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N241NN",
+      "date": "2026-07-23",
+      "name": "Tracy Fears",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N745JB",
+      "date": "2026-07-23",
+      "name": "Tracy Fears",
+      "location": "LIT",
+      "IHC": 0,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N291NN",
+      "date": "2026-07-23",
+      "name": "Tracy Fears",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N265NN",
+      "date": "2026-07-23",
+      "name": "Tracy Fears",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
     },
     {
       "tail": "N346BB",

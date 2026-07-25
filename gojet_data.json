@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-25T04:55:05.394284+00:00",
+  "generated": "2026-07-25T07:09:06.401635+00:00",
   "cycles": {
     "ED1": 60,
     "ED2": 60,
@@ -176,12 +176,12 @@
     },
     {
       "tail": "521",
-      "lastService": "2026-07-22",
+      "lastService": "2026-07-24",
       "lastED1": "2026-06-22",
       "lastED2": "2026-06-22",
       "lastCE": "2025-12-13",
       "lastIHC": "2026-06-22",
-      "lastRON": "2026-07-22",
+      "lastRON": "2026-07-24",
       "lastLocation": "STL",
       "lastTech": "Genesis King",
       "ED1": 27,
@@ -344,12 +344,12 @@
     },
     {
       "tail": "540",
-      "lastService": "2026-07-17",
+      "lastService": "2026-07-24",
       "lastED1": "2026-06-08",
       "lastED2": "2026-06-08",
       "lastCE": "2026-07-17",
       "lastIHC": "2026-07-17",
-      "lastRON": "2026-07-15",
+      "lastRON": "2026-07-24",
       "lastLocation": "STL",
       "lastTech": "Genesis King",
       "ED1": 13,
@@ -428,14 +428,14 @@
     },
     {
       "tail": "546",
-      "lastService": "2026-07-21",
+      "lastService": "2026-07-24",
       "lastED1": "2025-10-12",
       "lastED2": "2025-10-12",
       "lastCE": "2025-11-24",
       "lastIHC": "2026-04-16",
-      "lastRON": "2026-07-21",
+      "lastRON": "2026-07-24",
       "lastLocation": "STL",
-      "lastTech": "Tiffany Hudson",
+      "lastTech": "Genesis King",
       "ED1": -226,
       "ED2": -226,
       "CE": -183
@@ -470,12 +470,12 @@
     },
     {
       "tail": "549",
-      "lastService": "2026-07-08",
+      "lastService": "2026-07-24",
       "lastED1": "2026-06-05",
       "lastED2": "2026-06-05",
       "lastCE": "2026-05-01",
       "lastIHC": "2026-07-08",
-      "lastRON": "2026-06-26",
+      "lastRON": "2026-07-24",
       "lastLocation": "STL",
       "lastTech": "Genesis King",
       "ED1": 10,
@@ -792,6 +792,50 @@
     }
   ],
   "debriefs": [
+    {
+      "tail": "549",
+      "date": "2026-07-24",
+      "name": "Genesis King",
+      "location": "STL",
+      "ED1": 0,
+      "ED2": 0,
+      "CE": 0,
+      "IHC": 0,
+      "RON": 1
+    },
+    {
+      "tail": "521",
+      "date": "2026-07-24",
+      "name": "Genesis King",
+      "location": "STL",
+      "ED1": 0,
+      "ED2": 0,
+      "CE": 0,
+      "IHC": 0,
+      "RON": 1
+    },
+    {
+      "tail": "540",
+      "date": "2026-07-24",
+      "name": "Genesis King",
+      "location": "STL",
+      "ED1": 0,
+      "ED2": 0,
+      "CE": 0,
+      "IHC": 0,
+      "RON": 1
+    },
+    {
+      "tail": "546",
+      "date": "2026-07-24",
+      "name": "Genesis King",
+      "location": "STL",
+      "ED1": 0,
+      "ED2": 0,
+      "CE": 0,
+      "IHC": 0,
+      "RON": 1
+    },
     {
       "tail": "541",
       "date": "2026-07-23",

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-25T07:09:06.401635+00:00",
+  "generated": "2026-07-25T09:26:32.064379+00:00",
   "cycles": {
     "ED1": 60,
     "ED2": 60,
@@ -204,16 +204,16 @@
     },
     {
       "tail": "523",
-      "lastService": "2026-07-21",
-      "lastED1": "2026-04-25",
-      "lastED2": "2026-04-25",
+      "lastService": "2026-07-24",
+      "lastED1": "2026-07-24",
+      "lastED2": "2026-07-24",
       "lastCE": "2026-05-02",
-      "lastIHC": "2026-06-10",
+      "lastIHC": "2026-07-24",
       "lastRON": "2026-07-21",
       "lastLocation": "STL",
-      "lastTech": "Tiffany Hudson",
-      "ED1": -31,
-      "ED2": -31,
+      "lastTech": "Genesis King",
+      "ED1": 59,
+      "ED2": 59,
       "CE": -24
     },
     {
@@ -835,6 +835,17 @@
       "CE": 0,
       "IHC": 0,
       "RON": 1
+    },
+    {
+      "tail": "523",
+      "date": "2026-07-24",
+      "name": "Genesis King",
+      "location": "STL",
+      "ED1": 1,
+      "ED2": 1,
+      "CE": 0,
+      "IHC": 1,
+      "RON": 0
     },
     {
       "tail": "541",

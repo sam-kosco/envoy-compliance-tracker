@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-26T00:07:27.112192+00:00",
+  "generated": "2026-07-26T04:27:16.307096+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -773,12 +773,12 @@
     },
     {
       "tail": "N270NN",
-      "lastService": "2026-07-23",
+      "lastService": "2026-07-25",
       "lastED1": "2026-07-10",
       "lastED2": "2026-06-05",
-      "lastIHC": "2026-07-23",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
+      "lastIHC": "2026-07-25",
+      "lastLocation": "DFW",
+      "lastTech": "Raenita Jasper",
       "ED1": 14,
       "ED2": 9
     },
@@ -2096,6 +2096,15 @@
       "date": "2026-07-30",
       "name": "Tracy Fears",
       "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N270NN",
+      "date": "2026-07-25",
+      "name": "Raenita Jasper",
+      "location": "DFW",
       "IHC": 1,
       "ED1": 0,
       "ED2": 0

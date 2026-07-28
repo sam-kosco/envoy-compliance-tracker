@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-28T07:31:23.471276+00:00",
+  "generated": "2026-07-28T10:22:50.518769+00:00",
   "cycles": {
     "ED1": 60,
     "ED2": 60,
@@ -484,14 +484,14 @@
     },
     {
       "tail": "550",
-      "lastService": "2026-07-23",
+      "lastService": "2026-07-27",
       "lastED1": null,
       "lastED2": null,
       "lastCE": "2026-06-02",
       "lastIHC": "2026-07-07",
-      "lastRON": "2026-07-23",
+      "lastRON": "2026-07-27",
       "lastLocation": "STL",
-      "lastTech": "Genesis King",
+      "lastTech": "Tiffany Hudson",
       "ED1": "No Service",
       "ED2": "No Service",
       "CE": 4
@@ -526,14 +526,14 @@
     },
     {
       "tail": "553",
-      "lastService": "2026-07-26",
+      "lastService": "2026-07-27",
       "lastED1": "2026-07-26",
       "lastED2": "2026-06-29",
       "lastCE": "2026-04-13",
       "lastIHC": "2026-06-29",
-      "lastRON": "2026-07-26",
+      "lastRON": "2026-07-27",
       "lastLocation": "STL",
-      "lastTech": "Genesis King",
+      "lastTech": "Tiffany Hudson",
       "ED1": 58,
       "ED2": 31,
       "CE": -46
@@ -554,12 +554,12 @@
     },
     {
       "tail": "556",
-      "lastService": "2026-07-14",
+      "lastService": "2026-07-27",
       "lastED1": "2026-05-28",
       "lastED2": "2026-05-28",
       "lastCE": "2026-05-28",
       "lastIHC": "2026-06-29",
-      "lastRON": "2026-07-14",
+      "lastRON": "2026-07-27",
       "lastLocation": "STL",
       "lastTech": "Tiffany Hudson",
       "ED1": -1,
@@ -582,14 +582,14 @@
     },
     {
       "tail": "559",
-      "lastService": "2026-07-25",
+      "lastService": "2026-07-27",
       "lastED1": "2026-07-16",
       "lastED2": "2026-07-16",
       "lastCE": "2026-04-15",
       "lastIHC": "2026-07-16",
-      "lastRON": "2026-07-25",
+      "lastRON": "2026-07-27",
       "lastLocation": "STL",
-      "lastTech": "Genesis King",
+      "lastTech": "Tiffany Hudson",
       "ED1": 48,
       "ED2": 48,
       "CE": -44
@@ -792,6 +792,50 @@
     }
   ],
   "debriefs": [
+    {
+      "tail": "556",
+      "date": "2026-07-27",
+      "name": "Tiffany Hudson",
+      "location": "STL",
+      "ED1": 0,
+      "ED2": 0,
+      "CE": 0,
+      "IHC": 0,
+      "RON": 1
+    },
+    {
+      "tail": "559",
+      "date": "2026-07-27",
+      "name": "Tiffany Hudson",
+      "location": "STL",
+      "ED1": 0,
+      "ED2": 0,
+      "CE": 0,
+      "IHC": 0,
+      "RON": 1
+    },
+    {
+      "tail": "550",
+      "date": "2026-07-27",
+      "name": "Tiffany Hudson",
+      "location": "STL",
+      "ED1": 0,
+      "ED2": 0,
+      "CE": 0,
+      "IHC": 0,
+      "RON": 1
+    },
+    {
+      "tail": "553",
+      "date": "2026-07-27",
+      "name": "Tiffany Hudson",
+      "location": "STL",
+      "ED1": 0,
+      "ED2": 0,
+      "CE": 0,
+      "IHC": 0,
+      "RON": 1
+    },
     {
       "tail": "544",
       "date": "2026-07-26",

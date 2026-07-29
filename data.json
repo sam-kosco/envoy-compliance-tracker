@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-29T12:01:19.699475+00:00",
+  "generated": "2026-07-29T15:07:51.009472+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -47,12 +47,12 @@
     },
     {
       "tail": "N204NN",
-      "lastService": "2026-07-23",
+      "lastService": "2026-07-28",
       "lastED1": "2026-07-05",
       "lastED2": "2026-06-10",
-      "lastIHC": "2026-07-23",
-      "lastLocation": "XNA",
-      "lastTech": "Riley Woods",
+      "lastIHC": "2026-07-28",
+      "lastLocation": "CMH",
+      "lastTech": "Alex Hamilton",
       "ED1": 6,
       "ED2": 11
     },
@@ -542,12 +542,12 @@
     },
     {
       "tail": "N249NN",
-      "lastService": "2026-07-19",
+      "lastService": "2026-07-28",
       "lastED1": "2026-07-12",
       "lastED2": "2026-07-12",
-      "lastIHC": "2026-07-19",
-      "lastLocation": "DFW",
-      "lastTech": "Sharmaine Brown",
+      "lastIHC": "2026-07-28",
+      "lastLocation": "CMH",
+      "lastTech": "Alexander HAMILTON",
       "ED1": 13,
       "ED2": 43
     },
@@ -1213,12 +1213,12 @@
     },
     {
       "tail": "N315NH",
-      "lastService": "2026-07-24",
+      "lastService": "2026-07-28",
       "lastED1": "2026-07-19",
       "lastED2": "2026-06-03",
-      "lastIHC": "2026-07-24",
-      "lastLocation": "XNA",
-      "lastTech": "Casey Henry",
+      "lastIHC": "2026-07-28",
+      "lastLocation": "CMH",
+      "lastTech": "Alexander HAMILTON",
       "ED1": 20,
       "ED2": 4
     },
@@ -2294,6 +2294,33 @@
       "date": "2026-07-28",
       "name": "Tracy Fears",
       "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N204NN",
+      "date": "2026-07-28",
+      "name": "Alex Hamilton",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N315NH",
+      "date": "2026-07-28",
+      "name": "Alexander HAMILTON",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N249NN",
+      "date": "2026-07-28",
+      "name": "Alexander HAMILTON",
+      "location": "CMH",
       "IHC": 1,
       "ED1": 0,
       "ED2": 0

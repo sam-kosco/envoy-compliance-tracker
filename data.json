@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-30T03:57:39.768852+00:00",
+  "generated": "2026-07-30T06:34:49.724288+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -509,12 +509,12 @@
     },
     {
       "tail": "N246NN",
-      "lastService": "2026-07-28",
+      "lastService": "2026-07-29",
       "lastED1": "2026-07-28",
       "lastED2": "2026-07-13",
-      "lastIHC": "2026-07-28",
-      "lastLocation": "XNA",
-      "lastTech": "Casey Henry",
+      "lastIHC": "2026-07-29",
+      "lastLocation": "DFW",
+      "lastTech": "Raenita Jasper",
       "ED1": 28,
       "ED2": 43
     },
@@ -586,12 +586,12 @@
     },
     {
       "tail": "N253NN",
-      "lastService": "2026-07-23",
+      "lastService": "2026-07-29",
       "lastED1": "2026-07-15",
       "lastED2": "2026-07-11",
-      "lastIHC": "2026-07-23",
+      "lastIHC": "2026-07-29",
       "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastTech": "Raenita Jasper",
       "ED1": 15,
       "ED2": 41
     },
@@ -1631,12 +1631,12 @@
     },
     {
       "tail": "N742GR",
-      "lastService": "2026-07-26",
+      "lastService": "2026-07-29",
       "lastED1": "2026-06-28",
       "lastED2": "2026-05-21",
-      "lastIHC": "2026-07-26",
+      "lastIHC": "2026-07-29",
       "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastTech": "Raenita Jasper",
       "ED1": -2,
       "ED2": -10
     },
@@ -2096,6 +2096,33 @@
       "date": "2026-07-29",
       "name": "Sellers Davis",
       "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N253NN",
+      "date": "2026-07-29",
+      "name": "Raenita Jasper",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N742GR",
+      "date": "2026-07-29",
+      "name": "Raenita Jasper",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N246NN",
+      "date": "2026-07-29",
+      "name": "Raenita Jasper",
+      "location": "DFW",
       "IHC": 1,
       "ED1": 0,
       "ED2": 0

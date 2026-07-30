@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-30T11:02:03.619521+00:00",
+  "generated": "2026-07-30T13:46:04.500817+00:00",
   "planes": [
     {
       "tail": "N500AE",
@@ -2840,6 +2840,28 @@
       "Lav": 60
     },
     {
+      "tail": "N642NN",
+      "lastService": null,
+      "lastCC": null,
+      "lastDSC": null,
+      "lastCE": null,
+      "lastED1": null,
+      "lastED2": null,
+      "lastLav": null,
+      "lastIC": null,
+      "lastEC": null,
+      "lastED3": null,
+      "lastED4": null,
+      "lastLocation": null,
+      "lastTech": null,
+      "CC": "No Service",
+      "DSC": "No Service",
+      "CE": "No Service",
+      "ED1": "No Service",
+      "ED2": "No Service",
+      "Lav": "No Service"
+    },
+    {
       "tail": "N643NN",
       "lastService": "2026-07-22",
       "lastCC": "2026-07-22",
@@ -2855,6 +2877,28 @@
       "lastLocation": "CVG",
       "lastTech": "Sellers Davis",
       "CC": 22,
+      "DSC": "No Service",
+      "CE": "No Service",
+      "ED1": "No Service",
+      "ED2": "No Service",
+      "Lav": "No Service"
+    },
+    {
+      "tail": "N644NN",
+      "lastService": null,
+      "lastCC": null,
+      "lastDSC": null,
+      "lastCE": null,
+      "lastED1": null,
+      "lastED2": null,
+      "lastLav": null,
+      "lastIC": null,
+      "lastEC": null,
+      "lastED3": null,
+      "lastED4": null,
+      "lastLocation": null,
+      "lastTech": null,
+      "CC": "No Service",
       "DSC": "No Service",
       "CE": "No Service",
       "ED1": "No Service",
@@ -2925,6 +2969,28 @@
       "CE": 18,
       "ED1": 8,
       "ED2": 13,
+      "Lav": "No Service"
+    },
+    {
+      "tail": "N648NN",
+      "lastService": null,
+      "lastCC": null,
+      "lastDSC": null,
+      "lastCE": null,
+      "lastED1": null,
+      "lastED2": null,
+      "lastLav": null,
+      "lastIC": null,
+      "lastEC": null,
+      "lastED3": null,
+      "lastED4": null,
+      "lastLocation": null,
+      "lastTech": null,
+      "CC": "No Service",
+      "DSC": "No Service",
+      "CE": "No Service",
+      "ED1": "No Service",
+      "ED2": "No Service",
       "Lav": "No Service"
     },
     {
@@ -4634,7 +4700,16 @@
       "ED3": 0,
       "ED4": 0,
       "Lav": 0,
-      "audits": []
+      "audits": [
+        {
+          "service": "DSC",
+          "url": "https://app.safetyculture.com/report/public/audit/ffa4cdbbc0950b40736c6b035a0d5a5ac92e91abbf32a9afcc2e78bea4efa925",
+          "auditId": "audit_a88803f4b26c4718b2ce28c266b9977b",
+          "status": "Submitted",
+          "submitter": "Amy Gribble",
+          "date": "2026-07-28"
+        }
+      ]
     },
     {
       "tail": "N581NN",
@@ -4838,7 +4913,16 @@
       "ED3": 0,
       "ED4": 0,
       "Lav": 0,
-      "audits": []
+      "audits": [
+        {
+          "service": "DSC",
+          "url": "https://app.safetyculture.com/report/public/audit/ee54efb8be7b1efc2c6273bd84104c59b71496ed9e1ee1c7cc427c7319735207",
+          "auditId": "audit_88a0a8ffedd34885a273cfbed2f6e1ae",
+          "status": "Submitted",
+          "submitter": "Sellers Davis",
+          "date": "2026-07-27"
+        }
+      ]
     },
     {
       "tail": "N501BG",
@@ -4872,7 +4956,16 @@
       "ED3": 0,
       "ED4": 0,
       "Lav": 0,
-      "audits": []
+      "audits": [
+        {
+          "service": "DSC",
+          "url": "https://app.safetyculture.com/report/public/audit/6c9a575f7719339becf3eb5ecf3ae0f17e3efad2c173e37bf3a8f05d7d742274",
+          "auditId": "audit_1f2390e9bdb9464bb3d99bf6d869af3f",
+          "status": "Submitted",
+          "submitter": "Sellers Davis",
+          "date": "2026-07-27"
+        }
+      ]
     },
     {
       "tail": "N636NN",
@@ -6317,7 +6410,16 @@
       "ED3": 0,
       "ED4": 0,
       "Lav": 0,
-      "audits": []
+      "audits": [
+        {
+          "service": "DSC",
+          "url": "https://app.safetyculture.com/report/public/audit/2d8e29b1c1168e579bf2893d36cba048ea66e65dd3f47927d2a88d9c4a1dbd33",
+          "auditId": "audit_dc1f05ce814c40e08085f096c4f8eadb",
+          "status": "Submitted",
+          "submitter": "Amy Gribble",
+          "date": "2026-07-25"
+        }
+      ]
     },
     {
       "tail": "N533AE",
@@ -7031,7 +7133,16 @@
       "ED3": 0,
       "ED4": 0,
       "Lav": 0,
-      "audits": []
+      "audits": [
+        {
+          "service": "DSC",
+          "url": "https://app.safetyculture.com/report/public/audit/b4f1feeb0dbf180efef01d6e896e2c97d3faed701046f8ffaabe48b1868394e8",
+          "auditId": "audit_a43e07cca3c84bd08fd2d7aef867d6be",
+          "status": "Submitted",
+          "submitter": "Sellers Davis",
+          "date": "2026-07-23"
+        }
+      ]
     },
     {
       "tail": "N550NN",
@@ -7252,7 +7363,16 @@
       "ED3": 0,
       "ED4": 0,
       "Lav": 0,
-      "audits": []
+      "audits": [
+        {
+          "service": "DSC",
+          "url": "https://app.safetyculture.com/report/public/audit/0b9d48686318e1c7863da72867d4fc8400215cddb9fc7ab67ac26ecf2b89f6d3",
+          "auditId": "audit_571a5b723fb643b998d37c90f68d539f",
+          "status": "Submitted",
+          "submitter": "Amy Gribble",
+          "date": "2026-07-23"
+        }
+      ]
     },
     {
       "tail": "N594NN",
@@ -7813,7 +7933,16 @@
       "ED3": 0,
       "ED4": 0,
       "Lav": 0,
-      "audits": []
+      "audits": [
+        {
+          "service": "DSC",
+          "url": "https://app.safetyculture.com/report/public/audit/480a2b7b1d50069e1e88f07f406e4a785fc099ada9c6e8fc93725721483ba042",
+          "auditId": "audit_7c3576371ddd48edbb6ec4146fffbc19",
+          "status": "Submitted",
+          "submitter": "Amy Gribble",
+          "date": "2026-07-22"
+        }
+      ]
     },
     {
       "tail": "N509AE",
@@ -7830,7 +7959,16 @@
       "ED3": 0,
       "ED4": 0,
       "Lav": 0,
-      "audits": []
+      "audits": [
+        {
+          "service": "DSC",
+          "url": "https://app.safetyculture.com/report/public/audit/ff3df82e383d9cd8da15033af4256c8c85b0e484643235cb3bcbd89f8bc9458a",
+          "auditId": "audit_bf423c65b6194798a3c14cc0ef423bd4",
+          "status": "Submitted",
+          "submitter": "Amy Gribble",
+          "date": "2026-07-22"
+        }
+      ]
     },
     {
       "tail": "N520DC",
@@ -8408,7 +8546,16 @@
       "ED3": 0,
       "ED4": 0,
       "Lav": 0,
-      "audits": []
+      "audits": [
+        {
+          "service": "DSC",
+          "url": "https://app.safetyculture.com/report/public/audit/5a158264fe1c238fe3211576f05c2ac56411c029a91d937ad3299865612125fa",
+          "auditId": "audit_4cb9dc4132ed44fc92c3d7612574fb75",
+          "status": "Submitted",
+          "submitter": "Amy Gribble",
+          "date": "2026-07-20"
+        }
+      ]
     },
     {
       "tail": "N586NN",
@@ -8510,7 +8657,16 @@
       "ED3": 0,
       "ED4": 0,
       "Lav": 0,
-      "audits": []
+      "audits": [
+        {
+          "service": "DSC",
+          "url": "https://app.safetyculture.com/report/public/audit/5a59b53e35b30376e3eed8562f769ca6046bd22f4fe7aaf49de878bbbe9e9665",
+          "auditId": "audit_dbfd9f380b3f460b991394c2af95112a",
+          "status": "Submitted",
+          "submitter": "Saphire Wagner",
+          "date": "2026-07-20"
+        }
+      ]
     },
     {
       "tail": "N649NN",
@@ -8578,7 +8734,16 @@
       "ED3": 0,
       "ED4": 0,
       "Lav": 0,
-      "audits": []
+      "audits": [
+        {
+          "service": "DSC",
+          "url": "https://app.safetyculture.com/report/public/audit/d8c44e9012b0da527a28c8a01d2aa694af64f7f75ee6865bb4a9c94a6e84cbbd",
+          "auditId": "audit_2049730c4369440f8f6c888ede9c09e1",
+          "status": "Submitted",
+          "submitter": "Sellers Davis",
+          "date": "2026-07-20"
+        }
+      ]
     },
     {
       "tail": "N559NN",
@@ -8867,7 +9032,16 @@
       "ED3": 0,
       "ED4": 0,
       "Lav": 0,
-      "audits": []
+      "audits": [
+        {
+          "service": "DSC",
+          "url": "https://app.safetyculture.com/report/public/audit/32687a29f08fc04fb4700f98af018bf3f976c09f2ae5a41f7e1f6885f0c652a0",
+          "auditId": "audit_736b198c1aa747bab5073e87af6c0acd",
+          "status": "Submitted",
+          "submitter": "Amy Gribble",
+          "date": "2026-07-20"
+        }
+      ]
     },
     {
       "tail": "N525AE",
@@ -10006,7 +10180,16 @@
       "ED3": 0,
       "ED4": 0,
       "Lav": 0,
-      "audits": []
+      "audits": [
+        {
+          "service": "DSC",
+          "url": "https://app.safetyculture.com/report/public/audit/b8c7968c903edbef4bf3c1c7fc80b58a802de0e8e36c52f4f8c59ea2c3125b17",
+          "auditId": "audit_a97a88a2f818466f9a8af2fa99f64b2b",
+          "status": "Submitted",
+          "submitter": "Saphire Wagner",
+          "date": "2026-07-17"
+        }
+      ]
     },
     {
       "tail": "N581NN",
@@ -10023,7 +10206,16 @@
       "ED3": 0,
       "ED4": 0,
       "Lav": 0,
-      "audits": []
+      "audits": [
+        {
+          "service": "DSC",
+          "url": "https://app.safetyculture.com/report/public/audit/510c5ceb60de8c6817d86c9a52d9e4b91b205c81071f6410d6d5bc2c5dc1d42b",
+          "auditId": "audit_9509dd46455447a0b3d4d9d1475c1992",
+          "status": "Submitted",
+          "submitter": "Saphire Wagner",
+          "date": "2026-07-17"
+        }
+      ]
     },
     {
       "tail": "N586NN",
@@ -10312,7 +10504,16 @@
       "ED3": 0,
       "ED4": 0,
       "Lav": 0,
-      "audits": []
+      "audits": [
+        {
+          "service": "DSC",
+          "url": "https://app.safetyculture.com/report/public/audit/1d9fae82841fc3c3825ac6196ade0fc0e15a12f8be68d72f069be200d295b2ae",
+          "auditId": "audit_8e64f9a9be4e4448ba8c887c3a77580e",
+          "status": "Submitted",
+          "submitter": "Amy Gribble",
+          "date": "2026-07-17"
+        }
+      ]
     },
     {
       "tail": "N582NN",
@@ -10669,7 +10870,16 @@
       "ED3": 0,
       "ED4": 0,
       "Lav": 0,
-      "audits": []
+      "audits": [
+        {
+          "service": "DSC",
+          "url": "https://app.safetyculture.com/report/public/audit/6bf312cc5e6d1c5e3410766b11735db709764a338eaf7a5932eeded901da18ca",
+          "auditId": "audit_c43d89fd8d574adb8b5ee90da504b366",
+          "status": "Submitted",
+          "submitter": "Amy Gribble",
+          "date": "2026-07-16"
+        }
+      ]
     },
     {
       "tail": "N539EA",
@@ -11757,7 +11967,16 @@
       "ED3": 0,
       "ED4": 0,
       "Lav": 0,
-      "audits": []
+      "audits": [
+        {
+          "service": "DSC",
+          "url": "https://app.safetyculture.com/report/public/audit/718c999b495d478cecedb72546247c438beff96c752bec906e67c0f5b82acfdf",
+          "auditId": "audit_8376e0da7ef94cc6b89f38bc7e737889",
+          "status": "Submitted",
+          "submitter": "Sellers Davis",
+          "date": "2026-07-14"
+        }
+      ]
     },
     {
       "tail": "N602NN",
@@ -12250,7 +12469,16 @@
       "ED3": 0,
       "ED4": 0,
       "Lav": 0,
-      "audits": []
+      "audits": [
+        {
+          "service": "DSC",
+          "url": "https://app.safetyculture.com/report/public/audit/3d147bd2cceac9035f2c644b7c2a97ab34ea4f84b7b14b03cf92b7488132c966",
+          "auditId": "audit_bd21fd6cad2946a295e0a6d0828383fa",
+          "status": "Approved",
+          "submitter": "Amy Gribble",
+          "date": "2026-07-13"
+        }
+      ]
     },
     {
       "tail": "N612NN",
@@ -12573,7 +12801,16 @@
       "ED3": 0,
       "ED4": 0,
       "Lav": 0,
-      "audits": []
+      "audits": [
+        {
+          "service": "DSC",
+          "url": "https://app.safetyculture.com/report/public/audit/1ad3869358f571b5b9bac284bd397d87502a95fe158bcf36a3df4b17acb4a0db",
+          "auditId": "audit_2bcabf88868b4771902215c1e9360e4f",
+          "status": "Submitted",
+          "submitter": "Amy Gribble",
+          "date": "2026-07-12"
+        }
+      ]
     },
     {
       "tail": "N607NN",
@@ -12590,7 +12827,16 @@
       "ED3": 0,
       "ED4": 0,
       "Lav": 1,
-      "audits": []
+      "audits": [
+        {
+          "service": "DSC",
+          "url": "https://app.safetyculture.com/report/public/audit/c220e5553e54cd327ccfe14b497e9a75b9563113d6a141daa872950b1fdb8c45",
+          "auditId": "audit_8cf54044b1284fa7a47d962f661226c8",
+          "status": "Approved",
+          "submitter": "Amy Gribble",
+          "date": "2026-07-12"
+        }
+      ]
     },
     {
       "tail": "N618NN",
@@ -12964,7 +13210,16 @@
       "ED3": 0,
       "ED4": 0,
       "Lav": 0,
-      "audits": []
+      "audits": [
+        {
+          "service": "DSC",
+          "url": "https://app.safetyculture.com/report/public/audit/be0e7ea0dc942320cbec6284f086a2df2fe4118eaa6a7e133cb8db6177fbe3bc",
+          "auditId": "audit_0b2d14e63ade45ffbf99a2ed541540dd",
+          "status": "Submitted",
+          "submitter": "Saphire Wagner",
+          "date": "2026-07-11"
+        }
+      ]
     },
     {
       "tail": "N615NN",
@@ -13185,7 +13440,16 @@
       "ED3": 0,
       "ED4": 0,
       "Lav": 0,
-      "audits": []
+      "audits": [
+        {
+          "service": "DSC",
+          "url": "https://app.safetyculture.com/report/public/audit/ab7b99cd0c4cba33f81935f0b148666d55c8d97decc00eb306014f66bba6fd0c",
+          "auditId": "audit_246a60e60ad54a08bb6761245ce6c94a",
+          "status": "Approved",
+          "submitter": "Sellers Davis",
+          "date": "2026-07-11"
+        }
+      ]
     },
     {
       "tail": "N634NN",
@@ -13202,7 +13466,16 @@
       "ED3": 0,
       "ED4": 0,
       "Lav": 0,
-      "audits": []
+      "audits": [
+        {
+          "service": "DSC",
+          "url": "https://app.safetyculture.com/report/public/audit/8632c15035b7b12d73c56c0716619ea5602a4bf8b5b2041418a8876195e3ce43",
+          "auditId": "audit_8661efee536b473691f16ff21210c503",
+          "status": "Submitted",
+          "submitter": "Sellers Davis",
+          "date": "2026-07-11"
+        }
+      ]
     },
     {
       "tail": "N541EA",

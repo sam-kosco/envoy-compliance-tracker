@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-30T09:31:41.469315+00:00",
+  "generated": "2026-07-30T11:52:18.037741+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -157,12 +157,12 @@
     },
     {
       "tail": "N214NN",
-      "lastService": "2026-07-28",
+      "lastService": "2026-07-29",
       "lastED1": "2026-06-26",
       "lastED2": "2026-06-09",
-      "lastIHC": "2026-07-28",
+      "lastIHC": "2026-07-29",
       "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastTech": "Raenita Jasper",
       "ED1": -4,
       "ED2": 9
     },
@@ -256,12 +256,12 @@
     },
     {
       "tail": "N223NN",
-      "lastService": "2026-07-16",
+      "lastService": "2026-07-29",
       "lastED1": "2026-07-11",
       "lastED2": "2026-05-17",
-      "lastIHC": "2026-07-16",
-      "lastLocation": "SGF",
-      "lastTech": "Steven Wilson",
+      "lastIHC": "2026-07-29",
+      "lastLocation": "LIT",
+      "lastTech": "Tracy Fears",
       "ED1": 11,
       "ED2": -14
     },
@@ -520,13 +520,13 @@
     },
     {
       "tail": "N247NN",
-      "lastService": "2026-07-22",
-      "lastED1": "2026-06-30",
+      "lastService": "2026-07-29",
+      "lastED1": "2026-07-29",
       "lastED2": "2026-06-23",
-      "lastIHC": "2026-07-22",
-      "lastLocation": "SGF",
-      "lastTech": "Steven Wilson",
-      "ED1": 0,
+      "lastIHC": "2026-07-29",
+      "lastLocation": "LIT",
+      "lastTech": "Tracy Fears",
+      "ED1": 29,
       "ED2": 23
     },
     {
@@ -608,13 +608,13 @@
     },
     {
       "tail": "N255NN",
-      "lastService": "2026-07-27",
-      "lastED1": "2026-06-28",
+      "lastService": "2026-07-29",
+      "lastED1": "2026-07-29",
       "lastED2": "2026-06-13",
-      "lastIHC": "2026-07-27",
-      "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
-      "ED1": -2,
+      "lastIHC": "2026-07-29",
+      "lastLocation": "LIT",
+      "lastTech": "Tracy Fears",
+      "ED1": 29,
       "ED2": 13
     },
     {
@@ -982,12 +982,12 @@
     },
     {
       "tail": "N289MW",
-      "lastService": "2026-07-25",
+      "lastService": "2026-07-29",
       "lastED1": "2026-06-28",
       "lastED2": "2026-06-28",
-      "lastIHC": "2026-07-25",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
+      "lastIHC": "2026-07-29",
+      "lastLocation": "LIT",
+      "lastTech": "Tracy Fears",
       "ED1": -2,
       "ED2": 28
     },
@@ -1246,12 +1246,12 @@
     },
     {
       "tail": "N318JE",
-      "lastService": "2026-07-28",
+      "lastService": "2026-07-29",
       "lastED1": "2026-07-14",
       "lastED2": "2026-06-04",
-      "lastIHC": "2026-07-28",
-      "lastLocation": "SGF",
-      "lastTech": "Steven Wilson",
+      "lastIHC": "2026-07-29",
+      "lastLocation": "LIT",
+      "lastTech": "Tracy Fears",
       "ED1": 14,
       "ED2": 4
     },
@@ -1895,12 +1895,12 @@
     },
     {
       "tail": "N779RN",
-      "lastService": "2026-07-20",
+      "lastService": "2026-07-29",
       "lastED1": "2026-06-29",
       "lastED2": "2026-06-08",
-      "lastIHC": "2026-07-20",
-      "lastLocation": "DFW",
-      "lastTech": "Sharmaine Brown",
+      "lastIHC": "2026-07-29",
+      "lastLocation": "LIT",
+      "lastTech": "Tracy Fears",
       "ED1": -1,
       "ED2": 8
     },
@@ -2263,6 +2263,69 @@
       "ED2": 0
     },
     {
+      "tail": "N247NN",
+      "date": "2026-07-29",
+      "name": "Tracy Fears",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N255NN",
+      "date": "2026-07-29",
+      "name": "Tracy Fears",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N247NN",
+      "date": "2026-07-29",
+      "name": "Tracy Fears",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N289MW",
+      "date": "2026-07-29",
+      "name": "Tracy Fears",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N779RN",
+      "date": "2026-07-29",
+      "name": "Tracy Fears",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N223NN",
+      "date": "2026-07-29",
+      "name": "Tracy Fears",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N318JE",
+      "date": "2026-07-29",
+      "name": "Tracy Fears",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
       "tail": "N253NN",
       "date": "2026-07-29",
       "name": "Raenita Jasper",
@@ -2318,6 +2381,15 @@
     },
     {
       "tail": "N256NN",
+      "date": "2026-07-29",
+      "name": "Raenita Jasper",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N214NN",
       "date": "2026-07-29",
       "name": "Raenita Jasper",
       "location": "DFW",

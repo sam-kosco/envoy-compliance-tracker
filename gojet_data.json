@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-30T04:46:29.580993+00:00",
+  "generated": "2026-07-30T07:26:29.780136+00:00",
   "cycles": {
     "ED1": 60,
     "ED2": 60,
@@ -190,14 +190,14 @@
     },
     {
       "tail": "522",
-      "lastService": "2026-07-21",
+      "lastService": "2026-07-29",
       "lastED1": "2026-06-15",
       "lastED2": "2026-06-15",
       "lastCE": "2026-07-21",
       "lastIHC": "2026-07-21",
-      "lastRON": "2026-07-16",
+      "lastRON": "2026-07-29",
       "lastLocation": "STL",
-      "lastTech": "Tiffany Hudson",
+      "lastTech": "Genesis King",
       "ED1": 15,
       "ED2": 15,
       "CE": 51
@@ -316,12 +316,12 @@
     },
     {
       "tail": "538",
-      "lastService": "2026-07-09",
+      "lastService": "2026-07-29",
       "lastED1": "2026-05-24",
       "lastED2": "2026-05-24",
       "lastCE": "2025-12-01",
       "lastIHC": "2026-07-05",
-      "lastRON": "2026-07-09",
+      "lastRON": "2026-07-29",
       "lastLocation": "STL",
       "lastTech": "Genesis King",
       "ED1": -7,
@@ -428,12 +428,12 @@
     },
     {
       "tail": "546",
-      "lastService": "2026-07-26",
+      "lastService": "2026-07-29",
       "lastED1": "2025-10-12",
       "lastED2": "2025-10-12",
       "lastCE": "2025-11-24",
       "lastIHC": "2026-04-16",
-      "lastRON": "2026-07-26",
+      "lastRON": "2026-07-29",
       "lastLocation": "STL",
       "lastTech": "Genesis King",
       "ED1": -231,
@@ -554,14 +554,14 @@
     },
     {
       "tail": "556",
-      "lastService": "2026-07-27",
+      "lastService": "2026-07-29",
       "lastED1": "2026-05-28",
       "lastED2": "2026-05-28",
       "lastCE": "2026-05-28",
-      "lastIHC": "2026-06-29",
+      "lastIHC": "2026-07-29",
       "lastRON": "2026-07-27",
       "lastLocation": "STL",
-      "lastTech": "Tiffany Hudson",
+      "lastTech": "Genesis King",
       "ED1": -3,
       "ED2": -3,
       "CE": -3
@@ -722,17 +722,17 @@
     },
     {
       "tail": "577",
-      "lastService": "2026-07-23",
+      "lastService": "2026-07-29",
       "lastED1": null,
       "lastED2": null,
-      "lastCE": "2026-03-10",
-      "lastIHC": "2026-06-17",
+      "lastCE": "2026-07-29",
+      "lastIHC": "2026-07-29",
       "lastRON": "2026-07-23",
       "lastLocation": "STL",
       "lastTech": "Genesis King",
       "ED1": "No Service",
       "ED2": "No Service",
-      "CE": -82
+      "CE": 59
     },
     {
       "tail": "578",
@@ -764,12 +764,12 @@
     },
     {
       "tail": "580",
-      "lastService": "2026-07-25",
+      "lastService": "2026-07-29",
       "lastED1": "2026-06-30",
       "lastED2": "2026-06-30",
       "lastCE": "2025-12-17",
       "lastIHC": "2026-06-30",
-      "lastRON": "2026-07-25",
+      "lastRON": "2026-07-29",
       "lastLocation": "STL",
       "lastTech": "Genesis King",
       "ED1": 30,
@@ -792,6 +792,72 @@
     }
   ],
   "debriefs": [
+    {
+      "tail": "577",
+      "date": "2026-07-29",
+      "name": "Genesis King",
+      "location": "STL",
+      "ED1": 0,
+      "ED2": 0,
+      "CE": 1,
+      "IHC": 1,
+      "RON": 0
+    },
+    {
+      "tail": "556",
+      "date": "2026-07-29",
+      "name": "Genesis King",
+      "location": "STL",
+      "ED1": 0,
+      "ED2": 0,
+      "CE": 0,
+      "IHC": 1,
+      "RON": 0
+    },
+    {
+      "tail": "522",
+      "date": "2026-07-29",
+      "name": "Genesis King",
+      "location": "STL",
+      "ED1": 0,
+      "ED2": 0,
+      "CE": 0,
+      "IHC": 0,
+      "RON": 1
+    },
+    {
+      "tail": "538",
+      "date": "2026-07-29",
+      "name": "Genesis King",
+      "location": "STL",
+      "ED1": 0,
+      "ED2": 0,
+      "CE": 0,
+      "IHC": 0,
+      "RON": 1
+    },
+    {
+      "tail": "546",
+      "date": "2026-07-29",
+      "name": "Genesis King",
+      "location": "STL",
+      "ED1": 0,
+      "ED2": 0,
+      "CE": 0,
+      "IHC": 0,
+      "RON": 1
+    },
+    {
+      "tail": "580",
+      "date": "2026-07-29",
+      "name": "Genesis King",
+      "location": "STL",
+      "ED1": 0,
+      "ED2": 0,
+      "CE": 0,
+      "IHC": 0,
+      "RON": 1
+    },
     {
       "tail": "509",
       "date": "2026-07-28",

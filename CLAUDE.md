@@ -39,6 +39,7 @@ envoy-compliance-tracker/
 ├── fleet_action_result.json      # Last result from manage_fleet.yml (auto-generated)
 ├── envoy_generate_data.py        # Envoy data relay script
 ├── psa_generate_data.py          # PSA data relay script
+├── psa_daily_report.py           # PSA daily emailed Excel report (9 AM Eastern)
 ├── mesa_generate_data.py         # Mesa data relay script
 ├── gojet_generate_data.py        # GoJet data relay script
 ├── crosswinds_generate_data.py   # Crosswinds data relay script
@@ -46,6 +47,7 @@ envoy-compliance-tracker/
     └── workflows/
         ├── data_refresh.yml          # Envoy hourly cron
         ├── psa_data_refresh.yml      # PSA hourly cron
+        ├── psa_daily_report.yml      # PSA daily 9 AM Eastern email report
         ├── mesa_data_refresh.yml     # Mesa hourly cron
         ├── gojet_data_refresh.yml    # GoJet hourly cron
         ├── crosswinds_refresh.yml    # Crosswinds — triggered by Power Automate webhook
@@ -198,6 +200,12 @@ The SharePoint Drive ID used by the compliance refresh scripts:
 - **Script:** `psa_generate_data.py`
 - **Output:** commits `psa_data.json`
 
+### `psa_daily_report.yml` — PSA daily email report
+- **Trigger:** Daily cron at 13:00 AND 14:00 UTC + manual dispatch. Both crons fire; `psa_daily_report.py` only sends on the run where it is 9 AM in America/New_York, giving a 9 AM Eastern send year-round across DST.
+- **Script:** `psa_daily_report.py` (runs `psa_generate_data.py` first for fresh data — no compliance logic is duplicated)
+- **What it does:** Builds `PSA-FoxTrot Compliance MM-DD-YYYY.xlsx` (styled after the Tail List sheet of PSA Debriefs — date cells colored green/yellow/red by per-service compliance window, Last Service colored by overall tail status) and emails it from `foxtrot.automation@foxtrotaviation.com` to the `EMAIL_LIST` at the top of the script. Nothing is committed.
+- **Testing:** manual dispatch accepts a comma-separated `recipients` input that overrides `EMAIL_LIST`; `DRY_RUN=1` builds the workbook without emailing.
+
 ### `mesa_data_refresh.yml` — Mesa
 - **Trigger:** Hourly cron + manual dispatch
 - **Script:** `mesa_generate_data.py`
@@ -337,6 +345,7 @@ The script no longer writes to Excel — Power Automate handles all writes using
 | Add tail to PSA fleet | As needed | Use the PSA dashboard → Admin tab (password-gated). One submit updates SafetyCulture, JotForm, and SharePoint together. |
 | Add tail to Crosswinds fleet | As needed | Add to the Crosswinds Tail Numbers global response set in SafetyCulture AND the `TAILS` list in `crosswinds_generate_data.py` |
 | Pause a refresh | As needed | Comment out the `cron:` line in the relevant workflow YAML |
+| Change PSA daily report recipients | As needed | Edit `EMAIL_LIST` at the top of `psa_daily_report.py` |
 | Excel file moved on SharePoint | If relocated | Update `FILE_PATH` constant in the relevant Python script |
 
 ---

@@ -1,0 +1,46 @@
+name: PSA Daily Compliance Report
+
+on:
+  schedule:
+    # Both crons fire daily; psa_daily_report.py only sends on the run where
+    # it is 9 AM in America/New_York, so the report goes out at 9 AM Eastern
+    # year-round regardless of DST.
+    - cron: "0 13 * * *"   # 9 AM EDT (summer)
+    - cron: "0 14 * * *"   # 9 AM EST (winter)
+  workflow_dispatch:
+    inputs:
+      recipients:
+        description: "Override recipients (comma-separated) — for testing"
+        required: false
+        default: ""
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install openpyxl requests
+
+      - name: Refresh PSA data
+        env:
+          TENANT_ID:     ${{ secrets.TENANT_ID }}
+          CLIENT_ID:     ${{ secrets.CLIENT_ID }}
+          CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
+        run: python psa_generate_data.py
+
+      - name: Build and send report
+        env:
+          TENANT_ID:           ${{ secrets.TENANT_ID }}
+          CLIENT_ID:           ${{ secrets.CLIENT_ID }}
+          CLIENT_SECRET:       ${{ secrets.CLIENT_SECRET }}
+          RECIPIENTS_OVERRIDE: ${{ inputs.recipients }}
+        run: python psa_daily_report.py

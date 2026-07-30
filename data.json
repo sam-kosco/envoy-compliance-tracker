@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-30T16:27:25.062741+00:00",
+  "generated": "2026-07-30T18:17:10.145390+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -1180,12 +1180,12 @@
     },
     {
       "tail": "N312BT",
-      "lastService": "2026-07-22",
+      "lastService": "2026-07-25",
       "lastED1": "2026-07-10",
       "lastED2": "2026-07-10",
-      "lastIHC": "2026-07-22",
-      "lastLocation": "SGF",
-      "lastTech": "Steven Wilson",
+      "lastIHC": "2026-07-25",
+      "lastLocation": "LIT",
+      "lastTech": "Tracy Fears",
       "ED1": 10,
       "ED2": 40
     },
@@ -3623,6 +3623,24 @@
     },
     {
       "tail": "N333RQ",
+      "date": "2026-07-25",
+      "name": "Tracy Fears",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N202NN",
+      "date": "2026-07-25",
+      "name": "Tracy Fears",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N312BT",
       "date": "2026-07-25",
       "name": "Tracy Fears",
       "location": "LIT",

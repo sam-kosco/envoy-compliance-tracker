@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-31T00:03:08.744639+00:00",
+  "generated": "2026-07-31T04:23:15.379444+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -1543,12 +1543,12 @@
     },
     {
       "tail": "N344JA",
-      "lastService": "2026-07-19",
+      "lastService": "2026-07-30",
       "lastED1": "2026-07-03",
       "lastED2": "2026-07-03",
-      "lastIHC": "2026-07-19",
-      "lastLocation": "CMH",
-      "lastTech": "Alexander HAMILTON",
+      "lastIHC": "2026-07-30",
+      "lastLocation": "DFW",
+      "lastTech": "Raenita Jasper",
       "ED1": 2,
       "ED2": 32
     },
@@ -1763,12 +1763,12 @@
     },
     {
       "tail": "N763CC",
-      "lastService": "2026-07-22",
+      "lastService": "2026-07-30",
       "lastED1": "2026-05-22",
       "lastED2": "2026-04-06",
-      "lastIHC": "2026-07-22",
-      "lastLocation": "LIT",
-      "lastTech": "Wayne Bell",
+      "lastIHC": "2026-07-30",
+      "lastLocation": "DFW",
+      "lastTech": "Raenita Jasper",
       "ED1": -40,
       "ED2": -56
     },
@@ -2086,6 +2086,24 @@
       "tail": "N226NN",
       "date": "2026-12-30",
       "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N344JA",
+      "date": "2026-07-30",
+      "name": "Raenita Jasper",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N763CC",
+      "date": "2026-07-30",
+      "name": "Raenita Jasper",
       "location": "DFW",
       "IHC": 1,
       "ED1": 0,

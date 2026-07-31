@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-31T12:56:58.953426+00:00",
+  "generated": "2026-07-31T15:23:21.173288+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -949,12 +949,12 @@
     },
     {
       "tail": "N286NN",
-      "lastService": "2026-07-27",
+      "lastService": "2026-07-30",
       "lastED1": "2026-07-07",
       "lastED2": "2026-06-21",
-      "lastIHC": "2026-07-27",
-      "lastLocation": "XNA",
-      "lastTech": "Casey Henry",
+      "lastIHC": "2026-07-30",
+      "lastLocation": "CMH",
+      "lastTech": "Alexander Hamilton",
       "ED1": 6,
       "ED2": 20
     },
@@ -1092,12 +1092,12 @@
     },
     {
       "tail": "N304KM",
-      "lastService": "2026-07-26",
+      "lastService": "2026-07-30",
       "lastED1": "2026-07-08",
       "lastED2": "2026-06-12",
-      "lastIHC": "2026-07-26",
+      "lastIHC": "2026-07-30",
       "lastLocation": "CMH",
-      "lastTech": "Alexander HAMILTON",
+      "lastTech": "Alexander Hamilton",
       "ED1": 7,
       "ED2": 11
     },
@@ -1147,12 +1147,12 @@
     },
     {
       "tail": "N309JR",
-      "lastService": "2026-07-28",
+      "lastService": "2026-07-30",
       "lastED1": "2026-07-17",
       "lastED2": "2026-07-02",
-      "lastIHC": "2026-07-28",
-      "lastLocation": "XNA",
-      "lastTech": "Casey Henry",
+      "lastIHC": "2026-07-30",
+      "lastLocation": "CMH",
+      "lastTech": "Alexander Hamilton",
       "ED1": 16,
       "ED2": 31
     },
@@ -1378,14 +1378,14 @@
     },
     {
       "tail": "N329DD",
-      "lastService": "2026-07-25",
-      "lastED1": "2026-06-21",
-      "lastED2": "2026-03-13",
-      "lastIHC": "2026-07-25",
-      "lastLocation": "CVG",
-      "lastTech": "Todd Axle",
-      "ED1": -10,
-      "ED2": -80
+      "lastService": "2026-07-30",
+      "lastED1": "2026-07-30",
+      "lastED2": "2026-07-30",
+      "lastIHC": "2026-07-30",
+      "lastLocation": "CMH",
+      "lastTech": "Alexander Hamilton",
+      "ED1": 29,
+      "ED2": 59
     },
     {
       "tail": "N330JT",
@@ -1929,13 +1929,13 @@
     {
       "tail": "N782SM",
       "lastService": "2026-07-30",
-      "lastED1": "2026-06-30",
-      "lastED2": "2026-05-10",
-      "lastIHC": "2026-07-30",
+      "lastED1": "2026-07-30",
+      "lastED2": "2026-07-30",
+      "lastIHC": "2026-07-23",
       "lastLocation": "LIT",
       "lastTech": "Tracy Fears",
-      "ED1": -1,
-      "ED2": -22
+      "ED1": 29,
+      "ED2": 59
     },
     {
       "tail": "N783LC",
@@ -1983,14 +1983,14 @@
     },
     {
       "tail": "N787BP",
-      "lastService": "2026-07-15",
-      "lastED1": "2026-06-30",
-      "lastED2": "2026-04-25",
-      "lastIHC": "2026-07-15",
-      "lastLocation": "CVG",
-      "lastTech": "Todd Axle",
-      "ED1": -1,
-      "ED2": -37
+      "lastService": "2026-07-30",
+      "lastED1": "2026-07-30",
+      "lastED2": "2026-07-30",
+      "lastIHC": "2026-07-30",
+      "lastLocation": "CMH",
+      "lastTech": "Alexander Hamilton",
+      "ED1": 29,
+      "ED2": 59
     },
     {
       "tail": "N788CJ",
@@ -2258,9 +2258,9 @@
       "date": "2026-07-30",
       "name": "Tracy Fears",
       "location": "LIT",
-      "IHC": 1,
-      "ED1": 0,
-      "ED2": 0
+      "IHC": 0,
+      "ED1": 1,
+      "ED2": 1
     },
     {
       "tail": "N253NN",
@@ -2276,7 +2276,7 @@
       "date": "2026-07-30",
       "name": "Tracy Fears",
       "location": "LIT",
-      "IHC": 0,
+      "IHC": 1,
       "ED1": 0,
       "ED2": 0
     },
@@ -2303,6 +2303,51 @@
       "date": "2026-07-30",
       "name": "Tracy Fears",
       "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N286NN",
+      "date": "2026-07-30",
+      "name": "Alexander Hamilton",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N329DD",
+      "date": "2026-07-30",
+      "name": "Alexander Hamilton",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 1
+    },
+    {
+      "tail": "N304KM",
+      "date": "2026-07-30",
+      "name": "Alexander Hamilton",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N787BP",
+      "date": "2026-07-30",
+      "name": "Alexander Hamilton",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 1
+    },
+    {
+      "tail": "N309JR",
+      "date": "2026-07-30",
+      "name": "Alexander Hamilton",
+      "location": "CMH",
       "IHC": 1,
       "ED1": 0,
       "ED2": 0

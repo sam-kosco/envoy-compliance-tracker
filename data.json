@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-01T02:55:02.165375+00:00",
+  "generated": "2026-08-01T05:56:20.986442+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -531,12 +531,12 @@
     },
     {
       "tail": "N248NN",
-      "lastService": "2026-07-27",
+      "lastService": "2026-08-31",
       "lastED1": "2026-06-29",
       "lastED2": "2026-07-15",
-      "lastIHC": "2026-07-27",
+      "lastIHC": "2026-08-31",
       "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastTech": "Raenita Jasper",
       "ED1": -3,
       "ED2": 43
     },
@@ -707,12 +707,12 @@
     },
     {
       "tail": "N264NN",
-      "lastService": "2026-07-27",
+      "lastService": "2026-07-30",
       "lastED1": "2026-06-29",
       "lastED2": "2026-05-27",
-      "lastIHC": "2026-07-27",
-      "lastLocation": "LIT",
-      "lastTech": "Wayne Bell",
+      "lastIHC": "2026-07-30",
+      "lastLocation": "DFW",
+      "lastTech": "Raenita Jasper",
       "ED1": -3,
       "ED2": -6
     },
@@ -905,10 +905,10 @@
     },
     {
       "tail": "N282NN",
-      "lastService": "2026-07-30",
+      "lastService": "2026-07-31",
       "lastED1": "2026-07-09",
       "lastED2": "2026-05-28",
-      "lastIHC": "2026-07-30",
+      "lastIHC": "2026-07-31",
       "lastLocation": "DFW",
       "lastTech": "Raenita Jasper",
       "ED1": 7,
@@ -1268,12 +1268,12 @@
     },
     {
       "tail": "N320BK",
-      "lastService": "2026-07-28",
+      "lastService": "2026-07-31",
       "lastED1": "2026-07-23",
       "lastED2": "2026-06-12",
-      "lastIHC": "2026-07-28",
-      "lastLocation": "LIT",
-      "lastTech": "Tracy Fears",
+      "lastIHC": "2026-07-31",
+      "lastLocation": "DFW",
+      "lastTech": "Raenita Jasper",
       "ED1": 21,
       "ED2": 10
     },
@@ -1334,12 +1334,12 @@
     },
     {
       "tail": "N326CJ",
-      "lastService": "2026-07-26",
+      "lastService": "2026-07-31",
       "lastED1": "2026-07-03",
       "lastED2": "2026-07-11",
-      "lastIHC": "2026-07-26",
-      "lastLocation": "LIT",
-      "lastTech": "Wayne Bell",
+      "lastIHC": "2026-07-31",
+      "lastLocation": "DFW",
+      "lastTech": "Raenita Jasper",
       "ED1": 1,
       "ED2": 39
     },
@@ -2092,6 +2092,42 @@
       "ED2": 0
     },
     {
+      "tail": "N248NN",
+      "date": "2026-08-31",
+      "name": "Raenita Jasper",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N326CJ",
+      "date": "2026-07-31",
+      "name": "Raenita Jasper",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N320BK",
+      "date": "2026-07-31",
+      "name": "Raenita Jasper",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N282NN",
+      "date": "2026-07-31",
+      "name": "Raenita Jasper",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
       "tail": "N209NN",
       "date": "2026-07-30",
       "name": "Precious Roberson",
@@ -2435,6 +2471,15 @@
     },
     {
       "tail": "N342KR",
+      "date": "2026-07-30",
+      "name": "Raenita Jasper",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N264NN",
       "date": "2026-07-30",
       "name": "Raenita Jasper",
       "location": "DFW",

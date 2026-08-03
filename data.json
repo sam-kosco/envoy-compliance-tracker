@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-03T18:51:22.510640+00:00",
+  "generated": "2026-08-03T20:26:53.770550+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -809,7 +809,7 @@
       "lastService": "2026-08-02",
       "lastED1": "2026-08-01",
       "lastED2": "2026-08-01",
-      "lastIHC": "2026-08-01",
+      "lastIHC": "2026-08-02",
       "lastLocation": "LIT",
       "lastTech": "Wayne Bell",
       "ED1": 28,
@@ -1613,8 +1613,8 @@
       "lastED1": "2026-07-08",
       "lastED2": "2026-07-28",
       "lastIHC": "2026-08-01",
-      "lastLocation": "LIT",
-      "lastTech": "Tracy Fears",
+      "lastLocation": "DFW",
+      "lastTech": "Raenita Jasper",
       "ED1": 4,
       "ED2": 54
     },
@@ -1829,12 +1829,12 @@
     },
     {
       "tail": "N770JM",
-      "lastService": "2026-07-21",
+      "lastService": "2026-08-01",
       "lastED1": "2026-07-13",
       "lastED2": "2026-07-13",
-      "lastIHC": "2026-07-21",
-      "lastLocation": "CVG",
-      "lastTech": "Sellers Davis",
+      "lastIHC": "2026-08-01",
+      "lastLocation": "LIT",
+      "lastTech": "Tracy Fears",
       "ED1": 9,
       "ED2": 39
     },
@@ -2258,7 +2258,7 @@
       "date": "2026-08-02",
       "name": "Wayne Bell",
       "location": "LIT",
-      "IHC": 0,
+      "IHC": 1,
       "ED1": 0,
       "ED2": 0
     },
@@ -2650,20 +2650,11 @@
       "ED2": 0
     },
     {
-      "tail": "N740MR",
-      "date": "2026-08-01",
-      "name": "Tracy Fears",
-      "location": "LIT",
-      "IHC": 1,
-      "ED1": 0,
-      "ED2": 0
-    },
-    {
       "tail": "N256NN",
       "date": "2026-08-01",
       "name": "Tracy Fears",
       "location": "LIT",
-      "IHC": 0,
+      "IHC": 1,
       "ED1": 0,
       "ED2": 0
     },
@@ -2708,6 +2699,15 @@
       "date": "2026-08-01",
       "name": "Nasrin  Mursal",
       "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N770JM",
+      "date": "2026-08-01",
+      "name": "Tracy Fears",
+      "location": "LIT",
       "IHC": 1,
       "ED1": 0,
       "ED2": 0

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-03T02:55:06.863684+00:00",
+  "generated": "2026-08-03T06:25:18.569056+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -14,12 +14,12 @@
     },
     {
       "tail": "N201NN",
-      "lastService": "2026-07-30",
+      "lastService": "2026-08-02",
       "lastED1": "2026-07-30",
       "lastED2": "2026-07-05",
-      "lastIHC": "2026-07-30",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
+      "lastIHC": "2026-08-02",
+      "lastLocation": "DFW",
+      "lastTech": "Raenita Jasper",
       "ED1": 26,
       "ED2": 31
     },
@@ -80,12 +80,12 @@
     },
     {
       "tail": "N207AN",
-      "lastService": "2026-08-01",
+      "lastService": "2026-08-02",
       "lastED1": "2026-07-12",
       "lastED2": "2026-07-19",
-      "lastIHC": "2026-08-01",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
+      "lastIHC": "2026-08-02",
+      "lastLocation": "DFW",
+      "lastTech": "Raenita Jasper",
       "ED1": 8,
       "ED2": 45
     },
@@ -102,12 +102,12 @@
     },
     {
       "tail": "N209NN",
-      "lastService": "2026-07-30",
+      "lastService": "2026-08-02",
       "lastED1": "2026-07-20",
       "lastED2": "2026-07-20",
-      "lastIHC": "2026-07-30",
-      "lastLocation": "CVG",
-      "lastTech": "Precious Roberson",
+      "lastIHC": "2026-08-02",
+      "lastLocation": "XNA",
+      "lastTech": "Riley Woods",
       "ED1": 16,
       "ED2": 46
     },
@@ -630,12 +630,12 @@
     },
     {
       "tail": "N257NN",
-      "lastService": "2026-07-31",
+      "lastService": "2026-08-02",
       "lastED1": "2026-07-11",
       "lastED2": "2026-07-11",
-      "lastIHC": "2026-07-31",
-      "lastLocation": "XNA",
-      "lastTech": "Casey Henry",
+      "lastIHC": "2026-08-02",
+      "lastLocation": "DFW",
+      "lastTech": "Raenita Jasper",
       "ED1": 7,
       "ED2": 37
     },
@@ -784,12 +784,12 @@
     },
     {
       "tail": "N271NN",
-      "lastService": "2026-07-30",
+      "lastService": "2026-08-02",
       "lastED1": "2026-07-22",
       "lastED2": "2026-07-07",
-      "lastIHC": "2026-07-30",
-      "lastLocation": "LIT",
-      "lastTech": "Tracy Fears",
+      "lastIHC": "2026-08-02",
+      "lastLocation": "DFW",
+      "lastTech": "Raenita Jasper",
       "ED1": 18,
       "ED2": 33
     },
@@ -949,13 +949,13 @@
     },
     {
       "tail": "N286NN",
-      "lastService": "2026-07-30",
-      "lastED1": "2026-07-07",
+      "lastService": "2026-08-02",
+      "lastED1": "2026-08-02",
       "lastED2": "2026-06-21",
-      "lastIHC": "2026-07-30",
-      "lastLocation": "CMH",
-      "lastTech": "Alexander Hamilton",
-      "ED1": 3,
+      "lastIHC": "2026-08-02",
+      "lastLocation": "XNA",
+      "lastTech": "Riley Woods",
+      "ED1": 29,
       "ED2": 17
     },
     {
@@ -1125,13 +1125,13 @@
     },
     {
       "tail": "N307LH",
-      "lastService": "2026-07-31",
-      "lastED1": "2026-07-06",
+      "lastService": "2026-08-02",
+      "lastED1": "2026-08-02",
       "lastED2": "2026-06-10",
-      "lastIHC": "2026-07-31",
-      "lastLocation": "LIT",
-      "lastTech": "Tracy Fears",
-      "ED1": 2,
+      "lastIHC": "2026-08-02",
+      "lastLocation": "XNA",
+      "lastTech": "Riley Woods",
+      "ED1": 29,
       "ED2": 6
     },
     {
@@ -1323,12 +1323,12 @@
     },
     {
       "tail": "N325DM",
-      "lastService": "2026-07-28",
+      "lastService": "2026-08-02",
       "lastED1": "2026-07-12",
       "lastED2": "2026-07-28",
-      "lastIHC": "2026-07-28",
-      "lastLocation": "XNA",
-      "lastTech": "Casey Henry",
+      "lastIHC": "2026-08-02",
+      "lastLocation": "DFW",
+      "lastTech": "Raenita Jasper",
       "ED1": 8,
       "ED2": 54
     },
@@ -2094,6 +2094,78 @@
     {
       "tail": "N248NN",
       "date": "2026-08-31",
+      "name": "Raenita Jasper",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N286NN",
+      "date": "2026-08-02",
+      "name": "Riley Woods",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N209NN",
+      "date": "2026-08-02",
+      "name": "Riley Woods",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N307LH",
+      "date": "2026-08-02",
+      "name": "Riley Woods",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N201NN",
+      "date": "2026-08-02",
+      "name": "Raenita Jasper",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N271NN",
+      "date": "2026-08-02",
+      "name": "Raenita Jasper",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N325DM",
+      "date": "2026-08-02",
+      "name": "Raenita Jasper",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N257NN",
+      "date": "2026-08-02",
+      "name": "Raenita Jasper",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N207AN",
+      "date": "2026-08-02",
       "name": "Raenita Jasper",
       "location": "DFW",
       "IHC": 1,

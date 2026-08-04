@@ -1,0 +1,125 @@
+name: TEMP PSA Tail List Reconcile
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "dry (print diffs only) or apply (append missing tails to each system)"
+        required: true
+        default: "dry"
+
+jobs:
+  reconcile:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fetch and reconcile the three tail lists
+        env:
+          MODE:              ${{ github.event.inputs.mode }}
+          SAFETYCULTURE_KEY: ${{ secrets.SAFETYCULTURE_KEY }}
+          JOTFORM_KEY:       ${{ secrets.JOTFORM_KEY }}
+          PSA_TAILS_SET_ID:  responseset_0602a202a6a2458cae66ab6b46640d28
+          JOTFORM_BASE:      https://foxtrotaviation.jotform.com/API
+          DEBRIEF_FORM_ID:   "213263365115146"
+          DEBRIEF_TAIL_QID:  "53"
+          CLOSEOUT_FORM_ID:  "222916060752150"
+          CLOSEOUT_PSA_QID:  "27"
+        run: |
+          pip -q install requests
+          python3 - << 'PYEOF'
+          import json, os, re, sys
+          import requests
+
+          MODE = os.environ["MODE"].strip().lower()
+          NOT_LISTED = {"NOT LISTED"}
+
+          def sort_key(t):
+              m = re.match(r'^N(\d+)', t.upper())
+              return (0, int(m.group(1)), t.upper()) if m else (1, 0, t.upper())
+
+          def is_tail(t):
+              return bool(re.match(r'^N\d{1,5}[A-Z]{0,2}$', t.upper()))
+
+          # ── Fetch all three ──────────────────────────────────────
+          sc_H = {"Authorization": f"Bearer {os.environ['SAFETYCULTURE_KEY']}",
+                  "Content-Type": "application/json"}
+          sc_url = f"https://api.safetyculture.io/response_sets/{os.environ['PSA_TAILS_SET_ID']}"
+          sc = requests.get(sc_url, headers=sc_H, timeout=30); sc.raise_for_status()
+          sc_data = sc.json()
+          sc_list = [x["label"].strip().upper() for x in sc_data.get("responses", [])]
+
+          base = os.environ["JOTFORM_BASE"]; key = os.environ["JOTFORM_KEY"]
+          q53_url = f"{base}/form/{os.environ['DEBRIEF_FORM_ID']}/question/{os.environ['DEBRIEF_TAIL_QID']}"
+          r = requests.get(f"{q53_url}?apiKey={key}", timeout=30); r.raise_for_status()
+          q53_opts = [o.strip() for o in r.json()["content"].get("options", "").split("|") if o.strip()]
+          q53_list = [o.upper() for o in q53_opts]
+
+          q27_url = f"{base}/form/{os.environ['CLOSEOUT_FORM_ID']}/question/{os.environ['CLOSEOUT_PSA_QID']}"
+          r = requests.get(f"{q27_url}?apiKey={key}", timeout=30); r.raise_for_status()
+          fields_raw = r.json()["content"]["fields"]
+          lines = fields_raw.replace("\r\n", "\n").split("\n")
+          tail_idx = next(i for i, ln in enumerate(lines)
+                          if re.match(r'^\*?\s*Dropdown\s*:\s*dropdown\s*:', ln, re.I))
+          label, ftype, opts_raw = lines[tail_idx].split(":", 2)
+          q27_list = [o.strip().upper() for o in opts_raw.split(",") if o.strip()]
+
+          systems = {
+              "safetyculture": [t for t in sc_list if t not in NOT_LISTED],
+              "jotform":       [t for t in q53_list if t not in NOT_LISTED],
+              "closeout":      [t for t in q27_list if t not in NOT_LISTED],
+          }
+
+          # ── Diff ────────────────────────────────────────────────
+          union = sorted(set().union(*systems.values()), key=sort_key)
+          non_tails = sorted(t for t in union if not is_tail(t))
+          print(f"UNION: {len(union)} unique entries ({len(non_tails)} non-tail-shaped: {non_tails})")
+          report = {}
+          for name, lst in systems.items():
+              missing = sorted(set(union) - set(lst), key=sort_key)
+              dupes = sorted({t for t in lst if lst.count(t) > 1})
+              report[name] = {"count": len(set(lst)), "missing": missing, "dupes": dupes}
+              print(f"{name}: {len(set(lst))} unique | missing {len(missing)}: {missing} | dupes: {dupes}")
+          print("DIFF_JSON " + json.dumps(report))
+
+          if MODE != "apply":
+              print("DRY RUN — no writes."); sys.exit(0)
+
+          # ── Apply: append-only union to each system ─────────────
+          final_tails = union  # nothing removed, dupes collapsed
+
+          # SafetyCulture
+          if set(systems["safetyculture"]) != set(final_tails) or report["safetyculture"]["dupes"]:
+              labels = sorted(set(final_tails), key=sort_key)
+              r = requests.put(sc_url, headers=sc_H,
+                  json={"name": sc_data.get("name", "PSA Tails"),
+                        "responses": [{"label": l} for l in labels]}, timeout=30)
+              r.raise_for_status()
+              print(f"SafetyCulture WRITTEN: {len(labels)} tails")
+          else:
+              print("SafetyCulture: already complete")
+
+          # JotForm Q53 (preserve 'Not Listed' final option, original casing)
+          had_nl = any(o.upper() == "NOT LISTED" for o in q53_opts)
+          nl_label = next((o for o in q53_opts if o.upper() == "NOT LISTED"), "Not Listed")
+          if set(systems["jotform"]) != set(final_tails) or report["jotform"]["dupes"]:
+              final = sorted(set(final_tails), key=sort_key) + ([nl_label] if had_nl else [])
+              r = requests.post(f"{q53_url}?apiKey={key}",
+                                data={"question[options]": "|".join(final)}, timeout=30)
+              r.raise_for_status()
+              print(f"JotForm Q53 WRITTEN: {len(final)} options")
+          else:
+              print("JotForm Q53: already complete")
+
+          # Closeout Q27 (preserve 'NOT LISTED' final option)
+          had_nl27 = any(t == "NOT LISTED" for t in q27_list)
+          if set(systems["closeout"]) != set(final_tails) or report["closeout"]["dupes"]:
+              final = sorted(set(final_tails), key=sort_key) + (["NOT LISTED"] if had_nl27 else [])
+              lines[tail_idx] = f"{label}:{ftype}:{','.join(final)}"
+              r = requests.post(f"{q27_url}?apiKey={key}",
+                                data={"question[fields]": "\n".join(lines)}, timeout=30)
+              r.raise_for_status()
+              print(f"Closeout Q27 WRITTEN: {len(final)} options")
+          else:
+              print("Closeout Q27: already complete")
+
+          print("APPLY COMPLETE")
+          PYEOF

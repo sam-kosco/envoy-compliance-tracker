@@ -83,8 +83,12 @@ jobs:
           if MODE != "apply":
               print("DRY RUN — no writes."); sys.exit(0)
 
-          # ── Apply: append-only union to each system ─────────────
-          final_tails = union  # nothing removed, dupes collapsed
+          # ── Apply: union to each system ─────────────────────────
+          # N555XX exists ONLY in SafetyCulture — not in the SharePoint Tail
+          # List, the tracker roster, or either JotForm list. Verified test
+          # artifact; removed rather than propagated to client-facing forms.
+          EXCLUDE = {"N555XX"}
+          final_tails = [t for t in union if t not in EXCLUDE]
 
           # SafetyCulture
           if set(systems["safetyculture"]) != set(final_tails) or report["safetyculture"]["dupes"]:

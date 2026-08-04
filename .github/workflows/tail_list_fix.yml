@@ -33,7 +33,14 @@ jobs:
           encoded = "/".join(quote(seg) for seg in SP_PATH.split("/"))
           wb = f"https://graph.microsoft.com/v1.0/drives/{DRIVE_ID}/root:/{encoded}:/workbook"
 
+          # Diagnose access level first
+          for probe in ("tables", f"tables/{TABLE}/rows?$top=2&$select=index,values"):
+              pr = requests.get(f"{wb}/{probe}", headers=H, timeout=60)
+              print(f"GET /{probe} -> {pr.status_code} {pr.text[:400] if pr.status_code >= 400 else ''}")
+
           rows = requests.get(f"{wb}/tables/{TABLE}/rows?$select=index,values", headers=H, timeout=60)
+          if rows.status_code >= 400:
+              print(f"rows error body: {rows.text[:600]}")
           rows.raise_for_status()
           hits = [row["index"] for row in rows.json()["value"]
                   if str(row["values"][0][0]).strip().upper() == "N550NN"]

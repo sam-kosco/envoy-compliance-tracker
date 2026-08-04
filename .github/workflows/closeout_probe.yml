@@ -1,0 +1,26 @@
+name: TEMP Closeout Q27 Probe
+
+on:
+  workflow_dispatch:
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fetch Commercial Closeout Q27 structure
+        env:
+          JOTFORM_KEY: ${{ secrets.JOTFORM_KEY }}
+        run: |
+          python3 - << 'PYEOF'
+          import os, json, urllib.request
+          req = urllib.request.Request(
+              "https://foxtrotaviation.jotform.com/API/form/222916060752150/question/27",
+              headers={"APIKEY": os.environ["JOTFORM_KEY"]})
+          with urllib.request.urlopen(req, timeout=30) as r:
+              data = json.load(r)
+          content = data.get("content", {})
+          print("=== TOP-LEVEL KEYS ===")
+          print(sorted(content.keys()))
+          print("=== FULL CONTENT ===")
+          print(json.dumps(content, indent=2)[:8000])
+          PYEOF

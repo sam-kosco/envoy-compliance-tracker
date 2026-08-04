@@ -259,12 +259,15 @@ PA Flow  ──── holds GitHub PAT (secure var) ────┐
 
 GH Workflow (manage_fleet.yml, Python, runs ~30-60s):
    ├──→ SafetyCulture API   (GET set, append, PUT)
-   └──→ JotForm API         (GET Q53, append, POST)
+   ├──→ JotForm API         (GET Q53, append, POST)
+   └──→ JotForm API         (Commercial Closeout 2.0 form 222916060752150,
+                             Q27 "PSA Fleet" configurable-list widget —
+                             GET fields, insert tail in the Dropdown line, POST)
        ↓
    commits fleet_action_result.json
 
 psa.html polls fleet_action_result.json for matching tail+timestamp,
-displays a 2-row result table (SC + JotForm).
+displays a 3-row result table (SC + JotForm + Commercial Closeout).
 ```
 
 **Why this shape:** the dashboard is on public GitHub Pages, so a GitHub PAT can't live in `psa.html` — GitHub's secret scanner auto-revokes any PAT it finds in a public commit (verified empirically). PA's HTTP-trigger URL has its own SAS-style signature that GH doesn't scan, so the URL embedded in `psa.html` is safe. The PA flow holds the PAT server-side.
@@ -273,7 +276,7 @@ displays a 2-row result table (SC + JotForm).
 
 **SharePoint failure visibility:** PA's Add-row runs **after** the Response is sent, so if it fails the dashboard won't know — the user will see SC + JotForm both succeed. Check the PA flow's run history if a tail is missing from the Tail List.
 
-**Tails are inserted in numerical order.** The workflow sorts by the numeric portion after `N` (so `N205JK` lands between `N204NN` and `N206IR`, not after `N1999`). JotForm preserves `Not Listed` as the final option by removing it before the sort and re-appending it after. SafetyCulture's `PUT /response_sets/{id}` preserves response IDs by label-match, so reordering does not invalidate existing template bindings or historical inspection answers.
+**Tails are inserted in numerical order.** The workflow sorts by the numeric portion after `N` (so `N205JK` lands between `N204NN` and `N206IR`, not after `N1999`). JotForm preserves `Not Listed` as the final option by removing it before the sort and re-appending it after (the Commercial Closeout Q27 dropdown does the same with its `NOT LISTED` option, and dedupes any repeated options while rewriting). SafetyCulture's `PUT /response_sets/{id}` preserves response IDs by label-match, so reordering does not invalidate existing template bindings or historical inspection answers.
 
 ### PA Flow shape (4 actions inside the trigger)
 
@@ -307,11 +310,12 @@ The dashboard normalizes (`.trim().toUpperCase()`) and regex-validates (`^N\d{1,
   "action": "add_tail",
   "timestamp": "2026-06-04T15:30:00+00:00",
   "safetyculture": {"status": "ok|noop|error", "message": "..."},
-  "jotform":       {"status": "ok|noop|error", "message": "..."}
+  "jotform":       {"status": "ok|noop|error", "message": "..."},
+  "closeout":      {"status": "ok|noop|error", "message": "..."}
 }
 ```
 
-The dashboard polls every 3s for up to 2 min, displaying a 2-row table (SC + JotForm) once it sees a result whose `tail` matches the submitted value and whose `timestamp` is newer than the dispatch.
+The dashboard polls every 3s for up to 2 min, displaying a 3-row table (SC + JotForm + Commercial Closeout) once it sees a result whose `tail` matches the submitted value and whose `timestamp` is newer than the dispatch.
 
 ---
 
@@ -342,7 +346,7 @@ The script no longer writes to Excel — Power Automate handles all writes using
 | Add tail to Envoy fleet | As needed | Add to Tail List sheet in the Envoy SharePoint Excel |
 | Add tail to Mesa fleet | As needed | Add to the Tails sheet (column A) in the Mesa SharePoint Excel |
 | Add tail to GoJet fleet | As needed | Add to the Tails sheet (column A) in the GoJet SharePoint Excel |
-| Add tail to PSA fleet | As needed | Use the PSA dashboard → Admin tab (password-gated). One submit updates SafetyCulture, JotForm, and SharePoint together. |
+| Add tail to PSA fleet | As needed | Use the PSA dashboard → Admin tab (password-gated). One submit updates SafetyCulture, both JotForm forms (PSA debrief Q53 + Commercial Closeout Q27 tail dropdown), and SharePoint together. |
 | Add tail to Crosswinds fleet | As needed | Add to the Crosswinds Tail Numbers global response set in SafetyCulture AND the `TAILS` list in `crosswinds_generate_data.py` |
 | Pause a refresh | As needed | Comment out the `cron:` line in the relevant workflow YAML |
 | Change PSA daily report recipients | As needed | Edit `EMAIL_LIST` at the top of `psa_daily_report.py` |

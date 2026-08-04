@@ -1005,9 +1005,9 @@ async function submitAddTail() {
 
 function renderAdminResult(data) {
   const result = document.getElementById('admin-result');
-  const labels = { safetyculture: 'SafetyCulture', jotform: 'JotForm' };
+  const labels = { safetyculture: 'SafetyCulture', jotform: 'JotForm', closeout: 'Commercial Closeout' };
   let html = `<table><thead><tr><th>System</th><th>Status</th><th>Detail</th></tr></thead><tbody>`;
-  for (const key of ['safetyculture','jotform']) {
+  for (const key of ['safetyculture','jotform','closeout']) {
     const s = data[key] || {status:'?', message:''};
     html += `<tr><td>${labels[key]}</td><td class="st-${s.status}">${s.status.toUpperCase()}</td><td>${s.message || ''}</td></tr>`;
   }

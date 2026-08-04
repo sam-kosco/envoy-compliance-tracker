@@ -40,6 +40,8 @@ jobs:
           JOTFORM_BASE:        https://foxtrotaviation.jotform.com/API
           JOTFORM_FORM_ID:     "213263365115146"
           JOTFORM_TAIL_QID:    "53"
+          CLOSEOUT_FORM_ID:    "222916060752150"
+          CLOSEOUT_PSA_QID:    "27"
         run: |
           python3 - << 'PYEOF'
           import json, os, re, sys
@@ -68,6 +70,7 @@ jobs:
               "timestamp": datetime.now(timezone.utc).isoformat(timespec="seconds"),
               "safetyculture": {"status": "skipped", "message": ""},
               "jotform":       {"status": "skipped", "message": ""},
+              "closeout":      {"status": "skipped", "message": ""},
               # SharePoint is handled by the Power Automate flow directly (after
               # it dispatches this workflow), so the workflow doesn't touch it.
           }
@@ -132,6 +135,60 @@ jobs:
               result["jotform"] = {"status": "error", "message": str(e)[:200]}
               print(f"JotForm ERROR: {e}")
 
+          # ── 3. Commercial Closeout PSA Tail Dropdown ────────────
+          # Q27 ("PSA Fleet") on Commercial Closeout 2.0 is a Configurable
+          # List widget. Its column definitions live in the question's
+          # "fields" property, one line per column; the tail dropdown is the
+          # line "Dropdown:dropdown:<comma-separated options>". "NOT LISTED"
+          # stays as the final option, mirroring Q53's "Not Listed" handling.
+          try:
+              key     = os.environ["JOTFORM_KEY"]
+              base    = os.environ["JOTFORM_BASE"]
+              form_id = os.environ["CLOSEOUT_FORM_ID"]
+              qid     = os.environ["CLOSEOUT_PSA_QID"]
+              r = requests.get(f"{base}/form/{form_id}/question/{qid}?apiKey={key}", timeout=30)
+              r.raise_for_status()
+              fields_raw = r.json().get("content", {}).get("fields", "")
+              if not fields_raw:
+                  raise RuntimeError("widget 'fields' property is empty — format changed?")
+
+              lines = fields_raw.replace("\r\n", "\n").split("\n")
+              # The tail column: label "Dropdown", type dropdown
+              tail_idx = next((i for i, ln in enumerate(lines)
+                               if re.match(r'^\*?\s*Dropdown\s*:\s*dropdown\s*:', ln, re.I)), None)
+              if tail_idx is None:
+                  raise RuntimeError("tail dropdown line not found in widget fields")
+
+              label, ftype, opts_raw = lines[tail_idx].split(":", 2)
+              opts, seen = [], set()
+              for o in opts_raw.split(","):
+                  o = o.strip()
+                  if o and o.upper() not in seen:
+                      seen.add(o.upper())
+                      opts.append(o)
+              had_not_listed = any(o.upper() == "NOT LISTED" for o in opts)
+              others = [o for o in opts if o.upper() != "NOT LISTED"]
+
+              if tail in (o.upper() for o in others):
+                  result["closeout"] = {"status": "noop", "message": f"already present ({len(others)} tails)"}
+              else:
+                  others.append(tail)
+                  others.sort(key=sort_key)
+                  final = others + (["NOT LISTED"] if had_not_listed else [])
+                  lines[tail_idx] = f"{label}:{ftype}:{','.join(final)}"
+                  r = requests.post(
+                      f"{base}/form/{form_id}/question/{qid}?apiKey={key}",
+                      data={"question[fields]": "\n".join(lines)},
+                      timeout=30,
+                  )
+                  r.raise_for_status()
+                  pos = final.index(tail) + 1
+                  result["closeout"] = {"status": "ok", "message": f"added at position {pos} of {len(final)}"}
+              print(f"Closeout: {result['closeout']}")
+          except Exception as e:
+              result["closeout"] = {"status": "error", "message": str(e)[:200]}
+              print(f"Closeout ERROR: {e}")
+
           # ── Write result file ────────────────────────────────────
           with open("fleet_action_result.json", "w") as f:
               json.dump(result, f, indent=2)
@@ -142,12 +199,12 @@ jobs:
               with open(summary_path, "a") as f:
                   f.write(f"## {action}: `{tail}`\n\n")
                   f.write("| System | Status | Detail |\n|---|---|---|\n")
-                  for k in ("safetyculture", "jotform"):
+                  for k in ("safetyculture", "jotform", "closeout"):
                       s = result[k]
                       icon = {"ok":"✅","noop":"➖","error":"❌","skipped":"⏭"}.get(s["status"], "?")
                       f.write(f"| {k} | {icon} {s['status']} | {s['message']} |\n")
 
-          if all(result[k]["status"] == "error" for k in ("safetyculture","jotform")):
+          if all(result[k]["status"] == "error" for k in ("safetyculture","jotform","closeout")):
               sys.exit(1)
           PYEOF
 

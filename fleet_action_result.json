@@ -1,17 +1,9 @@
 {
-  "tail": "N350CD",
-  "action": "add_tail",
-  "timestamp": "2026-08-06T03:31:01+00:00",
-  "safetyculture": {
+  "tail": "N999ZZ",
+  "action": "remove_tail",
+  "timestamp": "2026-08-06T04:04:24+00:00",
+  "sharepoint": {
     "status": "ok",
-    "message": "added at position 1 of 156"
-  },
-  "jotform": {
-    "status": "ok",
-    "message": "added at position 1 of 157"
-  },
-  "closeout": {
-    "status": "ok",
-    "message": "added at position 1 of 157"
+    "message": "Status=Disabled set by the PA flow; tracker refresh dispatched"
   }
 }

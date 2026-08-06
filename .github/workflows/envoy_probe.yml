@@ -7,7 +7,7 @@ jobs:
   probe:
     runs-on: ubuntu-latest
     steps:
-      - name: Probe JotForm forms and tail questions
+      - name: Probe closeout tail questions
         env:
           JOTFORM_KEY: ${{ secrets.JOTFORM_KEY }}
         run: |
@@ -17,34 +17,28 @@ jobs:
           key = os.environ["JOTFORM_KEY"]
           base = "https://foxtrotaviation.jotform.com/API"
 
-          # 1. All enabled forms containing 'closeout' in the title
-          r = requests.get(f"{base}/user/forms?apiKey={key}&limit=200", timeout=30)
-          r.raise_for_status()
-          print("=== CLOSEOUT-LIKE FORMS ===")
-          for f in r.json()["content"]:
-              t = f.get("title", "")
-              if "closeout" in t.lower() and f.get("status") != "DELETED":
-                  print(f"  {f['id']}  {f['status']:8}  {t}")
-
-          # 2. Tail-question format for the known forms
-          def probe_q(form_id, label):
-              r = requests.get(f"{base}/form/{form_id}/questions?apiKey={key}", timeout=30)
+          FORMS = [
+              ("Commercial Closeout 2.0", "222916060752150"),
+              ("XNA Closeout", "261954357644972"),
+              ("SGF Closeout", "261954499086979"),
+              ("CMH Closeout", "261664495134058"),
+              ("LIT Closeout", "261955038475971"),
+          ]
+          for label, fid in FORMS:
+              r = requests.get(f"{base}/form/{fid}/questions?apiKey={key}", timeout=30)
               r.raise_for_status()
-              qs = r.json()["content"]
-              print(f"=== {label} ({form_id}) ===")
-              for qid, q in sorted(qs.items(), key=lambda x: int(x[0])):
-                  qtype = q.get("type", "")
-                  text  = (q.get("text") or q.get("name") or "")[:40]
-                  blob  = json.dumps(q)
-                  n_hits = len(re.findall(r'N\d{3}[A-Z]{2}', blob))
-                  if n_hits > 20:  # question holding the tail list
-                      print(f"  QID {qid} type={qtype} text={text!r} tails~{n_hits}")
+              print(f"=== {label} ({fid}) ===")
+              for qid, q in sorted(r.json()["content"].items(), key=lambda x: int(x[0])):
+                  blob = json.dumps(q)
+                  n = len(re.findall(r'N\d{3}[A-Z]{2}', blob))
+                  if n > 20:
+                      print(f"QID {qid} type={q.get('type')} text={(q.get('text') or '')[:40]!r} tails~{n}")
                       for prop in ("options", "fields"):
                           v = q.get(prop)
                           if isinstance(v, str) and v:
-                              print(f"    {prop}: {v[:220]} ... {v[-80:]}")
-
-          probe_q("222916997891173", "Envoy Debrief")
-          probe_q("222277068943160", "DFW Debrief")
-          probe_q("222916060752150", "Commercial Closeout 2.0")
+                              lines = v.replace("\r\n", "\n").split("\n")
+                              for ln in lines:
+                                  hits = len(re.findall(r'N\d{3}[A-Z]{2}', ln))
+                                  print(f"  {prop} line (tails~{hits}): {ln[:150]} ....... {ln[-90:]}" if hits > 20
+                                        else f"  {prop} line: {ln[:150]}")
           PYEOF

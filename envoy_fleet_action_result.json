@@ -1,33 +1,9 @@
 {
-  "tail": "N788CJ",
-  "action": "add_tail",
-  "timestamp": "2026-08-06T03:43:05+00:00",
-  "envoy_debrief": {
-    "status": "noop",
-    "message": "already present (191 options)"
-  },
-  "dfw_debrief": {
-    "status": "noop",
-    "message": "already present (191 options)"
-  },
-  "closeout": {
-    "status": "noop",
-    "message": "already present"
-  },
-  "cmh": {
-    "status": "noop",
-    "message": "already present"
-  },
-  "xna": {
+  "tail": "N999ZZ",
+  "action": "remove_tail",
+  "timestamp": "2026-08-06T04:04:20+00:00",
+  "sharepoint": {
     "status": "ok",
-    "message": "added at position 183 of 190"
-  },
-  "sgf": {
-    "status": "ok",
-    "message": "added at position 183 of 190"
-  },
-  "lit": {
-    "status": "ok",
-    "message": "added at position 183 of 190"
+    "message": "Status=Disabled set by the PA flow; tracker refresh dispatched"
   }
 }

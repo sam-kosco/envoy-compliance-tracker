@@ -242,6 +242,44 @@ The logic is generic over each file's `TRACKED` / `JOB_NAMES` / `CYCLES` constan
 
 ---
 
+## PSA Tail List Status column
+
+The SharePoint Tail List (Table3 in `PSA Debriefs.xlsx`, sheet `Tail List`) has a
+**Status** column (I). `psa_generate_data.py` excludes tails whose Status is
+`Disabled` and dedupes duplicate rows; any other status (Active, blank) is
+included, so a forgotten status on a new row doesn't silently drop a tail.
+
+> **Note:** the Microsoft Graph *workbook* API (row-level Excel edits) fails on
+> this tenant with app-only auth ("Could not obtain a WAC access token"), so ALL
+> Excel row writes must go through Power Automate's Excel connector — this is why
+> both the add and remove paths do their SharePoint writes in PA, not in a
+> workflow.
+
+## PSA Admin → Remove Tail
+
+The Admin tab's "Remove Tail from Fleet" form POSTs `{tail}` to
+`PA_TAIL_REMOVE_WEBHOOK_URL` in `psa.html` — a **separate** PA flow from the add
+flow, so a remove can never hit the add flow's Add-row action. The flow sets the
+tail's Status to `Disabled` on the Tail List; the tracker drops it on the next
+hourly refresh. SafetyCulture/JotForm dropdown entries are intentionally left in
+place (historical debriefs still reference them).
+
+**Building the "PSA Tail Remove" flow** (one-time setup):
+1. Trigger: *When a HTTP request is received*, schema `{"tail": "string"}`.
+2. Excel Online (Business) → *Update a row*: PSA Debriefs.xlsx, table `Table3`,
+   Key Column `Tails`, Key Value `triggerBody()?['tail']`, set `Status` =
+   `Disabled`.
+3. Response `200` `{"removed": true}`. Add a parallel Response `404`
+   `{"removed": false}` configured to run only if Update-a-row fails.
+4. *(Optional but recommended)* after the 200 Response, HTTP POST
+   `workflow_dispatch` on `psa_data_refresh.yml` (same PAT pattern as the add
+   flow) so the tracker updates within ~2 minutes instead of the next hourly run.
+5. Paste the trigger URL into `PA_TAIL_REMOVE_WEBHOOK_URL` in `psa.html`.
+
+To re-activate a disabled tail, set its Status back to `Active` on the Tail List
+(the Add Tail flow does not currently re-activate — it would append a duplicate
+row via PA's Add-row, so don't re-add a disabled tail from the Admin tab).
+
 ## PSA Admin → Add Tail
 
 The PSA dashboard has a password-gated **Admin** tab with an "Add Tail" form. Architecture:
@@ -347,6 +385,8 @@ The script no longer writes to Excel — Power Automate handles all writes using
 | Add tail to Mesa fleet | As needed | Add to the Tails sheet (column A) in the Mesa SharePoint Excel |
 | Add tail to GoJet fleet | As needed | Add to the Tails sheet (column A) in the GoJet SharePoint Excel |
 | Add tail to PSA fleet | As needed | Use the PSA dashboard → Admin tab (password-gated). One submit updates SafetyCulture, both JotForm forms (PSA debrief Q53 + Commercial Closeout Q27 tail dropdown), and SharePoint together. |
+| Remove tail from PSA fleet | As needed | Admin tab → Remove Tail (sets Status=Disabled on the Tail List; tracker drops it on next refresh) |
+| Re-activate a disabled PSA tail | As needed | Set Status back to Active on the Tail List sheet (do NOT re-add via Admin tab — see "Remove Tail") |
 | Add tail to Crosswinds fleet | As needed | Add to the Crosswinds Tail Numbers global response set in SafetyCulture AND the `TAILS` list in `crosswinds_generate_data.py` |
 | Pause a refresh | As needed | Comment out the `cron:` line in the relevant workflow YAML |
 | Change PSA daily report recipients | As needed | Edit `EMAIL_LIST` at the top of `psa_daily_report.py` |

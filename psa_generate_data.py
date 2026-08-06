@@ -100,11 +100,23 @@ def parse_workbook(path):
     import openpyxl
     wb = openpyxl.load_workbook(path, data_only=True)
 
-    # Tails
+    # Tails — column A; Status in column I ("Disabled" hides the tail from
+    # the tracker; anything else, including blank, shows it — so a missing
+    # status on a newly added row doesn't silently drop the tail).
+    # Duplicate rows are deduped.
     ws_tl = wb["Tail List"]
-    tails = [str(r[0]).strip().upper() for r in ws_tl.iter_rows(values_only=True)
-              if r[0] and str(r[0]).strip().upper() != "TAILS"]
-    print(f"  Tail List: {len(tails)} tails")
+    tails, seen, disabled = [], set(), 0
+    for r in ws_tl.iter_rows(values_only=True):
+        t = str(r[0] or "").strip().upper()
+        if not t or t == "TAILS" or t in seen:
+            continue
+        seen.add(t)
+        status = str(r[8] or "").strip().lower() if len(r) > 8 else ""
+        if status == "disabled":
+            disabled += 1
+            continue
+        tails.append(t)
+    print(f"  Tail List: {len(tails)} active tails ({disabled} disabled)")
 
     # Debriefs
     # Cols: 0=Date,1=Name,2=Location,3=Tail,4=IC,5=EC,6=CC,7=DSC,8=CE,

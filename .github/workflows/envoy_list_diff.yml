@@ -1,0 +1,52 @@
+name: TEMP Envoy List Diff
+
+on:
+  workflow_dispatch:
+
+jobs:
+  diff:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Diff all seven Envoy tail lists
+        env:
+          JOTFORM_KEY: ${{ secrets.JOTFORM_KEY }}
+        run: |
+          pip -q install requests
+          python3 - << 'PYEOF'
+          import os, re, requests
+          key = os.environ["JOTFORM_KEY"]
+          base = "https://foxtrotaviation.jotform.com/API"
+
+          def dropdown_opts(fid, qid):
+              r = requests.get(f"{base}/form/{fid}/question/{qid}?apiKey={key}", timeout=30)
+              r.raise_for_status()
+              return [o.strip().upper() for o in r.json()["content"].get("options", "").split("|") if o.strip()]
+
+          def widget_opts(fid, qid):
+              r = requests.get(f"{base}/form/{fid}/question/{qid}?apiKey={key}", timeout=30)
+              r.raise_for_status()
+              fields = r.json()["content"].get("fields", "").replace("\r\n", "\n")
+              for ln in fields.split("\n"):
+                  if re.match(r'^\*?\s*Tail Number\s*:\s*dropdown\s*:', ln, re.I):
+                      return [o.strip().upper() for o in ln.split(":")[2].split(",") if o.strip()]
+              return []
+
+          LISTS = {
+              "Envoy Debrief": dropdown_opts("222916997891173", "53"),
+              "DFW Debrief":   dropdown_opts("222277068943160", "51"),
+              "Comm Closeout": widget_opts("222916060752150", "45"),
+              "CMH Closeout":  widget_opts("261664495134058", "6"),
+              "XNA Closeout":  widget_opts("261954357644972", "6"),
+              "SGF Closeout":  widget_opts("261954499086979", "6"),
+              "LIT Closeout":  widget_opts("261955038475971", "6"),
+          }
+          tails_only = {n: {o for o in v if o != "NOT LISTED"} for n, v in LISTS.items()}
+          union = set().union(*tails_only.values())
+          print(f"UNION of real tails: {len(union)}")
+          for name, v in LISTS.items():
+              t = tails_only[name]
+              nl = "NOT LISTED present" if len(t) != len(v) else "no NOT LISTED"
+              missing = sorted(union - t)
+              dupes = sorted({o for o in v if v.count(o) > 1})
+              print(f"{name}: {len(v)} entries = {len(t)} tails ({nl}) | missing: {missing or 'none'} | dupes: {dupes or 'none'}")
+          PYEOF

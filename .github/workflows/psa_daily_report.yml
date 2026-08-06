@@ -5,8 +5,8 @@ on:
     # Both crons fire daily; psa_daily_report.py only sends on the run where
     # it is 9 AM in America/New_York, so the report goes out at 9 AM Eastern
     # year-round regardless of DST.
-    - cron: "0 13 * * *"   # 9 AM EDT (summer)
-    - cron: "0 14 * * *"   # 9 AM EST (winter)
+    - cron: "7 13 * * *"   # 9 AM EDT (summer)
+    - cron: "7 14 * * *"   # 9 AM EST (winter)
   workflow_dispatch:
     inputs:
       recipients:

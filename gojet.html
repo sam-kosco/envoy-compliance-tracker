@@ -600,6 +600,22 @@ const SAMPLE = {"generated":"2026-06-15T18:12:29.482881+00:00","cycles":{"ED1":6
 
 let DATA = null;
 
+// Auto-refresh: refetch every 10 minutes and whenever the tab regains focus,
+// re-rendering only when a newer data file has been published. Without this,
+// a tab left open (especially on mobile) shows stale compliance indefinitely.
+async function refreshIfStale() {
+  try {
+    const r = await fetch(DATA_URL + '?t=' + Date.now());
+    if (!r.ok) return;
+    const d = await r.json();
+    if (DATA && d.generated === DATA.generated) return;
+    DATA = d;
+    renderAll();
+  } catch (e) { /* transient fetch error — keep current view */ }
+}
+setInterval(refreshIfStale, 10 * 60 * 1000);
+document.addEventListener('visibilitychange', () => { if (!document.hidden) refreshIfStale(); });
+
 document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('tail-input').addEventListener('keydown', e => {
     if (e.key === 'Enter') searchFromInput();

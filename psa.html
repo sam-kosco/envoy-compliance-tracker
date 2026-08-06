@@ -1037,6 +1037,28 @@ async function submitAddTail() {
   }
 }
 
+
+// In-page confirm dialog. Native confirm()/alert() are silently blocked in
+// cross-origin iframes (the SharePoint pages embed these dashboards), so
+// native dialogs must never be used here.
+function pageConfirm(message) {
+  return new Promise(resolve => {
+    const ov = document.createElement('div');
+    ov.style.cssText = 'position:fixed;inset:0;background:rgba(15,23,42,0.55);z-index:9999;display:flex;align-items:center;justify-content:center;';
+    ov.innerHTML = `<div style="background:#fff;border-radius:10px;max-width:380px;width:90%;padding:22px 24px;font-family:inherit;box-shadow:0 12px 40px rgba(0,0,0,0.25)">
+      <div style="font-size:14px;color:#1F2937;line-height:1.5">${message}</div>
+      <div style="display:flex;gap:8px;justify-content:flex-end;margin-top:18px">
+        <button data-act="no" style="padding:8px 16px;border:1.5px solid #D1D5DB;background:#fff;border-radius:6px;cursor:pointer;font-size:13px">Cancel</button>
+        <button data-act="yes" style="padding:8px 16px;border:none;background:#DC2626;color:#fff;border-radius:6px;cursor:pointer;font-size:13px;font-weight:700">Confirm</button>
+      </div></div>`;
+    ov.addEventListener('click', e => {
+      const act = e.target.getAttribute ? e.target.getAttribute('data-act') : null;
+      if (act || e.target === ov) { ov.remove(); resolve(act === 'yes'); }
+    });
+    document.body.appendChild(ov);
+  });
+}
+
 async function submitRemoveTail() {
   const input  = document.getElementById('admin-remove-input');
   const btn    = document.getElementById('admin-remove-btn');
@@ -1058,7 +1080,7 @@ async function submitRemoveTail() {
     status.style.color = '#DC2626';
     return;
   }
-  if (!confirm(`Disable ${tail}? It will drop off the tracker on the next data refresh.`)) return;
+  if (!await pageConfirm(`Disable ${tail}? It will drop off the tracker on the next data refresh.`)) return;
 
   btn.disabled = true;
   status.style.color = '#555';
@@ -1148,7 +1170,7 @@ function woBuildLines(e){
 }
 function woGenerate(){
   if(!woSelected.length || typeof DATA==='undefined' || !DATA){ return; }
-  if(!window.jspdf){ alert('PDF library not loaded — check your connection and try again.'); return; }
+  if(!window.jspdf){ const b=document.getElementById('wo-generate'); const t=b.textContent; b.textContent='PDF library not loaded — retry'; setTimeout(()=>{b.textContent=t;}, 4000); return; }
   const byTail={}; DATA.planes.forEach(function(p){ byTail[p.tail]=p; });
   const entries=woSelected.map(function(t){
     const p=byTail[t]||{tail:t};

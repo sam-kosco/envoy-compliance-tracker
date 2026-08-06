@@ -831,7 +831,7 @@ function woBuildLines(e){
 }
 function woGenerate(){
   if(!woSelected.length || typeof DATA==='undefined' || !DATA){ return; }
-  if(!window.jspdf){ alert('PDF library not loaded — check your connection and try again.'); return; }
+  if(!window.jspdf){ const b=document.getElementById('wo-generate'); const t=b.textContent; b.textContent='PDF library not loaded — retry'; setTimeout(()=>{b.textContent=t;}, 4000); return; }
   const byTail={}; DATA.planes.forEach(function(p){ byTail[p.tail]=p; });
   const entries=woSelected.map(function(t){
     const p=byTail[t]||{tail:t};

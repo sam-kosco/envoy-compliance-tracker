@@ -1,0 +1,37 @@
+name: TEMP Add NOT LISTED to XNA/SGF/LIT
+
+on:
+  workflow_dispatch:
+
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Append NOT LISTED to the three closeout tail dropdowns
+        env:
+          JOTFORM_KEY: ${{ secrets.JOTFORM_KEY }}
+        run: |
+          pip -q install requests
+          python3 - << 'PYEOF'
+          import os, re, requests
+          key = os.environ["JOTFORM_KEY"]
+          base = "https://foxtrotaviation.jotform.com/API"
+          FORMS = [("XNA", "261954357644972"), ("SGF", "261954499086979"), ("LIT", "261955038475971")]
+          for name, fid in FORMS:
+              url = f"{base}/form/{fid}/question/6?apiKey={key}"
+              r = requests.get(url, timeout=30); r.raise_for_status()
+              fields = r.json()["content"]["fields"].replace("\r\n", "\n")
+              lines = fields.split("\n")
+              idx = next(i for i, ln in enumerate(lines)
+                         if re.match(r'^\*?\s*Tail Number\s*:\s*dropdown\s*:', ln, re.I))
+              parts = lines[idx].split(":")
+              opts = [o.strip() for o in parts[2].split(",") if o.strip()]
+              if any(o.upper() == "NOT LISTED" for o in opts):
+                  print(f"{name}: NOT LISTED already present ({len(opts)} entries)")
+                  continue
+              opts.append("NOT LISTED")
+              lines[idx] = ":".join([parts[0], parts[1], ",".join(opts)] + parts[3:])
+              r = requests.post(url, data={"question[fields]": "\n".join(lines)}, timeout=30)
+              r.raise_for_status()
+              print(f"{name}: NOT LISTED appended ({len(opts)} entries; line ends: ...{lines[idx][-60:]})")
+          PYEOF

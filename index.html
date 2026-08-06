@@ -53,6 +53,40 @@
   #tab-fleet,#tab-work{ width:66.66vw; margin:0 auto; padding:24px 28px; grid-template-columns:1fr 1fr; gap:20px; }
   #tab-fleet.active,#tab-work.active{ display:grid; }
   /* tabs */
+  #tab-admin{width:66.66vw;margin:0 auto;padding:24px 28px;}
+  .admin-gate{max-width:420px;margin:60px auto;background:white;padding:32px;border-radius:var(--radius);box-shadow:var(--shadow-md);border:1px solid #E5E7EB;}
+  .admin-gate h2{font-family:var(--cond);font-size:18px;color:var(--navy);text-transform:uppercase;letter-spacing:1px;margin:0 0 8px;}
+  .admin-gate p{color:#666;font-size:13px;margin:0 0 20px;}
+  .admin-pw-input{width:100%;padding:11px 14px;font-size:14px;border:1.5px solid #D1D5DB;border-radius:6px;outline:none;font-family:inherit;box-sizing:border-box;}
+  .admin-pw-input:focus{border-color:var(--orange);}
+  .admin-pw-btn{margin-top:12px;width:100%;padding:11px;background:var(--navy);color:white;font-family:var(--cond);font-size:14px;font-weight:700;letter-spacing:1px;text-transform:uppercase;border:none;border-radius:6px;cursor:pointer;}
+  .admin-pw-btn:hover{background:#2A3D6B;}
+  .admin-pw-error{color:#DC2626;font-size:13px;margin-top:10px;display:none;}
+  .admin-section{max-width:560px;margin:32px auto;background:white;padding:28px;border-radius:var(--radius);box-shadow:var(--shadow-md);border:1px solid #E5E7EB;}
+  .admin-section h2{font-family:var(--cond);font-size:18px;color:var(--navy);text-transform:uppercase;letter-spacing:1px;margin:0 0 6px;}
+  .admin-section .hint{color:#666;font-size:13px;margin:0 0 18px;}
+  .admin-tail-row{display:flex;gap:8px;}
+  .admin-tail-input{flex:1;padding:11px 14px;font-size:15px;border:1.5px solid #D1D5DB;border-radius:6px;outline:none;font-family:inherit;text-transform:uppercase;letter-spacing:0.5px;}
+  .admin-tail-input:focus{border-color:var(--orange);}
+  .admin-tail-btn{padding:11px 22px;background:var(--orange);color:white;font-family:var(--cond);font-size:14px;font-weight:700;letter-spacing:1px;text-transform:uppercase;border:none;border-radius:6px;cursor:pointer;}
+  .admin-tail-btn:hover{background:var(--orange-light);}
+  .admin-tail-btn:disabled{background:#9CA3AF;cursor:not-allowed;}
+  .admin-result .st-ok{color:#16A34A;font-weight:700;}
+  .admin-result .st-noop{color:#6B7280;font-weight:700;}
+  .admin-result .st-error{color:#DC2626;font-weight:700;}
+  .admin-tail-btn.danger{background:#DC2626;}
+  .admin-tail-btn.danger:hover{background:#B91C1C;}
+  .admin-status{margin-top:18px;font-size:13px;color:#555;min-height:20px;}
+  .admin-result{margin-top:18px;border:1px solid #E5E7EB;border-radius:6px;overflow:hidden;display:none;}
+  .admin-result.show{display:block;}
+  .admin-result table{width:100%;border-collapse:collapse;font-size:13px;}
+  .admin-result th{background:var(--off-white);text-align:left;padding:8px 12px;font-family:var(--cond);font-size:11px;text-transform:uppercase;letter-spacing:0.5px;color:#555;border-bottom:1px solid #E5E7EB;}
+  .admin-result td{padding:8px 12px;border-bottom:1px solid #F3F4F6;}
+  .admin-result .st-ok{color:#16A34A;font-weight:700;}
+  .admin-result .st-noop{color:#6B7280;font-weight:700;}
+  .admin-result .st-error{color:#DC2626;font-weight:700;}
+  .admin-tail-btn.danger{background:#DC2626;}
+  .admin-tail-btn.danger:hover{background:#B91C1C;}
   .tab-bar{background:var(--navy);border-top:1px solid rgba(255,255,255,0.1);}
   .tab-bar-inner{width:66.66vw;margin:0 auto;display:flex;gap:0;}
   .tab-btn{font-family:var(--cond);font-size:14px;font-weight:700;color:rgba(255,255,255,0.5);padding:12px 20px;cursor:pointer;border:none;background:none;border-bottom:3px solid transparent;letter-spacing:0.5px;transition:color 0.15s,border-color 0.15s;text-transform:uppercase;}
@@ -192,7 +226,7 @@
 
   @media(max-width:960px){
     #tab-fleet,#tab-work{width:auto;grid-template-columns:1fr;padding:16px;}
-    .hdr-inner,.band-inner,.tab-bar-inner{width:auto;padding:0 16px;}
+    #tab-admin{width:auto;padding:16px;}.hdr-inner,.band-inner,.tab-bar-inner{width:auto;padding:0 16px;}
     .stat-strip{grid-template-columns:repeat(2,1fr);}
     .compliance-grid{grid-template-columns:1fr 1fr;}
     .history-row{grid-template-columns:1fr 1fr;}
@@ -373,6 +407,7 @@
     <div class="tab-bar-inner">
       <button class="tab-btn active" onclick="switchTab('fleet')">Fleet Tracker</button>
       <button class="tab-btn" onclick="switchTab('work')">Work Order</button>
+      <button class="tab-btn" onclick="switchTab('admin')">Admin</button>
     </div>
   </div>
 
@@ -481,6 +516,43 @@
       </div>
     </div>
   </div><!-- /tab-work -->
+
+  <div class="tab-page" id="tab-admin">
+    <!-- Password gate (visible until correct password entered) -->
+    <div class="admin-gate" id="admin-gate">
+      <h2>Admin Access</h2>
+      <p>Enter the admin password to manage the Envoy fleet.</p>
+      <input type="password" class="admin-pw-input" id="admin-pw-input" placeholder="Password" onkeydown="if(event.key==='Enter')tryAdminLogin()">
+      <button class="admin-pw-btn" onclick="tryAdminLogin()">Unlock</button>
+      <div class="admin-pw-error" id="admin-pw-error">Incorrect password.</div>
+    </div>
+
+    <!-- Admin content (hidden until unlocked) -->
+    <div id="admin-content" style="display:none">
+      <div class="admin-section">
+        <h2>Add Tail to Fleet</h2>
+        <p class="hint">Adds the tail to the Envoy and DFW Debrief dropdowns, the Commercial Closeout Envoy Fleet list, the CMH/XNA/SGF/LIT closeout lists, and the SharePoint Tail List. Format: N + 1-5 digits + 0-2 letters (e.g. N205JK).</p>
+        <div class="admin-tail-row">
+          <input type="text" class="admin-tail-input" id="admin-tail-input" placeholder="N123AB" maxlength="8"
+                 onkeydown="if(event.key==='Enter')submitAddTail()" oninput="this.value=this.value.toUpperCase()">
+          <button class="admin-tail-btn" id="admin-tail-btn" onclick="submitAddTail()">Add</button>
+        </div>
+        <div class="admin-status" id="admin-status"></div>
+        <div class="admin-result" id="admin-result"></div>
+      </div>
+
+      <div class="admin-section">
+        <h2>Remove Tail from Fleet</h2>
+        <p class="hint">Sets the tail's Status to <strong>Disabled</strong> on the SharePoint Tail List. The tail drops off the tracker on the next data refresh. Historical debriefs are unaffected, and the tail stays in the JotForm dropdowns.</p>
+        <div class="admin-tail-row">
+          <input type="text" class="admin-tail-input" id="admin-remove-input" placeholder="N123AB" maxlength="8"
+                 onkeydown="if(event.key==='Enter')submitRemoveTail()" oninput="this.value=this.value.toUpperCase()">
+          <button class="admin-tail-btn danger" id="admin-remove-btn" onclick="submitRemoveTail()">Remove</button>
+        </div>
+        <div class="admin-status" id="admin-remove-status"></div>
+      </div>
+    </div>
+  </div><!-- /tab-admin -->
   </main>
 
   <footer>&copy; Foxtrot Aviation Services &nbsp;·&nbsp; Envoy Fleet Compliance Portal &nbsp;·&nbsp; Confidential</footer>
@@ -771,6 +843,181 @@ function selectTail(tail) {
 }
 
 /* ===== TABS ===== */
+/* ===== ADMIN ===== */
+const ADMIN_PASSWORD = 'ENVOY2026';
+// "Envoy Tail Add" PA flow — holds the GitHub PAT, dispatches manage_envoy_fleet.yml,
+// then appends the tail row to the SharePoint Tail List itself.
+const PA_TAIL_WEBHOOK_URL = 'https://defaultede0c57f549f4a909f8c7ea130346f.95.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/19/workflows/f3ca7b3355934edcb42c156acdef911b/triggers/manual/paths/invoke?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=U1gOb9TkW6-8z9MwlgEOfMxXiflvL05gTlpKkuG6YVI';
+// Separate PA flow for Remove Tail (Update a row: Status=Disabled on the Tail
+// List). Deliberately its own flow/URL so a remove can never hit the add flow's
+// Add-row action. Paste the flow's HTTP trigger URL here once built; until then
+// the Remove button reports "not configured" and makes no calls.
+const PA_TAIL_REMOVE_WEBHOOK_URL = 'PASTE_REMOVE_FLOW_URL_HERE';
+const RESULT_URL = 'envoy_fleet_action_result.json';
+
+// In-page confirm dialog. Native confirm()/alert() are silently blocked in
+// cross-origin iframes (the SharePoint pages embed these dashboards), so
+// native dialogs must never be used here.
+function pageConfirm(message) {
+  return new Promise(resolve => {
+    const ov = document.createElement('div');
+    ov.style.cssText = 'position:fixed;inset:0;background:rgba(15,23,42,0.55);z-index:9999;display:flex;align-items:center;justify-content:center;';
+    ov.innerHTML = `<div style="background:#fff;border-radius:10px;max-width:380px;width:90%;padding:22px 24px;font-family:inherit;box-shadow:0 12px 40px rgba(0,0,0,0.25)">
+      <div style="font-size:14px;color:#1F2937;line-height:1.5">${message}</div>
+      <div style="display:flex;gap:8px;justify-content:flex-end;margin-top:18px">
+        <button data-act="no" style="padding:8px 16px;border:1.5px solid #D1D5DB;background:#fff;border-radius:6px;cursor:pointer;font-size:13px">Cancel</button>
+        <button data-act="yes" style="padding:8px 16px;border:none;background:#DC2626;color:#fff;border-radius:6px;cursor:pointer;font-size:13px;font-weight:700">Confirm</button>
+      </div></div>`;
+    ov.addEventListener('click', e => {
+      const act = e.target.getAttribute ? e.target.getAttribute('data-act') : null;
+      if (act || e.target === ov) { ov.remove(); resolve(act === 'yes'); }
+    });
+    document.body.appendChild(ov);
+  });
+}
+
+function tryAdminLogin() {
+  const input = document.getElementById('admin-pw-input');
+  const err   = document.getElementById('admin-pw-error');
+  if (input.value === ADMIN_PASSWORD) {
+    document.getElementById('admin-gate').style.display = 'none';
+    document.getElementById('admin-content').style.display = 'block';
+  } else {
+    err.style.display = 'block';
+    input.value = '';
+  }
+}
+
+async function submitAddTail() {
+  const input  = document.getElementById('admin-tail-input');
+  const btn    = document.getElementById('admin-tail-btn');
+  const status = document.getElementById('admin-status');
+  const result = document.getElementById('admin-result');
+
+  const tail = input.value.trim().toUpperCase();
+  if (!/^N\d{1,5}[A-Z]{0,2}$/.test(tail)) {
+    status.textContent = 'Invalid tail format. Expected N + 1-5 digits + 0-2 letters (e.g. N205JK).';
+    status.style.color = '#DC2626';
+    return;
+  }
+
+  btn.disabled = true;
+  result.classList.remove('show');
+  status.style.color = '#555';
+  status.textContent = `Dispatching workflow for ${tail}...`;
+  const startedAt = Date.now();
+
+  try {
+    const dispatchRes = await fetch(PA_TAIL_WEBHOOK_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ tail: tail }),
+    });
+    if (!dispatchRes.ok) {
+      const txt = await dispatchRes.text();
+      throw new Error(`Dispatcher failed: HTTP ${dispatchRes.status} ${txt.slice(0, 200)}`);
+    }
+
+    status.textContent = `Workflow dispatched. Waiting for result (30-60s)...`;
+
+    let attempt = 0;
+    const maxAttempts = 40; // ~2 min at 3s
+    while (attempt < maxAttempts) {
+      attempt++;
+      await new Promise(r => setTimeout(r, 3000));
+      try {
+        const r = await fetch(RESULT_URL + '?t=' + Date.now());
+        if (r.ok) {
+          const data = await r.json();
+          const ts = new Date(data.timestamp).getTime();
+          if (data.tail === tail && ts >= startedAt - 5000) {
+            renderAdminResult(data);
+            status.textContent = `Completed in ${Math.round((Date.now()-startedAt)/1000)}s.`;
+            input.value = '';
+            return;
+          }
+        }
+      } catch (e) { /* keep polling */ }
+      status.textContent = `Waiting for result... (${attempt * 3}s elapsed)`;
+    }
+    status.textContent = `Timed out waiting for result. Check Actions tab for the run status.`;
+    status.style.color = '#DC2626';
+  } catch (e) {
+    status.textContent = `Error: ${e.message}`;
+    status.style.color = '#DC2626';
+  } finally {
+    btn.disabled = false;
+  }
+}
+
+async function submitRemoveTail() {
+  const input  = document.getElementById('admin-remove-input');
+  const btn    = document.getElementById('admin-remove-btn');
+  const status = document.getElementById('admin-remove-status');
+
+  const tail = input.value.trim().toUpperCase();
+  if (!/^N\d{1,5}[A-Z]{0,2}$/.test(tail)) {
+    status.textContent = 'Invalid tail format. Expected N + 1-5 digits + 0-2 letters (e.g. N205JK).';
+    status.style.color = '#DC2626';
+    return;
+  }
+  if (!PA_TAIL_REMOVE_WEBHOOK_URL.startsWith('https')) {
+    status.textContent = 'Remove flow is not configured yet — build the "Envoy Tail Remove" Power Automate flow and paste its trigger URL into PA_TAIL_REMOVE_WEBHOOK_URL in index.html.';
+    status.style.color = '#DC2626';
+    return;
+  }
+  if (window._allTails && !window._allTails.includes(tail)) {
+    status.textContent = `${tail} is not on the active tracker roster — nothing to remove.`;
+    status.style.color = '#DC2626';
+    return;
+  }
+  if (!await pageConfirm(`Disable ${tail}? It will drop off the tracker on the next data refresh.`)) return;
+
+  btn.disabled = true;
+  status.style.color = '#555';
+  status.textContent = `Disabling ${tail}...`;
+  try {
+    const res = await fetch(PA_TAIL_REMOVE_WEBHOOK_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ tail: tail }),
+    });
+    if (!res.ok) {
+      const txt = await res.text();
+      throw new Error(`HTTP ${res.status} ${txt.slice(0, 200)}`);
+    }
+    status.textContent = `${tail} disabled on the Tail List. It drops off the tracker on the next refresh (within the hour).`;
+    status.style.color = '#059669';
+    input.value = '';
+  } catch (e) {
+    status.textContent = `Error: ${e.message}`;
+    status.style.color = '#DC2626';
+  } finally {
+    btn.disabled = false;
+  }
+}
+
+function renderAdminResult(data) {
+  const result = document.getElementById('admin-result');
+  const SYSTEMS = [
+    ['envoy_debrief', 'Envoy Debrief Form'],
+    ['dfw_debrief',   'DFW Debrief Form'],
+    ['closeout',      'Commercial Closeout'],
+    ['cmh',           'CMH Closeout'],
+    ['xna',           'XNA Closeout'],
+    ['sgf',           'SGF Closeout'],
+    ['lit',           'LIT Closeout'],
+  ];
+  let html = `<table><thead><tr><th>System</th><th>Status</th><th>Detail</th></tr></thead><tbody>`;
+  for (const [key, label] of SYSTEMS) {
+    const s = data[key] || {status:'?', message:''};
+    html += `<tr><td>${label}</td><td class="st-${s.status}">${s.status.toUpperCase()}</td><td>${s.message || ''}</td></tr>`;
+  }
+  html += `</tbody></table>`;
+  result.innerHTML = html;
+  result.classList.add('show');
+}
+
 function switchTab(name) {
   document.querySelectorAll('.tab-page').forEach(p => p.classList.remove('active'));
   document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));

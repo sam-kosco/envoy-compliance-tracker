@@ -18,7 +18,7 @@ This repo hosts five separate aircraft detailing compliance dashboards for Foxtr
 | GoJet | GoJet Airlines | `/gojet.html` | `gojet.html` |
 | Crosswinds | Crosswinds Flight School | `/crosswinds.html` | `crosswinds.html` |
 
-> **Tabs:** Envoy, PSA, Mesa, and GoJet each have a **Fleet Tracker** tab and a **Work Order** tab (see "Work Order tab" below). PSA additionally has an **Admin** tab. The tab bar sits between the orange band and `<main>`; `<main>` is a plain block and each `#tab-fleet` / `#tab-work` is the 66.66vw grid container (this is why content must live inside a tab page, not directly in `<main>`).
+> **Tabs:** Envoy, PSA, Mesa, and GoJet each have a **Fleet Tracker** tab and a **Work Order** tab (see "Work Order tab" below). PSA and Envoy additionally have an **Admin** tab. The tab bar sits between the orange band and `<main>`; `<main>` is a plain block and each `#tab-fleet` / `#tab-work` is the 66.66vw grid container (this is why content must live inside a tab page, not directly in `<main>`).
 
 ---
 
@@ -37,6 +37,7 @@ envoy-compliance-tracker/
 ├── gojet_data.json               # GoJet compliance data (auto-generated)
 ├── crosswinds_data.json          # Crosswinds compliance data (auto-generated)
 ├── fleet_action_result.json      # Last result from manage_fleet.yml (auto-generated)
+├── envoy_fleet_action_result.json# Last result from manage_envoy_fleet.yml (auto-generated)
 ├── envoy_generate_data.py        # Envoy data relay script
 ├── psa_generate_data.py          # PSA data relay script
 ├── psa_daily_report.py           # PSA daily emailed Excel report (9 AM Eastern)
@@ -51,7 +52,8 @@ envoy-compliance-tracker/
         ├── mesa_data_refresh.yml     # Mesa hourly cron
         ├── gojet_data_refresh.yml    # GoJet hourly cron
         ├── crosswinds_refresh.yml    # Crosswinds — triggered by Power Automate webhook
-        └── manage_fleet.yml          # PSA admin actions (add tail) — workflow_dispatch
+        ├── manage_fleet.yml          # PSA admin actions (add tail) — workflow_dispatch
+        └── manage_envoy_fleet.yml    # Envoy admin actions (add tail) — workflow_dispatch
 ```
 
 ---
@@ -242,6 +244,37 @@ The logic is generic over each file's `TRACKED` / `JOB_NAMES` / `CYCLES` constan
 
 ---
 
+## Envoy Admin → Add / Remove Tail
+
+The Envoy dashboard has a password-gated **Admin** tab mirroring PSA's, with the
+same PA-bridge architecture (the dashboard cannot hold a GitHub PAT — see the
+PSA section). The "Envoy Tail Add" PA flow (URL in `index.html` as
+`PA_TAIL_WEBHOOK_URL`) dispatches **`manage_envoy_fleet.yml`** and then appends
+the tail row to the Envoy Tail List on SharePoint itself.
+
+`manage_envoy_fleet.yml` add_tail updates SEVEN JotForm targets (no
+SafetyCulture for Envoy), inserting the tail in numeric order, deduping, and
+preserving each list's trailing `NOT LISTED` / `:Please Select` placeholder
+structure:
+
+| Result key | Target | Form / question |
+|---|---|---|
+| `envoy_debrief` | Envoy Debrief tail dropdown | `222916997891173` Q53 (pipe options) |
+| `dfw_debrief` | DFW Debrief tail dropdown | `222277068943160` Q51 (pipe options) |
+| `closeout` | Commercial Closeout 2.0 "Envoy Fleet" | `222916060752150` Q45 (widget `fields`, "Tail Number" line) |
+| `cmh` | CMH Closeout | `261664495134058` Q6 (widget) |
+| `xna` | XNA Closeout | `261954357644972` Q6 (widget) |
+| `sgf` | SGF Closeout | `261954499086979` Q6 (widget) |
+| `lit` | LIT Closeout | `261955038475971` Q6 (widget) |
+
+Results are committed to `envoy_fleet_action_result.json`; the dashboard polls
+it and shows a 7-row table. Remove Tail mirrors PSA: a separate "Envoy Tail
+Remove" PA flow (Update a row: Status=Disabled on the Tail List — build steps
+identical to the PSA remove flow) with its URL in `PA_TAIL_REMOVE_WEBHOOK_URL`;
+until pasted, the Remove button reports "not configured". The Envoy Tail List
+Status column lives in **column F**; `envoy_generate_data.py` excludes
+`Disabled` tails and dedupes. Admin password: `ENVOY2026` in `index.html`.
+
 ## PSA Tail List Status column
 
 The SharePoint Tail List (Table3 in `PSA Debriefs.xlsx`, sheet `Tail List`) has a
@@ -381,7 +414,8 @@ The script no longer writes to Excel — Power Automate handles all writes using
 | Task | When | Action |
 |------|------|--------|
 | Renew CLIENT_SECRET | Every 24 months | Entra → App registrations → Foxtrot Report Automation → new secret → update GitHub Secret |
-| Add tail to Envoy fleet | As needed | Add to Tail List sheet in the Envoy SharePoint Excel |
+| Add tail to Envoy fleet | As needed | Use the Envoy dashboard → Admin tab (password-gated). One submit updates both debrief forms, all five closeout forms, and SharePoint together. |
+| Remove tail from Envoy fleet | As needed | Envoy Admin tab → Remove Tail (sets Status=Disabled on the Tail List, column F) |
 | Add tail to Mesa fleet | As needed | Add to the Tails sheet (column A) in the Mesa SharePoint Excel |
 | Add tail to GoJet fleet | As needed | Add to the Tails sheet (column A) in the GoJet SharePoint Excel |
 | Add tail to PSA fleet | As needed | Use the PSA dashboard → Admin tab (password-gated). One submit updates SafetyCulture, both JotForm forms (PSA debrief Q53 + Commercial Closeout Q27 tail dropdown), and SharePoint together. |

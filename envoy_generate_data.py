@@ -118,13 +118,23 @@ def fmt_date(d):
 # ─────────────────────────────────────────────
 
 def read_tail_list(wb):
+    """Column A = tails; column F = Status ("Disabled" hides the tail from
+    the tracker; anything else, including blank, shows it — so a missing
+    status on a newly added row doesn't silently drop the tail).
+    Duplicate rows are deduped."""
     ws = wb["Tail List"]
-    tails = []
+    tails, seen, disabled = [], set(), 0
     for row in ws.iter_rows(values_only=True):
-        val = row[0]
-        if val and str(val).strip().upper() != "TAILS":
-            tails.append(str(val).strip().upper())
-    print(f"  Tail List: {len(tails)} tails")
+        t = str(row[0] or "").strip().upper()
+        if not t or t == "TAILS" or t in seen:
+            continue
+        seen.add(t)
+        status = str(row[5] or "").strip().lower() if len(row) > 5 else ""
+        if status == "disabled":
+            disabled += 1
+            continue
+        tails.append(t)
+    print(f"  Tail List: {len(tails)} active tails ({disabled} disabled)")
     return tails
 
 

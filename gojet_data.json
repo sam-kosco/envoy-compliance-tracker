@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-06T07:21:49.157590+00:00",
+  "generated": "2026-08-06T10:14:57.121595+00:00",
   "cycles": {
     "ED1": 60,
     "ED2": 60,
@@ -8,14 +8,14 @@
   "planes": [
     {
       "tail": "501",
-      "lastService": "2026-07-30",
+      "lastService": "2026-08-05",
       "lastED1": "2026-06-04",
       "lastED2": "2026-06-04",
       "lastCE": "2026-06-04",
       "lastIHC": "2026-07-11",
-      "lastRON": "2026-07-30",
+      "lastRON": "2026-08-05",
       "lastLocation": "STL",
-      "lastTech": "Genesis King",
+      "lastTech": "ursula Moffitt",
       "ED1": -3,
       "ED2": -3,
       "CE": -3
@@ -854,6 +854,17 @@
       "tail": "565",
       "date": "2026-08-05",
       "name": "ursula moffitt",
+      "location": "STL",
+      "ED1": 0,
+      "ED2": 0,
+      "CE": 0,
+      "IHC": 0,
+      "RON": 1
+    },
+    {
+      "tail": "501",
+      "date": "2026-08-05",
+      "name": "ursula Moffitt",
       "location": "STL",
       "ED1": 0,
       "ED2": 0,

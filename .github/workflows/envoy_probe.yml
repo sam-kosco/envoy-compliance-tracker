@@ -1,0 +1,50 @@
+name: TEMP Envoy Forms Probe
+
+on:
+  workflow_dispatch:
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Probe JotForm forms and tail questions
+        env:
+          JOTFORM_KEY: ${{ secrets.JOTFORM_KEY }}
+        run: |
+          pip -q install requests
+          python3 - << 'PYEOF'
+          import os, json, re, requests
+          key = os.environ["JOTFORM_KEY"]
+          base = "https://foxtrotaviation.jotform.com/API"
+
+          # 1. All enabled forms containing 'closeout' in the title
+          r = requests.get(f"{base}/user/forms?apiKey={key}&limit=200", timeout=30)
+          r.raise_for_status()
+          print("=== CLOSEOUT-LIKE FORMS ===")
+          for f in r.json()["content"]:
+              t = f.get("title", "")
+              if "closeout" in t.lower() and f.get("status") != "DELETED":
+                  print(f"  {f['id']}  {f['status']:8}  {t}")
+
+          # 2. Tail-question format for the known forms
+          def probe_q(form_id, label):
+              r = requests.get(f"{base}/form/{form_id}/questions?apiKey={key}", timeout=30)
+              r.raise_for_status()
+              qs = r.json()["content"]
+              print(f"=== {label} ({form_id}) ===")
+              for qid, q in sorted(qs.items(), key=lambda x: int(x[0])):
+                  qtype = q.get("type", "")
+                  text  = (q.get("text") or q.get("name") or "")[:40]
+                  blob  = json.dumps(q)
+                  n_hits = len(re.findall(r'N\d{3}[A-Z]{2}', blob))
+                  if n_hits > 20:  # question holding the tail list
+                      print(f"  QID {qid} type={qtype} text={text!r} tails~{n_hits}")
+                      for prop in ("options", "fields"):
+                          v = q.get(prop)
+                          if isinstance(v, str) and v:
+                              print(f"    {prop}: {v[:220]} ... {v[-80:]}")
+
+          probe_q("222916997891173", "Envoy Debrief")
+          probe_q("222277068943160", "DFW Debrief")
+          probe_q("222916060752150", "Commercial Closeout 2.0")
+          PYEOF

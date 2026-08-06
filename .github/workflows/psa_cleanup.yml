@@ -1,0 +1,63 @@
+name: TEMP Remove N350CD from PSA lists
+
+on:
+  workflow_dispatch:
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Remove N350CD from SafetyCulture + PSA JotForm lists
+        env:
+          SAFETYCULTURE_KEY: ${{ secrets.SAFETYCULTURE_KEY }}
+          JOTFORM_KEY:       ${{ secrets.JOTFORM_KEY }}
+        run: |
+          pip -q install requests
+          python3 - << 'PYEOF'
+          import os, re, requests
+          TAIL = "N350CD"
+          base = "https://foxtrotaviation.jotform.com/API"
+          jkey = os.environ["JOTFORM_KEY"]
+
+          # 1. SafetyCulture PSA Tails response set
+          H = {"Authorization": f"Bearer {os.environ['SAFETYCULTURE_KEY']}", "Content-Type": "application/json"}
+          sc_url = "https://api.safetyculture.io/response_sets/responseset_0602a202a6a2458cae66ab6b46640d28"
+          r = requests.get(sc_url, headers=H, timeout=30); r.raise_for_status()
+          data = r.json()
+          labels = [x["label"] for x in data.get("responses", []) if x["label"].strip().upper() != TAIL]
+          before = len(data.get("responses", []))
+          r = requests.put(sc_url, headers=H, json={"name": data.get("name", "PSA Tails"),
+                          "responses": [{"label": l} for l in labels]}, timeout=30)
+          r.raise_for_status()
+          print(f"SafetyCulture: {before} -> {len(labels)} ({'removed' if len(labels) < before else 'was not present'})")
+
+          # 2. PSA Debrief Q53 (pipe options)
+          url = f"{base}/form/213263365115146/question/53?apiKey={jkey}"
+          r = requests.get(url, timeout=30); r.raise_for_status()
+          opts = r.json()["content"].get("options", "").split("|")
+          new = [o for o in opts if o.strip().upper() != TAIL]
+          if len(new) < len(opts):
+              r = requests.post(url, data={"question[options]": "|".join(new)}, timeout=30)
+              r.raise_for_status()
+              print(f"PSA Q53: {len(opts)} -> {len(new)} (removed)")
+          else:
+              print("PSA Q53: was not present")
+
+          # 3. PSA Closeout Q27 (widget Dropdown line)
+          url = f"{base}/form/222916060752150/question/27?apiKey={jkey}"
+          r = requests.get(url, timeout=30); r.raise_for_status()
+          fields = r.json()["content"]["fields"].replace("\r\n", "\n")
+          lines = fields.split("\n")
+          idx = next(i for i, ln in enumerate(lines)
+                     if re.match(r'^\*?\s*Dropdown\s*:\s*dropdown\s*:', ln, re.I))
+          parts = lines[idx].split(":")
+          opts = parts[2].split(",")
+          new = [o for o in opts if o.strip().upper() != TAIL]
+          if len(new) < len(opts):
+              lines[idx] = ":".join([parts[0], parts[1], ",".join(new)] + parts[3:])
+              r = requests.post(url, data={"question[fields]": "\n".join(lines)}, timeout=30)
+              r.raise_for_status()
+              print(f"PSA Closeout Q27: {len(opts)} -> {len(new)} (removed)")
+          else:
+              print("PSA Closeout Q27: was not present")
+          PYEOF

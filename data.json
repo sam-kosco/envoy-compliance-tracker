@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-06T03:28:35.828682+00:00",
+  "generated": "2026-08-06T04:04:38.767018+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -69,12 +69,12 @@
     },
     {
       "tail": "N206NN",
-      "lastService": "2026-08-01",
+      "lastService": "2026-08-05",
       "lastED1": "2026-07-19",
       "lastED2": "2026-07-19",
-      "lastIHC": "2026-08-01",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
+      "lastIHC": "2026-08-05",
+      "lastLocation": "XNA",
+      "lastTech": "Riley Woods",
       "ED1": 12,
       "ED2": 42
     },
@@ -2079,6 +2079,17 @@
       "lastTech": "Raenita Jasper",
       "ED1": -1,
       "ED2": 15
+    },
+    {
+      "tail": "N350CD",
+      "lastService": "2026-08-03",
+      "lastED1": null,
+      "lastED2": null,
+      "lastIHC": "2026-08-03",
+      "lastLocation": "DFW",
+      "lastTech": "Aunyae Morrison",
+      "ED1": "No Service",
+      "ED2": "No Service"
     }
   ],
   "debriefs": [
@@ -2096,6 +2107,15 @@
       "date": "2026-08-31",
       "name": "Raenita Jasper",
       "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N206NN",
+      "date": "2026-08-05",
+      "name": "Riley Woods",
+      "location": "XNA",
       "IHC": 1,
       "ED1": 0,
       "ED2": 0

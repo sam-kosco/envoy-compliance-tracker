@@ -1,4 +1,4 @@
-name: TEMP Tail Membership Check
+name: Check Envoy Tail Membership
 
 on:
   workflow_dispatch:

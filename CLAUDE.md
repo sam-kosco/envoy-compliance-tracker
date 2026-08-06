@@ -268,10 +268,11 @@ structure:
 | `lit` | LIT Closeout | `261955038475971` Q6 (widget) |
 
 Results are committed to `envoy_fleet_action_result.json`; the dashboard polls
-it and shows a 7-row table. Remove Tail mirrors PSA: a separate "Envoy Tail
-Remove" PA flow (Update a row: Status=Disabled on the Tail List — build steps
-identical to the PSA remove flow) with its URL in `PA_TAIL_REMOVE_WEBHOOK_URL`;
-until pasted, the Remove button reports "not configured". The Envoy Tail List
+it and shows a 7-row table. Remove Tail mirrors PSA: the "Envoy Tail Remove" PA
+flow (URL wired in `PA_TAIL_REMOVE_WEBHOOK_URL`) dispatches
+`manage_envoy_fleet.yml` with `action: remove_tail` and performs the Excel
+Update-a-row (Status=Disabled) itself; the workflow records the action and
+dispatches `data_refresh.yml` so the tail drops off within minutes. The Envoy Tail List
 Status column lives in **column F**; `envoy_generate_data.py` excludes
 `Disabled` tails and dedupes. Admin password: `ENVOY2026` in `index.html`.
 
@@ -297,17 +298,14 @@ tail's Status to `Disabled` on the Tail List; the tracker drops it on the next
 hourly refresh. SafetyCulture/JotForm dropdown entries are intentionally left in
 place (historical debriefs still reference them).
 
-**Building the "PSA Tail Remove" flow** (one-time setup):
-1. Trigger: *When a HTTP request is received*, schema `{"tail": "string"}`.
-2. Excel Online (Business) → *Update a row*: PSA Debriefs.xlsx, table `Table3`,
-   Key Column `Tails`, Key Value `triggerBody()?['tail']`, set `Status` =
-   `Disabled`.
-3. Response `200` `{"removed": true}`. Add a parallel Response `404`
-   `{"removed": false}` configured to run only if Update-a-row fails.
-4. *(Optional but recommended)* after the 200 Response, HTTP POST
-   `workflow_dispatch` on `psa_data_refresh.yml` (same PAT pattern as the add
-   flow) so the tracker updates within ~2 minutes instead of the next hourly run.
-5. Paste the trigger URL into `PA_TAIL_REMOVE_WEBHOOK_URL` in `psa.html`.
+**"PSA Tail Remove" flow (built, URL wired into `psa.html`):** clone of the
+add flow — HTTP dispatch of `manage_fleet.yml` with `action: remove_tail`, plus
+the Excel *Update a row* (Table3, key `Tails`, `Status` = `Disabled`). The
+workflow's `remove_tail` branch touches no lists (dropdowns keep the tail for
+historical debriefs); it records the action to `fleet_action_result.json` and
+dispatches `psa_data_refresh.yml` via the runner's GITHUB_TOKEN so the tail
+drops off the tracker within minutes. Both manage workflows also trigger their
+tracker's refresh after every action.
 
 To re-activate a disabled tail, set its Status back to `Active` on the Tail List
 (the Add Tail flow does not currently re-activate — it would append a duplicate

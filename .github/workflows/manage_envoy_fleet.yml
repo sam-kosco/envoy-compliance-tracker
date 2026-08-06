@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       action:
-        description: "Action to perform: add_tail"
+        description: "Action to perform: add_tail | remove_tail"
         required: true
         type: string
       tail:
@@ -17,6 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      actions: write
 
     steps:
       - name: Check out repo
@@ -45,12 +46,31 @@ jobs:
           action = os.environ["ACTION"].strip()
           tail   = os.environ["TAIL_INPUT"].strip().upper()
 
-          if action != "add_tail":
+          if action not in ("add_tail", "remove_tail"):
               print(f"Unsupported action: {action}", file=sys.stderr); sys.exit(1)
           if not re.match(r'^N\d{1,5}[A-Z]{0,2}$', tail):
               print(f"Invalid tail format: {tail!r}", file=sys.stderr); sys.exit(1)
 
           print(f"Action: {action}  |  Tail: {tail}")
+
+          # remove_tail: the PA flow performs the SharePoint Status=Disabled
+          # update itself; the dropdown lists intentionally keep the tail for
+          # historical debriefs. This workflow just records the action (and the
+          # follow-up step dispatches a tracker refresh so it drops off fast).
+          if action == "remove_tail":
+              result = {
+                  "tail": tail, "action": action,
+                  "timestamp": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+                  "sharepoint": {"status": "ok", "message": "Status=Disabled set by the PA flow; tracker refresh dispatched"},
+              }
+              with open("envoy_fleet_action_result.json", "w") as f:
+                  json.dump(result, f, indent=2)
+              sp = os.environ.get("GITHUB_STEP_SUMMARY")
+              if sp:
+                  with open(sp, "a") as f:
+                      f.write(f"## remove_tail: `{tail}`" + chr(10) + chr(10)
+                              + "Status=Disabled handled by the PA flow; tracker refresh dispatched." + chr(10))
+              sys.exit(0)
 
           KEY  = os.environ["JOTFORM_KEY"]
           BASE = os.environ["JOTFORM_BASE"]
@@ -171,3 +191,8 @@ jobs:
             echo "push rejected (concurrent bot commit) — rebasing and retrying ($n/3)"
             git pull --rebase
           done
+
+      - name: Trigger tracker refresh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run data_refresh.yml --repo "$GITHUB_REPOSITORY"

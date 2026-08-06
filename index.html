@@ -852,7 +852,7 @@ const PA_TAIL_WEBHOOK_URL = 'https://defaultede0c57f549f4a909f8c7ea130346f.95.en
 // List). Deliberately its own flow/URL so a remove can never hit the add flow's
 // Add-row action. Paste the flow's HTTP trigger URL here once built; until then
 // the Remove button reports "not configured" and makes no calls.
-const PA_TAIL_REMOVE_WEBHOOK_URL = 'PASTE_REMOVE_FLOW_URL_HERE';
+const PA_TAIL_REMOVE_WEBHOOK_URL = 'https://defaultede0c57f549f4a909f8c7ea130346f.95.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/22/workflows/011a1c11e129469a86090b730b369962/triggers/manual/paths/invoke?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=-h2bprirIcFFJuAFhynbHrEqnWhtgmX7dKJqwMfLHrA';
 const RESULT_URL = 'envoy_fleet_action_result.json';
 
 // In-page confirm dialog. Native confirm()/alert() are silently blocked in
@@ -986,7 +986,7 @@ async function submitRemoveTail() {
       const txt = await res.text();
       throw new Error(`HTTP ${res.status} ${txt.slice(0, 200)}`);
     }
-    status.textContent = `${tail} disabled on the Tail List. It drops off the tracker on the next refresh (within the hour).`;
+    status.textContent = `${tail} disabled on the Tail List. It drops off the tracker within a few minutes (refresh dispatched).`;
     status.style.color = '#059669';
     input.value = '';
   } catch (e) {

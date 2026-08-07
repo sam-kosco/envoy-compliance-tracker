@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-07T03:55:58.595146+00:00",
+  "generated": "2026-08-07T05:47:13.928116+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -256,10 +256,10 @@
     },
     {
       "tail": "N223NN",
-      "lastService": "2026-08-05",
+      "lastService": "2026-08-06",
       "lastED1": "2026-07-11",
       "lastED2": "2026-05-17",
-      "lastIHC": "2026-08-05",
+      "lastIHC": "2026-08-06",
       "lastLocation": "DFW",
       "lastTech": "Aunyae Morrison",
       "ED1": 3,
@@ -608,14 +608,14 @@
     },
     {
       "tail": "N255NN",
-      "lastService": "2026-07-29",
+      "lastService": "2026-08-06",
       "lastED1": "2026-07-29",
-      "lastED2": "2026-06-13",
-      "lastIHC": "2026-07-29",
-      "lastLocation": "LIT",
-      "lastTech": "Tracy Fears",
+      "lastED2": "2026-08-06",
+      "lastIHC": "2026-08-06",
+      "lastLocation": "XNA",
+      "lastTech": "Riley Woods",
       "ED1": 21,
-      "ED2": 5
+      "ED2": 59
     },
     {
       "tail": "N256NN",
@@ -630,10 +630,10 @@
     },
     {
       "tail": "N257NN",
-      "lastService": "2026-08-05",
+      "lastService": "2026-08-06",
       "lastED1": "2026-07-11",
       "lastED2": "2026-07-11",
-      "lastIHC": "2026-08-05",
+      "lastIHC": "2026-08-06",
       "lastLocation": "XNA",
       "lastTech": "Riley Woods",
       "ED1": 3,
@@ -751,12 +751,12 @@
     },
     {
       "tail": "N268NN",
-      "lastService": "2026-07-24",
+      "lastService": "2026-08-06",
       "lastED1": "2026-07-24",
       "lastED2": "2026-06-25",
-      "lastIHC": "2026-07-24",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
+      "lastIHC": "2026-08-06",
+      "lastLocation": "CVG",
+      "lastTech": "Sellers Davis",
       "ED1": 16,
       "ED2": 17
     },
@@ -795,10 +795,10 @@
     },
     {
       "tail": "N272NN",
-      "lastService": "2026-08-05",
+      "lastService": "2026-08-06",
       "lastED1": "2026-08-05",
       "lastED2": "2026-07-29",
-      "lastIHC": "2026-08-05",
+      "lastIHC": "2026-08-06",
       "lastLocation": "XNA",
       "lastTech": "Riley Woods",
       "ED1": 28,
@@ -1411,12 +1411,12 @@
     },
     {
       "tail": "N332JG",
-      "lastService": "2026-07-26",
+      "lastService": "2026-08-06",
       "lastED1": "2026-07-14",
       "lastED2": "2026-06-02",
-      "lastIHC": "2026-07-26",
+      "lastIHC": "2026-08-06",
       "lastLocation": "CVG",
-      "lastTech": "Todd Axle",
+      "lastTech": "Sellers Davis",
       "ED1": 6,
       "ED2": -6
     },
@@ -1499,12 +1499,12 @@
     },
     {
       "tail": "N340TC",
-      "lastService": "2026-08-01",
+      "lastService": "2026-08-06",
       "lastED1": "2026-07-28",
       "lastED2": "2026-08-01",
-      "lastIHC": "2026-08-01",
-      "lastLocation": "XNA",
-      "lastTech": "Riley Woods",
+      "lastIHC": "2026-08-06",
+      "lastLocation": "CVG",
+      "lastTech": "Sellers Davis",
       "ED1": 20,
       "ED2": 54
     },
@@ -1543,10 +1543,10 @@
     },
     {
       "tail": "N344JA",
-      "lastService": "2026-08-03",
+      "lastService": "2026-08-06",
       "lastED1": "2026-07-03",
       "lastED2": "2026-07-03",
-      "lastIHC": "2026-08-03",
+      "lastIHC": "2026-08-06",
       "lastLocation": "DFW",
       "lastTech": "Aunyae Morrison",
       "ED1": -5,
@@ -2071,12 +2071,12 @@
     },
     {
       "tail": "N798CC",
-      "lastService": "2026-07-25",
+      "lastService": "2026-08-06",
       "lastED1": "2026-07-06",
       "lastED2": "2026-06-22",
-      "lastIHC": "2026-07-25",
-      "lastLocation": "DFW",
-      "lastTech": "Raenita Jasper",
+      "lastIHC": "2026-08-06",
+      "lastLocation": "CVG",
+      "lastTech": "Sellers Davis",
       "ED1": -2,
       "ED2": 14
     },
@@ -2106,6 +2106,87 @@
       "tail": "N248NN",
       "date": "2026-08-31",
       "name": "Raenita Jasper",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N257NN",
+      "date": "2026-08-06",
+      "name": "Riley Woods",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N272NN",
+      "date": "2026-08-06",
+      "name": "Riley Woods",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N332JG",
+      "date": "2026-08-06",
+      "name": "Sellers Davis",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N798CC",
+      "date": "2026-08-06",
+      "name": "Sellers Davis",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N340TC",
+      "date": "2026-08-06",
+      "name": "Sellers Davis",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N268NN",
+      "date": "2026-08-06",
+      "name": "Sellers Davis",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N255NN",
+      "date": "2026-08-06",
+      "name": "Riley Woods",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 1
+    },
+    {
+      "tail": "N344JA",
+      "date": "2026-08-06",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N223NN",
+      "date": "2026-08-06",
+      "name": "Aunyae Morrison",
       "location": "DFW",
       "IHC": 1,
       "ED1": 0,

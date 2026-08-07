@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-07T05:47:13.928116+00:00",
+  "generated": "2026-08-07T07:36:59.354576+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -80,12 +80,12 @@
     },
     {
       "tail": "N207AN",
-      "lastService": "2026-08-02",
+      "lastService": "2026-08-06",
       "lastED1": "2026-07-12",
       "lastED2": "2026-07-19",
-      "lastIHC": "2026-08-02",
-      "lastLocation": "DFW",
-      "lastTech": "Raenita Jasper",
+      "lastIHC": "2026-08-06",
+      "lastLocation": "CMH",
+      "lastTech": "Tanaija Price",
       "ED1": 4,
       "ED2": 41
     },
@@ -355,12 +355,12 @@
     },
     {
       "tail": "N232NN",
-      "lastService": "2026-08-01",
+      "lastService": "2026-08-06",
       "lastED1": "2026-07-28",
       "lastED2": "2026-07-28",
-      "lastIHC": "2026-08-01",
-      "lastLocation": "LIT",
-      "lastTech": "Tracy Fears",
+      "lastIHC": "2026-08-06",
+      "lastLocation": "CMH",
+      "lastTech": "Tanaija Price",
       "ED1": 20,
       "ED2": 50
     },
@@ -817,14 +817,14 @@
     },
     {
       "tail": "N274NN",
-      "lastService": "2026-07-30",
-      "lastED1": "2026-06-28",
-      "lastED2": "2026-05-31",
-      "lastIHC": "2026-07-30",
-      "lastLocation": "DFW",
-      "lastTech": "Raenita Jasper",
-      "ED1": -10,
-      "ED2": -8
+      "lastService": "2026-08-06",
+      "lastED1": "2026-08-06",
+      "lastED2": "2026-08-06",
+      "lastIHC": "2026-08-06",
+      "lastLocation": "CMH",
+      "lastTech": "Tanaija Price",
+      "ED1": 29,
+      "ED2": 59
     },
     {
       "tail": "N275NN",
@@ -1125,14 +1125,14 @@
     },
     {
       "tail": "N307LH",
-      "lastService": "2026-08-02",
+      "lastService": "2026-08-06",
       "lastED1": "2026-08-02",
-      "lastED2": "2026-06-10",
-      "lastIHC": "2026-08-02",
+      "lastED2": "2026-08-06",
+      "lastIHC": "2026-08-06",
       "lastLocation": "XNA",
       "lastTech": "Riley Woods",
       "ED1": 25,
-      "ED2": 2
+      "ED2": 59
     },
     {
       "tail": "N308LD",
@@ -1455,13 +1455,13 @@
     },
     {
       "tail": "N336TS",
-      "lastService": "2026-08-02",
-      "lastED1": "2026-07-08",
+      "lastService": "2026-08-06",
+      "lastED1": "2026-08-06",
       "lastED2": "2026-07-13",
-      "lastIHC": "2026-08-02",
+      "lastIHC": "2026-08-06",
       "lastLocation": "CMH",
-      "lastTech": "Nasrin Mursal",
-      "ED1": 0,
+      "lastTech": "Tanaija Price",
+      "ED1": 29,
       "ED2": 35
     },
     {
@@ -1686,13 +1686,13 @@
     },
     {
       "tail": "N748RR",
-      "lastService": "2026-08-02",
-      "lastED1": "2026-07-07",
+      "lastService": "2026-08-06",
+      "lastED1": "2026-08-06",
       "lastED2": "2026-07-07",
-      "lastIHC": "2026-08-02",
-      "lastLocation": "DFW",
-      "lastTech": "Raenita Jasper",
-      "ED1": -1,
+      "lastIHC": "2026-08-06",
+      "lastLocation": "CMH",
+      "lastTech": "Tanaija  Price",
+      "ED1": 29,
       "ED2": 29
     },
     {
@@ -2173,6 +2173,60 @@
       "IHC": 1,
       "ED1": 0,
       "ED2": 1
+    },
+    {
+      "tail": "N307LH",
+      "date": "2026-08-06",
+      "name": "Riley Woods",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 1
+    },
+    {
+      "tail": "N232NN",
+      "date": "2026-08-06",
+      "name": "Tanaija Price",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N748RR",
+      "date": "2026-08-06",
+      "name": "Tanaija  Price",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N274NN",
+      "date": "2026-08-06",
+      "name": "Tanaija Price",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 1
+    },
+    {
+      "tail": "N336TS",
+      "date": "2026-08-06",
+      "name": "Tanaija Price",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N207AN",
+      "date": "2026-08-06",
+      "name": "Tanaija Price",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
     },
     {
       "tail": "N344JA",

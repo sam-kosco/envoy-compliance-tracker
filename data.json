@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-08T09:48:25.256247+00:00",
+  "generated": "2026-08-08T10:42:49.998589+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -1092,13 +1092,13 @@
     },
     {
       "tail": "N304KM",
-      "lastService": "2026-08-03",
-      "lastED1": "2026-07-08",
+      "lastService": "2026-08-07",
+      "lastED1": "2026-08-07",
       "lastED2": "2026-06-12",
-      "lastIHC": "2026-08-03",
-      "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
-      "ED1": -1,
+      "lastIHC": "2026-08-07",
+      "lastLocation": "LIT",
+      "lastTech": "Wayne Bell",
+      "ED1": 29,
       "ED2": 3
     },
     {
@@ -1136,13 +1136,13 @@
     },
     {
       "tail": "N308LD",
-      "lastService": "2026-08-06",
-      "lastED1": "2026-07-13",
+      "lastService": "2026-08-07",
+      "lastED1": "2026-08-07",
       "lastED2": "2026-06-24",
-      "lastIHC": "2026-08-06",
+      "lastIHC": "2026-08-07",
       "lastLocation": "LIT",
       "lastTech": "Wayne Bell",
-      "ED1": 4,
+      "ED1": 29,
       "ED2": 15
     },
     {
@@ -2344,6 +2344,24 @@
       "IHC": 1,
       "ED1": 1,
       "ED2": 1
+    },
+    {
+      "tail": "N304KM",
+      "date": "2026-08-07",
+      "name": "Wayne Bell",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N308LD",
+      "date": "2026-08-07",
+      "name": "Wayne Bell",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
     },
     {
       "tail": "N289MW",

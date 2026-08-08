@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-08T05:49:58.262300+00:00",
+  "generated": "2026-08-08T07:06:30.505956+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -234,13 +234,13 @@
     },
     {
       "tail": "N221NN",
-      "lastService": "2026-07-28",
-      "lastED1": "2026-06-29",
+      "lastService": "2026-08-07",
+      "lastED1": "2026-08-07",
       "lastED2": "2026-07-21",
-      "lastIHC": "2026-07-28",
-      "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
-      "ED1": -10,
+      "lastIHC": "2026-08-07",
+      "lastLocation": "XNA",
+      "lastTech": "Riley Woods",
+      "ED1": 29,
       "ED2": 42
     },
     {
@@ -278,10 +278,10 @@
     },
     {
       "tail": "N225NN",
-      "lastService": "2026-08-02",
+      "lastService": "2026-08-07",
       "lastED1": "2026-07-29",
       "lastED2": "2026-07-29",
-      "lastIHC": "2026-08-02",
+      "lastIHC": "2026-08-07",
       "lastLocation": "XNA",
       "lastTech": "Riley Woods",
       "ED1": 20,
@@ -586,12 +586,12 @@
     },
     {
       "tail": "N253NN",
-      "lastService": "2026-08-04",
+      "lastService": "2026-08-07",
       "lastED1": "2026-07-15",
       "lastED2": "2026-07-11",
-      "lastIHC": "2026-08-04",
-      "lastLocation": "LIT",
-      "lastTech": "Tracy Fears",
+      "lastIHC": "2026-08-07",
+      "lastLocation": "XNA",
+      "lastTech": "Riley Woods",
       "ED1": 6,
       "ED2": 32
     },
@@ -619,12 +619,12 @@
     },
     {
       "tail": "N256NN",
-      "lastService": "2026-08-02",
+      "lastService": "2026-08-07",
       "lastED1": "2026-07-22",
       "lastED2": "2026-06-25",
-      "lastIHC": "2026-08-02",
-      "lastLocation": "LIT",
-      "lastTech": "Wayne Bell",
+      "lastIHC": "2026-08-07",
+      "lastLocation": "XNA",
+      "lastTech": "Riley Woods",
       "ED1": 13,
       "ED2": 16
     },
@@ -2145,6 +2145,42 @@
       "location": "CVG",
       "IHC": 1,
       "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N225NN",
+      "date": "2026-08-07",
+      "name": "Riley Woods",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N253NN",
+      "date": "2026-08-07",
+      "name": "Riley Woods",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N256NN",
+      "date": "2026-08-07",
+      "name": "Riley Woods",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N221NN",
+      "date": "2026-08-07",
+      "name": "Riley Woods",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 1,
       "ED2": 0
     },
     {

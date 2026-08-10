@@ -1,14 +1,14 @@
 {
-  "generated": "2026-08-10T10:25:52.690822+00:00",
+  "generated": "2026-08-10T11:54:56.281726+00:00",
   "planes": [
     {
       "tail": "N200NN",
-      "lastService": "2026-08-08",
+      "lastService": "2026-08-09",
       "lastED1": "2026-07-20",
       "lastED2": "2026-08-08",
-      "lastIHC": "2026-08-08",
-      "lastLocation": "XNA",
-      "lastTech": "Riley Woods",
+      "lastIHC": "2026-08-09",
+      "lastLocation": "CVG",
+      "lastTech": "Bayleah Vogel",
       "ED1": 9,
       "ED2": 58
     },
@@ -652,12 +652,12 @@
     },
     {
       "tail": "N259NN",
-      "lastService": "2026-08-05",
+      "lastService": "2026-08-10",
       "lastED1": "2026-08-05",
       "lastED2": "2026-06-09",
-      "lastIHC": "2026-08-05",
+      "lastIHC": "2026-08-10",
       "lastLocation": "CVG",
-      "lastTech": "Sellers Davis",
+      "lastTech": "Bayleah Vogel",
       "ED1": 25,
       "ED2": -2
     },
@@ -1455,12 +1455,12 @@
     },
     {
       "tail": "N336TS",
-      "lastService": "2026-08-06",
+      "lastService": "2026-08-09",
       "lastED1": "2026-08-06",
       "lastED2": "2026-07-13",
-      "lastIHC": "2026-08-06",
-      "lastLocation": "CMH",
-      "lastTech": "Tanaija Price",
+      "lastIHC": "2026-08-09",
+      "lastLocation": "CVG",
+      "lastTech": "Bayleah Vogel",
       "ED1": 26,
       "ED2": 32
     },
@@ -1576,13 +1576,13 @@
     },
     {
       "tail": "N348RA",
-      "lastService": "2026-07-12",
-      "lastED1": "2026-07-10",
+      "lastService": "2026-08-09",
+      "lastED1": "2026-08-09",
       "lastED2": "2026-07-10",
-      "lastIHC": "2026-07-12",
-      "lastLocation": "DFW",
-      "lastTech": "Sharmaine Brown",
-      "ED1": -1,
+      "lastIHC": "2026-08-09",
+      "lastLocation": "CVG",
+      "lastTech": "Bayleah Vogel",
+      "ED1": 29,
       "ED2": 29
     },
     {
@@ -2016,12 +2016,12 @@
     },
     {
       "tail": "N789SS",
-      "lastService": "2026-08-01",
+      "lastService": "2026-08-09",
       "lastED1": "2026-07-10",
       "lastED2": "2026-06-08",
-      "lastIHC": "2026-08-01",
+      "lastIHC": "2026-08-09",
       "lastLocation": "CVG",
-      "lastTech": "Sellers Davis",
+      "lastTech": "Bayleah Vogel",
       "ED1": -1,
       "ED2": -3
     },
@@ -2118,6 +2118,15 @@
       "location": "LIT",
       "IHC": 1,
       "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N259NN",
+      "date": "2026-08-10",
+      "name": "Bayleah Vogel",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
       "ED2": 0
     },
     {
@@ -2316,6 +2325,42 @@
       "location": "LIT",
       "IHC": 1,
       "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N348RA",
+      "date": "2026-08-09",
+      "name": "Bayleah Vogel",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N336TS",
+      "date": "2026-08-09",
+      "name": "Bayleah Vogel",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N200NN",
+      "date": "2026-08-09",
+      "name": "Bayleah Vogel",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N789SS",
+      "date": "2026-08-09",
+      "name": "Bayleah Vogel",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
       "ED2": 0
     },
     {

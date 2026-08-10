@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-10T17:55:58.003030+00:00",
+  "generated": "2026-08-10T19:08:25.837762+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -652,10 +652,10 @@
     },
     {
       "tail": "N259NN",
-      "lastService": "2026-08-10",
+      "lastService": "2026-08-09",
       "lastED1": "2026-08-05",
       "lastED2": "2026-06-09",
-      "lastIHC": "2026-08-10",
+      "lastIHC": "2026-08-09",
       "lastLocation": "CVG",
       "lastTech": "Bayleah Vogel",
       "ED1": 25,
@@ -916,13 +916,13 @@
     },
     {
       "tail": "N283NN",
-      "lastService": "2026-08-10",
-      "lastED1": "2026-08-10",
+      "lastService": "2026-08-09",
+      "lastED1": "2026-08-09",
       "lastED2": "2026-06-28",
-      "lastIHC": "2026-08-10",
+      "lastIHC": "2026-08-09",
       "lastLocation": "LIT",
       "lastTech": "Mathew Walker",
-      "ED1": 30,
+      "ED1": 29,
       "ED2": 17
     },
     {
@@ -997,7 +997,7 @@
       "lastED1": "2026-07-25",
       "lastED2": "2026-07-21",
       "lastIHC": "2026-08-08",
-      "lastLocation": "CVG",
+      "lastLocation": "LIT",
       "lastTech": "Mathew Walker",
       "ED1": 14,
       "ED2": 40
@@ -1349,7 +1349,7 @@
       "lastED1": "2026-08-03",
       "lastED2": "2026-06-08",
       "lastIHC": "2026-08-09",
-      "lastLocation": "XNA",
+      "lastLocation": "LIT",
       "lastTech": "Mathew Walker",
       "ED1": 23,
       "ED2": -3
@@ -2112,24 +2112,6 @@
       "ED2": 0
     },
     {
-      "tail": "N283NN",
-      "date": "2026-08-10",
-      "name": "Mathew Walker",
-      "location": "LIT",
-      "IHC": 1,
-      "ED1": 1,
-      "ED2": 0
-    },
-    {
-      "tail": "N259NN",
-      "date": "2026-08-10",
-      "name": "Bayleah Vogel",
-      "location": "CVG",
-      "IHC": 1,
-      "ED1": 0,
-      "ED2": 0
-    },
-    {
       "tail": "N206NN",
       "date": "2026-08-09",
       "name": "Riley Woods",
@@ -2163,6 +2145,15 @@
       "location": "XNA",
       "IHC": 1,
       "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N283NN",
+      "date": "2026-08-09",
+      "name": "Mathew Walker",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 1,
       "ED2": 0
     },
     {
@@ -2304,7 +2295,7 @@
       "tail": "N327PG",
       "date": "2026-08-09",
       "name": "Mathew Walker",
-      "location": "XNA",
+      "location": "LIT",
       "IHC": 1,
       "ED1": 0,
       "ED2": 0
@@ -2325,6 +2316,15 @@
       "location": "LIT",
       "IHC": 1,
       "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N259NN",
+      "date": "2026-08-09",
+      "name": "Bayleah Vogel",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
       "ED2": 0
     },
     {
@@ -2619,7 +2619,7 @@
       "tail": "N290NN",
       "date": "2026-08-08",
       "name": "Mathew Walker",
-      "location": "CVG",
+      "location": "LIT",
       "IHC": 1,
       "ED1": 0,
       "ED2": 0

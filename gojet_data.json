@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-10T05:08:33.880104+00:00",
+  "generated": "2026-08-10T06:53:34.266661+00:00",
   "cycles": {
     "ED1": 60,
     "ED2": 60,
@@ -8,14 +8,14 @@
   "planes": [
     {
       "tail": "501",
-      "lastService": "2026-08-06",
+      "lastService": "2026-08-09",
       "lastED1": "2026-06-04",
       "lastED2": "2026-06-04",
       "lastCE": "2026-06-04",
-      "lastIHC": "2026-07-11",
+      "lastIHC": "2026-08-09",
       "lastRON": "2026-08-06",
       "lastLocation": "STL",
-      "lastTech": "Tiffany Hudson",
+      "lastTech": "Genesis King",
       "ED1": -7,
       "ED2": -7,
       "CE": -7
@@ -860,6 +860,17 @@
       "CE": 0,
       "IHC": 0,
       "RON": 1
+    },
+    {
+      "tail": "501",
+      "date": "2026-08-09",
+      "name": "Genesis King",
+      "location": "STL",
+      "ED1": 0,
+      "ED2": 0,
+      "CE": 0,
+      "IHC": 1,
+      "RON": 0
     },
     {
       "tail": "554",

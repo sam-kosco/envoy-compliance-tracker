@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-10T04:46:54.001134+00:00",
+  "generated": "2026-08-10T06:17:22.943084+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -256,12 +256,12 @@
     },
     {
       "tail": "N223NN",
-      "lastService": "2026-08-06",
+      "lastService": "2026-08-09",
       "lastED1": "2026-07-11",
       "lastED2": "2026-05-17",
-      "lastIHC": "2026-08-06",
+      "lastIHC": "2026-08-09",
       "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastTech": "Raenita Jasper",
       "ED1": 0,
       "ED2": -25
     },
@@ -751,12 +751,12 @@
     },
     {
       "tail": "N268NN",
-      "lastService": "2026-08-06",
+      "lastService": "2026-08-09",
       "lastED1": "2026-07-24",
       "lastED2": "2026-06-25",
-      "lastIHC": "2026-08-06",
-      "lastLocation": "CVG",
-      "lastTech": "Sellers Davis",
+      "lastIHC": "2026-08-09",
+      "lastLocation": "DFW",
+      "lastTech": "Raenita Jasper",
       "ED1": 13,
       "ED2": 14
     },
@@ -916,13 +916,13 @@
     },
     {
       "tail": "N283NN",
-      "lastService": "2026-08-05",
-      "lastED1": "2026-07-13",
+      "lastService": "2026-08-10",
+      "lastED1": "2026-08-10",
       "lastED2": "2026-06-28",
-      "lastIHC": "2026-08-05",
-      "lastLocation": "XNA",
-      "lastTech": "Riley Woods",
-      "ED1": 2,
+      "lastIHC": "2026-08-10",
+      "lastLocation": "LIT",
+      "lastTech": "Mathew Walker",
+      "ED1": 30,
       "ED2": 17
     },
     {
@@ -2112,6 +2112,15 @@
       "ED2": 0
     },
     {
+      "tail": "N283NN",
+      "date": "2026-08-10",
+      "name": "Mathew Walker",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
       "tail": "N206NN",
       "date": "2026-08-09",
       "name": "Riley Woods",
@@ -2149,6 +2158,24 @@
     },
     {
       "tail": "N248NN",
+      "date": "2026-08-09",
+      "name": "Raenita Jasper",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N223NN",
+      "date": "2026-08-09",
+      "name": "Raenita Jasper",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N268NN",
       "date": "2026-08-09",
       "name": "Raenita Jasper",
       "location": "DFW",

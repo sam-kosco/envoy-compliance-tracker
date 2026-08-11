@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-11T05:58:56.561838+00:00",
+  "generated": "2026-08-11T07:20:54.223308+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -476,13 +476,13 @@
     },
     {
       "tail": "N243NN",
-      "lastService": "2026-08-08",
-      "lastED1": "2026-07-10",
+      "lastService": "2026-08-10",
+      "lastED1": "2026-08-10",
       "lastED2": "2026-06-27",
-      "lastIHC": "2026-08-08",
-      "lastLocation": "LIT",
-      "lastTech": "Mathew Walker",
-      "ED1": -2,
+      "lastIHC": "2026-08-10",
+      "lastLocation": "SGF",
+      "lastTech": "Jeffrey Crookshanks",
+      "ED1": 29,
       "ED2": 15
     },
     {
@@ -839,14 +839,14 @@
     },
     {
       "tail": "N276NN",
-      "lastService": "2026-08-07",
-      "lastED1": "2026-07-02",
-      "lastED2": "2026-06-06",
-      "lastIHC": "2026-08-07",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
-      "ED1": -10,
-      "ED2": -6
+      "lastService": "2026-08-10",
+      "lastED1": "2026-08-10",
+      "lastED2": "2026-08-10",
+      "lastIHC": "2026-08-10",
+      "lastLocation": "DFW",
+      "lastTech": "Raenita Jasper",
+      "ED1": 29,
+      "ED2": 59
     },
     {
       "tail": "N277NN",
@@ -1059,12 +1059,12 @@
     },
     {
       "tail": "N300LK",
-      "lastService": "2026-08-06",
+      "lastService": "2026-08-10",
       "lastED1": "2026-07-29",
       "lastED2": "2026-07-29",
-      "lastIHC": "2026-08-06",
-      "lastLocation": "LIT",
-      "lastTech": "Wayne Bell",
+      "lastIHC": "2026-08-10",
+      "lastLocation": "SGF",
+      "lastTech": "Jeffrey Crookshanks",
       "ED1": 17,
       "ED2": 47
     },
@@ -1411,23 +1411,23 @@
     },
     {
       "tail": "N332JG",
-      "lastService": "2026-08-08",
+      "lastService": "2026-08-10",
       "lastED1": "2026-07-14",
       "lastED2": "2026-08-08",
-      "lastIHC": "2026-08-08",
-      "lastLocation": "XNA",
-      "lastTech": "Riley Woods",
+      "lastIHC": "2026-08-10",
+      "lastLocation": "SGF",
+      "lastTech": "Jeffrey Crookshanks",
       "ED1": 2,
       "ED2": 57
     },
     {
       "tail": "N333RQ",
-      "lastService": "2026-07-26",
+      "lastService": "2026-08-10",
       "lastED1": "2026-07-13",
       "lastED2": "2026-07-17",
-      "lastIHC": "2026-07-26",
-      "lastLocation": "LIT",
-      "lastTech": "Wayne Bell",
+      "lastIHC": "2026-08-10",
+      "lastLocation": "SGF",
+      "lastTech": "Jeffrey Crookshanks",
       "ED1": 1,
       "ED2": 35
     },
@@ -2112,6 +2112,42 @@
       "ED2": 0
     },
     {
+      "tail": "N333RQ",
+      "date": "2026-08-10",
+      "name": "Jeffrey Crookshanks",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N243NN",
+      "date": "2026-08-10",
+      "name": "Jeffrey Crookshanks",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N332JG",
+      "date": "2026-08-10",
+      "name": "Jeffrey Crookshanks",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N300LK",
+      "date": "2026-08-10",
+      "name": "Jeffrey Crookshanks",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
       "tail": "N247NN",
       "date": "2026-08-10",
       "name": "Raenita Jasper",
@@ -2137,6 +2173,15 @@
       "IHC": 1,
       "ED1": 1,
       "ED2": 0
+    },
+    {
+      "tail": "N276NN",
+      "date": "2026-08-10",
+      "name": "Raenita Jasper",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 1
     },
     {
       "tail": "N206NN",

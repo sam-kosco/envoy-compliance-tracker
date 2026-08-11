@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-11T09:09:37.101400+00:00",
+  "generated": "2026-08-11T10:58:33.030919+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -113,14 +113,14 @@
     },
     {
       "tail": "N210NN",
-      "lastService": "2026-06-18",
-      "lastED1": "2026-05-27",
-      "lastED2": "2026-05-27",
-      "lastIHC": "2026-06-18",
-      "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
-      "ED1": -46,
-      "ED2": -16
+      "lastService": "2026-08-10",
+      "lastED1": "2026-08-10",
+      "lastED2": "2026-08-10",
+      "lastIHC": "2026-08-10",
+      "lastLocation": "LIT",
+      "lastTech": "Wayne Bell",
+      "ED1": 29,
+      "ED2": 59
     },
     {
       "tail": "N211NN",
@@ -333,12 +333,12 @@
     },
     {
       "tail": "N230NN",
-      "lastService": "2026-08-07",
+      "lastService": "2026-08-10",
       "lastED1": "2026-07-12",
       "lastED2": "2026-07-06",
-      "lastIHC": "2026-08-07",
+      "lastIHC": "2026-08-10",
       "lastLocation": "LIT",
-      "lastTech": "Wayne Bell",
+      "lastTech": "Mathew Walker",
       "ED1": 0,
       "ED2": 24
     },
@@ -542,12 +542,12 @@
     },
     {
       "tail": "N249NN",
-      "lastService": "2026-08-09",
+      "lastService": "2026-08-10",
       "lastED1": "2026-08-09",
       "lastED2": "2026-07-12",
-      "lastIHC": "2026-08-09",
+      "lastIHC": "2026-08-10",
       "lastLocation": "LIT",
-      "lastTech": "Mathew Walker",
+      "lastTech": "Wayne  Bell",
       "ED1": 28,
       "ED2": 30
     },
@@ -619,12 +619,12 @@
     },
     {
       "tail": "N256NN",
-      "lastService": "2026-08-07",
+      "lastService": "2026-08-10",
       "lastED1": "2026-07-22",
       "lastED2": "2026-06-25",
-      "lastIHC": "2026-08-07",
-      "lastLocation": "XNA",
-      "lastTech": "Riley Woods",
+      "lastIHC": "2026-08-10",
+      "lastLocation": "LIT",
+      "lastTech": "Mathew Walker",
       "ED1": 10,
       "ED2": 13
     },
@@ -1367,14 +1367,14 @@
     },
     {
       "tail": "N328DS",
-      "lastService": "2026-08-04",
-      "lastED1": "2026-07-09",
-      "lastED2": "2026-06-06",
-      "lastIHC": "2026-08-04",
-      "lastLocation": "SGF",
-      "lastTech": "Steven Wilson",
-      "ED1": -3,
-      "ED2": -6
+      "lastService": "2026-08-10",
+      "lastED1": "2026-08-10",
+      "lastED2": "2026-08-10",
+      "lastIHC": "2026-08-10",
+      "lastLocation": "LIT",
+      "lastTech": "Wayne Bell",
+      "ED1": 29,
+      "ED2": 59
     },
     {
       "tail": "N329DD",
@@ -1686,12 +1686,12 @@
     },
     {
       "tail": "N748RR",
-      "lastService": "2026-08-06",
+      "lastService": "2026-08-10",
       "lastED1": "2026-08-06",
       "lastED2": "2026-07-07",
-      "lastIHC": "2026-08-06",
-      "lastLocation": "CMH",
-      "lastTech": "Tanaija  Price",
+      "lastIHC": "2026-08-10",
+      "lastLocation": "LIT",
+      "lastTech": "Mathew Walker",
       "ED1": 25,
       "ED2": 25
     },
@@ -1939,14 +1939,14 @@
     },
     {
       "tail": "N783LC",
-      "lastService": "2026-07-29",
+      "lastService": "2026-08-10",
       "lastED1": "2026-07-20",
-      "lastED2": "2026-06-04",
-      "lastIHC": "2026-07-29",
-      "lastLocation": "CMH",
-      "lastTech": "Alexander HAMILTON",
+      "lastED2": "2026-08-10",
+      "lastIHC": "2026-08-10",
+      "lastLocation": "LIT",
+      "lastTech": "Wayne  Bell",
       "ED1": 8,
-      "ED2": -8
+      "ED2": 59
     },
     {
       "tail": "N784DP",
@@ -2254,6 +2254,96 @@
       "IHC": 1,
       "ED1": 0,
       "ED2": 0
+    },
+    {
+      "tail": "N748RR",
+      "date": "2026-08-10",
+      "name": "Mathew Walker",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N256NN",
+      "date": "2026-08-10",
+      "name": "Mathew Walker",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N230NN",
+      "date": "2026-08-10",
+      "name": "Mathew Walker",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N748RR",
+      "date": "2026-08-10",
+      "name": "Wayne Bell",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N256NN",
+      "date": "2026-08-10",
+      "name": "Wayne Bell",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N230NN",
+      "date": "2026-08-10",
+      "name": "Wayne Bell",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N783LC",
+      "date": "2026-08-10",
+      "name": "Wayne  Bell",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 1
+    },
+    {
+      "tail": "N249NN",
+      "date": "2026-08-10",
+      "name": "Wayne  Bell",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N328DS",
+      "date": "2026-08-10",
+      "name": "Wayne Bell",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 1
+    },
+    {
+      "tail": "N210NN",
+      "date": "2026-08-10",
+      "name": "Wayne Bell",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 1
     },
     {
       "tail": "N247NN",

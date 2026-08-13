@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-13T02:37:26.818065+00:00",
+  "generated": "2026-08-13T04:59:16.770334+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -157,12 +157,12 @@
     },
     {
       "tail": "N214NN",
-      "lastService": "2026-08-07",
+      "lastService": "2026-08-12",
       "lastED1": "2026-08-07",
       "lastED2": "2026-08-07",
-      "lastIHC": "2026-08-07",
-      "lastLocation": "LIT",
-      "lastTech": "Wayne Bell",
+      "lastIHC": "2026-08-12",
+      "lastLocation": "DFW",
+      "lastTech": "Raenita Jasper",
       "ED1": 24,
       "ED2": 54
     },
@@ -685,12 +685,12 @@
     },
     {
       "tail": "N262NN",
-      "lastService": "2026-07-27",
+      "lastService": "2026-08-12",
       "lastED1": "2026-07-02",
       "lastED2": "2026-07-08",
-      "lastIHC": "2026-07-27",
-      "lastLocation": "XNA",
-      "lastTech": "Casey Henry",
+      "lastIHC": "2026-08-12",
+      "lastLocation": "DFW",
+      "lastTech": "Raenita Jasper",
       "ED1": -12,
       "ED2": 24
     },
@@ -2105,6 +2105,24 @@
     {
       "tail": "N248NN",
       "date": "2026-08-31",
+      "name": "Raenita Jasper",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N214NN",
+      "date": "2026-08-12",
+      "name": "Raenita Jasper",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N262NN",
+      "date": "2026-08-12",
       "name": "Raenita Jasper",
       "location": "DFW",
       "IHC": 1,

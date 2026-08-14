@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-14T04:56:29.628866+00:00",
+  "generated": "2026-08-14T06:21:33.067018+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -520,12 +520,12 @@
     },
     {
       "tail": "N247NN",
-      "lastService": "2026-08-10",
+      "lastService": "2026-08-13",
       "lastED1": "2026-07-29",
       "lastED2": "2026-06-23",
-      "lastIHC": "2026-08-10",
+      "lastIHC": "2026-08-13",
       "lastLocation": "DFW",
-      "lastTech": "Raenita Jasper",
+      "lastTech": "Aunyae Morrison",
       "ED1": 14,
       "ED2": 8
     },
@@ -1114,13 +1114,13 @@
     },
     {
       "tail": "N306DD",
-      "lastService": "2026-08-09",
-      "lastED1": "2026-07-08",
+      "lastService": "2026-08-13",
+      "lastED1": "2026-08-13",
       "lastED2": "2026-07-08",
-      "lastIHC": "2026-08-09",
-      "lastLocation": "DFW",
-      "lastTech": "Raenita Jasper",
-      "ED1": -7,
+      "lastIHC": "2026-08-13",
+      "lastLocation": "XNA",
+      "lastTech": "Riley Woods",
+      "ED1": 29,
       "ED2": 23
     },
     {
@@ -1961,12 +1961,12 @@
     },
     {
       "tail": "N785BR",
-      "lastService": "2026-08-12",
+      "lastService": "2026-08-13",
       "lastED1": "2026-07-31",
       "lastED2": "2026-06-25",
-      "lastIHC": "2026-08-12",
+      "lastIHC": "2026-08-13",
       "lastLocation": "DFW",
-      "lastTech": "Raenita Jasper",
+      "lastTech": "Aunyae Morrison",
       "ED1": 16,
       "ED2": 10
     },
@@ -2220,6 +2220,15 @@
       "ED2": 0
     },
     {
+      "tail": "N306DD",
+      "date": "2026-08-13",
+      "name": "Riley Woods",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
       "tail": "N347JT",
       "date": "2026-08-13",
       "name": "Aunyae Morrison",
@@ -2230,6 +2239,24 @@
     },
     {
       "tail": "N300LK",
+      "date": "2026-08-13",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N247NN",
+      "date": "2026-08-13",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N785BR",
       "date": "2026-08-13",
       "name": "Aunyae Morrison",
       "location": "DFW",

@@ -520,6 +520,33 @@
       </table>
     </div>
   </div>
+
+  <!-- SERVICE HISTORY BY LOCATION — view-only: does not affect the topline
+       stats or noncompliant lists above -->
+  <div class="card col-full">
+    <div class="card-header">
+      <div class="card-title">Service History by Location</div>
+      <div style="display:flex;align-items:center;gap:12px">
+        <select id="hist-location" onchange="renderLocationHistory()"
+                style="padding:6px 10px;font-size:12px;font-family:inherit;border:1.5px solid #D1D5DB;border-radius:6px;outline:none;color:var(--navy);font-weight:700;background:white">
+          <option value="">— Select location —</option>
+        </select>
+        <div class="card-count" id="hist-count"></div>
+      </div>
+    </div>
+    <div style="overflow-x:auto;">
+      <table class="fleet-table">
+        <thead><tr>
+          <th>Date</th>
+          <th>Tail #</th>
+          <th>Technician</th>
+          <th>Services</th>
+          <th>Audits</th>
+        </tr></thead>
+        <tbody id="hist-body"></tbody>
+      </table>
+    </div>
+  </div>
   </div><!-- /tab-fleet -->
 
   <div class="tab-page" id="tab-work">
@@ -739,6 +766,43 @@ function tailBlock(tail,loc) {
   return `<div class="tail-block"><div class="tail-num">${tail}</div><div class="tail-loc">${loc||'—'}</div></div>`;
 }
 
+// Service History by Location — view-only card at the bottom of the fleet
+// tab. Deliberately does NOT feed the topline stats or noncompliant lists.
+const HIST_MAX = 150;
+function renderLocationHistory() {
+  const sel = document.getElementById('hist-location');
+  const body = document.getElementById('hist-body');
+  const count = document.getElementById('hist-count');
+  if (!sel || !body || !DATA) return;
+  const loc = sel.value;
+  if (!loc) {
+    body.innerHTML = '<tr><td colspan="5" style="text-align:center;padding:24px;color:var(--text-light);font-style:italic">Select a location to view its service history</td></tr>';
+    count.textContent = '';
+    return;
+  }
+  const SVCS = ['CC','DSC','CE','ED1','ED2','Lav','IC','EC','ED3','ED4'];
+  const rows = (DATA.debriefs||[]).filter(d=>d.location===loc)
+    .sort((a,b)=>(b.date||'').localeCompare(a.date||''));
+  const shown = rows.slice(0, HIST_MAX);
+  count.textContent = rows.length > shown.length
+    ? `latest ${shown.length} of ${rows.length} debriefs`
+    : `${rows.length} debriefs`;
+  body.innerHTML = shown.map(d => {
+    const inspected = new Set((d.audits||[]).map(a=>a.service));
+    const svcs = SVCS.map(s=>`<span class="svc-chip ${d[s]?'done':'skip'}${inspected.has(s)?' inspected':''}">${s}</span>`).join('');
+    const audits = (d.audits||[]).length
+      ? d.audits.map(a=>`<a href="${a.url}" target="_blank" onclick="event.stopPropagation()" style="font-size:11px;font-weight:700;color:var(--teal);text-decoration:none">${a.service} ↗</a>`).join('&nbsp; ')
+      : '<span style="color:var(--text-light);font-size:11px">—</span>';
+    return `<tr onclick="selectTail('${d.tail}')">
+      <td style="font-size:12px;font-weight:700;color:var(--navy);white-space:nowrap">${fmtDate(d.date)}</td>
+      <td style="font-family:var(--cond);font-weight:800;color:var(--navy)">${d.tail}</td>
+      <td style="font-size:12px;color:var(--text-mid)">${d.name||'—'}</td>
+      <td><div style="display:flex;gap:3px;flex-wrap:wrap">${svcs}</div></td>
+      <td>${audits}</td>
+    </tr>`;
+  }).join('');
+}
+
 function renderAll() {
   const planes = DATA.planes;
   const gen = DATA.generated ? new Date(DATA.generated) : new Date();
@@ -763,6 +827,16 @@ function renderAll() {
   window._allTails = [...planes].map(p=>p.tail).sort((a,b)=>a.localeCompare(b));
 
   document.getElementById('fleet-count').textContent = planes.length+' aircraft';
+
+  // Service-history location picker (preserves selection across refreshes)
+  const hsel = document.getElementById('hist-location');
+  if (hsel) {
+    const prev = hsel.value;
+    const locs = [...new Set((DATA.debriefs||[]).map(d=>d.location).filter(Boolean))].sort();
+    hsel.innerHTML = '<option value="">— Select location —</option>' + locs.map(l=>`<option>${l}</option>`).join('');
+    if (locs.includes(prev)) hsel.value = prev;
+    renderLocationHistory();
+  }
   document.getElementById('fleet-body').innerHTML = [...planes].sort((a,b)=>a.tail.localeCompare(b.tail)).map(p => {
     const status = isNC(p)?'over':isSoon(p)?'warn':'ok';
     return `<tr onclick="selectTail('${p.tail}')">

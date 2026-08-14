@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-14T15:01:06.924343+00:00",
+  "generated": "2026-08-14T15:59:12.518371+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -333,10 +333,10 @@
     },
     {
       "tail": "N230NN",
-      "lastService": "2026-08-14",
+      "lastService": "2026-08-13",
       "lastED1": "2026-07-12",
       "lastED2": "2026-07-06",
-      "lastIHC": "2026-08-14",
+      "lastIHC": "2026-08-13",
       "lastLocation": "LIT",
       "lastTech": "Wayne Bell",
       "ED1": -3,
@@ -1301,14 +1301,14 @@
     },
     {
       "tail": "N323ED",
-      "lastService": "2026-08-13",
-      "lastED1": "2026-08-13",
-      "lastED2": "2026-08-13",
-      "lastIHC": "2026-08-13",
+      "lastService": "2026-08-12",
+      "lastED1": "2026-08-12",
+      "lastED2": "2026-08-12",
+      "lastIHC": "2026-08-12",
       "lastLocation": "XNA",
       "lastTech": "Casey Henry",
-      "ED1": 29,
-      "ED2": 59
+      "ED1": 28,
+      "ED2": 58
     },
     {
       "tail": "N324ES",
@@ -1466,10 +1466,10 @@
     },
     {
       "tail": "N337MR",
-      "lastService": "2026-08-13",
+      "lastService": "2026-08-12",
       "lastED1": "2026-08-04",
       "lastED2": "2026-07-04",
-      "lastIHC": "2026-08-13",
+      "lastIHC": "2026-08-12",
       "lastLocation": "XNA",
       "lastTech": "Casey Henry",
       "ED1": 20,
@@ -2112,33 +2112,6 @@
       "ED2": 0
     },
     {
-      "tail": "N230NN",
-      "date": "2026-08-14",
-      "name": "Wayne Bell",
-      "location": "LIT",
-      "IHC": 1,
-      "ED1": 0,
-      "ED2": 0
-    },
-    {
-      "tail": "N323ED",
-      "date": "2026-08-13",
-      "name": "Casey Henry",
-      "location": "XNA",
-      "IHC": 1,
-      "ED1": 1,
-      "ED2": 1
-    },
-    {
-      "tail": "N337MR",
-      "date": "2026-08-13",
-      "name": "Casey Henry",
-      "location": "XNA",
-      "IHC": 1,
-      "ED1": 0,
-      "ED2": 0
-    },
-    {
       "tail": "N248NN",
       "date": "2026-08-13",
       "name": "Riley Woods",
@@ -2337,6 +2310,15 @@
       "ED2": 0
     },
     {
+      "tail": "N230NN",
+      "date": "2026-08-13",
+      "name": "Wayne Bell",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
       "tail": "N245NN",
       "date": "2026-08-13",
       "name": "Wayne Bell",
@@ -2505,6 +2487,24 @@
       "location": "LIT",
       "IHC": 1,
       "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N323ED",
+      "date": "2026-08-12",
+      "name": "Casey Henry",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 1
+    },
+    {
+      "tail": "N337MR",
+      "date": "2026-08-12",
+      "name": "Casey Henry",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
       "ED2": 0
     },
     {

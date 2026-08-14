@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-14T22:01:26.559870+00:00",
+  "generated": "2026-08-14T23:01:21.180049+00:00",
   "planes": [
     {
       "tail": "N351DC",
@@ -509,13 +509,20 @@
     },
     {
       "tail": "N154DS",
-      "status": "noncompliant",
-      "count7d": 0,
-      "daysSinceLast": 8,
-      "lastClean": "2026-08-06",
+      "status": "soon",
+      "count7d": 1,
+      "daysSinceLast": 0,
+      "lastClean": "2026-08-14",
       "lastLocation": "KPTK",
       "lastTech": "Jakendell Brown",
       "recentInspections": [
+        {
+          "audit_id": "audit_cebc25006f5d4515afe5a7b9512081c3",
+          "date": "2026-08-14",
+          "location": "KPTK",
+          "tech": "Jakendell Brown",
+          "report_url": "https://app.safetyculture.com/report/public/audit/d69376c430fee79a9edfe6e30ddf71fb52e2919ef89ea21a57e18802bfbe18ed"
+        },
         {
           "audit_id": "audit_bdcc95fcab0f4d1b8240e5ac9fd54815",
           "date": "2026-08-06",
@@ -543,13 +550,6 @@
           "location": "KPTK",
           "tech": "Jakendell Brown",
           "report_url": "https://app.safetyculture.com/report/public/audit/b2a39aa3f82745da8d6696f277f72ea37697dbc04a458a03a8bcaec8755eb493"
-        },
-        {
-          "audit_id": "audit_6452917950a542a1a7a3f830ee37f9e7",
-          "date": "2026-07-21",
-          "location": "KPTK",
-          "tech": "Jakendell Brown",
-          "report_url": "https://app.safetyculture.com/report/public/audit/87de82d6c6f56c570065de67b8f46629dab2ad97a1a8bbcf62f300ea634a6e73"
         }
       ]
     },

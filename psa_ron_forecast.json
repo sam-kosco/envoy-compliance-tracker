@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-15T06:32:52Z",
+  "generated": "2026-08-15T15:20:46Z",
   "program": "PSA",
   "night_of": "2026-08-14",
   "tails": [
@@ -27,8 +27,8 @@
     {
       "tail": "N506AE",
       "overnight": "MKE",
-      "confidence": "in_air",
-      "last_arrival": "2026-08-15T06:33:48Z",
+      "confidence": "completed",
+      "last_arrival": "2026-08-15T06:37:00Z",
       "flights_seen": 6
     },
     {
@@ -60,6 +60,13 @@
       "flights_seen": 5
     },
     {
+      "tail": "N512AE",
+      "overnight": "CLT",
+      "confidence": "last_known",
+      "last_arrival": "2026-08-14T04:48:00Z",
+      "flights_seen": 0
+    },
+    {
       "tail": "N513AE",
       "overnight": "DFW",
       "confidence": "completed",
@@ -86,6 +93,13 @@
       "confidence": "completed",
       "last_arrival": "2026-08-15T03:05:00Z",
       "flights_seen": 7
+    },
+    {
+      "tail": "N517AE",
+      "overnight": "RDU",
+      "confidence": "last_known",
+      "last_arrival": "2026-08-13T17:06:00Z",
+      "flights_seen": 0
     },
     {
       "tail": "N518AE",
@@ -116,6 +130,13 @@
       "flights_seen": 6
     },
     {
+      "tail": "N522AE",
+      "overnight": "TYS",
+      "confidence": "last_known",
+      "last_arrival": "2026-08-10T16:31:40Z",
+      "flights_seen": 0
+    },
+    {
       "tail": "N524AE",
       "overnight": "MSN",
       "confidence": "completed",
@@ -124,10 +145,10 @@
     },
     {
       "tail": "N525AE",
-      "overnight": "PIA",
-      "confidence": "in_air",
-      "last_arrival": "2026-08-15T07:27:00Z",
-      "flights_seen": 7
+      "overnight": "ORD",
+      "confidence": "completed",
+      "last_arrival": "2026-08-15T07:45:02Z",
+      "flights_seen": 8
     },
     {
       "tail": "N526EA",
@@ -372,7 +393,14 @@
       "overnight": "DCA",
       "confidence": "completed",
       "last_arrival": "2026-08-15T06:29:00Z",
-      "flights_seen": 7
+      "flights_seen": 8
+    },
+    {
+      "tail": "N566NN",
+      "overnight": "QRO",
+      "confidence": "last_known",
+      "last_arrival": "2026-08-13T18:40:00Z",
+      "flights_seen": 0
     },
     {
       "tail": "N567NN",
@@ -389,6 +417,13 @@
       "flights_seen": 6
     },
     {
+      "tail": "N569NN",
+      "overnight": "CVG",
+      "confidence": "last_known",
+      "last_arrival": "2026-08-14T00:33:00Z",
+      "flights_seen": 1
+    },
+    {
       "tail": "N570NN",
       "overnight": "AGS",
       "confidence": "completed",
@@ -401,6 +436,13 @@
       "confidence": "completed",
       "last_arrival": "2026-08-15T00:26:00Z",
       "flights_seen": 6
+    },
+    {
+      "tail": "N572NN",
+      "overnight": "GSP",
+      "confidence": "last_known",
+      "last_arrival": "2026-08-11T16:37:28Z",
+      "flights_seen": 0
     },
     {
       "tail": "N573NN",
@@ -473,11 +515,32 @@
       "flights_seen": 6
     },
     {
+      "tail": "N583NN",
+      "overnight": "TYS",
+      "confidence": "last_known",
+      "last_arrival": "2026-08-12T23:40:00Z",
+      "flights_seen": 0
+    },
+    {
       "tail": "N584NN",
       "overnight": "DCA",
       "confidence": "completed",
       "last_arrival": "2026-08-15T02:22:00Z",
       "flights_seen": 8
+    },
+    {
+      "tail": "N585NN",
+      "overnight": "KNQA",
+      "confidence": "last_known",
+      "last_arrival": "2026-08-11T16:46:00Z",
+      "flights_seen": 0
+    },
+    {
+      "tail": "N586NN",
+      "overnight": "DFW",
+      "confidence": "last_known",
+      "last_arrival": "2026-08-12T16:55:35Z",
+      "flights_seen": 0
     },
     {
       "tail": "N587NN",
@@ -764,7 +827,7 @@
       "overnight": "MCI",
       "confidence": "completed",
       "last_arrival": "2026-08-14T18:55:00Z",
-      "flights_seen": 4
+      "flights_seen": 3
     },
     {
       "tail": "N637NN",
@@ -807,6 +870,13 @@
       "confidence": "completed",
       "last_arrival": "2026-08-15T03:17:00Z",
       "flights_seen": 3
+    },
+    {
+      "tail": "N644NN",
+      "overnight": "GNV",
+      "confidence": "last_known",
+      "last_arrival": "2026-08-10T19:33:00Z",
+      "flights_seen": 0
     },
     {
       "tail": "N645NN",
@@ -919,6 +989,13 @@
       "confidence": "completed",
       "last_arrival": "2026-08-15T03:16:00Z",
       "flights_seen": 5
+    },
+    {
+      "tail": "N529EA",
+      "overnight": "DFW",
+      "confidence": "last_known",
+      "last_arrival": "2026-08-14T02:40:00Z",
+      "flights_seen": 0
     }
   ],
   "by_airport": {
@@ -969,6 +1046,7 @@
       "N532EA"
     ],
     "CLT": [
+      "N512AE",
       "N519AE",
       "N608NN",
       "N611NN",
@@ -979,6 +1057,7 @@
       "N631NN"
     ],
     "CVG": [
+      "N569NN",
       "N591NN",
       "N633NN",
       "N649NN"
@@ -1006,7 +1085,9 @@
     ],
     "DFW": [
       "N513AE",
+      "N529EA",
       "N556NN",
+      "N586NN",
       "N603NN"
     ],
     "DSM": [
@@ -1021,7 +1102,8 @@
       "N548NN"
     ],
     "GNV": [
-      "N590NN"
+      "N590NN",
+      "N644NN"
     ],
     "GPT": [
       "N610NN"
@@ -1033,6 +1115,7 @@
     "GSP": [
       "N514AE",
       "N562NN",
+      "N572NN",
       "N587NN",
       "N593NN",
       "N595NN"
@@ -1064,6 +1147,9 @@
     ],
     "JAX": [
       "N558NN"
+    ],
+    "KNQA": [
+      "N585NN"
     ],
     "LAW": [
       "N643NN"
@@ -1121,6 +1207,9 @@
     "OMA": [
       "N619NN"
     ],
+    "ORD": [
+      "N525AE"
+    ],
     "ORF": [
       "N582NN",
       "N618NN",
@@ -1131,7 +1220,6 @@
       "N598NN"
     ],
     "PIA": [
-      "N525AE",
       "N617NN"
     ],
     "PIT": [
@@ -1145,8 +1233,12 @@
     "PVD": [
       "N576NN"
     ],
+    "QRO": [
+      "N566NN"
+    ],
     "RDU": [
-      "N515AE"
+      "N515AE",
+      "N517AE"
     ],
     "ROA": [
       "N567NN"
@@ -1173,8 +1265,10 @@
       "N720PS"
     ],
     "TYS": [
+      "N522AE",
       "N538EG",
       "N564NN",
+      "N583NN",
       "N594NN",
       "N630NN"
     ],
@@ -1207,6 +1301,7 @@
       "N725PS"
     ],
     "CLT": [
+      "N512AE",
       "N519AE",
       "N608NN",
       "N611NN",
@@ -1214,6 +1309,7 @@
       "N706PS"
     ],
     "CVG": [
+      "N569NN",
       "N591NN",
       "N633NN",
       "N649NN"
@@ -1239,6 +1335,7 @@
     "GSP": [
       "N514AE",
       "N562NN",
+      "N572NN",
       "N587NN",
       "N593NN",
       "N595NN"
@@ -1250,8 +1347,10 @@
       "N723PS"
     ],
     "TYS": [
+      "N522AE",
       "N538EG",
       "N564NN",
+      "N583NN",
       "N594NN",
       "N630NN"
     ]
@@ -1261,23 +1360,12 @@
     "N504AE",
     "N505AE",
     "N507AE",
-    "N512AE",
-    "N517AE",
-    "N522AE",
     "N523AE",
     "N528EG",
-    "N529EA",
     "N544EA",
     "N546FF",
     "N551NN",
-    "N566NN",
-    "N569NN",
-    "N572NN",
-    "N583NN",
-    "N585NN",
-    "N586NN",
     "N642NN",
-    "N644NN",
     "N648NN",
     "N702PS",
     "N705PS"

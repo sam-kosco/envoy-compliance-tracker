@@ -1,0 +1,54 @@
+name: PSA RON Analysis
+
+on:
+  schedule:
+    # Sat/Sun/Mon mornings; psa_ron_analysis.py only proceeds at 10 AM
+    # America/New_York (dual cron covers EDT/EST).
+    - cron: "7 14 * * 6,0,1"   # 10 AM EDT (summer)
+    - cron: "7 15 * * 6,0,1"   # 10 AM EST (winter)
+  workflow_dispatch:
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install openpyxl requests
+
+      - name: Refresh PSA debriefs
+        env:
+          TENANT_ID:     ${{ secrets.TENANT_ID }}
+          CLIENT_ID:     ${{ secrets.CLIENT_ID }}
+          CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
+        run: python psa_generate_data.py
+
+      - name: Run analysis and send email
+        env:
+          TENANT_ID:     ${{ secrets.TENANT_ID }}
+          CLIENT_ID:     ${{ secrets.CLIENT_ID }}
+          CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
+        run: python psa_ron_analysis.py
+
+      - name: Commit analysis record
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add psa_ron_analysis.json
+          git diff --cached --quiet || git commit -m "chore: PSA RON analysis [$(date -u '+%Y-%m-%d %H:%M UTC')]"
+          n=0
+          until git push; do
+            n=$((n+1)); [ "$n" -ge 3 ] && exit 1
+            echo "push rejected (concurrent bot commit) — rebasing and retrying ($n/3)"
+            git pull --rebase
+          done

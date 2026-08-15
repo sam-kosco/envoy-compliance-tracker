@@ -161,12 +161,19 @@ def main():
         by_airport.setdefault(r["overnight"], []).append(r["tail"])
     by_airport = {k: sorted(v) for k, v in sorted(by_airport.items())}
 
+    # Airports we service = distinct locations in the PSA debrief history.
+    covered = sorted({d.get("location") for d in json.load(open("psa_data.json")).get("debriefs", [])
+                      if d.get("location")})
+    at_covered = {k: v for k, v in by_airport.items() if k in covered}
+
     out = {
         "generated": now.strftime("%Y-%m-%dT%H:%M:%SZ"),
         "program": "PSA",
         "night_of": tonight.isoformat(),
         "tails": results,
         "by_airport": by_airport,
+        "covered_airports": covered,
+        "at_covered": at_covered,
         "unknown": sorted(unknown),
     }
     with open("psa_ron_forecast.json", "w") as f:

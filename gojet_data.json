@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-15T05:55:07.427277+00:00",
+  "generated": "2026-08-15T07:08:56.096121+00:00",
   "cycles": {
     "ED1": 60,
     "ED2": 60,
@@ -624,30 +624,30 @@
     },
     {
       "tail": "563",
-      "lastService": "2026-08-11",
+      "lastService": "2026-08-14",
       "lastED1": "2026-07-06",
       "lastED2": "2026-07-06",
       "lastCE": "2026-07-06",
       "lastIHC": "2026-08-11",
-      "lastRON": "2026-07-30",
+      "lastRON": "2026-08-14",
       "lastLocation": "STL",
-      "lastTech": "Tiffany Hudson",
+      "lastTech": "Genesis King",
       "ED1": 20,
       "ED2": 20,
       "CE": 20
     },
     {
       "tail": "564",
-      "lastService": "2026-07-11",
-      "lastED1": "2026-03-26",
-      "lastED2": "2026-03-26",
+      "lastService": "2026-08-14",
+      "lastED1": "2026-08-14",
+      "lastED2": "2026-08-14",
       "lastCE": "2026-05-01",
-      "lastIHC": "2026-06-03",
+      "lastIHC": "2026-08-14",
       "lastRON": "2026-07-11",
       "lastLocation": "STL",
       "lastTech": "Genesis King",
-      "ED1": -82,
-      "ED2": -82,
+      "ED1": 59,
+      "ED2": 59,
       "CE": -46
     },
     {
@@ -708,12 +708,12 @@
     },
     {
       "tail": "576",
-      "lastService": "2026-08-08",
+      "lastService": "2026-08-14",
       "lastED1": "2026-06-06",
       "lastED2": "2026-06-06",
       "lastCE": "2026-06-06",
       "lastIHC": "2026-07-14",
-      "lastRON": "2026-08-08",
+      "lastRON": "2026-08-14",
       "lastLocation": "STL",
       "lastTech": "Genesis King",
       "ED1": -10,
@@ -806,6 +806,39 @@
     }
   ],
   "debriefs": [
+    {
+      "tail": "576",
+      "date": "2026-08-14",
+      "name": "Genesis King",
+      "location": "STL",
+      "ED1": 0,
+      "ED2": 0,
+      "CE": 0,
+      "IHC": 0,
+      "RON": 1
+    },
+    {
+      "tail": "564",
+      "date": "2026-08-14",
+      "name": "Genesis King",
+      "location": "STL",
+      "ED1": 1,
+      "ED2": 1,
+      "CE": 0,
+      "IHC": 1,
+      "RON": 0
+    },
+    {
+      "tail": "563",
+      "date": "2026-08-14",
+      "name": "Genesis King",
+      "location": "STL",
+      "ED1": 0,
+      "ED2": 0,
+      "CE": 0,
+      "IHC": 0,
+      "RON": 1
+    },
     {
       "tail": "549",
       "date": "2026-08-13",

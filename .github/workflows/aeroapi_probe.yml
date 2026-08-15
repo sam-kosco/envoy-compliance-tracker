@@ -1,0 +1,63 @@
+name: TEMP AeroAPI fleet probe
+
+on:
+  workflow_dispatch:
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v6
+
+      - name: Probe AeroAPI coverage per fleet
+        env:
+          AERO_API_KEY: ${{ secrets.AERO_API_KEY }}
+        run: |
+          pip -q install requests
+          python3 - << 'PYEOF'
+          import os, json, time, requests
+          from datetime import datetime, timedelta, timezone
+
+          key = os.environ["AERO_API_KEY"].strip()
+          S = requests.Session(); S.headers["x-apikey"] = key
+          BASE = "https://aeroapi.flightaware.com/aeroapi"
+
+          now = datetime.now(timezone.utc)
+          start = (now - timedelta(hours=24)).strftime("%Y-%m-%dT%H:%M:%SZ")
+          end   = (now + timedelta(hours=24)).strftime("%Y-%m-%dT%H:%M:%SZ")
+
+          def sample(name, path):
+              tails = [p["tail"] for p in json.load(open(path))["planes"]][:3]
+              return name, tails
+          fleets = [sample("Envoy","data.json"), sample("PSA","psa_data.json"),
+                    sample("Mesa","mesa_data.json")]
+          jsx = requests.get("https://raw.githubusercontent.com/sam-kosco/jsx-compliance-tracker/main/data.json", timeout=30).json()
+          fleets.append(("JSX", [p["tail"] for p in jsx["planes"]][:3]))
+          # GoJet roster stores bare numbers; registrations follow N<num>GJ
+          gj = [p["tail"] for p in json.load(open("gojet_data.json"))["planes"]][:3]
+          fleets.append(("GoJet", [f"N{t}GJ" for t in gj]))
+
+          total_queries = 0
+          for name, tails in fleets:
+              print(f"=== {name} ===")
+              for tail in tails:
+                  r = S.get(f"{BASE}/flights/{tail}",
+                            params={"ident_type":"registration","start":start,"end":end}, timeout=30)
+                  total_queries += 1
+                  if r.status_code != 200:
+                      print(f"  {tail}: HTTP {r.status_code} {r.text[:150]}")
+                      time.sleep(0.6); continue
+                  flights = r.json().get("flights", [])
+                  if not flights:
+                      print(f"  {tail}: 0 flights in +/-24h window")
+                      time.sleep(0.6); continue
+                  f = flights[0]
+                  o = (f.get("origin") or {}); d = (f.get("destination") or {})
+                  print(f"  {tail}: {len(flights)} flights | latest: {f.get('ident')} "
+                        f"{o.get('code_iata') or o.get('code')}->{d.get('code_iata') or d.get('code')} "
+                        f"sched_in={f.get('scheduled_in')} actual_in={f.get('actual_in')} "
+                        f"status={f.get('status')!r}")
+                  time.sleep(0.6)
+          print(f"\nTotal AeroAPI queries used: {total_queries}")
+          PYEOF

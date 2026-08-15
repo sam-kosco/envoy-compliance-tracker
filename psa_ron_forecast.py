@@ -17,7 +17,7 @@ Writes psa_ron_forecast.json (committed by the workflow):
        "last_arrival": "...UTC...", "flights_seen": 4}, ...
     ],
     "by_airport": {"CLT": ["N500AE", ...], ...},
-    "unknown": ["N123AB", ...]          # no flight data found
+    "unknown": ["N123AB", ...]          # no arrival found within 7 days
   }
 
 confidence: "completed"  — last flight already landed (position known)
@@ -89,6 +89,38 @@ def fetch_flights(session, tail, start, end):
     return None
 
 
+def find_last_known(session, tail, cutoff):
+    """Fallback for tails with no flights in the night window: their last
+    actual arrival in the previous 7 days is where they're parked — a plane
+    that didn't fly is still overnighting somewhere. Prefers timestamped
+    arrivals; falls back to the newest untimestamped 'Arrived' flight (e.g.
+    maintenance ferries) whose destination is known."""
+    start = (cutoff - timedelta(days=7)).strftime("%Y-%m-%dT%H:%M:%SZ")
+    end = cutoff.strftime("%Y-%m-%dT%H:%M:%SZ")
+    flights = fetch_flights(session, tail, start, end)
+    if not flights:
+        return None
+    timestamped = []
+    for f in flights:
+        if f.get("cancelled"):
+            continue
+        if not (f.get("actual_in") or f.get("actual_on")):
+            continue
+        dt = arrival_dt(f)
+        code = dest_code(f)
+        if dt and code and dt <= cutoff:
+            timestamped.append((dt, code))
+    if timestamped:
+        dt, code = max(timestamped)
+        return {"overnight": code, "last_arrival": dt.strftime("%Y-%m-%dT%H:%M:%SZ")}
+    # untimestamped ferries: AeroAPI returns newest first
+    for f in flights:
+        code = dest_code(f)
+        if not f.get("cancelled") and code and "Arrived" in (f.get("status") or ""):
+            return {"overnight": code, "last_arrival": None}
+    return None
+
+
 def main():
     guard_4pm_eastern()
 
@@ -121,8 +153,16 @@ def main():
     for i, tail in enumerate(tails, 1):
         flights = fetch_flights(session, tail, start, end)
         if not flights:
-            unknown.append(tail)
-            print(f"  [{i}/{len(tails)}] {tail}: no flight data")
+            time.sleep(6.5)
+            lk = find_last_known(session, tail, cutoff)
+            if lk:
+                results.append({"tail": tail, "overnight": lk["overnight"],
+                                "confidence": "last_known",
+                                "last_arrival": lk["last_arrival"], "flights_seen": 0})
+                print(f"  [{i}/{len(tails)}] {tail}: {lk['overnight']} (last_known)")
+            else:
+                unknown.append(tail)
+                print(f"  [{i}/{len(tails)}] {tail}: no flight data in 7 days")
             time.sleep(6.5)
             continue
 
@@ -137,8 +177,16 @@ def main():
                 candidates.append((dt, f, code))
 
         if not candidates:
-            unknown.append(tail)
-            print(f"  [{i}/{len(tails)}] {tail}: no arrivals before cutoff")
+            time.sleep(6.5)
+            lk = find_last_known(session, tail, cutoff)
+            if lk:
+                results.append({"tail": tail, "overnight": lk["overnight"],
+                                "confidence": "last_known",
+                                "last_arrival": lk["last_arrival"], "flights_seen": len(flights)})
+                print(f"  [{i}/{len(tails)}] {tail}: {lk['overnight']} (last_known)")
+            else:
+                unknown.append(tail)
+                print(f"  [{i}/{len(tails)}] {tail}: no arrivals before cutoff")
             time.sleep(6.5)
             continue
 

@@ -102,14 +102,20 @@ def main():
     print(f"Forecasting overnight locations for {len(tails)} PSA tails")
 
     now = datetime.now(timezone.utc)
-    start = (now - timedelta(hours=14)).strftime("%Y-%m-%dT%H:%M:%SZ")
-    end = (now + timedelta(hours=24)).strftime("%Y-%m-%dT%H:%M:%SZ")
+    now_et = datetime.now(ET)
 
-    # "Tonight" ends at 04:00 Eastern tomorrow — arrivals after that belong
-    # to tomorrow's flying day.
-    tonight = datetime.now(ET).date()
+    # The night being forecast: before noon Eastern, it's the night already
+    # in progress (which began yesterday) — so a late-night or early-morning
+    # run substitutes for the 4 PM run that would have preceded it.
+    tonight = now_et.date() if now_et.hour >= 12 else now_et.date() - timedelta(days=1)
+
+    # Flight window = that night's flying day: 06:00 ET on night_of through
+    # 04:00 ET the morning after (the RON cutoff).
+    start_dt = datetime.combine(tonight, datetime.min.time(), ET).replace(hour=6).astimezone(timezone.utc)
     cutoff = datetime.combine(tonight + timedelta(days=1),
                               datetime.min.time(), ET).replace(hour=4).astimezone(timezone.utc)
+    start = start_dt.strftime("%Y-%m-%dT%H:%M:%SZ")
+    end = cutoff.strftime("%Y-%m-%dT%H:%M:%SZ")
 
     results, unknown = [], []
     for i, tail in enumerate(tails, 1):

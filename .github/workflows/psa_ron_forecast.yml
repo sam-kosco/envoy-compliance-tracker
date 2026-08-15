@@ -1,14 +1,11 @@
 name: PSA RON Forecast
 
 on:
-  # Cron disabled: aviationstack has no aircraft-registration data for PSA
-  # flights (aircraft is null on every JIA flight and reg_number is ignored),
-  # so scheduled runs would burn quota producing all-unknown forecasts.
-  # Re-enable once the forecast is pointed at an API that keys on
-  # registration (AeroAPI / AeroDataBox).
-  # schedule:
-  #   - cron: "7 20 * * *"   # 4 PM EDT (summer)
-  #   - cron: "7 21 * * *"   # 4 PM EST (winter)
+  schedule:
+    # Both crons fire daily; psa_ron_forecast.py only proceeds when it is
+    # 4 PM in America/New_York, giving a 4 PM Eastern run year-round.
+    - cron: "7 20 * * *"   # 4 PM EDT (summer)
+    - cron: "7 21 * * *"   # 4 PM EST (winter)
   workflow_dispatch:
 
 jobs:

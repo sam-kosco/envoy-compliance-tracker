@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-15T09:33:50.520138+00:00",
+  "generated": "2026-08-15T10:31:31.667342+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -487,21 +487,21 @@
     },
     {
       "tail": "N244NN",
-      "lastService": "2026-08-10",
+      "lastService": "2026-08-14",
       "lastED1": "2026-08-03",
       "lastED2": "2026-07-02",
-      "lastIHC": "2026-08-10",
-      "lastLocation": "CVG",
-      "lastTech": "Dvion Davis",
+      "lastIHC": "2026-08-14",
+      "lastLocation": "LIT",
+      "lastTech": "Wayne Bell",
       "ED1": 18,
       "ED2": 16
     },
     {
       "tail": "N245NN",
-      "lastService": "2026-08-13",
+      "lastService": "2026-08-14",
       "lastED1": "2026-07-09",
       "lastED2": "2026-07-13",
-      "lastIHC": "2026-08-13",
+      "lastIHC": "2026-08-14",
       "lastLocation": "LIT",
       "lastTech": "Wayne Bell",
       "ED1": -7,
@@ -586,12 +586,12 @@
     },
     {
       "tail": "N253NN",
-      "lastService": "2026-08-07",
+      "lastService": "2026-08-14",
       "lastED1": "2026-07-15",
       "lastED2": "2026-07-11",
-      "lastIHC": "2026-08-07",
-      "lastLocation": "XNA",
-      "lastTech": "Riley Woods",
+      "lastIHC": "2026-08-14",
+      "lastLocation": "LIT",
+      "lastTech": "Wayne Bell",
       "ED1": -1,
       "ED2": 25
     },
@@ -619,12 +619,12 @@
     },
     {
       "tail": "N256NN",
-      "lastService": "2026-08-13",
+      "lastService": "2026-08-14",
       "lastED1": "2026-07-22",
       "lastED2": "2026-06-25",
-      "lastIHC": "2026-08-13",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
+      "lastIHC": "2026-08-14",
+      "lastLocation": "LIT",
+      "lastTech": "Wayne Bell",
       "ED1": 6,
       "ED2": 9
     },
@@ -784,12 +784,12 @@
     },
     {
       "tail": "N271NN",
-      "lastService": "2026-08-10",
+      "lastService": "2026-08-14",
       "lastED1": "2026-07-22",
       "lastED2": "2026-07-07",
-      "lastIHC": "2026-08-10",
-      "lastLocation": "DFW",
-      "lastTech": "Raenita Jasper",
+      "lastIHC": "2026-08-14",
+      "lastLocation": "LIT",
+      "lastTech": "Wayne Bell",
       "ED1": 6,
       "ED2": 21
     },
@@ -1444,12 +1444,12 @@
     },
     {
       "tail": "N335JS",
-      "lastService": "2026-08-03",
+      "lastService": "2026-08-14",
       "lastED1": "2026-07-12",
       "lastED2": "2026-07-12",
-      "lastIHC": "2026-08-03",
-      "lastLocation": "XNA",
-      "lastTech": "Casey Henry",
+      "lastIHC": "2026-08-14",
+      "lastLocation": "LIT",
+      "lastTech": "Wayne Bell",
       "ED1": -4,
       "ED2": 26
     },
@@ -2314,6 +2314,60 @@
       "date": "2026-08-14",
       "name": "Precious Roberson",
       "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N245NN",
+      "date": "2026-08-14",
+      "name": "Wayne Bell",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N244NN",
+      "date": "2026-08-14",
+      "name": "Wayne Bell",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N256NN",
+      "date": "2026-08-14",
+      "name": "Wayne Bell",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N271NN",
+      "date": "2026-08-14",
+      "name": "Wayne Bell",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N253NN",
+      "date": "2026-08-14",
+      "name": "Wayne Bell",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N335JS",
+      "date": "2026-08-14",
+      "name": "Wayne Bell",
+      "location": "LIT",
       "IHC": 1,
       "ED1": 0,
       "ED2": 0

@@ -79,6 +79,8 @@ def fetch_flights(session, tail, start, end):
             print(f"  {tail}: rate limited — sleeping {wait}s")
             time.sleep(wait)
             continue
+        if r.status_code in (401, 403):
+            raise RuntimeError(f"AeroAPI auth failure {r.status_code}: {r.text[:300]}")
         if r.status_code in (400, 404):
             return None  # registration unknown to FlightAware
         r.raise_for_status()
@@ -90,7 +92,8 @@ def fetch_flights(session, tail, start, end):
 def main():
     guard_4pm_eastern()
 
-    key = os.environ["AERO_API_KEY"]
+    key = os.environ["AERO_API_KEY"].strip()
+    print(f"API key present: {len(key)} chars")
     session = requests.Session()
     session.headers["x-apikey"] = key
 

@@ -23,8 +23,9 @@ Writes psa_ron_forecast.json (committed by the workflow):
 confidence: "completed"  — last flight already landed (position known)
             "in_air"     — currently flying; destination per estimate
             "scheduled"  — future departure(s); destination per schedule
-            "last_known" — nothing flying/scheduled in window; using the
-                           most recent arrival before now
+            "last_known" — didn't fly: location carried forward from the
+                           previous run's state (7-day lookback only for
+                           tails with no prior record)
 Scheduling: crons at 20:07 and 21:07 UTC; on scheduled runs the guard only
 proceeds when it is 16:xx (4 PM) in America/New_York, so the forecast runs
 at 4 PM Eastern year-round. Manual dispatch skips the guard.
@@ -121,6 +122,16 @@ def find_last_known(session, tail, cutoff):
     return None
 
 
+def load_previous():
+    """Previous run's per-tail records — the running last-known-location
+    state. A tail that doesn't fly simply keeps yesterday's location."""
+    try:
+        prev = json.load(open("psa_ron_forecast.json"))
+        return {t["tail"]: t for t in prev.get("tails", [])}
+    except (FileNotFoundError, ValueError, KeyError):
+        return {}
+
+
 def main():
     guard_4pm_eastern()
 
@@ -131,7 +142,9 @@ def main():
 
     planes = json.load(open("psa_data.json"))["planes"]
     tails = [p["tail"] for p in planes]
-    print(f"Forecasting overnight locations for {len(tails)} PSA tails")
+    prev = load_previous()
+    print(f"Forecasting overnight locations for {len(tails)} PSA tails "
+          f"({len(prev)} carried-state records available)")
 
     now = datetime.now(timezone.utc)
     now_et = datetime.now(ET)
@@ -153,16 +166,24 @@ def main():
     for i, tail in enumerate(tails, 1):
         flights = fetch_flights(session, tail, start, end)
         if not flights:
-            time.sleep(6.5)
-            lk = find_last_known(session, tail, cutoff)
-            if lk:
+            FS = 0
+            lk = prev.get(tail)
+            if lk and lk.get("overnight"):
                 results.append({"tail": tail, "overnight": lk["overnight"],
                                 "confidence": "last_known",
-                                "last_arrival": lk["last_arrival"], "flights_seen": 0})
-                print(f"  [{i}/{len(tails)}] {tail}: {lk['overnight']} (last_known)")
+                                "last_arrival": lk.get("last_arrival"), "flights_seen": FS})
+                print(f"  [{i}/{len(tails)}] {tail}: {lk['overnight']} (carried forward)")
             else:
-                unknown.append(tail)
-                print(f"  [{i}/{len(tails)}] {tail}: no flight data in 7 days")
+                time.sleep(6.5)
+                lk = find_last_known(session, tail, cutoff)
+                if lk:
+                    results.append({"tail": tail, "overnight": lk["overnight"],
+                                    "confidence": "last_known",
+                                    "last_arrival": lk["last_arrival"], "flights_seen": FS})
+                    print(f"  [{i}/{len(tails)}] {tail}: {lk['overnight']} (last_known lookup)")
+                else:
+                    unknown.append(tail)
+                    print(f"  [{i}/{len(tails)}] {tail}: no location available")
             time.sleep(6.5)
             continue
 
@@ -177,16 +198,24 @@ def main():
                 candidates.append((dt, f, code))
 
         if not candidates:
-            time.sleep(6.5)
-            lk = find_last_known(session, tail, cutoff)
-            if lk:
+            FS = len(flights)
+            lk = prev.get(tail)
+            if lk and lk.get("overnight"):
                 results.append({"tail": tail, "overnight": lk["overnight"],
                                 "confidence": "last_known",
-                                "last_arrival": lk["last_arrival"], "flights_seen": len(flights)})
-                print(f"  [{i}/{len(tails)}] {tail}: {lk['overnight']} (last_known)")
+                                "last_arrival": lk.get("last_arrival"), "flights_seen": FS})
+                print(f"  [{i}/{len(tails)}] {tail}: {lk['overnight']} (carried forward)")
             else:
-                unknown.append(tail)
-                print(f"  [{i}/{len(tails)}] {tail}: no arrivals before cutoff")
+                time.sleep(6.5)
+                lk = find_last_known(session, tail, cutoff)
+                if lk:
+                    results.append({"tail": tail, "overnight": lk["overnight"],
+                                    "confidence": "last_known",
+                                    "last_arrival": lk["last_arrival"], "flights_seen": FS})
+                    print(f"  [{i}/{len(tails)}] {tail}: {lk['overnight']} (last_known lookup)")
+                else:
+                    unknown.append(tail)
+                    print(f"  [{i}/{len(tails)}] {tail}: no location available")
             time.sleep(6.5)
             continue
 

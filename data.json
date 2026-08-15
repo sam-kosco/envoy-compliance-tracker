@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-15T07:37:11.032164+00:00",
+  "generated": "2026-08-15T08:38:55.311048+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -157,12 +157,12 @@
     },
     {
       "tail": "N214NN",
-      "lastService": "2026-08-12",
+      "lastService": "2026-08-14",
       "lastED1": "2026-08-07",
       "lastED2": "2026-08-07",
-      "lastIHC": "2026-08-12",
-      "lastLocation": "DFW",
-      "lastTech": "Raenita Jasper",
+      "lastIHC": "2026-08-14",
+      "lastLocation": "CVG",
+      "lastTech": "Precious Roberson",
       "ED1": 22,
       "ED2": 52
     },
@@ -223,13 +223,13 @@
     },
     {
       "tail": "N220NN",
-      "lastService": "2026-08-07",
-      "lastED1": "2026-07-09",
+      "lastService": "2026-08-14",
+      "lastED1": "2026-08-14",
       "lastED2": "2026-08-07",
-      "lastIHC": "2026-08-07",
-      "lastLocation": "CVG",
-      "lastTech": "Precious Roberson",
-      "ED1": -7,
+      "lastIHC": "2026-08-14",
+      "lastLocation": "CMH",
+      "lastTech": "Nasrin Mursal",
+      "ED1": 29,
       "ED2": 52
     },
     {
@@ -454,10 +454,10 @@
     },
     {
       "tail": "N241NN",
-      "lastService": "2026-08-11",
+      "lastService": "2026-08-14",
       "lastED1": "2026-07-20",
       "lastED2": "2026-06-22",
-      "lastIHC": "2026-08-11",
+      "lastIHC": "2026-08-14",
       "lastLocation": "DFW",
       "lastTech": "Aunyae Morrison",
       "ED1": 4,
@@ -850,12 +850,12 @@
     },
     {
       "tail": "N277NN",
-      "lastService": "2026-08-13",
+      "lastService": "2026-08-14",
       "lastED1": "2026-08-01",
       "lastED2": "2026-06-27",
-      "lastIHC": "2026-08-13",
-      "lastLocation": "CVG",
-      "lastTech": "Precious Roberson",
+      "lastIHC": "2026-08-14",
+      "lastLocation": "CMH",
+      "lastTech": "Nasrin Mursal",
       "ED1": 16,
       "ED2": 11
     },
@@ -1103,23 +1103,23 @@
     },
     {
       "tail": "N305CL",
-      "lastService": "2026-08-10",
+      "lastService": "2026-08-14",
       "lastED1": "2026-07-24",
       "lastED2": "2026-07-16",
-      "lastIHC": "2026-08-10",
+      "lastIHC": "2026-08-14",
       "lastLocation": "CMH",
-      "lastTech": "Alexander Hamilton",
+      "lastTech": "Nasrin Mursal",
       "ED1": 8,
       "ED2": 30
     },
     {
       "tail": "N306DD",
-      "lastService": "2026-08-13",
+      "lastService": "2026-08-14",
       "lastED1": "2026-08-13",
       "lastED2": "2026-07-08",
-      "lastIHC": "2026-08-13",
-      "lastLocation": "XNA",
-      "lastTech": "Riley Woods",
+      "lastIHC": "2026-08-14",
+      "lastLocation": "DFW",
+      "lastTech": "Aunyae Morrison",
       "ED1": 28,
       "ED2": 22
     },
@@ -1620,13 +1620,13 @@
     },
     {
       "tail": "N741AK",
-      "lastService": "2026-08-10",
-      "lastED1": "2026-08-02",
+      "lastService": "2026-08-14",
+      "lastED1": "2026-08-14",
       "lastED2": "2026-08-08",
-      "lastIHC": "2026-08-10",
-      "lastLocation": "CVG",
-      "lastTech": "Dvion Davis",
-      "ED1": 17,
+      "lastIHC": "2026-08-14",
+      "lastLocation": "CMH",
+      "lastTech": "Nasrin Mursal",
+      "ED1": 29,
       "ED2": 53
     },
     {
@@ -1840,13 +1840,13 @@
     },
     {
       "tail": "N771JV",
-      "lastService": "2026-08-11",
-      "lastED1": "2026-07-04",
+      "lastService": "2026-08-14",
+      "lastED1": "2026-08-14",
       "lastED2": "2026-07-04",
-      "lastIHC": "2026-08-11",
-      "lastLocation": "CVG",
-      "lastTech": "Precious Roberson",
-      "ED1": -12,
+      "lastIHC": "2026-08-14",
+      "lastLocation": "CMH",
+      "lastTech": "Nasrin Mursal",
+      "ED1": 29,
       "ED2": 18
     },
     {
@@ -1961,10 +1961,10 @@
     },
     {
       "tail": "N785BR",
-      "lastService": "2026-08-13",
+      "lastService": "2026-08-14",
       "lastED1": "2026-07-31",
       "lastED2": "2026-06-25",
-      "lastIHC": "2026-08-13",
+      "lastIHC": "2026-08-14",
       "lastLocation": "DFW",
       "lastTech": "Aunyae Morrison",
       "ED1": 15,
@@ -2220,6 +2220,69 @@
       "ED2": 0
     },
     {
+      "tail": "N220NN",
+      "date": "2026-08-14",
+      "name": "Nasrin Mursal",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N277NN",
+      "date": "2026-08-14",
+      "name": "Nasrin Mursal",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N305CL",
+      "date": "2026-08-14",
+      "name": "Nasrin Mursal",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N741AK",
+      "date": "2026-08-14",
+      "name": "Nasrin Mursal",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N771JV",
+      "date": "2026-08-14",
+      "name": "Nasrin Mursal",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N741AK",
+      "date": "2026-08-14",
+      "name": "Nasrin Mursal",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N214NN",
+      "date": "2026-08-14",
+      "name": "Precious Roberson",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
       "tail": "N200NN",
       "date": "2026-08-14",
       "name": "Aunyae Morrison",
@@ -2248,6 +2311,33 @@
     },
     {
       "tail": "N764JD",
+      "date": "2026-08-14",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N241NN",
+      "date": "2026-08-14",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N306DD",
+      "date": "2026-08-14",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N785BR",
       "date": "2026-08-14",
       "name": "Aunyae Morrison",
       "location": "DFW",

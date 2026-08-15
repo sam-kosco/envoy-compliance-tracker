@@ -1,14 +1,14 @@
 {
-  "generated": "2026-08-15T04:40:05.844066+00:00",
+  "generated": "2026-08-15T05:33:28.353572+00:00",
   "planes": [
     {
       "tail": "N200NN",
-      "lastService": "2026-08-12",
+      "lastService": "2026-08-14",
       "lastED1": "2026-07-20",
       "lastED2": "2026-08-08",
-      "lastIHC": "2026-08-12",
-      "lastLocation": "SGF",
-      "lastTech": "Steven Wilson",
+      "lastIHC": "2026-08-14",
+      "lastLocation": "DFW",
+      "lastTech": "Aunyae Morrison",
       "ED1": 4,
       "ED2": 53
     },
@@ -608,12 +608,12 @@
     },
     {
       "tail": "N255NN",
-      "lastService": "2026-08-09",
+      "lastService": "2026-08-14",
       "lastED1": "2026-07-29",
       "lastED2": "2026-08-06",
-      "lastIHC": "2026-08-09",
-      "lastLocation": "LIT",
-      "lastTech": "Mathew Walker",
+      "lastIHC": "2026-08-14",
+      "lastLocation": "XNA",
+      "lastTech": "Riley Pinterich",
       "ED1": 13,
       "ED2": 51
     },
@@ -806,12 +806,12 @@
     },
     {
       "tail": "N273NN",
-      "lastService": "2026-08-12",
+      "lastService": "2026-08-14",
       "lastED1": "2026-08-01",
       "lastED2": "2026-08-01",
-      "lastIHC": "2026-08-12",
+      "lastIHC": "2026-08-14",
       "lastLocation": "XNA",
-      "lastTech": "Casey Henry",
+      "lastTech": "Riley Pinterich",
       "ED1": 16,
       "ED2": 46
     },
@@ -1257,13 +1257,13 @@
     },
     {
       "tail": "N319RG",
-      "lastService": "2026-08-08",
-      "lastED1": "2026-07-13",
+      "lastService": "2026-08-14",
+      "lastED1": "2026-08-14",
       "lastED2": "2026-08-02",
-      "lastIHC": "2026-08-08",
-      "lastLocation": "LIT",
-      "lastTech": "Wayne Bell",
-      "ED1": -3,
+      "lastIHC": "2026-08-14",
+      "lastLocation": "XNA",
+      "lastTech": "Riley Pinterich",
+      "ED1": 29,
       "ED2": 47
     },
     {
@@ -1389,13 +1389,13 @@
     },
     {
       "tail": "N330JT",
-      "lastService": "2026-08-01",
-      "lastED1": "2026-07-08",
+      "lastService": "2026-08-14",
+      "lastED1": "2026-08-14",
       "lastED2": "2026-07-17",
-      "lastIHC": "2026-08-01",
-      "lastLocation": "CMH",
-      "lastTech": "Nasrin  Mursal",
-      "ED1": -8,
+      "lastIHC": "2026-08-14",
+      "lastLocation": "XNA",
+      "lastTech": "Riley Pinterich",
+      "ED1": 29,
       "ED2": 31
     },
     {
@@ -1433,12 +1433,12 @@
     },
     {
       "tail": "N334CR",
-      "lastService": "2026-08-12",
+      "lastService": "2026-08-14",
       "lastED1": "2026-08-12",
       "lastED2": "2026-08-12",
-      "lastIHC": "2026-08-12",
-      "lastLocation": "LIT",
-      "lastTech": "Mathew Walker",
+      "lastIHC": "2026-08-14",
+      "lastLocation": "XNA",
+      "lastTech": "Riley Pinterich",
       "ED1": 27,
       "ED2": 57
     },
@@ -2106,6 +2106,60 @@
       "tail": "N248NN",
       "date": "2026-08-31",
       "name": "Raenita Jasper",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N330JT",
+      "date": "2026-08-14",
+      "name": "Riley Pinterich",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N255NN",
+      "date": "2026-08-14",
+      "name": "Riley Pinterich",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N334CR",
+      "date": "2026-08-14",
+      "name": "Riley Pinterich",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N273NN",
+      "date": "2026-08-14",
+      "name": "Riley Pinterich",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N319RG",
+      "date": "2026-08-14",
+      "name": "Riley Pinterich",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N200NN",
+      "date": "2026-08-14",
+      "name": "Aunyae Morrison",
       "location": "DFW",
       "IHC": 1,
       "ED1": 0,

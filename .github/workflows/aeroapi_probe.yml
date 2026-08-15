@@ -27,14 +27,8 @@ jobs:
           start = (now - timedelta(hours=24)).strftime("%Y-%m-%dT%H:%M:%SZ")
           end   = (now + timedelta(hours=24)).strftime("%Y-%m-%dT%H:%M:%SZ")
 
-          def sample(name, path):
-              tails = [p["tail"] for p in json.load(open(path))["planes"]][:3]
-              return name, tails
-          fleets = [sample("Envoy","data.json"), sample("PSA","psa_data.json"),
-                    sample("Mesa","mesa_data.json")]
-          jsx = requests.get("https://raw.githubusercontent.com/sam-kosco/jsx-compliance-tracker/main/data.json", timeout=30).json()
-          fleets.append(("JSX", [p["tail"] for p in jsx["planes"]][:3]))
-          # GoJet roster stores bare numbers; registrations follow N<num>GJ
+          # Remaining tails from the first probe (429'd on the rate limit)
+          fleets = [("JSX", ["N242JX", "N243JX"])]
           gj = [p["tail"] for p in json.load(open("gojet_data.json"))["planes"]][:3]
           fleets.append(("GoJet", [f"N{t}GJ" for t in gj]))
 
@@ -47,17 +41,17 @@ jobs:
                   total_queries += 1
                   if r.status_code != 200:
                       print(f"  {tail}: HTTP {r.status_code} {r.text[:150]}")
-                      time.sleep(0.6); continue
+                      time.sleep(8); continue
                   flights = r.json().get("flights", [])
                   if not flights:
                       print(f"  {tail}: 0 flights in +/-24h window")
-                      time.sleep(0.6); continue
+                      time.sleep(8); continue
                   f = flights[0]
                   o = (f.get("origin") or {}); d = (f.get("destination") or {})
                   print(f"  {tail}: {len(flights)} flights | latest: {f.get('ident')} "
                         f"{o.get('code_iata') or o.get('code')}->{d.get('code_iata') or d.get('code')} "
                         f"sched_in={f.get('scheduled_in')} actual_in={f.get('actual_in')} "
                         f"status={f.get('status')!r}")
-                  time.sleep(0.6)
+                  time.sleep(8)
           print(f"\nTotal AeroAPI queries used: {total_queries}")
           PYEOF

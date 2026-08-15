@@ -1,0 +1,45 @@
+name: PSA RON Forecast
+
+on:
+  schedule:
+    # Both crons fire daily; psa_ron_forecast.py only proceeds when it is
+    # 4 PM in America/New_York, giving a 4 PM Eastern run year-round.
+    - cron: "7 20 * * *"   # 4 PM EDT (summer)
+    - cron: "7 21 * * *"   # 4 PM EST (winter)
+  workflow_dispatch:
+
+jobs:
+  forecast:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run RON forecast
+        env:
+          AERO_API_KEY: ${{ secrets.AERO_API_KEY }}
+        run: python psa_ron_forecast.py
+
+      - name: Commit forecast
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add psa_ron_forecast.json
+          git diff --cached --quiet || git commit -m "chore: PSA RON forecast [$(date -u '+%Y-%m-%d %H:%M UTC')]"
+          n=0
+          until git push; do
+            n=$((n+1)); [ "$n" -ge 3 ] && exit 1
+            echo "push rejected (concurrent bot commit) — rebasing and retrying ($n/3)"
+            git pull --rebase
+          done

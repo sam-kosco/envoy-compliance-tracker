@@ -1,0 +1,42 @@
+name: TEMP aviationstack probe
+
+on:
+  workflow_dispatch:
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Probe registration data availability
+        env:
+          AERO_API_KEY: ${{ secrets.AERO_API_KEY }}
+        run: |
+          pip -q install requests
+          python3 - << 'PYEOF'
+          import os, json, requests
+          key = os.environ["AERO_API_KEY"].strip()
+          BASE = "https://api.aviationstack.com/v1/flights"
+
+          # 1. One JIA flight, full object — where does aircraft info live?
+          r = requests.get(BASE, params={"access_key": key, "airline_icao": "JIA", "limit": 2}, timeout=30)
+          r.raise_for_status()
+          data = r.json().get("data", [])
+          print("=== SAMPLE JIA FLIGHT (full object) ===")
+          print(json.dumps(data[0] if data else {}, indent=2)[:2500])
+
+          # 2. reg_number filter — does per-registration querying work?
+          for tail in ("N500AE", "N535EA"):
+              r = requests.get(BASE, params={"access_key": key, "reg_number": tail, "limit": 5}, timeout=30)
+              print(f"=== reg_number={tail}: HTTP {r.status_code} ===")
+              j = r.json()
+              if "error" in j:
+                  print("error:", json.dumps(j["error"])[:300])
+              else:
+                  d = j.get("data", [])
+                  print(f"results: {len(d)} | total: {j.get('pagination',{}).get('total')}")
+                  if d:
+                      f = d[0]
+                      print("first:", json.dumps({"aircraft": f.get("aircraft"), "flight": (f.get("flight") or {}).get("iata"),
+                            "dep": (f.get("departure") or {}).get("iata"), "arr": (f.get("arrival") or {}).get("iata"),
+                            "date": f.get("flight_date"), "status": f.get("flight_status")}))
+          PYEOF

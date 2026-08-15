@@ -1,0 +1,55 @@
+name: TEMP aviationstack fleet probe
+
+on:
+  workflow_dispatch:
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v6
+
+      - name: Probe registration coverage per fleet
+        env:
+          AERO_API_KEY: ${{ secrets.AERO_API_KEY }}
+        run: |
+          pip -q install requests
+          python3 - << 'PYEOF'
+          import os, json, requests
+          key = os.environ["AERO_API_KEY"].strip()
+          BASE = "https://api.aviationstack.com/v1/flights"
+
+          rosters = {}
+          for name, path in [("Envoy","data.json"),("PSA","psa_data.json"),
+                             ("Mesa","mesa_data.json"),("GoJet","gojet_data.json")]:
+              rosters[name] = {p["tail"].upper() for p in json.load(open(path))["planes"]}
+          jsx = requests.get("https://raw.githubusercontent.com/sam-kosco/jsx-compliance-tracker/main/data.json", timeout=30).json()
+          rosters["JSX"] = {p["tail"].upper() for p in jsx["planes"]}
+
+          FLEETS = [("Envoy","ENY"), ("PSA","JIA"), ("Mesa","ASH"), ("GoJet","GJS"), ("JSX","JSX")]
+          for name, icao in FLEETS:
+              try:
+                  r = requests.get(BASE, params={"access_key": key, "airline_icao": icao, "limit": 100}, timeout=30)
+                  r.raise_for_status()
+                  j = r.json()
+                  if "error" in j:
+                      print(f"{name} ({icao}): API error {json.dumps(j['error'])[:200]}")
+                      continue
+                  data = j.get("data", [])
+                  total = j.get("pagination", {}).get("total", 0)
+                  regs = [((f.get("aircraft") or {}).get("registration") or "").strip().upper()
+                          for f in data]
+                  regs = [x for x in regs if x]
+                  distinct = sorted(set(regs))
+                  match = sorted(set(distinct) & rosters[name])
+                  print(f"{name} ({icao}): {len(data)} flights sampled of {total} | "
+                        f"with registration: {len(regs)} | distinct regs: {len(distinct)} | "
+                        f"match our roster: {len(match)}")
+                  if distinct[:8]:
+                      print(f"   sample regs: {distinct[:8]}")
+                  if match[:8]:
+                      print(f"   roster matches: {match[:8]}")
+              except Exception as e:
+                  print(f"{name} ({icao}): FAILED {e}")
+          PYEOF

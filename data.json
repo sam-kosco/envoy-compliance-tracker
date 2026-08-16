@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-16T06:53:29.139186+00:00",
+  "generated": "2026-08-16T07:38:14.871205+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -311,12 +311,12 @@
     },
     {
       "tail": "N228NN",
-      "lastService": "2026-08-12",
+      "lastService": "2026-08-15",
       "lastED1": "2026-08-12",
       "lastED2": "2026-07-08",
-      "lastIHC": "2026-08-12",
+      "lastIHC": "2026-08-15",
       "lastLocation": "CMH",
-      "lastTech": "Tanaija Price",
+      "lastTech": "Darian Eiland",
       "ED1": 26,
       "ED2": 21
     },
@@ -839,12 +839,12 @@
     },
     {
       "tail": "N276NN",
-      "lastService": "2026-08-11",
+      "lastService": "2026-08-15",
       "lastED1": "2026-08-10",
       "lastED2": "2026-08-10",
-      "lastIHC": "2026-08-11",
-      "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastIHC": "2026-08-15",
+      "lastLocation": "CMH",
+      "lastTech": "Darian Eiland",
       "ED1": 24,
       "ED2": 54
     },
@@ -949,12 +949,12 @@
     },
     {
       "tail": "N286NN",
-      "lastService": "2026-08-13",
+      "lastService": "2026-08-15",
       "lastED1": "2026-08-02",
       "lastED2": "2026-06-21",
-      "lastIHC": "2026-08-13",
-      "lastLocation": "CVG",
-      "lastTech": "Precious Roberson",
+      "lastIHC": "2026-08-15",
+      "lastLocation": "XNA",
+      "lastTech": "Riley Pinterich",
       "ED1": 16,
       "ED2": 4
     },
@@ -1224,12 +1224,12 @@
     },
     {
       "tail": "N316GS",
-      "lastService": "2026-08-13",
+      "lastService": "2026-08-15",
       "lastED1": "2026-07-25",
       "lastED2": "2026-08-03",
-      "lastIHC": "2026-08-13",
-      "lastLocation": "CVG",
-      "lastTech": "Precious Roberson",
+      "lastIHC": "2026-08-15",
+      "lastLocation": "CMH",
+      "lastTech": "Darian Eiland",
       "ED1": 8,
       "ED2": 47
     },
@@ -1576,12 +1576,12 @@
     },
     {
       "tail": "N348RA",
-      "lastService": "2026-08-09",
+      "lastService": "2026-08-15",
       "lastED1": "2026-08-09",
       "lastED2": "2026-07-10",
-      "lastIHC": "2026-08-09",
-      "lastLocation": "CVG",
-      "lastTech": "Bayleah Vogel",
+      "lastIHC": "2026-08-15",
+      "lastLocation": "CMH",
+      "lastTech": "Darian Eiland",
       "ED1": 23,
       "ED2": 23
     },
@@ -1620,12 +1620,12 @@
     },
     {
       "tail": "N741AK",
-      "lastService": "2026-08-14",
+      "lastService": "2026-08-15",
       "lastED1": "2026-08-14",
       "lastED2": "2026-08-08",
-      "lastIHC": "2026-08-14",
+      "lastIHC": "2026-08-15",
       "lastLocation": "CMH",
-      "lastTech": "Nasrin Mursal",
+      "lastTech": "Darian Eiland",
       "ED1": 28,
       "ED2": 52
     },
@@ -2190,6 +2190,60 @@
       "location": "CVG",
       "IHC": 1,
       "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N228NN",
+      "date": "2026-08-15",
+      "name": "Darian Eiland",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N316GS",
+      "date": "2026-08-15",
+      "name": "Darian Eiland",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N348RA",
+      "date": "2026-08-15",
+      "name": "Darian Eiland",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N276NN",
+      "date": "2026-08-15",
+      "name": "Darian Eiland",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N741AK",
+      "date": "2026-08-15",
+      "name": "Darian Eiland",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N286NN",
+      "date": "2026-08-15",
+      "name": "Riley Pinterich",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
       "ED2": 0
     },
     {

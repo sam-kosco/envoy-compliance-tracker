@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-16T04:43:52.168486+00:00",
+  "generated": "2026-08-16T05:35:47.198059+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -1026,13 +1026,13 @@
     },
     {
       "tail": "N293NN",
-      "lastService": "2026-08-14",
-      "lastED1": "2026-07-21",
+      "lastService": "2026-08-15",
+      "lastED1": "2026-08-15",
       "lastED2": "2026-07-21",
-      "lastIHC": "2026-08-14",
-      "lastLocation": "XNA",
-      "lastTech": "Riley Pinterich",
-      "ED1": 4,
+      "lastIHC": "2026-08-15",
+      "lastLocation": "CVG",
+      "lastTech": "Dvion Davis",
+      "ED1": 29,
       "ED2": 34
     },
     {
@@ -1884,12 +1884,12 @@
     },
     {
       "tail": "N778RH",
-      "lastService": "2026-08-11",
+      "lastService": "2026-08-15",
       "lastED1": "2026-07-31",
       "lastED2": "2026-06-28",
-      "lastIHC": "2026-08-11",
+      "lastIHC": "2026-08-15",
       "lastLocation": "CVG",
-      "lastTech": "Precious Roberson",
+      "lastTech": "Dvion Davis",
       "ED1": 14,
       "ED2": 11
     },
@@ -2136,6 +2136,24 @@
       "location": "XNA",
       "IHC": 1,
       "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N293NN",
+      "date": "2026-08-15",
+      "name": "Dvion Davis",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N778RH",
+      "date": "2026-08-15",
+      "name": "Dvion Davis",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
       "ED2": 0
     },
     {

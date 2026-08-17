@@ -1,9 +1,33 @@
 {
-  "tail": "N999ZZ",
-  "action": "remove_tail",
-  "timestamp": "2026-08-06T04:04:20+00:00",
-  "sharepoint": {
+  "tail": "N351SC",
+  "action": "add_tail",
+  "timestamp": "2026-08-17T17:54:25+00:00",
+  "envoy_debrief": {
     "status": "ok",
-    "message": "Status=Disabled set by the PA flow; tracker refresh dispatched"
+    "message": "added at position 147 of 192"
+  },
+  "dfw_debrief": {
+    "status": "ok",
+    "message": "added at position 147 of 192"
+  },
+  "closeout": {
+    "status": "ok",
+    "message": "added at position 147 of 192"
+  },
+  "cmh": {
+    "status": "ok",
+    "message": "added at position 147 of 192"
+  },
+  "xna": {
+    "status": "ok",
+    "message": "added at position 147 of 192"
+  },
+  "sgf": {
+    "status": "ok",
+    "message": "added at position 147 of 192"
+  },
+  "lit": {
+    "status": "ok",
+    "message": "added at position 147 of 192"
   }
 }

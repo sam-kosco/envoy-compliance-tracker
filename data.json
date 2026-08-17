@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-17T07:10:25.779728+00:00",
+  "generated": "2026-08-17T08:54:01.652446+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -58,12 +58,12 @@
     },
     {
       "tail": "N205NN",
-      "lastService": "2026-08-15",
+      "lastService": "2026-08-16",
       "lastED1": "2026-08-01",
       "lastED2": "2026-06-18",
-      "lastIHC": "2026-08-15",
+      "lastIHC": "2026-08-16",
       "lastLocation": "DFW",
-      "lastTech": "NADIA  JOHNSON",
+      "lastTech": "Aunyae Morrison",
       "ED1": 14,
       "ED2": 0
     },
@@ -168,12 +168,12 @@
     },
     {
       "tail": "N215NN",
-      "lastService": "2026-08-15",
+      "lastService": "2026-08-16",
       "lastED1": "2026-07-04",
       "lastED2": "2026-08-11",
-      "lastIHC": "2026-08-15",
+      "lastIHC": "2026-08-16",
       "lastLocation": "DFW",
-      "lastTech": "NADIA  JOHNSON",
+      "lastTech": "Aunyae Morrison",
       "ED1": -14,
       "ED2": 54
     },
@@ -201,14 +201,14 @@
     },
     {
       "tail": "N218NN",
-      "lastService": "2026-08-11",
+      "lastService": "2026-08-16",
       "lastED1": "2026-07-27",
-      "lastED2": "2026-05-30",
-      "lastIHC": "2026-08-11",
-      "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastED2": "2026-08-16",
+      "lastIHC": "2026-08-16",
+      "lastLocation": "LIT",
+      "lastTech": "Mathew Walker",
       "ED1": 9,
-      "ED2": -19
+      "ED2": 59
     },
     {
       "tail": "N219NN",
@@ -883,12 +883,12 @@
     },
     {
       "tail": "N280NN",
-      "lastService": "2026-08-11",
+      "lastService": "2026-08-16",
       "lastED1": "2026-08-02",
       "lastED2": "2026-06-18",
-      "lastIHC": "2026-08-11",
+      "lastIHC": "2026-08-16",
       "lastLocation": "XNA",
-      "lastTech": "Casey Henry",
+      "lastTech": "Riley Pinterich",
       "ED1": 15,
       "ED2": 0
     },
@@ -1807,13 +1807,13 @@
     },
     {
       "tail": "N768RD",
-      "lastService": "2026-08-12",
-      "lastED1": "2026-07-14",
+      "lastService": "2026-08-16",
+      "lastED1": "2026-08-16",
       "lastED2": "2026-07-14",
-      "lastIHC": "2026-08-12",
-      "lastLocation": "SGF",
-      "lastTech": "Steven Wilson",
-      "ED1": -4,
+      "lastIHC": "2026-08-16",
+      "lastLocation": "CVG",
+      "lastTech": "Bayleah Vogel",
+      "ED1": 29,
       "ED2": 26
     },
     {
@@ -1862,12 +1862,12 @@
     },
     {
       "tail": "N774JG",
-      "lastService": "2026-08-08",
+      "lastService": "2026-08-16",
       "lastED1": "2026-08-08",
       "lastED2": "2026-06-01",
-      "lastIHC": "2026-08-08",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
+      "lastIHC": "2026-08-16",
+      "lastLocation": "DFW",
+      "lastTech": "Aunyae Morrison",
       "ED1": 21,
       "ED2": -17
     },
@@ -2247,6 +2247,33 @@
       "ED2": 0
     },
     {
+      "tail": "N218NN",
+      "date": "2026-08-16",
+      "name": "Mathew Walker",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 1
+    },
+    {
+      "tail": "N280NN",
+      "date": "2026-08-16",
+      "name": "Riley Pinterich",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N768RD",
+      "date": "2026-08-16",
+      "name": "Bayleah Vogel",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
       "tail": "N776MS",
       "date": "2026-08-16",
       "name": "Aunyae Morrison",
@@ -2275,6 +2302,33 @@
     },
     {
       "tail": "N771JV",
+      "date": "2026-08-16",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N205NN",
+      "date": "2026-08-16",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N215NN",
+      "date": "2026-08-16",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N774JG",
       "date": "2026-08-16",
       "name": "Aunyae Morrison",
       "location": "DFW",

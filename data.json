@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-17T04:52:55.144198+00:00",
+  "generated": "2026-08-17T05:41:58.614731+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -1873,12 +1873,12 @@
     },
     {
       "tail": "N776MS",
-      "lastService": "2026-08-12",
+      "lastService": "2026-08-16",
       "lastED1": "2026-07-30",
       "lastED2": "2026-07-06",
-      "lastIHC": "2026-08-12",
+      "lastIHC": "2026-08-16",
       "lastLocation": "DFW",
-      "lastTech": "Raenita Jasper",
+      "lastTech": "Aunyae Morrison",
       "ED1": 12,
       "ED2": 18
     },
@@ -2106,6 +2106,15 @@
       "tail": "N248NN",
       "date": "2026-08-31",
       "name": "Raenita Jasper",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N776MS",
+      "date": "2026-08-16",
+      "name": "Aunyae Morrison",
       "location": "DFW",
       "IHC": 1,
       "ED1": 0,

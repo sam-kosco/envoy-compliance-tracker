@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-17T17:54:49.878820+00:00",
+  "generated": "2026-08-17T18:51:35.535606+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -1597,6 +1597,28 @@
       "ED2": "No Service"
     },
     {
+      "tail": "N350CD",
+      "lastService": "2026-08-03",
+      "lastED1": null,
+      "lastED2": null,
+      "lastIHC": "2026-08-03",
+      "lastLocation": "DFW",
+      "lastTech": "Aunyae Morrison",
+      "ED1": "No Service",
+      "ED2": "No Service"
+    },
+    {
+      "tail": "N351SC",
+      "lastService": "2026-08-16",
+      "lastED1": null,
+      "lastED2": null,
+      "lastIHC": null,
+      "lastLocation": "",
+      "lastTech": "Fleet Addition",
+      "ED1": "No Service",
+      "ED2": "No Service"
+    },
+    {
       "tail": "N739AE",
       "lastService": "2026-08-12",
       "lastED1": "2026-08-05",
@@ -2079,17 +2101,6 @@
       "lastTech": "Sellers Davis",
       "ED1": -12,
       "ED2": 4
-    },
-    {
-      "tail": "N350CD",
-      "lastService": "2026-08-03",
-      "lastED1": null,
-      "lastED2": null,
-      "lastIHC": "2026-08-03",
-      "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
-      "ED1": "No Service",
-      "ED2": "No Service"
     }
   ],
   "debriefs": [
@@ -2360,6 +2371,15 @@
       "name": "Mathew Walker",
       "location": "LIT",
       "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N351SC",
+      "date": "2026-08-16",
+      "name": "Fleet Addition",
+      "location": "",
+      "IHC": 0,
       "ED1": 0,
       "ED2": 0
     },

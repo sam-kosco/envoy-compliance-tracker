@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-17T08:22:21.045158+00:00",
+  "generated": "2026-08-17T09:21:22.355725+00:00",
   "cycles": {
     "ED1": 60,
     "ED2": 60,
@@ -64,12 +64,12 @@
     },
     {
       "tail": "506",
-      "lastService": "2026-07-28",
+      "lastService": "2026-08-16",
       "lastED1": "2026-06-25",
       "lastED2": "2026-06-25",
       "lastCE": "2025-11-19",
       "lastIHC": "2026-07-28",
-      "lastRON": "2026-06-14",
+      "lastRON": "2026-08-16",
       "lastLocation": "STL",
       "lastTech": "Tiffany Hudson",
       "ED1": 7,
@@ -162,26 +162,26 @@
     },
     {
       "tail": "520",
-      "lastService": "2026-07-31",
+      "lastService": "2026-08-16",
       "lastED1": "2026-07-27",
       "lastED2": "2026-07-27",
       "lastCE": "2026-07-27",
       "lastIHC": "2026-06-27",
-      "lastRON": "2026-07-31",
+      "lastRON": "2026-08-16",
       "lastLocation": "STL",
-      "lastTech": "Genesis King",
+      "lastTech": "Tiffany Hudson",
       "ED1": 39,
       "ED2": 39,
       "CE": 39
     },
     {
       "tail": "521",
-      "lastService": "2026-08-06",
+      "lastService": "2026-08-16",
       "lastED1": "2026-06-22",
       "lastED2": "2026-06-22",
       "lastCE": "2025-12-13",
       "lastIHC": "2026-06-22",
-      "lastRON": "2026-08-06",
+      "lastRON": "2026-08-16",
       "lastLocation": "STL",
       "lastTech": "Tiffany Hudson",
       "ED1": 4,
@@ -806,6 +806,39 @@
     }
   ],
   "debriefs": [
+    {
+      "tail": "506",
+      "date": "2026-08-16",
+      "name": "Tiffany Hudson",
+      "location": "STL",
+      "ED1": 0,
+      "ED2": 0,
+      "CE": 0,
+      "IHC": 0,
+      "RON": 1
+    },
+    {
+      "tail": "521",
+      "date": "2026-08-16",
+      "name": "Tiffany Hudson",
+      "location": "STL",
+      "ED1": 0,
+      "ED2": 0,
+      "CE": 0,
+      "IHC": 0,
+      "RON": 1
+    },
+    {
+      "tail": "520",
+      "date": "2026-08-16",
+      "name": "Tiffany Hudson",
+      "location": "STL",
+      "ED1": 0,
+      "ED2": 0,
+      "CE": 0,
+      "IHC": 0,
+      "RON": 1
+    },
     {
       "tail": "523",
       "date": "2026-08-15",

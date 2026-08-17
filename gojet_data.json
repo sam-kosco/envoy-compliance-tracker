@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-17T16:58:30.151952+00:00",
+  "generated": "2026-08-17T17:58:35.763582+00:00",
   "cycles": {
     "ED1": 60,
     "ED2": 60,
@@ -103,6 +103,20 @@
       "ED1": 39,
       "ED2": 39,
       "CE": -218
+    },
+    {
+      "tail": "509",
+      "lastService": "2026-08-08",
+      "lastED1": null,
+      "lastED2": null,
+      "lastCE": null,
+      "lastIHC": "2026-08-08",
+      "lastRON": "2026-08-07",
+      "lastLocation": "STL",
+      "lastTech": "Genesis King",
+      "ED1": "No Service",
+      "ED2": "No Service",
+      "CE": "No Service"
     },
     {
       "tail": "511",
@@ -243,6 +257,20 @@
       "ED1": -22,
       "ED2": -22,
       "CE": -14
+    },
+    {
+      "tail": "529",
+      "lastService": "2026-08-06",
+      "lastED1": null,
+      "lastED2": null,
+      "lastCE": null,
+      "lastIHC": "2026-07-30",
+      "lastRON": "2026-08-06",
+      "lastLocation": "STL",
+      "lastTech": "Tiffany Hudson",
+      "ED1": "No Service",
+      "ED2": "No Service",
+      "CE": "No Service"
     },
     {
       "tail": "531",
@@ -777,29 +805,15 @@
       "CE": -183
     },
     {
-      "tail": "529",
-      "lastService": "2026-08-06",
+      "tail": "583",
+      "lastService": "2026-08-14",
       "lastED1": null,
       "lastED2": null,
       "lastCE": null,
-      "lastIHC": "2026-07-30",
-      "lastRON": "2026-08-06",
+      "lastIHC": null,
+      "lastRON": "2026-08-14",
       "lastLocation": "STL",
       "lastTech": "Tiffany Hudson",
-      "ED1": "No Service",
-      "ED2": "No Service",
-      "CE": "No Service"
-    },
-    {
-      "tail": "509",
-      "lastService": "2026-08-08",
-      "lastED1": null,
-      "lastED2": null,
-      "lastCE": null,
-      "lastIHC": "2026-08-08",
-      "lastRON": "2026-08-07",
-      "lastLocation": "STL",
-      "lastTech": "Genesis King",
       "ED1": "No Service",
       "ED2": "No Service",
       "CE": "No Service"
@@ -991,6 +1005,17 @@
       "ED2": 1,
       "CE": 0,
       "IHC": 1,
+      "RON": 0
+    },
+    {
+      "tail": "583",
+      "date": "2026-08-14",
+      "name": "Fleet Addition",
+      "location": "",
+      "ED1": 0,
+      "ED2": 0,
+      "CE": 0,
+      "IHC": 0,
       "RON": 0
     },
     {

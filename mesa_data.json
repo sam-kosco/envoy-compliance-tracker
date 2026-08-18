@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-18T03:12:31.765101+00:00",
+  "generated": "2026-08-18T04:02:35.128828+00:00",
   "cycles": {
     "IHC": 45,
     "ED": 30,
@@ -406,20 +406,20 @@
     },
     {
       "tail": "N86334",
-      "lastService": "2026-08-14",
+      "lastService": "2026-08-17",
       "lastIHC": "2026-07-09",
-      "lastED": "2026-07-26",
+      "lastED": "2026-08-17",
       "lastDSC": "2026-07-30",
-      "lastFD": "2026-08-14",
+      "lastFD": "2026-08-17",
       "lastCE": "2026-08-14",
-      "lastRON": "2026-08-14",
-      "lastEC": "2026-08-14",
-      "lastESS": "2026-08-14",
-      "lastTech": "David Blatt",
+      "lastRON": "2026-08-17",
+      "lastEC": "2026-08-17",
+      "lastESS": "2026-08-17",
+      "lastTech": "Raenita Jasper",
       "IHC": 5,
-      "ED": 7,
+      "ED": 29,
       "DSC": 11,
-      "FD": 26,
+      "FD": 29,
       "CE": 26
     },
     {
@@ -532,20 +532,20 @@
     },
     {
       "tail": "N87306",
-      "lastService": "2026-08-15",
-      "lastIHC": "2026-07-08",
+      "lastService": "2026-08-17",
+      "lastIHC": "2026-08-17",
       "lastED": "2026-08-15",
       "lastDSC": "2026-07-31",
-      "lastFD": "2026-08-15",
+      "lastFD": "2026-08-17",
       "lastCE": "2026-07-31",
       "lastRON": "2026-08-15",
-      "lastEC": "2026-08-15",
-      "lastESS": "2026-08-15",
-      "lastTech": "David Blatt",
-      "IHC": 4,
+      "lastEC": "2026-08-17",
+      "lastESS": "2026-08-17",
+      "lastTech": "Raenita Jasper",
+      "IHC": 44,
       "ED": 27,
       "DSC": 12,
-      "FD": 27,
+      "FD": 29,
       "CE": 12
     },
     {
@@ -1090,6 +1090,32 @@
     }
   ],
   "debriefs": [
+    {
+      "tail": "N87306",
+      "date": "2026-08-17",
+      "name": "Raenita Jasper",
+      "IHC": 1,
+      "ED": 0,
+      "DSC": 0,
+      "FD": 1,
+      "CE": 0,
+      "RON": 0,
+      "EC": 1,
+      "ESS": 1
+    },
+    {
+      "tail": "N86334",
+      "date": "2026-08-17",
+      "name": "Raenita Jasper",
+      "IHC": 0,
+      "ED": 1,
+      "DSC": 0,
+      "FD": 1,
+      "CE": 0,
+      "RON": 1,
+      "EC": 1,
+      "ESS": 1
+    },
     {
       "tail": "N86344",
       "date": "2026-08-16",

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-18T10:01:11.868348+00:00",
+  "generated": "2026-08-18T10:58:28.798545+00:00",
   "cycles": {
     "ED1": 60,
     "ED2": 60,
@@ -148,11 +148,11 @@
     },
     {
       "tail": "516",
-      "lastService": "2026-08-06",
+      "lastService": "2026-08-17",
       "lastED1": "2026-06-13",
       "lastED2": "2026-06-13",
       "lastCE": "2026-05-08",
-      "lastIHC": "2026-07-19",
+      "lastIHC": "2026-08-17",
       "lastRON": "2026-08-06",
       "lastLocation": "STL",
       "lastTech": "Tiffany Hudson",
@@ -316,12 +316,12 @@
     },
     {
       "tail": "536",
-      "lastService": "2026-08-12",
+      "lastService": "2026-08-17",
       "lastED1": "2026-05-09",
       "lastED2": "2026-05-09",
       "lastCE": "2026-04-03",
       "lastIHC": "2026-06-11",
-      "lastRON": "2026-08-12",
+      "lastRON": "2026-08-17",
       "lastLocation": "STL",
       "lastTech": "Tiffany Hudson",
       "ED1": -41,
@@ -624,12 +624,12 @@
     },
     {
       "tail": "561",
-      "lastService": "2026-08-15",
+      "lastService": "2026-08-17",
       "lastED1": "2026-06-19",
       "lastED2": "2026-06-19",
       "lastCE": "2026-07-01",
       "lastIHC": "2026-08-01",
-      "lastRON": "2026-08-15",
+      "lastRON": "2026-08-17",
       "lastLocation": "STL",
       "lastTech": "Tiffany Hudson",
       "ED1": 0,
@@ -820,6 +820,39 @@
     }
   ],
   "debriefs": [
+    {
+      "tail": "536",
+      "date": "2026-08-17",
+      "name": "Tiffany Hudson",
+      "location": "STL",
+      "ED1": 0,
+      "ED2": 0,
+      "CE": 0,
+      "IHC": 0,
+      "RON": 1
+    },
+    {
+      "tail": "561",
+      "date": "2026-08-17",
+      "name": "Tiffany Hudson",
+      "location": "STL",
+      "ED1": 0,
+      "ED2": 0,
+      "CE": 0,
+      "IHC": 0,
+      "RON": 1
+    },
+    {
+      "tail": "516",
+      "date": "2026-08-17",
+      "name": "Tiffany Hudson",
+      "location": "STL",
+      "ED1": 0,
+      "ED2": 0,
+      "CE": 0,
+      "IHC": 1,
+      "RON": 0
+    },
     {
       "tail": "506",
       "date": "2026-08-16",

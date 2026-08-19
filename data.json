@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-19T19:33:07.366652+00:00",
+  "generated": "2026-08-19T20:37:57.773068+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -1202,14 +1202,14 @@
     },
     {
       "tail": "N314AD",
-      "lastService": "2026-08-06",
-      "lastED1": "2026-07-07",
-      "lastED2": "2026-06-10",
-      "lastIHC": "2026-08-06",
+      "lastService": "2026-08-18",
+      "lastED1": "2026-08-18",
+      "lastED2": "2026-08-18",
+      "lastIHC": "2026-08-18",
       "lastLocation": "LIT",
-      "lastTech": "Wayne Bell",
-      "ED1": -13,
-      "ED2": -10
+      "lastTech": "Mathew Walker",
+      "ED1": 29,
+      "ED2": 59
     },
     {
       "tail": "N315NH",
@@ -2346,6 +2346,15 @@
       "IHC": 1,
       "ED1": 0,
       "ED2": 0
+    },
+    {
+      "tail": "N314AD",
+      "date": "2026-08-18",
+      "name": "Mathew Walker",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 1
     },
     {
       "tail": "N234JW",

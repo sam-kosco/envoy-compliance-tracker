@@ -1,11 +1,29 @@
 # envoy-compliance-tracker
 
 **Owner:** Samuel Kosco — Data Analyst, Foxtrot Aviation Services  
-**Repo:** `sam-kosco/envoy-compliance-tracker`  
-**Hosted at:** `sam-kosco.github.io/envoy-compliance-tracker/`
+**Repo:** `Foxtrot-Aviation-Services/envoy-compliance-tracker` (private)  
+**Hosted at:** `foxtrot-aviation-services.github.io/envoy-compliance-tracker/` (legacy `sam-kosco.github.io/envoy-compliance-tracker/` mirrored — see Org migration)
 
 This repo hosts five separate aircraft detailing compliance dashboards for Foxtrot Aviation Services. All share the same GitHub repository, GitHub Secrets, and Microsoft Entra app registration.
 
+
+## Org migration (2026-08-19)
+
+Canonical repo: **Foxtrot-Aviation-Services/envoy-compliance-tracker** (private; the Pages
+site is public at `foxtrot-aviation-services.github.io/envoy-compliance-tracker/`). The old
+`sam-kosco.github.io/envoy-compliance-tracker/` URL stays live via a same-named mirror repo
+on Sam's personal account, force-synced by this repo's "Mirror to legacy
+URL" workflow (deploy key in `MIRROR_DEPLOY_KEY`). The mirror has Actions
+DISABLED — never push to it or run anything there. Retire the legacy URL
+(delete the mirror repo + mirror.yml) once the Foxtrot Platform rollout
+replaces old links.
+
+> **PA repoint needed:** the four fleet add/remove Power Automate flows
+> (index.html + psa.html webhooks) still dispatch
+> `sam-kosco/envoy-compliance-tracker` — the mirror, where Actions are
+> disabled, so tail add/remove FAILS until each flow's GitHub HTTP action
+> targets `Foxtrot-Aviation-Services/envoy-compliance-tracker` (and its
+> PAT can reach the private org repo).
 ---
 
 ## Programs

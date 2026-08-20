@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-20T06:59:20.630020+00:00",
+  "generated": "2026-08-20T07:49:50.571657+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -47,13 +47,13 @@
     },
     {
       "tail": "N204NN",
-      "lastService": "2026-08-16",
-      "lastED1": "2026-07-05",
+      "lastService": "2026-08-19",
+      "lastED1": "2026-08-19",
       "lastED2": "2026-06-10",
-      "lastIHC": "2026-08-16",
-      "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
-      "ED1": -16,
+      "lastIHC": "2026-08-19",
+      "lastLocation": "LIT",
+      "lastTech": "Mathew Walker",
+      "ED1": 29,
       "ED2": -11
     },
     {
@@ -2235,6 +2235,15 @@
       "date": "2026-08-19",
       "name": "Casey Henry",
       "location": "XNA",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N204NN",
+      "date": "2026-08-19",
+      "name": "Mathew Walker",
+      "location": "LIT",
       "IHC": 1,
       "ED1": 1,
       "ED2": 0

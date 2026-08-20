@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-20T07:49:50.571657+00:00",
+  "generated": "2026-08-20T08:50:24.968847+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -124,10 +124,10 @@
     },
     {
       "tail": "N211NN",
-      "lastService": "2026-08-18",
+      "lastService": "2026-08-19",
       "lastED1": "2026-08-01",
       "lastED2": "2026-07-09",
-      "lastIHC": "2026-08-18",
+      "lastIHC": "2026-08-19",
       "lastLocation": "SGF",
       "lastTech": "Steven Wilson",
       "ED1": 11,
@@ -212,10 +212,10 @@
     },
     {
       "tail": "N219NN",
-      "lastService": "2026-08-18",
+      "lastService": "2026-08-19",
       "lastED1": "2026-08-06",
       "lastED2": "2026-06-29",
-      "lastIHC": "2026-08-18",
+      "lastIHC": "2026-08-19",
       "lastLocation": "SGF",
       "lastTech": "Steven Wilson",
       "ED1": 16,
@@ -388,12 +388,12 @@
     },
     {
       "tail": "N235NN",
-      "lastService": "2026-08-15",
+      "lastService": "2026-08-19",
       "lastED1": "2026-07-28",
       "lastED2": "2026-07-28",
-      "lastIHC": "2026-08-15",
-      "lastLocation": "LIT",
-      "lastTech": "Mathew Walker",
+      "lastIHC": "2026-08-19",
+      "lastLocation": "DFW",
+      "lastTech": "NADIA JOHNSON",
       "ED1": 7,
       "ED2": 37
     },
@@ -520,10 +520,10 @@
     },
     {
       "tail": "N247NN",
-      "lastService": "2026-08-18",
+      "lastService": "2026-08-19",
       "lastED1": "2026-07-29",
       "lastED2": "2026-06-23",
-      "lastIHC": "2026-08-18",
+      "lastIHC": "2026-08-19",
       "lastLocation": "SGF",
       "lastTech": "Steven Wilson",
       "ED1": 8,
@@ -971,14 +971,14 @@
     },
     {
       "tail": "N288NN",
-      "lastService": "2026-08-08",
+      "lastService": "2026-08-19",
       "lastED1": "2026-07-27",
-      "lastED2": "2026-06-03",
-      "lastIHC": "2026-08-08",
-      "lastLocation": "CMH",
-      "lastTech": "Darian Eiland",
+      "lastED2": "2026-08-19",
+      "lastIHC": "2026-08-19",
+      "lastLocation": "SGF",
+      "lastTech": "Steven Wilson",
       "ED1": 6,
-      "ED2": -18
+      "ED2": 59
     },
     {
       "tail": "N289MW",
@@ -1015,12 +1015,12 @@
     },
     {
       "tail": "N292NN",
-      "lastService": "2026-08-14",
+      "lastService": "2026-08-19",
       "lastED1": "2026-07-25",
       "lastED2": "2026-06-30",
-      "lastIHC": "2026-08-14",
+      "lastIHC": "2026-08-19",
       "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
+      "lastTech": "Steven Wilson",
       "ED1": 4,
       "ED2": 9
     },
@@ -1246,12 +1246,12 @@
     },
     {
       "tail": "N318JE",
-      "lastService": "2026-08-13",
+      "lastService": "2026-08-19",
       "lastED1": "2026-08-13",
       "lastED2": "2026-08-05",
-      "lastIHC": "2026-08-13",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
+      "lastIHC": "2026-08-19",
+      "lastLocation": "DFW",
+      "lastTech": "NADIA  JOHNSON",
       "ED1": 23,
       "ED2": 45
     },
@@ -1774,12 +1774,12 @@
     },
     {
       "tail": "N762DT",
-      "lastService": "2026-08-09",
+      "lastService": "2026-08-19",
       "lastED1": "2026-07-18",
       "lastED2": "2026-04-11",
-      "lastIHC": "2026-08-09",
-      "lastLocation": "CMH",
-      "lastTech": "Tanaija Price",
+      "lastIHC": "2026-08-19",
+      "lastLocation": "SGF",
+      "lastTech": "Steven Wilson",
       "ED1": -3,
       "ED2": -71
     },
@@ -1884,14 +1884,14 @@
     },
     {
       "tail": "N774JG",
-      "lastService": "2026-08-17",
+      "lastService": "2026-08-19",
       "lastED1": "2026-08-08",
-      "lastED2": "2026-06-01",
-      "lastIHC": "2026-08-17",
+      "lastED2": "2026-08-19",
+      "lastIHC": "2026-08-19",
       "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastTech": "NADIA JOHNSON",
       "ED1": 18,
-      "ED2": -20
+      "ED2": 59
     },
     {
       "tail": "N776MS",
@@ -1983,12 +1983,12 @@
     },
     {
       "tail": "N785BR",
-      "lastService": "2026-08-14",
+      "lastService": "2026-08-19",
       "lastED1": "2026-07-31",
       "lastED2": "2026-06-25",
-      "lastIHC": "2026-08-14",
+      "lastIHC": "2026-08-19",
       "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastTech": "NADIA  JOHNSON",
       "ED1": 10,
       "ED2": 4
     },
@@ -2249,6 +2249,60 @@
       "ED2": 0
     },
     {
+      "tail": "N762DT",
+      "date": "2026-08-19",
+      "name": "Steven Wilson",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N288NN",
+      "date": "2026-08-19",
+      "name": "Steven Wilson",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 1
+    },
+    {
+      "tail": "N292NN",
+      "date": "2026-08-19",
+      "name": "Steven Wilson",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N211NN",
+      "date": "2026-08-19",
+      "name": "Steven Wilson",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N219NN",
+      "date": "2026-08-19",
+      "name": "Steven Wilson",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N247NN",
+      "date": "2026-08-19",
+      "name": "Steven Wilson",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
       "tail": "N344JA",
       "date": "2026-08-19",
       "name": "NADIA JOHNSON",
@@ -2261,6 +2315,42 @@
       "tail": "N263NN",
       "date": "2026-08-19",
       "name": "NADIA JOHNSON",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N774JG",
+      "date": "2026-08-19",
+      "name": "NADIA JOHNSON",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 1
+    },
+    {
+      "tail": "N235NN",
+      "date": "2026-08-19",
+      "name": "NADIA JOHNSON",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N318JE",
+      "date": "2026-08-19",
+      "name": "NADIA  JOHNSON",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N785BR",
+      "date": "2026-08-19",
+      "name": "NADIA  JOHNSON",
       "location": "DFW",
       "IHC": 1,
       "ED1": 0,

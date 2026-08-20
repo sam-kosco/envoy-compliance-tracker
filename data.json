@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-20T09:43:23.717877+00:00",
+  "generated": "2026-08-20T10:39:03.644107+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -399,13 +399,13 @@
     },
     {
       "tail": "N236NN",
-      "lastService": "2026-08-17",
-      "lastED1": "2026-07-14",
+      "lastService": "2026-08-19",
+      "lastED1": "2026-08-19",
       "lastED2": "2026-07-14",
-      "lastIHC": "2026-08-17",
-      "lastLocation": "CVG",
-      "lastTech": "Precious Valadez-Roberson",
-      "ED1": -7,
+      "lastIHC": "2026-08-19",
+      "lastLocation": "LIT",
+      "lastTech": "Wayne Bell",
+      "ED1": 29,
       "ED2": 23
     },
     {
@@ -2381,6 +2381,15 @@
       "location": "LIT",
       "IHC": 1,
       "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N236NN",
+      "date": "2026-08-19",
+      "name": "Wayne Bell",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 1,
       "ED2": 0
     },
     {

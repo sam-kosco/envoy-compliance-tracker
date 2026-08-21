@@ -80,6 +80,10 @@ def fetch_flights(session, tail, start, end):
             print(f"  {tail}: rate limited — sleeping {wait}s")
             time.sleep(wait)
             continue
+        if r.status_code >= 500:
+            print(f"  {tail}: AeroAPI {r.status_code} — retrying in 30s")
+            time.sleep(30)
+            continue
         if r.status_code in (401, 403):
             raise RuntimeError(f"AeroAPI auth failure {r.status_code}: {r.text[:300]}")
         if r.status_code in (400, 404):

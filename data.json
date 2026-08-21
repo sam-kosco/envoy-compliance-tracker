@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-21T11:34:00.302402+00:00",
+  "generated": "2026-08-21T13:03:40.935824+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -1785,13 +1785,13 @@
     },
     {
       "tail": "N763CC",
-      "lastService": "2026-08-19",
-      "lastED1": "2026-08-19",
+      "lastService": "2026-08-20",
+      "lastED1": "2026-08-20",
       "lastED2": "2026-08-06",
-      "lastIHC": "2026-08-19",
-      "lastLocation": "XNA",
-      "lastTech": "Casey Henry",
-      "ED1": 28,
+      "lastIHC": "2026-08-20",
+      "lastLocation": "CMH",
+      "lastTech": "Darian Eiland",
+      "ED1": 29,
       "ED2": 45
     },
     {
@@ -2327,6 +2327,15 @@
       "location": "LIT",
       "IHC": 1,
       "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N763CC",
+      "date": "2026-08-20",
+      "name": "Darian Eiland",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 1,
       "ED2": 0
     },
     {

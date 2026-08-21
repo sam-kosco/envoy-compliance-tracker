@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-21T13:03:40.935824+00:00",
+  "generated": "2026-08-21T13:52:51.885267+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -80,12 +80,12 @@
     },
     {
       "tail": "N207AN",
-      "lastService": "2026-08-17",
+      "lastService": "2026-08-20",
       "lastED1": "2026-08-17",
       "lastED2": "2026-07-19",
-      "lastIHC": "2026-08-17",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
+      "lastIHC": "2026-08-20",
+      "lastLocation": "CMH",
+      "lastTech": "Alexander Hamilton",
       "ED1": 26,
       "ED2": 27
     },
@@ -652,14 +652,14 @@
     },
     {
       "tail": "N259NN",
-      "lastService": "2026-08-19",
+      "lastService": "2026-08-20",
       "lastED1": "2026-08-05",
-      "lastED2": "2026-06-09",
-      "lastIHC": "2026-08-19",
+      "lastED2": "2026-08-20",
+      "lastIHC": "2026-08-20",
       "lastLocation": "CMH",
-      "lastTech": "Tanaija Price",
+      "lastTech": "Darian Eiland",
       "ED1": 14,
-      "ED2": -13
+      "ED2": 59
     },
     {
       "tail": "N260NN",
@@ -817,12 +817,12 @@
     },
     {
       "tail": "N274NN",
-      "lastService": "2026-08-12",
+      "lastService": "2026-08-20",
       "lastED1": "2026-08-06",
       "lastED2": "2026-08-06",
-      "lastIHC": "2026-08-12",
-      "lastLocation": "DFW",
-      "lastTech": "Raenita Jasper",
+      "lastIHC": "2026-08-20",
+      "lastLocation": "CMH",
+      "lastTech": "Alexander Hamilton",
       "ED1": 15,
       "ED2": 45
     },
@@ -1268,14 +1268,14 @@
     },
     {
       "tail": "N320BK",
-      "lastService": "2026-08-17",
-      "lastED1": "2026-07-23",
-      "lastED2": "2026-06-12",
-      "lastIHC": "2026-08-17",
-      "lastLocation": "CVG",
-      "lastTech": "Precious Valadez-Roberson",
-      "ED1": 1,
-      "ED2": -10
+      "lastService": "2026-08-20",
+      "lastED1": "2026-08-20",
+      "lastED2": "2026-08-20",
+      "lastIHC": "2026-08-20",
+      "lastLocation": "CMH",
+      "lastTech": "Darian Eiland",
+      "ED1": 29,
+      "ED2": 59
     },
     {
       "tail": "N321JS",
@@ -2336,6 +2336,42 @@
       "location": "CMH",
       "IHC": 1,
       "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N320BK",
+      "date": "2026-08-20",
+      "name": "Darian Eiland",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 1
+    },
+    {
+      "tail": "N259NN",
+      "date": "2026-08-20",
+      "name": "Darian Eiland",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 1
+    },
+    {
+      "tail": "N207AN",
+      "date": "2026-08-20",
+      "name": "Alexander Hamilton",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N274NN",
+      "date": "2026-08-20",
+      "name": "Alexander Hamilton",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
       "ED2": 0
     },
     {

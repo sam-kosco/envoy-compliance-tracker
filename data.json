@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-22T08:40:29.637479+00:00",
+  "generated": "2026-08-22T09:35:10.507168+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -69,13 +69,13 @@
     },
     {
       "tail": "N206NN",
-      "lastService": "2026-08-13",
-      "lastED1": "2026-07-19",
+      "lastService": "2026-08-21",
+      "lastED1": "2026-08-21",
       "lastED2": "2026-07-19",
-      "lastIHC": "2026-08-13",
-      "lastLocation": "LIT",
-      "lastTech": "Wayne Bell",
-      "ED1": -4,
+      "lastIHC": "2026-08-21",
+      "lastLocation": "SGF",
+      "lastTech": "Jeffrey Crookshanks",
+      "ED1": 29,
       "ED2": 26
     },
     {
@@ -157,12 +157,12 @@
     },
     {
       "tail": "N214NN",
-      "lastService": "2026-08-18",
+      "lastService": "2026-08-21",
       "lastED1": "2026-08-07",
       "lastED2": "2026-08-07",
-      "lastIHC": "2026-08-18",
-      "lastLocation": "CMH",
-      "lastTech": "Alex Hamilton",
+      "lastIHC": "2026-08-21",
+      "lastLocation": "SGF",
+      "lastTech": "Jeffrey Crookshanks",
       "ED1": 15,
       "ED2": 45
     },
@@ -179,12 +179,12 @@
     },
     {
       "tail": "N216NN",
-      "lastService": "2026-08-17",
+      "lastService": "2026-08-21",
       "lastED1": "2026-08-17",
       "lastED2": "2026-07-16",
-      "lastIHC": "2026-08-17",
-      "lastLocation": "XNA",
-      "lastTech": "Shaun Neil",
+      "lastIHC": "2026-08-21",
+      "lastLocation": "SGF",
+      "lastTech": "Jeffrey Crookshanks",
       "ED1": 25,
       "ED2": 23
     },
@@ -1004,10 +1004,10 @@
     },
     {
       "tail": "N291NN",
-      "lastService": "2026-08-16",
+      "lastService": "2026-08-21",
       "lastED1": "2026-08-16",
       "lastED2": "2026-07-06",
-      "lastIHC": "2026-08-16",
+      "lastIHC": "2026-08-21",
       "lastLocation": "SGF",
       "lastTech": "Jeffrey Crookshanks",
       "ED1": 24,
@@ -1180,12 +1180,12 @@
     },
     {
       "tail": "N312BT",
-      "lastService": "2026-08-12",
+      "lastService": "2026-08-21",
       "lastED1": "2026-08-03",
       "lastED2": "2026-07-10",
-      "lastIHC": "2026-08-12",
-      "lastLocation": "DFW",
-      "lastTech": "Raenita Jasper",
+      "lastIHC": "2026-08-21",
+      "lastLocation": "SGF",
+      "lastTech": "Jeffrey Crookshanks",
       "ED1": 11,
       "ED2": 17
     },
@@ -1202,10 +1202,10 @@
     },
     {
       "tail": "N314AD",
-      "lastService": "2026-08-18",
+      "lastService": "2026-08-21",
       "lastED1": "2026-08-18",
       "lastED2": "2026-08-18",
-      "lastIHC": "2026-08-18",
+      "lastIHC": "2026-08-21",
       "lastLocation": "LIT",
       "lastTech": "Mathew Walker",
       "ED1": 26,
@@ -1466,12 +1466,12 @@
     },
     {
       "tail": "N337MR",
-      "lastService": "2026-08-17",
+      "lastService": "2026-08-21",
       "lastED1": "2026-08-04",
       "lastED2": "2026-07-04",
-      "lastIHC": "2026-08-17",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
+      "lastIHC": "2026-08-21",
+      "lastLocation": "LIT",
+      "lastTech": "Mathew Walker",
       "ED1": 12,
       "ED2": 11
     },
@@ -1587,12 +1587,12 @@
     },
     {
       "tail": "N349DD",
-      "lastService": "2026-07-19",
+      "lastService": "2026-08-21",
       "lastED1": null,
       "lastED2": null,
-      "lastIHC": "2026-07-19",
-      "lastLocation": "DFW",
-      "lastTech": "Sharmaine Brown",
+      "lastIHC": "2026-08-21",
+      "lastLocation": "LIT",
+      "lastTech": "Mathew Walker",
       "ED1": "No Service",
       "ED2": "No Service"
     },
@@ -2300,6 +2300,78 @@
       "location": "XNA",
       "IHC": 1,
       "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N337MR",
+      "date": "2026-08-21",
+      "name": "Mathew Walker",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N314AD",
+      "date": "2026-08-21",
+      "name": "Mathew Walker",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N291NN",
+      "date": "2026-08-21",
+      "name": "Jeffrey Crookshanks",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N214NN",
+      "date": "2026-08-21",
+      "name": "Jeffrey Crookshanks",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N312BT",
+      "date": "2026-08-21",
+      "name": "Jeffrey Crookshanks",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N216NN",
+      "date": "2026-08-21",
+      "name": "Jeffrey Crookshanks",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N206NN",
+      "date": "2026-08-21",
+      "name": "Jeffrey Crookshanks",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N349DD",
+      "date": "2026-08-21",
+      "name": "Mathew Walker",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
       "ED2": 0
     },
     {

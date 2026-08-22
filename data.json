@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-22T04:41:47.743940+00:00",
+  "generated": "2026-08-22T05:34:59.288431+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -333,12 +333,12 @@
     },
     {
       "tail": "N230NN",
-      "lastService": "2026-08-18",
+      "lastService": "2026-08-21",
       "lastED1": "2026-08-17",
       "lastED2": "2026-07-06",
-      "lastIHC": "2026-08-18",
-      "lastLocation": "LIT",
-      "lastTech": "Mathew Walker",
+      "lastIHC": "2026-08-21",
+      "lastLocation": "XNA",
+      "lastTech": "Casey Henry",
       "ED1": 25,
       "ED2": 13
     },
@@ -355,13 +355,13 @@
     },
     {
       "tail": "N232NN",
-      "lastService": "2026-08-17",
-      "lastED1": "2026-07-28",
+      "lastService": "2026-08-21",
+      "lastED1": "2026-08-21",
       "lastED2": "2026-07-28",
-      "lastIHC": "2026-08-17",
+      "lastIHC": "2026-08-21",
       "lastLocation": "XNA",
-      "lastTech": "Shaun Neil",
-      "ED1": 5,
+      "lastTech": "Casey Henry",
+      "ED1": 29,
       "ED2": 35
     },
     {
@@ -421,12 +421,12 @@
     },
     {
       "tail": "N238NN",
-      "lastService": "2026-08-17",
+      "lastService": "2026-08-21",
       "lastED1": "2026-08-05",
       "lastED2": "2026-08-17",
-      "lastIHC": "2026-08-17",
+      "lastIHC": "2026-08-21",
       "lastLocation": "XNA",
-      "lastTech": "Shaun Neil",
+      "lastTech": "Casey Henry",
       "ED1": 13,
       "ED2": 55
     },
@@ -718,14 +718,14 @@
     },
     {
       "tail": "N265NN",
-      "lastService": "2026-08-20",
+      "lastService": "2026-08-21",
       "lastED1": "2026-08-15",
-      "lastED2": "2026-06-23",
-      "lastIHC": "2026-08-20",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
+      "lastED2": "2026-08-21",
+      "lastIHC": "2026-08-21",
+      "lastLocation": "XNA",
+      "lastTech": "Casey Henry",
       "ED1": 23,
-      "ED2": 0
+      "ED2": 59
     },
     {
       "tail": "N266NN",
@@ -839,12 +839,12 @@
     },
     {
       "tail": "N276NN",
-      "lastService": "2026-08-20",
+      "lastService": "2026-08-21",
       "lastED1": "2026-08-10",
       "lastED2": "2026-08-10",
-      "lastIHC": "2026-08-20",
-      "lastLocation": "LIT",
-      "lastTech": "Mathew Walker",
+      "lastIHC": "2026-08-21",
+      "lastLocation": "XNA",
+      "lastTech": "Casey Henry",
       "ED1": 18,
       "ED2": 48
     },
@@ -1499,12 +1499,12 @@
     },
     {
       "tail": "N340TC",
-      "lastService": "2026-08-13",
+      "lastService": "2026-08-21",
       "lastED1": "2026-07-28",
       "lastED2": "2026-08-01",
-      "lastIHC": "2026-08-13",
+      "lastIHC": "2026-08-21",
       "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastTech": "NADIA JOHNSON",
       "ED1": 5,
       "ED2": 39
     },
@@ -2123,9 +2123,63 @@
       "ED2": 0
     },
     {
+      "tail": "N276NN",
+      "date": "2026-08-21",
+      "name": "Casey Henry",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N238NN",
+      "date": "2026-08-21",
+      "name": "Casey Henry",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N230NN",
+      "date": "2026-08-21",
+      "name": "Casey Henry",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N265NN",
+      "date": "2026-08-21",
+      "name": "Casey Henry",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 1
+    },
+    {
+      "tail": "N232NN",
+      "date": "2026-08-21",
+      "name": "Casey Henry",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
       "tail": "N245NN",
       "date": "2026-08-21",
       "name": "NADIA  JOHNSON",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N340TC",
+      "date": "2026-08-21",
+      "name": "NADIA JOHNSON",
       "location": "DFW",
       "IHC": 1,
       "ED1": 0,

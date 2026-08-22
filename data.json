@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-22T03:49:39.960125+00:00",
+  "generated": "2026-08-22T04:41:47.743940+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -498,12 +498,12 @@
     },
     {
       "tail": "N245NN",
-      "lastService": "2026-08-19",
+      "lastService": "2026-08-21",
       "lastED1": "2026-08-19",
       "lastED2": "2026-07-13",
-      "lastIHC": "2026-08-19",
-      "lastLocation": "LIT",
-      "lastTech": "Mathew Walker",
+      "lastIHC": "2026-08-21",
+      "lastLocation": "DFW",
+      "lastTech": "NADIA  JOHNSON",
       "ED1": 27,
       "ED2": 20
     },
@@ -2117,6 +2117,15 @@
       "tail": "N248NN",
       "date": "2026-08-31",
       "name": "Raenita Jasper",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N245NN",
+      "date": "2026-08-21",
+      "name": "NADIA  JOHNSON",
       "location": "DFW",
       "IHC": 1,
       "ED1": 0,

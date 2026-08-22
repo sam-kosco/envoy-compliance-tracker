@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-22T01:52:28.796646+00:00",
+  "generated": "2026-08-22T03:09:41.500371+00:00",
   "planes": [
     {
       "tail": "N500AE",
@@ -267,20 +267,20 @@
     },
     {
       "tail": "N515AE",
-      "lastService": "2026-08-20",
-      "lastCC": "2026-08-20",
+      "lastService": "2026-08-21",
+      "lastCC": "2026-08-21",
       "lastDSC": "2026-08-10",
       "lastCE": "2026-08-13",
       "lastED1": "2026-08-10",
       "lastED2": "2026-08-10",
       "lastLav": "2026-06-07",
-      "lastIC": "2026-08-20",
-      "lastEC": "2026-08-20",
+      "lastIC": "2026-08-21",
+      "lastEC": "2026-08-21",
       "lastED3": null,
       "lastED4": null,
       "lastLocation": "CAK",
-      "lastTech": "Ashton Conner",
-      "CC": 28,
+      "lastTech": "Amy Gribble",
+      "CC": 29,
       "DSC": 18,
       "CE": 21,
       "ED1": 18,
@@ -3413,6 +3413,23 @@
     }
   ],
   "debriefs": [
+    {
+      "tail": "N515AE",
+      "date": "2026-08-21",
+      "name": "Amy Gribble",
+      "location": "CAK",
+      "IC": 1,
+      "EC": 1,
+      "CC": 1,
+      "DSC": 0,
+      "CE": 0,
+      "ED1": 0,
+      "ED2": 0,
+      "ED3": 0,
+      "ED4": 0,
+      "Lav": 0,
+      "audits": []
+    },
     {
       "tail": "N645NN",
       "date": "2026-08-20",

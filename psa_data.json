@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-23T02:01:29.750993+00:00",
+  "generated": "2026-08-23T03:17:18.398879+00:00",
   "planes": [
     {
       "tail": "N500AE",
@@ -773,20 +773,20 @@
     },
     {
       "tail": "N540EG",
-      "lastService": "2026-08-20",
-      "lastCC": "2026-08-20",
+      "lastService": "2026-08-22",
+      "lastCC": "2026-08-22",
       "lastDSC": "2026-08-06",
       "lastCE": "2026-08-19",
       "lastED1": "2026-08-06",
       "lastED2": "2026-08-06",
       "lastLav": "2026-06-06",
-      "lastIC": "2026-08-20",
-      "lastEC": "2026-08-20",
+      "lastIC": "2026-08-22",
+      "lastEC": "2026-08-22",
       "lastED3": "2025-11-20",
       "lastED4": "2025-11-20",
-      "lastLocation": "TYS",
-      "lastTech": "Brian Parker",
-      "CC": 27,
+      "lastLocation": "DCA",
+      "lastTech": "Levorn Smallwood",
+      "CC": 29,
       "DSC": 13,
       "CE": 26,
       "ED1": 13,
@@ -3413,6 +3413,23 @@
     }
   ],
   "debriefs": [
+    {
+      "tail": "N540EG",
+      "date": "2026-08-22",
+      "name": "Levorn Smallwood",
+      "location": "DCA",
+      "IC": 1,
+      "EC": 1,
+      "CC": 1,
+      "DSC": 0,
+      "CE": 0,
+      "ED1": 0,
+      "ED2": 0,
+      "ED3": 0,
+      "ED4": 0,
+      "Lav": 0,
+      "audits": []
+    },
     {
       "tail": "N515AE",
       "date": "2026-08-21",

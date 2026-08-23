@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-23T05:37:01.018770+00:00",
+  "generated": "2026-08-23T06:54:32.028049+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -80,12 +80,12 @@
     },
     {
       "tail": "N207AN",
-      "lastService": "2026-08-20",
+      "lastService": "2026-08-22",
       "lastED1": "2026-08-17",
       "lastED2": "2026-07-19",
-      "lastIHC": "2026-08-20",
-      "lastLocation": "CMH",
-      "lastTech": "Alexander Hamilton",
+      "lastIHC": "2026-08-22",
+      "lastLocation": "XNA",
+      "lastTech": "Shaun Neil",
       "ED1": 24,
       "ED2": 25
     },
@@ -212,12 +212,12 @@
     },
     {
       "tail": "N219NN",
-      "lastService": "2026-08-19",
+      "lastService": "2026-08-22",
       "lastED1": "2026-08-06",
       "lastED2": "2026-06-29",
-      "lastIHC": "2026-08-19",
-      "lastLocation": "SGF",
-      "lastTech": "Steven Wilson",
+      "lastIHC": "2026-08-22",
+      "lastLocation": "XNA",
+      "lastTech": "Shaun Neil",
       "ED1": 13,
       "ED2": 5
     },
@@ -333,12 +333,12 @@
     },
     {
       "tail": "N230NN",
-      "lastService": "2026-08-21",
+      "lastService": "2026-08-22",
       "lastED1": "2026-08-17",
       "lastED2": "2026-07-06",
-      "lastIHC": "2026-08-21",
-      "lastLocation": "XNA",
-      "lastTech": "Casey Henry",
+      "lastIHC": "2026-08-22",
+      "lastLocation": "LIT",
+      "lastTech": "Damian Utley",
       "ED1": 24,
       "ED2": 12
     },
@@ -520,12 +520,12 @@
     },
     {
       "tail": "N247NN",
-      "lastService": "2026-08-19",
+      "lastService": "2026-08-22",
       "lastED1": "2026-07-29",
       "lastED2": "2026-06-23",
-      "lastIHC": "2026-08-19",
-      "lastLocation": "SGF",
-      "lastTech": "Steven Wilson",
+      "lastIHC": "2026-08-22",
+      "lastLocation": "XNA",
+      "lastTech": "Shaun Neil",
       "ED1": 5,
       "ED2": -1
     },
@@ -718,23 +718,23 @@
     },
     {
       "tail": "N265NN",
-      "lastService": "2026-08-21",
+      "lastService": "2026-08-22",
       "lastED1": "2026-08-15",
       "lastED2": "2026-08-21",
-      "lastIHC": "2026-08-21",
+      "lastIHC": "2026-08-22",
       "lastLocation": "XNA",
-      "lastTech": "Casey Henry",
+      "lastTech": "Shaun Neil",
       "ED1": 22,
       "ED2": 58
     },
     {
       "tail": "N266NN",
-      "lastService": "2026-08-20",
+      "lastService": "2026-08-22",
       "lastED1": "2026-08-20",
       "lastED2": "2026-08-20",
-      "lastIHC": "2026-08-20",
-      "lastLocation": "XNA",
-      "lastTech": "Riley Woods",
+      "lastIHC": "2026-08-22",
+      "lastLocation": "LIT",
+      "lastTech": "Damian Utley",
       "ED1": 27,
       "ED2": 57
     },
@@ -795,23 +795,23 @@
     },
     {
       "tail": "N272NN",
-      "lastService": "2026-08-20",
+      "lastService": "2026-08-22",
       "lastED1": "2026-08-05",
       "lastED2": "2026-07-29",
-      "lastIHC": "2026-08-20",
+      "lastIHC": "2026-08-22",
       "lastLocation": "XNA",
-      "lastTech": "Riley Woods",
+      "lastTech": "Shaun Neil",
       "ED1": 12,
       "ED2": 35
     },
     {
       "tail": "N273NN",
-      "lastService": "2026-08-19",
+      "lastService": "2026-08-22",
       "lastED1": "2026-08-01",
       "lastED2": "2026-08-01",
-      "lastIHC": "2026-08-19",
-      "lastLocation": "CVG",
-      "lastTech": "Sellers Davis",
+      "lastIHC": "2026-08-22",
+      "lastLocation": "XNA",
+      "lastTech": "Shaun Neil",
       "ED1": 8,
       "ED2": 38
     },
@@ -905,12 +905,12 @@
     },
     {
       "tail": "N282NN",
-      "lastService": "2026-08-17",
+      "lastService": "2026-08-22",
       "lastED1": "2026-08-11",
       "lastED2": "2026-08-11",
-      "lastIHC": "2026-08-17",
+      "lastIHC": "2026-08-22",
       "lastLocation": "LIT",
-      "lastTech": "Mathew Walker",
+      "lastTech": "Damian Utley",
       "ED1": 18,
       "ED2": 48
     },
@@ -2163,6 +2163,96 @@
       "date": "2026-08-22",
       "name": "Darian Eiland",
       "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N230NN",
+      "date": "2026-08-22",
+      "name": "Damian Utley",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N266NN",
+      "date": "2026-08-22",
+      "name": "Damian Utley",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N282NN",
+      "date": "2026-08-22",
+      "name": "Damian Utley",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N219NN",
+      "date": "2026-08-22",
+      "name": "Shaun Neil",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N207AN",
+      "date": "2026-08-22",
+      "name": "Shaun Neil",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N247NN",
+      "date": "2026-08-22",
+      "name": "Shaun Neil",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N248NN",
+      "date": "2026-08-22",
+      "name": "Shaun Neil",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N265NN",
+      "date": "2026-08-22",
+      "name": "Shaun Neil",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N272NN",
+      "date": "2026-08-22",
+      "name": "Shaun Neil",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N273NN",
+      "date": "2026-08-22",
+      "name": "Shaun Neil",
+      "location": "XNA",
       "IHC": 1,
       "ED1": 0,
       "ED2": 0

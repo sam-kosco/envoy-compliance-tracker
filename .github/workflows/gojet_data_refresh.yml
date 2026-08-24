@@ -16,26 +16,44 @@ jobs:
       - name: Check out repo
         uses: actions/checkout@v6
 
+      - name: Check source freshness
+        id: src
+        env:
+          TENANT_ID:     ${{ secrets.TENANT_ID }}
+          CLIENT_ID:     ${{ secrets.CLIENT_ID }}
+          CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
+        run: python3 check_source_modified.py "Power Flows/Debriefs/GoJet Debriefs.xlsx" refresh_state/gojet.mtime
+
       - name: Set up Python
+        if: steps.src.outputs.changed == 'true'
         uses: actions/setup-python@v6
         with:
           python-version: "3.12"
 
       - name: Install dependencies
+        if: steps.src.outputs.changed == 'true'
         run: pip install openpyxl requests
 
       - name: Run GoJet data relay
+        if: steps.src.outputs.changed == 'true'
         env:
           TENANT_ID:     ${{ secrets.TENANT_ID }}
           CLIENT_ID:     ${{ secrets.CLIENT_ID }}
           CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
         run: python gojet_generate_data.py
 
+      - name: Record source watermark
+        if: steps.src.outputs.changed == 'true'
+        run: |
+          mkdir -p refresh_state
+          printf '%s' "${{ steps.src.outputs.mtime }}" > refresh_state/gojet.mtime
+
       - name: Commit and push gojet_data.json
+        if: steps.src.outputs.changed == 'true'
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add gojet_data.json
+          git add gojet_data.json refresh_state/gojet.mtime
           git diff --cached --quiet || git commit -m "chore: refresh gojet_data.json [$(date -u '+%Y-%m-%d %H:%M UTC')]"
           n=0
           until git push; do

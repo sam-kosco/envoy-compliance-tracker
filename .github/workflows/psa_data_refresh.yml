@@ -16,26 +16,44 @@ jobs:
       - name: Check out repo
         uses: actions/checkout@v6
 
+      - name: Check source freshness
+        id: src
+        env:
+          TENANT_ID:     ${{ secrets.TENANT_ID }}
+          CLIENT_ID:     ${{ secrets.CLIENT_ID }}
+          CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
+        run: python3 check_source_modified.py "Power Flows/Debriefs/PSA Debriefs.xlsx" refresh_state/psa.mtime
+
       - name: Set up Python
+        if: steps.src.outputs.changed == 'true'
         uses: actions/setup-python@v6
         with:
           python-version: "3.12"
 
       - name: Install dependencies
+        if: steps.src.outputs.changed == 'true'
         run: pip install openpyxl requests
 
       - name: Run PSA data relay
+        if: steps.src.outputs.changed == 'true'
         env:
           TENANT_ID:     ${{ secrets.TENANT_ID }}
           CLIENT_ID:     ${{ secrets.CLIENT_ID }}
           CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
         run: python psa_generate_data.py
 
+      - name: Record source watermark
+        if: steps.src.outputs.changed == 'true'
+        run: |
+          mkdir -p refresh_state
+          printf '%s' "${{ steps.src.outputs.mtime }}" > refresh_state/psa.mtime
+
       - name: Commit and push psa_data.json
+        if: steps.src.outputs.changed == 'true'
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add psa_data.json
+          git add psa_data.json refresh_state/psa.mtime
           git diff --cached --quiet || git commit -m "chore: refresh psa_data.json [$(date -u '+%Y-%m-%d %H:%M UTC')]"
           n=0
           until git push; do

@@ -39,6 +39,9 @@ from zoneinfo import ZoneInfo
 EMAIL_LIST = [
     "samuel.kosco@foxtrotaviation.com",
     "daniel.digiambattista@foxtrotaviation.com",
+    "brad.decker@PSAAirlines.com",
+    "daniel.starcher@psaairlines.com",
+    "Matthew.Key@PSAAirlines.com",
 ]
 
 SENDER = "foxtrot.automation@foxtrotaviation.com"

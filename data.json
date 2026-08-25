@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-25T07:00:50.911031+00:00",
+  "generated": "2026-08-25T07:51:57.565686+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -157,10 +157,10 @@
     },
     {
       "tail": "N214NN",
-      "lastService": "2026-08-21",
+      "lastService": "2026-08-24",
       "lastED1": "2026-08-07",
       "lastED2": "2026-08-07",
-      "lastIHC": "2026-08-21",
+      "lastIHC": "2026-08-24",
       "lastLocation": "SGF",
       "lastTech": "Jeffrey Crookshanks",
       "ED1": 12,
@@ -344,10 +344,10 @@
     },
     {
       "tail": "N231AN",
-      "lastService": "2026-08-20",
+      "lastService": "2026-08-24",
       "lastED1": "2026-08-01",
       "lastED2": "2026-08-07",
-      "lastIHC": "2026-08-20",
+      "lastIHC": "2026-08-24",
       "lastLocation": "SGF",
       "lastTech": "Jeffrey Crookshanks",
       "ED1": 6,
@@ -1191,12 +1191,12 @@
     },
     {
       "tail": "N313BS",
-      "lastService": "2026-08-22",
+      "lastService": "2026-08-24",
       "lastED1": "2026-08-16",
       "lastED2": "2026-07-25",
-      "lastIHC": "2026-08-22",
-      "lastLocation": "DFW",
-      "lastTech": "NADIA JOHNSON",
+      "lastIHC": "2026-08-24",
+      "lastLocation": "SGF",
+      "lastTech": "Jeffrey Crookshanks",
       "ED1": 21,
       "ED2": 29
     },
@@ -1895,12 +1895,12 @@
     },
     {
       "tail": "N776MS",
-      "lastService": "2026-08-20",
+      "lastService": "2026-08-24",
       "lastED1": "2026-07-30",
       "lastED2": "2026-07-06",
-      "lastIHC": "2026-08-20",
-      "lastLocation": "CVG",
-      "lastTech": "Precious Roberson",
+      "lastIHC": "2026-08-24",
+      "lastLocation": "SGF",
+      "lastTech": "Jeffrey Crookshanks",
       "ED1": 4,
       "ED2": 10
     },
@@ -2271,6 +2271,51 @@
       "date": "2026-08-24",
       "name": "Mathew Walker",
       "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N776MS",
+      "date": "2026-08-24",
+      "name": "Jeffrey Crookshanks",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N313BS",
+      "date": "2026-08-24",
+      "name": "Jeffrey Crookshanks",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N214NN",
+      "date": "2026-08-24",
+      "name": "Jeffrey Crookshanks",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N248NN",
+      "date": "2026-08-24",
+      "name": "Jeffrey Crookshanks",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N231AN",
+      "date": "2026-08-24",
+      "name": "Jeffrey Crookshanks",
+      "location": "SGF",
       "IHC": 1,
       "ED1": 0,
       "ED2": 0

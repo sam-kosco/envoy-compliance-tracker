@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-26T09:51:48.624063+00:00",
+  "generated": "2026-08-26T14:53:11.626151+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -1169,12 +1169,12 @@
     },
     {
       "tail": "N311VE",
-      "lastService": "2026-08-24",
+      "lastService": "2026-08-23",
       "lastED1": "2026-08-23",
       "lastED2": "2026-07-24",
-      "lastIHC": "2026-08-24",
-      "lastLocation": "XNA",
-      "lastTech": "Shaun Neil",
+      "lastIHC": "2026-08-23",
+      "lastLocation": "SGF",
+      "lastTech": "Jeffrey Crookshanks",
       "ED1": 27,
       "ED2": 27
     },
@@ -1313,12 +1313,12 @@
     {
       "tail": "N324ES",
       "lastService": "2026-08-25",
-      "lastED1": "2026-08-24",
+      "lastED1": "2026-08-21",
       "lastED2": "2026-07-21",
       "lastIHC": "2026-08-25",
       "lastLocation": "XNA",
       "lastTech": "Shaun Neil",
-      "ED1": 28,
+      "ED1": 25,
       "ED2": 24
     },
     {
@@ -1400,12 +1400,12 @@
     },
     {
       "tail": "N331SC",
-      "lastService": "2026-08-21",
+      "lastService": "2026-08-24",
       "lastED1": "2026-08-15",
       "lastED2": "2026-07-26",
-      "lastIHC": "2026-08-21",
-      "lastLocation": "CVG",
-      "lastTech": "Sellers Davis",
+      "lastIHC": "2026-08-24",
+      "lastLocation": "XNA",
+      "lastTech": "Shaun Neil",
       "ED1": 19,
       "ED2": 29
     },
@@ -2186,15 +2186,6 @@
       "ED2": 1
     },
     {
-      "tail": "N243NN",
-      "date": "2026-08-25",
-      "name": "Shaun Neil",
-      "location": "XNA",
-      "IHC": 1,
-      "ED1": 0,
-      "ED2": 1
-    },
-    {
       "tail": "N265NN",
       "date": "2026-08-25",
       "name": "Steven Wilson",
@@ -2456,7 +2447,7 @@
       "ED2": 0
     },
     {
-      "tail": "N311VE",
+      "tail": "N331SC",
       "date": "2026-08-24",
       "name": "Shaun Neil",
       "location": "XNA",
@@ -2497,7 +2488,7 @@
       "name": "Shaun Neil",
       "location": "XNA",
       "IHC": 1,
-      "ED1": 1,
+      "ED1": 0,
       "ED2": 0
     },
     {

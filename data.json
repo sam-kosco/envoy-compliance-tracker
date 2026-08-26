@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-26T14:53:11.626151+00:00",
+  "generated": "2026-08-26T16:25:09.815172+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -774,13 +774,13 @@
     {
       "tail": "N270NN",
       "lastService": "2026-08-25",
-      "lastED1": "2026-08-25",
-      "lastED2": "2026-06-05",
+      "lastED1": "2026-08-04",
+      "lastED2": "2026-08-25",
       "lastIHC": "2026-08-25",
       "lastLocation": "LIT",
       "lastTech": "Mathew Walker",
-      "ED1": 29,
-      "ED2": -22
+      "ED1": 8,
+      "ED2": 59
     },
     {
       "tail": "N271NN",
@@ -1360,7 +1360,7 @@
       "lastED1": "2025-04-09",
       "lastED2": "2026-08-25",
       "lastIHC": "2026-08-25",
-      "lastLocation": "CVG",
+      "lastLocation": "XNA",
       "lastTech": "Shaun Neil",
       "ED1": -474,
       "ED2": 59
@@ -2171,7 +2171,7 @@
       "tail": "N327PJ",
       "date": "2026-08-25",
       "name": "Shaun Neil",
-      "location": "CVG",
+      "location": "XNA",
       "IHC": 1,
       "ED1": 0,
       "ED2": 1
@@ -2317,8 +2317,8 @@
       "name": "Mathew Walker",
       "location": "LIT",
       "IHC": 1,
-      "ED1": 1,
-      "ED2": 0
+      "ED1": 0,
+      "ED2": 1
     },
     {
       "tail": "N278NN",

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-26T08:54:47.540924+00:00",
+  "generated": "2026-08-26T09:51:48.624063+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -707,12 +707,12 @@
     },
     {
       "tail": "N264NN",
-      "lastService": "2026-08-20",
+      "lastService": "2026-08-25",
       "lastED1": "2026-08-18",
       "lastED2": "2026-08-18",
-      "lastIHC": "2026-08-20",
-      "lastLocation": "CVG",
-      "lastTech": "Precious Roberson",
+      "lastIHC": "2026-08-25",
+      "lastLocation": "LIT",
+      "lastTech": "Damian Utley",
       "ED1": 22,
       "ED2": 52
     },
@@ -861,12 +861,12 @@
     },
     {
       "tail": "N278NN",
-      "lastService": "2026-08-24",
+      "lastService": "2026-08-25",
       "lastED1": "2026-08-02",
       "lastED2": "2026-07-23",
-      "lastIHC": "2026-08-24",
+      "lastIHC": "2026-08-25",
       "lastLocation": "LIT",
-      "lastTech": "Mathew Walker",
+      "lastTech": "Damian Utley",
       "ED1": 6,
       "ED2": 26
     },
@@ -1389,12 +1389,12 @@
     },
     {
       "tail": "N330JT",
-      "lastService": "2026-08-24",
+      "lastService": "2026-08-25",
       "lastED1": "2026-08-14",
       "lastED2": "2026-07-17",
-      "lastIHC": "2026-08-24",
+      "lastIHC": "2026-08-25",
       "lastLocation": "LIT",
-      "lastTech": "Mathew Walker",
+      "lastTech": "Damian Utley",
       "ED1": 18,
       "ED2": 20
     },
@@ -1466,12 +1466,12 @@
     },
     {
       "tail": "N337MR",
-      "lastService": "2026-08-21",
+      "lastService": "2026-08-25",
       "lastED1": "2026-08-04",
       "lastED2": "2026-07-04",
-      "lastIHC": "2026-08-21",
+      "lastIHC": "2026-08-25",
       "lastLocation": "LIT",
-      "lastTech": "Mathew Walker",
+      "lastTech": "Damian Utley",
       "ED1": 8,
       "ED2": 7
     },
@@ -1587,14 +1587,14 @@
     },
     {
       "tail": "N349DD",
-      "lastService": "2026-08-21",
-      "lastED1": null,
-      "lastED2": null,
-      "lastIHC": "2026-08-21",
+      "lastService": "2026-08-25",
+      "lastED1": "2026-08-25",
+      "lastED2": "2026-08-25",
+      "lastIHC": "2026-08-25",
       "lastLocation": "LIT",
       "lastTech": "Mathew Walker",
-      "ED1": "No Service",
-      "ED2": "No Service"
+      "ED1": 29,
+      "ED2": 59
     },
     {
       "tail": "N350CD",
@@ -2328,6 +2328,51 @@
       "IHC": 1,
       "ED1": 1,
       "ED2": 0
+    },
+    {
+      "tail": "N278NN",
+      "date": "2026-08-25",
+      "name": "Damian Utley",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N330JT",
+      "date": "2026-08-25",
+      "name": "Damian Utley",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N264NN",
+      "date": "2026-08-25",
+      "name": "Damian Utley",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N337MR",
+      "date": "2026-08-25",
+      "name": "Damian Utley",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N349DD",
+      "date": "2026-08-25",
+      "name": "Mathew Walker",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 1
     },
     {
       "tail": "N347JT",

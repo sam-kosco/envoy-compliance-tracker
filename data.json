@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-26T07:02:05.613282+00:00",
+  "generated": "2026-08-26T07:53:06.255526+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -25,12 +25,12 @@
     },
     {
       "tail": "N202NN",
-      "lastService": "2026-08-11",
+      "lastService": "2026-08-25",
       "lastED1": "2026-07-21",
       "lastED2": "2026-07-10",
-      "lastIHC": "2026-08-11",
-      "lastLocation": "LIT",
-      "lastTech": "Mathew Walker",
+      "lastIHC": "2026-08-25",
+      "lastLocation": "CVG",
+      "lastTech": "Precious Valadez-Roberson",
       "ED1": -6,
       "ED2": 13
     },
@@ -652,12 +652,12 @@
     },
     {
       "tail": "N259NN",
-      "lastService": "2026-08-20",
+      "lastService": "2026-08-25",
       "lastED1": "2026-08-05",
       "lastED2": "2026-08-20",
-      "lastIHC": "2026-08-20",
-      "lastLocation": "CMH",
-      "lastTech": "Darian eiland",
+      "lastIHC": "2026-08-25",
+      "lastLocation": "CVG",
+      "lastTech": "Precious Valadez-Roberson",
       "ED1": 9,
       "ED2": 54
     },
@@ -1059,12 +1059,12 @@
     },
     {
       "tail": "N300LK",
-      "lastService": "2026-08-16",
+      "lastService": "2026-08-25",
       "lastED1": "2026-07-29",
       "lastED2": "2026-07-29",
-      "lastIHC": "2026-08-16",
+      "lastIHC": "2026-08-25",
       "lastLocation": "CVG",
-      "lastTech": "Bayleah Vogel",
+      "lastTech": "Precious Valadez-Roberson",
       "ED1": 2,
       "ED2": 32
     },
@@ -1829,12 +1829,12 @@
     },
     {
       "tail": "N768RD",
-      "lastService": "2026-08-16",
+      "lastService": "2026-08-25",
       "lastED1": "2026-08-16",
       "lastED2": "2026-07-14",
-      "lastIHC": "2026-08-16",
-      "lastLocation": "CVG",
-      "lastTech": "Bayleah Vogel",
+      "lastIHC": "2026-08-25",
+      "lastLocation": "DFW",
+      "lastTech": "Aunyae Morrison",
       "ED1": 20,
       "ED2": 17
     },
@@ -2049,12 +2049,12 @@
     },
     {
       "tail": "N790MK",
-      "lastService": "2026-08-21",
+      "lastService": "2026-08-25",
       "lastED1": "2026-08-05",
       "lastED2": "2026-08-17",
-      "lastIHC": "2026-08-21",
-      "lastLocation": "CMH",
-      "lastTech": "Darian eiland",
+      "lastIHC": "2026-08-25",
+      "lastLocation": "CVG",
+      "lastTech": "Precious Valadez-Roberson",
       "ED1": 9,
       "ED2": 51
     },
@@ -2285,6 +2285,42 @@
       "ED2": 0
     },
     {
+      "tail": "N790MK",
+      "date": "2026-08-25",
+      "name": "Precious Valadez-Roberson",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N259NN",
+      "date": "2026-08-25",
+      "name": "Precious Valadez-Roberson",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N202NN",
+      "date": "2026-08-25",
+      "name": "Precious Valadez-Roberson",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N300LK",
+      "date": "2026-08-25",
+      "name": "Precious Valadez-Roberson",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
       "tail": "N347JT",
       "date": "2026-08-25",
       "name": "Aunyae Morrison",
@@ -2304,6 +2340,15 @@
     },
     {
       "tail": "N272NN",
+      "date": "2026-08-25",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N768RD",
       "date": "2026-08-25",
       "name": "Aunyae Morrison",
       "location": "DFW",

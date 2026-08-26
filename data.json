@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-26T07:53:06.255526+00:00",
+  "generated": "2026-08-26T08:54:47.540924+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -69,13 +69,13 @@
     },
     {
       "tail": "N206NN",
-      "lastService": "2026-08-21",
-      "lastED1": "2026-08-21",
+      "lastService": "2026-08-25",
+      "lastED1": "2026-08-25",
       "lastED2": "2026-07-19",
-      "lastIHC": "2026-08-21",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
-      "ED1": 25,
+      "lastIHC": "2026-08-25",
+      "lastLocation": "DFW",
+      "lastTech": "Aunyae Morrison",
+      "ED1": 29,
       "ED2": 22
     },
     {
@@ -113,13 +113,13 @@
     },
     {
       "tail": "N210NN",
-      "lastService": "2026-08-20",
-      "lastED1": "2026-08-10",
+      "lastService": "2026-08-25",
+      "lastED1": "2026-08-25",
       "lastED2": "2026-08-10",
-      "lastIHC": "2026-08-20",
-      "lastLocation": "LIT",
-      "lastTech": "Mathew Walker",
-      "ED1": 14,
+      "lastIHC": "2026-08-25",
+      "lastLocation": "DFW",
+      "lastTech": "Aunyae Morrison",
+      "ED1": 29,
       "ED2": 44
     },
     {
@@ -773,13 +773,13 @@
     },
     {
       "tail": "N270NN",
-      "lastService": "2026-08-24",
-      "lastED1": "2026-08-04",
+      "lastService": "2026-08-25",
+      "lastED1": "2026-08-25",
       "lastED2": "2026-06-05",
-      "lastIHC": "2026-08-24",
+      "lastIHC": "2026-08-25",
       "lastLocation": "LIT",
       "lastTech": "Mathew Walker",
-      "ED1": 8,
+      "ED1": 29,
       "ED2": -22
     },
     {
@@ -949,14 +949,14 @@
     },
     {
       "tail": "N286NN",
-      "lastService": "2026-08-20",
+      "lastService": "2026-08-25",
       "lastED1": "2026-08-02",
-      "lastED2": "2026-08-20",
-      "lastIHC": "2026-08-20",
-      "lastLocation": "XNA",
-      "lastTech": "Riley Pinterich",
+      "lastED2": "2026-08-25",
+      "lastIHC": "2026-08-25",
+      "lastLocation": "DFW",
+      "lastTech": "Aunyae Morrison",
       "ED1": 6,
-      "ED2": 54
+      "ED2": 59
     },
     {
       "tail": "N287NN",
@@ -2321,6 +2321,15 @@
       "ED2": 0
     },
     {
+      "tail": "N270NN",
+      "date": "2026-08-25",
+      "name": "Mathew Walker",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
       "tail": "N347JT",
       "date": "2026-08-25",
       "name": "Aunyae Morrison",
@@ -2354,6 +2363,42 @@
       "location": "DFW",
       "IHC": 1,
       "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N286NN",
+      "date": "2026-08-25",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 1
+    },
+    {
+      "tail": "N210NN",
+      "date": "2026-08-25",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N206NN",
+      "date": "2026-08-25",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N206NN",
+      "date": "2026-08-25",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 1,
       "ED2": 0
     },
     {

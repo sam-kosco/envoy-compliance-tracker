@@ -522,39 +522,13 @@
   </div><!-- /tab-work -->
 
   <div class="tab-page" id="tab-admin">
-    <!-- Password gate (visible until correct password entered) -->
-    <div class="admin-gate" id="admin-gate">
-      <h2>Admin Access</h2>
-      <p>Enter the admin password to manage the Envoy fleet.</p>
-      <input type="password" class="admin-pw-input" id="admin-pw-input" placeholder="Password" onkeydown="if(event.key==='Enter')tryAdminLogin()">
-      <button class="admin-pw-btn" onclick="tryAdminLogin()">Unlock</button>
-      <div class="admin-pw-error" id="admin-pw-error">Incorrect password.</div>
-    </div>
-
-    <!-- Admin content (hidden until unlocked) -->
-    <div id="admin-content" style="display:none">
-      <div class="admin-section">
-        <h2>Add Tail to Fleet</h2>
-        <p class="hint">Adds the tail to the Envoy and DFW Debrief dropdowns, the Commercial Closeout Envoy Fleet list, the CMH/XNA/SGF/LIT closeout lists, and the SharePoint Tail List. Format: N + 1-5 digits + 0-2 letters (e.g. N205JK).</p>
-        <div class="admin-tail-row">
-          <input type="text" class="admin-tail-input" id="admin-tail-input" placeholder="N123AB" maxlength="8"
-                 onkeydown="if(event.key==='Enter')submitAddTail()" oninput="this.value=this.value.toUpperCase()">
-          <button class="admin-tail-btn" id="admin-tail-btn" onclick="submitAddTail()">Add</button>
-        </div>
-        <div class="admin-status" id="admin-status"></div>
-        <div class="admin-result" id="admin-result"></div>
-      </div>
-
-      <div class="admin-section">
-        <h2>Remove Tail from Fleet</h2>
-        <p class="hint">Sets the tail's Status to <strong>Disabled</strong> on the SharePoint Tail List. The tail drops off the tracker on the next data refresh. Historical debriefs are unaffected, and the tail stays in the JotForm dropdowns.</p>
-        <div class="admin-tail-row">
-          <input type="text" class="admin-tail-input" id="admin-remove-input" placeholder="N123AB" maxlength="8"
-                 onkeydown="if(event.key==='Enter')submitRemoveTail()" oninput="this.value=this.value.toUpperCase()">
-          <button class="admin-tail-btn danger" id="admin-remove-btn" onclick="submitRemoveTail()">Remove</button>
-        </div>
-        <div class="admin-status" id="admin-remove-status"></div>
-      </div>
+    <div class="admin-gate">
+      <h2>Tail management has moved</h2>
+      <p>Adding and removing fleet tails now lives in the Foxtrot Platform:
+         <b>Fleets &rarr; Admin &rarr; Manage Fleet Tails</b> (Fleet Admins).
+         The old password-gated form here dispatched through a Power
+         Automate webhook that was retired with the org migration.</p>
+      <p><a href="https://foxtrot-platform.azurewebsites.net/#fleet/admin">Open the platform &rarr;</a></p>
     </div>
   </div><!-- /tab-admin -->
   </main>
@@ -848,16 +822,8 @@ function selectTail(tail) {
 
 /* ===== TABS ===== */
 /* ===== ADMIN ===== */
-const ADMIN_PASSWORD = 'ENVOY2026';
-// "Envoy Tail Add" PA flow — holds the GitHub PAT, dispatches manage_envoy_fleet.yml,
-// then appends the tail row to the SharePoint Tail List itself.
-const PA_TAIL_WEBHOOK_URL = 'https://defaultede0c57f549f4a909f8c7ea130346f.95.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/19/workflows/f3ca7b3355934edcb42c156acdef911b/triggers/manual/paths/invoke?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=U1gOb9TkW6-8z9MwlgEOfMxXiflvL05gTlpKkuG6YVI';
-// Separate PA flow for Remove Tail (Update a row: Status=Disabled on the Tail
-// List). Deliberately its own flow/URL so a remove can never hit the add flow's
-// Add-row action. Paste the flow's HTTP trigger URL here once built; until then
-// the Remove button reports "not configured" and makes no calls.
-const PA_TAIL_REMOVE_WEBHOOK_URL = 'https://defaultede0c57f549f4a909f8c7ea130346f.95.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/22/workflows/011a1c11e129469a86090b730b369962/triggers/manual/paths/invoke?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=-h2bprirIcFFJuAFhynbHrEqnWhtgmX7dKJqwMfLHrA';
-const RESULT_URL = 'envoy_fleet_action_result.json';
+// Tail management moved to the Foxtrot Platform (Fleets > Admin).
+// The PA webhooks + client-side password that lived here are retired.
 
 // In-page confirm dialog. Native confirm()/alert() are silently blocked in
 // cross-origin iframes (the SharePoint pages embed these dashboards), so
@@ -878,148 +844,6 @@ function pageConfirm(message) {
     });
     document.body.appendChild(ov);
   });
-}
-
-function tryAdminLogin() {
-  const input = document.getElementById('admin-pw-input');
-  const err   = document.getElementById('admin-pw-error');
-  if (input.value === ADMIN_PASSWORD) {
-    document.getElementById('admin-gate').style.display = 'none';
-    document.getElementById('admin-content').style.display = 'block';
-  } else {
-    err.style.display = 'block';
-    input.value = '';
-  }
-}
-
-async function submitAddTail() {
-  const input  = document.getElementById('admin-tail-input');
-  const btn    = document.getElementById('admin-tail-btn');
-  const status = document.getElementById('admin-status');
-  const result = document.getElementById('admin-result');
-
-  const tail = input.value.trim().toUpperCase();
-  if (!/^N\d{1,5}[A-Z]{0,2}$/.test(tail)) {
-    status.textContent = 'Invalid tail format. Expected N + 1-5 digits + 0-2 letters (e.g. N205JK).';
-    status.style.color = '#DC2626';
-    return;
-  }
-
-  btn.disabled = true;
-  result.classList.remove('show');
-  status.style.color = '#555';
-  status.textContent = `Dispatching workflow for ${tail}...`;
-  const startedAt = Date.now();
-
-  try {
-    const dispatchRes = await fetch(PA_TAIL_WEBHOOK_URL, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ tail: tail }),
-    });
-    if (!dispatchRes.ok) {
-      const txt = await dispatchRes.text();
-      throw new Error(`Dispatcher failed: HTTP ${dispatchRes.status} ${txt.slice(0, 200)}`);
-    }
-
-    status.textContent = `Workflow dispatched. Waiting for result (30-60s)...`;
-
-    let attempt = 0;
-    const maxAttempts = 40; // ~2 min at 3s
-    while (attempt < maxAttempts) {
-      attempt++;
-      await new Promise(r => setTimeout(r, 3000));
-      try {
-        const r = await fetch(RESULT_URL + '?t=' + Date.now());
-        if (r.ok) {
-          const data = await r.json();
-          const ts = new Date(data.timestamp).getTime();
-          if (data.tail === tail && ts >= startedAt - 5000) {
-            renderAdminResult(data);
-            status.textContent = `Completed in ${Math.round((Date.now()-startedAt)/1000)}s.`;
-            input.value = '';
-            return;
-          }
-        }
-      } catch (e) { /* keep polling */ }
-      status.textContent = `Waiting for result... (${attempt * 3}s elapsed)`;
-    }
-    status.textContent = `Timed out waiting for result. Check Actions tab for the run status.`;
-    status.style.color = '#DC2626';
-  } catch (e) {
-    status.textContent = `Error: ${e.message}`;
-    status.style.color = '#DC2626';
-  } finally {
-    btn.disabled = false;
-  }
-}
-
-async function submitRemoveTail() {
-  const input  = document.getElementById('admin-remove-input');
-  const btn    = document.getElementById('admin-remove-btn');
-  const status = document.getElementById('admin-remove-status');
-
-  const tail = input.value.trim().toUpperCase();
-  if (!/^N\d{1,5}[A-Z]{0,2}$/.test(tail)) {
-    status.textContent = 'Invalid tail format. Expected N + 1-5 digits + 0-2 letters (e.g. N205JK).';
-    status.style.color = '#DC2626';
-    return;
-  }
-  if (!PA_TAIL_REMOVE_WEBHOOK_URL.startsWith('https')) {
-    status.textContent = 'Remove flow is not configured yet — build the "Envoy Tail Remove" Power Automate flow and paste its trigger URL into PA_TAIL_REMOVE_WEBHOOK_URL in index.html.';
-    status.style.color = '#DC2626';
-    return;
-  }
-  if (window._allTails && !window._allTails.includes(tail)) {
-    status.textContent = `${tail} is not on the active tracker roster — nothing to remove.`;
-    status.style.color = '#DC2626';
-    return;
-  }
-  if (!await pageConfirm(`Disable ${tail}? It will drop off the tracker on the next data refresh.`)) return;
-
-  btn.disabled = true;
-  status.style.color = '#555';
-  status.textContent = `Disabling ${tail}...`;
-  try {
-    const res = await fetch(PA_TAIL_REMOVE_WEBHOOK_URL, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ tail: tail }),
-    });
-    if (!res.ok) {
-      const txt = await res.text();
-      throw new Error(`HTTP ${res.status} ${txt.slice(0, 200)}`);
-    }
-    status.textContent = `${tail} disabled on the Tail List. It drops off the tracker within a few minutes (refresh dispatched).`;
-    status.style.color = '#059669';
-    input.value = '';
-  } catch (e) {
-    status.textContent = `Error: ${e.message}`;
-    status.style.color = '#DC2626';
-  } finally {
-    btn.disabled = false;
-  }
-}
-
-function renderAdminResult(data) {
-  const result = document.getElementById('admin-result');
-  const SYSTEMS = [
-    ['envoy_debrief', 'Envoy Debrief Form'],
-    ['dfw_debrief',   'DFW Debrief Form'],
-    ['closeout',      'Commercial Closeout'],
-    ['cmh',           'CMH Closeout'],
-    ['xna',           'XNA Closeout'],
-    ['sgf',           'SGF Closeout'],
-    ['lit',           'LIT Closeout'],
-  ];
-  let html = `<table><thead><tr><th>System</th><th>Status</th><th>Detail</th></tr></thead><tbody>`;
-  for (const [key, label] of SYSTEMS) {
-    const s = data[key] || {status:'?', message:''};
-    html += `<tr><td>${label}</td><td class="st-${s.status}">${s.status.toUpperCase()}</td><td>${s.message || ''}</td></tr>`;
-  }
-  html += `</tbody></table>`;
-  result.innerHTML = html;
-  result.classList.add('show');
 }
 
 function switchTab(name) {

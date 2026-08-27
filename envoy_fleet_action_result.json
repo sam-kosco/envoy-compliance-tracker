@@ -1,33 +1,33 @@
 {
-  "tail": "N351SC",
+  "tail": "N350CD",
   "action": "add_tail",
-  "timestamp": "2026-08-17T17:54:25+00:00",
+  "timestamp": "2026-08-27T14:30:45+00:00",
   "envoy_debrief": {
-    "status": "ok",
-    "message": "added at position 147 of 192"
+    "status": "noop",
+    "message": "already present (192 options)"
   },
   "dfw_debrief": {
-    "status": "ok",
-    "message": "added at position 147 of 192"
+    "status": "noop",
+    "message": "already present (192 options)"
   },
   "closeout": {
-    "status": "ok",
-    "message": "added at position 147 of 192"
+    "status": "noop",
+    "message": "already present"
   },
   "cmh": {
-    "status": "ok",
-    "message": "added at position 147 of 192"
+    "status": "noop",
+    "message": "already present"
   },
   "xna": {
-    "status": "ok",
-    "message": "added at position 147 of 192"
+    "status": "noop",
+    "message": "already present"
   },
   "sgf": {
-    "status": "ok",
-    "message": "added at position 147 of 192"
+    "status": "noop",
+    "message": "already present"
   },
   "lit": {
-    "status": "ok",
-    "message": "added at position 147 of 192"
+    "status": "noop",
+    "message": "already present"
   }
 }

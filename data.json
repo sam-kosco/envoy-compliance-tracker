@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-27T14:31:10.490144+00:00",
+  "generated": "2026-08-27T20:17:57.034605+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -1961,10 +1961,10 @@
     },
     {
       "tail": "N783LC",
-      "lastService": "2026-08-24",
+      "lastService": "2026-08-26",
       "lastED1": "2026-08-22",
       "lastED2": "2026-08-10",
-      "lastIHC": "2026-08-24",
+      "lastIHC": "2026-08-26",
       "lastLocation": "CVG",
       "lastTech": "Sellers Davis",
       "ED1": 25,
@@ -2316,6 +2316,15 @@
       "date": "2026-08-26",
       "name": "Steven Wilson",
       "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N783LC",
+      "date": "2026-08-26",
+      "name": "Sellers Davis",
+      "location": "CVG",
       "IHC": 1,
       "ED1": 0,
       "ED2": 0

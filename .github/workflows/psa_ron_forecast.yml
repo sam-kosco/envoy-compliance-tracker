@@ -1,11 +1,9 @@
 name: PSA RON Forecast
 
 on:
-  schedule:
-    # Both crons fire daily; psa_ron_forecast.py only proceeds when it is
-    # 4 PM in America/New_York, giving a 4 PM Eastern run year-round.
-    - cron: "7 20 * * *"   # 4 PM EDT (summer)
-    - cron: "7 21 * * *"   # 4 PM EST (winter)
+  # No native cron (Sam, 2026-08-28): the platform's dispatcher fires this
+  # at 4:07 PM Eastern from Monitoring/schedules.json (dispatch bypasses
+  # the script's schedule-only hour guard).
   workflow_dispatch:
 
 jobs:

@@ -1,9 +1,8 @@
 name: PSA Compliance Data Refresh
 
 on:
-  schedule:
-    # Runs every hour — comment out the two lines below to pause
-    - cron: "17 * * * *"
+  # No native cron (Sam, 2026-08-28): the platform's dispatcher fires this
+  # hourly at :17 from Monitoring/schedules.json.
   workflow_dispatch:
 
 jobs:

@@ -1,12 +1,10 @@
 name: PSA Daily Compliance Report
 
 on:
-  schedule:
-    # Both crons fire daily; psa_daily_report.py only sends on the run where
-    # it is 9 AM in America/New_York, so the report goes out at 9 AM Eastern
-    # year-round regardless of DST.
-    - cron: "7 13 * * *"   # 9 AM EDT (summer)
-    - cron: "7 14 * * *"   # 9 AM EST (winter)
+  # No native cron (Sam, 2026-08-28): the platform's dispatcher fires this
+  # at 9:07 AM Eastern from Monitoring/schedules.json (dispatch bypasses the
+  # script's 9-AM schedule guard, and the dispatcher already fires at the
+  # right Eastern time year-round).
   workflow_dispatch:
     inputs:
       recipients:

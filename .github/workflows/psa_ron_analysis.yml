@@ -1,11 +1,9 @@
 name: PSA RON Analysis
 
 on:
-  schedule:
-    # Sat/Sun/Mon mornings; psa_ron_analysis.py only proceeds at 10 AM
-    # America/New_York (dual cron covers EDT/EST).
-    - cron: "7 14 * * 6,0,1"   # 10 AM EDT (summer)
-    - cron: "7 15 * * 6,0,1"   # 10 AM EST (winter)
+  # No native cron (Sam, 2026-08-28): the platform's dispatcher fires this
+  # Sat/Sun/Mon at 10:07 AM Eastern from Monitoring/schedules.json
+  # (dispatch bypasses the script's schedule-only hour guard).
   workflow_dispatch:
 
 jobs:

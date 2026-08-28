@@ -1,9 +1,8 @@
 name: GoJet Compliance Data Refresh
 
 on:
-  schedule:
-    # Runs every hour — comment out the two lines below to pause
-    - cron: "37 * * * *"
+  # No native cron (Sam, 2026-08-28): the platform's dispatcher fires this
+  # hourly at :37 from Monitoring/schedules.json.
   workflow_dispatch:
 
 jobs:

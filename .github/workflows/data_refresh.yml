@@ -1,10 +1,9 @@
 name: Envoy Compliance Data Refresh
 
 on:
-  schedule:
-    # Runs every hour at :00
-    # Comment out the two lines below to pause scheduled refreshes
-    - cron: "7 * * * *"
+  # No native cron (Sam, 2026-08-28): the platform's dispatcher fires this
+  # hourly at :07 from Monitoring/schedules.json — immune to GitHub's cron
+  # drops. The source change-check below still gates the rebuild.
   workflow_dispatch:
     # Always available for manual trigger from Actions tab
 

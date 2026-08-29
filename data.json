@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-29T04:07:54.800136+00:00",
+  "generated": "2026-08-29T05:07:26.561896+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -1873,10 +1873,10 @@
     },
     {
       "tail": "N772MR",
-      "lastService": "2026-08-24",
+      "lastService": "2026-08-28",
       "lastED1": "2026-08-22",
       "lastED2": "2026-06-03",
-      "lastIHC": "2026-08-24",
+      "lastIHC": "2026-08-28",
       "lastLocation": "DFW",
       "lastTech": "NADIA JOHNSON",
       "ED1": 23,
@@ -2135,6 +2135,15 @@
       "tail": "N287NN",
       "date": "2026-08-28",
       "name": "NADIA  JOHNSON",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N772MR",
+      "date": "2026-08-28",
+      "name": "NADIA JOHNSON",
       "location": "DFW",
       "IHC": 1,
       "ED1": 0,

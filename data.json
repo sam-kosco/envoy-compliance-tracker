@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-29T08:08:10.259420+00:00",
+  "generated": "2026-08-29T09:07:42.915294+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -157,12 +157,12 @@
     },
     {
       "tail": "N214NN",
-      "lastService": "2026-08-24",
+      "lastService": "2026-08-28",
       "lastED1": "2026-08-07",
       "lastED2": "2026-08-07",
-      "lastIHC": "2026-08-24",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
+      "lastIHC": "2026-08-28",
+      "lastLocation": "CMH",
+      "lastTech": "Darian eiland",
       "ED1": 8,
       "ED2": 38
     },
@@ -278,12 +278,12 @@
     },
     {
       "tail": "N225NN",
-      "lastService": "2026-08-25",
+      "lastService": "2026-08-28",
       "lastED1": "2026-08-08",
       "lastED2": "2026-07-29",
-      "lastIHC": "2026-08-25",
+      "lastIHC": "2026-08-28",
       "lastLocation": "CMH",
-      "lastTech": "Tanaija Price",
+      "lastTech": "Darian eiland",
       "ED1": 9,
       "ED2": 29
     },
@@ -652,12 +652,12 @@
     },
     {
       "tail": "N259NN",
-      "lastService": "2026-08-25",
+      "lastService": "2026-08-28",
       "lastED1": "2026-08-05",
       "lastED2": "2026-08-20",
-      "lastIHC": "2026-08-25",
-      "lastLocation": "CVG",
-      "lastTech": "Precious Valadez-Roberson",
+      "lastIHC": "2026-08-28",
+      "lastLocation": "CMH",
+      "lastTech": "Darian eiland",
       "ED1": 6,
       "ED2": 51
     },
@@ -1213,12 +1213,12 @@
     },
     {
       "tail": "N315NH",
-      "lastService": "2026-08-19",
+      "lastService": "2026-08-28",
       "lastED1": "2026-08-19",
       "lastED2": "2026-07-29",
-      "lastIHC": "2026-08-19",
-      "lastLocation": "XNA",
-      "lastTech": "Casey Henry",
+      "lastIHC": "2026-08-28",
+      "lastLocation": "CMH",
+      "lastTech": "Darian eiland",
       "ED1": 20,
       "ED2": 29
     },
@@ -1752,12 +1752,12 @@
     },
     {
       "tail": "N760MQ",
-      "lastService": "2026-08-14",
+      "lastService": "2026-08-28",
       "lastED1": "2026-07-20",
       "lastED2": "2026-06-23",
-      "lastIHC": "2026-08-14",
-      "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastIHC": "2026-08-28",
+      "lastLocation": "CVG",
+      "lastTech": "Sellers Davis",
       "ED1": -10,
       "ED2": -7
     },
@@ -2280,6 +2280,51 @@
       "date": "2026-08-28",
       "name": "Damian Utley",
       "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N214NN",
+      "date": "2026-08-28",
+      "name": "Darian eiland",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N225NN",
+      "date": "2026-08-28",
+      "name": "Darian eiland",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N259NN",
+      "date": "2026-08-28",
+      "name": "Darian eiland",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N315NH",
+      "date": "2026-08-28",
+      "name": "Darian eiland",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N760MQ",
+      "date": "2026-08-28",
+      "name": "Sellers Davis",
+      "location": "CVG",
       "IHC": 1,
       "ED1": 0,
       "ED2": 0

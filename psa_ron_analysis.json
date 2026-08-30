@@ -1,33 +1,30 @@
 {
-  "generated": "2026-08-29T14:08:01Z",
-  "night_of": "2026-08-28",
-  "capture_rate_pct": 56.8,
+  "generated": "2026-08-30T14:07:22Z",
+  "night_of": "2026-08-29",
+  "capture_rate_pct": 61.9,
   "totals": {
-    "ron": 44,
-    "captured": 25,
-    "missed": 19,
-    "extras": 4
+    "ron": 42,
+    "captured": 26,
+    "missed": 16,
+    "extras": 6
   },
   "locations": [
     {
       "location": "CAK",
       "ron": [
-        "N515AE",
-        "N519AE",
-        "N538EG",
-        "N594NN"
+        "N517AE",
+        "N577NN",
+        "N705PS"
       ],
       "cleaned": [
-        "N515AE",
-        "N519AE",
-        "N538EG",
-        "N594NN"
+        "N517AE",
+        "N577NN",
+        "N705PS"
       ],
       "captured": [
-        "N515AE",
-        "N519AE",
-        "N538EG",
-        "N594NN"
+        "N517AE",
+        "N577NN",
+        "N705PS"
       ],
       "missed": [],
       "extras": [],
@@ -36,51 +33,52 @@
     {
       "location": "CLT",
       "ron": [
-        "N523AE",
         "N525AE",
-        "N529EA",
+        "N537EA",
+        "N539EA",
         "N551NN",
-        "N570NN",
+        "N579NN",
         "N636NN",
         "N646NN",
-        "N712PS",
         "N725PS"
       ],
       "cleaned": [
-        "N529EA"
+        "N551NN",
+        "N712PS"
       ],
       "captured": [
-        "N529EA"
+        "N551NN"
       ],
       "missed": [
-        "N523AE",
         "N525AE",
-        "N551NN",
-        "N570NN",
+        "N537EA",
+        "N539EA",
+        "N579NN",
         "N636NN",
         "N646NN",
-        "N712PS",
         "N725PS"
       ],
-      "extras": [],
+      "extras": [
+        "N712PS"
+      ],
       "next_day_dated": []
     },
     {
       "location": "CVG",
       "ron": [
-        "N588NN",
-        "N630NN",
-        "N639NN"
+        "N583NN",
+        "N592NN",
+        "N635NN"
       ],
       "cleaned": [
-        "N588NN",
-        "N630NN",
-        "N639NN"
+        "N583NN",
+        "N592NN",
+        "N635NN"
       ],
       "captured": [
-        "N588NN",
-        "N630NN",
-        "N639NN"
+        "N583NN",
+        "N592NN",
+        "N635NN"
       ],
       "missed": [],
       "extras": [],
@@ -89,148 +87,153 @@
     {
       "location": "DAY",
       "ron": [
-        "N522AE",
+        "N515AE",
         "N563NN",
-        "N564NN",
-        "N567NN",
-        "N580NN",
+        "N574NN",
+        "N589NN",
+        "N614NN",
+        "N632NN",
         "N647NN"
       ],
       "cleaned": [
-        "N522AE",
+        "N515AE",
+        "N552NN",
         "N563NN",
-        "N564NN",
-        "N567NN",
-        "N580NN",
-        "N601EN",
-        "N641NN"
+        "N574NN",
+        "N589NN",
+        "N614NN",
+        "N632NN"
       ],
       "captured": [
-        "N522AE",
+        "N515AE",
         "N563NN",
-        "N564NN",
-        "N567NN",
-        "N580NN"
+        "N574NN",
+        "N589NN",
+        "N614NN",
+        "N632NN"
       ],
       "missed": [
         "N647NN"
       ],
       "extras": [
-        "N601EN",
-        "N641NN"
+        "N552NN"
       ],
       "next_day_dated": []
     },
     {
       "location": "DCA",
       "ron": [
-        "N501BG",
-        "N516AE",
-        "N527EA",
-        "N542EA",
+        "N514AE",
+        "N518AE",
+        "N526EA",
         "N584NN",
-        "N718PS",
-        "N719PS"
+        "N611NN",
+        "N718PS"
       ],
       "cleaned": [
-        "N718PS"
+        "N518AE",
+        "N520DC"
       ],
       "captured": [
-        "N718PS"
+        "N518AE"
       ],
       "missed": [
-        "N501BG",
-        "N516AE",
-        "N527EA",
-        "N542EA",
+        "N514AE",
+        "N526EA",
         "N584NN",
-        "N719PS"
+        "N611NN",
+        "N718PS"
       ],
-      "extras": [],
+      "extras": [
+        "N520DC"
+      ],
       "next_day_dated": []
     },
     {
       "location": "GSP",
       "ron": [
-        "N550NN",
-        "N575NN",
-        "N586NN",
-        "N608NN",
+        "N538EG",
+        "N547NN",
+        "N559NN",
+        "N582NN",
         "N723PS"
       ],
       "cleaned": [
-        "N550NN",
+        "N538EG",
+        "N547NN",
+        "N559NN",
         "N575NN",
-        "N586NN",
-        "N608NN",
+        "N579NN",
+        "N582NN",
         "N723PS"
       ],
       "captured": [
-        "N550NN",
-        "N575NN",
-        "N586NN",
-        "N608NN",
+        "N538EG",
+        "N547NN",
+        "N559NN",
+        "N582NN",
         "N723PS"
       ],
       "missed": [],
-      "extras": [],
+      "extras": [
+        "N575NN",
+        "N579NN"
+      ],
       "next_day_dated": []
     },
     {
       "location": "ORF",
       "ron": [
-        "N548NN",
-        "N561NN",
-        "N610NN"
+        "N576NN",
+        "N603NN",
+        "N634NN"
       ],
       "cleaned": [
-        "N548NN",
-        "N561NN",
-        "N610NN",
-        "N708PS"
+        "N544EA",
+        "N576NN",
+        "N603NN",
+        "N634NN"
       ],
       "captured": [
-        "N548NN",
-        "N561NN",
-        "N610NN"
+        "N576NN",
+        "N603NN",
+        "N634NN"
       ],
       "missed": [],
       "extras": [
-        "N708PS"
+        "N544EA"
       ],
       "next_day_dated": []
     },
     {
       "location": "TYS",
       "ron": [
+        "N521AE",
         "N555NN",
-        "N557NN",
         "N598NN",
-        "N631NN",
-        "N643NN",
-        "N703PS",
+        "N617NN",
+        "N629NN",
+        "N633NN",
         "N706PS"
       ],
       "cleaned": [
-        "N525AE",
-        "N631NN",
-        "N643NN",
-        "N703PS"
+        "N521AE",
+        "N617NN",
+        "N629NN",
+        "N633NN"
       ],
       "captured": [
-        "N631NN",
-        "N643NN",
-        "N703PS"
+        "N521AE",
+        "N617NN",
+        "N629NN",
+        "N633NN"
       ],
       "missed": [
         "N555NN",
-        "N557NN",
         "N598NN",
         "N706PS"
       ],
-      "extras": [
-        "N525AE"
-      ],
+      "extras": [],
       "next_day_dated": []
     }
   ]

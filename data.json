@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-30T07:08:00.137393+00:00",
+  "generated": "2026-08-30T08:07:39.444765+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -168,12 +168,12 @@
     },
     {
       "tail": "N215NN",
-      "lastService": "2026-08-22",
+      "lastService": "2026-08-29",
       "lastED1": "2026-07-04",
       "lastED2": "2026-08-11",
-      "lastIHC": "2026-08-22",
+      "lastIHC": "2026-08-29",
       "lastLocation": "DFW",
-      "lastTech": "NADIA  JOHNSON",
+      "lastTech": "NADIA JOHNSON",
       "ED1": -27,
       "ED2": 41
     },
@@ -333,12 +333,12 @@
     },
     {
       "tail": "N230NN",
-      "lastService": "2026-08-28",
+      "lastService": "2026-08-29",
       "lastED1": "2026-08-17",
       "lastED2": "2026-08-28",
-      "lastIHC": "2026-08-28",
-      "lastLocation": "XNA",
-      "lastTech": "Riley Pinterich",
+      "lastIHC": "2026-08-29",
+      "lastLocation": "LIT",
+      "lastTech": "Damian Utley",
       "ED1": 17,
       "ED2": 58
     },
@@ -597,12 +597,12 @@
     },
     {
       "tail": "N254NN",
-      "lastService": "2026-08-20",
+      "lastService": "2026-08-29",
       "lastED1": "2026-08-20",
       "lastED2": "2026-08-20",
-      "lastIHC": "2026-08-20",
-      "lastLocation": "XNA",
-      "lastTech": "Riley Woods",
+      "lastIHC": "2026-08-29",
+      "lastLocation": "LIT",
+      "lastTech": "Damian Utley",
       "ED1": 20,
       "ED2": 50
     },
@@ -718,12 +718,12 @@
     },
     {
       "tail": "N265NN",
-      "lastService": "2026-08-26",
+      "lastService": "2026-08-29",
       "lastED1": "2026-08-15",
       "lastED2": "2026-08-21",
-      "lastIHC": "2026-08-26",
-      "lastLocation": "SGF",
-      "lastTech": "Steven Wilson",
+      "lastIHC": "2026-08-29",
+      "lastLocation": "LIT",
+      "lastTech": "Damian Utley",
       "ED1": 15,
       "ED2": 51
     },
@@ -817,12 +817,12 @@
     },
     {
       "tail": "N274NN",
-      "lastService": "2026-08-24",
+      "lastService": "2026-08-29",
       "lastED1": "2026-08-06",
       "lastED2": "2026-08-06",
-      "lastIHC": "2026-08-24",
-      "lastLocation": "DFW",
-      "lastTech": "NADIA JOHNSON",
+      "lastIHC": "2026-08-29",
+      "lastLocation": "LIT",
+      "lastTech": "Damian Utley",
       "ED1": 6,
       "ED2": 36
     },
@@ -1565,12 +1565,12 @@
     },
     {
       "tail": "N347JT",
-      "lastService": "2026-08-25",
+      "lastService": "2026-08-29",
       "lastED1": "2026-08-17",
       "lastED2": "2026-08-17",
-      "lastIHC": "2026-08-25",
-      "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastIHC": "2026-08-29",
+      "lastLocation": "LIT",
+      "lastTech": "Damian Utley",
       "ED1": 17,
       "ED2": 47
     },
@@ -2231,6 +2231,51 @@
       "ED2": 0
     },
     {
+      "tail": "N254NN",
+      "date": "2026-08-29",
+      "name": "Damian Utley",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N230NN",
+      "date": "2026-08-29",
+      "name": "Damian Utley",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N274NN",
+      "date": "2026-08-29",
+      "name": "Damian Utley",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N265NN",
+      "date": "2026-08-29",
+      "name": "Damian Utley",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N347JT",
+      "date": "2026-08-29",
+      "name": "Damian Utley",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
       "tail": "N200NN",
       "date": "2026-08-29",
       "name": "NADIA  JOHNSON",
@@ -2286,6 +2331,15 @@
     },
     {
       "tail": "N768RD",
+      "date": "2026-08-29",
+      "name": "NADIA JOHNSON",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N215NN",
       "date": "2026-08-29",
       "name": "NADIA JOHNSON",
       "location": "DFW",

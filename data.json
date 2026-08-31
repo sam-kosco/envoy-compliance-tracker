@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-31T06:07:39.162980+00:00",
+  "generated": "2026-08-31T07:08:11.325290+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -322,12 +322,12 @@
     },
     {
       "tail": "N229NN",
-      "lastService": "2026-08-26",
+      "lastService": "2026-08-30",
       "lastED1": "2026-08-16",
       "lastED2": "2026-08-26",
-      "lastIHC": "2026-08-26",
+      "lastIHC": "2026-08-30",
       "lastLocation": "XNA",
-      "lastTech": "Riley Woods",
+      "lastTech": "Riley Pinterich",
       "ED1": 15,
       "ED2": 55
     },
@@ -465,13 +465,13 @@
     },
     {
       "tail": "N242NN",
-      "lastService": "2026-08-26",
-      "lastED1": "2026-08-05",
+      "lastService": "2026-08-30",
+      "lastED1": "2026-08-30",
       "lastED2": "2026-07-20",
-      "lastIHC": "2026-08-26",
+      "lastIHC": "2026-08-30",
       "lastLocation": "XNA",
-      "lastTech": "Riley Woods",
-      "ED1": 4,
+      "lastTech": "Riley Pinterich",
+      "ED1": 29,
       "ED2": 18
     },
     {
@@ -553,13 +553,13 @@
     },
     {
       "tail": "N250NN",
-      "lastService": "2026-08-29",
-      "lastED1": "2026-07-16",
+      "lastService": "2026-08-30",
+      "lastED1": "2026-08-30",
       "lastED2": "2026-07-22",
-      "lastIHC": "2026-08-29",
-      "lastLocation": "DFW",
-      "lastTech": "NADIA  JOHNSON",
-      "ED1": -16,
+      "lastIHC": "2026-08-30",
+      "lastLocation": "XNA",
+      "lastTech": "Riley Pinterich",
+      "ED1": 29,
       "ED2": 20
     },
     {
@@ -828,13 +828,13 @@
     },
     {
       "tail": "N275NN",
-      "lastService": "2026-08-22",
-      "lastED1": "2026-08-03",
+      "lastService": "2026-08-30",
+      "lastED1": "2026-08-30",
       "lastED2": "2026-08-18",
-      "lastIHC": "2026-08-22",
-      "lastLocation": "CMH",
-      "lastTech": "Darian Eiland",
-      "ED1": 2,
+      "lastIHC": "2026-08-30",
+      "lastLocation": "XNA",
+      "lastTech": "Riley Pinterich",
+      "ED1": 29,
       "ED2": 47
     },
     {
@@ -1224,13 +1224,13 @@
     },
     {
       "tail": "N316GS",
-      "lastService": "2026-08-26",
-      "lastED1": "2026-07-25",
+      "lastService": "2026-08-30",
+      "lastED1": "2026-08-30",
       "lastED2": "2026-08-03",
-      "lastIHC": "2026-08-26",
-      "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
-      "ED1": -7,
+      "lastIHC": "2026-08-30",
+      "lastLocation": "XNA",
+      "lastTech": "Riley Pinterich",
+      "ED1": 29,
       "ED2": 32
     },
     {
@@ -1323,12 +1323,12 @@
     },
     {
       "tail": "N325DM",
-      "lastService": "2026-08-15",
+      "lastService": "2026-08-30",
       "lastED1": "2026-08-12",
       "lastED2": "2026-07-28",
-      "lastIHC": "2026-08-15",
-      "lastLocation": "DFW",
-      "lastTech": "NADIA JOHNSON",
+      "lastIHC": "2026-08-30",
+      "lastLocation": "XNA",
+      "lastTech": "Riley Pinterich",
       "ED1": 11,
       "ED2": 26
     },
@@ -2118,6 +2118,60 @@
       "date": "2026-08-31",
       "name": "Raenita Jasper",
       "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N250NN",
+      "date": "2026-08-30",
+      "name": "Riley Pinterich",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N275NN",
+      "date": "2026-08-30",
+      "name": "Riley Pinterich",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N316GS",
+      "date": "2026-08-30",
+      "name": "Riley Pinterich",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N242NN",
+      "date": "2026-08-30",
+      "name": "Riley Pinterich",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N229NN",
+      "date": "2026-08-30",
+      "name": "Riley Pinterich",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N325DM",
+      "date": "2026-08-30",
+      "name": "Riley Pinterich",
+      "location": "XNA",
       "IHC": 1,
       "ED1": 0,
       "ED2": 0

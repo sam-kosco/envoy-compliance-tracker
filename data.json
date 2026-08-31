@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-31T07:08:11.325290+00:00",
+  "generated": "2026-08-31T08:07:47.307455+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -190,13 +190,13 @@
     },
     {
       "tail": "N217NN",
-      "lastService": "2026-08-26",
-      "lastED1": "2026-07-18",
+      "lastService": "2026-08-30",
+      "lastED1": "2026-08-30",
       "lastED2": "2026-07-27",
-      "lastIHC": "2026-08-26",
-      "lastLocation": "CVG",
-      "lastTech": "Precious Roberson",
-      "ED1": -14,
+      "lastIHC": "2026-08-30",
+      "lastLocation": "CMH",
+      "lastTech": "Tanaija Price",
+      "ED1": 29,
       "ED2": 25
     },
     {
@@ -223,12 +223,12 @@
     },
     {
       "tail": "N220NN",
-      "lastService": "2026-08-26",
+      "lastService": "2026-08-30",
       "lastED1": "2026-08-14",
       "lastED2": "2026-08-07",
-      "lastIHC": "2026-08-26",
-      "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastIHC": "2026-08-30",
+      "lastLocation": "CMH",
+      "lastTech": "Tanaija Price",
       "ED1": 13,
       "ED2": 36
     },
@@ -256,12 +256,12 @@
     },
     {
       "tail": "N223NN",
-      "lastService": "2026-08-23",
+      "lastService": "2026-08-30",
       "lastED1": "2026-08-14",
       "lastED2": "2026-05-17",
-      "lastIHC": "2026-08-23",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
+      "lastIHC": "2026-08-30",
+      "lastLocation": "CVG",
+      "lastTech": "Bayleah Vogel",
       "ED1": 13,
       "ED2": -46
     },
@@ -498,12 +498,12 @@
     },
     {
       "tail": "N245NN",
-      "lastService": "2026-08-26",
+      "lastService": "2026-08-30",
       "lastED1": "2026-08-19",
       "lastED2": "2026-07-13",
-      "lastIHC": "2026-08-26",
-      "lastLocation": "SGF",
-      "lastTech": "Steven Wilson",
+      "lastIHC": "2026-08-30",
+      "lastLocation": "CVG",
+      "lastTech": "Bayleah Vogel",
       "ED1": 18,
       "ED2": 11
     },
@@ -630,12 +630,12 @@
     },
     {
       "tail": "N257NN",
-      "lastService": "2026-08-27",
+      "lastService": "2026-08-30",
       "lastED1": "2026-08-06",
       "lastED2": "2026-07-11",
-      "lastIHC": "2026-08-27",
-      "lastLocation": "LIT",
-      "lastTech": "Mathew Walker",
+      "lastIHC": "2026-08-30",
+      "lastLocation": "DFW",
+      "lastTech": "NADIA JOHNSON",
       "ED1": 5,
       "ED2": 9
     },
@@ -1048,12 +1048,12 @@
     },
     {
       "tail": "N299JJ",
-      "lastService": "2026-08-22",
+      "lastService": "2026-08-30",
       "lastED1": "2026-08-17",
       "lastED2": "2026-07-15",
-      "lastIHC": "2026-08-22",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
+      "lastIHC": "2026-08-30",
+      "lastLocation": "CMH",
+      "lastTech": "Tanaija Price",
       "ED1": 16,
       "ED2": 13
     },
@@ -1400,12 +1400,12 @@
     },
     {
       "tail": "N331SC",
-      "lastService": "2026-08-29",
+      "lastService": "2026-08-30",
       "lastED1": "2026-08-15",
       "lastED2": "2026-07-26",
-      "lastIHC": "2026-08-29",
-      "lastLocation": "XNA",
-      "lastTech": "Riley Pinterich",
+      "lastIHC": "2026-08-30",
+      "lastLocation": "CMH",
+      "lastTech": "Tanaija Price",
       "ED1": 14,
       "ED2": 24
     },
@@ -1631,12 +1631,12 @@
     },
     {
       "tail": "N740MR",
-      "lastService": "2026-08-27",
+      "lastService": "2026-08-30",
       "lastED1": "2026-08-11",
       "lastED2": "2026-08-04",
-      "lastIHC": "2026-08-27",
+      "lastIHC": "2026-08-30",
       "lastLocation": "CVG",
-      "lastTech": "Sellers Davis",
+      "lastTech": "Bayleah Vogel",
       "ED1": 10,
       "ED2": 33
     },
@@ -1961,12 +1961,12 @@
     },
     {
       "tail": "N783LC",
-      "lastService": "2026-08-26",
+      "lastService": "2026-08-30",
       "lastED1": "2026-08-22",
       "lastED2": "2026-08-10",
-      "lastIHC": "2026-08-26",
-      "lastLocation": "XNA",
-      "lastTech": "Riley Woods",
+      "lastIHC": "2026-08-30",
+      "lastLocation": "CMH",
+      "lastTech": "Tanaija Price",
       "ED1": 21,
       "ED2": 39
     },
@@ -2177,6 +2177,78 @@
       "ED2": 0
     },
     {
+      "tail": "N223NN",
+      "date": "2026-08-30",
+      "name": "Bayleah Vogel",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N245NN",
+      "date": "2026-08-30",
+      "name": "Bayleah Vogel",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N740MR",
+      "date": "2026-08-30",
+      "name": "Bayleah Vogel",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N217NN",
+      "date": "2026-08-30",
+      "name": "Tanaija Price",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N220NN",
+      "date": "2026-08-30",
+      "name": "Tanaija Price",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N299JJ",
+      "date": "2026-08-30",
+      "name": "Tanaija Price",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N331SC",
+      "date": "2026-08-30",
+      "name": "Tanaija Price",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N783LC",
+      "date": "2026-08-30",
+      "name": "Tanaija Price",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
       "tail": "N244NN",
       "date": "2026-08-30",
       "name": "NADIA  JOHNSON",
@@ -2187,6 +2259,15 @@
     },
     {
       "tail": "N272NN",
+      "date": "2026-08-30",
+      "name": "NADIA JOHNSON",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N257NN",
       "date": "2026-08-30",
       "name": "NADIA JOHNSON",
       "location": "DFW",

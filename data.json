@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-01T08:07:36.655262+00:00",
+  "generated": "2026-09-01T09:08:13.672269+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -91,12 +91,12 @@
     },
     {
       "tail": "N208AN",
-      "lastService": "2026-08-26",
+      "lastService": "2026-08-31",
       "lastED1": "2026-08-06",
       "lastED2": "2026-07-05",
-      "lastIHC": "2026-08-26",
-      "lastLocation": "CMH",
-      "lastTech": "Alex Hamilton",
+      "lastIHC": "2026-08-31",
+      "lastLocation": "CVG",
+      "lastTech": "Precious Valadez-Roberson",
       "ED1": 4,
       "ED2": 2
     },
@@ -1015,12 +1015,12 @@
     },
     {
       "tail": "N292NN",
-      "lastService": "2026-08-19",
+      "lastService": "2026-08-31",
       "lastED1": "2026-07-25",
       "lastED2": "2026-06-30",
-      "lastIHC": "2026-08-19",
-      "lastLocation": "SGF",
-      "lastTech": "Steven Wilson",
+      "lastIHC": "2026-08-31",
+      "lastLocation": "CVG",
+      "lastTech": "Precious Valadez-Roberson",
       "ED1": -8,
       "ED2": -3
     },
@@ -1290,12 +1290,12 @@
     },
     {
       "tail": "N322RC",
-      "lastService": "2026-08-23",
+      "lastService": "2026-08-31",
       "lastED1": "2026-08-03",
       "lastED2": "2026-07-10",
-      "lastIHC": "2026-08-23",
-      "lastLocation": "DFW",
-      "lastTech": "NADIA JOHNSON",
+      "lastIHC": "2026-08-31",
+      "lastLocation": "CVG",
+      "lastTech": "Precious Valadez-Roberson",
       "ED1": 1,
       "ED2": 7
     },
@@ -1917,12 +1917,12 @@
     },
     {
       "tail": "N779RN",
-      "lastService": "2026-08-25",
+      "lastService": "2026-08-31",
       "lastED1": "2026-07-31",
       "lastED2": "2026-08-02",
-      "lastIHC": "2026-08-25",
-      "lastLocation": "CMH",
-      "lastTech": "Tanaija Price",
+      "lastIHC": "2026-08-31",
+      "lastLocation": "CVG",
+      "lastTech": "Precious Valadez-Roberson",
       "ED1": -2,
       "ED2": 30
     },
@@ -2316,6 +2316,42 @@
       "date": "2026-08-31",
       "name": "Tanaija Price",
       "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N292NN",
+      "date": "2026-08-31",
+      "name": "Precious Valadez-Roberson",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N208AN",
+      "date": "2026-08-31",
+      "name": "Precious Valadez-Roberson",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N322RC",
+      "date": "2026-08-31",
+      "name": "Precious Valadez-Roberson",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N779RN",
+      "date": "2026-08-31",
+      "name": "Precious Valadez-Roberson",
+      "location": "CVG",
       "IHC": 1,
       "ED1": 0,
       "ED2": 0

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-01T11:07:37.120123+00:00",
+  "generated": "2026-09-01T16:07:22.581731+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -597,10 +597,10 @@
     },
     {
       "tail": "N254NN",
-      "lastService": "2026-09-01",
+      "lastService": "2026-08-31",
       "lastED1": "2026-08-20",
       "lastED2": "2026-08-20",
-      "lastIHC": "2026-09-01",
+      "lastIHC": "2026-08-31",
       "lastLocation": "XNA",
       "lastTech": "Casey Henry",
       "ED1": 18,
@@ -2114,8 +2114,8 @@
       "ED2": 0
     },
     {
-      "tail": "N254NN",
-      "date": "2026-09-01",
+      "tail": "N302RN",
+      "date": "2026-08-31",
       "name": "Casey Henry",
       "location": "XNA",
       "IHC": 1,
@@ -2123,7 +2123,7 @@
       "ED2": 0
     },
     {
-      "tail": "N302RN",
+      "tail": "N254NN",
       "date": "2026-08-31",
       "name": "Casey Henry",
       "location": "XNA",
@@ -2352,6 +2352,15 @@
       "date": "2026-08-31",
       "name": "Precious Valadez-Roberson",
       "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N303DD",
+      "date": "2026-08-31",
+      "name": "Mathew Walker",
+      "location": "LIT",
       "IHC": 1,
       "ED1": 0,
       "ED2": 0

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-01T06:08:06.684862+00:00",
+  "generated": "2026-09-01T07:07:41.277101+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -36,14 +36,14 @@
     },
     {
       "tail": "N203NN",
-      "lastService": "2026-08-19",
+      "lastService": "2026-08-31",
       "lastED1": "2026-08-19",
-      "lastED2": "2026-06-24",
-      "lastIHC": "2026-08-19",
+      "lastED2": "2026-08-31",
+      "lastIHC": "2026-08-31",
       "lastLocation": "XNA",
       "lastTech": "Casey Henry",
       "ED1": 17,
-      "ED2": -9
+      "ED2": 59
     },
     {
       "tail": "N204NN",
@@ -388,12 +388,12 @@
     },
     {
       "tail": "N235NN",
-      "lastService": "2026-08-29",
+      "lastService": "2026-08-31",
       "lastED1": "2026-08-29",
       "lastED2": "2026-07-28",
-      "lastIHC": "2026-08-29",
-      "lastLocation": "XNA",
-      "lastTech": "Riley Pinterich",
+      "lastIHC": "2026-08-31",
+      "lastLocation": "DFW",
+      "lastTech": "NADIA JOHNSON",
       "ED1": 27,
       "ED2": 25
     },
@@ -443,14 +443,14 @@
     },
     {
       "tail": "N240NN",
-      "lastService": "2026-08-27",
+      "lastService": "2026-08-31",
       "lastED1": "2026-08-20",
-      "lastED2": "2026-07-09",
-      "lastIHC": "2026-08-27",
-      "lastLocation": "CMH",
-      "lastTech": "Tanaija Price",
+      "lastED2": "2026-08-31",
+      "lastIHC": "2026-08-31",
+      "lastLocation": "XNA",
+      "lastTech": "Casey Henry",
       "ED1": 18,
-      "ED2": 6
+      "ED2": 59
     },
     {
       "tail": "N241NN",
@@ -597,12 +597,12 @@
     },
     {
       "tail": "N254NN",
-      "lastService": "2026-08-29",
+      "lastService": "2026-09-01",
       "lastED1": "2026-08-20",
       "lastED2": "2026-08-20",
-      "lastIHC": "2026-08-29",
-      "lastLocation": "LIT",
-      "lastTech": "Damian Utley",
+      "lastIHC": "2026-09-01",
+      "lastLocation": "XNA",
+      "lastTech": "Casey Henry",
       "ED1": 18,
       "ED2": 48
     },
@@ -1070,12 +1070,12 @@
     },
     {
       "tail": "N302RN",
-      "lastService": "2026-08-28",
+      "lastService": "2026-08-31",
       "lastED1": "2026-08-27",
       "lastED2": "2026-08-27",
-      "lastIHC": "2026-08-28",
-      "lastLocation": "CVG",
-      "lastTech": "Sellers Davis",
+      "lastIHC": "2026-08-31",
+      "lastLocation": "XNA",
+      "lastTech": "Casey Henry",
       "ED1": 25,
       "ED2": 55
     },
@@ -1169,12 +1169,12 @@
     },
     {
       "tail": "N311VE",
-      "lastService": "2026-08-28",
+      "lastService": "2026-08-31",
       "lastED1": "2026-08-23",
       "lastED2": "2026-07-24",
-      "lastIHC": "2026-08-28",
+      "lastIHC": "2026-08-31",
       "lastLocation": "XNA",
-      "lastTech": "Riley Pinterich",
+      "lastTech": "Casey Henry",
       "ED1": 21,
       "ED2": 21
     },
@@ -1389,12 +1389,12 @@
     },
     {
       "tail": "N330JT",
-      "lastService": "2026-08-29",
+      "lastService": "2026-08-31",
       "lastED1": "2026-08-14",
       "lastED2": "2026-07-17",
-      "lastIHC": "2026-08-29",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
+      "lastIHC": "2026-08-31",
+      "lastLocation": "XNA",
+      "lastTech": "Casey Henry",
       "ED1": 12,
       "ED2": 14
     },
@@ -1521,14 +1521,14 @@
     },
     {
       "tail": "N342KR",
-      "lastService": "2026-08-27",
+      "lastService": "2026-08-31",
       "lastED1": "2026-08-12",
-      "lastED2": "2026-07-09",
-      "lastIHC": "2026-08-27",
+      "lastED2": "2026-08-31",
+      "lastIHC": "2026-08-31",
       "lastLocation": "XNA",
-      "lastTech": "Riley Woods",
+      "lastTech": "Casey Henry",
       "ED1": 10,
-      "ED2": 6
+      "ED2": 59
     },
     {
       "tail": "N343JS",
@@ -2114,6 +2114,69 @@
       "ED2": 0
     },
     {
+      "tail": "N254NN",
+      "date": "2026-09-01",
+      "name": "Casey Henry",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N302RN",
+      "date": "2026-08-31",
+      "name": "Casey Henry",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N203NN",
+      "date": "2026-08-31",
+      "name": "Casey Henry",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 1
+    },
+    {
+      "tail": "N240NN",
+      "date": "2026-08-31",
+      "name": "Casey Henry",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 1
+    },
+    {
+      "tail": "N342KR",
+      "date": "2026-08-31",
+      "name": "Casey Henry",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 1
+    },
+    {
+      "tail": "N311VE",
+      "date": "2026-08-31",
+      "name": "Casey Henry",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N330JT",
+      "date": "2026-08-31",
+      "name": "Casey Henry",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
       "tail": "N248NN",
       "date": "2026-08-31",
       "name": "Raenita Jasper",
@@ -2135,6 +2198,15 @@
       "tail": "N327PG",
       "date": "2026-08-31",
       "name": "NADIA  JOHNSON",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N235NN",
+      "date": "2026-08-31",
+      "name": "NADIA JOHNSON",
       "location": "DFW",
       "IHC": 1,
       "ED1": 0,

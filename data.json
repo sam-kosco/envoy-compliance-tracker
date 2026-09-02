@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-02T09:08:03.705416+00:00",
+  "generated": "2026-09-02T10:07:41.997429+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -762,12 +762,12 @@
     },
     {
       "tail": "N269NN",
-      "lastService": "2026-08-31",
+      "lastService": "2026-09-01",
       "lastED1": "2026-08-20",
       "lastED2": "2026-08-08",
-      "lastIHC": "2026-08-31",
+      "lastIHC": "2026-09-01",
       "lastLocation": "LIT",
-      "lastTech": "MATHEW WALKER",
+      "lastTech": "Mathew Walker",
       "ED1": 17,
       "ED2": 35
     },
@@ -1081,12 +1081,12 @@
     },
     {
       "tail": "N303DD",
-      "lastService": "2026-08-31",
+      "lastService": "2026-09-01",
       "lastED1": "2026-08-19",
       "lastED2": "2026-08-23",
-      "lastIHC": "2026-08-31",
-      "lastLocation": "SGF",
-      "lastTech": "MATHEW WALKER",
+      "lastIHC": "2026-09-01",
+      "lastLocation": "LIT",
+      "lastTech": "Mathew Walker",
       "ED1": 16,
       "ED2": 50
     },
@@ -1235,12 +1235,12 @@
     },
     {
       "tail": "N317TB",
-      "lastService": "2026-08-27",
+      "lastService": "2026-09-01",
       "lastED1": "2026-08-10",
       "lastED2": "2026-07-10",
-      "lastIHC": "2026-08-27",
-      "lastLocation": "CMH",
-      "lastTech": "Tanaija  Price",
+      "lastIHC": "2026-09-01",
+      "lastLocation": "LIT",
+      "lastTech": "Mathew Walker",
       "ED1": 7,
       "ED2": 6
     },
@@ -1301,12 +1301,12 @@
     },
     {
       "tail": "N323ED",
-      "lastService": "2026-08-23",
+      "lastService": "2026-09-01",
       "lastED1": "2026-08-12",
       "lastED2": "2026-08-12",
-      "lastIHC": "2026-08-23",
-      "lastLocation": "XNA",
-      "lastTech": "Shaun Neil",
+      "lastIHC": "2026-09-01",
+      "lastLocation": "LIT",
+      "lastTech": "Mathew Walker",
       "ED1": 9,
       "ED2": 39
     },
@@ -2307,6 +2307,42 @@
       "date": "2026-09-01",
       "name": "Dvion Davis",
       "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N317TB",
+      "date": "2026-09-01",
+      "name": "Mathew Walker",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N269NN",
+      "date": "2026-09-01",
+      "name": "Mathew Walker",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N303DD",
+      "date": "2026-09-01",
+      "name": "Mathew Walker",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N323ED",
+      "date": "2026-09-01",
+      "name": "Mathew Walker",
+      "location": "LIT",
       "IHC": 1,
       "ED1": 0,
       "ED2": 0

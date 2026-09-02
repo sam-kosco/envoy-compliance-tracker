@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-02T01:18:06.043971+00:00",
+  "generated": "2026-09-02T03:17:31.728367+00:00",
   "planes": [
     {
       "tail": "N500AE",
@@ -663,20 +663,20 @@
     },
     {
       "tail": "N535EA",
-      "lastService": "2026-08-27",
-      "lastCC": "2026-08-27",
+      "lastService": "2026-09-01",
+      "lastCC": "2026-09-01",
       "lastDSC": "2026-08-13",
       "lastCE": "2026-08-26",
       "lastED1": "2026-08-27",
       "lastED2": "2026-08-27",
       "lastLav": "2026-06-07",
-      "lastIC": "2026-08-27",
-      "lastEC": "2026-08-27",
+      "lastIC": "2026-09-01",
+      "lastEC": "2026-09-01",
       "lastED3": null,
       "lastED4": null,
-      "lastLocation": "GSP",
-      "lastTech": "Savannah Atkins",
-      "CC": 24,
+      "lastLocation": "DCA",
+      "lastTech": "Mitchell Young",
+      "CC": 29,
       "DSC": 10,
       "CE": 23,
       "ED1": 24,
@@ -3413,6 +3413,23 @@
     }
   ],
   "debriefs": [
+    {
+      "tail": "N535EA",
+      "date": "2026-09-01",
+      "name": "Mitchell Young",
+      "location": "DCA",
+      "IC": 1,
+      "EC": 1,
+      "CC": 1,
+      "DSC": 0,
+      "CE": 0,
+      "ED1": 0,
+      "ED2": 0,
+      "ED3": 0,
+      "ED4": 0,
+      "Lav": 0,
+      "audits": []
+    },
     {
       "tail": "N584NN",
       "date": "2026-08-31",

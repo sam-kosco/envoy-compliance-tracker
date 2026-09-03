@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-03T04:08:10.178922+00:00",
+  "generated": "2026-09-03T05:08:16.328475+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -850,10 +850,10 @@
     },
     {
       "tail": "N277NN",
-      "lastService": "2026-08-28",
+      "lastService": "2026-09-02",
       "lastED1": "2026-08-27",
       "lastED2": "2026-08-27",
-      "lastIHC": "2026-08-28",
+      "lastIHC": "2026-09-02",
       "lastLocation": "CVG",
       "lastTech": "Sellers Davis",
       "ED1": 23,
@@ -916,12 +916,12 @@
     },
     {
       "tail": "N283NN",
-      "lastService": "2026-08-20",
+      "lastService": "2026-09-02",
       "lastED1": "2026-08-09",
       "lastED2": "2026-06-28",
-      "lastIHC": "2026-08-20",
-      "lastLocation": "DFW",
-      "lastTech": "NADIA JOHNSON",
+      "lastIHC": "2026-09-02",
+      "lastLocation": "CVG",
+      "lastTech": "Sellers Davis",
       "ED1": 5,
       "ED2": -7
     },
@@ -1917,12 +1917,12 @@
     },
     {
       "tail": "N779RN",
-      "lastService": "2026-08-31",
+      "lastService": "2026-09-02",
       "lastED1": "2026-07-31",
       "lastED2": "2026-08-02",
-      "lastIHC": "2026-08-31",
+      "lastIHC": "2026-09-02",
       "lastLocation": "CVG",
-      "lastTech": "Precious Valadez-Roberson",
+      "lastTech": "Sellers Davis",
       "ED1": -4,
       "ED2": 28
     },
@@ -2109,6 +2109,33 @@
       "date": "2026-12-30",
       "name": "Aunyae Morrison",
       "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N277NN",
+      "date": "2026-09-02",
+      "name": "Sellers Davis",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N283NN",
+      "date": "2026-09-02",
+      "name": "Sellers Davis",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N779RN",
+      "date": "2026-09-02",
+      "name": "Sellers Davis",
+      "location": "CVG",
       "IHC": 1,
       "ED1": 0,
       "ED2": 0

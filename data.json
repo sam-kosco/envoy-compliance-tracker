@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-04T09:07:57.446667+00:00",
+  "generated": "2026-09-04T10:07:35.427670+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -465,12 +465,12 @@
     },
     {
       "tail": "N242NN",
-      "lastService": "2026-08-30",
+      "lastService": "2026-09-03",
       "lastED1": "2026-08-30",
       "lastED2": "2026-07-20",
-      "lastIHC": "2026-08-30",
-      "lastLocation": "XNA",
-      "lastTech": "Riley Pinterich",
+      "lastIHC": "2026-09-03",
+      "lastLocation": "DFW",
+      "lastTech": "Aunyae Morrison",
       "ED1": 25,
       "ED2": 14
     },
@@ -564,12 +564,12 @@
     },
     {
       "tail": "N251NN",
-      "lastService": "2026-09-02",
+      "lastService": "2026-09-03",
       "lastED1": "2026-09-02",
       "lastED2": "2026-07-19",
-      "lastIHC": "2026-09-02",
-      "lastLocation": "LIT",
-      "lastTech": "Mathew Walker",
+      "lastIHC": "2026-09-03",
+      "lastLocation": "SGF",
+      "lastTech": "Jeffrey Crookshanks",
       "ED1": 28,
       "ED2": 13
     },
@@ -608,12 +608,12 @@
     },
     {
       "tail": "N255NN",
-      "lastService": "2026-08-23",
+      "lastService": "2026-09-03",
       "lastED1": "2026-07-29",
       "lastED2": "2026-08-06",
-      "lastIHC": "2026-08-23",
-      "lastLocation": "LIT",
-      "lastTech": "Mathew Walker",
+      "lastIHC": "2026-09-03",
+      "lastLocation": "SGF",
+      "lastTech": "Jeffrey Crookshanks",
       "ED1": -7,
       "ED2": 31
     },
@@ -1422,12 +1422,12 @@
     },
     {
       "tail": "N333RQ",
-      "lastService": "2026-08-12",
+      "lastService": "2026-09-03",
       "lastED1": "2026-08-12",
       "lastED2": "2026-07-17",
-      "lastIHC": "2026-08-12",
-      "lastLocation": "CMH",
-      "lastTech": "Tanaija Price",
+      "lastIHC": "2026-09-03",
+      "lastLocation": "SGF",
+      "lastTech": "Jeffrey Crookshanks",
       "ED1": 7,
       "ED2": 11
     },
@@ -1510,12 +1510,12 @@
     },
     {
       "tail": "N341MB",
-      "lastService": "2026-08-29",
+      "lastService": "2026-09-03",
       "lastED1": "2026-08-27",
       "lastED2": "2026-08-03",
-      "lastIHC": "2026-08-29",
-      "lastLocation": "LIT",
-      "lastTech": "Damian Utley",
+      "lastIHC": "2026-09-03",
+      "lastLocation": "SGF",
+      "lastTech": "Jeffrey Crookshanks",
       "ED1": 22,
       "ED2": 28
     },
@@ -1664,13 +1664,13 @@
     },
     {
       "tail": "N743MB",
-      "lastService": "2026-08-27",
-      "lastED1": "2026-08-12",
+      "lastService": "2026-09-03",
+      "lastED1": "2026-09-03",
       "lastED2": "2026-08-12",
-      "lastIHC": "2026-08-27",
-      "lastLocation": "DFW",
-      "lastTech": "NADIA JOHNSON",
-      "ED1": 7,
+      "lastIHC": "2026-09-03",
+      "lastLocation": "SGF",
+      "lastTech": "Jeffrey Crookshanks",
+      "ED1": 29,
       "ED2": 37
     },
     {
@@ -2321,6 +2321,51 @@
       "ED2": 1
     },
     {
+      "tail": "N333RQ",
+      "date": "2026-09-03",
+      "name": "Jeffrey Crookshanks",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N743MB",
+      "date": "2026-09-03",
+      "name": "Jeffrey Crookshanks",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N255NN",
+      "date": "2026-09-03",
+      "name": "Jeffrey Crookshanks",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N341MB",
+      "date": "2026-09-03",
+      "name": "Jeffrey Crookshanks",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N251NN",
+      "date": "2026-09-03",
+      "name": "Jeffrey Crookshanks",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
       "tail": "N215NN",
       "date": "2026-09-03",
       "name": "Aunyae Morrison",
@@ -2394,6 +2439,15 @@
     },
     {
       "tail": "N235NN",
+      "date": "2026-09-03",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N242NN",
       "date": "2026-09-03",
       "name": "Aunyae Morrison",
       "location": "DFW",

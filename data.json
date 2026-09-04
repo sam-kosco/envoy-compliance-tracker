@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-04T14:08:24.766777+00:00",
+  "generated": "2026-09-04T15:07:58.881110+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -707,12 +707,12 @@
     },
     {
       "tail": "N264NN",
-      "lastService": "2026-08-28",
+      "lastService": "2026-09-02",
       "lastED1": "2026-08-18",
       "lastED2": "2026-08-18",
-      "lastIHC": "2026-08-28",
-      "lastLocation": "LIT",
-      "lastTech": "Damian Utley",
+      "lastIHC": "2026-09-02",
+      "lastLocation": "CMH",
+      "lastTech": "Alexander Hamilton",
       "ED1": 13,
       "ED2": 43
     },
@@ -2703,6 +2703,15 @@
       "date": "2026-09-02",
       "name": "Mathew Walker",
       "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N264NN",
+      "date": "2026-09-02",
+      "name": "Alexander Hamilton",
+      "location": "CMH",
       "IHC": 1,
       "ED1": 0,
       "ED2": 0

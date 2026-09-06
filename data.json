@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-06T08:07:41.166960+00:00",
+  "generated": "2026-09-06T09:08:15.432505+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -25,12 +25,12 @@
     },
     {
       "tail": "N202NN",
-      "lastService": "2026-09-04",
+      "lastService": "2026-09-05",
       "lastED1": "2026-08-30",
       "lastED2": "2026-09-04",
-      "lastIHC": "2026-09-04",
-      "lastLocation": "XNA",
-      "lastTech": "Riley Pinterich",
+      "lastIHC": "2026-09-05",
+      "lastLocation": "LIT",
+      "lastTech": "Damian Utley",
       "ED1": 23,
       "ED2": 58
     },
@@ -157,10 +157,10 @@
     },
     {
       "tail": "N214NN",
-      "lastService": "2026-09-04",
+      "lastService": "2026-09-05",
       "lastED1": "2026-08-07",
       "lastED2": "2026-08-07",
-      "lastIHC": "2026-09-04",
+      "lastIHC": "2026-09-05",
       "lastLocation": "DFW",
       "lastTech": "NADIA  JOHNSON",
       "ED1": 0,
@@ -454,12 +454,12 @@
     },
     {
       "tail": "N241NN",
-      "lastService": "2026-08-28",
+      "lastService": "2026-09-05",
       "lastED1": "2026-08-23",
       "lastED2": "2026-06-22",
-      "lastIHC": "2026-08-28",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
+      "lastIHC": "2026-09-05",
+      "lastLocation": "DFW",
+      "lastTech": "NADIA  JOHNSON",
       "ED1": 16,
       "ED2": -16
     },
@@ -498,10 +498,10 @@
     },
     {
       "tail": "N245NN",
-      "lastService": "2026-09-03",
+      "lastService": "2026-09-05",
       "lastED1": "2026-08-19",
       "lastED2": "2026-07-13",
-      "lastIHC": "2026-09-03",
+      "lastIHC": "2026-09-05",
       "lastLocation": "LIT",
       "lastTech": "Damian Utley",
       "ED1": 12,
@@ -762,12 +762,12 @@
     },
     {
       "tail": "N269NN",
-      "lastService": "2026-09-04",
+      "lastService": "2026-09-05",
       "lastED1": "2026-08-20",
       "lastED2": "2026-08-08",
-      "lastIHC": "2026-09-04",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
+      "lastIHC": "2026-09-05",
+      "lastLocation": "LIT",
+      "lastTech": "Damian Utley",
       "ED1": 13,
       "ED2": 31
     },
@@ -817,10 +817,10 @@
     },
     {
       "tail": "N274NN",
-      "lastService": "2026-08-29",
+      "lastService": "2026-09-05",
       "lastED1": "2026-08-06",
       "lastED2": "2026-08-06",
-      "lastIHC": "2026-08-29",
+      "lastIHC": "2026-09-05",
       "lastLocation": "LIT",
       "lastTech": "Damian Utley",
       "ED1": -1,
@@ -1389,12 +1389,12 @@
     },
     {
       "tail": "N330JT",
-      "lastService": "2026-08-31",
+      "lastService": "2026-09-05",
       "lastED1": "2026-08-14",
       "lastED2": "2026-07-17",
-      "lastIHC": "2026-08-31",
-      "lastLocation": "XNA",
-      "lastTech": "Casey Henry",
+      "lastIHC": "2026-09-05",
+      "lastLocation": "LIT",
+      "lastTech": "Damian Utley",
       "ED1": 7,
       "ED2": 9
     },
@@ -1598,12 +1598,12 @@
     },
     {
       "tail": "N350CD",
-      "lastService": "2026-09-01",
+      "lastService": "2026-09-05",
       "lastED1": "2026-08-20",
       "lastED2": "2026-08-20",
-      "lastIHC": "2026-09-01",
+      "lastIHC": "2026-09-05",
       "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastTech": "NADIA JOHNSON",
       "ED1": 13,
       "ED2": 43
     },
@@ -2177,6 +2177,51 @@
       "ED2": 0
     },
     {
+      "tail": "N269NN",
+      "date": "2026-09-05",
+      "name": "Damian Utley",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N202NN",
+      "date": "2026-09-05",
+      "name": "Damian Utley",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N245NN",
+      "date": "2026-09-05",
+      "name": "Damian Utley",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N274NN",
+      "date": "2026-09-05",
+      "name": "Damian Utley",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N330JT",
+      "date": "2026-09-05",
+      "name": "Damian Utley",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
       "tail": "N284JN",
       "date": "2026-09-05",
       "name": "NADIA JOHNSON",
@@ -2216,6 +2261,33 @@
       "tail": "N203NN",
       "date": "2026-09-05",
       "name": "NADIA JOHNSON",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N350CD",
+      "date": "2026-09-05",
+      "name": "NADIA JOHNSON",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N214NN",
+      "date": "2026-09-05",
+      "name": "NADIA  JOHNSON",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N241NN",
+      "date": "2026-09-05",
+      "name": "NADIA  JOHNSON",
       "location": "DFW",
       "IHC": 1,
       "ED1": 0,

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-06T04:27:28.763990+00:00",
+  "generated": "2026-09-06T05:28:07.007523+00:00",
   "cycles": {
     "IHC": 45,
     "ED": 30,
@@ -712,21 +712,21 @@
     },
     {
       "tail": "N88325",
-      "lastService": "2026-08-30",
+      "lastService": "2026-09-05",
       "lastIHC": "2026-08-13",
-      "lastED": "2026-08-13",
-      "lastDSC": "2026-08-13",
-      "lastFD": "2026-08-30",
-      "lastCE": "2026-08-13",
-      "lastRON": "2026-08-30",
-      "lastEC": "2026-08-30",
-      "lastESS": "2026-08-30",
-      "lastTech": "David Blatt",
+      "lastED": "2026-09-05",
+      "lastDSC": "2026-09-05",
+      "lastFD": "2026-09-05",
+      "lastCE": "2026-09-05",
+      "lastRON": "2026-09-05",
+      "lastEC": "2026-09-05",
+      "lastESS": "2026-09-05",
+      "lastTech": "Raenita Jasper",
       "IHC": 21,
-      "ED": 6,
-      "DSC": 6,
-      "FD": 23,
-      "CE": 6
+      "ED": 29,
+      "DSC": 29,
+      "FD": 29,
+      "CE": 29
     },
     {
       "tail": "N88326",
@@ -1126,6 +1126,19 @@
       "FD": 1,
       "CE": 1,
       "RON": 0,
+      "EC": 1,
+      "ESS": 1
+    },
+    {
+      "tail": "N88325",
+      "date": "2026-09-05",
+      "name": "Raenita Jasper",
+      "IHC": 0,
+      "ED": 1,
+      "DSC": 1,
+      "FD": 1,
+      "CE": 1,
+      "RON": 1,
       "EC": 1,
       "ESS": 1
     },

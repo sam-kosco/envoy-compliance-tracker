@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-07T06:07:47.895199+00:00",
+  "generated": "2026-09-07T07:07:24.341200+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -553,12 +553,12 @@
     },
     {
       "tail": "N250NN",
-      "lastService": "2026-08-30",
+      "lastService": "2026-09-06",
       "lastED1": "2026-08-30",
       "lastED2": "2026-07-22",
-      "lastIHC": "2026-08-30",
+      "lastIHC": "2026-09-06",
       "lastLocation": "XNA",
-      "lastTech": "Riley Pinterich",
+      "lastTech": "Shaun Neil",
       "ED1": 22,
       "ED2": 13
     },
@@ -696,12 +696,12 @@
     },
     {
       "tail": "N263NN",
-      "lastService": "2026-09-05",
+      "lastService": "2026-09-06",
       "lastED1": "2026-08-16",
       "lastED2": "2026-07-18",
-      "lastIHC": "2026-09-05",
-      "lastLocation": "CVG",
-      "lastTech": "Bayleah Vogel",
+      "lastIHC": "2026-09-06",
+      "lastLocation": "XNA",
+      "lastTech": "Shaun Neil",
       "ED1": 8,
       "ED2": 9
     },
@@ -938,12 +938,12 @@
     },
     {
       "tail": "N285NN",
-      "lastService": "2026-08-28",
+      "lastService": "2026-09-06",
       "lastED1": "2026-08-23",
       "lastED2": "2026-08-10",
-      "lastIHC": "2026-08-28",
-      "lastLocation": "CVG",
-      "lastTech": "Sellers Davis",
+      "lastIHC": "2026-09-06",
+      "lastLocation": "XNA",
+      "lastTech": "Shaun Neil",
       "ED1": 15,
       "ED2": 32
     },
@@ -1180,12 +1180,12 @@
     },
     {
       "tail": "N312BT",
-      "lastService": "2026-09-01",
+      "lastService": "2026-09-06",
       "lastED1": "2026-08-03",
       "lastED2": "2026-07-10",
-      "lastIHC": "2026-09-01",
-      "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastIHC": "2026-09-06",
+      "lastLocation": "XNA",
+      "lastTech": "Shaun Neil",
       "ED1": -5,
       "ED2": 1
     },
@@ -1279,12 +1279,12 @@
     },
     {
       "tail": "N321JS",
-      "lastService": "2026-09-02",
+      "lastService": "2026-09-06",
       "lastED1": "2026-08-03",
       "lastED2": "2026-07-02",
-      "lastIHC": "2026-09-02",
-      "lastLocation": "LIT",
-      "lastTech": "Mathew Walker",
+      "lastIHC": "2026-09-06",
+      "lastLocation": "XNA",
+      "lastTech": "Shaun Neil",
       "ED1": -5,
       "ED2": -7
     },
@@ -1312,12 +1312,12 @@
     },
     {
       "tail": "N324ES",
-      "lastService": "2026-09-02",
+      "lastService": "2026-09-06",
       "lastED1": "2026-08-21",
       "lastED2": "2026-07-21",
-      "lastIHC": "2026-09-02",
-      "lastLocation": "LIT",
-      "lastTech": "Mathew Walker",
+      "lastIHC": "2026-09-06",
+      "lastLocation": "XNA",
+      "lastTech": "Shaun Neil",
       "ED1": 13,
       "ED2": 12
     },
@@ -1532,12 +1532,12 @@
     },
     {
       "tail": "N343JS",
-      "lastService": "2026-09-05",
+      "lastService": "2026-09-06",
       "lastED1": "2026-08-17",
       "lastED2": "2026-09-04",
-      "lastIHC": "2026-09-05",
+      "lastIHC": "2026-09-06",
       "lastLocation": "XNA",
-      "lastTech": "Riley Pinterich",
+      "lastTech": "Shaun Neil",
       "ED1": 9,
       "ED2": 57
     },
@@ -2109,6 +2109,69 @@
       "date": "2026-12-30",
       "name": "Aunyae Morrison",
       "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N250NN",
+      "date": "2026-09-06",
+      "name": "Shaun Neil",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N285NN",
+      "date": "2026-09-06",
+      "name": "Shaun Neil",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N312BT",
+      "date": "2026-09-06",
+      "name": "Shaun Neil",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N324ES",
+      "date": "2026-09-06",
+      "name": "Shaun Neil",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N263NN",
+      "date": "2026-09-06",
+      "name": "Shaun Neil",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N343JS",
+      "date": "2026-09-06",
+      "name": "Shaun Neil",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N321JS",
+      "date": "2026-09-06",
+      "name": "Shaun Neil",
+      "location": "XNA",
       "IHC": 1,
       "ED1": 0,
       "ED2": 0

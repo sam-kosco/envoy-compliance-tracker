@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-08T15:17:38.629492+00:00",
+  "generated": "2026-09-08T16:18:07.052705+00:00",
   "planes": [
     {
       "tail": "N500AE",
@@ -2322,7 +2322,7 @@
       "lastLav": "2026-06-17",
       "lastIC": "2026-09-07",
       "lastEC": "2026-09-07",
-      "lastED3": "2026-09-07",
+      "lastED3": null,
       "lastED4": null,
       "lastLocation": "ORF",
       "lastTech": "Julian Smallwood",
@@ -3663,7 +3663,7 @@
       "CE": 0,
       "ED1": 0,
       "ED2": 0,
-      "ED3": 1,
+      "ED3": 0,
       "ED4": 0,
       "Lav": 0,
       "audits": []
@@ -3908,23 +3908,6 @@
     },
     {
       "tail": "N580NN",
-      "date": "2026-09-07",
-      "name": "Kristen Matos",
-      "location": "DAY",
-      "IC": 1,
-      "EC": 1,
-      "CC": 1,
-      "DSC": 0,
-      "CE": 0,
-      "ED1": 0,
-      "ED2": 0,
-      "ED3": 0,
-      "ED4": 0,
-      "Lav": 0,
-      "audits": []
-    },
-    {
-      "tail": "N643NN",
       "date": "2026-09-07",
       "name": "Kristen Matos",
       "location": "DAY",

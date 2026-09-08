@@ -200,7 +200,6 @@ The `manage_fleet.yml` workflow additionally requires:
 | `SAFETYCULTURE_KEY` | SafetyCulture API token |
 | `JOTFORM_KEY` | JotForm API key (Full Access, Enterprise tenant) — API host is `https://foxtrotaviation.jotform.com/API` |
 
-The Power Automate flow URL is embedded in `psa.html` as `PA_TAIL_WEBHOOK_URL` (same value that lives in `Secrets.env` under the same name). That flow holds a GitHub PAT (stored as a secure variable inside PA), calls `workflow_dispatch` on `manage_fleet.yml`, responds to the dashboard, then appends a row to the SharePoint Tail List itself. See "PSA Admin → Add Tail" below.
 
 The SharePoint Drive ID used by the compliance refresh scripts:  
 `b!_bzXaIx86kOufgJN3ih-BaDIDthKYuxJkJtLi1Bm5irGjCEnK-VHSpBRRm3_SDKU`
@@ -375,11 +374,11 @@ The script no longer writes to Excel — Power Automate handles all writes using
 | Task | When | Action |
 |------|------|--------|
 | Renew CLIENT_SECRET | Every 24 months | Entra → App registrations → Foxtrot Report Automation → new secret → update GitHub Secret |
-| Add tail to Envoy fleet | As needed | Use the Envoy dashboard → Admin tab (password-gated). One submit updates both debrief forms, all five closeout forms, and SharePoint together. |
+| Add tail to Envoy fleet | As needed | Foxtrot Platform → Fleets → Envoy → Admin (Fleet Admins). Updates both debrief forms + all five closeout lists; add the Tail List row in the workbook by hand. |
 | Remove tail from Envoy fleet | As needed | Envoy Admin tab → Remove Tail (sets Status=Disabled on the Tail List, column F) |
 | Add tail to Mesa fleet | As needed | Add to the Tails sheet (column A) in the Mesa SharePoint Excel |
 | Add tail to GoJet fleet | As needed | Add to the Tails sheet (column A) in the GoJet SharePoint Excel |
-| Add tail to PSA fleet | As needed | Use the PSA dashboard → Admin tab (password-gated). One submit updates SafetyCulture, both JotForm forms (PSA debrief Q53 + Commercial Closeout Q27 tail dropdown), and SharePoint together. |
+| Add tail to PSA fleet | As needed | Foxtrot Platform → Fleets → PSA → Admin (Fleet Admins). Updates SafetyCulture + both JotForm lists; add the Tail List row in the workbook by hand. |
 | Remove tail from PSA fleet | As needed | Admin tab → Remove Tail (sets Status=Disabled on the Tail List; tracker drops it on next refresh) |
 | Re-activate a disabled PSA tail | As needed | Set Status back to Active on the Tail List sheet (do NOT re-add via Admin tab — see "Remove Tail") |
 | Add tail to Crosswinds fleet | As needed | Add to the Crosswinds Tail Numbers global response set in SafetyCulture AND the `TAILS` list in `crosswinds_generate_data.py` |

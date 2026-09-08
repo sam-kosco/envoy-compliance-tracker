@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>GoJet Fleet Compliance Tracker</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Barlow+Condensed:wght@600;700;800&display=swap" rel="stylesheet">
 <style>
@@ -929,17 +930,26 @@ function woGenerate(){
   function np(){ doc.addPage(); y=M; }
   function need(h){ if(y+h>PH-M) np(); }
 
-  doc.setFont('helvetica','bold'); doc.setFontSize(19); doc.setTextColor.apply(doc,NAVY);
-  doc.text(WO_PROGRAM+' Fleet — Nightly Work Order', M, y+4);
   const now=new Date();
   const disp=(now.getMonth()+1)+'/'+now.getDate()+'/'+String(now.getFullYear()).slice(2);
-  doc.setFont('helvetica','normal'); doc.setFontSize(11); doc.setTextColor.apply(doc,MID);
-  doc.text(disp, PW-M, y+4, {align:'right'});
+  // Unique work-order ID + QR (top-right). The QR encodes this ID so a closeout can
+  // carry a photo of it and the reconciler can tie the closeout to THIS exact work
+  // order (identity, not a date lookup). Drawn as vector modules to stay crisp.
+  const woId='WO:'+WO_PROGRAM+':'+now.getFullYear()+String(now.getMonth()+1).padStart(2,'0')+String(now.getDate()).padStart(2,'0')+':'+((window.crypto&&crypto.randomUUID)?crypto.randomUUID():(Date.now().toString(36)+Math.random().toString(36).slice(2,10)));
+  const QRSZ=54;
+  try{
+    const qr=qrcode(0,'M'); qr.addData(woId); qr.make();
+    const nMod=qr.getModuleCount(), cell=QRSZ/nMod, qx=PW-M-QRSZ, qy=y-8;
+    doc.setFillColor(0,0,0);
+    for(let r=0;r<nMod;r++){ for(let c=0;c<nMod;c++){ if(qr.isDark(r,c)) doc.rect(qx+c*cell, qy+r*cell, cell, cell, 'F'); } }
+  }catch(e){ /* QR lib not loaded — skip the code, still produce the work order */ }
+  doc.setFont('helvetica','bold'); doc.setFontSize(19); doc.setTextColor.apply(doc,NAVY);
+  doc.text(WO_PROGRAM+' Fleet — Nightly Work Order', M, y+4);
   y+=16;
-  doc.setFontSize(9); doc.setTextColor.apply(doc,GRAY);
-  doc.text('Foxtrot Aviation Services — Detailing Compliance', M, y+4);
+  doc.setFont('helvetica','normal'); doc.setFontSize(9); doc.setTextColor.apply(doc,GRAY);
+  doc.text('Foxtrot Aviation Services — Detailing Compliance   ·   '+disp, M, y+4);
   y+=12;
-  doc.setDrawColor.apply(doc,ORANGE); doc.setLineWidth(2); doc.line(M,y,PW-M,y);
+  doc.setDrawColor.apply(doc,ORANGE); doc.setLineWidth(2); doc.line(M,y,PW-M-QRSZ-12,y);
   y+=20;
 
   doc.setFont('helvetica','bold'); doc.setFontSize(10); doc.setTextColor.apply(doc,NAVY);
@@ -994,7 +1004,7 @@ function woGenerate(){
 
   const pages=doc.internal.getNumberOfPages();
   for(let i=1;i<=pages;i++){ doc.setPage(i); doc.setFont('helvetica','normal'); doc.setFontSize(8); doc.setTextColor.apply(doc,GRAY);
-    doc.text('Generated '+now.toLocaleString(), M, PH-22);
+    doc.text('Generated '+now.toLocaleString()+'   ·   '+woId, M, PH-22);
     doc.text('Page '+i+' of '+pages, PW-M, PH-22, {align:'right'}); }
 
   const iso=now.getFullYear()+'-'+String(now.getMonth()+1).padStart(2,'0')+'-'+String(now.getDate()).padStart(2,'0');

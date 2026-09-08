@@ -18,12 +18,9 @@ DISABLED — never push to it or run anything there. Retire the legacy URL
 (delete the mirror repo + mirror.yml) once the Foxtrot Platform rollout
 replaces old links.
 
-> **PA repoint needed:** the four fleet add/remove Power Automate flows
-> (index.html + psa.html webhooks) still dispatch
-> `sam-kosco/envoy-compliance-tracker` — the mirror, where Actions are
-> disabled, so tail add/remove FAILS until each flow's GitHub HTTP action
-> targets `Foxtrot-Aviation-Services/envoy-compliance-tracker` (and its
-> PAT can reach the private org repo).
+> The four fleet add/remove Power Automate flows are RETIRED (2026-09-08)
+> along with the dashboards' Admin tabs — the Foxtrot Platform dispatches
+> the manage workflows directly. Delete the PA flows whenever convenient.
 ---
 
 ## Programs
@@ -36,7 +33,9 @@ replaces old links.
 | GoJet | GoJet Airlines | `/gojet.html` | `gojet.html` |
 | Crosswinds | Crosswinds Flight School | `/crosswinds.html` | `crosswinds.html` |
 
-> **Tabs:** Envoy, PSA, Mesa, and GoJet each have a **Fleet Tracker** tab and a **Work Order** tab (see "Work Order tab" below). PSA and Envoy additionally have an **Admin** tab. The tab bar sits between the orange band and `<main>`; `<main>` is a plain block and each `#tab-fleet` / `#tab-work` is the 66.66vw grid container (this is why content must live inside a tab page, not directly in `<main>`).
+> **Tabs:** Envoy, PSA, Mesa, and GoJet each have a **Fleet Tracker** tab and a **Work Order** tab (see "Work Order tab" below). The old page Admin tabs are gone (platform-managed since 2026-09-08). Under
+the platform embed a hash like `#work&embed=1` hides the tab bar and the
+shell's tabs drive `switchTab` via hashchange. The tab bar sits between the orange band and `<main>`; `<main>` is a plain block and each `#tab-fleet` / `#tab-work` is the 66.66vw grid container (this is why content must live inside a tab page, not directly in `<main>`).
 
 ---
 
@@ -45,7 +44,7 @@ replaces old links.
 ```
 envoy-compliance-tracker/
 ├── index.html                    # Envoy compliance dashboard (incl. Work Order tab)
-├── psa.html                      # PSA compliance dashboard (incl. Admin + Work Order tabs)
+├── psa.html                      # PSA compliance dashboard (incl. Work Order tab)
 ├── mesa.html                     # Mesa compliance dashboard (incl. Work Order tab)
 ├── gojet.html                    # GoJet compliance dashboard (incl. Work Order tab)
 ├── crosswinds.html               # Crosswinds compliance dashboard
@@ -70,8 +69,8 @@ envoy-compliance-tracker/
         ├── mesa_data_refresh.yml     # Mesa hourly cron
         ├── gojet_data_refresh.yml    # GoJet hourly cron
         ├── crosswinds_refresh.yml    # Crosswinds — triggered by Power Automate webhook
-        ├── manage_fleet.yml          # PSA admin actions (add tail) — workflow_dispatch
-        └── manage_envoy_fleet.yml    # Envoy admin actions (add tail) — workflow_dispatch
+        ├── manage_fleet.yml          # PSA tail add/remove — platform-dispatched
+        └── manage_envoy_fleet.yml    # Envoy tail add/remove — platform-dispatched
 ```
 
 ---
@@ -194,7 +193,7 @@ All three compliance programs share these three secrets:
 | `CLIENT_ID` | `58191600-ab56-4141-bff6-806805fcbff4` — Foxtrot Report Automation app |
 | `CLIENT_SECRET` | App secret — **expires every 24 months**, set a renewal reminder |
 
-The PSA Admin tab / `manage_fleet.yml` workflow additionally requires:
+The `manage_fleet.yml` workflow additionally requires:
 
 | Secret | Description |
 |--------|-------------|
@@ -262,13 +261,17 @@ The logic is generic over each file's `TRACKED` / `JOB_NAMES` / `CYCLES` constan
 
 ---
 
-## Envoy Admin → Add / Remove Tail
+## Envoy tail management (`manage_envoy_fleet.yml`)
 
-The Envoy dashboard has a password-gated **Admin** tab mirroring PSA's, with the
-same PA-bridge architecture (the dashboard cannot hold a GitHub PAT — see the
-PSA section). The "Envoy Tail Add" PA flow (URL in `index.html` as
-`PA_TAIL_WEBHOOK_URL`) dispatches **`manage_envoy_fleet.yml`** and then appends
-the tail row to the Envoy Tail List on SharePoint itself.
+> **Admin moved to the Foxtrot Platform** (2026-09-08): the dashboards'
+> password-gated Admin tabs and their Power Automate bridge flows are
+> RETIRED — the public pages now carry only Fleet Tracker / Work Order.
+> The platform (Fleets → <fleet> → Admin, Fleet Admins) dispatches these
+> workflows server-side via `engine/fleet.py` and polls the committed
+> result JSON. **SharePoint roster rows are now a manual workbook edit**
+> (the PA flows that wrote them are gone, and the Graph workbook API is
+> WAC-blocked app-only on this tenant); both relay scripts dedupe and
+> include blank-status rows, so a hand-added row just works.
 
 `manage_envoy_fleet.yml` add_tail updates SEVEN JotForm targets (no
 SafetyCulture for Envoy), inserting the tail in numeric order, deduping, and
@@ -285,14 +288,12 @@ structure:
 | `sgf` | SGF Closeout | `261954499086979` Q6 (widget) |
 | `lit` | LIT Closeout | `261955038475971` Q6 (widget) |
 
-Results are committed to `envoy_fleet_action_result.json`; the dashboard polls
-it and shows a 7-row table. Remove Tail mirrors PSA: the "Envoy Tail Remove" PA
-flow (URL wired in `PA_TAIL_REMOVE_WEBHOOK_URL`) dispatches
-`manage_envoy_fleet.yml` with `action: remove_tail` and performs the Excel
-Update-a-row (Status=Disabled) itself; the workflow records the action and
-dispatches `data_refresh.yml` so the tail drops off within minutes. The Envoy Tail List
-Status column lives in **column F**; `envoy_generate_data.py` excludes
-`Disabled` tails and dedupes. Admin password: `ENVOY2026` in `index.html`.
+Results are committed to `envoy_fleet_action_result.json`; the platform polls
+it and renders the per-target table. `remove_tail` touches no lists (dropdowns
+keep the tail for historical debriefs), records the action, and dispatches
+`data_refresh.yml`; set the Tail List's Status column (**column F**) to
+`Disabled` by hand to drop the tail — `envoy_generate_data.py` excludes
+`Disabled` tails and dedupes.
 
 ## PSA Tail List Status column
 
@@ -307,85 +308,28 @@ included, so a forgotten status on a new row doesn't silently drop a tail.
 > both the add and remove paths do their SharePoint writes in PA, not in a
 > workflow.
 
-## PSA Admin → Remove Tail
+## PSA remove semantics (`manage_fleet.yml` remove_tail)
 
-The Admin tab's "Remove Tail from Fleet" form POSTs `{tail}` to
-`PA_TAIL_REMOVE_WEBHOOK_URL` in `psa.html` — a **separate** PA flow from the add
-flow, so a remove can never hit the add flow's Add-row action. The flow sets the
-tail's Status to `Disabled` on the Tail List; the tracker drops it on the next
-hourly refresh. SafetyCulture/JotForm dropdown entries are intentionally left in
-place (historical debriefs still reference them).
+`remove_tail` (platform-dispatched) touches no lists — SafetyCulture/JotForm
+dropdown entries are intentionally left in place (historical debriefs still
+reference them). It records the action to `fleet_action_result.json` and
+dispatches `psa_data_refresh.yml` via the runner's GITHUB_TOKEN. Dropping the
+tail from the tracker = setting Status `Disabled` on the Tail List sheet BY
+HAND (the PA Update-a-row flow is retired); re-activating = setting it back
+to `Active`.
 
-**"PSA Tail Remove" flow (built, URL wired into `psa.html`):** clone of the
-add flow — HTTP dispatch of `manage_fleet.yml` with `action: remove_tail`, plus
-the Excel *Update a row* (Table3, key `Tails`, `Status` = `Disabled`). The
-workflow's `remove_tail` branch touches no lists (dropdowns keep the tail for
-historical debriefs); it records the action to `fleet_action_result.json` and
-dispatches `psa_data_refresh.yml` via the runner's GITHUB_TOKEN so the tail
-drops off the tracker within minutes. Both manage workflows also trigger their
-tracker's refresh after every action.
+## PSA tail management (`manage_fleet.yml`)
 
-To re-activate a disabled tail, set its Status back to `Active` on the Tail List
-(the Add Tail flow does not currently re-activate — it would append a duplicate
-row via PA's Add-row, so don't re-add a disabled tail from the Admin tab).
-
-## PSA Admin → Add Tail
-
-The PSA dashboard has a password-gated **Admin** tab with an "Add Tail" form. Architecture:
-
-```
-psa.html (browser)
-   ↓  POST {tail}
-PA Flow  ──── holds GitHub PAT (secure var) ────┐
-   │                                              │
-   │  1. HTTP: POST workflow_dispatch  ──────────┘
-   │     ↓                  (fires GH workflow async)
-   │  2. Condition: dispatch succeeded?
-   │     ├─ true  → Response 200 to dashboard → Add row in SharePoint Tail List
-   │     └─ false → Response 502 to dashboard
-
-GH Workflow (manage_fleet.yml, Python, runs ~30-60s):
-   ├──→ SafetyCulture API   (GET set, append, PUT)
-   ├──→ JotForm API         (GET Q53, append, POST)
-   └──→ JotForm API         (Commercial Closeout 2.0 form 222916060752150,
-                             Q27 "PSA Fleet" configurable-list widget —
-                             GET fields, insert tail in the Dropdown line, POST)
-       ↓
-   commits fleet_action_result.json
-
-psa.html polls fleet_action_result.json for matching tail+timestamp,
-displays a 3-row result table (SC + JotForm + Commercial Closeout).
-```
-
-**Why this shape:** the dashboard is on public GitHub Pages, so a GitHub PAT can't live in `psa.html` — GitHub's secret scanner auto-revokes any PAT it finds in a public commit (verified empirically). PA's HTTP-trigger URL has its own SAS-style signature that GH doesn't scan, so the URL embedded in `psa.html` is safe. The PA flow holds the PAT server-side.
-
-**Why PA does the SharePoint append directly** (instead of the workflow calling back to PA): the Excel "Add a row" connector in PA is the most reliable way to write to a SharePoint Excel table. The workflow Python skips SharePoint entirely; PA does it as a post-Response action.
-
-**SharePoint failure visibility:** PA's Add-row runs **after** the Response is sent, so if it fails the dashboard won't know — the user will see SC + JotForm both succeed. Check the PA flow's run history if a tail is missing from the Tail List.
+Dispatched from the platform (see the Envoy section's note — same
+architecture, program `psa` in `engine/fleet.py`). `add_tail` updates
+SafetyCulture "PSA Tails" (`PUT /response_sets`), the PSA Debrief dropdown
+(`213263365115146` Q53, pipe options), and the Commercial Closeout 2.0
+"PSA Fleet" list (`222916060752150` Q27 — configurable-list widget: the
+`fields` property's `Dropdown:dropdown:` line), committing per-target
+statuses to `fleet_action_result.json`. Add the SharePoint Tail List row by
+hand.
 
 **Tails are inserted in numerical order.** The workflow sorts by the numeric portion after `N` (so `N205JK` lands between `N204NN` and `N206IR`, not after `N1999`). JotForm preserves `Not Listed` as the final option by removing it before the sort and re-appending it after (the Commercial Closeout Q27 dropdown does the same with its `NOT LISTED` option, and dedupes any repeated options while rewriting). SafetyCulture's `PUT /response_sets/{id}` preserves response IDs by label-match, so reordering does not invalidate existing template bindings or historical inspection answers.
-
-### PA Flow shape (4 actions inside the trigger)
-
-1. **Trigger** — When a HTTP request is received. Body schema: `{ "tail": "string" }`.
-2. **HTTP** — POST to `https://api.github.com/repos/sam-kosco/envoy-compliance-tracker/actions/workflows/manage_fleet.yml/dispatches`. Auth header uses the GH PAT held in a secure variable.
-3. **Condition** — `outputs('HTTP')?['statusCode']` equals `204`:
-   - **True branch:** Response `200 {"dispatched": true}` → Excel Online **Add a row into a table** on PSA Debriefs Tail List with `Tails = triggerBody()?['tail']`
-   - **False branch:** Response `502 {"dispatched": false, github_status: ..., github_body: ...}`
-
-### Flow contract (dashboard ↔ PA)
-
-**Request:**
-```json
-POST {PA_TAIL_WEBHOOK_URL}
-Content-Type: application/json
-
-{"tail": "N205JK"}
-```
-
-The dashboard normalizes (`.trim().toUpperCase()`) and regex-validates (`^N\d{1,5}[A-Z]{0,2}$`) before sending. The workflow re-validates defensively.
-
-**Response:** `200 {"dispatched": true}` (or `502` on dispatch failure). Fire-and-forget — the dashboard then polls `fleet_action_result.json` for a matching tail+timestamp.
 
 ### Result file format
 
@@ -402,7 +346,8 @@ The dashboard normalizes (`.trim().toUpperCase()`) and regex-validates (`^N\d{1,
 }
 ```
 
-The dashboard polls every 3s for up to 2 min, displaying a 3-row table (SC + JotForm + Commercial Closeout) once it sees a result whose `tail` matches the submitted value and whose `timestamp` is newer than the dispatch.
+The platform polls this file after a dispatch and renders the per-target
+table once the `timestamp` passes the dispatch time.
 
 ---
 

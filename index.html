@@ -53,40 +53,6 @@
   #tab-fleet,#tab-work{ width:66.66vw; margin:0 auto; padding:24px 28px; grid-template-columns:1fr 1fr; gap:20px; }
   #tab-fleet.active,#tab-work.active{ display:grid; }
   /* tabs */
-  #tab-admin{width:66.66vw;margin:0 auto;padding:24px 28px;}
-  .admin-gate{max-width:420px;margin:60px auto;background:white;padding:32px;border-radius:var(--radius);box-shadow:var(--shadow-md);border:1px solid #E5E7EB;}
-  .admin-gate h2{font-family:var(--cond);font-size:18px;color:var(--navy);text-transform:uppercase;letter-spacing:1px;margin:0 0 8px;}
-  .admin-gate p{color:#666;font-size:13px;margin:0 0 20px;}
-  .admin-pw-input{width:100%;padding:11px 14px;font-size:14px;border:1.5px solid #D1D5DB;border-radius:6px;outline:none;font-family:inherit;box-sizing:border-box;}
-  .admin-pw-input:focus{border-color:var(--orange);}
-  .admin-pw-btn{margin-top:12px;width:100%;padding:11px;background:var(--navy);color:white;font-family:var(--cond);font-size:14px;font-weight:700;letter-spacing:1px;text-transform:uppercase;border:none;border-radius:6px;cursor:pointer;}
-  .admin-pw-btn:hover{background:#2A3D6B;}
-  .admin-pw-error{color:#DC2626;font-size:13px;margin-top:10px;display:none;}
-  .admin-section{max-width:560px;margin:32px auto;background:white;padding:28px;border-radius:var(--radius);box-shadow:var(--shadow-md);border:1px solid #E5E7EB;}
-  .admin-section h2{font-family:var(--cond);font-size:18px;color:var(--navy);text-transform:uppercase;letter-spacing:1px;margin:0 0 6px;}
-  .admin-section .hint{color:#666;font-size:13px;margin:0 0 18px;}
-  .admin-tail-row{display:flex;gap:8px;}
-  .admin-tail-input{flex:1;padding:11px 14px;font-size:15px;border:1.5px solid #D1D5DB;border-radius:6px;outline:none;font-family:inherit;text-transform:uppercase;letter-spacing:0.5px;}
-  .admin-tail-input:focus{border-color:var(--orange);}
-  .admin-tail-btn{padding:11px 22px;background:var(--orange);color:white;font-family:var(--cond);font-size:14px;font-weight:700;letter-spacing:1px;text-transform:uppercase;border:none;border-radius:6px;cursor:pointer;}
-  .admin-tail-btn:hover{background:var(--orange-light);}
-  .admin-tail-btn:disabled{background:#9CA3AF;cursor:not-allowed;}
-  .admin-result .st-ok{color:#16A34A;font-weight:700;}
-  .admin-result .st-noop{color:#6B7280;font-weight:700;}
-  .admin-result .st-error{color:#DC2626;font-weight:700;}
-  .admin-tail-btn.danger{background:#DC2626;}
-  .admin-tail-btn.danger:hover{background:#B91C1C;}
-  .admin-status{margin-top:18px;font-size:13px;color:#555;min-height:20px;}
-  .admin-result{margin-top:18px;border:1px solid #E5E7EB;border-radius:6px;overflow:hidden;display:none;}
-  .admin-result.show{display:block;}
-  .admin-result table{width:100%;border-collapse:collapse;font-size:13px;}
-  .admin-result th{background:var(--off-white);text-align:left;padding:8px 12px;font-family:var(--cond);font-size:11px;text-transform:uppercase;letter-spacing:0.5px;color:#555;border-bottom:1px solid #E5E7EB;}
-  .admin-result td{padding:8px 12px;border-bottom:1px solid #F3F4F6;}
-  .admin-result .st-ok{color:#16A34A;font-weight:700;}
-  .admin-result .st-noop{color:#6B7280;font-weight:700;}
-  .admin-result .st-error{color:#DC2626;font-weight:700;}
-  .admin-tail-btn.danger{background:#DC2626;}
-  .admin-tail-btn.danger:hover{background:#B91C1C;}
   body.embedded .tab-bar{display:none;}
   .tab-bar{background:var(--navy);border-top:1px solid rgba(255,255,255,0.1);}
   .tab-bar-inner{width:66.66vw;margin:0 auto;display:flex;gap:0;}
@@ -227,7 +193,6 @@
 
   @media(max-width:960px){
     #tab-fleet,#tab-work{width:auto;grid-template-columns:1fr;padding:16px;}
-    #tab-admin{width:auto;padding:16px;}.hdr-inner,.band-inner,.tab-bar-inner{width:auto;padding:0 16px;}
     .stat-strip{grid-template-columns:repeat(2,1fr);}
     .compliance-grid{grid-template-columns:1fr 1fr;}
     .history-row{grid-template-columns:1fr 1fr;}
@@ -412,7 +377,6 @@
     <div class="tab-bar-inner">
       <button class="tab-btn active" onclick="switchTab('fleet')">Fleet Tracker</button>
       <button class="tab-btn" onclick="switchTab('work')">Work Order</button>
-      <button class="tab-btn" onclick="switchTab('admin')">Admin</button>
     </div>
   </div>
 
@@ -522,16 +486,6 @@
     </div>
   </div><!-- /tab-work -->
 
-  <div class="tab-page" id="tab-admin">
-    <div class="admin-gate">
-      <h2>Tail management has moved</h2>
-      <p>Adding and removing fleet tails now lives in the Foxtrot Platform:
-         <b>Fleets &rarr; Admin &rarr; Manage Fleet Tails</b> (Fleet Admins).
-         The old password-gated form here dispatched through a Power
-         Automate webhook that was retired with the org migration.</p>
-      <p><a href="https://foxtrot-platform.azurewebsites.net/#fleet/admin">Open the platform &rarr;</a></p>
-    </div>
-  </div><!-- /tab-admin -->
   </main>
 
   <footer>&copy; Foxtrot Aviation Services &nbsp;·&nbsp; Envoy Fleet Compliance Portal &nbsp;·&nbsp; Confidential</footer>
@@ -826,26 +780,6 @@ function selectTail(tail) {
 // Tail management moved to the Foxtrot Platform (Fleets > Admin).
 // The PA webhooks + client-side password that lived here are retired.
 
-// In-page confirm dialog. Native confirm()/alert() are silently blocked in
-// cross-origin iframes (the SharePoint pages embed these dashboards), so
-// native dialogs must never be used here.
-function pageConfirm(message) {
-  return new Promise(resolve => {
-    const ov = document.createElement('div');
-    ov.style.cssText = 'position:fixed;inset:0;background:rgba(15,23,42,0.55);z-index:9999;display:flex;align-items:center;justify-content:center;';
-    ov.innerHTML = `<div style="background:#fff;border-radius:10px;max-width:380px;width:90%;padding:22px 24px;font-family:inherit;box-shadow:0 12px 40px rgba(0,0,0,0.25)">
-      <div style="font-size:14px;color:#1F2937;line-height:1.5">${message}</div>
-      <div style="display:flex;gap:8px;justify-content:flex-end;margin-top:18px">
-        <button data-act="no" style="padding:8px 16px;border:1.5px solid #D1D5DB;background:#fff;border-radius:6px;cursor:pointer;font-size:13px">Cancel</button>
-        <button data-act="yes" style="padding:8px 16px;border:none;background:#DC2626;color:#fff;border-radius:6px;cursor:pointer;font-size:13px;font-weight:700">Confirm</button>
-      </div></div>`;
-    ov.addEventListener('click', e => {
-      const act = e.target.getAttribute ? e.target.getAttribute('data-act') : null;
-      if (act || e.target === ov) { ov.remove(); resolve(act === 'yes'); }
-    });
-    document.body.appendChild(ov);
-  });
-}
 
 function switchTab(name) {
   document.querySelectorAll('.tab-page').forEach(p => p.classList.remove('active'));

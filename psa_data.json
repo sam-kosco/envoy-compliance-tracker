@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-08T07:18:08.609719+00:00",
+  "generated": "2026-09-08T08:17:40.524907+00:00",
   "planes": [
     {
       "tail": "N500AE",
@@ -2577,25 +2577,25 @@
     },
     {
       "tail": "N631NN",
-      "lastService": "2026-09-02",
-      "lastCC": "2026-09-02",
+      "lastService": "2026-09-07",
+      "lastCC": "2026-09-07",
       "lastDSC": "2026-08-19",
       "lastCE": "2026-08-23",
       "lastED1": "2026-08-23",
       "lastED2": "2026-08-23",
-      "lastLav": "2026-06-01",
-      "lastIC": "2026-09-02",
-      "lastEC": "2026-09-02",
+      "lastLav": "2026-09-07",
+      "lastIC": "2026-09-07",
+      "lastEC": "2026-09-07",
       "lastED3": null,
       "lastED4": null,
-      "lastLocation": "TYS",
-      "lastTech": "Iyana Galan",
-      "CC": 24,
+      "lastLocation": "DAY",
+      "lastTech": "Kristen Matos",
+      "CC": 29,
       "DSC": 10,
       "CE": 14,
       "ED1": 14,
       "ED2": 14,
-      "Lav": -9
+      "Lav": 89
     },
     {
       "tail": "N632NN",
@@ -3955,6 +3955,23 @@
       "ED3": 0,
       "ED4": 0,
       "Lav": 0,
+      "audits": []
+    },
+    {
+      "tail": "N631NN",
+      "date": "2026-09-07",
+      "name": "Kristen Matos",
+      "location": "DAY",
+      "IC": 1,
+      "EC": 1,
+      "CC": 1,
+      "DSC": 0,
+      "CE": 0,
+      "ED1": 0,
+      "ED2": 0,
+      "ED3": 0,
+      "ED4": 0,
+      "Lav": 1,
       "audits": []
     },
     {

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-08T09:08:12.915743+00:00",
+  "generated": "2026-09-08T10:07:53.487756+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -1015,14 +1015,14 @@
     },
     {
       "tail": "N292NN",
-      "lastService": "2026-08-31",
-      "lastED1": "2026-07-25",
-      "lastED2": "2026-06-30",
-      "lastIHC": "2026-08-31",
-      "lastLocation": "CVG",
-      "lastTech": "Precious Valadez-Roberson",
-      "ED1": -15,
-      "ED2": -10
+      "lastService": "2026-09-07",
+      "lastED1": "2026-09-07",
+      "lastED2": "2026-09-07",
+      "lastIHC": "2026-09-07",
+      "lastLocation": "LIT",
+      "lastTech": "Damian Utley",
+      "ED1": 29,
+      "ED2": 59
     },
     {
       "tail": "N293NN",
@@ -1642,12 +1642,12 @@
     },
     {
       "tail": "N741AK",
-      "lastService": "2026-09-05",
+      "lastService": "2026-09-07",
       "lastED1": "2026-08-14",
       "lastED2": "2026-06-02",
-      "lastIHC": "2026-09-05",
+      "lastIHC": "2026-09-07",
       "lastLocation": "DFW",
-      "lastTech": "NADIA  JOHNSON",
+      "lastTech": "NADIA JOHNSON",
       "ED1": 5,
       "ED2": -38
     },
@@ -2348,6 +2348,15 @@
       "ED2": 0
     },
     {
+      "tail": "N292NN",
+      "date": "2026-09-07",
+      "name": "Damian Utley",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 1
+    },
+    {
       "tail": "N743MB",
       "date": "2026-09-07",
       "name": "NADIA  JOHNSON",
@@ -2405,6 +2414,15 @@
       "tail": "N227NN",
       "date": "2026-09-07",
       "name": "NADIA  JOHNSON",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N741AK",
+      "date": "2026-09-07",
+      "name": "NADIA JOHNSON",
       "location": "DFW",
       "IHC": 1,
       "ED1": 0,

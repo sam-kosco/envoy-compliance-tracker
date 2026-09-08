@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-08T10:07:53.487756+00:00",
+  "generated": "2026-09-08T11:07:32.680519+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -443,12 +443,12 @@
     },
     {
       "tail": "N240NN",
-      "lastService": "2026-09-03",
+      "lastService": "2026-09-07",
       "lastED1": "2026-08-20",
       "lastED2": "2026-08-31",
-      "lastIHC": "2026-09-03",
-      "lastLocation": "CVG",
-      "lastTech": "Precious Roberson",
+      "lastIHC": "2026-09-07",
+      "lastLocation": "DFW",
+      "lastTech": "NADIA  JOHNSON",
       "ED1": 11,
       "ED2": 52
     },
@@ -1873,12 +1873,12 @@
     },
     {
       "tail": "N772MR",
-      "lastService": "2026-09-02",
+      "lastService": "2026-09-07",
       "lastED1": "2026-08-22",
       "lastED2": "2026-06-03",
-      "lastIHC": "2026-09-02",
+      "lastIHC": "2026-09-07",
       "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastTech": "NADIA  JOHNSON",
       "ED1": 13,
       "ED2": -37
     },
@@ -2423,6 +2423,24 @@
       "tail": "N741AK",
       "date": "2026-09-07",
       "name": "NADIA JOHNSON",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N240NN",
+      "date": "2026-09-07",
+      "name": "NADIA  JOHNSON",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N772MR",
+      "date": "2026-09-07",
+      "name": "NADIA  JOHNSON",
       "location": "DFW",
       "IHC": 1,
       "ED1": 0,

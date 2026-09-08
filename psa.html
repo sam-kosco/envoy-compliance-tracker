@@ -334,6 +334,7 @@
   }
 
   /* === Tabs & Admin (added) === */
+  body.embedded .tab-bar{display:none;}
   .tab-bar{background:var(--navy);border-top:1px solid rgba(255,255,255,0.1);}
   .tab-bar-inner{width:66.66vw;margin:0 auto;display:flex;gap:0;}
   .tab-btn{font-family:var(--cond);font-size:14px;font-weight:700;color:rgba(255,255,255,0.5);padding:12px 20px;cursor:pointer;border:none;background:none;border-bottom:3px solid transparent;letter-spacing:0.5px;transition:color 0.15s,border-color 0.15s;text-transform:uppercase;}
@@ -1347,6 +1348,19 @@ function woGenerate(){
   doc.save(WO_PROGRAM+'_Work_Order_'+iso+'.pdf');
   woClear();
 }
+
+// Platform embed support: a hash like "#work&embed=1" hides this page's own
+// tab bar (embed=1) and lets the platform shell's navy tabs drive tab
+// switches via hashchange (same-document navigation, no reload). The public
+// page and legacy mirror never carry the hash, so they keep their own tabs.
+function applyEmbedHash() {
+  const parts = (location.hash.slice(1) || '').split('&');
+  if (parts.includes('embed=1')) document.body.classList.add('embedded');
+  const tab = parts[0];
+  if (tab && document.getElementById('tab-' + tab)) switchTab(tab);
+}
+window.addEventListener('hashchange', applyEmbedHash);
+applyEmbedHash();
 </script>
 </body>
 </html>

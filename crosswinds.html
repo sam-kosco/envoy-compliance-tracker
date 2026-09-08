@@ -150,10 +150,14 @@
     justify-content: center;
   }
 </style>
-<script>if(self!==top)document.documentElement.setAttribute("data-embedded","1")</script>
+<script>if(self!==top)document.documentElement.setAttribute("data-embedded","1")
+if(location.hash.indexOf("embed=1")>-1)document.documentElement.setAttribute("data-platform","1")</script>
 <style>/* Inside the Foxtrot Platform the shell provides the header - hide this
    page's own topbar to avoid the double-header (standalone visits keep it). */
-[data-embedded] header.topbar,[data-embedded] header:has(.hdr-inner){display:none!important}</style>
+[data-embedded] header.topbar,[data-embedded] header:has(.hdr-inner){display:none!important}
+/* The platform embed (#embed=1) also carries the dashboard title in its own
+   orange band - hide this page's (SharePoint frames keep it). */
+[data-platform] .orange-band{display:none!important}</style>
 </head>
 <body>
 

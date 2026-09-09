@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-09T15:18:15.768277+00:00",
+  "generated": "2026-09-09T16:17:50.449923+00:00",
   "planes": [
     {
       "tail": "N500AE",
@@ -443,23 +443,23 @@
     },
     {
       "tail": "N524AE",
-      "lastService": "2026-09-08",
-      "lastCC": "2026-09-08",
+      "lastService": "2026-09-07",
+      "lastCC": "2026-09-07",
       "lastDSC": "2026-08-30",
       "lastCE": "2026-08-30",
-      "lastED1": "2026-09-08",
+      "lastED1": "2026-06-29",
       "lastED2": "2026-08-30",
       "lastLav": "2026-07-12",
-      "lastIC": "2026-09-08",
-      "lastEC": "2026-09-08",
+      "lastIC": "2026-09-07",
+      "lastEC": "2026-09-07",
       "lastED3": "2026-01-13",
       "lastED4": "2026-01-13",
       "lastLocation": "DCA",
       "lastTech": "Mitchell Young",
-      "CC": 29,
+      "CC": 28,
       "DSC": 20,
       "CE": 20,
-      "ED1": 29,
+      "ED1": -42,
       "ED2": 20,
       "Lav": 31
     },
@@ -3839,23 +3839,6 @@
       "audits": []
     },
     {
-      "tail": "N524AE",
-      "date": "2026-09-08",
-      "name": "Mitchell Young",
-      "location": "DCA",
-      "IC": 1,
-      "EC": 1,
-      "CC": 1,
-      "DSC": 0,
-      "CE": 0,
-      "ED1": 1,
-      "ED2": 0,
-      "ED3": 0,
-      "ED4": 0,
-      "Lav": 0,
-      "audits": []
-    },
-    {
       "tail": "N570NN",
       "date": "2026-09-08",
       "name": "Bayleah Vogel",
@@ -4499,6 +4482,23 @@
       "ED3": 0,
       "ED4": 0,
       "Lav": 1,
+      "audits": []
+    },
+    {
+      "tail": "N524AE",
+      "date": "2026-09-07",
+      "name": "Mitchell Young",
+      "location": "DCA",
+      "IC": 1,
+      "EC": 1,
+      "CC": 1,
+      "DSC": 0,
+      "CE": 0,
+      "ED1": 0,
+      "ED2": 0,
+      "ED3": 0,
+      "ED4": 0,
+      "Lav": 0,
       "audits": []
     },
     {

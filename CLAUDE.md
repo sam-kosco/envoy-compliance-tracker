@@ -272,10 +272,10 @@ The logic is generic over each file's `TRACKED` / `JOB_NAMES` / `CYCLES` constan
 > WAC-blocked app-only on this tenant); both relay scripts dedupe and
 > include blank-status rows, so a hand-added row just works.
 
-`manage_envoy_fleet.yml` add_tail updates SEVEN JotForm targets (no
-SafetyCulture for Envoy), inserting the tail in numeric order, deduping, and
-preserving each list's trailing `NOT LISTED` / `:Please Select` placeholder
-structure:
+`manage_envoy_fleet.yml` add_tail updates EIGHT JotForm targets **plus the
+SafetyCulture "Envoy Tails" global response set**, inserting the tail in numeric
+order, deduping, and preserving each JotForm list's trailing `NOT LISTED` /
+`:Please Select` placeholder structure:
 
 | Result key | Target | Form / question |
 |---|---|---|
@@ -286,7 +286,12 @@ structure:
 | `xna` | XNA Closeout | `261954357644972` Q6 (widget) |
 | `sgf` | SGF Closeout | `261954499086979` Q6 (widget) |
 | `lit` | LIT Closeout | `261955038475971` Q6 (widget) |
+| `dfw_closeout` | DFW Closeout | `261755203398967` Q6 (widget) |
+| `safetyculture` | SafetyCulture "Envoy Tails" global response set | `responseset_00749b53e9c34c618ee08f3e3e29f014` (GET+PUT, shares `SAFETYCULTURE_KEY`) |
 
+The SafetyCulture PUT sends only labels; SafetyCulture preserves response IDs by
+label-match, so reordering never invalidates template bindings or historical
+inspection answers (same guarantee `manage_fleet.yml` relies on for PSA Tails).
 Results are committed to `envoy_fleet_action_result.json`; the platform polls
 it and renders the per-target table. `remove_tail` touches no lists (dropdowns
 keep the tail for historical debriefs), records the action, and dispatches

@@ -37,6 +37,10 @@ jobs:
           TAIL_INPUT:   ${{ github.event.inputs.tail }}
           JOTFORM_KEY:  ${{ secrets.JOTFORM_KEY }}
           JOTFORM_BASE: https://foxtrotaviation.jotform.com/API
+          # SafetyCulture "Envoy Tails" global response set (shares the repo's
+          # SAFETYCULTURE_KEY with manage_fleet.yml / the Crosswinds refresh).
+          SAFETYCULTURE_KEY:  ${{ secrets.SAFETYCULTURE_KEY }}
+          ENVOY_TAILS_SET_ID: responseset_00749b53e9c34c618ee08f3e3e29f014
         run: |
           python3 - << 'PYEOF'
           import json, os, re, sys
@@ -147,6 +151,7 @@ jobs:
               ("xna",           "XNA Closeout",        lambda: add_to_widget("261954357644972", "6",  "Tail Number")),
               ("sgf",           "SGF Closeout",        lambda: add_to_widget("261954499086979", "6",  "Tail Number")),
               ("lit",           "LIT Closeout",        lambda: add_to_widget("261955038475971", "6",  "Tail Number")),
+              ("dfw_closeout",  "DFW Closeout",        lambda: add_to_widget("261755203398967", "6",  "Tail Number")),
           ]
 
           result = {
@@ -163,6 +168,38 @@ jobs:
                   result[key_name] = {"status": "error", "message": str(e)[:200]}
               print(f"{label}: {result[key_name]}")
 
+          # ── SafetyCulture "Envoy Tails" global response set ──────
+          # GET the set, add the label (numeric-order, deduped), PUT it back.
+          # PUT preserves response IDs by label-match, so reordering doesn't
+          # invalidate template bindings or historical inspection answers.
+          try:
+              sc_key = os.environ["SAFETYCULTURE_KEY"]
+              set_id = os.environ["ENVOY_TAILS_SET_ID"]
+              H = {"Authorization": f"Bearer {sc_key}", "Content-Type": "application/json"}
+              r = requests.get(f"https://api.safetyculture.io/response_sets/{set_id}", headers=H, timeout=30)
+              r.raise_for_status()
+              current = r.json()
+              labels = [x["label"] for x in current.get("responses", [])]
+              if tail in labels:
+                  result["safetyculture"] = {"status": "noop", "message": f"already present ({len(labels)} total)"}
+              else:
+                  labels.append(tail)
+                  labels.sort(key=sort_key)
+                  r = requests.put(
+                      f"https://api.safetyculture.io/response_sets/{set_id}",
+                      headers=H,
+                      json={"name": current.get("name", "Envoy Tails"),
+                            "responses": [{"label": l} for l in labels]},
+                      timeout=30,
+                  )
+                  r.raise_for_status()
+                  pos = labels.index(tail) + 1
+                  result["safetyculture"] = {"status": "ok", "message": f"added at position {pos} of {len(labels)}"}
+              print(f"SafetyCulture: {result['safetyculture']}")
+          except Exception as e:
+              result["safetyculture"] = {"status": "error", "message": str(e)[:200]}
+              print(f"SafetyCulture ERROR: {e}")
+
           with open("envoy_fleet_action_result.json", "w") as f:
               json.dump(result, f, indent=2)
 
@@ -170,12 +207,16 @@ jobs:
           if summary_path:
               with open(summary_path, "a") as f:
                   f.write(f"## {action}: `{tail}`\n\n| System | Status | Detail |\n|---|---|---|\n")
+                  icons = {"ok":"✅","noop":"➖","error":"❌"}
                   for key_name, label, _ in TARGETS:
                       s = result[key_name]
-                      icon = {"ok":"✅","noop":"➖","error":"❌"}.get(s["status"], "?")
-                      f.write(f"| {label} | {icon} {s['status']} | {s['message']} |\n")
+                      f.write(f"| {label} | {icons.get(s['status'],'?')} {s['status']} | {s['message']} |\n")
+                  sc = result["safetyculture"]
+                  f.write(f"| SafetyCulture (Envoy Tails) | {icons.get(sc['status'],'?')} "
+                          f"{sc['status']} | {sc['message']} |\n")
 
-          if all(result[k]["status"] == "error" for k, _, _ in TARGETS):
+          statuses = [result["safetyculture"]["status"]] + [result[k]["status"] for k, _, _ in TARGETS]
+          if all(s == "error" for s in statuses):
               sys.exit(1)
           PYEOF
 

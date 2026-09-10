@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-10T10:08:12.817181+00:00",
+  "generated": "2026-09-10T12:07:46.312382+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -80,12 +80,12 @@
     },
     {
       "tail": "N207AN",
-      "lastService": "2026-09-04",
+      "lastService": "2026-09-09",
       "lastED1": "2026-08-17",
       "lastED2": "2026-07-19",
-      "lastIHC": "2026-09-04",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
+      "lastIHC": "2026-09-09",
+      "lastLocation": "LIT",
+      "lastTech": "MATHEW WALKER",
       "ED1": 6,
       "ED2": 7
     },
@@ -355,12 +355,12 @@
     },
     {
       "tail": "N232NN",
-      "lastService": "2026-09-07",
+      "lastService": "2026-09-09",
       "lastED1": "2026-08-21",
       "lastED2": "2026-07-28",
-      "lastIHC": "2026-09-07",
-      "lastLocation": "XNA",
-      "lastTech": "Casey Henry",
+      "lastIHC": "2026-09-09",
+      "lastLocation": "LIT",
+      "lastTech": "MATHEW WALKER",
       "ED1": 10,
       "ED2": 16
     },
@@ -597,12 +597,12 @@
     },
     {
       "tail": "N254NN",
-      "lastService": "2026-09-08",
+      "lastService": "2026-09-09",
       "lastED1": "2026-08-20",
       "lastED2": "2026-08-20",
-      "lastIHC": "2026-09-08",
+      "lastIHC": "2026-09-09",
       "lastLocation": "LIT",
-      "lastTech": "Damian Utley",
+      "lastTech": "MATHEW WALKER",
       "ED1": 9,
       "ED2": 39
     },
@@ -1103,12 +1103,12 @@
     },
     {
       "tail": "N305CL",
-      "lastService": "2026-09-04",
+      "lastService": "2026-09-09",
       "lastED1": "2026-08-23",
       "lastED2": "2026-07-16",
-      "lastIHC": "2026-09-04",
-      "lastLocation": "XNA",
-      "lastTech": "Riley Pinterich",
+      "lastIHC": "2026-09-09",
+      "lastLocation": "LIT",
+      "lastTech": "MATHEW WALKER",
       "ED1": 12,
       "ED2": 4
     },
@@ -1147,12 +1147,12 @@
     },
     {
       "tail": "N309JR",
-      "lastService": "2026-09-04",
+      "lastService": "2026-09-09",
       "lastED1": "2026-09-04",
       "lastED2": "2026-09-04",
-      "lastIHC": "2026-09-04",
-      "lastLocation": "XNA",
-      "lastTech": "Riley Pinterich",
+      "lastIHC": "2026-09-09",
+      "lastLocation": "LIT",
+      "lastTech": "MATHEW WALKER",
       "ED1": 24,
       "ED2": 54
     },
@@ -1961,12 +1961,12 @@
     },
     {
       "tail": "N783LC",
-      "lastService": "2026-08-30",
+      "lastService": "2026-09-09",
       "lastED1": "2026-08-22",
       "lastED2": "2026-08-10",
-      "lastIHC": "2026-08-30",
-      "lastLocation": "CMH",
-      "lastTech": "Tanaija Price",
+      "lastIHC": "2026-09-09",
+      "lastLocation": "LIT",
+      "lastTech": "MATHEW WALKER",
       "ED1": 11,
       "ED2": 29
     },
@@ -2298,6 +2298,60 @@
       "date": "2026-09-09",
       "name": "Bayleah Vogel",
       "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N232NN",
+      "date": "2026-09-09",
+      "name": "MATHEW WALKER",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N305CL",
+      "date": "2026-09-09",
+      "name": "MATHEW WALKER",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N207AN",
+      "date": "2026-09-09",
+      "name": "MATHEW WALKER",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N254NN",
+      "date": "2026-09-09",
+      "name": "MATHEW WALKER",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N309JR",
+      "date": "2026-09-09",
+      "name": "MATHEW WALKER",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N783LC",
+      "date": "2026-09-09",
+      "name": "MATHEW WALKER",
+      "location": "LIT",
       "IHC": 1,
       "ED1": 0,
       "ED2": 0

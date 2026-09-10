@@ -267,15 +267,20 @@ The logic is generic over each file's `TRACKED` / `JOB_NAMES` / `CYCLES` constan
 > RETIRED — the public pages now carry only Fleet Tracker / Work Order.
 > The platform (Fleets → <fleet> → Admin, Fleet Admins) dispatches these
 > workflows server-side via `engine/fleet.py` and polls the committed
-> result JSON. **SharePoint roster rows are now a manual workbook edit**
-> (the PA flows that wrote them are gone, and the Graph workbook API is
-> WAC-blocked app-only on this tenant); both relay scripts dedupe and
-> include blank-status rows, so a hand-added row just works.
+> result JSON. **The SharePoint Tail List row is written by Power Automate
+> again** (2026-09-10): two "When an HTTP request is received" flows — Add
+> (appends the row, Status=Active) and Remove (sets Status=Disabled) — are
+> called by this workflow, body `{"tail": "<N-number>"}`. Their SAS-signed
+> URLs live in the `ENVOY_ROSTER_ADD_URL` / `ENVOY_ROSTER_REMOVE_URL` repo
+> secrets (the Graph workbook API stays WAC-blocked app-only on this tenant,
+> which is why the write goes through PA). If a URL secret is unset the step
+> is `skipped`, not failed, and the row falls back to a manual edit.
 
-`manage_envoy_fleet.yml` add_tail updates EIGHT JotForm targets **plus the
-SafetyCulture "Envoy Tails" global response set**, inserting the tail in numeric
-order, deduping, and preserving each JotForm list's trailing `NOT LISTED` /
-`:Please Select` placeholder structure:
+`manage_envoy_fleet.yml` **add_tail and remove_tail are symmetric** (2026-09-10):
+both hit the SAME EIGHT JotForm targets, the SafetyCulture "Envoy Tails" response
+set, and the SharePoint Tail List (via the PA flow above). add inserts in numeric
+order (deduped, `NOT LISTED` / `:Please Select` placeholders preserved) and remove
+deletes the option; each target no-ops when already in the desired state:
 
 | Result key | Target | Form / question |
 |---|---|---|
@@ -292,12 +297,18 @@ order, deduping, and preserving each JotForm list's trailing `NOT LISTED` /
 The SafetyCulture PUT sends only labels; SafetyCulture preserves response IDs by
 label-match, so reordering never invalidates template bindings or historical
 inspection answers (same guarantee `manage_fleet.yml` relies on for PSA Tails).
-Results are committed to `envoy_fleet_action_result.json`; the platform polls
-it and renders the per-target table. `remove_tail` touches no lists (dropdowns
-keep the tail for historical debriefs), records the action, and dispatches
-`data_refresh.yml`; set the Tail List's Status column (**column F**) to
-`Disabled` by hand to drop the tail — `envoy_generate_data.py` excludes
-`Disabled` tails and dedupes.
+plus `sharepoint` (the PA Tail List write). Results are committed to
+`envoy_fleet_action_result.json`; the platform polls it and renders the
+per-target table, and both actions dispatch `data_refresh.yml`.
+
+`remove_tail` now fully reverses `add_tail` (Sam, 2026-09-10 — this replaced the
+old "keep the dropdowns for historical debriefs, disable the row by hand" design):
+it deletes the option from all eight JotForm lists and the SafetyCulture set, and
+the Remove PA flow sets the Tail List Status (**column F**) to `Disabled`.
+Removing an option is safe for history — JotForm submissions store the chosen
+value as text and SafetyCulture keeps inspection answers on the inspection, so
+past records keep their tail; only future selectability goes away.
+`envoy_generate_data.py` also excludes `Disabled` tails and dedupes.
 
 ## PSA Tail List Status column
 

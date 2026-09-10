@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-10T09:07:38.627908+00:00",
+  "generated": "2026-09-10T10:08:12.817181+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -1081,12 +1081,12 @@
     },
     {
       "tail": "N303DD",
-      "lastService": "2026-09-05",
+      "lastService": "2026-09-09",
       "lastED1": "2026-08-19",
       "lastED2": "2026-08-23",
-      "lastIHC": "2026-09-05",
+      "lastIHC": "2026-09-09",
       "lastLocation": "DFW",
-      "lastTech": "NADIA  JOHNSON",
+      "lastTech": "Aunyae Morrison",
       "ED1": 8,
       "ED2": 42
     },
@@ -1510,12 +1510,12 @@
     },
     {
       "tail": "N341MB",
-      "lastService": "2026-09-08",
+      "lastService": "2026-09-09",
       "lastED1": "2026-08-27",
       "lastED2": "2026-08-03",
-      "lastIHC": "2026-09-08",
-      "lastLocation": "LIT",
-      "lastTech": "Damian Utley",
+      "lastIHC": "2026-09-09",
+      "lastLocation": "DFW",
+      "lastTech": "Aunyae Morrison",
       "ED1": 16,
       "ED2": 22
     },
@@ -1763,12 +1763,12 @@
     },
     {
       "tail": "N761RW",
-      "lastService": "2026-08-21",
+      "lastService": "2026-09-09",
       "lastED1": "2026-08-16",
       "lastED2": "2026-07-15",
-      "lastIHC": "2026-08-21",
-      "lastLocation": "LIT",
-      "lastTech": "Mathew Walker",
+      "lastIHC": "2026-09-09",
+      "lastLocation": "DFW",
+      "lastTech": "Aunyae Morrison",
       "ED1": 5,
       "ED2": 3
     },
@@ -1807,13 +1807,13 @@
     },
     {
       "tail": "N765ST",
-      "lastService": "2026-07-23",
-      "lastED1": "2026-07-11",
+      "lastService": "2026-09-09",
+      "lastED1": "2026-09-09",
       "lastED2": "2026-07-11",
-      "lastIHC": "2026-07-23",
+      "lastIHC": "2026-09-09",
       "lastLocation": "DFW",
       "lastTech": "Aunyae Morrison",
-      "ED1": -31,
+      "ED1": 29,
       "ED2": -1
     },
     {
@@ -2345,6 +2345,42 @@
       "location": "DFW",
       "IHC": 1,
       "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N761RW",
+      "date": "2026-09-09",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N341MB",
+      "date": "2026-09-09",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N303DD",
+      "date": "2026-09-09",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N765ST",
+      "date": "2026-09-09",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 1,
       "ED2": 0
     },
     {

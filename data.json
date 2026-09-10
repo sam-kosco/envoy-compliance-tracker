@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-10T08:08:03.218796+00:00",
+  "generated": "2026-09-10T09:07:38.627908+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -773,12 +773,12 @@
     },
     {
       "tail": "N270NN",
-      "lastService": "2026-09-02",
+      "lastService": "2026-09-09",
       "lastED1": "2026-08-04",
       "lastED2": "2026-08-25",
-      "lastIHC": "2026-09-02",
-      "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastIHC": "2026-09-09",
+      "lastLocation": "CVG",
+      "lastTech": "Bayleah Vogel",
       "ED1": -7,
       "ED2": 44
     },
@@ -2289,6 +2289,15 @@
       "date": "2026-09-09",
       "name": "Steven Wilson",
       "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N270NN",
+      "date": "2026-09-09",
+      "name": "Bayleah Vogel",
+      "location": "CVG",
       "IHC": 1,
       "ED1": 0,
       "ED2": 0

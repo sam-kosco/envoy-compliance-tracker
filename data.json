@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-11T06:07:44.208322+00:00",
+  "generated": "2026-09-11T07:07:40.453415+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -80,12 +80,12 @@
     },
     {
       "tail": "N207AN",
-      "lastService": "2026-09-09",
+      "lastService": "2026-09-10",
       "lastED1": "2026-08-17",
       "lastED2": "2026-07-19",
-      "lastIHC": "2026-09-09",
-      "lastLocation": "LIT",
-      "lastTech": "MATHEW WALKER",
+      "lastIHC": "2026-09-10",
+      "lastLocation": "CMH",
+      "lastTech": "Darian  Eiland",
       "ED1": 5,
       "ED2": 6
     },
@@ -1488,12 +1488,12 @@
     },
     {
       "tail": "N339HG",
-      "lastService": "2026-08-26",
+      "lastService": "2026-09-10",
       "lastED1": "2026-08-26",
       "lastED2": "2026-08-26",
-      "lastIHC": "2026-08-26",
-      "lastLocation": "XNA",
-      "lastTech": "Riley Woods",
+      "lastIHC": "2026-09-10",
+      "lastLocation": "CMH",
+      "lastTech": "Darian  Eiland",
       "ED1": 14,
       "ED2": 44
     },
@@ -1565,12 +1565,12 @@
     },
     {
       "tail": "N347JT",
-      "lastService": "2026-09-02",
+      "lastService": "2026-09-10",
       "lastED1": "2026-08-17",
       "lastED2": "2026-08-17",
-      "lastIHC": "2026-09-02",
-      "lastLocation": "SGF",
-      "lastTech": "Steven Wilson",
+      "lastIHC": "2026-09-10",
+      "lastLocation": "CMH",
+      "lastTech": "Darian  Eiland",
       "ED1": 5,
       "ED2": 35
     },
@@ -1829,14 +1829,14 @@
     },
     {
       "tail": "N768RD",
-      "lastService": "2026-08-31",
+      "lastService": "2026-09-10",
       "lastED1": "2026-08-16",
-      "lastED2": "2026-07-14",
-      "lastIHC": "2026-08-31",
-      "lastLocation": "DFW",
-      "lastTech": "NADIA JOHNSON",
+      "lastED2": "2026-09-10",
+      "lastIHC": "2026-09-10",
+      "lastLocation": "CMH",
+      "lastTech": "Darian  Eiland",
       "ED1": 4,
-      "ED2": 1
+      "ED2": 59
     },
     {
       "tail": "N769KW",
@@ -2118,6 +2118,42 @@
       "date": "2026-12-30",
       "name": "Aunyae Morrison",
       "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N768RD",
+      "date": "2026-09-10",
+      "name": "Darian  Eiland",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 1
+    },
+    {
+      "tail": "N207AN",
+      "date": "2026-09-10",
+      "name": "Darian  Eiland",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N347JT",
+      "date": "2026-09-10",
+      "name": "Darian  Eiland",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N339HG",
+      "date": "2026-09-10",
+      "name": "Darian  Eiland",
+      "location": "CMH",
       "IHC": 1,
       "ED1": 0,
       "ED2": 0
@@ -3012,6 +3048,15 @@
       "IHC": 1,
       "ED1": 1,
       "ED2": 1
+    },
+    {
+      "tail": "N204NN",
+      "date": "2026-09-07",
+      "name": "Casey Henry",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
     },
     {
       "tail": "N743MB",

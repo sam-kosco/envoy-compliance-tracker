@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-12T09:07:57.334381+00:00",
+  "generated": "2026-09-12T10:07:40.904124+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -212,14 +212,14 @@
     },
     {
       "tail": "N219NN",
-      "lastService": "2026-09-06",
-      "lastED1": "2026-08-06",
-      "lastED2": "2026-06-29",
-      "lastIHC": "2026-09-06",
-      "lastLocation": "LIT",
-      "lastTech": "Damian  Utley",
-      "ED1": -7,
-      "ED2": -15
+      "lastService": "2026-09-11",
+      "lastED1": "2026-09-11",
+      "lastED2": "2026-09-11",
+      "lastIHC": "2026-09-11",
+      "lastLocation": "SGF",
+      "lastTech": "Jeffrey Crookshanks",
+      "ED1": 29,
+      "ED2": 59
     },
     {
       "tail": "N220NN",
@@ -608,13 +608,13 @@
     },
     {
       "tail": "N255NN",
-      "lastService": "2026-09-03",
-      "lastED1": "2026-07-29",
+      "lastService": "2026-09-11",
+      "lastED1": "2026-09-11",
       "lastED2": "2026-08-06",
-      "lastIHC": "2026-09-03",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
-      "ED1": -15,
+      "lastIHC": "2026-09-11",
+      "lastLocation": "LIT",
+      "lastTech": "Damian Utley",
+      "ED1": 29,
       "ED2": 23
     },
     {
@@ -1015,12 +1015,12 @@
     },
     {
       "tail": "N292NN",
-      "lastService": "2026-09-10",
+      "lastService": "2026-09-11",
       "lastED1": "2026-09-07",
       "lastED2": "2026-09-07",
-      "lastIHC": "2026-09-10",
-      "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastIHC": "2026-09-11",
+      "lastLocation": "SGF",
+      "lastTech": "Jeffrey Crookshanks",
       "ED1": 25,
       "ED2": 55
     },
@@ -1048,12 +1048,12 @@
     },
     {
       "tail": "N299JJ",
-      "lastService": "2026-09-04",
+      "lastService": "2026-09-11",
       "lastED1": "2026-08-17",
       "lastED2": "2026-07-15",
-      "lastIHC": "2026-09-04",
-      "lastLocation": "CMH",
-      "lastTech": "Alexander HAMILTON",
+      "lastIHC": "2026-09-11",
+      "lastLocation": "SGF",
+      "lastTech": "Jeffrey Crookshanks",
       "ED1": 4,
       "ED2": 1
     },
@@ -1158,12 +1158,12 @@
     },
     {
       "tail": "N310JZ",
-      "lastService": "2026-09-05",
+      "lastService": "2026-09-11",
       "lastED1": "2026-08-27",
       "lastED2": "2026-08-27",
-      "lastIHC": "2026-09-05",
-      "lastLocation": "CVG",
-      "lastTech": "Bayleah Vogel",
+      "lastIHC": "2026-09-11",
+      "lastLocation": "SGF",
+      "lastTech": "Jeffrey Crookshanks",
       "ED1": 14,
       "ED2": 44
     },
@@ -2016,12 +2016,12 @@
     },
     {
       "tail": "N788CJ",
-      "lastService": "2026-09-07",
+      "lastService": "2026-09-11",
       "lastED1": "2026-09-07",
       "lastED2": "2026-04-13",
-      "lastIHC": "2026-09-07",
+      "lastIHC": "2026-09-11",
       "lastLocation": "SGF",
-      "lastTech": "Steven Wilson",
+      "lastTech": "Jeffrey Crookshanks",
       "ED1": 25,
       "ED2": -92
     },
@@ -2264,6 +2264,60 @@
       "location": "LIT",
       "IHC": 1,
       "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N788CJ",
+      "date": "2026-09-11",
+      "name": "Jeffrey Crookshanks",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N292NN",
+      "date": "2026-09-11",
+      "name": "Jeffrey Crookshanks",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N310JZ",
+      "date": "2026-09-11",
+      "name": "Jeffrey Crookshanks",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N219NN",
+      "date": "2026-09-11",
+      "name": "Jeffrey Crookshanks",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 1
+    },
+    {
+      "tail": "N299JJ",
+      "date": "2026-09-11",
+      "name": "Jeffrey Crookshanks",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N255NN",
+      "date": "2026-09-11",
+      "name": "Damian Utley",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 1,
       "ED2": 0
     },
     {

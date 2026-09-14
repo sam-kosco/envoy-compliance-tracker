@@ -1,34 +1,34 @@
 {
-  "generated": "2026-09-13T14:07:58Z",
-  "night_of": "2026-09-12",
-  "capture_rate_pct": 52.2,
+  "generated": "2026-09-14T14:07:48Z",
+  "night_of": "2026-09-13",
+  "capture_rate_pct": 52.1,
   "totals": {
-    "ron": 46,
-    "captured": 24,
-    "missed": 22,
-    "extras": 3
+    "ron": 48,
+    "captured": 25,
+    "missed": 23,
+    "extras": 4
   },
   "locations": [
     {
       "location": "CAK",
       "ron": [
-        "N517AE",
-        "N522AE",
-        "N548NN",
-        "N601EN"
+        "N538EG",
+        "N545PB",
+        "N579NN",
+        "N788CJ"
       ],
       "cleaned": [
-        "N522AE",
-        "N548NN",
-        "N601EN"
+        "N538EG",
+        "N545PB",
+        "N579NN"
       ],
       "captured": [
-        "N522AE",
-        "N548NN",
-        "N601EN"
+        "N538EG",
+        "N545PB",
+        "N579NN"
       ],
       "missed": [
-        "N517AE"
+        "N788CJ"
       ],
       "extras": [],
       "next_day_dated": []
@@ -36,57 +36,58 @@
     {
       "location": "CLT",
       "ron": [
-        "N512AE",
-        "N513AE",
-        "N527EA",
+        "N516AE",
+        "N520DC",
+        "N521AE",
         "N542EA",
-        "N558NN",
-        "N581NN",
+        "N580NN",
         "N585NN",
-        "N615NN",
-        "N645NN",
+        "N630NN",
+        "N637NN",
+        "N641NN",
+        "N718PS",
         "N725PS"
       ],
       "cleaned": [
-        "N527EA",
-        "N585NN",
-        "N630NN"
+        "N516AE",
+        "N520DC",
+        "N521AE",
+        "N585NN"
       ],
       "captured": [
-        "N527EA",
+        "N516AE",
+        "N520DC",
+        "N521AE",
         "N585NN"
       ],
       "missed": [
-        "N512AE",
-        "N513AE",
         "N542EA",
-        "N558NN",
-        "N581NN",
-        "N615NN",
-        "N645NN",
+        "N580NN",
+        "N630NN",
+        "N637NN",
+        "N641NN",
+        "N718PS",
         "N725PS"
       ],
-      "extras": [
-        "N630NN"
-      ],
+      "extras": [],
       "next_day_dated": []
     },
     {
       "location": "CVG",
       "ron": [
-        "N595NN",
-        "N608NN",
-        "N611NN"
+        "N571NN",
+        "N572NN",
+        "N584NN"
       ],
       "cleaned": [
-        "N595NN",
-        "N608NN",
-        "N611NN"
+        "N571NN",
+        "N572NN",
+        "N584NN"
       ],
       "captured": [
-        "N595NN",
-        "N608NN",
-        "N611NN"
+        "N571NN",
+        "N572NN",
+        "N584NN"
       ],
       "missed": [],
       "extras": [],
@@ -96,71 +97,75 @@
       "location": "DAY",
       "ron": [
         "N508AE",
-        "N551NN",
-        "N559NN",
+        "N537EA",
+        "N556NN",
+        "N560NN",
         "N567NN",
         "N586NN",
-        "N594NN",
-        "N596NN",
-        "N618NN"
+        "N614NN",
+        "N618NN",
+        "N649NN"
       ],
       "cleaned": [
         "N508AE",
-        "N551NN",
-        "N558NN",
-        "N559NN",
+        "N537EA",
+        "N556NN",
+        "N560NN",
+        "N580NN",
         "N586NN",
-        "N594NN",
-        "N618NN"
+        "N614NN",
+        "N642NN",
+        "N649NN"
       ],
       "captured": [
         "N508AE",
-        "N551NN",
-        "N559NN",
+        "N537EA",
+        "N556NN",
+        "N560NN",
         "N586NN",
-        "N594NN",
-        "N618NN"
+        "N614NN",
+        "N649NN"
       ],
       "missed": [
         "N567NN",
-        "N596NN"
+        "N618NN"
       ],
       "extras": [
-        "N558NN"
+        "N580NN",
+        "N642NN"
       ],
       "next_day_dated": []
     },
     {
       "location": "DCA",
       "ron": [
-        "N500AE",
-        "N510AE",
+        "N502AE",
         "N515AE",
-        "N525AE",
-        "N571NN",
-        "N703PS",
-        "N705PS",
-        "N716PS"
+        "N531EG",
+        "N532EA",
+        "N536EA",
+        "N573NN",
+        "N710PS"
       ],
       "cleaned": [
-        "N510AE"
+        "N705PS",
+        "N710PS"
       ],
       "captured": [
-        "N510AE"
+        "N710PS"
       ],
       "missed": [
-        "N500AE",
+        "N502AE",
         "N515AE",
-        "N525AE",
-        "N571NN",
-        "N703PS",
-        "N705PS",
-        "N716PS"
+        "N531EG",
+        "N532EA",
+        "N536EA",
+        "N573NN"
       ],
-      "extras": [],
-      "next_day_dated": [
+      "extras": [
         "N705PS"
-      ]
+      ],
+      "next_day_dated": []
     },
     {
       "location": "GSP",
@@ -178,58 +183,59 @@
     {
       "location": "ORF",
       "ron": [
-        "N550NN",
-        "N589NN",
-        "N599NN"
+        "N570NN",
+        "N599NN",
+        "N615NN",
+        "N632NN"
       ],
       "cleaned": [
-        "N524AE",
-        "N550NN",
-        "N589NN",
-        "N599NN"
+        "N507AE",
+        "N615NN",
+        "N632NN"
       ],
       "captured": [
-        "N550NN",
-        "N589NN",
+        "N615NN",
+        "N632NN"
+      ],
+      "missed": [
+        "N570NN",
         "N599NN"
       ],
-      "missed": [],
       "extras": [
-        "N524AE"
+        "N507AE"
       ],
       "next_day_dated": []
     },
     {
       "location": "TYS",
       "ron": [
-        "N539EA",
-        "N541EA",
-        "N552NN",
         "N555NN",
+        "N557NN",
         "N561NN",
-        "N591NN",
         "N598NN",
-        "N604NN",
-        "N706PS"
+        "N605NN",
+        "N617NN",
+        "N629NN",
+        "N706PS",
+        "N708PS"
       ],
       "cleaned": [
-        "N539EA",
-        "N541EA",
-        "N552NN",
-        "N561NN",
-        "N591NN",
-        "N604NN"
+        "N557NN",
+        "N605NN",
+        "N617NN",
+        "N629NN",
+        "N708PS"
       ],
       "captured": [
-        "N539EA",
-        "N541EA",
-        "N552NN",
-        "N561NN",
-        "N591NN",
-        "N604NN"
+        "N557NN",
+        "N605NN",
+        "N617NN",
+        "N629NN",
+        "N708PS"
       ],
       "missed": [
         "N555NN",
+        "N561NN",
         "N598NN",
         "N706PS"
       ],

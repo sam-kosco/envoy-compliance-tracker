@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-15T09:07:30.912731+00:00",
+  "generated": "2026-09-15T10:08:21.108207+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -1389,13 +1389,13 @@
     },
     {
       "tail": "N330JT",
-      "lastService": "2026-09-13",
-      "lastED1": "2026-08-14",
+      "lastService": "2026-09-14",
+      "lastED1": "2026-09-14",
       "lastED2": "2026-07-17",
-      "lastIHC": "2026-09-13",
-      "lastLocation": "LIT",
-      "lastTech": "Damian Utley",
-      "ED1": -2,
+      "lastIHC": "2026-09-14",
+      "lastLocation": "SGF",
+      "lastTech": "Jeffrey Crookshanks",
+      "ED1": 29,
       "ED2": 0
     },
     {
@@ -2298,6 +2298,15 @@
       "date": "2026-09-14",
       "name": "Damian Utley",
       "location": "LIT",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N330JT",
+      "date": "2026-09-14",
+      "name": "Jeffrey Crookshanks",
+      "location": "SGF",
       "IHC": 1,
       "ED1": 1,
       "ED2": 0

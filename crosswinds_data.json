@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-15T02:01:40.607013+00:00",
+  "generated": "2026-09-15T03:02:20.866009+00:00",
   "planes": [
     {
       "tail": "N351DC",
@@ -279,13 +279,20 @@
     },
     {
       "tail": "N830BS",
-      "status": "soon",
-      "count7d": 1,
-      "daysSinceLast": 6,
-      "lastClean": "2026-09-09",
+      "status": "compliant",
+      "count7d": 2,
+      "daysSinceLast": 0,
+      "lastClean": "2026-09-15",
       "lastLocation": "KYIP",
       "lastTech": "Jakendell Brown",
       "recentInspections": [
+        {
+          "audit_id": "audit_5d35179561d34b0d89a3dcfedf03d563",
+          "date": "2026-09-15",
+          "location": "KYIP",
+          "tech": "Jakendell Brown",
+          "report_url": "https://app.safetyculture.com/report/public/audit/f26f36185812850a59e168f1dcf60387cd7bb42de2a3c4532980df0dbb082e27"
+        },
         {
           "audit_id": "audit_51823e56c769476ba8d661695a873f17",
           "date": "2026-09-09",
@@ -313,13 +320,6 @@
           "location": "KYIP",
           "tech": "Jakendell Brown",
           "report_url": "https://app.safetyculture.com/report/public/audit/f27a9efc459c12d1d123ea6137478321b115cd1efda85354cf392aa7ca34d35f"
-        },
-        {
-          "audit_id": "audit_c28f739d679945a089cee8c86bf15768",
-          "date": "2026-08-21",
-          "location": "KYIP",
-          "tech": "Jakendell Brown",
-          "report_url": "https://app.safetyculture.com/report/public/audit/b086abbaef9d8e5837b7c1708baaec4f5c9304162b78de759094b1fbbb6fa0eb"
         }
       ]
     },
@@ -1383,13 +1383,20 @@
     },
     {
       "tail": "N60VU",
-      "status": "soon",
-      "count7d": 1,
-      "daysSinceLast": 5,
-      "lastClean": "2026-09-10",
+      "status": "compliant",
+      "count7d": 2,
+      "daysSinceLast": 0,
+      "lastClean": "2026-09-15",
       "lastLocation": "KYIP",
       "lastTech": "Jakendell Brown",
       "recentInspections": [
+        {
+          "audit_id": "audit_e1252cade7a3452fa624c90c5e2f146f",
+          "date": "2026-09-15",
+          "location": "KYIP",
+          "tech": "Jakendell Brown",
+          "report_url": "https://app.safetyculture.com/report/public/audit/5b5f19a5d9e888c2003b905a481084df9e926f544c843c53a2a69f3543abcba4"
+        },
         {
           "audit_id": "audit_9f18e9225110406f8706255aae11b28c",
           "date": "2026-09-10",
@@ -1417,13 +1424,6 @@
           "location": "KYIP",
           "tech": "Jakendell Brown",
           "report_url": "https://app.safetyculture.com/report/public/audit/7fd1a2f995e84fe3d4c094698f71d39d055c1711ae6fe5caab77abce0bd0a660"
-        },
-        {
-          "audit_id": "audit_96e13d1a26094ab09395e87d492897f1",
-          "date": "2026-08-26",
-          "location": "KYIP",
-          "tech": "Jakendell Brown",
-          "report_url": "https://app.safetyculture.com/report/public/audit/da11a3ace008d0885ac2c68b16d8863c29f10472e16f7bf7a9c327abcd8243a1"
         }
       ]
     },
@@ -1577,13 +1577,20 @@
     },
     {
       "tail": "N568DC",
-      "status": "soon",
-      "count7d": 1,
-      "daysSinceLast": 5,
-      "lastClean": "2026-09-10",
+      "status": "compliant",
+      "count7d": 2,
+      "daysSinceLast": 0,
+      "lastClean": "2026-09-15",
       "lastLocation": "KYIP",
       "lastTech": "Jakendell Brown",
       "recentInspections": [
+        {
+          "audit_id": "audit_eabe7b505503453b9150f765c94a34db",
+          "date": "2026-09-15",
+          "location": "KYIP",
+          "tech": "Jakendell Brown",
+          "report_url": "https://app.safetyculture.com/report/public/audit/59ceb6afe7109569b469e5aebbc49894e9400885d173834213a55b2710bef76b"
+        },
         {
           "audit_id": "audit_91ff5ffc2f364716b149db8e06138a9b",
           "date": "2026-09-10",
@@ -1611,13 +1618,6 @@
           "location": "KYIP",
           "tech": "Jakendell Brown",
           "report_url": "https://app.safetyculture.com/report/public/audit/c6f417b4e1572ccd61a404eb81729da7842fbbfa3a4fdb2583584b080e40a3ab"
-        },
-        {
-          "audit_id": "audit_4fe93ed8c9bf488ca1888bfe053a7ef1",
-          "date": "2026-08-26",
-          "location": "KYIP",
-          "tech": "Jakendell Brown",
-          "report_url": "https://app.safetyculture.com/report/public/audit/99e9ad914df8a25cf3d47cb155780c830fa10c4e4b1ac2f4a309ef66af6e171d"
         }
       ]
     },

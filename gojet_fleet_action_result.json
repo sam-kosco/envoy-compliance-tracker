@@ -1,22 +1,22 @@
 {
   "tail": "998",
-  "action": "add_tail",
+  "action": "remove_tail",
   "program": "gojet",
-  "timestamp": "2026-09-16T12:40:07+00:00",
+  "timestamp": "2026-09-16T12:41:08+00:00",
   "gojet_debrief": {
     "status": "ok",
-    "message": "added at position 59 of 60"
+    "message": "removed (58 tails remain)"
   },
   "gojet_closeout": {
     "status": "ok",
-    "message": "added at position 59 of 59"
+    "message": "removed (58 tails remain)"
   },
   "safetyculture": {
     "status": "ok",
-    "message": "added at position 59 of 60"
+    "message": "removed (59 remain)"
   },
   "sharepoint": {
     "status": "ok",
-    "message": "row add sent (Status=Active) \u2014 async"
+    "message": "Status=Disabled sent \u2014 async"
   }
 }

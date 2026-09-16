@@ -1,0 +1,33 @@
+name: TMP Discover Tail Questions
+on: workflow_dispatch
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-python@v6
+        with: { python-version: "3.12" }
+      - run: pip install requests
+      - env:
+          JOTFORM_KEY: ${{ secrets.JOTFORM_KEY }}
+        run: |
+          python3 - << 'PYEOF'
+          import os, requests
+          KEY = os.environ["JOTFORM_KEY"]; BASE = "https://foxtrotaviation.jotform.com/API"
+          for name, fid in [("mesa_debrief","220187674891163"),("commercial_closeout","222916060752150")]:
+              r = requests.get(f"{BASE}/form/{fid}/questions?apiKey={KEY}", timeout=30)
+              r.raise_for_status()
+              print(f"\n===== {name} ({fid}) =====")
+              for qid, q in sorted(r.json().get("content", {}).items(), key=lambda x: int(x[0])):
+                  t = q.get("type",""); txt = (q.get("text","") or "")[:60]
+                  if t not in ("control_dropdown","control_widget"): continue
+                  opts = str(q.get("options","") or ""); flds = str(q.get("fields","") or "")
+                  print(f"  Q{qid} [{t}] {txt!r}")
+                  if opts:
+                      o = opts.split("|"); print(f"      options({len(o)}): {o[:3]}...{o[-2:]}")
+                  for ln in flds.replace("\r\n","\n").split("\n"):
+                      if not ln.strip(): continue
+                      seg = ln.split(":")
+                      print(f"      line: {seg[0]}:{seg[1] if len(seg)>1 else ''}: "
+                            f"[{len(seg[2].split(',')) if len(seg)>2 and seg[2] else 0} opts] "
+                            f"{seg[2].split(',')[:3] if len(seg)>2 else ''} trail={':'.join(seg[3:])!r}")
+          PYEOF

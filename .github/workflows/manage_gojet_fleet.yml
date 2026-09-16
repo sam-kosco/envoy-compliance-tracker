@@ -1,0 +1,58 @@
+name: Manage GoJet Fleet
+
+# Platform-dispatched (engine/fleet.py). Updates the program's JotForm tail
+# lists + SafetyCulture set via manage_fleet_lists.py; the roster row in the
+# Debriefs workbook stays a MANUAL edit (no SharePoint step by design).
+on:
+  workflow_dispatch:
+    inputs:
+      action:
+        description: "Action to perform: add_tail | remove_tail"
+        required: true
+        type: string
+      tail:
+        description: "Tail number"
+        required: true
+        type: string
+
+jobs:
+  manage:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      actions: write
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - run: pip install requests
+
+      - name: Run fleet action
+        env:
+          PROGRAM: gojet
+          ACTION: ${{ github.event.inputs.action }}
+          TAIL_INPUT: ${{ github.event.inputs.tail }}
+          JOTFORM_KEY: ${{ secrets.JOTFORM_KEY }}
+          SAFETYCULTURE_KEY: ${{ secrets.SAFETYCULTURE_KEY }}
+        run: python manage_fleet_lists.py
+
+      - name: Commit result file
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add gojet_fleet_action_result.json
+          git diff --cached --quiet || git commit -m "chore: gojet ${{ github.event.inputs.action }} ${{ github.event.inputs.tail }} [$(date -u '+%Y-%m-%d %H:%M UTC')]"
+          n=0
+          until git push; do
+            n=$((n+1)); [ "$n" -ge 3 ] && exit 1
+            echo "push rejected (concurrent bot commit) — rebasing and retrying ($n/3)"
+            git pull --rebase
+          done
+
+      - name: Trigger tracker refresh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run gojet_data_refresh.yml --repo "$GITHUB_REPOSITORY"

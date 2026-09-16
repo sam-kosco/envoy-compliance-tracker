@@ -3,7 +3,8 @@ authority: the tail roster sheet of that program's Debriefs workbook
 (non-Disabled rows, fetched fresh via Graph). PROGRAM selects the config in
 PROGRAMS below — envoy (8 JotForm lists + SC set), psa (2 + SC), gojet
 (debrief dropdown + SC), jsx (debrief dropdown + closeout widget + SC),
-mesa (SC only — its debrief tail is free text).
+mesa (debrief Q47 dropdown + Commercial Closeout Q298 widget + SC —
+dropdowns added by the owner 2026-09-16).
 
 APPLY=false (default): report only — per-list missing/extra/order status.
 APPLY=true: rewrite each out-of-sync list to exactly the roster, numeric order,
@@ -63,13 +64,14 @@ PROGRAMS = {
         ],
     },
     "mesa": {
-        # Mesa's debrief tail (Q29) is a free-text box and the Commercial
-        # Closeout has no Mesa fleet widget — the SC set is the only list.
         "file_path": "Power Flows/Debriefs/Mesa Debriefs.xlsx",
         "sheet": "Tails",
         "status_idx": 7,
         "sc_set": ("MESA Tails", "responseset_81917085c88a4d9f8f2b645163ebc546"),
-        "lists": [],
+        "lists": [
+            ("Mesa Debrief Q47", "dropdown", "220187674891163", "47"),
+            ("Commercial Closeout Q298 (Mesa Aircrafts Serviced)", "widget", "222916060752150", "298", "Tail Number"),
+        ],
     },
     "gojet": {
         "file_path": "Power Flows/Debriefs/GoJet Debriefs.xlsx",

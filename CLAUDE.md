@@ -338,7 +338,7 @@ placeholders preserved; results committed to
 
 | Program | Targets | Notes |
 |---|---|---|
-| mesa | SafetyCulture "MESA Tails" only | Mesa Debrief tail (Q29) is FREE TEXT; no Commercial Closeout Mesa widget exists |
+| mesa | Mesa Debrief `220187674891163` Q47 (pipe options), Commercial Closeout `222916060752150` Q298 "Mesa Aircrafts Serviced" widget ("Tail Number" line) + SC "MESA Tails" | dropdowns added by owner 2026-09-16 (old Q29 free-text retired) |
 | gojet | GoJet Debrief `250554449184058` Q21 (pipe options) + SC "GoJet Tails" | tails are BARE ship numbers (`501`) — separate validation everywhere |
 | jsx | JSX Debrief `260637830358058` Q19 (pipe options), JSX Closeout `262036208159051` Q7 widget ("Tail Number" line) + SC "JSX Tails" | no refresh dispatch (the JSX tracker lives in its own repo; it reads Sheet2 hourly anyway) |
 
@@ -424,7 +424,7 @@ The script no longer writes to Excel — Power Automate handles all writes using
 | Renew CLIENT_SECRET | Every 24 months | Entra → App registrations → Foxtrot Report Automation → new secret → update GitHub Secret |
 | Add tail to Envoy fleet | As needed | Foxtrot Platform → Fleets → Envoy → Admin (Fleet Admins). Updates both debrief forms + all five closeout lists; add the Tail List row in the workbook by hand. |
 | Remove tail from Envoy fleet | As needed | Envoy Admin tab → Remove Tail (sets Status=Disabled on the Tail List, column F) |
-| Add tail to Mesa fleet | As needed | Foxtrot Platform → Fleets → Mesa → Admin (SC set); add the Tails-sheet row in Mesa Debriefs by hand |
+| Add tail to Mesa fleet | As needed | Foxtrot Platform → Fleets → Mesa → Admin (debrief + closeout dropdowns + SC set); add the Tails-sheet row in Mesa Debriefs by hand |
 | Add tail to GoJet fleet | As needed | Foxtrot Platform → Fleets → GoJet → Admin (debrief dropdown + SC set); add the Tails-sheet row in GoJet Debriefs by hand |
 | Add tail to PSA fleet | As needed | Foxtrot Platform → Fleets → PSA → Admin (Fleet Admins). Updates SafetyCulture + both JotForm lists; add the Tail List row in the workbook by hand. |
 | Remove tail from PSA fleet | As needed | Admin tab → Remove Tail (sets Status=Disabled on the Tail List; tracker drops it on next refresh) |

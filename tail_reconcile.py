@@ -1,14 +1,16 @@
-"""Audit (and optionally fix) every Envoy tail list against the authority:
-the Tail List sheet of Power Flows/Debriefs/Envoy Debriefs.xlsx (non-Disabled
-rows). Targets = the same eight JotForm lists manage_envoy_fleet.yml maintains
-plus the SafetyCulture "Envoy Tails" response set.
+"""Audit (and optionally fix) every tail list for a program against the
+authority: the tail roster sheet of that program's Debriefs workbook
+(non-Disabled rows, fetched fresh via Graph). PROGRAM selects the config in
+PROGRAMS below — envoy (8 JotForm lists + SC set), psa (2 + SC), gojet
+(debrief dropdown + SC), jsx (debrief dropdown + closeout widget + SC),
+mesa (SC only — its debrief tail is free text).
 
 APPLY=false (default): report only — per-list missing/extra/order status.
 APPLY=true: rewrite each out-of-sync list to exactly the roster, numeric order,
 preserving each list's non-tail entries (leading placeholders in place,
 NOT LISTED kept last, widget ":Please Select" trailing segments untouched).
 
-Run via envoy_tail_reconcile.yml. Exit code 0 always unless a source errors;
+Run via tail_reconcile.yml. Exit code 0 always unless a source errors;
 "in sync" vs diffs is reported in the step summary.
 """
 import io
@@ -30,9 +32,11 @@ DRIVE_ID = "b!_bzXaIx86kOufgJN3ih-BaDIDthKYuxJkJtLi1Bm5irGjCEnK-VHSpBRRm3_SDKU"
 APPLY = os.environ.get("APPLY", "false").strip().lower() == "true"
 PROGRAM = os.environ.get("PROGRAM", "envoy").strip().lower()
 
-# Per-program config: roster workbook + Status column index, the JotForm
-# lists the program's manage workflow maintains, and its SC response set.
-# JotForm list tuple: (name, kind, form_id, qid[, widget line label]).
+# Per-program config: roster workbook (sheet + Status column index + tail
+# shape), the JotForm lists the program's manage workflow maintains, and its
+# SC response set. JotForm list tuple: (name, kind, form_id, qid[, widget
+# line label]). "sheet" defaults to "Tail List"; "tail_re" defaults to the
+# N-number shape (GoJet rosters bare ship numbers).
 PROGRAMS = {
     "envoy": {
         "file_path": "Power Flows/Debriefs/Envoy Debriefs.xlsx",
@@ -58,16 +62,46 @@ PROGRAMS = {
             ("Commercial Closeout Q27 (PSA Fleet)", "widget", "222916060752150", "27", "Dropdown"),
         ],
     },
+    "mesa": {
+        # Mesa's debrief tail (Q29) is a free-text box and the Commercial
+        # Closeout has no Mesa fleet widget — the SC set is the only list.
+        "file_path": "Power Flows/Debriefs/Mesa Debriefs.xlsx",
+        "sheet": "Tails",
+        "status_idx": 7,
+        "sc_set": ("MESA Tails", "responseset_81917085c88a4d9f8f2b645163ebc546"),
+        "lists": [],
+    },
+    "gojet": {
+        "file_path": "Power Flows/Debriefs/GoJet Debriefs.xlsx",
+        "sheet": "Tails",
+        "status_idx": 10,
+        "tail_re": r"^\d{1,4}$",           # bare ship numbers (501, 583, ...)
+        "sc_set": ("GoJet Tails", "responseset_4d657b974486489cb23ba2bf224ba6d0"),
+        "lists": [
+            ("GoJet Debrief Q21", "dropdown", "250554449184058", "21"),
+        ],
+    },
+    "jsx": {
+        "file_path": "Power Flows/Debriefs/JSX Debriefs.xlsx",
+        "sheet": "Sheet2",
+        "status_idx": 6,
+        "sc_set": ("JSX Tails", "responseset_4209d5b39cbc465babe7ed96cd2aab25"),
+        "lists": [
+            ("JSX Debrief Q19", "dropdown", "260637830358058", "19"),
+            ("JSX Closeout Q7 (JSX Services)", "widget", "262036208159051", "7", "Tail Number"),
+        ],
+    },
 }
 CFG = PROGRAMS[PROGRAM]
 FILE_PATH = CFG["file_path"]
 SC_SET_NAME, SC_SET_ID = CFG["sc_set"]
+ROSTER_SHEET = CFG.get("sheet", "Tail List")
 
-TAIL_RE = re.compile(r"^N\d{1,5}[A-Z]{0,2}$")
+TAIL_RE = re.compile(CFG.get("tail_re", r"^N\d{1,5}[A-Z]{0,2}$"))
 
 
 def sort_key(t):
-    m = re.match(r"^N(\d+)", t.upper())
+    m = re.match(r"^N?(\d+)", t.upper())
     return (0, int(m.group(1)), t.upper()) if m else (1, 0, t.upper())
 
 
@@ -84,7 +118,7 @@ def roster():
         headers={"Authorization": f"Bearer {tok}"}, timeout=120)
     r.raise_for_status()
     wb = load_workbook(io.BytesIO(r.content), read_only=True, data_only=True)
-    ws = wb["Tail List"]
+    ws = wb[ROSTER_SHEET]
     tails, seen = [], set()
     si = CFG["status_idx"]
     for row in ws.iter_rows(min_row=2, values_only=True):

@@ -81,6 +81,7 @@ PROGRAMS = {
         "sc_set": ("GoJet Tails", "responseset_4d657b974486489cb23ba2bf224ba6d0"),
         "lists": [
             ("GoJet Debrief Q21", "dropdown", "250554449184058", "21"),
+            ("Commercial Closeout Q281 (GoJet)", "widget", "222916060752150", "281", "Tail Number"),
         ],
     },
     "jsx": {

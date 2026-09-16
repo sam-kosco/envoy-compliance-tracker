@@ -39,6 +39,7 @@ PROGRAMS = {
         "sc_set": ("GoJet Tails", "responseset_4d657b974486489cb23ba2bf224ba6d0"),
         "lists": [
             ("gojet_debrief", "GoJet Debrief", "dropdown", "250554449184058", "21"),
+            ("gojet_closeout", "Commercial Closeout (GoJet)", "widget", "222916060752150", "281", "Tail Number"),
         ],
         "result_file": "gojet_fleet_action_result.json",
     },

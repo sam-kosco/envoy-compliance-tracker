@@ -342,13 +342,15 @@ written by the consolidated "Add/Remove Tails" PA flow (see Org migration
 note; JSX Location on Sheet2 is still a hand edit — the flow doesn't know
 it). add/remove are symmetric; NOT LISTED / ":Please Select" placeholders
 preserved; results committed to `<program>_fleet_action_result.json`.
-**PSA remove is symmetric on the roster too now** (Status=Disabled via the
-flow) while its dropdown lists still intentionally keep the tail.
+**PSA remove is FULLY symmetric** (2026-09-17, Sam — replacing the old
+keep-the-dropdowns design): manage_fleet.yml runs the committed
+`manage_psa_fleet.py`, which strips the tail from both JotForm lists and
+the SC set and sends the roster Status=Disabled, exactly like the others.
 
 | Program | Targets | Notes |
 |---|---|---|
 | mesa | Mesa Debrief `220187674891163` Q47 (pipe options), Commercial Closeout `222916060752150` Q298 "Mesa Aircrafts Serviced" widget ("Tail Number" line) + SC "MESA Tails" | dropdowns added by owner 2026-09-16 (old Q29 free-text retired) |
-| gojet | GoJet Debrief `250554449184058` Q21 (pipe options) + SC "GoJet Tails" | tails are BARE ship numbers (`501`) — separate validation everywhere |
+| gojet | GoJet Debrief `250554449184058` Q21 (pipe options), Commercial Closeout `222916060752150` Q281 GoJet widget ("Tail Number" line) + SC "GoJet Tails" | tails are BARE ship numbers (`501`) — separate validation everywhere |
 | jsx | JSX Debrief `260637830358058` Q19 (pipe options), JSX Closeout `262036208159051` Q7 widget ("Tail Number" line) + SC "JSX Tails" | no refresh dispatch (the JSX tracker lives in its own repo; it reads Sheet2 hourly anyway) |
 
 ## PSA Tail List Status column
@@ -436,7 +438,7 @@ The script no longer writes to Excel — Power Automate handles all writes using
 | Add tail to Mesa fleet | As needed | Foxtrot Platform → Fleets → Mesa → Admin — updates debrief + closeout dropdowns, SC set, and the roster row |
 | Add tail to GoJet fleet | As needed | Foxtrot Platform → Fleets → GoJet → Admin — updates debrief dropdown, SC set, and the roster row (bare ship number) |
 | Add tail to PSA fleet | As needed | Foxtrot Platform → Fleets → PSA → Admin (Fleet Admins) — updates SafetyCulture, both JotForm lists, and the Tail List row |
-| Remove tail from PSA fleet | As needed | Admin tab → Remove Tail (sets Status=Disabled on the Tail List; tracker drops it on next refresh) |
+| Remove tail from PSA fleet | As needed | Foxtrot Platform → Fleets → PSA → Admin — strips all lists + sets Status=Disabled (fully reverses add) |
 | Re-activate a disabled PSA tail | As needed | Set Status back to Active on the Tail List sheet (do NOT re-add via Admin tab — see "Remove Tail") |
 | Add tail to Crosswinds fleet | As needed | Add to the Crosswinds Tail Numbers global response set in SafetyCulture AND the `TAILS` list in `crosswinds_generate_data.py` |
 | Pause a refresh | As needed | Comment out the `cron:` line in the relevant workflow YAML |

@@ -1,12 +1,14 @@
 """Add/remove one tail across a program's JotForm lists + SafetyCulture
-response set — the shared engine behind manage_mesa_fleet.yml /
-manage_gojet_fleet.yml / manage_jsx_fleet.yml (Envoy/PSA keep their own
-workflows). NO SharePoint write: the roster row in the Debriefs workbook
-stays a manual edit (owner decision, 2026-09-16).
+response set + the SharePoint roster row (via the consolidated
+"Add/Remove Tails" PA flow, ROSTER_FLOW_URL) — the shared engine behind
+manage_mesa_fleet.yml / manage_gojet_fleet.yml / manage_jsx_fleet.yml
+(Envoy/PSA keep their own workflows, wired to the same flow).
 
 Env: PROGRAM (mesa|gojet|jsx), ACTION (add_tail|remove_tail), TAIL_INPUT,
-JOTFORM_KEY, SAFETYCULTURE_KEY. Writes <program>_fleet_action_result.json
-for the platform to poll and a GitHub step summary.
+PLANE_TYPE (jsx add only — REQUIRED there, ignored elsewhere; the flow
+writes it to Sheet2's Plane Type column), JOTFORM_KEY, SAFETYCULTURE_KEY,
+ROSTER_FLOW_URL. Writes <program>_fleet_action_result.json for the
+platform to poll and a GitHub step summary.
 """
 import json
 import os
@@ -55,6 +57,10 @@ PROGRAM = os.environ["PROGRAM"].strip().lower()
 CFG = PROGRAMS[PROGRAM]
 action = os.environ["ACTION"].strip()
 tail = os.environ["TAIL_INPUT"].strip().upper()
+plane_type = os.environ.get("PLANE_TYPE", "").strip()
+# The PA flow's Switch matches these exact case labels.
+FLOW_PROGRAM = {"mesa": "Mesa", "gojet": "GoJet", "jsx": "JSX"}[PROGRAM]
+JSX_PLANE_TYPES = ("EMB 145", "EMB 135", "ATR")
 
 if action not in ("add_tail", "remove_tail"):
     print(f"Unsupported action: {action}", file=sys.stderr)
@@ -63,7 +69,12 @@ if not re.match(CFG["tail_re"], tail):
     print(f"Invalid {PROGRAM} tail format: {tail!r}", file=sys.stderr)
     sys.exit(1)
 adding = action == "add_tail"
-print(f"Program: {PROGRAM}  |  Action: {action}  |  Tail: {tail}")
+if PROGRAM == "jsx" and adding and plane_type not in JSX_PLANE_TYPES:
+    print(f"JSX add_tail requires PLANE_TYPE in {JSX_PLANE_TYPES}, got {plane_type!r}",
+          file=sys.stderr)
+    sys.exit(1)
+print(f"Program: {PROGRAM}  |  Action: {action}  |  Tail: {tail}"
+      + (f"  |  Plane Type: {plane_type}" if plane_type else ""))
 
 
 def sort_key(t):
@@ -180,12 +191,25 @@ except Exception as e:
 rows.append((f'SafetyCulture ("{sc_name}")', result["safetyculture"]))
 print(f"SafetyCulture: {result['safetyculture']}")
 
-# The roster row is a manual workbook edit by design — say so in the result
-# so the platform table reminds the admin.
-verb = "add the tail row to" if adding else f"set Status=Disabled on"
-result["sharepoint"] = {"status": "manual",
-                        "message": f"{verb} the {PROGRAM} Debriefs roster sheet by hand"}
+# SharePoint roster row via the consolidated "Add/Remove Tails" PA flow —
+# add appends (Status=Active, JSX also Plane Type), remove sets Disabled.
+# Async (202): "ok" means accepted; failures land in the PA run history.
+try:
+    flow_url = os.environ.get("ROSTER_FLOW_URL", "")
+    if not flow_url:
+        result["sharepoint"] = {"status": "skipped", "message": "ROSTER_FLOW_URL not configured"}
+    else:
+        body = {"Program": FLOW_PROGRAM, "Tail Number": tail, "Action": action}
+        if PROGRAM == "jsx" and adding:
+            body["Plane Type"] = plane_type
+        r = requests.post(flow_url, json=body, timeout=60)
+        r.raise_for_status()
+        result["sharepoint"] = {"status": "ok", "message":
+            ("row add sent (Status=Active)" if adding else "Status=Disabled sent") + " — async"}
+except Exception as e:
+    result["sharepoint"] = {"status": "error", "message": str(e)[:200]}
 rows.append(("SharePoint roster", result["sharepoint"]))
+print(f"SharePoint: {result['sharepoint']}")
 
 with open(CFG["result_file"], "w") as f:
     json.dump(result, f, indent=2)

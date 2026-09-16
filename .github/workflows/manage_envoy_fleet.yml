@@ -41,12 +41,12 @@ jobs:
           # SAFETYCULTURE_KEY with manage_fleet.yml / the Crosswinds refresh).
           SAFETYCULTURE_KEY:  ${{ secrets.SAFETYCULTURE_KEY }}
           ENVOY_TAILS_SET_ID: responseset_00749b53e9c34c618ee08f3e3e29f014
-          # SharePoint Tail List row: Power Automate "When an HTTP request is
-          # received" flows — add appends the row (Status=Active), remove sets
-          # Status=Disabled. Body is {"tail": "<N-number>"}. The URLs carry their
-          # own SAS signature, so they live in repo secrets, never in this file.
-          ENVOY_ROSTER_ADD_URL:    ${{ secrets.ENVOY_ROSTER_ADD_URL }}
-          ENVOY_ROSTER_REMOVE_URL: ${{ secrets.ENVOY_ROSTER_REMOVE_URL }}
+          # SharePoint Tail List row: the consolidated "Add/Remove Tails" PA
+          # flow (2026-09-16, replacing the per-action Envoy flows) — add
+          # appends the row (Status=Active), remove sets Status=Disabled.
+          # Body {"Program","Tail Number","Action"}; SAS-signed URL lives in
+          # the repo secret, never in this file. Runs async (202).
+          ROSTER_FLOW_URL: ${{ secrets.ROSTER_FLOW_URL }}
         run: |
           python3 - << 'PYEOF'
           import json, os, re, sys
@@ -197,18 +197,19 @@ jobs:
               result["safetyculture"] = {"status": "error", "message": str(e)[:200]}
               print(f"SafetyCulture ERROR: {e}")
 
-          # ── SharePoint Tail List row via Power Automate ──────────
-          # add -> Add flow (appends the row, Status=Active); remove -> Remove flow
-          # (sets Status=Disabled). Body {"tail": ...}. Skipped if the URL is unset.
+          # ── SharePoint Tail List row via the consolidated PA flow ──
+          # add -> row appended (Status=Active); remove -> Status=Disabled.
+          # Async (202): "ok" means accepted; failures land in PA run history.
           try:
-              flow_url = os.environ.get("ENVOY_ROSTER_ADD_URL" if adding else "ENVOY_ROSTER_REMOVE_URL", "")
+              flow_url = os.environ.get("ROSTER_FLOW_URL", "")
               if not flow_url:
-                  result["sharepoint"] = {"status": "skipped", "message": "flow URL not configured"}
+                  result["sharepoint"] = {"status": "skipped", "message": "ROSTER_FLOW_URL not configured"}
               else:
-                  r = requests.post(flow_url, json={"tail": tail}, timeout=60)
+                  r = requests.post(flow_url, json={"Program": "Envoy", "Tail Number": tail,
+                                                    "Action": action}, timeout=60)
                   r.raise_for_status()
                   result["sharepoint"] = {"status": "ok", "message":
-                      "row added (Status=Active)" if adding else "Status=Disabled set"}
+                      ("row add sent (Status=Active)" if adding else "Status=Disabled sent") + " — async"}
               print(f"SharePoint: {result['sharepoint']}")
           except Exception as e:
               result["sharepoint"] = {"status": "error", "message": str(e)[:200]}

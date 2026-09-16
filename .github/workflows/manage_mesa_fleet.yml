@@ -1,8 +1,8 @@
 name: Manage Mesa Fleet
 
 # Platform-dispatched (engine/fleet.py). Updates the program's JotForm tail
-# lists + SafetyCulture set via manage_fleet_lists.py; the roster row in the
-# Debriefs workbook stays a MANUAL edit (no SharePoint step by design).
+# lists + SafetyCulture set AND the SharePoint roster row (consolidated
+# "Add/Remove Tails" PA flow, ROSTER_FLOW_URL) via manage_fleet_lists.py.
 on:
   workflow_dispatch:
     inputs:
@@ -37,6 +37,7 @@ jobs:
           TAIL_INPUT: ${{ github.event.inputs.tail }}
           JOTFORM_KEY: ${{ secrets.JOTFORM_KEY }}
           SAFETYCULTURE_KEY: ${{ secrets.SAFETYCULTURE_KEY }}
+          ROSTER_FLOW_URL: ${{ secrets.ROSTER_FLOW_URL }}
         run: python manage_fleet_lists.py
 
       - name: Commit result file

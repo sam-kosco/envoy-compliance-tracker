@@ -43,6 +43,9 @@ jobs:
           JOTFORM_TAIL_QID:    "53"
           CLOSEOUT_FORM_ID:    "222916060752150"
           CLOSEOUT_PSA_QID:    "27"
+          # Consolidated "Add/Remove Tails" PA flow: writes the SharePoint
+          # Tail List row (add -> Status=Active, remove -> Status=Disabled).
+          ROSTER_FLOW_URL:     ${{ secrets.ROSTER_FLOW_URL }}
         run: |
           python3 - << 'PYEOF'
           import json, os, re, sys
@@ -209,6 +212,26 @@ jobs:
               result["closeout"] = {"status": "error", "message": str(e)[:200]}
               print(f"Closeout ERROR: {e}")
 
+          # ── SharePoint Tail List row via the consolidated PA flow ──
+          # (2026-09-16: remove_tail now auto-sets Status=Disabled — the old
+          # by-hand edit is retired.) The flow runs async (202) — "ok" means
+          # accepted; failures surface in the PA run history.
+          try:
+              flow_url = os.environ.get("ROSTER_FLOW_URL", "")
+              if not flow_url:
+                  result["sharepoint"] = {"status": "skipped", "message": "ROSTER_FLOW_URL not configured"}
+              else:
+                  r = requests.post(flow_url, json={"Program": "PSA", "Tail Number": tail,
+                                                    "Action": action}, timeout=60)
+                  r.raise_for_status()
+                  result["sharepoint"] = {"status": "ok", "message":
+                      ("row add sent (Status=Active)" if action == "add_tail"
+                       else "Status=Disabled sent") + " — async"}
+              print(f"SharePoint: {result['sharepoint']}")
+          except Exception as e:
+              result["sharepoint"] = {"status": "error", "message": str(e)[:200]}
+              print(f"SharePoint ERROR: {e}")
+
           # ── Write result file ────────────────────────────────────
           with open("fleet_action_result.json", "w") as f:
               json.dump(result, f, indent=2)
@@ -219,7 +242,7 @@ jobs:
               with open(summary_path, "a") as f:
                   f.write(f"## {action}: `{tail}`\n\n")
                   f.write("| System | Status | Detail |\n|---|---|---|\n")
-                  for k in ("safetyculture", "jotform", "closeout"):
+                  for k in ("safetyculture", "jotform", "closeout", "sharepoint"):
                       s = result[k]
                       icon = {"ok":"✅","noop":"➖","error":"❌","skipped":"⏭"}.get(s["status"], "?")
                       f.write(f"| {k} | {icon} {s['status']} | {s['message']} |\n")

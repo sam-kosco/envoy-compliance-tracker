@@ -1,8 +1,8 @@
 name: Manage JSX Fleet
 
 # Platform-dispatched (engine/fleet.py). Updates the program's JotForm tail
-# lists + SafetyCulture set via manage_fleet_lists.py; the roster row in the
-# Debriefs workbook stays a MANUAL edit (no SharePoint step by design).
+# lists + SafetyCulture set AND the SharePoint roster row (consolidated
+# "Add/Remove Tails" PA flow, ROSTER_FLOW_URL) via manage_fleet_lists.py.
 on:
   workflow_dispatch:
     inputs:
@@ -13,6 +13,10 @@ on:
       tail:
         description: "Tail number"
         required: true
+        type: string
+      plane_type:
+        description: "Plane type (add_tail only): EMB 145 | EMB 135 | ATR"
+        required: false
         type: string
 
 jobs:
@@ -35,8 +39,10 @@ jobs:
           PROGRAM: jsx
           ACTION: ${{ github.event.inputs.action }}
           TAIL_INPUT: ${{ github.event.inputs.tail }}
+          PLANE_TYPE: ${{ github.event.inputs.plane_type }}
           JOTFORM_KEY: ${{ secrets.JOTFORM_KEY }}
           SAFETYCULTURE_KEY: ${{ secrets.SAFETYCULTURE_KEY }}
+          ROSTER_FLOW_URL: ${{ secrets.ROSTER_FLOW_URL }}
         run: python manage_fleet_lists.py
 
       - name: Commit result file

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-16T08:07:55.724297+00:00",
+  "generated": "2026-09-16T09:07:41.832642+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -300,12 +300,12 @@
     },
     {
       "tail": "N227NN",
-      "lastService": "2026-09-13",
+      "lastService": "2026-09-15",
       "lastED1": "2026-08-22",
       "lastED2": "2026-09-11",
-      "lastIHC": "2026-09-13",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
+      "lastIHC": "2026-09-15",
+      "lastLocation": "LIT",
+      "lastTech": "Damian Utley",
       "ED1": 5,
       "ED2": 55
     },
@@ -333,12 +333,12 @@
     },
     {
       "tail": "N230NN",
-      "lastService": "2026-09-09",
+      "lastService": "2026-09-15",
       "lastED1": "2026-08-17",
       "lastED2": "2026-08-28",
-      "lastIHC": "2026-09-09",
-      "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastIHC": "2026-09-15",
+      "lastLocation": "LIT",
+      "lastTech": "Damian Utley",
       "ED1": 0,
       "ED2": 41
     },
@@ -597,12 +597,12 @@
     },
     {
       "tail": "N254NN",
-      "lastService": "2026-09-11",
+      "lastService": "2026-09-15",
       "lastED1": "2026-08-20",
       "lastED2": "2026-08-20",
-      "lastIHC": "2026-09-11",
-      "lastLocation": "XNA",
-      "lastTech": "Riley Pinterich",
+      "lastIHC": "2026-09-15",
+      "lastLocation": "LIT",
+      "lastTech": "Damian Utley",
       "ED1": 3,
       "ED2": 33
     },
@@ -707,12 +707,12 @@
     },
     {
       "tail": "N264NN",
-      "lastService": "2026-09-11",
+      "lastService": "2026-09-15",
       "lastED1": "2026-09-10",
       "lastED2": "2026-08-18",
-      "lastIHC": "2026-09-11",
-      "lastLocation": "CMH",
-      "lastTech": "Alexander Hamilton",
+      "lastIHC": "2026-09-15",
+      "lastLocation": "LIT",
+      "lastTech": "Damian Utley",
       "ED1": 24,
       "ED2": 31
     },
@@ -1070,12 +1070,12 @@
     },
     {
       "tail": "N302RN",
-      "lastService": "2026-09-12",
+      "lastService": "2026-09-15",
       "lastED1": "2026-08-27",
       "lastED2": "2026-08-27",
-      "lastIHC": "2026-09-12",
-      "lastLocation": "XNA",
-      "lastTech": "Riley Pinterich",
+      "lastIHC": "2026-09-15",
+      "lastLocation": "LIT",
+      "lastTech": "Damian Utley",
       "ED1": 10,
       "ED2": 40
     },
@@ -1092,10 +1092,10 @@
     },
     {
       "tail": "N304KM",
-      "lastService": "2026-09-13",
+      "lastService": "2026-09-15",
       "lastED1": "2026-09-05",
       "lastED2": "2026-08-21",
-      "lastIHC": "2026-09-13",
+      "lastIHC": "2026-09-15",
       "lastLocation": "LIT",
       "lastTech": "Damian Utley",
       "ED1": 19,
@@ -1169,14 +1169,14 @@
     },
     {
       "tail": "N311VE",
-      "lastService": "2026-09-06",
-      "lastED1": "2026-08-23",
-      "lastED2": "2026-07-24",
-      "lastIHC": "2026-09-06",
-      "lastLocation": "CVG",
-      "lastTech": "Dvion Davis",
-      "ED1": 6,
-      "ED2": 6
+      "lastService": "2026-09-15",
+      "lastED1": "2026-09-15",
+      "lastED2": "2026-09-15",
+      "lastIHC": "2026-09-15",
+      "lastLocation": "XNA",
+      "lastTech": "Casey Henry",
+      "ED1": 29,
+      "ED2": 59
     },
     {
       "tail": "N312BT",
@@ -1961,12 +1961,12 @@
     },
     {
       "tail": "N783LC",
-      "lastService": "2026-09-11",
+      "lastService": "2026-09-15",
       "lastED1": "2026-08-22",
       "lastED2": "2026-08-10",
-      "lastIHC": "2026-09-11",
-      "lastLocation": "CVG",
-      "lastTech": "Sellers Davis",
+      "lastIHC": "2026-09-15",
+      "lastLocation": "LIT",
+      "lastTech": "Damian Utley",
       "ED1": 5,
       "ED2": 23
     },
@@ -2291,6 +2291,78 @@
       "location": "XNA",
       "IHC": 1,
       "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N311VE",
+      "date": "2026-09-15",
+      "name": "Casey Henry",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 1
+    },
+    {
+      "tail": "N254NN",
+      "date": "2026-09-15",
+      "name": "Damian Utley",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N230NN",
+      "date": "2026-09-15",
+      "name": "Damian Utley",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N227NN",
+      "date": "2026-09-15",
+      "name": "Damian Utley",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N783LC",
+      "date": "2026-09-15",
+      "name": "Damian Utley",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N264NN",
+      "date": "2026-09-15",
+      "name": "Damian Utley",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N302RN",
+      "date": "2026-09-15",
+      "name": "Damian Utley",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N304KM",
+      "date": "2026-09-15",
+      "name": "Damian Utley",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
       "ED2": 0
     },
     {

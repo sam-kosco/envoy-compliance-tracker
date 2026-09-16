@@ -1,14 +1,22 @@
 {
   "tail": "N99399",
-  "action": "remove_tail",
+  "action": "add_tail",
   "program": "mesa",
-  "timestamp": "2026-09-16T05:48:06+00:00",
+  "timestamp": "2026-09-16T06:19:38+00:00",
+  "mesa_debrief": {
+    "status": "ok",
+    "message": "added at position 61 of 62"
+  },
+  "mesa_closeout": {
+    "status": "ok",
+    "message": "added at position 61 of 61"
+  },
   "safetyculture": {
     "status": "ok",
-    "message": "removed (62 remain)"
+    "message": "added at position 61 of 63"
   },
   "sharepoint": {
     "status": "manual",
-    "message": "set Status=Disabled on the mesa Debriefs roster sheet by hand"
+    "message": "add the tail row to the mesa Debriefs roster sheet by hand"
   }
 }

@@ -317,6 +317,15 @@ value as text and SafetyCulture keeps inspection answers on the inspection, so
 past records keep their tail; only future selectability goes away.
 `envoy_generate_data.py` also excludes `Disabled` tails and dedupes.
 
+> **New location-based closeout forms with a tail dropdown for a tracked
+> program MUST be registered here** (Sam, 2026-09-17): add the form/question
+> to the program's manage config (envoy: `manage_envoy_fleet.yml` TARGETS;
+> psa: `manage_psa_fleet.py`; mesa/gojet/jsx: `manage_fleet_lists.py`
+> PROGRAMS) AND to `tail_reconcile.py` PROGRAMS, then run the reconcile
+> with `apply=true` to seed it. The full checklist lives in the Commercial
+> Closeout Processes CLAUDE.md ("To add the next location-specific
+> closeout").
+
 ## Tail-list reconcile (`tail_reconcile.yml`)
 
 Utility (workflow_dispatch, inputs `program` = envoy | psa | mesa | gojet |

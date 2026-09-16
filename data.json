@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-16T13:07:29.839679+00:00",
+  "generated": "2026-09-16T14:08:16.898818+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -1796,10 +1796,10 @@
     },
     {
       "tail": "N764JD",
-      "lastService": "2028-09-08",
+      "lastService": "2026-09-08",
       "lastED1": "2026-08-31",
       "lastED2": "2026-04-24",
-      "lastIHC": "2028-09-08",
+      "lastIHC": "2026-09-08",
       "lastLocation": "CVG",
       "lastTech": "Bayleah Vogel",
       "ED1": 14,
@@ -2104,15 +2104,6 @@
     }
   ],
   "debriefs": [
-    {
-      "tail": "N764JD",
-      "date": "2028-09-08",
-      "name": "Bayleah Vogel",
-      "location": "CVG",
-      "IHC": 1,
-      "ED1": 0,
-      "ED2": 0
-    },
     {
       "tail": "N226NN",
       "date": "2026-12-30",
@@ -4566,6 +4557,15 @@
       "date": "2026-09-08",
       "name": "Damian Utley",
       "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N764JD",
+      "date": "2026-09-08",
+      "name": "Bayleah Vogel",
+      "location": "CVG",
       "IHC": 1,
       "ED1": 0,
       "ED2": 0

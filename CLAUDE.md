@@ -18,16 +18,16 @@ DISABLED — never push to it or run anything there. Retire the legacy URL
 (delete the mirror repo + mirror.yml) once the Foxtrot Platform rollout
 replaces old links.
 
-> The four OLD fleet add/remove Power Automate bridge flows are RETIRED
-> (2026-09-08) along with the dashboards' Admin tabs — the Foxtrot Platform
-> dispatches the manage workflows directly. Delete those flows whenever
-> convenient. The ONE live PA flow is "Add/Remove Tails" (2026-09-16): HTTP
-> trigger {Program, Tail Number, Action[, Plane Type]}, Switch per program,
-> add -> roster row Status=Active (JSX also writes Plane Type), remove ->
-> PatchItem Status=Disabled. Every manage workflow POSTs it via the
-> ROSTER_FLOW_URL repo secret (async 202 — failures show only in the PA run
-> history). It replaced ENVOY_ROSTER_ADD_URL / ENVOY_ROSTER_REMOVE_URL
-> (delete those two flows + secrets too).
+> The ONE live tail-management PA flow is "Add/Remove Tails" (2026-09-16):
+> HTTP trigger {Program, Tail Number, Action[, Plane Type]}, Switch per
+> program, add -> roster row Status=Active (JSX also writes Plane Type),
+> remove -> PatchItem Status=Disabled. Every manage workflow POSTs it via
+> the ROSTER_FLOW_URL repo secret (async 202 — failures show only in the PA
+> run history). All predecessor flows are retired and their repo secrets
+> were DELETED 2026-09-17 (ENVOY_ROSTER_ADD_URL / ENVOY_ROSTER_REMOVE_URL /
+> PA_TAIL_WEBHOOK_URL / PSA_TAILS_RESPONSE_SET_ID): the four 2026-06-era
+> dashboard bridge flows and the two 2026-09-10 Envoy roster flows are dead
+> weight in Power Automate — delete them there whenever convenient.
 ---
 
 ## Programs

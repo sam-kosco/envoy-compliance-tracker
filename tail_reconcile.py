@@ -190,21 +190,11 @@ def do_safetyculture():
 
 
 TARGET = roster()
-print(f"Roster (authority): {len(TARGET)} non-Disabled tails\n")
-
-LISTS = [
-    ("Envoy Debrief Q53", do_dropdown, "222916997891173", "53"),
-    ("DFW Debrief Q51", do_dropdown, "222277068943160", "51"),
-    ("Commercial Closeout Q45 (Envoy Fleet)", do_widget, "222916060752150", "45"),
-    ("CMH Closeout Q6", do_widget, "261664495134058", "6"),
-    ("XNA Closeout Q6", do_widget, "261954357644972", "6"),
-    ("SGF Closeout Q6", do_widget, "261954499086979", "6"),
-    ("LIT Closeout Q6", do_widget, "261955038475971", "6"),
-    ("DFW Closeout Q6", do_widget, "261755203398967", "6"),
-]
+print(f"{PROGRAM}: roster (authority) = {len(TARGET)} non-Disabled tails\n")
 
 results, errors = [], 0
-for name, fn, *args in LISTS:
+for name, kind, *args in CFG["lists"]:
+    fn = do_dropdown if kind == "dropdown" else do_widget
     try:
         results.append(fn(name, *args))
     except Exception as e:
@@ -214,7 +204,7 @@ try:
     results.append(do_safetyculture())
 except Exception as e:
     errors += 1
-    results.append({"list": 'SafetyCulture "Envoy Tails"', "error": str(e)[:200]})
+    results.append({"list": f'SafetyCulture "{SC_SET_NAME}"', "error": str(e)[:200]})
 
 print(json.dumps(results, indent=2))
 

@@ -259,7 +259,8 @@ jobs:
           git diff --cached --quiet || git commit -m "chore: ${{ github.event.inputs.action }} ${{ github.event.inputs.tail }} [$(date -u '+%Y-%m-%d %H:%M UTC')]"
           n=0
           until git push; do
-            n=$((n+1)); [ "$n" -ge 3 ] && exit 1
+            n=$((n+1)); [ "$n" -ge 6 ] && exit 1
+            sleep $((RANDOM % 8 + 2))
             echo "push rejected (concurrent bot commit) — rebasing and retrying ($n/3)"
             git pull --rebase
           done

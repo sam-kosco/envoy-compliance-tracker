@@ -1,22 +1,22 @@
 {
   "tail": "N99399",
-  "action": "add_tail",
+  "action": "remove_tail",
   "program": "mesa",
-  "timestamp": "2026-09-16T12:21:10+00:00",
+  "timestamp": "2026-09-16T12:23:25+00:00",
   "mesa_debrief": {
     "status": "ok",
-    "message": "added at position 61 of 62"
+    "message": "removed (60 tails remain)"
   },
   "mesa_closeout": {
     "status": "ok",
-    "message": "added at position 61 of 61"
+    "message": "removed (60 tails remain)"
   },
   "safetyculture": {
     "status": "ok",
-    "message": "added at position 61 of 63"
+    "message": "removed (62 remain)"
   },
   "sharepoint": {
     "status": "ok",
-    "message": "row add sent (Status=Active) \u2014 async"
+    "message": "Status=Disabled sent \u2014 async"
   }
 }

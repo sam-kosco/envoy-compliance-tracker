@@ -1,22 +1,22 @@
 {
   "tail": "N999JX",
-  "action": "remove_tail",
+  "action": "add_tail",
   "program": "jsx",
-  "timestamp": "2026-09-16T05:48:10+00:00",
+  "timestamp": "2026-09-16T12:21:13+00:00",
   "jsx_debrief": {
     "status": "ok",
-    "message": "removed (57 tails remain)"
+    "message": "added at position 58 of 59"
   },
   "jsx_closeout": {
     "status": "ok",
-    "message": "removed (57 tails remain)"
+    "message": "added at position 58 of 59"
   },
   "safetyculture": {
     "status": "ok",
-    "message": "removed (57 remain)"
+    "message": "added at position 58 of 58"
   },
   "sharepoint": {
-    "status": "manual",
-    "message": "set Status=Disabled on the jsx Debriefs roster sheet by hand"
+    "status": "ok",
+    "message": "row add sent (Status=Active) \u2014 async"
   }
 }

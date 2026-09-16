@@ -8,41 +8,15 @@ jobs:
         with: { python-version: "3.12" }
       - run: pip install requests
       - env:
-          JOTFORM_KEY: ${{ secrets.JOTFORM_KEY }}
           SAFETYCULTURE_KEY: ${{ secrets.SAFETYCULTURE_KEY }}
         run: |
           python3 - << 'PYEOF'
-          import os, requests, json, re
-          KEY = os.environ["JOTFORM_KEY"]; BASE = "https://foxtrotaviation.jotform.com/API"
-          FORMS = {"mesa_debrief":"220187674891163","gojet_debrief":"250554449184058",
-                   "jsx_debrief":"260637830358058","jsx_closeout":"262036208159051",
-                   "commercial_closeout":"222916060752150"}
-          for name, fid in FORMS.items():
-              r = requests.get(f"{BASE}/form/{fid}/questions?apiKey={KEY}", timeout=30)
-              r.raise_for_status()
-              qs = r.json().get("content", {})
-              print(f"\n===== {name} ({fid}) =====")
-              for qid, q in sorted(qs.items(), key=lambda x: int(x[0])):
-                  t = q.get("type",""); txt = (q.get("text","") or "")[:60]
-                  opts = q.get("options",""); flds = q.get("fields","")
-                  blob = (txt + " " + str(q.get("name",""))).lower()
-                  interesting = ("tail" in blob or "fleet" in blob or
-                                 (opts and re.search(r"N\d{3}", str(opts))) or
-                                 (flds and "dropdown" in str(flds).lower()))
-                  if t in ("control_dropdown","control_widget") or interesting:
-                      print(f"  Q{qid} [{t}] {txt!r}")
-                      if opts:
-                          o = str(opts).split("|"); print(f"      options({len(o)}): {o[:4]}...{o[-2:]}")
-                      if flds:
-                          for ln in str(flds).replace("\r\n","\n").split("\n"):
-                              seg = ln.split(":")
-                              print(f"      field line: {seg[0]}:{seg[1] if len(seg)>1 else ''}: "
-                                    f"[{len(seg[2].split(',')) if len(seg)>2 else 0} opts] "
-                                    f"{seg[2].split(',')[:3] if len(seg)>2 else ''} tail={':'.join(seg[3:])!r}")
+          import os, requests, json
           H = {"Authorization": "Bearer " + os.environ["SAFETYCULTURE_KEY"]}
           r = requests.get("https://api.safetyculture.io/response_sets", headers=H, timeout=30)
           r.raise_for_status()
-          print("\n===== SafetyCulture response sets =====")
-          for s in r.json().get("response_sets", []):
-              print(f"  {s.get('responseset_id') or s.get('id')}  {s.get('name')!r}")
+          data = r.json()
+          sets = data if isinstance(data, list) else (data.get("response_sets") or data.get("items") or [])
+          for s in sets:
+              print(json.dumps({k: s.get(k) for k in ("responseset_id","id","name") if s.get(k)}))
           PYEOF

@@ -62,15 +62,27 @@ jobs:
 
           print(f"Action: {action}  |  Tail: {tail}")
 
-          # remove_tail: the PA flow performs the SharePoint Status=Disabled
-          # update itself; the dropdown lists intentionally keep the tail for
-          # historical debriefs. This workflow just records the action (and the
-          # follow-up step dispatches a tracker refresh so it drops off fast).
+          # remove_tail: the dropdown lists intentionally keep the tail for
+          # historical debriefs; the SharePoint row is set Status=Disabled via
+          # the consolidated "Add/Remove Tails" PA flow (async), and the
+          # follow-up step dispatches a tracker refresh so it drops off fast.
           if action == "remove_tail":
+              try:
+                  flow_url = os.environ.get("ROSTER_FLOW_URL", "")
+                  if not flow_url:
+                      sp_res = {"status": "skipped", "message": "ROSTER_FLOW_URL not configured"}
+                  else:
+                      r = requests.post(flow_url, json={"Program": "PSA", "Tail Number": tail,
+                                                        "Action": action}, timeout=60)
+                      r.raise_for_status()
+                      sp_res = {"status": "ok", "message": "Status=Disabled sent — async"}
+              except Exception as e:
+                  sp_res = {"status": "error", "message": str(e)[:200]}
+              print(f"SharePoint: {sp_res}")
               result = {
                   "tail": tail, "action": action,
                   "timestamp": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-                  "sharepoint": {"status": "ok", "message": "Status=Disabled set by the PA flow; tracker refresh dispatched"},
+                  "sharepoint": sp_res,
               }
               with open("fleet_action_result.json", "w") as f:
                   json.dump(result, f, indent=2)
@@ -78,8 +90,8 @@ jobs:
               if sp:
                   with open(sp, "a") as f:
                       f.write(f"## remove_tail: `{tail}`" + chr(10) + chr(10)
-                              + "Status=Disabled handled by the PA flow; tracker refresh dispatched." + chr(10))
-              sys.exit(0)
+                              + f"SharePoint: {sp_res['status']} — {sp_res['message']}; tracker refresh dispatched." + chr(10))
+              sys.exit(1 if sp_res["status"] == "error" else 0)
 
           def sort_key(t):
               # Sort tails by numeric portion after 'N' (so N205 falls between

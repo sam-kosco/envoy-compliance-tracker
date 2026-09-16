@@ -2,7 +2,7 @@
   "tail": "999",
   "action": "remove_tail",
   "program": "gojet",
-  "timestamp": "2026-09-16T05:48:12+00:00",
+  "timestamp": "2026-09-16T12:23:47+00:00",
   "gojet_debrief": {
     "status": "ok",
     "message": "removed (58 tails remain)"
@@ -12,7 +12,7 @@
     "message": "removed (59 remain)"
   },
   "sharepoint": {
-    "status": "manual",
-    "message": "set Status=Disabled on the gojet Debriefs roster sheet by hand"
+    "status": "ok",
+    "message": "Status=Disabled sent \u2014 async"
   }
 }

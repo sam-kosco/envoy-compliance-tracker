@@ -1,11 +1,16 @@
-name: Reconcile Envoy Tail Lists
+name: Reconcile Tail Lists
 
-# Audits every Envoy tail list (8 JotForm lists + SafetyCulture "Envoy Tails")
-# against the Envoy Debriefs Tail List roster; apply=true rewrites out-of-sync
-# lists to exactly the roster (numeric order, placeholders preserved).
+# Audits every tail list for a program (JotForm lists + SafetyCulture set)
+# against that program's Debriefs Tail List roster; apply=true rewrites
+# out-of-sync lists to exactly the roster (numeric order, placeholders kept).
 on:
   workflow_dispatch:
     inputs:
+      program:
+        description: "Program: envoy | psa"
+        required: false
+        default: "envoy"
+        type: string
       apply:
         description: "true = fix out-of-sync lists; false = audit only"
         required: false
@@ -31,5 +36,6 @@ jobs:
           CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
           JOTFORM_KEY: ${{ secrets.JOTFORM_KEY }}
           SAFETYCULTURE_KEY: ${{ secrets.SAFETYCULTURE_KEY }}
+          PROGRAM: ${{ github.event.inputs.program }}
           APPLY: ${{ github.event.inputs.apply }}
-        run: python envoy_tail_reconcile.py
+        run: python tail_reconcile.py

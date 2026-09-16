@@ -310,16 +310,19 @@ value as text and SafetyCulture keeps inspection answers on the inspection, so
 past records keep their tail; only future selectability goes away.
 `envoy_generate_data.py` also excludes `Disabled` tails and dedupes.
 
-## Envoy tail-list reconcile (`envoy_tail_reconcile.yml`)
+## Tail-list reconcile (`tail_reconcile.yml`)
 
-Utility (workflow_dispatch): audits all eight JotForm tail lists AND the
-SafetyCulture "Envoy Tails" set against the Envoy Debriefs Tail List roster
-(non-Disabled rows, fetched fresh via Graph). Input `apply=false` reports
-per-list missing/extra/order/duplicates in the step summary; `apply=true`
-rewrites only out-of-sync lists to exactly the roster in numeric order,
-preserving NOT LISTED / ":Please Select" placeholders (script:
-`envoy_tail_reconcile.py`). First run 2026-09-16: everything was in sync
-except the DFW Closeout (6 missing + 1 dup, from its pre-seed) — fixed.
+Utility (workflow_dispatch, inputs `program` = envoy | psa, `apply`): audits
+every tail list the program's manage workflow maintains (envoy: eight JotForm
+lists; psa: PSA Debrief Q53 + Commercial Closeout Q27) AND the program's
+SafetyCulture set against its Debriefs Tail List roster (non-Disabled rows,
+fetched fresh via Graph). `apply=false` reports per-list missing/extra/order/
+duplicates in the step summary; `apply=true` rewrites only out-of-sync lists
+to exactly the roster in numeric order, preserving NOT LISTED /
+":Please Select" placeholders (script: `tail_reconcile.py`, per-program
+config in its `PROGRAMS` dict — extend there for new lists). First run
+2026-09-16: everything in sync except the DFW Closeout (6 missing + 1 dup,
+from its pre-seed) — fixed.
 
 ## PSA Tail List Status column
 

@@ -26,10 +26,42 @@ CLIENT_SECRET = os.environ["CLIENT_SECRET"]
 JOTFORM_KEY = os.environ["JOTFORM_KEY"]
 JOTFORM_BASE = os.environ.get("JOTFORM_BASE", "https://foxtrotaviation.jotform.com/API")
 SC_KEY = os.environ["SAFETYCULTURE_KEY"]
-SC_SET_ID = os.environ.get("ENVOY_TAILS_SET_ID", "responseset_00749b53e9c34c618ee08f3e3e29f014")
 DRIVE_ID = "b!_bzXaIx86kOufgJN3ih-BaDIDthKYuxJkJtLi1Bm5irGjCEnK-VHSpBRRm3_SDKU"
-FILE_PATH = "Power Flows/Debriefs/Envoy Debriefs.xlsx"
 APPLY = os.environ.get("APPLY", "false").strip().lower() == "true"
+PROGRAM = os.environ.get("PROGRAM", "envoy").strip().lower()
+
+# Per-program config: roster workbook + Status column index, the JotForm
+# lists the program's manage workflow maintains, and its SC response set.
+# JotForm list tuple: (name, kind, form_id, qid[, widget line label]).
+PROGRAMS = {
+    "envoy": {
+        "file_path": "Power Flows/Debriefs/Envoy Debriefs.xlsx",
+        "status_idx": 5,
+        "sc_set": ("Envoy Tails", "responseset_00749b53e9c34c618ee08f3e3e29f014"),
+        "lists": [
+            ("Envoy Debrief Q53", "dropdown", "222916997891173", "53"),
+            ("DFW Debrief Q51", "dropdown", "222277068943160", "51"),
+            ("Commercial Closeout Q45 (Envoy Fleet)", "widget", "222916060752150", "45", "Tail Number"),
+            ("CMH Closeout Q6", "widget", "261664495134058", "6", "Tail Number"),
+            ("XNA Closeout Q6", "widget", "261954357644972", "6", "Tail Number"),
+            ("SGF Closeout Q6", "widget", "261954499086979", "6", "Tail Number"),
+            ("LIT Closeout Q6", "widget", "261955038475971", "6", "Tail Number"),
+            ("DFW Closeout Q6", "widget", "261755203398967", "6", "Tail Number"),
+        ],
+    },
+    "psa": {
+        "file_path": "Power Flows/Debriefs/PSA Debriefs.xlsx",
+        "status_idx": 8,
+        "sc_set": ("PSA Tails", "responseset_0602a202a6a2458cae66ab6b46640d28"),
+        "lists": [
+            ("PSA Debrief Q53", "dropdown", "213263365115146", "53"),
+            ("Commercial Closeout Q27 (PSA Fleet)", "widget", "222916060752150", "27", "Dropdown"),
+        ],
+    },
+}
+CFG = PROGRAMS[PROGRAM]
+FILE_PATH = CFG["file_path"]
+SC_SET_NAME, SC_SET_ID = CFG["sc_set"]
 
 TAIL_RE = re.compile(r"^N\d{1,5}[A-Z]{0,2}$")
 
@@ -54,9 +86,10 @@ def roster():
     wb = load_workbook(io.BytesIO(r.content), read_only=True, data_only=True)
     ws = wb["Tail List"]
     tails, seen = [], set()
+    si = CFG["status_idx"]
     for row in ws.iter_rows(min_row=2, values_only=True):
         t = str(row[0]).strip().upper() if row and row[0] else ""
-        status = str(row[5]).strip().lower() if len(row) > 5 and row[5] else ""
+        status = str(row[si]).strip().lower() if len(row) > si and row[si] else ""
         if t and TAIL_RE.match(t) and status != "disabled" and t not in seen:
             seen.add(t)
             tails.append(t)
@@ -143,12 +176,12 @@ def do_safetyculture():
     current = r.json()
     labels = [x["label"].strip() for x in current.get("responses", []) if x.get("label", "").strip()]
     tails, specials = split_entries(labels)
-    d = diff('SafetyCulture "Envoy Tails"', tails, specials)
+    d = diff(f'SafetyCulture "{SC_SET_NAME}"', tails, specials)
     if APPLY and not d["in_sync"]:
         # Label-match PUT preserves response IDs, so historical inspection
         # answers and template bindings survive the rewrite.
         r = requests.put(f"https://api.safetyculture.io/response_sets/{SC_SET_ID}", headers=H,
-                         json={"name": current.get("name", "Envoy Tails"),
+                         json={"name": current.get("name", SC_SET_NAME),
                                "responses": [{"label": l} for l in rebuilt(specials)]},
                          timeout=30)
         r.raise_for_status()
@@ -188,7 +221,7 @@ print(json.dumps(results, indent=2))
 summary = os.environ.get("GITHUB_STEP_SUMMARY")
 if summary:
     with open(summary, "a") as f:
-        f.write(f"## Envoy tail reconcile — {'APPLY' if APPLY else 'AUDIT'} "
+        f.write(f"## {PROGRAM} tail reconcile — {'APPLY' if APPLY else 'AUDIT'} "
                 f"(roster = {len(TARGET)} tails)\n\n")
         f.write("| List | Tails | Missing | Extra | Order | Dupes | State |\n|---|---|---|---|---|---|---|\n")
         for d in results:

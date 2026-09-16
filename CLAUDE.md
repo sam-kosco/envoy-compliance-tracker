@@ -18,9 +18,16 @@ DISABLED — never push to it or run anything there. Retire the legacy URL
 (delete the mirror repo + mirror.yml) once the Foxtrot Platform rollout
 replaces old links.
 
-> The four fleet add/remove Power Automate flows are RETIRED (2026-09-08)
-> along with the dashboards' Admin tabs — the Foxtrot Platform dispatches
-> the manage workflows directly. Delete the PA flows whenever convenient.
+> The four OLD fleet add/remove Power Automate bridge flows are RETIRED
+> (2026-09-08) along with the dashboards' Admin tabs — the Foxtrot Platform
+> dispatches the manage workflows directly. Delete those flows whenever
+> convenient. The ONE live PA flow is "Add/Remove Tails" (2026-09-16): HTTP
+> trigger {Program, Tail Number, Action[, Plane Type]}, Switch per program,
+> add -> roster row Status=Active (JSX also writes Plane Type), remove ->
+> PatchItem Status=Disabled. Every manage workflow POSTs it via the
+> ROSTER_FLOW_URL repo secret (async 202 — failures show only in the PA run
+> history). It replaced ENVOY_ROSTER_ADD_URL / ENVOY_ROSTER_REMOVE_URL
+> (delete those two flows + secrets too).
 ---
 
 ## Programs
@@ -327,14 +334,16 @@ with all 60; everything else in sync.
 
 ## Mesa / GoJet / JSX tail management (`manage_<program>_fleet.yml`)
 
-Platform-dispatched like Envoy/PSA (engine/fleet.py; inputs action + tail),
-all three run the shared `manage_fleet_lists.py` (per-program config at the
-top — keep it in step with `tail_reconcile.py`). **Lists only — the roster
-row in the Debriefs workbook stays a MANUAL edit** (owner decision,
-2026-09-16; the result table's `sharepoint` row says "manual" as a
-reminder). add/remove are symmetric; NOT LISTED / ":Please Select"
-placeholders preserved; results committed to
-`<program>_fleet_action_result.json`.
+Platform-dispatched like Envoy/PSA (engine/fleet.py; inputs action + tail,
+JSX add also `plane_type` — REQUIRED, one of EMB 145 / EMB 135 / ATR), all
+three run the shared `manage_fleet_lists.py` (per-program config at the top
+— keep it in step with `tail_reconcile.py`). The SharePoint roster row is
+written by the consolidated "Add/Remove Tails" PA flow (see Org migration
+note; JSX Location on Sheet2 is still a hand edit — the flow doesn't know
+it). add/remove are symmetric; NOT LISTED / ":Please Select" placeholders
+preserved; results committed to `<program>_fleet_action_result.json`.
+**PSA remove is symmetric on the roster too now** (Status=Disabled via the
+flow) while its dropdown lists still intentionally keep the tail.
 
 | Program | Targets | Notes |
 |---|---|---|
@@ -422,11 +431,11 @@ The script no longer writes to Excel — Power Automate handles all writes using
 | Task | When | Action |
 |------|------|--------|
 | Renew CLIENT_SECRET | Every 24 months | Entra → App registrations → Foxtrot Report Automation → new secret → update GitHub Secret |
-| Add tail to Envoy fleet | As needed | Foxtrot Platform → Fleets → Envoy → Admin (Fleet Admins). Updates both debrief forms + all five closeout lists; add the Tail List row in the workbook by hand. |
+| Add tail to Envoy fleet | As needed | Foxtrot Platform → Fleets → Envoy → Admin (Fleet Admins) — updates both debrief forms, all five closeout lists, SC set, and the Tail List row |
 | Remove tail from Envoy fleet | As needed | Envoy Admin tab → Remove Tail (sets Status=Disabled on the Tail List, column F) |
-| Add tail to Mesa fleet | As needed | Foxtrot Platform → Fleets → Mesa → Admin (debrief + closeout dropdowns + SC set); add the Tails-sheet row in Mesa Debriefs by hand |
-| Add tail to GoJet fleet | As needed | Foxtrot Platform → Fleets → GoJet → Admin (debrief dropdown + SC set); add the Tails-sheet row in GoJet Debriefs by hand |
-| Add tail to PSA fleet | As needed | Foxtrot Platform → Fleets → PSA → Admin (Fleet Admins). Updates SafetyCulture + both JotForm lists; add the Tail List row in the workbook by hand. |
+| Add tail to Mesa fleet | As needed | Foxtrot Platform → Fleets → Mesa → Admin — updates debrief + closeout dropdowns, SC set, and the roster row |
+| Add tail to GoJet fleet | As needed | Foxtrot Platform → Fleets → GoJet → Admin — updates debrief dropdown, SC set, and the roster row (bare ship number) |
+| Add tail to PSA fleet | As needed | Foxtrot Platform → Fleets → PSA → Admin (Fleet Admins) — updates SafetyCulture, both JotForm lists, and the Tail List row |
 | Remove tail from PSA fleet | As needed | Admin tab → Remove Tail (sets Status=Disabled on the Tail List; tracker drops it on next refresh) |
 | Re-activate a disabled PSA tail | As needed | Set Status back to Active on the Tail List sheet (do NOT re-add via Admin tab — see "Remove Tail") |
 | Add tail to Crosswinds fleet | As needed | Add to the Crosswinds Tail Numbers global response set in SafetyCulture AND the `TAILS` list in `crosswinds_generate_data.py` |

@@ -1,21 +1,21 @@
 {
   "tail": "N998PS",
-  "action": "add_tail",
-  "timestamp": "2026-09-16T12:40:21+00:00",
+  "action": "remove_tail",
+  "timestamp": "2026-09-16T12:41:24+00:00",
   "jotform": {
     "status": "ok",
-    "message": "added at position 156 of 157"
+    "message": "removed (155 tails remain)"
   },
   "closeout": {
     "status": "ok",
-    "message": "added at position 156 of 157"
+    "message": "removed (155 tails remain)"
   },
   "safetyculture": {
     "status": "ok",
-    "message": "added at position 156 of 157"
+    "message": "removed (156 remain)"
   },
   "sharepoint": {
     "status": "ok",
-    "message": "row add sent (Status=Active) \u2014 async"
+    "message": "Status=Disabled sent \u2014 async"
   }
 }

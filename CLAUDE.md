@@ -310,6 +310,17 @@ value as text and SafetyCulture keeps inspection answers on the inspection, so
 past records keep their tail; only future selectability goes away.
 `envoy_generate_data.py` also excludes `Disabled` tails and dedupes.
 
+## Envoy tail-list reconcile (`envoy_tail_reconcile.yml`)
+
+Utility (workflow_dispatch): audits all eight JotForm tail lists AND the
+SafetyCulture "Envoy Tails" set against the Envoy Debriefs Tail List roster
+(non-Disabled rows, fetched fresh via Graph). Input `apply=false` reports
+per-list missing/extra/order/duplicates in the step summary; `apply=true`
+rewrites only out-of-sync lists to exactly the roster in numeric order,
+preserving NOT LISTED / ":Please Select" placeholders (script:
+`envoy_tail_reconcile.py`). First run 2026-09-16: everything was in sync
+except the DFW Closeout (6 missing + 1 dup, from its pre-seed) — fixed.
+
 ## PSA Tail List Status column
 
 The SharePoint Tail List (Table3 in `PSA Debriefs.xlsx`, sheet `Tail List`) has a

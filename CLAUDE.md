@@ -312,17 +312,35 @@ past records keep their tail; only future selectability goes away.
 
 ## Tail-list reconcile (`tail_reconcile.yml`)
 
-Utility (workflow_dispatch, inputs `program` = envoy | psa, `apply`): audits
-every tail list the program's manage workflow maintains (envoy: eight JotForm
-lists; psa: PSA Debrief Q53 + Commercial Closeout Q27) AND the program's
-SafetyCulture set against its Debriefs Tail List roster (non-Disabled rows,
-fetched fresh via Graph). `apply=false` reports per-list missing/extra/order/
-duplicates in the step summary; `apply=true` rewrites only out-of-sync lists
-to exactly the roster in numeric order, preserving NOT LISTED /
-":Please Select" placeholders (script: `tail_reconcile.py`, per-program
-config in its `PROGRAMS` dict — extend there for new lists). First run
-2026-09-16: everything in sync except the DFW Closeout (6 missing + 1 dup,
-from its pre-seed) — fixed.
+Utility (workflow_dispatch, inputs `program` = envoy | psa | mesa | gojet |
+jsx, `apply`): audits every tail list the program's manage workflow maintains
+AND the program's SafetyCulture set against its Debriefs roster sheet
+(non-Disabled rows, fetched fresh via Graph). `apply=false` reports per-list
+missing/extra/order/duplicates in the step summary; `apply=true` rewrites
+only out-of-sync lists to exactly the roster in numeric order, preserving
+NOT LISTED / ":Please Select" placeholders (script: `tail_reconcile.py`,
+per-program config in its `PROGRAMS` dict — roster sheet/status column/tail
+shape + lists; extend there for new lists). First runs 2026-09-16: DFW
+Closeout was 6 short + 1 dup (pre-seed) — fixed; SC "JSX Tails" was 6 short
+with 2 stale extras — fixed; SC "MESA Tails" existed but was EMPTY — seeded
+with all 60; everything else in sync.
+
+## Mesa / GoJet / JSX tail management (`manage_<program>_fleet.yml`)
+
+Platform-dispatched like Envoy/PSA (engine/fleet.py; inputs action + tail),
+all three run the shared `manage_fleet_lists.py` (per-program config at the
+top — keep it in step with `tail_reconcile.py`). **Lists only — the roster
+row in the Debriefs workbook stays a MANUAL edit** (owner decision,
+2026-09-16; the result table's `sharepoint` row says "manual" as a
+reminder). add/remove are symmetric; NOT LISTED / ":Please Select"
+placeholders preserved; results committed to
+`<program>_fleet_action_result.json`.
+
+| Program | Targets | Notes |
+|---|---|---|
+| mesa | SafetyCulture "MESA Tails" only | Mesa Debrief tail (Q29) is FREE TEXT; no Commercial Closeout Mesa widget exists |
+| gojet | GoJet Debrief `250554449184058` Q21 (pipe options) + SC "GoJet Tails" | tails are BARE ship numbers (`501`) — separate validation everywhere |
+| jsx | JSX Debrief `260637830358058` Q19 (pipe options), JSX Closeout `262036208159051` Q7 widget ("Tail Number" line) + SC "JSX Tails" | no refresh dispatch (the JSX tracker lives in its own repo; it reads Sheet2 hourly anyway) |
 
 ## PSA Tail List Status column
 
@@ -406,8 +424,8 @@ The script no longer writes to Excel — Power Automate handles all writes using
 | Renew CLIENT_SECRET | Every 24 months | Entra → App registrations → Foxtrot Report Automation → new secret → update GitHub Secret |
 | Add tail to Envoy fleet | As needed | Foxtrot Platform → Fleets → Envoy → Admin (Fleet Admins). Updates both debrief forms + all five closeout lists; add the Tail List row in the workbook by hand. |
 | Remove tail from Envoy fleet | As needed | Envoy Admin tab → Remove Tail (sets Status=Disabled on the Tail List, column F) |
-| Add tail to Mesa fleet | As needed | Add to the Tails sheet (column A) in the Mesa SharePoint Excel |
-| Add tail to GoJet fleet | As needed | Add to the Tails sheet (column A) in the GoJet SharePoint Excel |
+| Add tail to Mesa fleet | As needed | Foxtrot Platform → Fleets → Mesa → Admin (SC set); add the Tails-sheet row in Mesa Debriefs by hand |
+| Add tail to GoJet fleet | As needed | Foxtrot Platform → Fleets → GoJet → Admin (debrief dropdown + SC set); add the Tails-sheet row in GoJet Debriefs by hand |
 | Add tail to PSA fleet | As needed | Foxtrot Platform → Fleets → PSA → Admin (Fleet Admins). Updates SafetyCulture + both JotForm lists; add the Tail List row in the workbook by hand. |
 | Remove tail from PSA fleet | As needed | Admin tab → Remove Tail (sets Status=Disabled on the Tail List; tracker drops it on next refresh) |
 | Re-activate a disabled PSA tail | As needed | Set Status back to Active on the Tail List sheet (do NOT re-add via Admin tab — see "Remove Tail") |

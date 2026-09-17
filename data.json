@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-17T08:07:33.258452+00:00",
+  "generated": "2026-09-17T09:07:42.340589+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -146,12 +146,12 @@
     },
     {
       "tail": "N213NN",
-      "lastService": "2026-09-12",
+      "lastService": "2026-09-16",
       "lastED1": "2026-09-03",
       "lastED2": "2026-09-03",
-      "lastIHC": "2026-09-12",
-      "lastLocation": "CVG",
-      "lastTech": "Dvion Davis",
+      "lastIHC": "2026-09-16",
+      "lastLocation": "SGF",
+      "lastTech": "Bayleah Vogel",
       "ED1": 16,
       "ED2": 46
     },
@@ -487,12 +487,12 @@
     },
     {
       "tail": "N244NN",
-      "lastService": "2026-09-14",
+      "lastService": "2026-09-16",
       "lastED1": "2026-08-03",
       "lastED2": "2026-07-02",
-      "lastIHC": "2026-09-14",
-      "lastLocation": "LIT",
-      "lastTech": "Damian Utley",
+      "lastIHC": "2026-09-16",
+      "lastLocation": "CVG",
+      "lastTech": "Bayleah Vogel",
       "ED1": -15,
       "ED2": -17
     },
@@ -1477,12 +1477,12 @@
     },
     {
       "tail": "N338AS",
-      "lastService": "2026-09-06",
+      "lastService": "2026-09-16",
       "lastED1": "2026-09-02",
       "lastED2": "2026-09-02",
-      "lastIHC": "2026-09-06",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
+      "lastIHC": "2026-09-16",
+      "lastLocation": "DFW",
+      "lastTech": "Aunyae Morrison",
       "ED1": 15,
       "ED2": 45
     },
@@ -1983,12 +1983,12 @@
     },
     {
       "tail": "N785BR",
-      "lastService": "2026-09-12",
+      "lastService": "2026-09-16",
       "lastED1": "2026-09-12",
       "lastED2": "2026-09-12",
-      "lastIHC": "2026-09-12",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
+      "lastIHC": "2026-09-16",
+      "lastLocation": "CVG",
+      "lastTech": "Bayleah Vogel",
       "ED1": 25,
       "ED2": 55
     },
@@ -2222,6 +2222,42 @@
       "ED2": 0
     },
     {
+      "tail": "N213NN",
+      "date": "2026-09-16",
+      "name": "Bayleah Vogel",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N244NN",
+      "date": "2026-09-16",
+      "name": "Bayleah Vogel",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N785BR",
+      "date": "2026-09-16",
+      "name": "Bayleah Vogel",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N262NN",
+      "date": "2026-09-16",
+      "name": "Bayleah Vogel",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
       "tail": "N798CC",
       "date": "2026-09-16",
       "name": "Aunyae Morrison",
@@ -2232,6 +2268,15 @@
     },
     {
       "tail": "N308LD",
+      "date": "2026-09-16",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N338AS",
       "date": "2026-09-16",
       "name": "Aunyae Morrison",
       "location": "DFW",

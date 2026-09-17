@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-17T04:38:07.180034+00:00",
+  "generated": "2026-09-17T05:38:05.593706+00:00",
   "cycles": {
     "ED1": 60,
     "ED2": 60,
@@ -512,12 +512,12 @@
     },
     {
       "tail": "550",
-      "lastService": "2026-09-04",
+      "lastService": "2026-09-16",
       "lastED1": null,
       "lastED2": null,
       "lastCE": "2026-06-02",
       "lastIHC": "2026-09-04",
-      "lastRON": "2026-08-21",
+      "lastRON": "2026-09-16",
       "lastLocation": "STL",
       "lastTech": "Ursula Moffitt",
       "ED1": "No Service",
@@ -652,14 +652,14 @@
     },
     {
       "tail": "563",
-      "lastService": "2026-09-11",
+      "lastService": "2026-09-17",
       "lastED1": "2026-07-06",
       "lastED2": "2026-07-06",
       "lastCE": "2026-07-06",
       "lastIHC": "2026-09-11",
-      "lastRON": "2026-09-01",
+      "lastRON": "2026-09-17",
       "lastLocation": "STL",
-      "lastTech": "Tiffany Hudson",
+      "lastTech": "Ursula Moffitt",
       "ED1": -13,
       "ED2": -13,
       "CE": -13
@@ -821,6 +821,17 @@
   ],
   "debriefs": [
     {
+      "tail": "563",
+      "date": "2026-09-17",
+      "name": "Ursula Moffitt",
+      "location": "STL",
+      "ED1": 0,
+      "ED2": 0,
+      "CE": 0,
+      "IHC": 0,
+      "RON": 1
+    },
+    {
       "tail": "577",
       "date": "2026-09-16",
       "name": "Ursula Moffitt",
@@ -863,6 +874,17 @@
       "CE": 0,
       "IHC": 1,
       "RON": 0
+    },
+    {
+      "tail": "550",
+      "date": "2026-09-16",
+      "name": "Ursula Moffitt",
+      "location": "STL",
+      "ED1": 0,
+      "ED2": 0,
+      "CE": 0,
+      "IHC": 0,
+      "RON": 1
     },
     {
       "tail": "559",

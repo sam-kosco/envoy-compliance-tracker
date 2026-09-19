@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-19T05:07:24.491846+00:00",
+  "generated": "2026-09-19T06:07:58.375687+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -91,12 +91,12 @@
     },
     {
       "tail": "N208AN",
-      "lastService": "2026-09-04",
+      "lastService": "2026-09-18",
       "lastED1": "2026-09-04",
       "lastED2": "2026-09-04",
-      "lastIHC": "2026-09-04",
-      "lastLocation": "CMH",
-      "lastTech": "Alex Hamilton",
+      "lastIHC": "2026-09-18",
+      "lastLocation": "DFW",
+      "lastTech": "Aunyae Morrison",
       "ED1": 15,
       "ED2": 45
     },
@@ -2124,6 +2124,15 @@
     },
     {
       "tail": "N205NN",
+      "date": "2026-09-18",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N208AN",
       "date": "2026-09-18",
       "name": "Aunyae Morrison",
       "location": "DFW",

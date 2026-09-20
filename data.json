@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-20T06:07:59.677583+00:00",
+  "generated": "2026-09-20T07:07:56.363697+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -80,12 +80,12 @@
     },
     {
       "tail": "N207AN",
-      "lastService": "2026-09-16",
+      "lastService": "2026-09-19",
       "lastED1": "2026-08-17",
       "lastED2": "2026-07-19",
-      "lastIHC": "2026-09-16",
-      "lastLocation": "LIT",
-      "lastTech": "Mathew Walker",
+      "lastIHC": "2026-09-19",
+      "lastLocation": "XNA",
+      "lastTech": "Casey Henry",
       "ED1": -4,
       "ED2": -3
     },
@@ -146,12 +146,12 @@
     },
     {
       "tail": "N213NN",
-      "lastService": "2026-09-18",
+      "lastService": "2026-09-19",
       "lastED1": "2026-09-03",
       "lastED2": "2026-09-03",
-      "lastIHC": "2026-09-18",
-      "lastLocation": "CVG",
-      "lastTech": "Precious Valadez-Roberson",
+      "lastIHC": "2026-09-19",
+      "lastLocation": "XNA",
+      "lastTech": "Casey Henry",
       "ED1": 13,
       "ED2": 43
     },
@@ -201,12 +201,12 @@
     },
     {
       "tail": "N218NN",
-      "lastService": "2026-09-18",
+      "lastService": "2026-09-19",
       "lastED1": "2026-08-28",
       "lastED2": "2026-08-16",
-      "lastIHC": "2026-09-18",
-      "lastLocation": "CMH",
-      "lastTech": "Darian Eiland",
+      "lastIHC": "2026-09-19",
+      "lastLocation": "XNA",
+      "lastTech": "Casey Henry",
       "ED1": 7,
       "ED2": 25
     },
@@ -465,14 +465,14 @@
     },
     {
       "tail": "N242NN",
-      "lastService": "2026-09-15",
+      "lastService": "2026-09-19",
       "lastED1": "2026-08-30",
-      "lastED2": "2026-07-20",
-      "lastIHC": "2026-09-15",
-      "lastLocation": "SGF",
-      "lastTech": "Steven Wilson",
+      "lastED2": "2026-09-19",
+      "lastIHC": "2026-09-19",
+      "lastLocation": "XNA",
+      "lastTech": "Casey Henry",
       "ED1": 9,
-      "ED2": -2
+      "ED2": 59
     },
     {
       "tail": "N243NN",
@@ -806,12 +806,12 @@
     },
     {
       "tail": "N273NN",
-      "lastService": "2026-09-12",
+      "lastService": "2026-09-19",
       "lastED1": "2026-09-04",
       "lastED2": "2026-08-01",
-      "lastIHC": "2026-09-12",
-      "lastLocation": "LIT",
-      "lastTech": "Damian Utley",
+      "lastIHC": "2026-09-19",
+      "lastLocation": "XNA",
+      "lastTech": "Casey Henry",
       "ED1": 14,
       "ED2": 10
     },
@@ -916,12 +916,12 @@
     },
     {
       "tail": "N283NN",
-      "lastService": "2026-09-18",
+      "lastService": "2026-09-19",
       "lastED1": "2026-08-09",
       "lastED2": "2026-06-28",
-      "lastIHC": "2026-09-18",
-      "lastLocation": "LIT",
-      "lastTech": "Damian Utley",
+      "lastIHC": "2026-09-19",
+      "lastLocation": "XNA",
+      "lastTech": "Casey Henry",
       "ED1": -12,
       "ED2": -24
     },
@@ -1532,13 +1532,13 @@
     },
     {
       "tail": "N343JS",
-      "lastService": "2026-09-06",
-      "lastED1": "2026-08-17",
+      "lastService": "2026-09-19",
+      "lastED1": "2026-09-19",
       "lastED2": "2026-09-04",
-      "lastIHC": "2026-09-06",
+      "lastIHC": "2026-09-19",
       "lastLocation": "XNA",
-      "lastTech": "Shaun Neil",
-      "ED1": -4,
+      "lastTech": "Casey Henry",
+      "ED1": 29,
       "ED2": 44
     },
     {
@@ -2109,6 +2109,69 @@
       "date": "2026-12-30",
       "name": "Aunyae Morrison",
       "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N242NN",
+      "date": "2026-09-19",
+      "name": "Casey Henry",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 1
+    },
+    {
+      "tail": "N218NN",
+      "date": "2026-09-19",
+      "name": "Casey Henry",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N343JS",
+      "date": "2026-09-19",
+      "name": "Casey Henry",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N273NN",
+      "date": "2026-09-19",
+      "name": "Casey Henry",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N207AN",
+      "date": "2026-09-19",
+      "name": "Casey Henry",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N283NN",
+      "date": "2026-09-19",
+      "name": "Casey Henry",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N213NN",
+      "date": "2026-09-19",
+      "name": "Casey Henry",
+      "location": "XNA",
       "IHC": 1,
       "ED1": 0,
       "ED2": 0

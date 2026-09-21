@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-21T10:08:06.810609+00:00",
+  "generated": "2026-09-21T11:07:26.986560+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -102,12 +102,12 @@
     },
     {
       "tail": "N209NN",
-      "lastService": "2026-09-15",
+      "lastService": "2026-09-20",
       "lastED1": "2026-09-15",
       "lastED2": "2026-09-15",
-      "lastIHC": "2026-09-15",
-      "lastLocation": "XNA",
-      "lastTech": "Casey Henry",
+      "lastIHC": "2026-09-20",
+      "lastLocation": "SGF",
+      "lastTech": "Jeffrey Crookshanks",
       "ED1": 24,
       "ED2": 54
     },
@@ -883,12 +883,12 @@
     },
     {
       "tail": "N280NN",
-      "lastService": "2026-09-17",
+      "lastService": "2026-09-20",
       "lastED1": "2026-09-01",
       "lastED2": "2026-09-02",
-      "lastIHC": "2026-09-17",
-      "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastIHC": "2026-09-20",
+      "lastLocation": "SGF",
+      "lastTech": "Jeffrey Crookshanks",
       "ED1": 10,
       "ED2": 41
     },
@@ -1037,12 +1037,12 @@
     },
     {
       "tail": "N298FR",
-      "lastService": "2026-09-18",
+      "lastService": "2026-09-20",
       "lastED1": "2026-08-18",
       "lastED2": "2026-07-16",
-      "lastIHC": "2026-09-18",
+      "lastIHC": "2026-09-20",
       "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastTech": "NADIA  JOHNSON",
       "ED1": -4,
       "ED2": -7
     },
@@ -1191,12 +1191,12 @@
     },
     {
       "tail": "N313BS",
-      "lastService": "2026-09-19",
+      "lastService": "2026-09-20",
       "lastED1": "2026-09-14",
       "lastED2": "2026-09-17",
-      "lastIHC": "2026-09-19",
-      "lastLocation": "LIT",
-      "lastTech": "Damian Utley",
+      "lastIHC": "2026-09-20",
+      "lastLocation": "SGF",
+      "lastTech": "Jeffrey Crookshanks",
       "ED1": 23,
       "ED2": 56
     },
@@ -1521,13 +1521,13 @@
     },
     {
       "tail": "N342KR",
-      "lastService": "2026-09-13",
-      "lastED1": "2026-08-12",
+      "lastService": "2026-09-20",
+      "lastED1": "2026-09-20",
       "lastED2": "2026-08-31",
-      "lastIHC": "2026-09-13",
-      "lastLocation": "DFW",
-      "lastTech": "NADIA JOHNSON",
-      "ED1": -10,
+      "lastIHC": "2026-09-20",
+      "lastLocation": "SGF",
+      "lastTech": "Jeffrey Crookshanks",
+      "ED1": 29,
       "ED2": 39
     },
     {
@@ -1631,13 +1631,13 @@
     },
     {
       "tail": "N740MR",
-      "lastService": "2026-09-04",
-      "lastED1": "2026-08-11",
+      "lastService": "2026-09-20",
+      "lastED1": "2026-09-20",
       "lastED2": "2026-08-04",
-      "lastIHC": "2026-09-04",
-      "lastLocation": "CMH",
-      "lastTech": "Alexander HAMILTON",
-      "ED1": -11,
+      "lastIHC": "2026-09-20",
+      "lastLocation": "SGF",
+      "lastTech": "Jeffrey Crookshanks",
+      "ED1": 29,
       "ED2": 12
     },
     {
@@ -2294,6 +2294,51 @@
       "ED2": 1
     },
     {
+      "tail": "N342KR",
+      "date": "2026-09-20",
+      "name": "Jeffrey Crookshanks",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N740MR",
+      "date": "2026-09-20",
+      "name": "Jeffrey Crookshanks",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N209NN",
+      "date": "2026-09-20",
+      "name": "Jeffrey Crookshanks",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N313BS",
+      "date": "2026-09-20",
+      "name": "Jeffrey Crookshanks",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N280NN",
+      "date": "2026-09-20",
+      "name": "Jeffrey Crookshanks",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
       "tail": "N212NN",
       "date": "2026-09-20",
       "name": "NADIA JOHNSON",
@@ -2313,6 +2358,15 @@
     },
     {
       "tail": "N293NN",
+      "date": "2026-09-20",
+      "name": "NADIA  JOHNSON",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N298FR",
       "date": "2026-09-20",
       "name": "NADIA  JOHNSON",
       "location": "DFW",

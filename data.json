@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-21T12:08:02.698983+00:00",
+  "generated": "2026-09-21T17:08:17.263355+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -476,12 +476,12 @@
     },
     {
       "tail": "N243NN",
-      "lastService": "2026-09-10",
+      "lastService": "2026-09-20",
       "lastED1": "2026-09-09",
       "lastED2": "2026-08-25",
-      "lastIHC": "2026-09-10",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
+      "lastIHC": "2026-09-20",
+      "lastLocation": "CMH",
+      "lastTech": "Alexander Hamilton",
       "ED1": 18,
       "ED2": 33
     },
@@ -1125,12 +1125,12 @@
     },
     {
       "tail": "N307LH",
-      "lastService": "2026-09-13",
+      "lastService": "2026-09-20",
       "lastED1": "2026-09-05",
       "lastED2": "2026-08-06",
-      "lastIHC": "2026-09-13",
-      "lastLocation": "CVG",
-      "lastTech": "Bayleah Vogel",
+      "lastIHC": "2026-09-20",
+      "lastLocation": "CMH",
+      "lastTech": "Alexander Hamilton",
       "ED1": 14,
       "ED2": 14
     },
@@ -1180,12 +1180,12 @@
     },
     {
       "tail": "N312BT",
-      "lastService": "2026-09-19",
+      "lastService": "2026-09-20",
       "lastED1": "2026-09-12",
       "lastED2": "2026-09-18",
-      "lastIHC": "2026-09-19",
-      "lastLocation": "LIT",
-      "lastTech": "Damian Utley",
+      "lastIHC": "2026-09-20",
+      "lastLocation": "CMH",
+      "lastTech": "Alexander Hamilton",
       "ED1": 21,
       "ED2": 57
     },
@@ -1906,12 +1906,12 @@
     },
     {
       "tail": "N778RH",
-      "lastService": "2026-09-18",
+      "lastService": "2026-09-20",
       "lastED1": "2026-08-31",
       "lastED2": "2026-08-31",
-      "lastIHC": "2026-09-18",
-      "lastLocation": "SGF",
-      "lastTech": "Steven Wilson",
+      "lastIHC": "2026-09-20",
+      "lastLocation": "CMH",
+      "lastTech": "Alexander Hamilton",
       "ED1": 9,
       "ED2": 39
     },
@@ -2334,6 +2334,42 @@
       "date": "2026-09-20",
       "name": "Jeffrey Crookshanks",
       "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N243NN",
+      "date": "2026-09-20",
+      "name": "Alexander Hamilton",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N307LH",
+      "date": "2026-09-20",
+      "name": "Alexander Hamilton",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N312BT",
+      "date": "2026-09-20",
+      "name": "Alexander Hamilton",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N778RH",
+      "date": "2026-09-20",
+      "name": "Alexander Hamilton",
+      "location": "CMH",
       "IHC": 1,
       "ED1": 0,
       "ED2": 0

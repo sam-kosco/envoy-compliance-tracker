@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-21T05:07:30.180578+00:00",
+  "generated": "2026-09-21T06:07:39.236682+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -135,14 +135,14 @@
     },
     {
       "tail": "N212NN",
-      "lastService": "2026-09-19",
-      "lastED1": "2026-07-06",
-      "lastED2": "2026-06-03",
-      "lastIHC": "2026-09-19",
+      "lastService": "2026-09-20",
+      "lastED1": "2026-09-20",
+      "lastED2": "2026-09-20",
+      "lastIHC": "2026-09-20",
       "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
-      "ED1": -47,
-      "ED2": -50
+      "lastTech": "NADIA JOHNSON",
+      "ED1": 29,
+      "ED2": 59
     },
     {
       "tail": "N213NN",
@@ -1510,13 +1510,13 @@
     },
     {
       "tail": "N341MB",
-      "lastService": "2026-09-18",
-      "lastED1": "2026-08-27",
+      "lastService": "2026-09-20",
+      "lastED1": "2026-09-20",
       "lastED2": "2026-08-03",
-      "lastIHC": "2026-09-18",
+      "lastIHC": "2026-09-20",
       "lastLocation": "CVG",
-      "lastTech": "Precious Valadez-Roberson",
-      "ED1": 5,
+      "lastTech": "Bayleah Vogel",
+      "ED1": 29,
       "ED2": 11
     },
     {
@@ -1554,12 +1554,12 @@
     },
     {
       "tail": "N346BB",
-      "lastService": "2026-09-18",
+      "lastService": "2026-09-20",
       "lastED1": "2026-09-04",
       "lastED2": "2026-09-04",
-      "lastIHC": "2026-09-18",
+      "lastIHC": "2026-09-20",
       "lastLocation": "CVG",
-      "lastTech": "Precious Valadez-Roberson",
+      "lastTech": "Bayleah Vogel",
       "ED1": 13,
       "ED2": 43
     },
@@ -2112,6 +2112,33 @@
       "IHC": 1,
       "ED1": 0,
       "ED2": 0
+    },
+    {
+      "tail": "N346BB",
+      "date": "2026-09-20",
+      "name": "Bayleah Vogel",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N341MB",
+      "date": "2026-09-20",
+      "name": "Bayleah Vogel",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N212NN",
+      "date": "2026-09-20",
+      "name": "NADIA JOHNSON",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 1
     },
     {
       "tail": "N242NN",

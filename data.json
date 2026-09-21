@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-21T06:07:39.236682+00:00",
+  "generated": "2026-09-21T07:08:01.879759+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -487,14 +487,14 @@
     },
     {
       "tail": "N244NN",
-      "lastService": "2026-09-16",
-      "lastED1": "2026-08-03",
-      "lastED2": "2026-07-02",
-      "lastIHC": "2026-09-16",
+      "lastService": "2026-09-20",
+      "lastED1": "2026-09-20",
+      "lastED2": "2026-09-20",
+      "lastIHC": "2026-09-20",
       "lastLocation": "CVG",
       "lastTech": "Bayleah Vogel",
-      "ED1": -19,
-      "ED2": -21
+      "ED1": 29,
+      "ED2": 59
     },
     {
       "tail": "N245NN",
@@ -2060,13 +2060,13 @@
     },
     {
       "tail": "N791DK",
-      "lastService": "2026-06-12",
-      "lastED1": "2026-05-13",
+      "lastService": "2026-09-20",
+      "lastED1": "2026-09-20",
       "lastED2": "2026-04-27",
-      "lastIHC": "2026-06-12",
-      "lastLocation": "LIT",
-      "lastTech": "Dane  Clement",
-      "ED1": -101,
+      "lastIHC": "2026-09-20",
+      "lastLocation": "CVG",
+      "lastTech": "Bayleah Vogel",
+      "ED1": 29,
       "ED2": -87
     },
     {
@@ -2130,6 +2130,24 @@
       "IHC": 1,
       "ED1": 1,
       "ED2": 0
+    },
+    {
+      "tail": "N791DK",
+      "date": "2026-09-20",
+      "name": "Bayleah Vogel",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N244NN",
+      "date": "2026-09-20",
+      "name": "Bayleah Vogel",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 1
     },
     {
       "tail": "N212NN",

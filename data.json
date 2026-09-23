@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-23T07:08:27.095662+00:00",
+  "generated": "2026-09-23T08:07:54.931165+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -685,12 +685,12 @@
     },
     {
       "tail": "N262NN",
-      "lastService": "2026-09-19",
+      "lastService": "2026-09-22",
       "lastED1": "2026-08-23",
       "lastED2": "2026-07-08",
-      "lastIHC": "2026-09-19",
+      "lastIHC": "2026-09-22",
       "lastLocation": "CVG",
-      "lastTech": "Dvion Davis",
+      "lastTech": "Precious Valadez-Roberson",
       "ED1": -1,
       "ED2": -17
     },
@@ -1312,12 +1312,12 @@
     },
     {
       "tail": "N324ES",
-      "lastService": "2026-09-19",
+      "lastService": "2026-09-22",
       "lastED1": "2026-08-21",
       "lastED2": "2026-07-21",
-      "lastIHC": "2026-09-19",
-      "lastLocation": "LIT",
-      "lastTech": "Damian Utley",
+      "lastIHC": "2026-09-22",
+      "lastLocation": "CVG",
+      "lastTech": "Precious Valadez-Roberson",
       "ED1": -3,
       "ED2": -4
     },
@@ -1785,12 +1785,12 @@
     },
     {
       "tail": "N763CC",
-      "lastService": "2026-09-13",
+      "lastService": "2026-09-22",
       "lastED1": "2026-08-20",
       "lastED2": "2026-08-06",
-      "lastIHC": "2026-09-13",
-      "lastLocation": "DFW",
-      "lastTech": "NADIA JOHNSON",
+      "lastIHC": "2026-09-22",
+      "lastLocation": "CVG",
+      "lastTech": "Precious Valadez-Roberson",
       "ED1": -4,
       "ED2": 12
     },
@@ -2226,6 +2226,42 @@
       "date": "2026-09-22",
       "name": "Steven Wilson",
       "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N262NN",
+      "date": "2026-09-22",
+      "name": "Precious Valadez-Roberson",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N324ES",
+      "date": "2026-09-22",
+      "name": "Precious Valadez-Roberson",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N270NN",
+      "date": "2026-09-22",
+      "name": "Precious Valadez-Roberson",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N763CC",
+      "date": "2026-09-22",
+      "name": "Precious Valadez-Roberson",
+      "location": "CVG",
       "IHC": 1,
       "ED1": 0,
       "ED2": 0

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-24T12:07:47.512318+00:00",
+  "generated": "2026-09-24T13:08:01.978292+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -509,12 +509,12 @@
     },
     {
       "tail": "N246NN",
-      "lastService": "2026-09-17",
+      "lastService": "2026-09-22",
       "lastED1": "2026-08-27",
       "lastED2": "2026-09-13",
-      "lastIHC": "2026-09-17",
-      "lastLocation": "LIT",
-      "lastTech": "Damian Utley",
+      "lastIHC": "2026-09-22",
+      "lastLocation": "CMH",
+      "lastTech": "Alexander Hamilton",
       "ED1": 2,
       "ED2": 49
     },
@@ -1268,12 +1268,12 @@
     },
     {
       "tail": "N320BK",
-      "lastService": "2026-09-14",
+      "lastService": "2026-09-22",
       "lastED1": "2026-09-01",
       "lastED2": "2026-08-20",
-      "lastIHC": "2026-09-14",
-      "lastLocation": "XNA",
-      "lastTech": "Casey Henry",
+      "lastIHC": "2026-09-22",
+      "lastLocation": "CMH",
+      "lastTech": "Alexander Hamilton",
       "ED1": 7,
       "ED2": 25
     },
@@ -1510,12 +1510,12 @@
     },
     {
       "tail": "N341MB",
-      "lastService": "2026-09-20",
+      "lastService": "2026-09-22",
       "lastED1": "2026-09-20",
       "lastED2": "2026-08-03",
-      "lastIHC": "2026-09-20",
-      "lastLocation": "CVG",
-      "lastTech": "Bayleah Vogel",
+      "lastIHC": "2026-09-22",
+      "lastLocation": "CMH",
+      "lastTech": "Alexander Hamilton",
       "ED1": 26,
       "ED2": 8
     },
@@ -2685,6 +2685,33 @@
       "date": "2026-09-22",
       "name": "Riley Pinterich",
       "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N246NN",
+      "date": "2026-09-22",
+      "name": "Alexander Hamilton",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N320BK",
+      "date": "2026-09-22",
+      "name": "Alexander Hamilton",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N341MB",
+      "date": "2026-09-22",
+      "name": "Alexander Hamilton",
+      "location": "CMH",
       "IHC": 1,
       "ED1": 0,
       "ED2": 0

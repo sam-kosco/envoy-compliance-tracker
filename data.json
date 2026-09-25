@@ -1,12 +1,12 @@
 {
-  "generated": "2026-09-25T09:07:32.495492+00:00",
+  "generated": "2026-09-25T10:08:04.573911+00:00",
   "planes": [
     {
       "tail": "N200NN",
-      "lastService": "2026-09-20",
+      "lastService": "2026-09-24",
       "lastED1": "2026-09-01",
       "lastED2": "2026-09-20",
-      "lastIHC": "2026-09-20",
+      "lastIHC": "2026-09-24",
       "lastLocation": "LIT",
       "lastTech": "Riley Pinterich",
       "ED1": 6,
@@ -14,12 +14,12 @@
     },
     {
       "tail": "N201NN",
-      "lastService": "2026-09-16",
+      "lastService": "2026-09-24",
       "lastED1": "2026-08-24",
       "lastED2": "2026-09-02",
-      "lastIHC": "2026-09-16",
+      "lastIHC": "2026-09-24",
       "lastLocation": "LIT",
-      "lastTech": "Mathew Walker",
+      "lastTech": "Riley Pinterich",
       "ED1": -2,
       "ED2": 37
     },
@@ -399,12 +399,12 @@
     },
     {
       "tail": "N236NN",
-      "lastService": "2026-09-21",
+      "lastService": "2026-09-24",
       "lastED1": "2026-09-20",
       "lastED2": "2026-09-20",
-      "lastIHC": "2026-09-21",
+      "lastIHC": "2026-09-24",
       "lastLocation": "DFW",
-      "lastTech": "NADIA  JOHNSON",
+      "lastTech": "Aunyae Morrison",
       "ED1": 25,
       "ED2": 55
     },
@@ -751,13 +751,13 @@
     },
     {
       "tail": "N268NN",
-      "lastService": "2026-09-19",
-      "lastED1": "2026-07-24",
+      "lastService": "2026-09-24",
+      "lastED1": "2026-09-24",
       "lastED2": "2026-06-25",
-      "lastIHC": "2026-09-19",
+      "lastIHC": "2026-09-24",
       "lastLocation": "LIT",
-      "lastTech": "Damian Utley",
-      "ED1": -33,
+      "lastTech": "Riley Pinterich",
+      "ED1": 29,
       "ED2": -32
     },
     {
@@ -894,13 +894,13 @@
     },
     {
       "tail": "N281NN",
-      "lastService": "2026-09-17",
-      "lastED1": "2026-08-02",
+      "lastService": "2026-09-24",
+      "lastED1": "2026-09-24",
       "lastED2": "2026-08-02",
-      "lastIHC": "2026-09-17",
+      "lastIHC": "2026-09-24",
       "lastLocation": "LIT",
-      "lastTech": "Damian Utley",
-      "ED1": -24,
+      "lastTech": "Riley Pinterich",
+      "ED1": 29,
       "ED2": 6
     },
     {
@@ -1257,12 +1257,12 @@
     },
     {
       "tail": "N319RG",
-      "lastService": "2026-09-22",
+      "lastService": "2026-09-24",
       "lastED1": "2026-09-08",
       "lastED2": "2026-08-02",
-      "lastIHC": "2026-09-22",
-      "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastIHC": "2026-09-24",
+      "lastLocation": "LIT",
+      "lastTech": "Riley Pinterich",
       "ED1": 13,
       "ED2": 6
     },
@@ -1301,12 +1301,12 @@
     },
     {
       "tail": "N323ED",
-      "lastService": "2026-09-22",
+      "lastService": "2026-09-24",
       "lastED1": "2026-09-10",
       "lastED2": "2026-08-12",
-      "lastIHC": "2026-09-22",
-      "lastLocation": "SGF",
-      "lastTech": "Steven Wilson",
+      "lastIHC": "2026-09-24",
+      "lastLocation": "LIT",
+      "lastTech": "Riley Pinterich",
       "ED1": 15,
       "ED2": 16
     },
@@ -1587,12 +1587,12 @@
     },
     {
       "tail": "N349DD",
-      "lastService": "2026-09-13",
+      "lastService": "2026-09-24",
       "lastED1": "2026-08-25",
       "lastED2": "2026-08-25",
-      "lastIHC": "2026-09-13",
-      "lastLocation": "CMH",
-      "lastTech": "Tanaija Price",
+      "lastIHC": "2026-09-24",
+      "lastLocation": "LIT",
+      "lastTech": "Riley Pinterich",
       "ED1": -1,
       "ED2": 29
     },
@@ -2294,6 +2294,69 @@
       "ED2": 0
     },
     {
+      "tail": "N268NN",
+      "date": "2026-09-24",
+      "name": "Riley Pinterich",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N323ED",
+      "date": "2026-09-24",
+      "name": "Riley Pinterich",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N200NN",
+      "date": "2026-09-24",
+      "name": "Riley Pinterich",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N201NN",
+      "date": "2026-09-24",
+      "name": "Riley Pinterich",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N319RG",
+      "date": "2026-09-24",
+      "name": "Riley Pinterich",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N349DD",
+      "date": "2026-09-24",
+      "name": "Riley Pinterich",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N281NN",
+      "date": "2026-09-24",
+      "name": "Riley Pinterich",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
       "tail": "N330JT",
       "date": "2026-09-24",
       "name": "Aunyae Morrison",
@@ -2313,6 +2376,15 @@
     },
     {
       "tail": "N305CL",
+      "date": "2026-09-24",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N236NN",
       "date": "2026-09-24",
       "name": "Aunyae Morrison",
       "location": "DFW",

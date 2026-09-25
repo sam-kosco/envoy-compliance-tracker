@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-25T12:08:12.693490+00:00",
+  "generated": "2026-09-25T17:07:33.435590+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -289,12 +289,12 @@
     },
     {
       "tail": "N226NN",
-      "lastService": "2026-12-30",
+      "lastService": "2026-09-24",
       "lastED1": "2026-09-24",
       "lastED2": "2026-09-01",
-      "lastIHC": "2026-12-30",
-      "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastIHC": "2026-09-24",
+      "lastLocation": "CMH",
+      "lastTech": "Tanaija Price",
       "ED1": 29,
       "ED2": 36
     },
@@ -2105,15 +2105,6 @@
   ],
   "debriefs": [
     {
-      "tail": "N226NN",
-      "date": "2026-12-30",
-      "name": "Aunyae Morrison",
-      "location": "DFW",
-      "IHC": 1,
-      "ED1": 0,
-      "ED2": 0
-    },
-    {
       "tail": "N211NN",
       "date": "2026-09-24",
       "name": "Precious Valadez-Roberson",
@@ -2807,10 +2798,10 @@
       "ED2": 0
     },
     {
-      "tail": "N270NN",
+      "tail": "N210NN",
       "date": "2026-09-22",
-      "name": "Precious Valadez-Roberson",
-      "location": "CVG",
+      "name": "Riley Pinterich",
+      "location": "LIT",
       "IHC": 1,
       "ED1": 0,
       "ED2": 0
@@ -2825,24 +2816,6 @@
       "ED2": 0
     },
     {
-      "tail": "N340TC",
-      "date": "2026-09-22",
-      "name": "Casey Henry",
-      "location": "XNA",
-      "IHC": 1,
-      "ED1": 1,
-      "ED2": 0
-    },
-    {
-      "tail": "N315NH",
-      "date": "2026-09-22",
-      "name": "Casey Henry",
-      "location": "XNA",
-      "IHC": 1,
-      "ED1": 0,
-      "ED2": 1
-    },
-    {
       "tail": "N221NN",
       "date": "2026-09-22",
       "name": "Casey Henry",
@@ -2852,106 +2825,7 @@
       "ED2": 1
     },
     {
-      "tail": "N318JE",
-      "date": "2026-09-22",
-      "name": "Casey Henry",
-      "location": "XNA",
-      "IHC": 1,
-      "ED1": 0,
-      "ED2": 0
-    },
-    {
-      "tail": "N279MQ",
-      "date": "2026-09-22",
-      "name": "Casey Henry",
-      "location": "XNA",
-      "IHC": 1,
-      "ED1": 0,
-      "ED2": 0
-    },
-    {
-      "tail": "N298FR",
-      "date": "2026-09-22",
-      "name": "Casey Henry",
-      "location": "XNA",
-      "IHC": 1,
-      "ED1": 1,
-      "ED2": 1
-    },
-    {
-      "tail": "N791DK",
-      "date": "2026-09-22",
-      "name": "Steven Wilson",
-      "location": "SGF",
-      "IHC": 1,
-      "ED1": 0,
-      "ED2": 1
-    },
-    {
-      "tail": "N327PG",
-      "date": "2026-09-22",
-      "name": "Steven Wilson",
-      "location": "SGF",
-      "IHC": 1,
-      "ED1": 1,
-      "ED2": 0
-    },
-    {
-      "tail": "N252NN",
-      "date": "2026-09-22",
-      "name": "Steven Wilson",
-      "location": "SGF",
-      "IHC": 1,
-      "ED1": 0,
-      "ED2": 0
-    },
-    {
-      "tail": "N323ED",
-      "date": "2026-09-22",
-      "name": "Steven Wilson",
-      "location": "SGF",
-      "IHC": 1,
-      "ED1": 0,
-      "ED2": 0
-    },
-    {
-      "tail": "N347JT",
-      "date": "2026-09-22",
-      "name": "Steven Wilson",
-      "location": "SGF",
-      "IHC": 1,
-      "ED1": 0,
-      "ED2": 0
-    },
-    {
-      "tail": "N262NN",
-      "date": "2026-09-22",
-      "name": "Precious Valadez-Roberson",
-      "location": "CVG",
-      "IHC": 1,
-      "ED1": 0,
-      "ED2": 0
-    },
-    {
-      "tail": "N324ES",
-      "date": "2026-09-22",
-      "name": "Precious Valadez-Roberson",
-      "location": "CVG",
-      "IHC": 1,
-      "ED1": 0,
-      "ED2": 0
-    },
-    {
-      "tail": "N763CC",
-      "date": "2026-09-22",
-      "name": "Precious Valadez-Roberson",
-      "location": "CVG",
-      "IHC": 1,
-      "ED1": 0,
-      "ED2": 0
-    },
-    {
-      "tail": "N257NN",
+      "tail": "N224NN",
       "date": "2026-09-22",
       "name": "Riley Pinterich",
       "location": "LIT",
@@ -2969,100 +2843,100 @@
       "ED2": 0
     },
     {
-      "tail": "N224NN",
-      "date": "2026-09-22",
-      "name": "Riley Pinterich",
-      "location": "LIT",
-      "IHC": 1,
-      "ED1": 0,
-      "ED2": 0
-    },
-    {
-      "tail": "N210NN",
-      "date": "2026-09-22",
-      "name": "Riley Pinterich",
-      "location": "LIT",
-      "IHC": 1,
-      "ED1": 0,
-      "ED2": 0
-    },
-    {
-      "tail": "N286NN",
-      "date": "2026-09-22",
-      "name": "Riley Pinterich",
-      "location": "LIT",
-      "IHC": 1,
-      "ED1": 0,
-      "ED2": 0
-    },
-    {
-      "tail": "N748RR",
-      "date": "2026-09-22",
-      "name": "Riley Pinterich",
-      "location": "LIT",
-      "IHC": 1,
-      "ED1": 1,
-      "ED2": 1
-    },
-    {
-      "tail": "N253NN",
-      "date": "2026-09-22",
-      "name": "Riley Pinterich",
-      "location": "LIT",
-      "IHC": 1,
-      "ED1": 1,
-      "ED2": 1
-    },
-    {
-      "tail": "N253NN",
-      "date": "2026-09-22",
-      "name": "Riley Pinterich",
-      "location": "LIT",
-      "IHC": 1,
-      "ED1": 1,
-      "ED2": 1
-    },
-    {
-      "tail": "N286NN",
-      "date": "2026-09-22",
-      "name": "Riley Pinterich",
-      "location": "LIT",
-      "IHC": 1,
-      "ED1": 0,
-      "ED2": 0
-    },
-    {
-      "tail": "N210NN",
-      "date": "2026-09-22",
-      "name": "Riley Pinterich",
-      "location": "LIT",
-      "IHC": 1,
-      "ED1": 0,
-      "ED2": 0
-    },
-    {
-      "tail": "N286NN",
-      "date": "2026-09-22",
-      "name": "Riley Pinterich",
-      "location": "LIT",
-      "IHC": 1,
-      "ED1": 0,
-      "ED2": 0
-    },
-    {
-      "tail": "N286NN",
-      "date": "2026-09-22",
-      "name": "Riley Pinterich",
-      "location": "LIT",
-      "IHC": 1,
-      "ED1": 0,
-      "ED2": 0
-    },
-    {
       "tail": "N246NN",
       "date": "2026-09-22",
       "name": "Alexander Hamilton",
       "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N252NN",
+      "date": "2026-09-22",
+      "name": "Steven Wilson",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N253NN",
+      "date": "2026-09-22",
+      "name": "Riley Pinterich",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 1
+    },
+    {
+      "tail": "N257NN",
+      "date": "2026-09-22",
+      "name": "Riley Pinterich",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N262NN",
+      "date": "2026-09-22",
+      "name": "Precious Valadez-Roberson",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N270NN",
+      "date": "2026-09-22",
+      "name": "Precious Valadez-Roberson",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N279MQ",
+      "date": "2026-09-22",
+      "name": "Casey Henry",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N286NN",
+      "date": "2026-09-22",
+      "name": "Riley Pinterich",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N298FR",
+      "date": "2026-09-22",
+      "name": "Casey Henry",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 1
+    },
+    {
+      "tail": "N315NH",
+      "date": "2026-09-22",
+      "name": "Casey Henry",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 1
+    },
+    {
+      "tail": "N318JE",
+      "date": "2026-09-22",
+      "name": "Casey Henry",
+      "location": "XNA",
       "IHC": 1,
       "ED1": 0,
       "ED2": 0
@@ -3077,6 +2951,42 @@
       "ED2": 0
     },
     {
+      "tail": "N323ED",
+      "date": "2026-09-22",
+      "name": "Steven Wilson",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N324ES",
+      "date": "2026-09-22",
+      "name": "Precious Valadez-Roberson",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N327PG",
+      "date": "2026-09-22",
+      "name": "Steven Wilson",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N340TC",
+      "date": "2026-09-22",
+      "name": "Casey Henry",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
       "tail": "N341MB",
       "date": "2026-09-22",
       "name": "Alexander Hamilton",
@@ -3084,6 +2994,42 @@
       "IHC": 1,
       "ED1": 0,
       "ED2": 0
+    },
+    {
+      "tail": "N347JT",
+      "date": "2026-09-22",
+      "name": "Steven Wilson",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N748RR",
+      "date": "2026-09-22",
+      "name": "Riley Pinterich",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 1
+    },
+    {
+      "tail": "N763CC",
+      "date": "2026-09-22",
+      "name": "Precious Valadez-Roberson",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N791DK",
+      "date": "2026-09-22",
+      "name": "Steven Wilson",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 1
     },
     {
       "tail": "N333RQ",
@@ -31257,6 +31203,15 @@
     },
     {
       "tail": "N269NN",
+      "date": "2026-06-30",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N226NN",
       "date": "2026-06-30",
       "name": "Aunyae Morrison",
       "location": "DFW",

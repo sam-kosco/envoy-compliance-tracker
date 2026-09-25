@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-25T08:08:12.522220+00:00",
+  "generated": "2026-09-25T09:07:32.495492+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -102,10 +102,10 @@
     },
     {
       "tail": "N209NN",
-      "lastService": "2026-09-20",
+      "lastService": "2026-09-24",
       "lastED1": "2026-09-15",
       "lastED2": "2026-09-15",
-      "lastIHC": "2026-09-20",
+      "lastIHC": "2026-09-24",
       "lastLocation": "SGF",
       "lastTech": "Jeffrey Crookshanks",
       "ED1": 20,
@@ -135,12 +135,12 @@
     },
     {
       "tail": "N212NN",
-      "lastService": "2026-09-20",
+      "lastService": "2026-09-24",
       "lastED1": "2026-09-20",
       "lastED2": "2026-09-20",
-      "lastIHC": "2026-09-20",
-      "lastLocation": "DFW",
-      "lastTech": "NADIA JOHNSON",
+      "lastIHC": "2026-09-24",
+      "lastLocation": "SGF",
+      "lastTech": "Jeffrey Crookshanks",
       "ED1": 25,
       "ED2": 55
     },
@@ -388,12 +388,12 @@
     },
     {
       "tail": "N235NN",
-      "lastService": "2026-09-22",
+      "lastService": "2026-09-24",
       "lastED1": "2026-08-29",
       "lastED2": "2026-07-28",
-      "lastIHC": "2026-09-22",
-      "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastIHC": "2026-09-24",
+      "lastLocation": "SGF",
+      "lastTech": "Jeffrey Crookshanks",
       "ED1": 3,
       "ED2": 1
     },
@@ -476,12 +476,12 @@
     },
     {
       "tail": "N243NN",
-      "lastService": "2026-09-23",
+      "lastService": "2026-09-24",
       "lastED1": "2026-09-09",
       "lastED2": "2026-08-25",
-      "lastIHC": "2026-09-23",
-      "lastLocation": "LIT",
-      "lastTech": "Riley Pinterich",
+      "lastIHC": "2026-09-24",
+      "lastLocation": "SGF",
+      "lastTech": "Jeffrey Crookshanks",
       "ED1": 14,
       "ED2": 29
     },
@@ -1807,12 +1807,12 @@
     },
     {
       "tail": "N765ST",
-      "lastService": "2026-09-17",
+      "lastService": "2026-09-24",
       "lastED1": "2026-09-09",
       "lastED2": "2026-09-17",
-      "lastIHC": "2026-09-17",
-      "lastLocation": "CVG",
-      "lastTech": "Precious Valadez-Roberson",
+      "lastIHC": "2026-09-24",
+      "lastLocation": "SGF",
+      "lastTech": "Jeffrey Crookshanks",
       "ED1": 14,
       "ED2": 52
     },
@@ -2244,6 +2244,51 @@
       "date": "2026-09-24",
       "name": "Casey Henry",
       "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N235NN",
+      "date": "2026-09-24",
+      "name": "Jeffrey Crookshanks",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N765ST",
+      "date": "2026-09-24",
+      "name": "Jeffrey Crookshanks",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N209NN",
+      "date": "2026-09-24",
+      "name": "Jeffrey Crookshanks",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N243NN",
+      "date": "2026-09-24",
+      "name": "Jeffrey Crookshanks",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N212NN",
+      "date": "2026-09-24",
+      "name": "Jeffrey Crookshanks",
+      "location": "SGF",
       "IHC": 1,
       "ED1": 0,
       "ED2": 0

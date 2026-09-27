@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-27T05:07:53.815744+00:00",
+  "generated": "2026-09-27T06:08:09.210403+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -135,12 +135,12 @@
     },
     {
       "tail": "N212NN",
-      "lastService": "2026-09-24",
+      "lastService": "2026-09-26",
       "lastED1": "2026-09-20",
       "lastED2": "2026-09-20",
-      "lastIHC": "2026-09-24",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
+      "lastIHC": "2026-09-26",
+      "lastLocation": "DFW",
+      "lastTech": "NADIA  JOHNSON",
       "ED1": 23,
       "ED2": 53
     },
@@ -2106,6 +2106,15 @@
   "debriefs": [
     {
       "tail": "N778RH",
+      "date": "2026-09-26",
+      "name": "NADIA  JOHNSON",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N212NN",
       "date": "2026-09-26",
       "name": "NADIA  JOHNSON",
       "location": "DFW",

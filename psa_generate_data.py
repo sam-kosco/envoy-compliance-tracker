@@ -23,7 +23,7 @@ Credentials (GitHub Secrets — same as Envoy tracker):
 """
 
 import os, json, sys, requests
-from datetime import datetime, timezone, date
+from datetime import datetime, timezone, date, timedelta
 
 TENANT_ID     = os.environ["TENANT_ID"]
 CLIENT_ID     = os.environ["CLIENT_ID"]
@@ -96,6 +96,45 @@ def parse_date(v):
 def fmt(d): return d.isoformat() if d else None
 
 
+
+
+def read_added(ws):
+    """{tail: date} from an optional "Added" header column on the roster
+    sheet — the day the tail joined the fleet, stamped by the Add/Remove
+    Tails PA flow. A stamped tail starts as if every job were completed
+    that day (see the baseline floor in build_planes). No column / blank
+    cell = no baseline (pre-feature rows keep today's behavior). The cell
+    may arrive as a real date, an ISO string, or an Excel serial."""
+    rows = list(ws.iter_rows(values_only=True))
+    if not rows:
+        return {}
+    hdr = [str(c or "").strip().lower() for c in rows[0]]
+    if "added" not in hdr:
+        return {}
+    ai = hdr.index("added")
+
+    def _d(v):
+        if isinstance(v, datetime):
+            return v.date()
+        if isinstance(v, date):
+            return v
+        if isinstance(v, (int, float)):
+            return date(1899, 12, 30) + timedelta(days=int(v))
+        try:
+            return datetime.fromisoformat(str(v).strip()[:10]).date()
+        except ValueError:
+            return None
+
+    out = {}
+    for r in rows[1:]:
+        t = str(r[0] or "").strip().upper()
+        if t and len(r) > ai and r[ai] is not None:
+            d = _d(r[ai])
+            if d:
+                out[t] = d
+    return out
+
+
 def parse_workbook(path):
     import openpyxl
     wb = openpyxl.load_workbook(path, data_only=True)
@@ -166,7 +205,7 @@ def parse_workbook(path):
     else:
         print("  Audits: sheet not present — skipping")
 
-    return tails, debriefs, audits
+    return tails, debriefs, audits, read_added(ws_tl)
 
 
 def attach_audits(debriefs, audits):
@@ -213,7 +252,7 @@ def attach_audits(debriefs, audits):
     return matched
 
 
-def build_planes(tails, debriefs):
+def build_planes(tails, debriefs, added=None):
     today = date.today()
     by_tail = {}
     for d in debriefs:
@@ -233,6 +272,16 @@ def build_planes(tails, debriefs):
             for j in TRACKED + INFO:
                 if d[j] == 1 and (last[j] is None or dd > last[j]):
                     last[j] = dd
+
+        # Added-date baseline: a tail stamped by the Add Tail flow starts as
+        # if every job were completed on its Added day.
+        base = (added or {}).get(tail)
+        if base:
+            if ls is None or ls < base:
+                ls = base
+            for _j in last:
+                if last[_j] is None or last[_j] < base:
+                    last[_j] = base
 
         windows = {j: ("No Service" if last[j] is None else CYCLES[j] - (today - last[j]).days)
                    for j in TRACKED}
@@ -290,13 +339,13 @@ if __name__ == "__main__":
     xlsx_path = download_excel(token)
 
     print("\nParsing workbook...")
-    tails, debriefs, audits = parse_workbook(xlsx_path)
+    tails, debriefs, audits, added = parse_workbook(xlsx_path)
 
     print("\nMatching SafetyCulture audits to debriefs...")
     attach_audits(debriefs, audits)
 
     print("\nBuilding compliance table...")
-    planes          = build_planes(tails, debriefs)
+    planes          = build_planes(tails, debriefs, added)
     debriefs_out    = format_debriefs(debriefs)
 
     output = {"generated": datetime.now(timezone.utc).isoformat(),

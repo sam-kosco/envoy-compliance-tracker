@@ -27,7 +27,7 @@ import os
 import json
 import sys
 import requests
-from datetime import datetime, timezone, date
+from datetime import datetime, timezone, date, timedelta
 
 # ─────────────────────────────────────────────
 # CONFIG
@@ -117,6 +117,45 @@ def fmt_date(d):
 # STEP 3: Read Tail List
 # ─────────────────────────────────────────────
 
+
+
+def read_added(ws):
+    """{tail: date} from an optional "Added" header column on the roster
+    sheet — the day the tail joined the fleet, stamped by the Add/Remove
+    Tails PA flow. A stamped tail starts as if every job were completed
+    that day (see the baseline floor in build_planes). No column / blank
+    cell = no baseline (pre-feature rows keep today's behavior). The cell
+    may arrive as a real date, an ISO string, or an Excel serial."""
+    rows = list(ws.iter_rows(values_only=True))
+    if not rows:
+        return {}
+    hdr = [str(c or "").strip().lower() for c in rows[0]]
+    if "added" not in hdr:
+        return {}
+    ai = hdr.index("added")
+
+    def _d(v):
+        if isinstance(v, datetime):
+            return v.date()
+        if isinstance(v, date):
+            return v
+        if isinstance(v, (int, float)):
+            return date(1899, 12, 30) + timedelta(days=int(v))
+        try:
+            return datetime.fromisoformat(str(v).strip()[:10]).date()
+        except ValueError:
+            return None
+
+    out = {}
+    for r in rows[1:]:
+        t = str(r[0] or "").strip().upper()
+        if t and len(r) > ai and r[ai] is not None:
+            d = _d(r[ai])
+            if d:
+                out[t] = d
+    return out
+
+
 def read_tail_list(wb):
     """Column A = tails; column F = Status ("Disabled" hides the tail from
     the tracker; anything else, including blank, shows it — so a missing
@@ -204,7 +243,7 @@ def parse_dfw(wb):
 # STEP 6: Build planes compliance table
 # ─────────────────────────────────────────────
 
-def build_planes(tails, all_debriefs):
+def build_planes(tails, all_debriefs, added=None):
     """
     For each tail in the Tail List, find the most recent date on which
     each service (ED1, ED2, IHC) was performed (flag == 1), then
@@ -238,6 +277,16 @@ def build_planes(tails, all_debriefs):
                 if d[job] == 1:
                     if last[job] is None or d_date > last[job]:
                         last[job] = d_date
+
+        # Added-date baseline: a tail stamped by the Add Tail flow starts as
+        # if every job were completed on its Added day.
+        base = (added or {}).get(tail)
+        if base:
+            if last_service is None or last_service < base:
+                last_service = base
+            for _j in last:
+                if last[_j] is None or last[_j] < base:
+                    last[_j] = base
 
         # Calculate compliance windows for tracked jobs
         windows = {}
@@ -331,13 +380,14 @@ if __name__ == "__main__":
     wb = ox.load_workbook(xlsx_path, data_only=True)
 
     tails        = read_tail_list(wb)
+    added        = read_added(wb["Tail List"])
     general_rows = parse_general(wb)
     dfw_rows     = parse_dfw(wb)
     all_debriefs = general_rows + dfw_rows
     print(f"  Total combined debriefs: {len(all_debriefs)}")
 
     print("\nBuilding compliance table...")
-    planes   = build_planes(tails, all_debriefs)
+    planes   = build_planes(tails, all_debriefs, added)
     debriefs = format_debriefs(all_debriefs)
 
     print("\nWriting data.json...")

@@ -326,6 +326,17 @@ past records keep their tail; only future selectability goes away.
 > Closeout Processes CLAUDE.md ("To add the next location-specific
 > closeout").
 
+## Added-date baseline (new tails start compliant)
+
+Each roster sheet may carry an **"Added"** column (found by HEADER, position
+free): the day the tail joined the fleet, stamped by the "Add/Remove Tails"
+PA flow's Add actions. Every relay script (`*_generate_data.py` here + the
+JSX repo's) floors ALL last-service dates at that day, so a new tail starts
+as if every job were completed on its add date — full windows, Compliant —
+instead of "No Service"/Noncompliant (Sam, 2026-09-28). Blank cell or no
+column = old behavior (pre-feature rows). The cell may be a real date, ISO
+string, or Excel serial. The reconcile/manage machinery ignores the column.
+
 ## Tail-list reconcile (`tail_reconcile.yml`)
 
 Utility (workflow_dispatch, inputs `program` = envoy | psa | mesa | gojet |

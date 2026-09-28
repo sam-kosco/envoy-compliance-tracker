@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-28T02:17:53.261444+00:00",
+  "generated": "2026-09-28T03:18:04.207108+00:00",
   "planes": [
     {
       "tail": "N500AE",
@@ -839,25 +839,25 @@
     },
     {
       "tail": "N543EA",
-      "lastService": "2026-09-21",
-      "lastCC": "2026-09-16",
+      "lastService": "2026-09-27",
+      "lastCC": "2026-09-27",
       "lastDSC": "2026-09-16",
       "lastCE": "2026-09-16",
       "lastED1": "2026-09-16",
       "lastED2": "2026-09-16",
-      "lastLav": "2026-06-22",
-      "lastIC": "2026-09-21",
-      "lastEC": "2026-09-16",
+      "lastLav": "2026-09-27",
+      "lastIC": "2026-09-27",
+      "lastEC": "2026-09-27",
       "lastED3": "2026-04-10",
       "lastED4": "2026-04-08",
-      "lastLocation": "GSP",
-      "lastTech": "Brittany Eckelberry",
-      "CC": 18,
+      "lastLocation": "CAK",
+      "lastTech": "Amy Gribble",
+      "CC": 29,
       "DSC": 18,
       "CE": 18,
       "ED1": 18,
       "ED2": 18,
-      "Lav": -8
+      "Lav": 89
     },
     {
       "tail": "N544EA",
@@ -3452,6 +3452,23 @@
       "ED3": 0,
       "ED4": 0,
       "Lav": 0,
+      "audits": []
+    },
+    {
+      "tail": "N543EA",
+      "date": "2026-09-27",
+      "name": "Amy Gribble",
+      "location": "CAK",
+      "IC": 1,
+      "EC": 1,
+      "CC": 1,
+      "DSC": 0,
+      "CE": 0,
+      "ED1": 0,
+      "ED2": 0,
+      "ED3": 0,
+      "ED4": 0,
+      "Lav": 1,
       "audits": []
     },
     {

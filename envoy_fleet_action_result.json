@@ -1,45 +1,45 @@
 {
-  "tail": "N99398",
-  "action": "remove_tail",
-  "timestamp": "2026-09-16T12:22:40+00:00",
+  "tail": "N352KR",
+  "action": "add_tail",
+  "timestamp": "2026-09-28T21:18:46+00:00",
   "envoy_debrief": {
     "status": "ok",
-    "message": "removed (191 tails remain)"
+    "message": "added at position 148 of 193"
   },
   "dfw_debrief": {
     "status": "ok",
-    "message": "removed (191 tails remain)"
+    "message": "added at position 148 of 193"
   },
   "closeout": {
     "status": "ok",
-    "message": "removed (191 tails remain)"
+    "message": "added at position 148 of 193"
   },
   "cmh": {
     "status": "ok",
-    "message": "removed (191 tails remain)"
+    "message": "added at position 148 of 193"
   },
   "xna": {
     "status": "ok",
-    "message": "removed (191 tails remain)"
+    "message": "added at position 148 of 193"
   },
   "sgf": {
     "status": "ok",
-    "message": "removed (191 tails remain)"
+    "message": "added at position 148 of 193"
   },
   "lit": {
     "status": "ok",
-    "message": "removed (191 tails remain)"
+    "message": "added at position 148 of 193"
   },
   "dfw_closeout": {
     "status": "ok",
-    "message": "removed (191 tails remain)"
+    "message": "added at position 148 of 192"
   },
   "safetyculture": {
     "status": "ok",
-    "message": "removed (191 remain)"
+    "message": "added at position 148 of 192"
   },
   "sharepoint": {
     "status": "ok",
-    "message": "Status=Disabled sent \u2014 async"
+    "message": "row add sent (Status=Active) \u2014 async"
   }
 }

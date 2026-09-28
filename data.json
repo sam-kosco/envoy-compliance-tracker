@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-28T09:08:02.602854+00:00",
+  "generated": "2026-09-28T10:07:50.645821+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -168,12 +168,12 @@
     },
     {
       "tail": "N215NN",
-      "lastService": "2026-09-22",
+      "lastService": "2026-09-26",
       "lastED1": "2026-09-03",
       "lastED2": "2026-08-11",
-      "lastIHC": "2026-09-22",
-      "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastIHC": "2026-09-26",
+      "lastLocation": "CMH",
+      "lastTech": "Alexander Hamilton",
       "ED1": 5,
       "ED2": 12
     },
@@ -1345,10 +1345,10 @@
     },
     {
       "tail": "N327PG",
-      "lastService": "2026-09-25",
+      "lastService": "2026-09-26",
       "lastED1": "2026-09-22",
       "lastED2": "2026-09-25",
-      "lastIHC": "2026-09-25",
+      "lastIHC": "2026-09-26",
       "lastLocation": "CMH",
       "lastTech": "Alexander Hamilton",
       "ED1": 24,
@@ -2005,13 +2005,13 @@
     },
     {
       "tail": "N787BP",
-      "lastService": "2026-09-18",
-      "lastED1": "2026-07-30",
+      "lastService": "2026-09-26",
+      "lastED1": "2026-09-26",
       "lastED2": "2026-07-30",
-      "lastIHC": "2026-09-18",
-      "lastLocation": "CVG",
-      "lastTech": "Precious Valadez-Roberson",
-      "ED1": -30,
+      "lastIHC": "2026-09-26",
+      "lastLocation": "CMH",
+      "lastTech": "Alex Hamilton",
+      "ED1": 28,
       "ED2": 0
     },
     {
@@ -2561,6 +2561,42 @@
       "location": "LIT",
       "IHC": 1,
       "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N787BP",
+      "date": "2026-09-26",
+      "name": "Alex Hamilton",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N215NN",
+      "date": "2026-09-26",
+      "name": "Alexander Hamilton",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N222NS",
+      "date": "2026-09-26",
+      "name": "Alexander Hamilton",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N327PG",
+      "date": "2026-09-26",
+      "name": "Alexander Hamilton",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
       "ED2": 0
     },
     {

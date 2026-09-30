@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-30T11:07:33.111264+00:00",
+  "generated": "2026-09-30T12:08:15.669287+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -509,12 +509,12 @@
     },
     {
       "tail": "N246NN",
-      "lastService": "2026-09-26",
+      "lastService": "2026-09-29",
       "lastED1": "2026-09-26",
       "lastED2": "2026-09-13",
-      "lastIHC": "2026-09-26",
-      "lastLocation": "CVG",
-      "lastTech": "Bayleah Vogel",
+      "lastIHC": "2026-09-29",
+      "lastLocation": "DFW",
+      "lastTech": "NADIA  JOHNSON",
       "ED1": 26,
       "ED2": 43
     },
@@ -971,12 +971,12 @@
     },
     {
       "tail": "N288NN",
-      "lastService": "2026-09-25",
+      "lastService": "2026-09-29",
       "lastED1": "2026-09-21",
       "lastED2": "2026-08-19",
-      "lastIHC": "2026-09-25",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
+      "lastIHC": "2026-09-29",
+      "lastLocation": "DFW",
+      "lastTech": "NADIA  JOHNSON",
       "ED1": 21,
       "ED2": 18
     },
@@ -2104,13 +2104,13 @@
     },
     {
       "tail": "N792JB",
-      "lastService": "2026-09-23",
-      "lastED1": "2026-08-28",
+      "lastService": "2026-09-29",
+      "lastED1": "2026-09-29",
       "lastED2": "2026-08-28",
-      "lastIHC": "2026-09-23",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
-      "ED1": -3,
+      "lastIHC": "2026-09-29",
+      "lastLocation": "DFW",
+      "lastTech": "NADIA  JOHNSON",
+      "ED1": 29,
       "ED2": 27
     },
     {
@@ -2468,6 +2468,33 @@
       "location": "DFW",
       "IHC": 1,
       "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N792JB",
+      "date": "2026-09-29",
+      "name": "NADIA  JOHNSON",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N246NN",
+      "date": "2026-09-29",
+      "name": "NADIA  JOHNSON",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N288NN",
+      "date": "2026-09-29",
+      "name": "NADIA  JOHNSON",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
       "ED2": 0
     },
     {

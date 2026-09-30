@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-30T09:07:27.304010+00:00",
+  "generated": "2026-09-30T10:07:57.298423+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -751,12 +751,12 @@
     },
     {
       "tail": "N268NN",
-      "lastService": "2026-09-24",
+      "lastService": "2026-09-29",
       "lastED1": "2026-09-24",
       "lastED2": "2026-06-25",
-      "lastIHC": "2026-09-24",
-      "lastLocation": "LIT",
-      "lastTech": "Riley Pinterich",
+      "lastIHC": "2026-09-29",
+      "lastLocation": "DFW",
+      "lastTech": "NADIA  JOHNSON",
       "ED1": 24,
       "ED2": -37
     },
@@ -949,13 +949,13 @@
     },
     {
       "tail": "N286NN",
-      "lastService": "2026-09-27",
-      "lastED1": "2026-08-28",
+      "lastService": "2026-09-29",
+      "lastED1": "2026-09-29",
       "lastED2": "2026-08-25",
-      "lastIHC": "2026-09-27",
-      "lastLocation": "LIT",
-      "lastTech": "Damian Utley",
-      "ED1": -3,
+      "lastIHC": "2026-09-29",
+      "lastLocation": "DFW",
+      "lastTech": "NADIA  JOHNSON",
+      "ED1": 29,
       "ED2": 24
     },
     {
@@ -2005,13 +2005,13 @@
     },
     {
       "tail": "N784DP",
-      "lastService": "2026-09-26",
-      "lastED1": "2026-07-04",
+      "lastService": "2026-09-29",
+      "lastED1": "2026-09-29",
       "lastED2": "2026-06-04",
-      "lastIHC": "2026-09-26",
+      "lastIHC": "2026-09-29",
       "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
-      "ED1": -58,
+      "lastTech": "NADIA  JOHNSON",
+      "ED1": 29,
       "ED2": -58
     },
     {
@@ -2423,6 +2423,33 @@
       "location": "DFW",
       "IHC": 1,
       "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N268NN",
+      "date": "2026-09-29",
+      "name": "NADIA  JOHNSON",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N286NN",
+      "date": "2026-09-29",
+      "name": "NADIA  JOHNSON",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N784DP",
+      "date": "2026-09-29",
+      "name": "NADIA  JOHNSON",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 1,
       "ED2": 0
     },
     {

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-30T08:38:05.136456+00:00",
+  "generated": "2026-09-30T16:38:04.566159+00:00",
   "cycles": {
     "ED1": 60,
     "ED2": 60,
@@ -764,12 +764,12 @@
     },
     {
       "tail": "578",
-      "lastService": "2028-09-27",
+      "lastService": "2026-09-27",
       "lastED1": "2026-07-13",
       "lastED2": "2026-07-13",
       "lastCE": "2026-06-07",
       "lastIHC": "2026-09-21",
-      "lastRON": "2028-09-27",
+      "lastRON": "2026-09-27",
       "lastLocation": "STL",
       "lastTech": "Ursula Moffitt",
       "ED1": -19,
@@ -820,17 +820,6 @@
     }
   ],
   "debriefs": [
-    {
-      "tail": "578",
-      "date": "2028-09-27",
-      "name": "Ursula Moffitt",
-      "location": "STL",
-      "ED1": 0,
-      "ED2": 0,
-      "CE": 0,
-      "IHC": 0,
-      "RON": 1
-    },
     {
       "tail": "534",
       "date": "2026-09-29",
@@ -921,6 +910,17 @@
     },
     {
       "tail": "550",
+      "date": "2026-09-27",
+      "name": "Ursula Moffitt",
+      "location": "STL",
+      "ED1": 0,
+      "ED2": 0,
+      "CE": 0,
+      "IHC": 0,
+      "RON": 1
+    },
+    {
+      "tail": "578",
       "date": "2026-09-27",
       "name": "Ursula Moffitt",
       "location": "STL",

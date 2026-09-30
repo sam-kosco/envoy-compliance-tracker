@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-30T12:08:15.669287+00:00",
+  "generated": "2026-09-30T18:07:23.490353+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -389,12 +389,12 @@
     {
       "tail": "N235NN",
       "lastService": "2026-09-28",
-      "lastED1": "2026-08-29",
+      "lastED1": "2026-09-28",
       "lastED2": "2026-07-28",
       "lastIHC": "2026-09-28",
       "lastLocation": "DFW",
       "lastTech": "NADIA  JOHNSON",
-      "ED1": -2,
+      "ED1": 28,
       "ED2": -4
     },
     {
@@ -1358,12 +1358,12 @@
       "tail": "N327PJ",
       "lastService": "2026-09-29",
       "lastED1": "2025-04-09",
-      "lastED2": "2026-09-25",
+      "lastED2": "2026-08-25",
       "lastIHC": "2026-09-29",
       "lastLocation": "XNA",
       "lastTech": "Ashley Burke",
       "ED1": -509,
-      "ED2": 55
+      "ED2": 24
     },
     {
       "tail": "N328DS",
@@ -2372,15 +2372,6 @@
       "ED2": 0
     },
     {
-      "tail": "N275NN",
-      "date": "2026-09-29",
-      "name": "NADIA  JOHNSON",
-      "location": "DFW",
-      "IHC": 1,
-      "ED1": 0,
-      "ED2": 0
-    },
-    {
       "tail": "N249NN",
       "date": "2026-09-29",
       "name": "NADIA  JOHNSON",
@@ -2800,7 +2791,7 @@
       "name": "NADIA  JOHNSON",
       "location": "DFW",
       "IHC": 1,
-      "ED1": 0,
+      "ED1": 1,
       "ED2": 0
     },
     {
@@ -3711,15 +3702,6 @@
       "IHC": 1,
       "ED1": 0,
       "ED2": 0
-    },
-    {
-      "tail": "N327PJ",
-      "date": "2026-09-25",
-      "name": "Alex Hamilton",
-      "location": "CMH",
-      "IHC": 1,
-      "ED1": 0,
-      "ED2": 1
     },
     {
       "tail": "N327PG",

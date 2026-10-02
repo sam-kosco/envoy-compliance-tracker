@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-02T06:07:51.272589+00:00",
+  "generated": "2026-10-02T08:07:56.140122+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -641,12 +641,12 @@
     },
     {
       "tail": "N258NN",
-      "lastService": "2026-09-30",
+      "lastService": "2026-10-01",
       "lastED1": "2026-09-10",
       "lastED2": "2026-09-14",
-      "lastIHC": "2026-09-30",
+      "lastIHC": "2026-10-01",
       "lastLocation": "CVG",
-      "lastTech": "Precious Roberson",
+      "lastTech": "Bayleah Vogel",
       "ED1": 8,
       "ED2": 42
     },
@@ -883,13 +883,13 @@
     },
     {
       "tail": "N280NN",
-      "lastService": "2026-09-28",
-      "lastED1": "2026-09-01",
+      "lastService": "2026-10-01",
+      "lastED1": "2026-10-01",
       "lastED2": "2026-09-02",
-      "lastIHC": "2026-09-28",
+      "lastIHC": "2026-10-01",
       "lastLocation": "CVG",
-      "lastTech": "Precious Roberson",
-      "ED1": -1,
+      "lastTech": "Bayleah Vogel",
+      "ED1": 29,
       "ED2": 30
     },
     {
@@ -1103,12 +1103,12 @@
     },
     {
       "tail": "N305CL",
-      "lastService": "2026-09-26",
+      "lastService": "2026-10-01",
       "lastED1": "2026-09-13",
       "lastED2": "2026-09-20",
-      "lastIHC": "2026-09-26",
-      "lastLocation": "DFW",
-      "lastTech": "NADIA  JOHNSON",
+      "lastIHC": "2026-10-01",
+      "lastLocation": "CVG",
+      "lastTech": "Bayleah Vogel",
       "ED1": 11,
       "ED2": 48
     },
@@ -1796,14 +1796,14 @@
     },
     {
       "tail": "N761RW",
-      "lastService": "2026-09-28",
-      "lastED1": "2026-08-16",
-      "lastED2": "2026-07-15",
-      "lastIHC": "2026-09-28",
-      "lastLocation": "DFW",
-      "lastTech": "NADIA  JOHNSON",
-      "ED1": -17,
-      "ED2": -19
+      "lastService": "2026-10-01",
+      "lastED1": "2026-10-01",
+      "lastED2": "2026-10-01",
+      "lastIHC": "2026-10-01",
+      "lastLocation": "CVG",
+      "lastTech": "Bayleah Vogel",
+      "ED1": 29,
+      "ED2": 59
     },
     {
       "tail": "N762DT",
@@ -2171,6 +2171,42 @@
       "location": "CMH",
       "IHC": 1,
       "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N258NN",
+      "date": "2026-10-01",
+      "name": "Bayleah Vogel",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N305CL",
+      "date": "2026-10-01",
+      "name": "Bayleah Vogel",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N761RW",
+      "date": "2026-10-01",
+      "name": "Bayleah Vogel",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 1
+    },
+    {
+      "tail": "N280NN",
+      "date": "2026-10-01",
+      "name": "Bayleah Vogel",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 1,
       "ED2": 0
     },
     {

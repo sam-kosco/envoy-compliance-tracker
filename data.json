@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-04T07:08:06.311892+00:00",
+  "generated": "2026-10-04T08:07:34.093158+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -520,13 +520,13 @@
     },
     {
       "tail": "N247NN",
-      "lastService": "2026-09-25",
-      "lastED1": "2026-09-08",
+      "lastService": "2026-10-03",
+      "lastED1": "2026-10-03",
       "lastED2": "2026-09-08",
-      "lastIHC": "2026-09-25",
-      "lastLocation": "LIT",
-      "lastTech": "Riley Pinterich",
-      "ED1": 4,
+      "lastIHC": "2026-10-03",
+      "lastLocation": "XNA",
+      "lastTech": "Casey Henry",
+      "ED1": 29,
       "ED2": 34
     },
     {
@@ -1037,23 +1037,23 @@
     },
     {
       "tail": "N298FR",
-      "lastService": "2026-10-01",
+      "lastService": "2026-10-03",
       "lastED1": "2026-09-22",
       "lastED2": "2026-09-22",
-      "lastIHC": "2026-10-01",
-      "lastLocation": "CMH",
-      "lastTech": "Tanaija Price",
+      "lastIHC": "2026-10-03",
+      "lastLocation": "XNA",
+      "lastTech": "Ashley Burke",
       "ED1": 18,
       "ED2": 48
     },
     {
       "tail": "N299JJ",
-      "lastService": "2026-09-30",
+      "lastService": "2026-10-03",
       "lastED1": "2026-09-23",
       "lastED2": "2026-09-23",
-      "lastIHC": "2026-09-30",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
+      "lastIHC": "2026-10-03",
+      "lastLocation": "XNA",
+      "lastTech": "Ashley Burke",
       "ED1": 19,
       "ED2": 49
     },
@@ -1158,12 +1158,12 @@
     },
     {
       "tail": "N310JZ",
-      "lastService": "2026-09-26",
+      "lastService": "2026-10-03",
       "lastED1": "2026-09-23",
       "lastED2": "2026-08-27",
-      "lastIHC": "2026-09-26",
+      "lastIHC": "2026-10-03",
       "lastLocation": "XNA",
-      "lastTech": "Casey Henry",
+      "lastTech": "Ashley Burke",
       "ED1": 19,
       "ED2": 22
     },
@@ -1345,12 +1345,12 @@
     },
     {
       "tail": "N327PG",
-      "lastService": "2026-09-26",
+      "lastService": "2026-10-03",
       "lastED1": "2026-09-22",
       "lastED2": "2026-09-25",
-      "lastIHC": "2026-09-26",
-      "lastLocation": "CMH",
-      "lastTech": "Alexander Hamilton",
+      "lastIHC": "2026-10-03",
+      "lastLocation": "XNA",
+      "lastTech": "Ashley Burke",
       "ED1": 18,
       "ED2": 51
     },
@@ -1389,14 +1389,14 @@
     },
     {
       "tail": "N330JT",
-      "lastService": "2026-09-28",
+      "lastService": "2026-10-03",
       "lastED1": "2026-09-14",
-      "lastED2": "2026-07-17",
-      "lastIHC": "2026-09-28",
-      "lastLocation": "DFW",
-      "lastTech": "NADIA  JOHNSON",
+      "lastED2": "2026-10-03",
+      "lastIHC": "2026-10-03",
+      "lastLocation": "XNA",
+      "lastTech": "Ashley Burke",
       "ED1": 10,
-      "ED2": -19
+      "ED2": 59
     },
     {
       "tail": "N331SC",
@@ -1422,12 +1422,12 @@
     },
     {
       "tail": "N333RQ",
-      "lastService": "2026-10-01",
+      "lastService": "2026-10-03",
       "lastED1": "2026-09-25",
       "lastED2": "2026-09-23",
-      "lastIHC": "2026-10-01",
-      "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastIHC": "2026-10-03",
+      "lastLocation": "XNA",
+      "lastTech": "Ashley Burke",
       "ED1": 21,
       "ED2": 49
     },
@@ -2137,6 +2137,69 @@
     }
   ],
   "debriefs": [
+    {
+      "tail": "N299JJ",
+      "date": "2026-10-03",
+      "name": "Ashley Burke",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N330JT",
+      "date": "2026-10-03",
+      "name": "Ashley Burke",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 1
+    },
+    {
+      "tail": "N247NN",
+      "date": "2026-10-03",
+      "name": "Casey Henry",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N327PG",
+      "date": "2026-10-03",
+      "name": "Ashley Burke",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N298FR",
+      "date": "2026-10-03",
+      "name": "Ashley Burke",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N333RQ",
+      "date": "2026-10-03",
+      "name": "Ashley Burke",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N310JZ",
+      "date": "2026-10-03",
+      "name": "Ashley Burke",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
     {
       "tail": "N216NN",
       "date": "2026-10-03",

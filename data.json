@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-05T13:08:07.819780+00:00",
+  "generated": "2026-10-05T19:07:33.255384+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -432,10 +432,10 @@
     },
     {
       "tail": "N239NN",
-      "lastService": "2026-10-05",
+      "lastService": "2026-10-04",
       "lastED1": "2026-09-26",
       "lastED2": "2026-09-13",
-      "lastIHC": "2026-10-05",
+      "lastIHC": "2026-10-04",
       "lastLocation": "CVG",
       "lastTech": "Bayleah Vogel",
       "ED1": 21,
@@ -2138,15 +2138,6 @@
   ],
   "debriefs": [
     {
-      "tail": "N239NN",
-      "date": "2026-10-05",
-      "name": "Bayleah Vogel",
-      "location": "CVG",
-      "IHC": 1,
-      "ED1": 0,
-      "ED2": 0
-    },
-    {
       "tail": "N339HG",
       "date": "2026-10-04",
       "name": "Tanaija Price",
@@ -2225,6 +2216,15 @@
       "location": "LIT",
       "IHC": 1,
       "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N239NN",
+      "date": "2026-10-04",
+      "name": "Bayleah Vogel",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
       "ED2": 0
     },
     {

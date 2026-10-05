@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-05T09:07:44.729283+00:00",
+  "generated": "2026-10-05T10:08:16.417191+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -1180,12 +1180,12 @@
     },
     {
       "tail": "N312BT",
-      "lastService": "2026-10-02",
+      "lastService": "2026-10-04",
       "lastED1": "2026-09-12",
       "lastED2": "2026-09-18",
-      "lastIHC": "2026-10-02",
-      "lastLocation": "LIT",
-      "lastTech": "Damian Utley",
+      "lastIHC": "2026-10-04",
+      "lastLocation": "DFW",
+      "lastTech": "Aunyae Morrison",
       "ED1": 7,
       "ED2": 43
     },
@@ -1400,12 +1400,12 @@
     },
     {
       "tail": "N331SC",
-      "lastService": "2026-09-30",
+      "lastService": "2026-10-04",
       "lastED1": "2026-09-26",
       "lastED2": "2026-09-26",
-      "lastIHC": "2026-09-30",
-      "lastLocation": "CVG",
-      "lastTech": "Precious Roberson",
+      "lastIHC": "2026-10-04",
+      "lastLocation": "DFW",
+      "lastTech": "Aunyae Morrison",
       "ED1": 21,
       "ED2": 51
     },
@@ -1807,10 +1807,10 @@
     },
     {
       "tail": "N762DT",
-      "lastService": "2026-09-22",
+      "lastService": "2026-10-04",
       "lastED1": "2026-07-18",
       "lastED2": "2026-04-11",
-      "lastIHC": "2026-09-22",
+      "lastIHC": "2026-10-04",
       "lastLocation": "DFW",
       "lastTech": "Aunyae Morrison",
       "ED1": -49,
@@ -2409,6 +2409,33 @@
     },
     {
       "tail": "N284JN",
+      "date": "2026-10-04",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N331SC",
+      "date": "2026-10-04",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N312BT",
+      "date": "2026-10-04",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N762DT",
       "date": "2026-10-04",
       "name": "Aunyae Morrison",
       "location": "DFW",

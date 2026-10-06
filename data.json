@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-06T04:07:22.868033+00:00",
+  "generated": "2026-10-06T05:07:52.189925+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -212,12 +212,12 @@
     },
     {
       "tail": "N219NN",
-      "lastService": "2026-09-24",
+      "lastService": "2026-10-05",
       "lastED1": "2026-09-11",
       "lastED2": "2026-09-11",
-      "lastIHC": "2026-09-24",
-      "lastLocation": "XNA",
-      "lastTech": "Casey Henry",
+      "lastIHC": "2026-10-05",
+      "lastLocation": "DFW",
+      "lastTech": "Aunyae Morrison",
       "ED1": 5,
       "ED2": 35
     },
@@ -2137,6 +2137,15 @@
     }
   ],
   "debriefs": [
+    {
+      "tail": "N219NN",
+      "date": "2026-10-05",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
     {
       "tail": "N339HG",
       "date": "2026-10-04",

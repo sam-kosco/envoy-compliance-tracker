@@ -12,67 +12,41 @@ jobs:
         run: |
           python3 - << 'PYEOF'
           import os, time, requests
-          from datetime import datetime, timedelta, timezone
+          from datetime import datetime
           from zoneinfo import ZoneInfo
-
           KEY = os.environ["AERO_API_KEY"]
           H = {"x-apikey": KEY}
           BASE = "https://aeroapi.flightaware.com/aeroapi"
           CT = ZoneInfo("America/Chicago")
-
-          def get(url, params=None):
-              for attempt in range(6):
-                  r = requests.get(url, headers=H, params=params, timeout=30)
-                  if r.status_code == 429:
-                      time.sleep(65); continue
-                  if r.status_code >= 500:
-                      time.sleep(30); continue
-                  return r
-              return r
-
-          def arrivals(airline, start, end):
-              out, url = [], f"{BASE}/airports/KDFW/flights/arrivals"
-              params = {"airline": airline, "start": start, "end": end, "max_pages": 1}
-              while True:
-                  r = get(url, params)
-                  if r.status_code != 200:
-                      print(f"  !! {airline} {start}..{end}: HTTP {r.status_code} {r.text[:200]}")
-                      return out, r.status_code
-                  j = r.json()
-                  out += j.get("arrivals", [])
-                  nxt = j.get("links") or {}
-                  if nxt.get("next"):
-                      url, params = BASE + nxt["next"], None
-                      time.sleep(6.5)
-                  else:
-                      return out, 200
-
-          # One day at a time (UTC-padded) so a history-window refusal only
-          # loses that day, not the whole range.
-          days = [datetime(2026, 9, 20) + timedelta(days=i) for i in range(16)]
-          for airline in ("DLH", "EVA"):
-              print(f"\n===== {airline} arrivals at KDFW =====")
-              for d in days:
-                  if airline == "EVA" and d < datetime(2026, 10, 1):
-                      continue
-                  start = d.strftime("%Y-%m-%dT00:00:00Z")
-                  end = (d + timedelta(days=1)).strftime("%Y-%m-%dT12:00:00Z")
-                  fl, code = arrivals(airline, start, end)
-                  seen = set()
-                  for f in fl:
-                      ts = f.get("actual_in") or f.get("estimated_in") or f.get("scheduled_in")
-                      if not ts:
-                          continue
-                      local = datetime.fromisoformat(ts.replace("Z", "+00:00")).astimezone(CT)
-                      if local.date() != d.date():
-                          continue
-                      key = (f.get("ident"), f.get("registration"))
-                      if key in seen:
-                          continue
-                      seen.add(key)
-                      print(f"  {local.strftime('%b %d %a')}  {f.get('ident'):8} "
-                            f"{f.get('aircraft_type') or '?':6} reg={f.get('registration') or '?'} "
-                            f"from {(f.get('origin') or {}).get('code','?')} "
-                            f"in {local.strftime('%H:%M %Z')}")
-                  time.sleep(6.5)
+          # 1) history endpoint probe for the pre-Sep-27 Lufthansa dates
+          r = requests.get(f"{BASE}/history/flights/DLH438",
+                           params={"start": "2026-09-19", "end": "2026-09-27"},
+                           headers=H, timeout=30)
+          print("history DLH438:", r.status_code)
+          if r.status_code == 200:
+              for f in r.json().get("flights", []):
+                  ts = f.get("actual_in") or f.get("scheduled_in")
+                  loc = (datetime.fromisoformat(ts.replace("Z","+00:00")).astimezone(CT)
+                         .strftime("%b %d %a %H:%M") if ts else "?")
+                  print(f"  {loc}  reg={f.get('registration')} type={f.get('aircraft_type')} "
+                        f"dest={(f.get('destination') or {}).get('code')} "
+                        f"cancelled={f.get('cancelled')}")
+          else:
+              print("  body:", r.text[:300])
+          time.sleep(7)
+          # 2) Sep 30 anomaly: all DLH438 legs Sep 29 - Oct 1 incl. cancellations
+          r = requests.get(f"{BASE}/flights/DLH438",
+                           params={"start": "2026-09-29", "end": "2026-10-02"},
+                           headers=H, timeout=30)
+          print("flights DLH438 Sep29-Oct1:", r.status_code)
+          if r.status_code == 200:
+              for f in r.json().get("flights", []):
+                  ts = f.get("scheduled_out") or f.get("scheduled_off")
+                  loc = (datetime.fromisoformat(ts.replace("Z","+00:00")).astimezone(CT)
+                         .strftime("%b %d %H:%M") if ts else "?")
+                  print(f"  sched_out(CT)={loc} reg={f.get('registration')} "
+                        f"dest={(f.get('destination') or {}).get('code')} "
+                        f"cancelled={f.get('cancelled')} diverted={f.get('diverted')}")
+          else:
+              print("  body:", r.text[:300])
           PYEOF

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-08T15:07:57.313824+00:00",
+  "generated": "2026-10-08T18:07:46.529333+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -531,14 +531,14 @@
     },
     {
       "tail": "N248NN",
-      "lastService": "2026-10-01",
+      "lastService": "2026-10-07",
       "lastED1": "2026-09-25",
-      "lastED2": "2026-10-01",
-      "lastIHC": "2026-10-01",
+      "lastED2": "2026-10-07",
+      "lastIHC": "2026-10-07",
       "lastLocation": "XNA",
       "lastTech": "Casey Henry",
       "ED1": 17,
-      "ED2": 53
+      "ED2": 59
     },
     {
       "tail": "N249NN",
@@ -546,7 +546,7 @@
       "lastED1": "2026-10-07",
       "lastED2": "2026-09-09",
       "lastIHC": "2026-10-07",
-      "lastLocation": "XNA",
+      "lastLocation": "LIT",
       "lastTech": "Shaun Neil",
       "ED1": 29,
       "ED2": 31
@@ -2267,7 +2267,7 @@
       "tail": "N249NN",
       "date": "2026-10-07",
       "name": "Shaun Neil",
-      "location": "XNA",
+      "location": "LIT",
       "IHC": 1,
       "ED1": 1,
       "ED2": 0
@@ -2343,6 +2343,15 @@
       "IHC": 1,
       "ED1": 0,
       "ED2": 0
+    },
+    {
+      "tail": "N248NN",
+      "date": "2026-10-07",
+      "name": "Casey Henry",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 1
     },
     {
       "tail": "N288NN",
@@ -4404,15 +4413,6 @@
       "IHC": 1,
       "ED1": 0,
       "ED2": 0
-    },
-    {
-      "tail": "N248NN",
-      "date": "2026-10-01",
-      "name": "Casey Henry",
-      "location": "XNA",
-      "IHC": 1,
-      "ED1": 0,
-      "ED2": 1
     },
     {
       "tail": "N341MB",

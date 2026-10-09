@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-09T06:07:29.868489+00:00",
+  "generated": "2026-10-09T07:08:08.156736+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -69,12 +69,12 @@
     },
     {
       "tail": "N206NN",
-      "lastService": "2026-10-05",
+      "lastService": "2026-10-08",
       "lastED1": "2026-09-21",
       "lastED2": "2026-07-19",
-      "lastIHC": "2026-10-05",
+      "lastIHC": "2026-10-08",
       "lastLocation": "CMH",
-      "lastTech": "Tanaija Price",
+      "lastTech": "Darian Eiland",
       "ED1": 12,
       "ED2": -22
     },
@@ -124,12 +124,12 @@
     },
     {
       "tail": "N211NN",
-      "lastService": "2026-10-01",
+      "lastService": "2026-10-08",
       "lastED1": "2026-09-28",
       "lastED2": "2026-09-04",
-      "lastIHC": "2026-10-01",
-      "lastLocation": "LIT",
-      "lastTech": "Damian Utley",
+      "lastIHC": "2026-10-08",
+      "lastLocation": "CMH",
+      "lastTech": "Darian Eiland",
       "ED1": 19,
       "ED2": 25
     },
@@ -1081,12 +1081,12 @@
     },
     {
       "tail": "N303DD",
-      "lastService": "2026-10-01",
+      "lastService": "2026-10-08",
       "lastED1": "2026-08-19",
       "lastED2": "2026-08-23",
-      "lastIHC": "2026-10-01",
-      "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastIHC": "2026-10-08",
+      "lastLocation": "CMH",
+      "lastTech": "Darian Eiland",
       "ED1": -21,
       "ED2": 13
     },
@@ -1444,12 +1444,12 @@
     },
     {
       "tail": "N335JS",
-      "lastService": "2026-09-30",
+      "lastService": "2026-10-08",
       "lastED1": "2026-09-23",
       "lastED2": "2026-09-29",
-      "lastIHC": "2026-09-30",
-      "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastIHC": "2026-10-08",
+      "lastLocation": "CMH",
+      "lastTech": "Darian Eiland",
       "ED1": 14,
       "ED2": 50
     },
@@ -1565,12 +1565,12 @@
     },
     {
       "tail": "N347JT",
-      "lastService": "2026-10-05",
+      "lastService": "2026-10-08",
       "lastED1": "2026-09-18",
       "lastED2": "2026-08-17",
-      "lastIHC": "2026-10-05",
-      "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastIHC": "2026-10-08",
+      "lastLocation": "CMH",
+      "lastTech": "Darian Eiland",
       "ED1": 9,
       "ED2": 7
     },
@@ -2049,13 +2049,13 @@
     },
     {
       "tail": "N788CJ",
-      "lastService": "2026-09-28",
-      "lastED1": "2026-09-07",
+      "lastService": "2026-10-08",
+      "lastED1": "2026-10-08",
       "lastED2": "2026-09-17",
-      "lastIHC": "2026-09-28",
-      "lastLocation": "CVG",
-      "lastTech": "Precious Roberson",
-      "ED1": -2,
+      "lastIHC": "2026-10-08",
+      "lastLocation": "CMH",
+      "lastTech": "Darian Eiland",
+      "ED1": 29,
       "ED2": 38
     },
     {
@@ -2144,6 +2144,60 @@
       "location": "CVG",
       "IHC": 1,
       "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N206NN",
+      "date": "2026-10-08",
+      "name": "Darian Eiland",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N303DD",
+      "date": "2026-10-08",
+      "name": "Darian Eiland",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N788CJ",
+      "date": "2026-10-08",
+      "name": "Darian Eiland",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N335JS",
+      "date": "2026-10-08",
+      "name": "Darian Eiland",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N211NN",
+      "date": "2026-10-08",
+      "name": "Darian Eiland",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N347JT",
+      "date": "2026-10-08",
+      "name": "Darian Eiland",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
       "ED2": 0
     },
     {

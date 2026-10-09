@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-09T08:37:49.623138+00:00",
+  "generated": "2026-10-09T20:37:15.844373+00:00",
   "cycles": {
     "ED1": 60,
     "ED2": 60,
@@ -79,15 +79,15 @@
     {
       "tail": "507",
       "lastService": "2026-10-03",
-      "lastED1": "2026-03-29",
-      "lastED2": "2026-03-29",
+      "lastED1": "2026-10-03",
+      "lastED2": "2026-10-03",
       "lastCE": "2026-10-01",
       "lastIHC": "2026-09-25",
       "lastRON": "2026-10-03",
       "lastLocation": "STL",
       "lastTech": "Ursula Moffitt",
-      "ED1": -134,
-      "ED2": -134,
+      "ED1": 54,
+      "ED2": 54,
       "CE": 52
     },
     {
@@ -1204,6 +1204,28 @@
       "CE": 0,
       "IHC": 1,
       "RON": 0
+    },
+    {
+      "tail": "536",
+      "date": "2026-10-03",
+      "name": "Ursula Moffitt",
+      "location": "STL",
+      "ED1": 1,
+      "ED2": 1,
+      "CE": 1,
+      "IHC": 0,
+      "RON": 1
+    },
+    {
+      "tail": "507",
+      "date": "2026-10-03",
+      "name": "Ursula Moffitt",
+      "location": "STL",
+      "ED1": 1,
+      "ED2": 1,
+      "CE": 0,
+      "IHC": 0,
+      "RON": 1
     },
     {
       "tail": "553",

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-10T10:08:00.413794+00:00",
+  "generated": "2026-10-10T11:07:43.115608+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -1180,10 +1180,10 @@
     },
     {
       "tail": "N312BT",
-      "lastService": "2026-10-04",
+      "lastService": "2026-10-09",
       "lastED1": "2026-09-12",
       "lastED2": "2026-09-18",
-      "lastIHC": "2026-10-04",
+      "lastIHC": "2026-10-09",
       "lastLocation": "DFW",
       "lastTech": "Aunyae Morrison",
       "ED1": 2,
@@ -1334,12 +1334,12 @@
     },
     {
       "tail": "N326CJ",
-      "lastService": "2026-10-05",
+      "lastService": "2026-10-09",
       "lastED1": "2026-10-01",
       "lastED2": "2026-09-08",
-      "lastIHC": "2026-10-05",
-      "lastLocation": "XNA",
-      "lastTech": "Ashley Burke",
+      "lastIHC": "2026-10-09",
+      "lastLocation": "DFW",
+      "lastTech": "Aunyae Morrison",
       "ED1": 21,
       "ED2": 28
     },
@@ -1653,10 +1653,10 @@
     },
     {
       "tail": "N739AE",
-      "lastService": "2026-10-07",
+      "lastService": "2026-10-09",
       "lastED1": "2026-09-14",
       "lastED2": "2026-08-18",
-      "lastIHC": "2026-10-07",
+      "lastIHC": "2026-10-09",
       "lastLocation": "DFW",
       "lastTech": "Aunyae Morrison",
       "ED1": 4,
@@ -1796,12 +1796,12 @@
     },
     {
       "tail": "N761RW",
-      "lastService": "2026-10-01",
+      "lastService": "2026-10-09",
       "lastED1": "2026-10-01",
       "lastED2": "2026-10-01",
-      "lastIHC": "2026-10-01",
-      "lastLocation": "CVG",
-      "lastTech": "Bayleah Vogel",
+      "lastIHC": "2026-10-09",
+      "lastLocation": "DFW",
+      "lastTech": "Aunyae Morrison",
       "ED1": 21,
       "ED2": 51
     },
@@ -2436,6 +2436,42 @@
     },
     {
       "tail": "N744DB",
+      "date": "2026-10-09",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N761RW",
+      "date": "2026-10-09",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N739AE",
+      "date": "2026-10-09",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N326CJ",
+      "date": "2026-10-09",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N312BT",
       "date": "2026-10-09",
       "name": "Aunyae Morrison",
       "location": "DFW",

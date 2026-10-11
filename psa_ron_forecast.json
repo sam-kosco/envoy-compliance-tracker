@@ -1,14 +1,14 @@
 {
-  "generated": "2026-10-10T20:07:24Z",
+  "generated": "2026-10-11T20:07:54Z",
   "program": "PSA",
-  "night_of": "2026-10-10",
+  "night_of": "2026-10-11",
   "tails": [
     {
       "tail": "N500AE",
-      "overnight": "CAK",
-      "confidence": "last_known",
-      "last_arrival": "2026-10-08T02:22:00Z",
-      "flights_seen": 0
+      "overnight": "DCA",
+      "confidence": "scheduled",
+      "last_arrival": "2026-10-12T00:47:00Z",
+      "flights_seen": 5
     },
     {
       "tail": "N501BG",
@@ -19,10 +19,10 @@
     },
     {
       "tail": "N502AE",
-      "overnight": "CLT",
+      "overnight": "SAV",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T00:34:00Z",
-      "flights_seen": 5
+      "last_arrival": "2026-10-12T01:56:00Z",
+      "flights_seen": 3
     },
     {
       "tail": "N503AE",
@@ -33,94 +33,94 @@
     },
     {
       "tail": "N506AE",
-      "overnight": "DAY",
+      "overnight": "MAF",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-10T23:06:00Z",
+      "last_arrival": "2026-10-12T02:34:00Z",
       "flights_seen": 6
     },
     {
       "tail": "N508AE",
       "overnight": "ALB",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T01:32:00Z",
-      "flights_seen": 5
-    },
-    {
-      "tail": "N509AE",
-      "overnight": "CAK",
-      "confidence": "scheduled",
-      "last_arrival": "2026-10-11T00:26:00Z",
+      "last_arrival": "2026-10-12T03:59:00Z",
       "flights_seen": 6
     },
     {
-      "tail": "N510AE",
-      "overnight": "ECP",
+      "tail": "N509AE",
+      "overnight": "GSP",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T02:17:00Z",
+      "last_arrival": "2026-10-12T01:00:00Z",
+      "flights_seen": 5
+    },
+    {
+      "tail": "N510AE",
+      "overnight": "DTW",
+      "confidence": "scheduled",
+      "last_arrival": "2026-10-12T02:38:00Z",
       "flights_seen": 5
     },
     {
       "tail": "N511AE",
-      "overnight": "MCI",
+      "overnight": "MSP",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T01:59:00Z",
-      "flights_seen": 5
+      "last_arrival": "2026-10-12T04:07:00Z",
+      "flights_seen": 4
     },
     {
       "tail": "N512AE",
-      "overnight": "TLH",
+      "overnight": "DCA",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T01:29:00Z",
-      "flights_seen": 5
+      "last_arrival": "2026-10-12T02:28:00Z",
+      "flights_seen": 7
     },
     {
       "tail": "N513AE",
-      "overnight": "BTR",
-      "confidence": "last_known",
-      "last_arrival": "2026-10-10T04:06:00Z",
-      "flights_seen": 0
+      "overnight": "DCA",
+      "confidence": "scheduled",
+      "last_arrival": "2026-10-12T00:59:00Z",
+      "flights_seen": 5
     },
     {
       "tail": "N514AE",
-      "overnight": "AGS",
-      "confidence": "last_known",
-      "last_arrival": "2026-10-10T01:42:00Z",
-      "flights_seen": 0
+      "overnight": "SAV",
+      "confidence": "scheduled",
+      "last_arrival": "2026-10-12T02:04:00Z",
+      "flights_seen": 4
     },
     {
       "tail": "N515AE",
-      "overnight": "BHM",
+      "overnight": "CAK",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T03:19:00Z",
+      "last_arrival": "2026-10-12T01:04:00Z",
       "flights_seen": 6
     },
     {
       "tail": "N516AE",
-      "overnight": "YUL",
+      "overnight": "DTW",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T01:30:00Z",
-      "flights_seen": 3
+      "last_arrival": "2026-10-12T03:54:00Z",
+      "flights_seen": 6
     },
     {
       "tail": "N517AE",
-      "overnight": "DSM",
+      "overnight": "MEM",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T03:43:00Z",
+      "last_arrival": "2026-10-12T02:27:00Z",
       "flights_seen": 6
     },
     {
       "tail": "N518AE",
-      "overnight": "DCA",
+      "overnight": "IAH",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-10T22:59:00Z",
-      "flights_seen": 5
+      "last_arrival": "2026-10-12T03:18:00Z",
+      "flights_seen": 6
     },
     {
       "tail": "N519AE",
-      "overnight": "BHM",
-      "confidence": "in_air",
-      "last_arrival": "2026-10-10T21:34:00Z",
-      "flights_seen": 4
+      "overnight": "DSM",
+      "confidence": "scheduled",
+      "last_arrival": "2026-10-12T03:43:00Z",
+      "flights_seen": 6
     },
     {
       "tail": "N520DC",
@@ -133,196 +133,196 @@
       "tail": "N521AE",
       "overnight": "ROC",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T01:32:00Z",
+      "last_arrival": "2026-10-12T03:42:00Z",
       "flights_seen": 6
     },
     {
       "tail": "N522AE",
-      "overnight": "DCA",
-      "confidence": "in_air",
-      "last_arrival": "2026-10-10T20:19:53Z",
-      "flights_seen": 3
+      "overnight": "HPN",
+      "confidence": "scheduled",
+      "last_arrival": "2026-10-12T03:29:00Z",
+      "flights_seen": 7
     },
     {
       "tail": "N524AE",
-      "overnight": "ORF",
+      "overnight": "DSM",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T01:27:00Z",
+      "last_arrival": "2026-10-12T03:45:00Z",
       "flights_seen": 6
     },
     {
       "tail": "N525AE",
-      "overnight": "MAF",
+      "overnight": "ECP",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T02:34:00Z",
-      "flights_seen": 5
+      "last_arrival": "2026-10-12T02:17:00Z",
+      "flights_seen": 6
     },
     {
       "tail": "N526EA",
-      "overnight": "MSN",
+      "overnight": "PNS",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-10T22:47:00Z",
-      "flights_seen": 5
+      "last_arrival": "2026-10-12T02:58:00Z",
+      "flights_seen": 6
     },
     {
       "tail": "N527EA",
-      "overnight": "HPN",
-      "confidence": "in_air",
-      "last_arrival": "2026-10-10T20:30:00Z",
-      "flights_seen": 4
+      "overnight": "SBN",
+      "confidence": "scheduled",
+      "last_arrival": "2026-10-12T03:59:00Z",
+      "flights_seen": 6
     },
     {
       "tail": "N530EA",
-      "overnight": "CLT",
+      "overnight": "CAK",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T01:05:00Z",
-      "flights_seen": 5
+      "last_arrival": "2026-10-12T02:41:00Z",
+      "flights_seen": 7
     },
     {
       "tail": "N531EG",
-      "overnight": "IAH",
-      "confidence": "in_air",
-      "last_arrival": "2026-10-10T20:50:00Z",
-      "flights_seen": 4
+      "overnight": "LAW",
+      "confidence": "scheduled",
+      "last_arrival": "2026-10-12T04:06:00Z",
+      "flights_seen": 6
     },
     {
       "tail": "N532EA",
-      "overnight": "JAN",
-      "confidence": "last_known",
-      "last_arrival": "2026-10-10T03:38:00Z",
-      "flights_seen": 0
+      "overnight": "CHA",
+      "confidence": "scheduled",
+      "last_arrival": "2026-10-12T03:03:00Z",
+      "flights_seen": 6
     },
     {
       "tail": "N533AE",
-      "overnight": "DAY",
+      "overnight": "BTR",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T03:34:00Z",
+      "last_arrival": "2026-10-12T04:02:00Z",
       "flights_seen": 6
     },
     {
       "tail": "N534AE",
-      "overnight": "CHA",
+      "overnight": "MHT",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T03:03:00Z",
-      "flights_seen": 7
+      "last_arrival": "2026-10-12T04:23:00Z",
+      "flights_seen": 6
     },
     {
       "tail": "N535EA",
-      "overnight": "DTW",
+      "overnight": "BHM",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T00:48:00Z",
+      "last_arrival": "2026-10-12T03:19:00Z",
       "flights_seen": 6
     },
     {
       "tail": "N536EA",
-      "overnight": "DCA",
+      "overnight": "AGS",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-10T22:44:00Z",
-      "flights_seen": 4
+      "last_arrival": "2026-10-12T01:39:00Z",
+      "flights_seen": 5
     },
     {
       "tail": "N537EA",
-      "overnight": "CMH",
+      "overnight": "CLT",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T02:56:00Z",
+      "last_arrival": "2026-10-12T01:14:00Z",
       "flights_seen": 6
     },
     {
       "tail": "N538EG",
-      "overnight": "GSP",
+      "overnight": "DTW",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-10T22:18:00Z",
-      "flights_seen": 4
+      "last_arrival": "2026-10-12T02:38:00Z",
+      "flights_seen": 6
     },
     {
       "tail": "N539EA",
-      "overnight": "SAV",
+      "overnight": "DAY",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T01:56:00Z",
-      "flights_seen": 7
+      "last_arrival": "2026-10-12T02:26:00Z",
+      "flights_seen": 6
     },
     {
       "tail": "N540EG",
-      "overnight": "SBN",
+      "overnight": "CMH",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T03:59:00Z",
-      "flights_seen": 8
+      "last_arrival": "2026-10-12T02:56:00Z",
+      "flights_seen": 7
     },
     {
       "tail": "N541EA",
-      "overnight": "SAV",
-      "confidence": "in_air",
-      "last_arrival": "2026-10-10T21:15:00Z",
-      "flights_seen": 4
+      "overnight": "TYS",
+      "confidence": "scheduled",
+      "last_arrival": "2026-10-12T01:33:00Z",
+      "flights_seen": 6
     },
     {
       "tail": "N542EA",
-      "overnight": "MEM",
+      "overnight": "YUL",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T02:27:00Z",
-      "flights_seen": 4
+      "last_arrival": "2026-10-12T01:30:00Z",
+      "flights_seen": 6
     },
     {
       "tail": "N543EA",
-      "overnight": "JAN",
+      "overnight": "DAY",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T03:59:00Z",
-      "flights_seen": 5
+      "last_arrival": "2026-10-12T03:34:00Z",
+      "flights_seen": 8
     },
     {
       "tail": "N544EA",
-      "overnight": "GRK",
+      "overnight": "GRR",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T02:14:00Z",
-      "flights_seen": 5
+      "last_arrival": "2026-10-12T02:47:00Z",
+      "flights_seen": 6
     },
     {
       "tail": "N545PB",
-      "overnight": "CAE",
+      "overnight": "TLH",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-10T22:15:00Z",
-      "flights_seen": 4
+      "last_arrival": "2026-10-12T03:00:00Z",
+      "flights_seen": 6
     },
     {
       "tail": "N546FF",
       "overnight": "CLT",
-      "confidence": "completed",
-      "last_arrival": "2026-10-10T18:58:57Z",
-      "flights_seen": 1
+      "confidence": "scheduled",
+      "last_arrival": "2026-10-12T02:51:00Z",
+      "flights_seen": 2
     },
     {
       "tail": "N547NN",
-      "overnight": "HSV",
+      "overnight": "ECP",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T02:17:00Z",
-      "flights_seen": 5
+      "last_arrival": "2026-10-12T04:53:00Z",
+      "flights_seen": 6
     },
     {
       "tail": "N548NN",
-      "overnight": "SAV",
+      "overnight": "LFT",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T01:50:00Z",
+      "last_arrival": "2026-10-12T03:02:00Z",
       "flights_seen": 6
     },
     {
       "tail": "N549NN",
-      "overnight": "GPT",
+      "overnight": "BGR",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T04:59:00Z",
-      "flights_seen": 8
+      "last_arrival": "2026-10-12T03:59:00Z",
+      "flights_seen": 6
     },
     {
       "tail": "N550NN",
-      "overnight": "MKE",
+      "overnight": "GSP",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T00:13:00Z",
-      "flights_seen": 5
+      "last_arrival": "2026-10-11T23:56:00Z",
+      "flights_seen": 4
     },
     {
       "tail": "N551NN",
-      "overnight": "CVG",
+      "overnight": "MSN",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T01:53:00Z",
+      "last_arrival": "2026-10-12T02:16:00Z",
       "flights_seen": 6
     },
     {
@@ -334,31 +334,31 @@
     },
     {
       "tail": "N553NN",
-      "overnight": "ORF",
+      "overnight": "VPS",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T01:54:00Z",
-      "flights_seen": 5
+      "last_arrival": "2026-10-12T03:04:00Z",
+      "flights_seen": 6
     },
     {
       "tail": "N554NN",
-      "overnight": "STL",
-      "confidence": "last_known",
-      "last_arrival": "2026-10-10T03:16:00Z",
-      "flights_seen": 0
+      "overnight": "DAY",
+      "confidence": "scheduled",
+      "last_arrival": "2026-10-12T01:35:00Z",
+      "flights_seen": 5
     },
     {
       "tail": "N555NN",
-      "overnight": "OMA",
+      "overnight": "CVG",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T02:50:00Z",
-      "flights_seen": 4
+      "last_arrival": "2026-10-12T02:47:00Z",
+      "flights_seen": 5
     },
     {
       "tail": "N556NN",
-      "overnight": "AVL",
+      "overnight": "SAV",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T03:58:00Z",
-      "flights_seen": 6
+      "last_arrival": "2026-10-12T00:27:00Z",
+      "flights_seen": 7
     },
     {
       "tail": "N557NN",
@@ -369,9 +369,9 @@
     },
     {
       "tail": "N558NN",
-      "overnight": "MOB",
+      "overnight": "GRR",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T03:58:00Z",
+      "last_arrival": "2026-10-12T01:36:00Z",
       "flights_seen": 6
     },
     {
@@ -390,38 +390,38 @@
     },
     {
       "tail": "N561NN",
-      "overnight": "BHM",
+      "overnight": "BTV",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T02:24:00Z",
-      "flights_seen": 7
+      "last_arrival": "2026-10-12T02:44:00Z",
+      "flights_seen": 6
     },
     {
       "tail": "N562NN",
-      "overnight": "ECP",
+      "overnight": "CRW",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T04:53:00Z",
-      "flights_seen": 6
+      "last_arrival": "2026-10-12T03:59:00Z",
+      "flights_seen": 5
     },
     {
       "tail": "N563NN",
-      "overnight": "ICT",
+      "overnight": "GSP",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T02:42:00Z",
-      "flights_seen": 8
+      "last_arrival": "2026-10-12T03:21:00Z",
+      "flights_seen": 6
     },
     {
       "tail": "N564NN",
-      "overnight": "CLT",
+      "overnight": "PIA",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-10T21:44:00Z",
-      "flights_seen": 6
+      "last_arrival": "2026-10-12T04:56:00Z",
+      "flights_seen": 7
     },
     {
       "tail": "N565NN",
-      "overnight": "BGR",
+      "overnight": "DAY",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T01:59:00Z",
-      "flights_seen": 6
+      "last_arrival": "2026-10-12T00:51:00Z",
+      "flights_seen": 5
     },
     {
       "tail": "N566NN",
@@ -432,345 +432,345 @@
     },
     {
       "tail": "N567NN",
-      "overnight": "TYS",
+      "overnight": "MOB",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T02:07:00Z",
-      "flights_seen": 4
+      "last_arrival": "2026-10-12T03:58:00Z",
+      "flights_seen": 7
     },
     {
       "tail": "N568NN",
-      "overnight": "BDL",
+      "overnight": "MAF",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T03:36:00Z",
-      "flights_seen": 6
+      "last_arrival": "2026-10-12T04:59:00Z",
+      "flights_seen": 8
     },
     {
       "tail": "N569NN",
-      "overnight": "YYZ",
+      "overnight": "BDL",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T02:18:00Z",
+      "last_arrival": "2026-10-12T03:36:00Z",
       "flights_seen": 6
     },
     {
       "tail": "N570NN",
-      "overnight": "AVP",
+      "overnight": "CLT",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T04:35:00Z",
-      "flights_seen": 8
-    },
-    {
-      "tail": "N571NN",
-      "overnight": "ILM",
-      "confidence": "scheduled",
-      "last_arrival": "2026-10-11T04:08:00Z",
-      "flights_seen": 6
-    },
-    {
-      "tail": "N572NN",
-      "overnight": "YUL",
-      "confidence": "scheduled",
-      "last_arrival": "2026-10-11T02:52:00Z",
+      "last_arrival": "2026-10-12T01:34:00Z",
       "flights_seen": 7
     },
     {
-      "tail": "N573NN",
-      "overnight": "TLH",
+      "tail": "N571NN",
+      "overnight": "YUL",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T03:08:00Z",
+      "last_arrival": "2026-10-12T02:52:00Z",
+      "flights_seen": 5
+    },
+    {
+      "tail": "N572NN",
+      "overnight": "DFW",
+      "confidence": "scheduled",
+      "last_arrival": "2026-10-12T02:40:00Z",
+      "flights_seen": 5
+    },
+    {
+      "tail": "N573NN",
+      "overnight": "HSV",
+      "confidence": "scheduled",
+      "last_arrival": "2026-10-12T02:17:00Z",
       "flights_seen": 6
     },
     {
       "tail": "N574NN",
-      "overnight": "MAF",
+      "overnight": "TYS",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T04:59:00Z",
-      "flights_seen": 6
+      "last_arrival": "2026-10-12T01:45:00Z",
+      "flights_seen": 4
     },
     {
       "tail": "N575NN",
-      "overnight": "DFW",
+      "overnight": "PNS",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-10T23:36:00Z",
+      "last_arrival": "2026-10-12T02:54:00Z",
       "flights_seen": 6
     },
     {
       "tail": "N576NN",
-      "overnight": "TYS",
-      "confidence": "last_known",
-      "last_arrival": "2026-10-09T01:47:00Z",
-      "flights_seen": 0
+      "overnight": "HPN",
+      "confidence": "scheduled",
+      "last_arrival": "2026-10-12T01:44:00Z",
+      "flights_seen": 4
     },
     {
       "tail": "N577NN",
-      "overnight": "ORF",
+      "overnight": "DAB",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-10T23:57:00Z",
-      "flights_seen": 6
+      "last_arrival": "2026-10-12T02:17:00Z",
+      "flights_seen": 7
     },
     {
       "tail": "N578NN",
-      "overnight": "CRW",
+      "overnight": "LEX",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T03:59:00Z",
-      "flights_seen": 6
+      "last_arrival": "2026-10-12T03:57:00Z",
+      "flights_seen": 7
     },
     {
       "tail": "N579NN",
-      "overnight": "SAV",
+      "overnight": "BGR",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T00:14:00Z",
-      "flights_seen": 7
+      "last_arrival": "2026-10-12T03:55:00Z",
+      "flights_seen": 6
     },
     {
       "tail": "N580NN",
       "overnight": "DAY",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T02:07:00Z",
-      "flights_seen": 6
+      "last_arrival": "2026-10-12T01:04:00Z",
+      "flights_seen": 4
     },
     {
       "tail": "N581NN",
-      "overnight": "MDT",
+      "overnight": "STL",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T04:24:00Z",
-      "flights_seen": 8
+      "last_arrival": "2026-10-12T03:14:00Z",
+      "flights_seen": 6
     },
     {
       "tail": "N582NN",
-      "overnight": "IAD",
+      "overnight": "GSP",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T03:58:00Z",
-      "flights_seen": 6
+      "last_arrival": "2026-10-12T01:23:00Z",
+      "flights_seen": 5
     },
     {
       "tail": "N583NN",
       "overnight": "MKE",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T04:34:00Z",
-      "flights_seen": 6
+      "last_arrival": "2026-10-12T04:18:00Z",
+      "flights_seen": 5
     },
     {
       "tail": "N584NN",
-      "overnight": "DCA",
+      "overnight": "BTV",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T01:59:00Z",
-      "flights_seen": 6
+      "last_arrival": "2026-10-12T03:56:00Z",
+      "flights_seen": 5
     },
     {
       "tail": "N585NN",
-      "overnight": "TYS",
-      "confidence": "scheduled",
-      "last_arrival": "2026-10-11T00:18:00Z",
-      "flights_seen": 2
+      "overnight": "PHL",
+      "confidence": "completed",
+      "last_arrival": "2026-10-11T17:51:00Z",
+      "flights_seen": 3
     },
     {
       "tail": "N586NN",
-      "overnight": "LEX",
+      "overnight": "ABE",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T01:52:00Z",
-      "flights_seen": 6
+      "last_arrival": "2026-10-12T05:01:00Z",
+      "flights_seen": 5
     },
     {
       "tail": "N587NN",
       "overnight": "DFW",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T02:35:00Z",
-      "flights_seen": 5
-    },
-    {
-      "tail": "N588NN",
-      "overnight": "CLT",
-      "confidence": "scheduled",
-      "last_arrival": "2026-10-11T01:34:00Z",
-      "flights_seen": 5
-    },
-    {
-      "tail": "N589NN",
-      "overnight": "GSP",
-      "confidence": "scheduled",
-      "last_arrival": "2026-10-11T01:23:00Z",
-      "flights_seen": 6
-    },
-    {
-      "tail": "N590NN",
-      "overnight": "DAY",
-      "confidence": "last_known",
-      "last_arrival": "2026-10-10T01:38:00Z",
-      "flights_seen": 0
-    },
-    {
-      "tail": "N591NN",
-      "overnight": "CAE",
-      "confidence": "scheduled",
-      "last_arrival": "2026-10-11T01:51:00Z",
-      "flights_seen": 5
-    },
-    {
-      "tail": "N592NN",
-      "overnight": "CLT",
-      "confidence": "scheduled",
-      "last_arrival": "2026-10-11T02:17:00Z",
-      "flights_seen": 6
-    },
-    {
-      "tail": "N593NN",
-      "overnight": "PIA",
-      "confidence": "scheduled",
-      "last_arrival": "2026-10-11T04:56:00Z",
+      "last_arrival": "2026-10-12T00:59:00Z",
       "flights_seen": 2
     },
     {
-      "tail": "N594NN",
-      "overnight": "HSV",
+      "tail": "N588NN",
+      "overnight": "IAD",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T04:24:00Z",
+      "last_arrival": "2026-10-12T03:58:00Z",
+      "flights_seen": 7
+    },
+    {
+      "tail": "N589NN",
+      "overnight": "TYS",
+      "confidence": "scheduled",
+      "last_arrival": "2026-10-12T00:18:00Z",
+      "flights_seen": 4
+    },
+    {
+      "tail": "N590NN",
+      "overnight": "CLT",
+      "confidence": "scheduled",
+      "last_arrival": "2026-10-12T00:01:00Z",
       "flights_seen": 5
     },
     {
-      "tail": "N595NN",
-      "overnight": "CLT",
+      "tail": "N591NN",
+      "overnight": "SRQ",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T01:29:00Z",
+      "last_arrival": "2026-10-12T02:49:00Z",
       "flights_seen": 6
+    },
+    {
+      "tail": "N592NN",
+      "overnight": "GPT",
+      "confidence": "scheduled",
+      "last_arrival": "2026-10-12T04:59:00Z",
+      "flights_seen": 8
+    },
+    {
+      "tail": "N593NN",
+      "overnight": "ORF",
+      "confidence": "scheduled",
+      "last_arrival": "2026-10-11T23:57:00Z",
+      "flights_seen": 5
+    },
+    {
+      "tail": "N594NN",
+      "overnight": "ORF",
+      "confidence": "scheduled",
+      "last_arrival": "2026-10-12T01:41:00Z",
+      "flights_seen": 6
+    },
+    {
+      "tail": "N595NN",
+      "overnight": "LEX",
+      "confidence": "scheduled",
+      "last_arrival": "2026-10-12T01:52:00Z",
+      "flights_seen": 7
     },
     {
       "tail": "N596NN",
-      "overnight": "CLT",
-      "confidence": "last_known",
-      "last_arrival": "2026-10-09T04:35:00Z",
-      "flights_seen": 0
-    },
-    {
-      "tail": "N597NN",
-      "overnight": "CVG",
+      "overnight": "MDT",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T00:05:00Z",
+      "last_arrival": "2026-10-12T04:24:00Z",
       "flights_seen": 6
     },
     {
+      "tail": "N597NN",
+      "overnight": "CLT",
+      "confidence": "scheduled",
+      "last_arrival": "2026-10-12T01:43:00Z",
+      "flights_seen": 5
+    },
+    {
       "tail": "N598NN",
-      "overnight": "CVG",
-      "confidence": "last_known",
-      "last_arrival": "2026-10-10T01:54:00Z",
-      "flights_seen": 0
+      "overnight": "DCA",
+      "confidence": "scheduled",
+      "last_arrival": "2026-10-12T01:14:00Z",
+      "flights_seen": 5
     },
     {
       "tail": "N599NN",
-      "overnight": "DAY",
+      "overnight": "YYZ",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T01:04:00Z",
+      "last_arrival": "2026-10-12T01:40:00Z",
       "flights_seen": 6
     },
     {
       "tail": "N600NN",
-      "overnight": "LEX",
+      "overnight": "PHL",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T03:57:00Z",
-      "flights_seen": 7
+      "last_arrival": "2026-10-12T02:43:00Z",
+      "flights_seen": 5
     },
     {
       "tail": "N601EN",
-      "overnight": "DAB",
+      "overnight": "AVP",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T02:17:00Z",
-      "flights_seen": 4
+      "last_arrival": "2026-10-12T04:35:00Z",
+      "flights_seen": 8
     },
     {
       "tail": "N602NN",
-      "overnight": "LEX",
+      "overnight": "SAV",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T02:30:00Z",
-      "flights_seen": 6
+      "last_arrival": "2026-10-12T02:13:00Z",
+      "flights_seen": 8
     },
     {
       "tail": "N603NN",
-      "overnight": "TYS",
+      "overnight": "MHT",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T03:55:00Z",
+      "last_arrival": "2026-10-12T02:56:00Z",
       "flights_seen": 6
     },
     {
       "tail": "N604NN",
-      "overnight": "JAN",
+      "overnight": "ATL",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T04:55:00Z",
-      "flights_seen": 7
-    },
-    {
-      "tail": "N605NN",
-      "overnight": "DFW",
-      "confidence": "scheduled",
-      "last_arrival": "2026-10-11T02:40:00Z",
+      "last_arrival": "2026-10-12T01:58:00Z",
       "flights_seen": 6
     },
     {
-      "tail": "N606NN",
-      "overnight": "XNA",
+      "tail": "N605NN",
+      "overnight": "ICT",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T02:51:00Z",
-      "flights_seen": 7
+      "last_arrival": "2026-10-12T02:42:00Z",
+      "flights_seen": 5
+    },
+    {
+      "tail": "N606NN",
+      "overnight": "PHL",
+      "confidence": "scheduled",
+      "last_arrival": "2026-10-12T01:10:00Z",
+      "flights_seen": 5
     },
     {
       "tail": "N607NN",
-      "overnight": "CLT",
-      "confidence": "completed",
-      "last_arrival": "2026-10-10T16:19:00Z",
-      "flights_seen": 1
+      "overnight": "DCA",
+      "confidence": "scheduled",
+      "last_arrival": "2026-10-11T23:01:00Z",
+      "flights_seen": 5
     },
     {
       "tail": "N608NN",
-      "overnight": "ORF",
+      "overnight": "MHT",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T01:41:00Z",
-      "flights_seen": 5
+      "last_arrival": "2026-10-12T03:36:00Z",
+      "flights_seen": 6
     },
     {
       "tail": "N609NN",
-      "overnight": "GRR",
+      "overnight": "TYS",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T01:36:00Z",
-      "flights_seen": 5
+      "last_arrival": "2026-10-12T03:55:00Z",
+      "flights_seen": 8
     },
     {
       "tail": "N610NN",
-      "overnight": "ABE",
+      "overnight": "CAK",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T04:28:00Z",
+      "last_arrival": "2026-10-12T00:09:00Z",
       "flights_seen": 6
     },
     {
       "tail": "N611NN",
-      "overnight": "DAY",
+      "overnight": "BHM",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T01:35:00Z",
+      "last_arrival": "2026-10-12T02:24:00Z",
       "flights_seen": 6
     },
     {
       "tail": "N612NN",
-      "overnight": "PWM",
+      "overnight": "XNA",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T02:31:00Z",
+      "last_arrival": "2026-10-12T02:51:00Z",
       "flights_seen": 6
     },
     {
       "tail": "N613NN",
-      "overnight": "SRQ",
+      "overnight": "JAN",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T01:17:00Z",
-      "flights_seen": 5
+      "last_arrival": "2026-10-12T04:55:00Z",
+      "flights_seen": 6
     },
     {
       "tail": "N614NN",
-      "overnight": "PHL",
+      "overnight": "DCA",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T01:10:00Z",
+      "last_arrival": "2026-10-12T01:59:00Z",
       "flights_seen": 5
     },
     {
       "tail": "N615NN",
-      "overnight": "MHT",
+      "overnight": "CVG",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T02:56:00Z",
+      "last_arrival": "2026-10-12T01:53:00Z",
       "flights_seen": 6
     },
     {
@@ -782,171 +782,171 @@
     },
     {
       "tail": "N617NN",
-      "overnight": "CAK",
+      "overnight": "AVL",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T00:09:00Z",
-      "flights_seen": 5
+      "last_arrival": "2026-10-12T03:58:00Z",
+      "flights_seen": 6
     },
     {
       "tail": "N618NN",
       "overnight": "CVG",
-      "confidence": "scheduled",
+      "confidence": "last_known",
       "last_arrival": "2026-10-11T04:04:00Z",
-      "flights_seen": 6
+      "flights_seen": 0
     },
     {
       "tail": "N619NN",
       "overnight": "GNV",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T02:17:00Z",
-      "flights_seen": 5
+      "last_arrival": "2026-10-12T02:17:00Z",
+      "flights_seen": 6
     },
     {
       "tail": "N629NN",
-      "overnight": "BHM",
+      "overnight": "HSV",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T04:39:00Z",
-      "flights_seen": 5
+      "last_arrival": "2026-10-12T04:24:00Z",
+      "flights_seen": 6
     },
     {
       "tail": "N630NN",
-      "overnight": "GSP",
+      "overnight": "CAE",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T03:21:00Z",
-      "flights_seen": 8
+      "last_arrival": "2026-10-12T02:04:00Z",
+      "flights_seen": 6
     },
     {
       "tail": "N631NN",
-      "overnight": "PHL",
+      "overnight": "OMA",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T02:43:00Z",
+      "last_arrival": "2026-10-12T02:50:00Z",
       "flights_seen": 5
     },
     {
       "tail": "N632NN",
-      "overnight": "DFW",
+      "overnight": "ILM",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T02:44:00Z",
+      "last_arrival": "2026-10-12T04:08:00Z",
       "flights_seen": 7
     },
     {
       "tail": "N633NN",
-      "overnight": "STL",
+      "overnight": "MKE",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T03:14:00Z",
+      "last_arrival": "2026-10-12T04:34:00Z",
       "flights_seen": 6
     },
     {
       "tail": "N634NN",
-      "overnight": "DAY",
+      "overnight": "TLH",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T00:51:00Z",
+      "last_arrival": "2026-10-12T03:08:00Z",
       "flights_seen": 6
     },
     {
       "tail": "N635NN",
-      "overnight": "ATL",
+      "overnight": "PNS",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T01:58:00Z",
+      "last_arrival": "2026-10-12T01:20:00Z",
       "flights_seen": 6
     },
     {
       "tail": "N636NN",
-      "overnight": "PVD",
+      "overnight": "ROA",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T03:09:00Z",
-      "flights_seen": 5
+      "last_arrival": "2026-10-12T02:47:00Z",
+      "flights_seen": 6
     },
     {
       "tail": "N637NN",
       "overnight": "MLB",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T03:17:00Z",
+      "last_arrival": "2026-10-12T03:17:00Z",
       "flights_seen": 6
     },
     {
       "tail": "N638NN",
-      "overnight": "GSP",
+      "overnight": "CVG",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-10T23:55:00Z",
+      "last_arrival": "2026-10-12T04:04:00Z",
       "flights_seen": 6
     },
     {
       "tail": "N639NN",
-      "overnight": "BTV",
+      "overnight": "CVG",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T01:46:00Z",
+      "last_arrival": "2026-10-12T00:05:00Z",
       "flights_seen": 6
     },
     {
       "tail": "N640NN",
-      "overnight": "ROA",
+      "overnight": "DFW",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T02:47:00Z",
-      "flights_seen": 6
+      "last_arrival": "2026-10-12T02:35:00Z",
+      "flights_seen": 5
     },
     {
       "tail": "N641NN",
-      "overnight": "BGR",
+      "overnight": "ORF",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T03:55:00Z",
+      "last_arrival": "2026-10-12T01:24:00Z",
       "flights_seen": 6
     },
     {
       "tail": "N643NN",
-      "overnight": "CVG",
+      "overnight": "PWM",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T01:03:00Z",
+      "last_arrival": "2026-10-12T02:31:00Z",
       "flights_seen": 6
     },
     {
       "tail": "N644NN",
       "overnight": "AGS",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T03:30:00Z",
+      "last_arrival": "2026-10-12T03:30:00Z",
       "flights_seen": 6
     },
     {
       "tail": "N645NN",
-      "overnight": "LFT",
+      "overnight": "CLT",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T03:02:00Z",
+      "last_arrival": "2026-10-12T01:31:00Z",
       "flights_seen": 7
     },
     {
       "tail": "N646NN",
-      "overnight": "BTV",
+      "overnight": "TYS",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T02:44:00Z",
+      "last_arrival": "2026-10-12T02:35:00Z",
       "flights_seen": 6
     },
     {
       "tail": "N647NN",
-      "overnight": "MHT",
+      "overnight": "BHM",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T03:36:00Z",
-      "flights_seen": 6
+      "last_arrival": "2026-10-12T04:39:00Z",
+      "flights_seen": 5
     },
     {
       "tail": "N649NN",
-      "overnight": "TYS",
+      "overnight": "DAY",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T01:49:00Z",
+      "last_arrival": "2026-10-12T03:07:00Z",
       "flights_seen": 6
     },
     {
       "tail": "N703PS",
       "overnight": "TYS",
-      "confidence": "in_air",
+      "confidence": "last_known",
       "last_arrival": "2026-10-10T21:48:24Z",
-      "flights_seen": 4
+      "flights_seen": 0
     },
     {
       "tail": "N705PS",
       "overnight": "MGM",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T03:40:00Z",
-      "flights_seen": 4
+      "last_arrival": "2026-10-12T03:40:00Z",
+      "flights_seen": 6
     },
     {
       "tail": "N706PS",
@@ -957,17 +957,17 @@
     },
     {
       "tail": "N708PS",
-      "overnight": "PVD",
+      "overnight": "DCA",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T00:50:00Z",
+      "last_arrival": "2026-10-12T02:20:00Z",
       "flights_seen": 5
     },
     {
       "tail": "N710PS",
-      "overnight": "MHT",
+      "overnight": "JAN",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T01:44:00Z",
-      "flights_seen": 8
+      "last_arrival": "2026-10-12T03:35:00Z",
+      "flights_seen": 6
     },
     {
       "tail": "N712PS",
@@ -980,22 +980,22 @@
       "tail": "N716PS",
       "overnight": "DCA",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T00:12:00Z",
+      "last_arrival": "2026-10-12T00:24:00Z",
       "flights_seen": 4
     },
     {
       "tail": "N718PS",
-      "overnight": "PHL",
+      "overnight": "PVD",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T01:09:00Z",
-      "flights_seen": 7
+      "last_arrival": "2026-10-12T03:09:00Z",
+      "flights_seen": 5
     },
     {
       "tail": "N719PS",
-      "overnight": "HPN",
+      "overnight": "MSN",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T00:29:00Z",
-      "flights_seen": 3
+      "last_arrival": "2026-10-12T04:40:00Z",
+      "flights_seen": 6
     },
     {
       "tail": "N720PS",
@@ -1006,10 +1006,10 @@
     },
     {
       "tail": "N723PS",
-      "overnight": "MSP",
-      "confidence": "in_air",
-      "last_arrival": "2026-10-10T20:20:42Z",
-      "flights_seen": 3
+      "overnight": "DCA",
+      "confidence": "scheduled",
+      "last_arrival": "2026-10-12T01:59:00Z",
+      "flights_seen": 5
     },
     {
       "tail": "N725PS",
@@ -1027,262 +1027,260 @@
     },
     {
       "tail": "N529EA",
-      "overnight": "LAW",
+      "overnight": "JAN",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T04:06:00Z",
-      "flights_seen": 8
+      "last_arrival": "2026-10-12T03:59:00Z",
+      "flights_seen": 5
     },
     {
       "tail": "N507AE",
-      "overnight": "DTW",
+      "overnight": "ORF",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T03:54:00Z",
-      "flights_seen": 6
+      "last_arrival": "2026-10-12T01:27:00Z",
+      "flights_seen": 5
     },
     {
       "tail": "N523AE",
-      "overnight": "CAK",
+      "overnight": "CLT",
       "confidence": "scheduled",
-      "last_arrival": "2026-10-11T02:20:00Z",
-      "flights_seen": 6
+      "last_arrival": "2026-10-12T00:33:00Z",
+      "flights_seen": 5
     }
   ],
   "by_airport": {
     "ABE": [
-      "N610NN"
+      "N586NN"
     ],
     "AGS": [
-      "N514AE",
+      "N536EA",
       "N644NN"
     ],
     "ALB": [
       "N508AE"
     ],
     "ATL": [
-      "N635NN"
+      "N604NN"
     ],
     "AVL": [
-      "N556NN"
-    ],
-    "AVP": [
-      "N570NN"
-    ],
-    "BDL": [
-      "N568NN"
-    ],
-    "BGR": [
-      "N565NN",
-      "N641NN"
-    ],
-    "BHM": [
-      "N515AE",
-      "N519AE",
-      "N561NN",
-      "N629NN"
-    ],
-    "BTR": [
-      "N513AE"
-    ],
-    "BTV": [
-      "N639NN",
-      "N646NN"
-    ],
-    "CAE": [
-      "N545PB",
-      "N591NN"
-    ],
-    "CAK": [
-      "N500AE",
-      "N509AE",
-      "N523AE",
       "N617NN"
     ],
+    "AVP": [
+      "N601EN"
+    ],
+    "BDL": [
+      "N569NN"
+    ],
+    "BGR": [
+      "N549NN",
+      "N579NN"
+    ],
+    "BHM": [
+      "N535EA",
+      "N611NN",
+      "N647NN"
+    ],
+    "BTR": [
+      "N533AE"
+    ],
+    "BTV": [
+      "N561NN",
+      "N584NN"
+    ],
+    "CAE": [
+      "N630NN"
+    ],
+    "CAK": [
+      "N515AE",
+      "N530EA",
+      "N610NN"
+    ],
     "CHA": [
-      "N534AE"
+      "N532EA"
     ],
     "CKB": [
       "N504AE",
       "N720PS"
     ],
     "CLT": [
-      "N502AE",
-      "N530EA",
+      "N523AE",
+      "N537EA",
       "N546FF",
       "N552NN",
-      "N564NN",
-      "N588NN",
-      "N592NN",
-      "N595NN",
-      "N596NN",
-      "N607NN",
+      "N570NN",
+      "N590NN",
+      "N597NN",
+      "N645NN",
       "N725PS"
     ],
     "CMH": [
-      "N537EA"
+      "N540EG"
     ],
     "CRW": [
-      "N578NN"
+      "N562NN"
     ],
     "CVG": [
-      "N551NN",
-      "N597NN",
-      "N598NN",
+      "N555NN",
+      "N615NN",
       "N618NN",
-      "N643NN"
+      "N638NN",
+      "N639NN"
     ],
     "DAB": [
-      "N601EN"
+      "N577NN"
     ],
     "DAY": [
-      "N506AE",
-      "N533AE",
+      "N539EA",
+      "N543EA",
+      "N554NN",
+      "N565NN",
       "N580NN",
-      "N590NN",
-      "N599NN",
-      "N611NN",
-      "N634NN"
+      "N649NN"
     ],
     "DCA": [
-      "N518AE",
-      "N522AE",
-      "N536EA",
-      "N584NN",
-      "N716PS"
+      "N500AE",
+      "N512AE",
+      "N513AE",
+      "N598NN",
+      "N607NN",
+      "N614NN",
+      "N708PS",
+      "N716PS",
+      "N723PS"
     ],
     "DFW": [
       "N503AE",
-      "N575NN",
+      "N572NN",
       "N587NN",
-      "N605NN",
-      "N632NN"
+      "N640NN"
     ],
     "DSM": [
-      "N517AE"
+      "N519AE",
+      "N524AE"
     ],
     "DTW": [
       "N501BG",
-      "N507AE",
-      "N535EA"
+      "N510AE",
+      "N516AE",
+      "N538EG"
     ],
     "ECP": [
-      "N510AE",
-      "N562NN"
+      "N525AE",
+      "N547NN"
     ],
     "GNV": [
       "N619NN"
     ],
     "GPT": [
-      "N549NN"
-    ],
-    "GRK": [
-      "N544EA"
+      "N592NN"
     ],
     "GRR": [
-      "N609NN"
+      "N544EA",
+      "N558NN"
     ],
     "GSP": [
-      "N538EG",
-      "N589NN",
-      "N630NN",
-      "N638NN"
-    ],
-    "HPN": [
-      "N527EA",
-      "N719PS"
-    ],
-    "HSV": [
-      "N547NN",
-      "N594NN"
-    ],
-    "IAD": [
+      "N509AE",
+      "N550NN",
+      "N563NN",
       "N582NN"
     ],
+    "HPN": [
+      "N522AE",
+      "N576NN"
+    ],
+    "HSV": [
+      "N573NN",
+      "N629NN"
+    ],
+    "IAD": [
+      "N588NN"
+    ],
     "IAH": [
-      "N531EG"
+      "N518AE"
     ],
     "ICT": [
-      "N563NN"
+      "N605NN"
     ],
     "ILM": [
-      "N571NN"
+      "N632NN"
     ],
     "JAN": [
-      "N532EA",
-      "N543EA",
-      "N604NN"
+      "N529EA",
+      "N613NN",
+      "N710PS"
     ],
     "LAW": [
-      "N529EA"
+      "N531EG"
     ],
     "LEX": [
-      "N586NN",
-      "N600NN",
-      "N602NN"
+      "N578NN",
+      "N595NN"
     ],
     "LFT": [
-      "N645NN"
+      "N548NN"
     ],
     "MAF": [
-      "N525AE",
-      "N574NN"
-    ],
-    "MCI": [
-      "N511AE"
+      "N506AE",
+      "N568NN"
     ],
     "MDT": [
-      "N581NN"
+      "N596NN"
     ],
     "MEM": [
-      "N542EA"
+      "N517AE"
     ],
     "MGM": [
       "N705PS"
     ],
     "MHT": [
-      "N615NN",
-      "N647NN",
-      "N710PS"
+      "N534AE",
+      "N603NN",
+      "N608NN"
     ],
     "MKE": [
-      "N550NN",
-      "N583NN"
+      "N583NN",
+      "N633NN"
     ],
     "MLB": [
       "N637NN"
     ],
     "MOB": [
-      "N558NN"
+      "N567NN"
     ],
     "MSN": [
-      "N526EA"
+      "N551NN",
+      "N719PS"
     ],
     "MSP": [
-      "N723PS"
+      "N511AE"
     ],
     "OMA": [
-      "N555NN"
+      "N631NN"
     ],
     "ORF": [
-      "N524AE",
-      "N553NN",
-      "N577NN",
-      "N608NN",
+      "N507AE",
+      "N593NN",
+      "N594NN",
+      "N641NN",
       "N712PS"
     ],
     "PHL": [
-      "N614NN",
-      "N631NN",
-      "N718PS"
+      "N585NN",
+      "N600NN",
+      "N606NN"
     ],
     "PIA": [
-      "N593NN"
+      "N564NN"
+    ],
+    "PNS": [
+      "N526EA",
+      "N575NN",
+      "N635NN"
     ],
     "PVD": [
-      "N636NN",
-      "N708PS"
+      "N718PS"
     ],
     "PWM": [
-      "N612NN"
+      "N643NN"
     ],
     "QRO": [
       "N520DC",
@@ -1293,49 +1291,51 @@
       "N616NN"
     ],
     "ROA": [
-      "N640NN"
+      "N636NN"
     ],
     "ROC": [
       "N521AE"
     ],
     "SAV": [
-      "N539EA",
-      "N541EA",
-      "N548NN",
-      "N579NN"
+      "N502AE",
+      "N514AE",
+      "N556NN",
+      "N602NN"
     ],
     "SBN": [
-      "N540EG"
+      "N527EA"
     ],
     "SRQ": [
-      "N613NN"
+      "N591NN"
     ],
     "STL": [
-      "N554NN",
-      "N633NN"
+      "N581NN"
     ],
     "TLH": [
-      "N512AE",
-      "N573NN"
+      "N545PB",
+      "N634NN"
     ],
     "TYS": [
-      "N567NN",
-      "N576NN",
-      "N585NN",
-      "N603NN",
-      "N649NN",
+      "N541EA",
+      "N574NN",
+      "N589NN",
+      "N609NN",
+      "N646NN",
       "N703PS",
       "N706PS"
     ],
+    "VPS": [
+      "N553NN"
+    ],
     "XNA": [
-      "N606NN"
+      "N612NN"
     ],
     "YUL": [
-      "N516AE",
-      "N572NN"
+      "N542EA",
+      "N571NN"
     ],
     "YYZ": [
-      "N569NN"
+      "N599NN"
     ]
   },
   "covered_airports": [
@@ -1350,66 +1350,66 @@
   ],
   "at_covered": {
     "CAK": [
-      "N500AE",
-      "N509AE",
-      "N523AE",
-      "N617NN"
+      "N515AE",
+      "N530EA",
+      "N610NN"
     ],
     "CLT": [
-      "N502AE",
-      "N530EA",
+      "N523AE",
+      "N537EA",
       "N546FF",
       "N552NN",
-      "N564NN",
-      "N588NN",
-      "N592NN",
-      "N595NN",
-      "N596NN",
-      "N607NN",
+      "N570NN",
+      "N590NN",
+      "N597NN",
+      "N645NN",
       "N725PS"
     ],
     "CVG": [
-      "N551NN",
-      "N597NN",
-      "N598NN",
+      "N555NN",
+      "N615NN",
       "N618NN",
-      "N643NN"
+      "N638NN",
+      "N639NN"
     ],
     "DAY": [
-      "N506AE",
-      "N533AE",
+      "N539EA",
+      "N543EA",
+      "N554NN",
+      "N565NN",
       "N580NN",
-      "N590NN",
-      "N599NN",
-      "N611NN",
-      "N634NN"
+      "N649NN"
     ],
     "DCA": [
-      "N518AE",
-      "N522AE",
-      "N536EA",
-      "N584NN",
-      "N716PS"
+      "N500AE",
+      "N512AE",
+      "N513AE",
+      "N598NN",
+      "N607NN",
+      "N614NN",
+      "N708PS",
+      "N716PS",
+      "N723PS"
     ],
     "GSP": [
-      "N538EG",
-      "N589NN",
-      "N630NN",
-      "N638NN"
+      "N509AE",
+      "N550NN",
+      "N563NN",
+      "N582NN"
     ],
     "ORF": [
-      "N524AE",
-      "N553NN",
-      "N577NN",
-      "N608NN",
+      "N507AE",
+      "N593NN",
+      "N594NN",
+      "N641NN",
       "N712PS"
     ],
     "TYS": [
-      "N567NN",
-      "N576NN",
-      "N585NN",
-      "N603NN",
-      "N649NN",
+      "N541EA",
+      "N574NN",
+      "N589NN",
+      "N609NN",
+      "N646NN",
       "N703PS",
       "N706PS"
     ]

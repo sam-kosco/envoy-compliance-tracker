@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-12T12:08:18.817186+00:00",
+  "generated": "2026-10-12T16:08:05.873550+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -1203,12 +1203,12 @@
     {
       "tail": "N314AD",
       "lastService": "2026-10-08",
-      "lastED1": "2026-08-18",
+      "lastED1": "2026-10-08",
       "lastED2": "2026-08-18",
       "lastIHC": "2026-10-08",
       "lastLocation": "LIT",
       "lastTech": "Riley Pinterich",
-      "ED1": -25,
+      "ED1": 26,
       "ED2": 5
     },
     {
@@ -1345,23 +1345,23 @@
     },
     {
       "tail": "N327PG",
-      "lastService": "2026-10-03",
+      "lastService": "2026-10-10",
       "lastED1": "2026-09-22",
       "lastED2": "2026-09-25",
-      "lastIHC": "2026-10-03",
-      "lastLocation": "XNA",
-      "lastTech": "Ashley Burke",
+      "lastIHC": "2026-10-10",
+      "lastLocation": "CVG",
+      "lastTech": "Bayleah Vogel",
       "ED1": 10,
       "ED2": 43
     },
     {
       "tail": "N327PJ",
-      "lastService": "2026-10-10",
+      "lastService": "2026-09-29",
       "lastED1": "2025-04-09",
       "lastED2": "2026-08-25",
-      "lastIHC": "2026-10-10",
-      "lastLocation": "CVG",
-      "lastTech": "Bayleah Vogel",
+      "lastIHC": "2026-09-29",
+      "lastLocation": "XNA",
+      "lastTech": "Ashley Burke",
       "ED1": -521,
       "ED2": 12
     },
@@ -2606,7 +2606,7 @@
       "ED2": 0
     },
     {
-      "tail": "N327PJ",
+      "tail": "N327PG",
       "date": "2026-10-10",
       "name": "Bayleah Vogel",
       "location": "CVG",
@@ -2687,57 +2687,12 @@
       "ED2": 0
     },
     {
-      "tail": "N225NN",
-      "date": "2026-10-10",
-      "name": "Damian Utley",
-      "location": "LIT",
-      "IHC": 1,
-      "ED1": 0,
-      "ED2": 0
-    },
-    {
       "tail": "N321JS",
       "date": "2026-10-10",
       "name": "Damian Utley",
       "location": "LIT",
       "IHC": 1,
       "ED1": 1,
-      "ED2": 0
-    },
-    {
-      "tail": "N354CG",
-      "date": "2026-10-10",
-      "name": "Damian Utley",
-      "location": "LIT",
-      "IHC": 1,
-      "ED1": 0,
-      "ED2": 0
-    },
-    {
-      "tail": "N261NN",
-      "date": "2026-10-10",
-      "name": "Damian Utley",
-      "location": "LIT",
-      "IHC": 1,
-      "ED1": 0,
-      "ED2": 0
-    },
-    {
-      "tail": "N206NN",
-      "date": "2026-10-10",
-      "name": "Damian Utley",
-      "location": "LIT",
-      "IHC": 1,
-      "ED1": 0,
-      "ED2": 0
-    },
-    {
-      "tail": "N223NN",
-      "date": "2026-10-10",
-      "name": "Damian Utley",
-      "location": "LIT",
-      "IHC": 1,
-      "ED1": 0,
       "ED2": 0
     },
     {
@@ -3340,7 +3295,7 @@
       "name": "Riley Pinterich",
       "location": "LIT",
       "IHC": 1,
-      "ED1": 0,
+      "ED1": 1,
       "ED2": 0
     },
     {

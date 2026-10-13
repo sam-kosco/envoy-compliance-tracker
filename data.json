@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-13T11:08:08.359582+00:00",
+  "generated": "2026-10-13T12:07:19.885400+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -476,12 +476,12 @@
     },
     {
       "tail": "N243NN",
-      "lastService": "2026-10-05",
+      "lastService": "2026-10-12",
       "lastED1": "2026-10-04",
       "lastED2": "2026-08-25",
-      "lastIHC": "2026-10-05",
-      "lastLocation": "XNA",
-      "lastTech": "Ashley Burke",
+      "lastIHC": "2026-10-12",
+      "lastLocation": "DFW",
+      "lastTech": "Nadia Johnson",
       "ED1": 21,
       "ED2": 11
     },
@@ -553,12 +553,12 @@
     },
     {
       "tail": "N250NN",
-      "lastService": "2026-10-04",
+      "lastService": "2026-10-12",
       "lastED1": "2026-09-26",
       "lastED2": "2026-09-14",
-      "lastIHC": "2026-10-04",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
+      "lastIHC": "2026-10-12",
+      "lastLocation": "DFW",
+      "lastTech": "Nadia Johnson",
       "ED1": 13,
       "ED2": 31
     },
@@ -916,12 +916,12 @@
     },
     {
       "tail": "N283NN",
-      "lastService": "2026-10-11",
+      "lastService": "2026-10-12",
       "lastED1": "2026-09-20",
       "lastED2": "2026-09-20",
-      "lastIHC": "2026-10-11",
-      "lastLocation": "LIT",
-      "lastTech": "Riley Pinterich",
+      "lastIHC": "2026-10-12",
+      "lastLocation": "DFW",
+      "lastTech": "Nadia Johnson",
       "ED1": 7,
       "ED2": 37
     },
@@ -2445,6 +2445,33 @@
     },
     {
       "tail": "N764JD",
+      "date": "2026-10-12",
+      "name": "Nadia Johnson",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N283NN",
+      "date": "2026-10-12",
+      "name": "Nadia Johnson",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N250NN",
+      "date": "2026-10-12",
+      "name": "Nadia Johnson",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N243NN",
       "date": "2026-10-12",
       "name": "Nadia Johnson",
       "location": "DFW",

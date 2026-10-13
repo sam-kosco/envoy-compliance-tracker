@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-13T12:07:19.885400+00:00",
+  "generated": "2026-10-13T13:07:28.339619+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -707,12 +707,12 @@
     },
     {
       "tail": "N264NN",
-      "lastService": "2026-09-30",
+      "lastService": "2026-10-12",
       "lastED1": "2026-09-10",
       "lastED2": "2026-08-18",
-      "lastIHC": "2026-09-30",
-      "lastLocation": "CMH",
-      "lastTech": "Tanaija Price",
+      "lastIHC": "2026-10-12",
+      "lastLocation": "DFW",
+      "lastTech": "Nadia Johnson",
       "ED1": -3,
       "ED2": 4
     },
@@ -2472,6 +2472,15 @@
     },
     {
       "tail": "N243NN",
+      "date": "2026-10-12",
+      "name": "Nadia Johnson",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N264NN",
       "date": "2026-10-12",
       "name": "Nadia Johnson",
       "location": "DFW",

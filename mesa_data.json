@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-14T06:27:44.095969+00:00",
+  "generated": "2026-10-14T07:28:17.718142+00:00",
   "cycles": {
     "IHC": 45,
     "ED": 30,
@@ -622,20 +622,20 @@
     },
     {
       "tail": "N87345",
-      "lastService": "2026-10-06",
+      "lastService": "2026-10-13",
       "lastIHC": "2026-10-06",
       "lastED": "2026-09-22",
       "lastDSC": "2026-09-22",
-      "lastFD": "2026-10-06",
+      "lastFD": "2026-10-13",
       "lastCE": "2026-09-22",
-      "lastRON": "2026-09-27",
-      "lastEC": "2026-10-06",
-      "lastESS": "2026-10-06",
-      "lastTech": "RENEL ANTHONY",
+      "lastRON": "2026-10-13",
+      "lastEC": "2026-10-13",
+      "lastESS": "2026-10-13",
+      "lastTech": "Renel Anthony",
       "IHC": 37,
       "ED": 8,
       "DSC": 8,
-      "FD": 22,
+      "FD": 29,
       "CE": 8
     },
     {
@@ -1216,6 +1216,19 @@
       "DSC": 1,
       "FD": 1,
       "CE": 1,
+      "RON": 1,
+      "EC": 1,
+      "ESS": 1
+    },
+    {
+      "tail": "N87345",
+      "date": "2026-10-13",
+      "name": "Renel Anthony",
+      "IHC": 0,
+      "ED": 0,
+      "DSC": 0,
+      "FD": 1,
+      "CE": 0,
       "RON": 1,
       "EC": 1,
       "ESS": 1

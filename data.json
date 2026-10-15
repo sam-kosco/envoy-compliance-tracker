@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-15T06:08:20.929258+00:00",
+  "generated": "2026-10-15T07:07:47.847397+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -168,12 +168,12 @@
     },
     {
       "tail": "N215NN",
-      "lastService": "2026-10-12",
+      "lastService": "2026-10-14",
       "lastED1": "2026-10-05",
       "lastED2": "2026-10-09",
-      "lastIHC": "2026-10-12",
-      "lastLocation": "CVG",
-      "lastTech": "Precious Valadez-Roberson",
+      "lastIHC": "2026-10-14",
+      "lastLocation": "DFW",
+      "lastTech": "Aunyae Morrison",
       "ED1": 20,
       "ED2": 54
     },
@@ -256,12 +256,12 @@
     },
     {
       "tail": "N223NN",
-      "lastService": "2026-10-12",
+      "lastService": "2026-10-14",
       "lastED1": "2026-09-20",
       "lastED2": "2026-09-20",
-      "lastIHC": "2026-10-12",
-      "lastLocation": "XNA",
-      "lastTech": "Ashley Burke",
+      "lastIHC": "2026-10-14",
+      "lastLocation": "CMH",
+      "lastTech": "Tanaija Price",
       "ED1": 5,
       "ED2": 35
     },
@@ -542,10 +542,10 @@
     },
     {
       "tail": "N249NN",
-      "lastService": "2026-10-11",
+      "lastService": "2026-10-14",
       "lastED1": "2026-10-07",
       "lastED2": "2026-09-09",
-      "lastIHC": "2026-10-11",
+      "lastIHC": "2026-10-14",
       "lastLocation": "CMH",
       "lastTech": "Tanaija Price",
       "ED1": 22,
@@ -674,12 +674,12 @@
     },
     {
       "tail": "N261NN",
-      "lastService": "2026-10-10",
+      "lastService": "2026-10-14",
       "lastED1": "2026-09-30",
       "lastED2": "2026-09-03",
-      "lastIHC": "2026-10-10",
-      "lastLocation": "LIT",
-      "lastTech": "Riley Pinterich",
+      "lastIHC": "2026-10-14",
+      "lastLocation": "CMH",
+      "lastTech": "Tanaija Price",
       "ED1": 15,
       "ED2": 18
     },
@@ -784,13 +784,13 @@
     },
     {
       "tail": "N271NN",
-      "lastService": "2026-10-11",
-      "lastED1": "2026-09-03",
+      "lastService": "2026-10-14",
+      "lastED1": "2026-10-14",
       "lastED2": "2026-09-03",
-      "lastIHC": "2026-10-11",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
-      "ED1": -12,
+      "lastIHC": "2026-10-14",
+      "lastLocation": "CMH",
+      "lastTech": "Tanaija Price",
+      "ED1": 29,
       "ED2": 18
     },
     {
@@ -1169,12 +1169,12 @@
     },
     {
       "tail": "N311VE",
-      "lastService": "2026-09-29",
+      "lastService": "2026-10-14",
       "lastED1": "2026-09-15",
       "lastED2": "2026-09-15",
-      "lastIHC": "2026-09-29",
-      "lastLocation": "LIT",
-      "lastTech": "Damian Utley",
+      "lastIHC": "2026-10-14",
+      "lastLocation": "DFW",
+      "lastTech": "Aunyae Morrison",
       "ED1": 0,
       "ED2": 30
     },
@@ -1642,12 +1642,12 @@
     },
     {
       "tail": "N354CG",
-      "lastService": "2026-10-11",
+      "lastService": "2026-10-14",
       "lastED1": "2026-09-28",
       "lastED2": "2026-09-28",
-      "lastIHC": "2026-10-11",
-      "lastLocation": "DFW",
-      "lastTech": "Nadia Johnson",
+      "lastIHC": "2026-10-14",
+      "lastLocation": "CMH",
+      "lastTech": "Tanaija Price",
       "ED1": 13,
       "ED2": 43
     },
@@ -1796,12 +1796,12 @@
     },
     {
       "tail": "N761RW",
-      "lastService": "2026-10-09",
+      "lastService": "2026-10-14",
       "lastED1": "2026-10-01",
       "lastED2": "2026-10-01",
-      "lastIHC": "2026-10-09",
-      "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastIHC": "2026-10-14",
+      "lastLocation": "CMH",
+      "lastTech": "Tanaija Price",
       "ED1": 16,
       "ED2": 46
     },
@@ -2149,6 +2149,60 @@
   ],
   "debriefs": [
     {
+      "tail": "N223NN",
+      "date": "2026-10-14",
+      "name": "Tanaija Price",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N249NN",
+      "date": "2026-10-14",
+      "name": "Tanaija Price",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N261NN",
+      "date": "2026-10-14",
+      "name": "Tanaija Price",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N271NN",
+      "date": "2026-10-14",
+      "name": "Tanaija Price",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N354CG",
+      "date": "2026-10-14",
+      "name": "Tanaija Price",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N761RW",
+      "date": "2026-10-14",
+      "name": "Tanaija Price",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
       "tail": "N794JH",
       "date": "2026-10-14",
       "name": "Aunyae Morrison",
@@ -2168,6 +2222,24 @@
     },
     {
       "tail": "N250NN",
+      "date": "2026-10-14",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N215NN",
+      "date": "2026-10-14",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N311VE",
       "date": "2026-10-14",
       "name": "Aunyae Morrison",
       "location": "DFW",

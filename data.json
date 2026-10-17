@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-17T06:07:40.546640+00:00",
+  "generated": "2026-10-17T08:07:27.825641+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -146,12 +146,12 @@
     },
     {
       "tail": "N213NN",
-      "lastService": "2026-10-03",
+      "lastService": "2026-10-16",
       "lastED1": "2026-09-30",
       "lastED2": "2026-09-03",
-      "lastIHC": "2026-10-03",
-      "lastLocation": "LIT",
-      "lastTech": "Riley Pinterich",
+      "lastIHC": "2026-10-16",
+      "lastLocation": "XNA",
+      "lastTech": "Ashley Burke",
       "ED1": 13,
       "ED2": 16
     },
@@ -234,13 +234,13 @@
     },
     {
       "tail": "N221NN",
-      "lastService": "2026-10-08",
-      "lastED1": "2026-09-07",
+      "lastService": "2026-10-16",
+      "lastED1": "2026-10-16",
       "lastED2": "2026-09-22",
-      "lastIHC": "2026-10-08",
-      "lastLocation": "CVG",
-      "lastTech": "Dvion Davis",
-      "ED1": -10,
+      "lastIHC": "2026-10-16",
+      "lastLocation": "XNA",
+      "lastTech": "Ashley Burke",
+      "ED1": 29,
       "ED2": 35
     },
     {
@@ -740,14 +740,14 @@
     },
     {
       "tail": "N267NN",
-      "lastService": "2026-10-10",
+      "lastService": "2026-10-16",
       "lastED1": "2026-09-24",
-      "lastED2": "2026-07-13",
-      "lastIHC": "2026-10-10",
-      "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastED2": "2026-10-16",
+      "lastIHC": "2026-10-16",
+      "lastLocation": "XNA",
+      "lastTech": "Ashley Burke",
       "ED1": 7,
-      "ED2": -36
+      "ED2": 59
     },
     {
       "tail": "N268NN",
@@ -817,14 +817,14 @@
     },
     {
       "tail": "N274NN",
-      "lastService": "2026-09-06",
-      "lastED1": "2026-08-06",
-      "lastED2": "2026-08-06",
-      "lastIHC": "2026-09-06",
-      "lastLocation": "DFW",
-      "lastTech": "NADIA  JOHNSON",
-      "ED1": -42,
-      "ED2": -12
+      "lastService": "2026-10-16",
+      "lastED1": "2026-10-16",
+      "lastED2": "2026-10-16",
+      "lastIHC": "2026-10-16",
+      "lastLocation": "XNA",
+      "lastTech": "Ashley Burke",
+      "ED1": 29,
+      "ED2": 59
     },
     {
       "tail": "N275NN",
@@ -1147,12 +1147,12 @@
     },
     {
       "tail": "N309JR",
-      "lastService": "2026-10-13",
+      "lastService": "2026-10-16",
       "lastED1": "2026-09-29",
       "lastED2": "2026-09-04",
-      "lastIHC": "2026-10-13",
-      "lastLocation": "DFW",
-      "lastTech": "Nadia Johnson",
+      "lastIHC": "2026-10-16",
+      "lastLocation": "XNA",
+      "lastTech": "Ashley Burke",
       "ED1": 12,
       "ED2": 17
     },
@@ -1180,13 +1180,13 @@
     },
     {
       "tail": "N312BT",
-      "lastService": "2026-10-10",
-      "lastED1": "2026-09-12",
+      "lastService": "2026-10-16",
+      "lastED1": "2026-10-16",
       "lastED2": "2026-09-18",
-      "lastIHC": "2026-10-10",
-      "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
-      "ED1": -5,
+      "lastIHC": "2026-10-16",
+      "lastLocation": "XNA",
+      "lastTech": "Ashley Burke",
+      "ED1": 29,
       "ED2": 31
     },
     {
@@ -1587,12 +1587,12 @@
     },
     {
       "tail": "N349DD",
-      "lastService": "2026-10-15",
+      "lastService": "2026-10-16",
       "lastED1": "2026-09-25",
       "lastED2": "2026-08-25",
-      "lastIHC": "2026-10-15",
-      "lastLocation": "LIT",
-      "lastTech": "Damian Utley",
+      "lastIHC": "2026-10-16",
+      "lastLocation": "XNA",
+      "lastTech": "Ashley Burke",
       "ED1": 8,
       "ED2": 7
     },
@@ -1620,12 +1620,12 @@
     },
     {
       "tail": "N352KR",
-      "lastService": "2026-10-08",
+      "lastService": "2026-10-16",
       "lastED1": "2026-09-28",
       "lastED2": "2026-09-28",
-      "lastIHC": "2026-10-08",
-      "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastIHC": "2026-10-16",
+      "lastLocation": "XNA",
+      "lastTech": "Ashley Burke",
       "ED1": 11,
       "ED2": 41
     },
@@ -2200,6 +2200,78 @@
       "location": "CMH",
       "IHC": 1,
       "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N349DD",
+      "date": "2026-10-16",
+      "name": "Ashley Burke",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N213NN",
+      "date": "2026-10-16",
+      "name": "Ashley Burke",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N309JR",
+      "date": "2026-10-16",
+      "name": "Ashley Burke",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N221NN",
+      "date": "2026-10-16",
+      "name": "Ashley Burke",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N352KR",
+      "date": "2026-10-16",
+      "name": "Ashley Burke",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N274NN",
+      "date": "2026-10-16",
+      "name": "Ashley Burke",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 1
+    },
+    {
+      "tail": "N267NN",
+      "date": "2026-10-16",
+      "name": "Ashley Burke",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 1
+    },
+    {
+      "tail": "N312BT",
+      "date": "2026-10-16",
+      "name": "Ashley Burke",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 1,
       "ED2": 0
     },
     {

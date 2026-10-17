@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-17T06:27:40.203405+00:00",
+  "generated": "2026-10-17T07:28:07.782851+00:00",
   "cycles": {
     "IHC": 45,
     "ED": 30,
@@ -928,20 +928,20 @@
     },
     {
       "tail": "N89308",
-      "lastService": "2026-10-13",
+      "lastService": "2026-10-16",
       "lastIHC": "2026-08-23",
       "lastED": "2026-10-03",
       "lastDSC": "2026-09-27",
-      "lastFD": "2026-10-13",
+      "lastFD": "2026-10-16",
       "lastCE": "2026-10-06",
-      "lastRON": "2026-10-13",
-      "lastEC": "2026-10-13",
-      "lastESS": "2026-10-13",
-      "lastTech": "Renel Anthony",
+      "lastRON": "2026-10-16",
+      "lastEC": "2026-10-16",
+      "lastESS": "2026-10-16",
+      "lastTech": "Raenita Jasper",
       "IHC": -10,
       "ED": 16,
       "DSC": 10,
-      "FD": 26,
+      "FD": 29,
       "CE": 19
     },
     {
@@ -1222,6 +1222,19 @@
     },
     {
       "tail": "N87302",
+      "date": "2026-10-16",
+      "name": "Raenita Jasper",
+      "IHC": 0,
+      "ED": 0,
+      "DSC": 0,
+      "FD": 1,
+      "CE": 0,
+      "RON": 1,
+      "EC": 1,
+      "ESS": 1
+    },
+    {
+      "tail": "N89308",
       "date": "2026-10-16",
       "name": "Raenita Jasper",
       "IHC": 0,

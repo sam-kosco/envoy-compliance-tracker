@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-19T03:17:46.635061+00:00",
+  "generated": "2026-10-19T04:18:09.258018+00:00",
   "planes": [
     {
       "tail": "N500AE",
@@ -3105,25 +3105,25 @@
     },
     {
       "tail": "N712PS",
-      "lastService": "2026-10-17",
-      "lastCC": "2026-10-17",
+      "lastService": "2026-10-18",
+      "lastCC": "2026-10-18",
       "lastDSC": "2026-10-17",
       "lastCE": "2026-10-17",
       "lastED1": "2026-09-26",
       "lastED2": "2026-09-26",
-      "lastLav": "2026-07-18",
-      "lastIC": "2026-10-17",
-      "lastEC": "2026-10-17",
+      "lastLav": "2026-10-18",
+      "lastIC": "2026-10-18",
+      "lastEC": "2026-10-18",
       "lastED3": "2025-12-01",
       "lastED4": "2025-12-02",
-      "lastLocation": "TYS",
-      "lastTech": "Iyana Galan",
-      "CC": 28,
+      "lastLocation": "CAK",
+      "lastTech": "Amy Gribble",
+      "CC": 29,
       "DSC": 28,
       "CE": 28,
       "ED1": 7,
       "ED2": 7,
-      "Lav": -3
+      "Lav": 89
     },
     {
       "tail": "N716PS",
@@ -3384,6 +3384,23 @@
       "ED3": 0,
       "ED4": 0,
       "Lav": 0,
+      "audits": []
+    },
+    {
+      "tail": "N712PS",
+      "date": "2026-10-18",
+      "name": "Amy Gribble",
+      "location": "CAK",
+      "IC": 1,
+      "EC": 1,
+      "CC": 1,
+      "DSC": 0,
+      "CE": 0,
+      "ED1": 0,
+      "ED2": 0,
+      "ED3": 0,
+      "ED4": 0,
+      "Lav": 1,
       "audits": []
     },
     {

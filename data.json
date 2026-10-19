@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-19T07:07:37.412077+00:00",
+  "generated": "2026-10-19T08:08:03.538283+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -91,12 +91,12 @@
     },
     {
       "tail": "N208AN",
-      "lastService": "2026-10-05",
+      "lastService": "2026-10-18",
       "lastED1": "2026-10-05",
       "lastED2": "2026-09-04",
-      "lastIHC": "2026-10-05",
-      "lastLocation": "LIT",
-      "lastTech": "Riley Pinterich",
+      "lastIHC": "2026-10-18",
+      "lastLocation": "CVG",
+      "lastTech": "Dvion Davis",
       "ED1": 16,
       "ED2": 15
     },
@@ -201,12 +201,12 @@
     },
     {
       "tail": "N218NN",
-      "lastService": "2026-10-17",
+      "lastService": "2026-10-18",
       "lastED1": "2026-10-17",
       "lastED2": "2026-10-17",
-      "lastIHC": "2026-10-17",
-      "lastLocation": "XNA",
-      "lastTech": "Ashley Burke",
+      "lastIHC": "2026-10-18",
+      "lastLocation": "DFW",
+      "lastTech": "Nadia Johnson",
       "ED1": 28,
       "ED2": 58
     },
@@ -641,12 +641,12 @@
     },
     {
       "tail": "N258NN",
-      "lastService": "2026-10-14",
+      "lastService": "2026-10-18",
       "lastED1": "2026-10-06",
       "lastED2": "2026-09-14",
-      "lastIHC": "2026-10-14",
+      "lastIHC": "2026-10-18",
       "lastLocation": "XNA",
-      "lastTech": "Casey Henry",
+      "lastTech": "Ashley Burke",
       "ED1": 17,
       "ED2": 25
     },
@@ -1070,12 +1070,12 @@
     },
     {
       "tail": "N302RN",
-      "lastService": "2026-10-15",
+      "lastService": "2026-10-18",
       "lastED1": "2026-09-28",
       "lastED2": "2026-08-27",
-      "lastIHC": "2026-10-15",
-      "lastLocation": "LIT",
-      "lastTech": "Damian Utley",
+      "lastIHC": "2026-10-18",
+      "lastLocation": "CVG",
+      "lastTech": "Dvion Davis",
       "ED1": 9,
       "ED2": 7
     },
@@ -1147,10 +1147,10 @@
     },
     {
       "tail": "N309JR",
-      "lastService": "2026-10-16",
+      "lastService": "2026-10-18",
       "lastED1": "2026-09-29",
       "lastED2": "2026-09-04",
-      "lastIHC": "2026-10-16",
+      "lastIHC": "2026-10-18",
       "lastLocation": "XNA",
       "lastTech": "Ashley Burke",
       "ED1": 10,
@@ -1323,14 +1323,14 @@
     },
     {
       "tail": "N325DM",
-      "lastService": "2026-10-07",
-      "lastED1": "2026-09-07",
-      "lastED2": "2026-07-28",
-      "lastIHC": "2026-10-07",
-      "lastLocation": "XNA",
-      "lastTech": "Casey Henry",
-      "ED1": -12,
-      "ED2": -23
+      "lastService": "2026-10-18",
+      "lastED1": "2026-10-18",
+      "lastED2": "2026-10-18",
+      "lastIHC": "2026-10-18",
+      "lastLocation": "CVG",
+      "lastTech": "Dvion Davis",
+      "ED1": 29,
+      "ED2": 59
     },
     {
       "tail": "N326CJ",
@@ -1664,12 +1664,12 @@
     },
     {
       "tail": "N740MR",
-      "lastService": "2026-10-15",
+      "lastService": "2026-10-18",
       "lastED1": "2026-09-20",
       "lastED2": "2026-10-05",
-      "lastIHC": "2026-10-15",
+      "lastIHC": "2026-10-18",
       "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastTech": "Nadia Johnson",
       "ED1": 1,
       "ED2": 46
     },
@@ -1752,12 +1752,12 @@
     },
     {
       "tail": "N749BM",
-      "lastService": "2026-10-10",
+      "lastService": "2026-10-18",
       "lastED1": "2026-07-21",
       "lastED2": "2026-07-21",
-      "lastIHC": "2026-10-10",
-      "lastLocation": "CVG",
-      "lastTech": "Bayleah Vogel",
+      "lastIHC": "2026-10-18",
+      "lastLocation": "DFW",
+      "lastTech": "Nadia Johnson",
       "ED1": -60,
       "ED2": -30
     },
@@ -2221,6 +2221,51 @@
       "ED2": 1
     },
     {
+      "tail": "N208AN",
+      "date": "2026-10-18",
+      "name": "Dvion Davis",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N302RN",
+      "date": "2026-10-18",
+      "name": "Dvion Davis",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N325DM",
+      "date": "2026-10-18",
+      "name": "Dvion Davis",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 1
+    },
+    {
+      "tail": "N258NN",
+      "date": "2026-10-18",
+      "name": "Ashley Burke",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N309JR",
+      "date": "2026-10-18",
+      "name": "Ashley Burke",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
       "tail": "N250NN",
       "date": "2026-10-18",
       "name": "Nadia Johnson",
@@ -2258,6 +2303,33 @@
     },
     {
       "tail": "N320BK",
+      "date": "2026-10-18",
+      "name": "Nadia Johnson",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N749BM",
+      "date": "2026-10-18",
+      "name": "Nadia Johnson",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N740MR",
+      "date": "2026-10-18",
+      "name": "Nadia Johnson",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N218NN",
       "date": "2026-10-18",
       "name": "Nadia Johnson",
       "location": "DFW",

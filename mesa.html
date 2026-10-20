@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mesa Fleet Compliance Tracker</title>
+<title>Republic Fleet Compliance Tracker</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -376,7 +376,7 @@
     <div class="hdr-logo-wrap" style="display:flex;flex-direction:column;align-items:flex-start;line-height:1;gap:1px;"><span style="font-family:var(--cond);font-size:26px;font-weight:800;color:#fff;letter-spacing:2px;">MESA</span><span style="font-family:var(--cond);font-size:9px;font-weight:700;color:var(--orange-light);letter-spacing:3px;">AIRLINES</span></div>
     <div class="hdr-divider"></div>
     <div>
-      <div class="hdr-title">Mesa Fleet Compliance Tracker</div>
+      <div class="hdr-title">Republic Fleet Compliance Tracker</div>
       <div class="hdr-subtitle">Foxtrot Aviation Services</div>
     </div>
   </div>
@@ -389,7 +389,7 @@
 
 <div class="orange-band" style="justify-content:center;">
   <div class="band-inner">
-  <div class="band-label">Mesa Airlines Detailing Compliance Dashboard</div>
+  <div class="band-label">Republic Airways Detailing Compliance Dashboard</div>
 </div>
 </div>
 
@@ -512,7 +512,7 @@
 
 </main>
 
-<footer>&copy; Foxtrot Aviation Services &nbsp;·&nbsp; Mesa Fleet Compliance Portal &nbsp;·&nbsp; Confidential</footer>
+<footer>&copy; Foxtrot Aviation Services &nbsp;·&nbsp; Republic Fleet Compliance Portal &nbsp;·&nbsp; Confidential</footer>
 
 <script>
 const DATA_URL  = 'mesa_data.json';
@@ -867,7 +867,7 @@ function switchTab(name) {
 }
 
 /* ===== WORK ORDER ===== */
-const WO_PROGRAM = 'Mesa';
+const WO_PROGRAM = 'Mesa';  // a KEY, not a label: the closeout check (work_order.py) maps "MESA" — keep until it knows "REPUBLIC"
 const WO_TRACKED = (typeof TRACKED !== 'undefined') ? TRACKED : Object.keys(JOB_NAMES);
 // Work-order snapshot store: when a work order is generated we POST a JSON
 // snapshot of it (keyed by the QR's woId) so a closeout done on a phone can

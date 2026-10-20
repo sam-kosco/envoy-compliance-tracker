@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-20T09:08:02.368985+00:00",
+  "generated": "2026-10-20T10:07:38.376995+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -69,12 +69,12 @@
     },
     {
       "tail": "N206NN",
-      "lastService": "2026-10-18",
+      "lastService": "2026-10-19",
       "lastED1": "2026-10-17",
       "lastED2": "2026-10-17",
-      "lastIHC": "2026-10-18",
-      "lastLocation": "CMH",
-      "lastTech": "Tanaija Price",
+      "lastIHC": "2026-10-19",
+      "lastLocation": "CVG",
+      "lastTech": "Dvion Davis",
       "ED1": 27,
       "ED2": 57
     },
@@ -465,12 +465,12 @@
     },
     {
       "tail": "N242NN",
-      "lastService": "2026-10-15",
+      "lastService": "2026-10-19",
       "lastED1": "2026-10-07",
       "lastED2": "2026-09-19",
-      "lastIHC": "2026-10-15",
-      "lastLocation": "CMH",
-      "lastTech": "Tanaija  Price",
+      "lastIHC": "2026-10-19",
+      "lastLocation": "CVG",
+      "lastTech": "Dvion Davis",
       "ED1": 17,
       "ED2": 29
     },
@@ -817,12 +817,12 @@
     },
     {
       "tail": "N274NN",
-      "lastService": "2026-10-16",
+      "lastService": "2026-10-19",
       "lastED1": "2026-10-16",
       "lastED2": "2026-10-16",
-      "lastIHC": "2026-10-16",
-      "lastLocation": "XNA",
-      "lastTech": "Ashley Burke",
+      "lastIHC": "2026-10-19",
+      "lastLocation": "CVG",
+      "lastTech": "Dvion Davis",
       "ED1": 26,
       "ED2": 56
     },
@@ -1213,12 +1213,12 @@
     },
     {
       "tail": "N315NH",
-      "lastService": "2026-10-08",
+      "lastService": "2026-10-19",
       "lastED1": "2026-09-17",
       "lastED2": "2026-09-22",
-      "lastIHC": "2026-10-08",
-      "lastLocation": "LIT",
-      "lastTech": "Riley Pinterich",
+      "lastIHC": "2026-10-19",
+      "lastLocation": "DFW",
+      "lastTech": "Nadia Johnson",
       "ED1": -3,
       "ED2": 32
     },
@@ -2071,12 +2071,12 @@
     },
     {
       "tail": "N789SS",
-      "lastService": "2026-10-08",
+      "lastService": "2026-10-19",
       "lastED1": "2026-10-07",
       "lastED2": "2026-09-04",
-      "lastIHC": "2026-10-08",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
+      "lastIHC": "2026-10-19",
+      "lastLocation": "CVG",
+      "lastTech": "Dvion Davis",
       "ED1": 17,
       "ED2": 14
     },
@@ -2365,6 +2365,42 @@
       "ED2": 0
     },
     {
+      "tail": "N789SS",
+      "date": "2026-10-19",
+      "name": "Dvion Davis",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N274NN",
+      "date": "2026-10-19",
+      "name": "Dvion Davis",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N242NN",
+      "date": "2026-10-19",
+      "name": "Dvion Davis",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N206NN",
+      "date": "2026-10-19",
+      "name": "Dvion Davis",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
       "tail": "N257NN",
       "date": "2026-10-19",
       "name": "Nadia Johnson",
@@ -2438,6 +2474,15 @@
     },
     {
       "tail": "N344JA",
+      "date": "2026-10-19",
+      "name": "Nadia Johnson",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N315NH",
       "date": "2026-10-19",
       "name": "Nadia Johnson",
       "location": "DFW",

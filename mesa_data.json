@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-20T03:27:52.384993+00:00",
+  "generated": "2026-10-20T04:27:31.884788+00:00",
   "cycles": {
     "IHC": 45,
     "ED": 30,
@@ -143,21 +143,21 @@
     },
     {
       "tail": "N85320",
-      "lastService": "2026-10-18",
+      "lastService": "2026-10-19",
       "lastIHC": "2026-10-17",
       "lastED": "2026-10-17",
       "lastDSC": "2026-10-17",
-      "lastFD": "2026-10-18",
+      "lastFD": "2026-10-19",
       "lastCE": "2026-10-17",
-      "lastRON": "2026-10-18",
-      "lastEC": "2026-10-18",
-      "lastESS": "2026-10-18",
-      "lastTech": "David  Blatt",
+      "lastRON": "2026-10-19",
+      "lastEC": "2026-10-19",
+      "lastESS": "2026-10-19",
+      "lastTech": "Raenita Jasper",
       "lastLocation": "IAH",
       "IHC": 42,
       "ED": 27,
       "DSC": 27,
-      "FD": 28,
+      "FD": 29,
       "CE": 27
     },
     {
@@ -1166,6 +1166,20 @@
     },
     {
       "tail": "N86347",
+      "date": "2026-10-19",
+      "name": "Raenita Jasper",
+      "location": "IAH",
+      "IHC": 0,
+      "ED": 0,
+      "DSC": 0,
+      "FD": 1,
+      "CE": 0,
+      "RON": 1,
+      "EC": 1,
+      "ESS": 1
+    },
+    {
+      "tail": "N85320",
       "date": "2026-10-19",
       "name": "Raenita Jasper",
       "location": "IAH",

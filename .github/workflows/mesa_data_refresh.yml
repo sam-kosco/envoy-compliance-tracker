@@ -4,6 +4,11 @@ on:
   # No native cron (Sam, 2026-08-28): the platform's dispatcher fires this
   # hourly at :27 from Monitoring/schedules.json.
   workflow_dispatch:
+    inputs:
+      force:
+        description: "Rebuild even if Mesa Debriefs.xlsx hasn't changed (e.g. after a code fix)"
+        type: boolean
+        default: false
 
 jobs:
   refresh:
@@ -21,7 +26,9 @@ jobs:
           TENANT_ID:     ${{ secrets.TENANT_ID }}
           CLIENT_ID:     ${{ secrets.CLIENT_ID }}
           CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
-        run: python3 check_source_modified.py "Power Flows/Debriefs/Mesa Debriefs.xlsx" refresh_state/mesa.mtime
+        run: |
+          python3 check_source_modified.py "Power Flows/Debriefs/Mesa Debriefs.xlsx" refresh_state/mesa.mtime
+          if [ "${{ inputs.force }}" = "true" ]; then echo "changed=true" >> "$GITHUB_OUTPUT"; echo "forced rebuild"; fi
 
       - name: Set up Python
         if: steps.src.outputs.changed == 'true'

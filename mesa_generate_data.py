@@ -170,21 +170,42 @@ def parse_workbook(path):
              if r[0] and str(r[0]).strip().upper() != "TAILS"]
     print(f"  Tails: {len(tails)} tails")
 
-    # Debriefs
-    # Cols: 0=Date,1=Name,2=Tail,3=IHC,4=RON,5=EC,6=ED,7=DSC,8=CE,
-    #       9=FCD(ignored),10=ESS,11=SubID,12=Flight Deck
+    # Debriefs — columns are found BY HEADER, never by position. A Location
+    # column was inserted as column C on 2026-10-19 (IAD launch) and the old
+    # fixed positions read the location as the tail: every tail went to
+    # "No Service" on the next refresh. A missing header now stops the
+    # refresh instead of publishing a wrong tracker.
     ws_d = wb["Debriefs"]
+    drows = list(ws_d.iter_rows(values_only=True))
+    hdr = [str(c or "").strip().lower() for c in (drows[0] if drows else [])]
+
+    def col(*names, required=True):
+        for n in names:
+            n = n.lower()
+            for i, h in enumerate(hdr):
+                if h == n or h.endswith(f"({n})"):
+                    return i
+        if required:
+            raise SystemExit(f"Mesa Debriefs: no column {names[0]!r} in {hdr}")
+        return None
+
+    c_date, c_name, c_tail = col("date"), col("name"), col("tail number")
+    c_loc = col("location", required=False)
+    c = {"IHC": col("ihc"), "RON": col("ron"), "EC": col("ec"), "ED": col("ed"),
+         "DSC": col("dsc"), "CE": col("ce"), "ESS": col("ess"),
+         "FD": col("flight deck", required=False)}
     debriefs = []
-    for row in list(ws_d.iter_rows(values_only=True))[1:]:
-        if not row or row[0] is None:
+    for row in drows[1:]:
+        if not row or row[c_date] is None:
             continue
+        get = lambda i: row[i] if i is not None and i < len(row) else None  # noqa: E731
         debriefs.append({
-            "date": parse_date(row[0]),
-            "name": str(row[1] or "").strip(),
-            "tail": str(row[2] or "").strip().upper(),
-            "IHC": flag(row[3]),  "RON": flag(row[4]), "EC":  flag(row[5]),
-            "ED":  flag(row[6]),  "DSC": flag(row[7]), "CE":  flag(row[8]),
-            "ESS": flag(row[10]), "FD":  flag(row[12] if len(row) > 12 else None),
+            "date": parse_date(row[c_date]),
+            "name": str(get(c_name) or "").strip(),
+            "tail": str(get(c_tail) or "").strip().upper(),
+            # Blank = IAH: every row before the Location field existed was IAH.
+            "location": str(get(c_loc) or "").strip().upper() or "IAH",
+            **{j: flag(get(i)) for j, i in c.items()},
         })
     print(f"  Debriefs: {len(debriefs)} rows")
     return tails, debriefs, cycles, read_added(ws_tl)
@@ -235,6 +256,8 @@ def build_planes(tails, debriefs, cycles, added=None):
             "lastEC":  fmt(last["EC"]),
             "lastESS": fmt(last["ESS"]),
             "lastTech": sr[0]["name"] if sr else None,
+            # The work-order PDF prints this under each tail (IAH / IAD).
+            "lastLocation": sr[0].get("location") if sr else None,
             **windows,
         })
 
@@ -247,6 +270,7 @@ def format_debriefs(debriefs):
     for d in debriefs:
         out.append({
             "tail": d["tail"], "date": fmt(d["date"]), "name": d["name"],
+            "location": d.get("location"),
             "IHC": d["IHC"], "ED": d["ED"], "DSC": d["DSC"],
             "FD": d["FD"], "CE": d["CE"],
             "RON": d["RON"], "EC": d["EC"], "ESS": d["ESS"],

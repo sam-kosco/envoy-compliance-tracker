@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-23T07:08:13.522743+00:00",
+  "generated": "2026-10-23T08:07:52.714669+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -212,12 +212,12 @@
     },
     {
       "tail": "N219NN",
-      "lastService": "2026-10-21",
+      "lastService": "2026-10-22",
       "lastED1": "2026-10-09",
       "lastED2": "2026-09-11",
-      "lastIHC": "2026-10-21",
+      "lastIHC": "2026-10-22",
       "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastTech": "Nadia Johnson",
       "ED1": 16,
       "ED2": 18
     },
@@ -905,12 +905,12 @@
     },
     {
       "tail": "N282NN",
-      "lastService": "2026-10-20",
+      "lastService": "2026-10-22",
       "lastED1": "2026-10-15",
       "lastED2": "2026-10-15",
-      "lastIHC": "2026-10-20",
-      "lastLocation": "LIT",
-      "lastTech": "Damian Utley",
+      "lastIHC": "2026-10-22",
+      "lastLocation": "CVG",
+      "lastTech": "Precious Valadez-Roberson",
       "ED1": 22,
       "ED2": 52
     },
@@ -938,12 +938,12 @@
     },
     {
       "tail": "N285NN",
-      "lastService": "2026-10-18",
+      "lastService": "2026-10-22",
       "lastED1": "2026-10-07",
       "lastED2": "2026-10-07",
-      "lastIHC": "2026-10-18",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
+      "lastIHC": "2026-10-22",
+      "lastLocation": "CVG",
+      "lastTech": "Precious Valadez-Roberson",
       "ED1": 14,
       "ED2": 44
     },
@@ -1070,12 +1070,12 @@
     },
     {
       "tail": "N302RN",
-      "lastService": "2026-10-18",
+      "lastService": "2026-10-22",
       "lastED1": "2026-09-28",
       "lastED2": "2026-08-27",
-      "lastIHC": "2026-10-18",
+      "lastIHC": "2026-10-22",
       "lastLocation": "CVG",
-      "lastTech": "Dvion Davis",
+      "lastTech": "Precious Valadez-Roberson",
       "ED1": 5,
       "ED2": 3
     },
@@ -1950,12 +1950,12 @@
     },
     {
       "tail": "N779RN",
-      "lastService": "2026-10-21",
+      "lastService": "2026-10-22",
       "lastED1": "2026-10-07",
       "lastED2": "2026-10-07",
-      "lastIHC": "2026-10-21",
-      "lastLocation": "XNA",
-      "lastTech": "Shaun Neil",
+      "lastIHC": "2026-10-22",
+      "lastLocation": "CVG",
+      "lastTech": "Precious Valadez-Roberson",
       "ED1": 14,
       "ED2": 44
     },
@@ -2275,6 +2275,42 @@
       "ED2": 0
     },
     {
+      "tail": "N282NN",
+      "date": "2026-10-22",
+      "name": "Precious Valadez-Roberson",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N285NN",
+      "date": "2026-10-22",
+      "name": "Precious Valadez-Roberson",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N302RN",
+      "date": "2026-10-22",
+      "name": "Precious Valadez-Roberson",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N779RN",
+      "date": "2026-10-22",
+      "name": "Precious Valadez-Roberson",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
       "tail": "N238NN",
       "date": "2026-10-22",
       "name": "Nadia Johnson",
@@ -2294,6 +2330,15 @@
     },
     {
       "tail": "N346BB",
+      "date": "2026-10-22",
+      "name": "Nadia Johnson",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N219NN",
       "date": "2026-10-22",
       "name": "Nadia Johnson",
       "location": "DFW",

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-23T08:07:52.714669+00:00",
+  "generated": "2026-10-23T09:08:19.933131+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -47,14 +47,14 @@
     },
     {
       "tail": "N204NN",
-      "lastService": "2026-10-17",
+      "lastService": "2026-10-22",
       "lastED1": "2026-10-07",
-      "lastED2": "2026-08-22",
-      "lastIHC": "2026-10-17",
-      "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastED2": "2026-10-22",
+      "lastIHC": "2026-10-22",
+      "lastLocation": "LIT",
+      "lastTech": "Riley Pinterich",
       "ED1": 14,
-      "ED2": -2
+      "ED2": 59
     },
     {
       "tail": "N205NN",
@@ -333,14 +333,14 @@
     },
     {
       "tail": "N230NN",
-      "lastService": "2026-10-17",
-      "lastED1": "2026-09-28",
-      "lastED2": "2026-08-28",
-      "lastIHC": "2026-10-17",
+      "lastService": "2026-10-22",
+      "lastED1": "2026-10-22",
+      "lastED2": "2026-10-22",
+      "lastIHC": "2026-10-22",
       "lastLocation": "LIT",
-      "lastTech": "Damian Utley",
-      "ED1": 5,
-      "ED2": 4
+      "lastTech": "Riley Pinterich",
+      "ED1": 29,
+      "ED2": 59
     },
     {
       "tail": "N231AN",
@@ -355,12 +355,12 @@
     },
     {
       "tail": "N232NN",
-      "lastService": "2026-10-20",
+      "lastService": "2026-10-22",
       "lastED1": "2026-10-08",
       "lastED2": "2026-10-08",
-      "lastIHC": "2026-10-20",
-      "lastLocation": "XNA",
-      "lastTech": "Ashley Burke",
+      "lastIHC": "2026-10-22",
+      "lastLocation": "LIT",
+      "lastTech": "Riley Pinterich",
       "ED1": 15,
       "ED2": 45
     },
@@ -454,12 +454,12 @@
     },
     {
       "tail": "N241NN",
-      "lastService": "2026-10-20",
+      "lastService": "2026-10-22",
       "lastED1": "2026-10-05",
       "lastED2": "2026-09-09",
-      "lastIHC": "2026-10-20",
-      "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastIHC": "2026-10-22",
+      "lastLocation": "LIT",
+      "lastTech": "Riley Pinterich",
       "ED1": 12,
       "ED2": 16
     },
@@ -586,13 +586,13 @@
     },
     {
       "tail": "N253NN",
-      "lastService": "2026-10-13",
-      "lastED1": "2026-09-22",
+      "lastService": "2026-10-22",
+      "lastED1": "2026-10-22",
       "lastED2": "2026-09-22",
-      "lastIHC": "2026-10-13",
-      "lastLocation": "CMH",
-      "lastTech": "Tanaija Price",
-      "ED1": -1,
+      "lastIHC": "2026-10-22",
+      "lastLocation": "DFW",
+      "lastTech": "Nadia Johnson",
+      "ED1": 29,
       "ED2": 29
     },
     {
@@ -1015,12 +1015,12 @@
     },
     {
       "tail": "N292NN",
-      "lastService": "2026-10-14",
+      "lastService": "2026-10-22",
       "lastED1": "2026-10-10",
       "lastED2": "2026-09-07",
-      "lastIHC": "2026-10-14",
-      "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastIHC": "2026-10-22",
+      "lastLocation": "LIT",
+      "lastTech": "Riley Pinterich",
       "ED1": 17,
       "ED2": 14
     },
@@ -1081,12 +1081,12 @@
     },
     {
       "tail": "N303DD",
-      "lastService": "2026-10-21",
+      "lastService": "2026-10-22",
       "lastED1": "2026-10-09",
       "lastED2": "2026-08-23",
-      "lastIHC": "2026-10-21",
-      "lastLocation": "CMH",
-      "lastTech": "Tanaija  Price",
+      "lastIHC": "2026-10-22",
+      "lastLocation": "DFW",
+      "lastTech": "Nadia Johnson",
       "ED1": 16,
       "ED2": -1
     },
@@ -1433,12 +1433,12 @@
     },
     {
       "tail": "N334CR",
-      "lastService": "2026-10-21",
+      "lastService": "2026-10-22",
       "lastED1": "2026-10-14",
       "lastED2": "2026-10-14",
-      "lastIHC": "2026-10-21",
-      "lastLocation": "XNA",
-      "lastTech": "Shaun Neil",
+      "lastIHC": "2026-10-22",
+      "lastLocation": "LIT",
+      "lastTech": "Riley Pinterich",
       "ED1": 21,
       "ED2": 51
     },
@@ -2311,6 +2311,60 @@
       "ED2": 0
     },
     {
+      "tail": "N241NN",
+      "date": "2026-10-22",
+      "name": "Riley Pinterich",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N204NN",
+      "date": "2026-10-22",
+      "name": "Riley Pinterich",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 1
+    },
+    {
+      "tail": "N334CR",
+      "date": "2026-10-22",
+      "name": "Riley Pinterich",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N230NN",
+      "date": "2026-10-22",
+      "name": "Riley Pinterich",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 1
+    },
+    {
+      "tail": "N232NN",
+      "date": "2026-10-22",
+      "name": "Riley Pinterich",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N292NN",
+      "date": "2026-10-22",
+      "name": "Riley Pinterich",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
       "tail": "N238NN",
       "date": "2026-10-22",
       "name": "Nadia Johnson",
@@ -2344,6 +2398,24 @@
       "location": "DFW",
       "IHC": 1,
       "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N303DD",
+      "date": "2026-10-22",
+      "name": "Nadia Johnson",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N253NN",
+      "date": "2026-10-22",
+      "name": "Nadia Johnson",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 1,
       "ED2": 0
     },
     {

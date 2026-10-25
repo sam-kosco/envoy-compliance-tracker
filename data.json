@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-25T05:08:01.969350+00:00",
+  "generated": "2026-10-25T06:07:34.179852+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -234,12 +234,12 @@
     },
     {
       "tail": "N221NN",
-      "lastService": "2026-10-20",
+      "lastService": "2026-10-24",
       "lastED1": "2026-10-16",
       "lastED2": "2026-09-22",
-      "lastIHC": "2026-10-20",
-      "lastLocation": "SGF",
-      "lastTech": "steven Wilson",
+      "lastIHC": "2026-10-24",
+      "lastLocation": "DFW",
+      "lastTech": "Nadia Johnson",
       "ED1": 21,
       "ED2": 27
     },
@@ -2159,6 +2159,15 @@
     },
     {
       "tail": "N219NN",
+      "date": "2026-10-24",
+      "name": "Nadia Johnson",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N221NN",
       "date": "2026-10-24",
       "name": "Nadia Johnson",
       "location": "DFW",

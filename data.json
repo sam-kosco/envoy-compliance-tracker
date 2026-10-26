@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-26T05:07:28.262087+00:00",
+  "generated": "2026-10-26T06:07:50.242113+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -476,12 +476,12 @@
     },
     {
       "tail": "N243NN",
-      "lastService": "2026-10-21",
+      "lastService": "2026-10-25",
       "lastED1": "2026-10-04",
       "lastED2": "2026-10-21",
-      "lastIHC": "2026-10-21",
-      "lastLocation": "XNA",
-      "lastTech": "Shaun Neil",
+      "lastIHC": "2026-10-25",
+      "lastLocation": "DFW",
+      "lastTech": "Nadia Johnson",
       "ED1": 8,
       "ED2": 55
     },
@@ -1576,12 +1576,12 @@
     },
     {
       "tail": "N348RA",
-      "lastService": "2026-10-24",
+      "lastService": "2026-10-25",
       "lastED1": "2026-10-16",
       "lastED2": "2026-09-21",
-      "lastIHC": "2026-10-24",
-      "lastLocation": "SGF",
-      "lastTech": "Ashley Burke",
+      "lastIHC": "2026-10-25",
+      "lastLocation": "DFW",
+      "lastTech": "Nadia Johnson",
       "ED1": 20,
       "ED2": 25
     },
@@ -2150,6 +2150,24 @@
   "debriefs": [
     {
       "tail": "N323ED",
+      "date": "2026-10-25",
+      "name": "Nadia Johnson",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N243NN",
+      "date": "2026-10-25",
+      "name": "Nadia Johnson",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N348RA",
       "date": "2026-10-25",
       "name": "Nadia Johnson",
       "location": "DFW",

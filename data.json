@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-27T10:07:22.918964+00:00",
+  "generated": "2026-10-27T11:08:00.447139+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -1015,12 +1015,12 @@
     },
     {
       "tail": "N292NN",
-      "lastService": "2026-10-22",
+      "lastService": "2026-10-26",
       "lastED1": "2026-10-10",
       "lastED2": "2026-09-07",
-      "lastIHC": "2026-10-22",
-      "lastLocation": "LIT",
-      "lastTech": "Riley Pinterich",
+      "lastIHC": "2026-10-26",
+      "lastLocation": "DFW",
+      "lastTech": "Nadia Johnson",
       "ED1": 13,
       "ED2": 10
     },
@@ -1323,10 +1323,10 @@
     },
     {
       "tail": "N325DM",
-      "lastService": "2026-10-23",
+      "lastService": "2026-10-26",
       "lastED1": "2026-10-18",
       "lastED2": "2026-10-18",
-      "lastIHC": "2026-10-23",
+      "lastIHC": "2026-10-26",
       "lastLocation": "DFW",
       "lastTech": "Nadia Johnson",
       "ED1": 21,
@@ -2465,6 +2465,24 @@
     },
     {
       "tail": "N278NN",
+      "date": "2026-10-26",
+      "name": "Nadia Johnson",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N325DM",
+      "date": "2026-10-26",
+      "name": "Nadia Johnson",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N292NN",
       "date": "2026-10-26",
       "name": "Nadia Johnson",
       "location": "DFW",

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-27T09:07:51.137037+00:00",
+  "generated": "2026-10-27T10:07:22.918964+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -168,12 +168,12 @@
     },
     {
       "tail": "N215NN",
-      "lastService": "2026-10-23",
+      "lastService": "2026-10-26",
       "lastED1": "2026-10-05",
       "lastED2": "2026-10-09",
-      "lastIHC": "2026-10-23",
-      "lastLocation": "DFW",
-      "lastTech": "Nadia Johnson",
+      "lastIHC": "2026-10-26",
+      "lastLocation": "SGF",
+      "lastTech": "Jeffrey Crookshanks",
       "ED1": 8,
       "ED2": 42
     },
@@ -267,12 +267,12 @@
     },
     {
       "tail": "N224NN",
-      "lastService": "2026-10-22",
+      "lastService": "2026-10-26",
       "lastED1": "2026-10-08",
       "lastED2": "2026-09-11",
-      "lastIHC": "2026-10-22",
-      "lastLocation": "XNA",
-      "lastTech": "Shaun Neil",
+      "lastIHC": "2026-10-26",
+      "lastLocation": "SGF",
+      "lastTech": "Jeffrey Crookshanks",
       "ED1": 11,
       "ED2": 14
     },
@@ -861,12 +861,12 @@
     },
     {
       "tail": "N278NN",
-      "lastService": "2026-10-23",
+      "lastService": "2026-10-26",
       "lastED1": "2026-10-15",
       "lastED2": "2026-09-25",
-      "lastIHC": "2026-10-23",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
+      "lastIHC": "2026-10-26",
+      "lastLocation": "DFW",
+      "lastTech": "Nadia Johnson",
       "ED1": 18,
       "ED2": 28
     },
@@ -883,12 +883,12 @@
     },
     {
       "tail": "N280NN",
-      "lastService": "2026-10-22",
+      "lastService": "2026-10-26",
       "lastED1": "2026-10-01",
       "lastED2": "2026-09-02",
-      "lastIHC": "2026-10-22",
-      "lastLocation": "XNA",
-      "lastTech": "Shaun Neil",
+      "lastIHC": "2026-10-26",
+      "lastLocation": "SGF",
+      "lastTech": "Jeffrey Crookshanks",
       "ED1": 4,
       "ED2": 5
     },
@@ -1378,12 +1378,12 @@
     },
     {
       "tail": "N329DD",
-      "lastService": "2026-10-25",
+      "lastService": "2026-10-26",
       "lastED1": "2026-10-25",
       "lastED2": "2026-09-28",
-      "lastIHC": "2026-10-25",
-      "lastLocation": "XNA",
-      "lastTech": "Ashley Burke",
+      "lastIHC": "2026-10-26",
+      "lastLocation": "SGF",
+      "lastTech": "Jeffrey Crookshanks",
       "ED1": 28,
       "ED2": 31
     },
@@ -2038,10 +2038,10 @@
     },
     {
       "tail": "N787BP",
-      "lastService": "2026-10-18",
+      "lastService": "2026-10-26",
       "lastED1": "2026-09-26",
       "lastED2": "2026-10-15",
-      "lastIHC": "2026-10-18",
+      "lastIHC": "2026-10-26",
       "lastLocation": "SGF",
       "lastTech": "Jeffrey Crookshanks",
       "ED1": -1,
@@ -2365,6 +2365,51 @@
       "ED2": 0
     },
     {
+      "tail": "N787BP",
+      "date": "2026-10-26",
+      "name": "Jeffrey Crookshanks",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N280NN",
+      "date": "2026-10-26",
+      "name": "Jeffrey Crookshanks",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N215NN",
+      "date": "2026-10-26",
+      "name": "Jeffrey Crookshanks",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N224NN",
+      "date": "2026-10-26",
+      "name": "Jeffrey Crookshanks",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N329DD",
+      "date": "2026-10-26",
+      "name": "Jeffrey Crookshanks",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
       "tail": "N334CR",
       "date": "2026-10-26",
       "name": "Nadia Johnson",
@@ -2416,6 +2461,15 @@
       "location": "DFW",
       "IHC": 1,
       "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N278NN",
+      "date": "2026-10-26",
+      "name": "Nadia Johnson",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
       "ED2": 0
     },
     {

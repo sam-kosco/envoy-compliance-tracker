@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-28T07:07:52.511397+00:00",
+  "generated": "2026-10-28T08:07:25.321024+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -399,10 +399,10 @@
     },
     {
       "tail": "N236NN",
-      "lastService": "2026-10-26",
+      "lastService": "2026-10-27",
       "lastED1": "2026-10-14",
       "lastED2": "2026-09-20",
-      "lastIHC": "2026-10-26",
+      "lastIHC": "2026-10-27",
       "lastLocation": "XNA",
       "lastTech": "Ashley Burke",
       "ED1": 16,
@@ -465,12 +465,12 @@
     },
     {
       "tail": "N242NN",
-      "lastService": "2026-10-24",
+      "lastService": "2026-10-27",
       "lastED1": "2026-10-07",
       "lastED2": "2026-09-19",
-      "lastIHC": "2026-10-24",
-      "lastLocation": "LIT",
-      "lastTech": "Damian Utley",
+      "lastIHC": "2026-10-27",
+      "lastLocation": "XNA",
+      "lastTech": "Ashley Burke",
       "ED1": 9,
       "ED2": 21
     },
@@ -674,12 +674,12 @@
     },
     {
       "tail": "N261NN",
-      "lastService": "2026-10-20",
+      "lastService": "2026-10-27",
       "lastED1": "2026-09-30",
       "lastED2": "2026-09-03",
-      "lastIHC": "2026-10-20",
-      "lastLocation": "CMH",
-      "lastTech": "Tanaija Price",
+      "lastIHC": "2026-10-27",
+      "lastLocation": "DFW",
+      "lastTech": "Aunyae Morrison",
       "ED1": 2,
       "ED2": 5
     },
@@ -828,12 +828,12 @@
     },
     {
       "tail": "N275NN",
-      "lastService": "2026-10-23",
+      "lastService": "2026-10-27",
       "lastED1": "2026-10-23",
       "lastED2": "2026-10-23",
-      "lastIHC": "2026-10-23",
-      "lastLocation": "LIT",
-      "lastTech": "Damian Utley",
+      "lastIHC": "2026-10-27",
+      "lastLocation": "XNA",
+      "lastTech": "Ashley Burke",
       "ED1": 25,
       "ED2": 55
     },
@@ -960,13 +960,13 @@
     },
     {
       "tail": "N287NN",
-      "lastService": "2026-10-22",
-      "lastED1": "2026-09-29",
+      "lastService": "2026-10-27",
+      "lastED1": "2026-10-27",
       "lastED2": "2026-10-09",
-      "lastIHC": "2026-10-22",
-      "lastLocation": "DFW",
-      "lastTech": "Nadia Johnson",
-      "ED1": 1,
+      "lastIHC": "2026-10-27",
+      "lastLocation": "XNA",
+      "lastTech": "Ashley Burke",
+      "ED1": 29,
       "ED2": 41
     },
     {
@@ -1092,14 +1092,14 @@
     },
     {
       "tail": "N304KM",
-      "lastService": "2026-10-12",
-      "lastED1": "2026-09-05",
-      "lastED2": "2026-08-21",
-      "lastIHC": "2026-10-12",
-      "lastLocation": "DFW",
-      "lastTech": "Nadia Johnson",
-      "ED1": -23,
-      "ED2": -8
+      "lastService": "2026-10-27",
+      "lastED1": "2026-10-27",
+      "lastED2": "2026-10-27",
+      "lastIHC": "2026-10-27",
+      "lastLocation": "XNA",
+      "lastTech": "Ashley Burke",
+      "ED1": 29,
+      "ED2": 59
     },
     {
       "tail": "N305CL",
@@ -1114,14 +1114,14 @@
     },
     {
       "tail": "N306DD",
-      "lastService": "2026-10-23",
+      "lastService": "2026-10-27",
       "lastED1": "2026-10-07",
-      "lastED2": "2026-07-08",
-      "lastIHC": "2026-10-23",
-      "lastLocation": "LIT",
-      "lastTech": "Damian Utley",
+      "lastED2": "2026-10-27",
+      "lastIHC": "2026-10-27",
+      "lastLocation": "XNA",
+      "lastTech": "Ashley Burke",
       "ED1": 9,
-      "ED2": -52
+      "ED2": 59
     },
     {
       "tail": "N307LH",
@@ -1411,12 +1411,12 @@
     },
     {
       "tail": "N332JG",
-      "lastService": "2026-10-26",
+      "lastService": "2026-10-27",
       "lastED1": "2026-10-12",
       "lastED2": "2026-10-12",
-      "lastIHC": "2026-10-26",
-      "lastLocation": "LIT",
-      "lastTech": "Damian Utley",
+      "lastIHC": "2026-10-27",
+      "lastLocation": "XNA",
+      "lastTech": "Ashley Burke",
       "ED1": 14,
       "ED2": 44
     },
@@ -1488,12 +1488,12 @@
     },
     {
       "tail": "N339HG",
-      "lastService": "2026-10-26",
+      "lastService": "2026-10-27",
       "lastED1": "2026-10-26",
       "lastED2": "2026-10-18",
-      "lastIHC": "2026-10-26",
-      "lastLocation": "DFW",
-      "lastTech": "Nadia Johnson",
+      "lastIHC": "2026-10-27",
+      "lastLocation": "XNA",
+      "lastTech": "Ashley Burke",
       "ED1": 28,
       "ED2": 50
     },
@@ -2293,6 +2293,78 @@
       "ED2": 0
     },
     {
+      "tail": "N332JG",
+      "date": "2026-10-27",
+      "name": "Ashley Burke",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N339HG",
+      "date": "2026-10-27",
+      "name": "Ashley Burke",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N304KM",
+      "date": "2026-10-27",
+      "name": "Ashley Burke",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 1
+    },
+    {
+      "tail": "N287NN",
+      "date": "2026-10-27",
+      "name": "Ashley Burke",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N236NN",
+      "date": "2026-10-27",
+      "name": "Ashley Burke",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N275NN",
+      "date": "2026-10-27",
+      "name": "Ashley Burke",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N306DD",
+      "date": "2026-10-27",
+      "name": "Ashley Burke",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 1
+    },
+    {
+      "tail": "N242NN",
+      "date": "2026-10-27",
+      "name": "Ashley Burke",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
       "tail": "N255NN",
       "date": "2026-10-27",
       "name": "Aunyae Morrison",
@@ -2330,6 +2402,15 @@
     },
     {
       "tail": "N265NN",
+      "date": "2026-10-27",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N261NN",
       "date": "2026-10-27",
       "name": "Aunyae Morrison",
       "location": "DFW",

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-28T09:07:49.450050+00:00",
+  "generated": "2026-10-28T10:07:24.909549+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -135,12 +135,12 @@
     },
     {
       "tail": "N212NN",
-      "lastService": "2026-10-26",
+      "lastService": "2026-10-27",
       "lastED1": "2026-10-24",
       "lastED2": "2026-09-20",
-      "lastIHC": "2026-10-26",
-      "lastLocation": "XNA",
-      "lastTech": "Ashley Burke",
+      "lastIHC": "2026-10-27",
+      "lastLocation": "DFW",
+      "lastTech": "Aunyae Morrison",
       "ED1": 26,
       "ED2": 22
     },
@@ -1466,12 +1466,12 @@
     },
     {
       "tail": "N337MR",
-      "lastService": "2026-10-23",
+      "lastService": "2026-10-27",
       "lastED1": "2026-10-19",
       "lastED2": "2026-09-01",
-      "lastIHC": "2026-10-23",
-      "lastLocation": "XNA",
-      "lastTech": "Ashley Burke",
+      "lastIHC": "2026-10-27",
+      "lastLocation": "DFW",
+      "lastTech": "Aunyae Morrison",
       "ED1": 21,
       "ED2": 3
     },
@@ -2429,6 +2429,24 @@
     },
     {
       "tail": "N781EJ",
+      "date": "2026-10-27",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N337MR",
+      "date": "2026-10-27",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N212NN",
       "date": "2026-10-27",
       "name": "Aunyae Morrison",
       "location": "DFW",

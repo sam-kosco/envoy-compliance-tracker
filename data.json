@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-30T06:07:57.511422+00:00",
+  "generated": "2026-10-30T07:07:21.833346+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -256,12 +256,12 @@
     },
     {
       "tail": "N223NN",
-      "lastService": "2026-10-27",
+      "lastService": "2026-10-29",
       "lastED1": "2026-10-23",
       "lastED2": "2026-09-20",
-      "lastIHC": "2026-10-27",
-      "lastLocation": "CVG",
-      "lastTech": "Sellers Davis",
+      "lastIHC": "2026-10-29",
+      "lastLocation": "DFW",
+      "lastTech": "Aunyae Morrison",
       "ED1": 23,
       "ED2": 20
     },
@@ -1796,13 +1796,13 @@
     },
     {
       "tail": "N761RW",
-      "lastService": "2026-10-24",
-      "lastED1": "2026-10-01",
+      "lastService": "2026-10-29",
+      "lastED1": "2026-10-29",
       "lastED2": "2026-10-01",
-      "lastIHC": "2026-10-24",
+      "lastIHC": "2026-10-29",
       "lastLocation": "CVG",
-      "lastTech": "Bayleah Vogel",
-      "ED1": 1,
+      "lastTech": "Sellers Davis",
+      "ED1": 29,
       "ED2": 31
     },
     {
@@ -2115,12 +2115,12 @@
     },
     {
       "tail": "N794JH",
-      "lastService": "2026-10-24",
+      "lastService": "2026-10-29",
       "lastED1": "2026-10-24",
       "lastED2": "2026-09-16",
-      "lastIHC": "2026-10-24",
+      "lastIHC": "2026-10-29",
       "lastLocation": "DFW",
-      "lastTech": "Nadia Johnson",
+      "lastTech": "Aunyae Morrison",
       "ED1": 24,
       "ED2": 16
     },
@@ -2203,6 +2203,15 @@
       "ED2": 0
     },
     {
+      "tail": "N761RW",
+      "date": "2026-10-29",
+      "name": "Sellers Davis",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
       "tail": "N289MW",
       "date": "2026-10-29",
       "name": "Aunyae Morrison",
@@ -2222,6 +2231,24 @@
     },
     {
       "tail": "N281NN",
+      "date": "2026-10-29",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N794JH",
+      "date": "2026-10-29",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N223NN",
       "date": "2026-10-29",
       "name": "Aunyae Morrison",
       "location": "DFW",

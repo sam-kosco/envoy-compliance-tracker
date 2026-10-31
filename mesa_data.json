@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-31T05:27:36.129077+00:00",
+  "generated": "2026-10-31T06:28:02.312288+00:00",
   "cycles": {
     "IHC": 45,
     "ED": 30,
@@ -371,21 +371,21 @@
     },
     {
       "tail": "N86316",
-      "lastService": "2026-10-26",
+      "lastService": "2026-10-30",
       "lastIHC": "2026-09-18",
       "lastED": "2026-10-19",
       "lastDSC": "2026-10-19",
-      "lastFD": "2026-10-26",
+      "lastFD": "2026-10-30",
       "lastCE": "2026-10-14",
-      "lastRON": "2026-10-26",
-      "lastEC": "2026-10-26",
-      "lastESS": "2026-10-26",
-      "lastTech": "Raenita Jasper",
+      "lastRON": "2026-10-30",
+      "lastEC": "2026-10-30",
+      "lastESS": "2026-10-30",
+      "lastTech": "Shylo Stalder",
       "lastLocation": "IAH",
       "IHC": 2,
       "ED": 18,
       "DSC": 18,
-      "FD": 25,
+      "FD": 29,
       "CE": 13
     },
     {
@@ -1208,6 +1208,20 @@
     },
     {
       "tail": "N86322",
+      "date": "2026-10-30",
+      "name": "Shylo Stalder",
+      "location": "IAH",
+      "IHC": 0,
+      "ED": 0,
+      "DSC": 0,
+      "FD": 1,
+      "CE": 0,
+      "RON": 1,
+      "EC": 1,
+      "ESS": 1
+    },
+    {
+      "tail": "N86316",
       "date": "2026-10-30",
       "name": "Shylo Stalder",
       "location": "IAH",

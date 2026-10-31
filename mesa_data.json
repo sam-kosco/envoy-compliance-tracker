@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-31T03:27:36.302900+00:00",
+  "generated": "2026-10-31T04:28:02.788256+00:00",
   "cycles": {
     "IHC": 45,
     "ED": 30,
@@ -143,21 +143,21 @@
     },
     {
       "tail": "N85320",
-      "lastService": "2026-10-29",
+      "lastService": "2026-10-30",
       "lastIHC": "2026-10-17",
       "lastED": "2026-10-17",
       "lastDSC": "2026-10-17",
-      "lastFD": "2026-10-29",
+      "lastFD": "2026-10-30",
       "lastCE": "2026-10-17",
-      "lastRON": "2026-10-29",
-      "lastEC": "2026-10-29",
-      "lastESS": "2026-10-29",
+      "lastRON": "2026-10-30",
+      "lastEC": "2026-10-30",
+      "lastESS": "2026-10-30",
       "lastTech": "David  Blatt",
       "lastLocation": "IAH",
       "IHC": 31,
       "ED": 16,
       "DSC": 16,
-      "FD": 28,
+      "FD": 29,
       "CE": 16
     },
     {
@@ -1152,6 +1152,20 @@
   "debriefs": [
     {
       "tail": "N89313",
+      "date": "2026-10-30",
+      "name": "David  Blatt",
+      "location": "IAH",
+      "IHC": 0,
+      "ED": 0,
+      "DSC": 0,
+      "FD": 1,
+      "CE": 0,
+      "RON": 1,
+      "EC": 1,
+      "ESS": 1
+    },
+    {
+      "tail": "N85320",
       "date": "2026-10-30",
       "name": "David  Blatt",
       "location": "IAH",

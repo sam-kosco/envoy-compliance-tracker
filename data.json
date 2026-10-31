@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-31T09:07:22.832079+00:00",
+  "generated": "2026-10-31T10:07:52.477657+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -828,12 +828,12 @@
     },
     {
       "tail": "N275NN",
-      "lastService": "2026-10-27",
+      "lastService": "2026-10-30",
       "lastED1": "2026-10-23",
       "lastED2": "2026-10-23",
-      "lastIHC": "2026-10-27",
-      "lastLocation": "XNA",
-      "lastTech": "Ashley Burke",
+      "lastIHC": "2026-10-30",
+      "lastLocation": "CVG",
+      "lastTech": "Sellers Davis",
       "ED1": 22,
       "ED2": 52
     },
@@ -1268,23 +1268,23 @@
     },
     {
       "tail": "N320BK",
-      "lastService": "2026-10-26",
+      "lastService": "2026-10-30",
       "lastED1": "2026-10-22",
       "lastED2": "2026-08-20",
-      "lastIHC": "2026-10-26",
+      "lastIHC": "2026-10-30",
       "lastLocation": "CVG",
-      "lastTech": "Bayleah Vogel",
+      "lastTech": "Sellers Davis",
       "ED1": 21,
       "ED2": -12
     },
     {
       "tail": "N321JS",
-      "lastService": "2026-10-17",
+      "lastService": "2026-10-30",
       "lastED1": "2026-10-10",
       "lastED2": "2026-07-02",
-      "lastIHC": "2026-10-17",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
+      "lastIHC": "2026-10-30",
+      "lastLocation": "CVG",
+      "lastTech": "Sellers Davis",
       "ED1": 9,
       "ED2": -61
     },
@@ -2005,12 +2005,12 @@
     },
     {
       "tail": "N784DP",
-      "lastService": "2026-10-19",
+      "lastService": "2026-10-30",
       "lastED1": "2026-09-29",
       "lastED2": "2026-06-04",
-      "lastIHC": "2026-10-19",
-      "lastLocation": "DFW",
-      "lastTech": "Nadia Johnson",
+      "lastIHC": "2026-10-30",
+      "lastLocation": "CVG",
+      "lastTech": "Sellers Davis",
       "ED1": -2,
       "ED2": -89
     },
@@ -2378,6 +2378,42 @@
       "date": "2026-10-30",
       "name": "Damian Utley",
       "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N275NN",
+      "date": "2026-10-30",
+      "name": "Sellers Davis",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N320BK",
+      "date": "2026-10-30",
+      "name": "Sellers Davis",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N321JS",
+      "date": "2026-10-30",
+      "name": "Sellers Davis",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N784DP",
+      "date": "2026-10-30",
+      "name": "Sellers Davis",
+      "location": "CVG",
       "IHC": 1,
       "ED1": 0,
       "ED2": 0

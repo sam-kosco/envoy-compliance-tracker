@@ -965,6 +965,25 @@ function switchTab(name) {
 
 /* ===== WORK ORDER ===== */
 const WO_PROGRAM = 'PSA';
+// ---- Randomized Quality Audit Program (see RANDOM_AUDITS_PLAN.md) ----
+// Launch switch for THIS program: ships FALSE to main; true turns the
+// nightly random audit draw on. TRUE on feat/random-audits for testing.
+const RANDOM_AUDITS = true;
+function raDraw(tails){
+  // Count rule (Sam, 2026-11-02): 1 audit when the work order has 3 or
+  // fewer planes, 2 when it has more. Independent of the 50% debrief-
+  // coverage goal — a tail selected on the work order MUST be audited.
+  // Must stay in lockstep with closeout-compare's _expected_audits().
+  // Drawn uniformly at random (crypto when available) so no one can pick
+  // their best-looking plane.
+  const n=tails.length, required = n<=3 ? 1 : 2;
+  const pool=tails.slice();
+  for(let i=pool.length-1;i>0;i--){
+    const r=(window.crypto&&crypto.getRandomValues)?crypto.getRandomValues(new Uint32Array(1))[0]/4294967296:Math.random();
+    const j=Math.floor(r*(i+1)); const tmp=pool[i]; pool[i]=pool[j]; pool[j]=tmp;
+  }
+  return pool.slice(0,required).sort(function(a,b){return a.localeCompare(b);});
+}
 const WO_TRACKED = (typeof TRACKED !== 'undefined') ? TRACKED : Object.keys(JOB_NAMES);
 // Work-order snapshot store: when a work order is generated we POST a JSON
 // snapshot of it (keyed by the QR's woId) so a closeout done on a phone can
@@ -974,10 +993,12 @@ const WO_TRACKED = (typeof TRACKED !== 'undefined') ? TRACKED : Object.keys(JOB_
 // received" flow that writes Monitoring/WorkOrders/<woId>.json (write-only, so a
 // public page holding the URL can only create snapshot files — low risk).
 const WO_STORE_WEBHOOK_URL = '';
-function woStoreSnapshot(woId, entries, roster, dateIso){
+function woStoreSnapshot(woId, entries, roster, dateIso, audit){
   if(!WO_STORE_WEBHOOK_URL) return;
   try{
     const snap={ woId:woId, program:WO_PROGRAM, fleet:WO_PROGRAM, date:dateIso,
+      audit_required:(audit&&audit.tails&&audit.tails.length)||0,
+      audit_tails:(audit&&audit.tails)||[],
       generatedAt:new Date().toISOString(),
       onShift:roster.slice().sort(),
       tails:entries.map(function(e){ return {
@@ -1059,6 +1080,8 @@ function woGenerate(){
   const dueSoon=entries.filter(function(e){return e.tier==='ds';}).sort(function(a,b){ return (Math.min.apply(null,a.dueSoon.map(function(d){return d.days;}))-Math.min.apply(null,b.dueSoon.map(function(d){return d.days;}))) || a.tail.localeCompare(b.tail); });
   const compliant=entries.filter(function(e){return e.tier==='ok';}).sort(function(a,b){return a.tail.localeCompare(b.tail);});
 
+  const auditTails = RANDOM_AUDITS ? raDraw(woSelected) : [];
+  const auditSet = new Set(auditTails);
   const jsPDF=window.jspdf.jsPDF;
   const doc=new jsPDF({unit:'pt',format:'letter'});
   const PW=doc.internal.pageSize.getWidth(), PH=doc.internal.pageSize.getHeight(), M=48;
@@ -1092,9 +1115,30 @@ function woGenerate(){
   doc.setFont('helvetica','bold'); doc.setFontSize(10); doc.setTextColor.apply(doc,NAVY);
   doc.text('Tails on shift ('+woSelected.length+'):', M, y);
   y+=15;
-  doc.setFont('helvetica','normal'); doc.setFontSize(10); doc.setTextColor.apply(doc,MID);
-  doc.splitTextToSize(woSelected.slice().sort(function(a,b){return a.localeCompare(b);}).join('     '), PW-2*M).forEach(function(ln){ need(14); doc.text(ln,M,y); y+=13; });
-  y+=12;
+  doc.setFontSize(10);
+  (function(){
+    const tails=woSelected.slice().sort(function(a,b){return a.localeCompare(b);});
+    let x=M;
+    tails.forEach(function(t){
+      const hit=auditSet.has(t);
+      doc.setFont('helvetica', hit?'bold':'normal');
+      const w=doc.getTextWidth(t);
+      if(x+w>PW-M){ x=M; y+=17; }
+      need(17);
+      if(hit){ doc.setFillColor(255,236,214); doc.setDrawColor.apply(doc,ORANGE); doc.setLineWidth(0.8);
+        doc.roundedRect(x-3, y-8, w+6, 14, 2, 2, 'FD'); }
+      doc.setTextColor.apply(doc, hit?NAVY:MID);
+      doc.text(t, x, y+2);
+      x+=w+14;
+    });
+    y+=17;
+    if(RANDOM_AUDITS && auditTails.length){
+      doc.setFont('helvetica','normal'); doc.setFontSize(8.5); doc.setTextColor.apply(doc,AMBER);
+      doc.text("Highlighted tails are tonight's quality audits -- see the QUALITY AUDIT section.", M, y);
+      y+=13;
+    }
+  })();
+  y+=8;
 
   function sectionHeader(title,count,color){
     need(42);
@@ -1113,6 +1157,8 @@ function woGenerate(){
     doc.text(e.tail, M+6, y+8);
     const lw=doc.getTextWidth(e.tail);
     if(e.p && e.p.lastLocation){ doc.setFont('helvetica','normal'); doc.setFontSize(9); doc.setTextColor.apply(doc,GRAY); doc.text('   '+e.p.lastLocation, M+6+lw, y+8); }
+    if(auditSet.has(e.tail)){ doc.setFillColor.apply(doc,ORANGE); doc.roundedRect(PW-M-46, y-2, 46, 14, 2, 2, 'F');
+      doc.setFont('helvetica','bold'); doc.setFontSize(8); doc.setTextColor(255,255,255); doc.text('AUDIT', PW-M-23, y+8, {align:'center'}); }
     y+=18;
     lines.forEach(function(ln){
       need(13);
@@ -1132,6 +1178,8 @@ function woGenerate(){
     const lw=doc.getTextWidth(e.tail);
     doc.setFont('helvetica','normal'); doc.setTextColor.apply(doc,MID);
     doc.text('   No additional services required', M+16+lw, y+5);
+    if(auditSet.has(e.tail)){ doc.setFillColor.apply(doc,ORANGE); doc.roundedRect(PW-M-46, y-4, 46, 13, 2, 2, 'F');
+      doc.setFont('helvetica','bold'); doc.setFontSize(8); doc.setTextColor(255,255,255); doc.text('AUDIT', PW-M-23, y+5, {align:'center'}); }
     y+=15;
   }
 
@@ -1139,6 +1187,31 @@ function woGenerate(){
   if(dueSoon.length){ sectionHeader('DUE SOON', dueSoon.length, AMBER); dueSoon.forEach(tailBlock); y+=4; }
   if(compliant.length){ sectionHeader('COMPLIANT', compliant.length, GREEN); compliant.forEach(okBlock); }
 
+  if(RANDOM_AUDITS && auditTails.length){
+    // The header + "[ ] TAIL" lines below are a PARSED CONTRACT —
+    // closeout-compare's work_order.py reads them out of the uploaded
+    // PDF. Change the format in BOTH places or not at all
+    // (RANDOM_AUDITS_PLAN.md).
+    const hdr = auditTails.length===woSelected.length
+      ? 'QUALITY AUDIT -- ALL '+woSelected.length+' planes'
+      : 'QUALITY AUDIT -- '+auditTails.length+' of '+woSelected.length+' planes (random draw)';
+    need(60);
+    doc.setFillColor.apply(doc,ORANGE); doc.rect(M,y-1,4,17,'F');
+    doc.setFont('helvetica','bold'); doc.setFontSize(12); doc.setTextColor.apply(doc,NAVY);
+    doc.text(hdr, M+12, y+12);
+    y+=22;
+    doc.setDrawColor.apply(doc,LINE); doc.setLineWidth(0.6); doc.line(M,y,PW-M,y); y+=14;
+    auditTails.forEach(function(t){
+      need(17);
+      doc.setFont('helvetica','normal'); doc.setFontSize(11); doc.setTextColor.apply(doc,NAVY);
+      doc.text('[ ] '+t, M+6, y+4);
+      y+=17;
+    });
+    y+=4;
+    doc.setFont('helvetica','normal'); doc.setFontSize(9); doc.setTextColor.apply(doc,MID);
+    doc.splitTextToSize("If an assigned tail doesn't come in, audit the next tail completed and note the swap on the audit.", PW-2*M).forEach(function(ln){ need(12); doc.text(ln, M, y+2); y+=12; });
+    y+=6;
+  }
   const pages=doc.internal.getNumberOfPages();
   for(let i=1;i<=pages;i++){ doc.setPage(i); doc.setFont('helvetica','normal'); doc.setFontSize(8); doc.setTextColor.apply(doc,GRAY);
     doc.text('Generated '+now.toLocaleString()+'   ·   '+woId, M, PH-22);
@@ -1146,7 +1219,7 @@ function woGenerate(){
 
   const iso=now.getFullYear()+'-'+String(now.getMonth()+1).padStart(2,'0')+'-'+String(now.getDate()).padStart(2,'0');
   doc.save(WO_PROGRAM+'_Work_Order_'+iso+'.pdf');
-  woStoreSnapshot(woId, entries, woSelected, iso);
+  woStoreSnapshot(woId, entries, woSelected, iso, {tails:auditTails});
   woClear();
 }
 

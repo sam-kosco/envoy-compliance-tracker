@@ -27,10 +27,10 @@ SC_KEY = os.environ["SAFETYCULTURE_KEY"]
 PROGRAMS = {
     "mesa": {
         "tail_re": r"^N\d{1,5}[A-Z]{0,2}$",
-        "sc_set": ("MESA Tails", "responseset_81917085c88a4d9f8f2b645163ebc546"),
+        "sc_set": ("Republic Tails", "responseset_81917085c88a4d9f8f2b645163ebc546"),
         "lists": [
             ("mesa_debrief", "Mesa Debrief", "dropdown", "220187674891163", "47"),
-            ("mesa_closeout", "Commercial Closeout (Mesa)", "widget", "222916060752150", "298", "Tail Number"),
+            ("mesa_closeout", "Commercial Closeout (Republic)", "widget", "222916060752150", "298", "Tail Number"),
         ],
         "result_file": "mesa_fleet_action_result.json",
     },

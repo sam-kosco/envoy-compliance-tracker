@@ -67,10 +67,10 @@ PROGRAMS = {
         "file_path": "Power Flows/Debriefs/Mesa Debriefs.xlsx",
         "sheet": "Tails",
         "status_idx": 7,
-        "sc_set": ("MESA Tails", "responseset_81917085c88a4d9f8f2b645163ebc546"),
+        "sc_set": ("Republic Tails", "responseset_81917085c88a4d9f8f2b645163ebc546"),
         "lists": [
             ("Mesa Debrief Q47", "dropdown", "220187674891163", "47"),
-            ("Commercial Closeout Q298 (Mesa Aircrafts Serviced)", "widget", "222916060752150", "298", "Tail Number"),
+            ("Commercial Closeout Q298 (Republic Aircrafts Serviced)", "widget", "222916060752150", "298", "Tail Number"),
         ],
     },
     "gojet": {

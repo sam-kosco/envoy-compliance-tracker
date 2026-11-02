@@ -36,9 +36,18 @@ replaces old links.
 |---------|--------|---------------|------|
 | Envoy | Envoy Air | `/` (index.html) | `index.html` |
 | PSA | PSA Airlines | `/psa.html` | `psa.html` |
-| Mesa | Mesa Airlines | `/mesa.html` | `mesa.html` |
+| Republic (ex-Mesa) | Republic Airways | `/mesa.html` | `mesa.html` |
 | GoJet | GoJet Airlines | `/gojet.html` | `gojet.html` |
 | Crosswinds | Crosswinds Flight School | `/crosswinds.html` | `crosswinds.html` |
+
+> **Republic bought Mesa** (display rename 2026-10-19/11-02): every
+> user-visible label says Republic (page brand, work-order title and
+> filename, platform fleet, SC set "Republic Tails", closeout widget
+> "Republic Aircrafts Serviced"), while KEYS AND FILES KEEP THE MESA
+> NAME — mesa.html, mesa_data.json, manage_mesa_fleet.yml, the "mesa"
+> program key, /t/mesa, the Mesa Debriefs workbook + its PA flows, the
+> Mesa Debrief JotForm, and the work-order QR key WO_Mesa (closeout
+> check maps both MESA and REPUBLIC headers to the Mesa fleet).
 
 > **Tabs:** Envoy, PSA, Mesa, and GoJet each have a **Fleet Tracker** tab and a **Work Order** tab (see "Work Order tab" below). The old page Admin tabs are gone (platform-managed since 2026-09-08). Under
 the platform embed a hash like `#work&embed=1` hides the tab bar and the
@@ -369,7 +378,7 @@ the SC set and sends the roster Status=Disabled, exactly like the others.
 
 | Program | Targets | Notes |
 |---|---|---|
-| mesa | Mesa Debrief `220187674891163` Q47 (pipe options), Commercial Closeout `222916060752150` Q298 "Mesa Aircrafts Serviced" widget ("Tail Number" line) + SC "MESA Tails" | dropdowns added by owner 2026-09-16 (old Q29 free-text retired) |
+| mesa | Mesa Debrief `220187674891163` Q47 (pipe options), Commercial Closeout `222916060752150` Q298 "Republic Aircrafts Serviced" widget ("Tail Number" line) + SC "Republic Tails" | dropdowns added 2026-09-16; display names Republic since the buyout (keys/files stay mesa) |
 | gojet | GoJet Debrief `250554449184058` Q21 (pipe options), Commercial Closeout `222916060752150` Q281 GoJet widget ("Tail Number" line) + SC "GoJet Tails" | tails are BARE ship numbers (`501`) — separate validation everywhere |
 | jsx | JSX Debrief `260637830358058` Q19 (pipe options), JSX Closeout `262036208159051` Q7 widget ("Tail Number" line) + SC "JSX Tails" | no refresh dispatch (the JSX tracker lives in its own repo; it reads Sheet2 hourly anyway) |
 

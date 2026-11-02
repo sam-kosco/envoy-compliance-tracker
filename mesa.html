@@ -93,6 +93,9 @@
   .tail-block{display:flex;flex-direction:column;gap:1px;}
   .tail-num{font-family:var(--cond);font-size:17px;font-weight:800;color:var(--navy);letter-spacing:0.5px;line-height:1;}
   .tail-loc{font-size:11px;font-weight:500;color:var(--text-light);}
+  .svc-chip{font-size:9px;font-weight:700;padding:2px 5px;border-radius:3px;border:1px solid transparent;}
+  .svc-chip.done{background:var(--green-bg);color:var(--green);border-color:var(--green-border);}
+  .svc-chip.skip{background:var(--gray-light);color:var(--text-light);}
   .plane-list{display:flex;flex-direction:column;gap:8px;max-height:480px;overflow-y:auto;}
   .plane-list::-webkit-scrollbar{width:4px;}
   .plane-list::-webkit-scrollbar-thumb{background:var(--gray);border-radius:4px;}
@@ -465,6 +468,31 @@
     <div class="card-body"><div class="plane-list" id="soon-list"><div class="empty-state">Loading…</div></div></div>
   </div>
 
+  <!-- SERVICE HISTORY BY LOCATION — view-only: does not affect the topline
+       stats or noncompliant lists above -->
+  <div class="card col-full">
+    <div class="card-header">
+      <div class="card-title">Service History by Location</div>
+      <div style="display:flex;align-items:center;gap:12px">
+        <select id="hist-location" onchange="renderLocationHistory()"
+                style="padding:6px 10px;font-size:12px;font-family:inherit;border:1.5px solid #D1D5DB;border-radius:6px;outline:none;color:var(--navy);font-weight:700;background:white">
+          <option value="">— Select location —</option>
+        </select>
+        <div class="card-count" id="hist-count"></div>
+      </div>
+    </div>
+    <div style="overflow-x:auto;">
+      <table class="fleet-table">
+        <thead><tr>
+          <th>Date</th>
+          <th>Tail #</th>
+          <th>Technician</th>
+          <th>Services</th>
+        </tr></thead>
+        <tbody id="hist-body"></tbody>
+      </table>
+    </div>
+  </div>
   <div class="card col-full">
     <div class="card-header">
       <div class="card-title">Full Fleet Overview</div>
@@ -668,6 +696,40 @@ function tailBlock(tail,sub) {
   return `<div class="tail-block"><div class="tail-num">${tail}</div>${sub?`<div class="tail-loc">${sub}</div>`:''}</div>`;
 }
 
+// Service History by Location — view-only card above the Full Fleet
+// Overview. Deliberately does NOT feed the topline stats or noncompliant
+// lists (PSA pattern; Mesa gained a debrief Location column 2026-11-02
+// ahead of IAD/Republic coming online).
+const HIST_MAX = 150;
+function renderLocationHistory() {
+  const sel = document.getElementById('hist-location');
+  const body = document.getElementById('hist-body');
+  const count = document.getElementById('hist-count');
+  if (!sel || !body || !DATA) return;
+  const loc = sel.value;
+  if (!loc) {
+    body.innerHTML = '<tr><td colspan="4" style="text-align:center;padding:24px;color:var(--text-light);font-style:italic">Select a location to view its service history</td></tr>';
+    count.textContent = '';
+    return;
+  }
+  const SVCS = ['IHC','RON','EC','ED','DSC','FD','CE','ESS'];
+  const rows = (DATA.debriefs||[]).filter(d=>d.location===loc)
+    .sort((a,b)=>(b.date||'').localeCompare(a.date||''));
+  const shown = rows.slice(0, HIST_MAX);
+  count.textContent = rows.length > shown.length
+    ? `latest ${shown.length} of ${rows.length} debriefs`
+    : `${rows.length} debriefs`;
+  body.innerHTML = shown.map(d => {
+    const svcs = SVCS.map(s=>`<span class="svc-chip ${d[s]?'done':'skip'}">${s}</span>`).join('');
+    return `<tr onclick="selectTail('${d.tail}')">
+      <td style="font-size:12px;font-weight:700;color:var(--navy);white-space:nowrap">${fmtDate(d.date)}</td>
+      <td style="font-family:var(--cond);font-weight:800;color:var(--navy)">${d.tail}</td>
+      <td style="font-size:12px;color:var(--text-mid)">${d.name||'—'}</td>
+      <td><div style="display:flex;gap:3px;flex-wrap:wrap">${svcs}</div></td>
+    </tr>`;
+  }).join('');
+}
+
 function renderAll() {
   const planes = DATA.planes;
   const gen = DATA.generated ? new Date(DATA.generated) : new Date();
@@ -692,11 +754,20 @@ function renderAll() {
   window._allTails = [...planes].map(p=>p.tail).sort((a,b)=>a.localeCompare(b));
 
   document.getElementById('fleet-count').textContent = planes.length+' aircraft';
+  // Service-history location picker (preserves selection across refreshes)
+  const hsel = document.getElementById('hist-location');
+  if (hsel) {
+    const prev = hsel.value;
+    const locs = [...new Set((DATA.debriefs||[]).map(d=>d.location).filter(Boolean))].sort();
+    hsel.innerHTML = '<option value="">— Select location —</option>' + locs.map(l=>`<option>${l}</option>`).join('');
+    if (locs.includes(prev)) hsel.value = prev;
+    renderLocationHistory();
+  }
   document.getElementById('fleet-body').innerHTML = [...planes].sort((a,b)=>a.tail.localeCompare(b.tail)).map(p => {
     const status = isNC(p)?'over':isSoon(p)?'warn':'ok';
     return `<tr onclick="selectTail('${p.tail}')">
       <td class="row-flag ${status}"></td>
-      <td>${tailBlock(p.tail)}</td>
+      <td>${tailBlock(p.tail, p.lastLocation)}</td>
       <td style="font-size:12px;color:var(--text-mid)">${p.lastTech||'—'}</td>
       <td style="font-size:11px;color:var(--text-light)">${fmtDate(p.lastService)}</td>
       <td class="ft-win ${wc(p.IHC)}">${wl(p.IHC)}</td>
@@ -714,7 +785,7 @@ function planeCard(p,type) {
   const indCls=type==='noncompliant'?'over':'warn';
   const indTxt=w===-999?'No service record':w<0?`${Math.abs(w)}d overdue`:`${w}d remaining`;
   return `<div class="plane-card ${type} fade-in" onclick="selectTail('${p.tail}')">
-    ${tailBlock(p.tail,'Last: '+fmtDate(p.lastService))}
+    ${tailBlock(p.tail,(p.lastLocation?p.lastLocation+' · ':'')+'Last: '+fmtDate(p.lastService))}
     <div class="job-badges">${badges}</div>
     <div class="worst-indicator ${indCls}">${indTxt} →</div>
   </div>`;
@@ -840,7 +911,7 @@ function selectTail(tail) {
     <div class="detail-top" style="position:relative">
       <div>
         <div class="detail-tail">${p.tail}</div>
-        <div class="detail-meta">Last service: ${fmtDate(p.lastService)} &nbsp;·&nbsp; ${p.lastTech||'—'}</div>
+        <div class="detail-meta">Last service: ${fmtDate(p.lastService)} &nbsp;·&nbsp; ${p.lastLocation||'—'} &nbsp;·&nbsp; ${p.lastTech||'—'}</div>
       </div>
       <div style="display:flex;align-items:center;gap:10px">
         <div class="detail-status-pill ${status}">${statusLbl}</div>

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-02T15:07:44.994481+00:00",
+  "generated": "2026-11-02T18:07:24.948797+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -1004,10 +1004,10 @@
     },
     {
       "tail": "N291NN",
-      "lastService": "2026-10-31",
+      "lastService": "2026-10-30",
       "lastED1": "2026-10-12",
       "lastED2": "2026-09-10",
-      "lastIHC": "2026-10-31",
+      "lastIHC": "2026-10-30",
       "lastLocation": "SGF",
       "lastTech": "Jeffrey Crookshanks",
       "ED1": 9,
@@ -2482,15 +2482,6 @@
       "ED2": 0
     },
     {
-      "tail": "N291NN",
-      "date": "2026-10-31",
-      "name": "Jeffrey Crookshanks",
-      "location": "SGF",
-      "IHC": 1,
-      "ED1": 0,
-      "ED2": 0
-    },
-    {
       "tail": "N348RA",
       "date": "2026-10-31",
       "name": "Ashley Burke",
@@ -2902,6 +2893,15 @@
       "location": "SGF",
       "IHC": 1,
       "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N291NN",
+      "date": "2026-10-30",
+      "name": "Jeffrey Crookshanks",
+      "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
       "ED2": 0
     },
     {

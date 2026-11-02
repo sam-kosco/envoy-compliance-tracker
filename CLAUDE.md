@@ -174,7 +174,7 @@ Cycles come from the **Service WIndow** sheet in `Mesa Debriefs.xlsx` (read dyna
 | RON/EC/ESS | RON Clean / Exterior Clean / Disinfection | Info only |
 | FCD | Fleet Campaign Decal | **Ignored** (not shown) |
 
-**Mesa specifics:** the Debriefs sheet has **no Location column** (PSA/Envoy do), so the dashboard shows no last-location. Service cells are recorded as `Yes. <number>`; the trailing number is not used for compliance. Flight Deck is the **last** debriefs column (after Sub ID). Tail roster comes from the **Tails** sheet (column A). No Admin/Add-Tail tab — onboard new tails by adding them to the Tails sheet.
+**Mesa specifics:** the Debriefs sheet gained a **Location column 2026-11-02** (inserted at column C, ahead of IAD/Republic joining IAH — historical rows backfilled IAH), which briefly broke the fixed-position parse; `mesa_generate_data.py` now locates every column BY HEADER and defaults a blank location to IAH. The dashboard shows last-location and carries a view-only "Service History by Location" card (PSA pattern). Service cells are recorded as `Yes. <number>`; the trailing number is not used for compliance (the sheet also carries Job Revenue / Aircraft Type columns the tracker ignores). Tail roster comes from the **Tails** sheet (column A). Tail add/remove is platform-managed (`manage_mesa_fleet.yml`).
 
 ### GoJet Tracked Services
 GoJet uses the same Input-sheet + Tails-roster shape as Mesa, but **has a Location column** (so last-location is shown, like Envoy/PSA). Cycles are fixed at 60 days (no Service Window sheet). Tail numbers are bare (`501`, `534`, …).

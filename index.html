@@ -795,9 +795,10 @@ function switchTab(name) {
 /* ===== WORK ORDER ===== */
 const WO_PROGRAM = 'Envoy';
 // ---- Randomized Quality Audit Program (see RANDOM_AUDITS_PLAN.md) ----
-// Launch switch for THIS program: ships FALSE to main; true turns the
-// nightly random audit draw on. TRUE on feat/random-audits for testing.
-const RANDOM_AUDITS = true;
+// Launch switch for THIS program: FALSE — Envoy is NOT launched (Sam,
+// 2026-11-02: PSA + GoJet only). Flip with closeout-compare's
+// RANDOMIZED_FLEETS and the platform registry flags (RANDOM_AUDITS_PLAN.md).
+const RANDOM_AUDITS = false;
 function raDraw(tails){
   // Count rule (Sam, 2026-11-02): 1 audit when the work order has 3 or
   // fewer planes, 2 when it has more. Independent of the 50% debrief-

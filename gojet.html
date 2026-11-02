@@ -856,8 +856,9 @@ function switchTab(name) {
 /* ===== WORK ORDER ===== */
 const WO_PROGRAM = 'GoJet';
 // ---- Randomized Quality Audit Program (see RANDOM_AUDITS_PLAN.md) ----
-// Launch switch for THIS program: ships FALSE to main; true turns the
-// nightly random audit draw on. TRUE on feat/random-audits for testing.
+// Launch switch for THIS program: LIVE since 2026-11-02 (Sam) — the
+// nightly random audit draw is on. closeout-compare enforces service
+// nights from 2026-11-03 (RANDOMIZED_FLEETS start dates).
 const RANDOM_AUDITS = true;
 function raDraw(tails){
   // Count rule (Sam, 2026-11-02): 1 audit when the work order has 3 or

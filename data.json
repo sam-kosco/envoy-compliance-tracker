@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-03T08:07:35.852783+00:00",
+  "generated": "2026-11-03T09:08:05.559682+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -201,12 +201,12 @@
     },
     {
       "tail": "N218NN",
-      "lastService": "2026-10-29",
+      "lastService": "2026-11-02",
       "lastED1": "2026-10-17",
       "lastED2": "2026-10-17",
-      "lastIHC": "2026-10-29",
-      "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastIHC": "2026-11-02",
+      "lastLocation": "LIT",
+      "lastTech": "Erica Griffin",
       "ED1": 13,
       "ED2": 43
     },
@@ -674,14 +674,14 @@
     },
     {
       "tail": "N261NN",
-      "lastService": "2026-10-27",
-      "lastED1": "2026-09-30",
-      "lastED2": "2026-09-03",
-      "lastIHC": "2026-10-27",
-      "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
-      "ED1": -4,
-      "ED2": -1
+      "lastService": "2026-11-02",
+      "lastED1": "2026-11-02",
+      "lastED2": "2026-11-02",
+      "lastIHC": "2026-11-02",
+      "lastLocation": "LIT",
+      "lastTech": "Damian Utley",
+      "ED1": 29,
+      "ED2": 59
     },
     {
       "tail": "N262NN",
@@ -784,14 +784,14 @@
     },
     {
       "tail": "N271NN",
-      "lastService": "2026-10-28",
+      "lastService": "2026-11-02",
       "lastED1": "2026-10-14",
-      "lastED2": "2026-09-03",
-      "lastIHC": "2026-10-28",
-      "lastLocation": "CVG",
-      "lastTech": "Sellers Davis",
+      "lastED2": "2026-11-02",
+      "lastIHC": "2026-11-02",
+      "lastLocation": "LIT",
+      "lastTech": "Erica Griffin",
       "ED1": 10,
-      "ED2": -1
+      "ED2": 59
     },
     {
       "tail": "N272NN",
@@ -1026,13 +1026,13 @@
     },
     {
       "tail": "N293NN",
-      "lastService": "2026-10-24",
-      "lastED1": "2026-10-02",
+      "lastService": "2026-11-02",
+      "lastED1": "2026-11-02",
       "lastED2": "2026-10-02",
-      "lastIHC": "2026-10-24",
+      "lastIHC": "2026-11-02",
       "lastLocation": "LIT",
       "lastTech": "Damian Utley",
-      "ED1": -2,
+      "ED1": 29,
       "ED2": 28
     },
     {
@@ -1279,14 +1279,14 @@
     },
     {
       "tail": "N321JS",
-      "lastService": "2026-10-30",
-      "lastED1": "2026-10-10",
-      "lastED2": "2026-07-02",
-      "lastIHC": "2026-10-30",
-      "lastLocation": "CVG",
-      "lastTech": "Sellers Davis",
-      "ED1": 6,
-      "ED2": -64
+      "lastService": "2026-11-02",
+      "lastED1": "2026-11-02",
+      "lastED2": "2026-11-02",
+      "lastIHC": "2026-11-02",
+      "lastLocation": "LIT",
+      "lastTech": "Erica Griffin",
+      "ED1": 29,
+      "ED2": 59
     },
     {
       "tail": "N322RC",
@@ -1598,12 +1598,12 @@
     },
     {
       "tail": "N350CD",
-      "lastService": "2026-10-24",
+      "lastService": "2026-11-02",
       "lastED1": "2026-10-21",
       "lastED2": "2026-10-21",
-      "lastIHC": "2026-10-24",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
+      "lastIHC": "2026-11-02",
+      "lastLocation": "LIT",
+      "lastTech": "Erica  Griffin",
       "ED1": 17,
       "ED2": 47
     },
@@ -1631,12 +1631,12 @@
     },
     {
       "tail": "N353EG",
-      "lastService": "2026-10-28",
+      "lastService": "2026-11-02",
       "lastED1": "2026-09-28",
       "lastED2": "2026-09-28",
-      "lastIHC": "2026-10-28",
+      "lastIHC": "2026-11-02",
       "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastTech": "Nadia Johnson",
       "ED1": -6,
       "ED2": 24
     },
@@ -2266,6 +2266,60 @@
       "ED2": 0
     },
     {
+      "tail": "N261NN",
+      "date": "2026-11-02",
+      "name": "Damian Utley",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 1
+    },
+    {
+      "tail": "N293NN",
+      "date": "2026-11-02",
+      "name": "Damian Utley",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N218NN",
+      "date": "2026-11-02",
+      "name": "Erica Griffin",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N271NN",
+      "date": "2026-11-02",
+      "name": "Erica Griffin",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 1
+    },
+    {
+      "tail": "N350CD",
+      "date": "2026-11-02",
+      "name": "Erica  Griffin",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N321JS",
+      "date": "2026-11-02",
+      "name": "Erica Griffin",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 1
+    },
+    {
       "tail": "N287NN",
       "date": "2026-11-02",
       "name": "Nadia Johnson",
@@ -2276,6 +2330,15 @@
     },
     {
       "tail": "N323ED",
+      "date": "2026-11-02",
+      "name": "Nadia Johnson",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N353EG",
       "date": "2026-11-02",
       "name": "Nadia Johnson",
       "location": "DFW",

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-03T12:07:47.196771+00:00",
+  "generated": "2026-11-03T13:07:21.126770+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -245,12 +245,12 @@
     },
     {
       "tail": "N222NS",
-      "lastService": "2026-11-01",
+      "lastService": "2026-11-02",
       "lastED1": "2026-10-15",
       "lastED2": "2026-10-17",
-      "lastIHC": "2026-11-01",
-      "lastLocation": "LIT",
-      "lastTech": "Damian Utley",
+      "lastIHC": "2026-11-02",
+      "lastLocation": "DFW",
+      "lastTech": "Nadia Johnson",
       "ED1": 11,
       "ED2": 43
     },
@@ -509,12 +509,12 @@
     },
     {
       "tail": "N246NN",
-      "lastService": "2026-11-01",
+      "lastService": "2026-11-02",
       "lastED1": "2026-10-27",
       "lastED2": "2026-09-13",
-      "lastIHC": "2026-11-01",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
+      "lastIHC": "2026-11-02",
+      "lastLocation": "DFW",
+      "lastTech": "Nadia Johnson",
       "ED1": 23,
       "ED2": 9
     },
@@ -927,12 +927,12 @@
     },
     {
       "tail": "N284JN",
-      "lastService": "2026-10-15",
+      "lastService": "2026-11-02",
       "lastED1": "2026-09-25",
       "lastED2": "2026-09-24",
-      "lastIHC": "2026-10-15",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
+      "lastIHC": "2026-11-02",
+      "lastLocation": "DFW",
+      "lastTech": "Nadia Johnson",
       "ED1": -9,
       "ED2": 20
     },
@@ -1400,12 +1400,12 @@
     },
     {
       "tail": "N331SC",
-      "lastService": "2026-10-04",
+      "lastService": "2026-11-02",
       "lastED1": "2026-09-26",
       "lastED2": "2026-09-26",
-      "lastIHC": "2026-10-04",
+      "lastIHC": "2026-11-02",
       "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastTech": "Nadia Johnson",
       "ED1": -8,
       "ED2": 22
     },
@@ -2447,6 +2447,42 @@
     },
     {
       "tail": "N750BD",
+      "date": "2026-11-02",
+      "name": "Nadia Johnson",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N331SC",
+      "date": "2026-11-02",
+      "name": "Nadia Johnson",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N246NN",
+      "date": "2026-11-02",
+      "name": "Nadia Johnson",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N284JN",
+      "date": "2026-11-02",
+      "name": "Nadia Johnson",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N222NS",
       "date": "2026-11-02",
       "name": "Nadia Johnson",
       "location": "DFW",

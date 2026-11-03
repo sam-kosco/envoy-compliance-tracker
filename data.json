@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-03T18:07:53.522048+00:00",
+  "generated": "2026-11-03T19:08:19.930243+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -1103,10 +1103,10 @@
     },
     {
       "tail": "N305CL",
-      "lastService": "2026-11-02",
+      "lastService": "2026-11-01",
       "lastED1": "2026-10-25",
       "lastED2": "2026-09-20",
-      "lastIHC": "2026-11-02",
+      "lastIHC": "2026-11-01",
       "lastLocation": "XNA",
       "lastTech": "Shaun Neil",
       "ED1": 21,
@@ -1323,10 +1323,10 @@
     },
     {
       "tail": "N325DM",
-      "lastService": "2026-11-04",
+      "lastService": "2026-11-02",
       "lastED1": "2026-10-18",
       "lastED2": "2026-10-18",
-      "lastIHC": "2026-11-04",
+      "lastIHC": "2026-11-02",
       "lastLocation": "DFW",
       "lastTech": "Nadia Johnson",
       "ED1": 14,
@@ -2149,24 +2149,6 @@
   ],
   "debriefs": [
     {
-      "tail": "N325DM",
-      "date": "2026-11-04",
-      "name": "Nadia Johnson",
-      "location": "DFW",
-      "IHC": 1,
-      "ED1": 0,
-      "ED2": 0
-    },
-    {
-      "tail": "N305CL",
-      "date": "2026-11-02",
-      "name": "Shaun Neil",
-      "location": "XNA",
-      "IHC": 1,
-      "ED1": 0,
-      "ED2": 0
-    },
-    {
       "tail": "N201NN",
       "date": "2026-11-02",
       "name": "Tanaija Price",
@@ -2401,6 +2383,15 @@
       "ED2": 0
     },
     {
+      "tail": "N325DM",
+      "date": "2026-11-02",
+      "name": "Nadia Johnson",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
       "tail": "N287NN",
       "date": "2026-11-02",
       "name": "Nadia Johnson",
@@ -2569,6 +2560,15 @@
       "location": "XNA",
       "IHC": 1,
       "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N305CL",
+      "date": "2026-11-01",
+      "name": "Shaun Neil",
+      "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
       "ED2": 0
     },
     {

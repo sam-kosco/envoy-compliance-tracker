@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-04T08:07:36.782964+00:00",
+  "generated": "2026-11-04T09:08:07.649239+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -388,12 +388,12 @@
     },
     {
       "tail": "N235NN",
-      "lastService": "2026-10-24",
+      "lastService": "2026-11-03",
       "lastED1": "2026-10-21",
       "lastED2": "2026-10-03",
-      "lastIHC": "2026-10-24",
-      "lastLocation": "XNA",
-      "lastTech": "Ashley Burke",
+      "lastIHC": "2026-11-03",
+      "lastLocation": "CVG",
+      "lastTech": "Precious Valadez-Roberson",
       "ED1": 16,
       "ED2": 28
     },
@@ -465,12 +465,12 @@
     },
     {
       "tail": "N242NN",
-      "lastService": "2026-11-01",
+      "lastService": "2026-11-03",
       "lastED1": "2026-10-30",
       "lastED2": "2026-09-19",
-      "lastIHC": "2026-11-01",
-      "lastLocation": "XNA",
-      "lastTech": "Shaun Neil",
+      "lastIHC": "2026-11-03",
+      "lastLocation": "DFW",
+      "lastTech": "Aunyae Morrison",
       "ED1": 25,
       "ED2": 14
     },
@@ -1147,12 +1147,12 @@
     },
     {
       "tail": "N309JR",
-      "lastService": "2026-11-02",
+      "lastService": "2026-11-03",
       "lastED1": "2026-11-02",
       "lastED2": "2026-09-04",
-      "lastIHC": "2026-11-02",
+      "lastIHC": "2026-11-03",
       "lastLocation": "CVG",
-      "lastTech": "Sellers Davis",
+      "lastTech": "Precious Valadez-Roberson",
       "ED1": 28,
       "ED2": -1
     },
@@ -1367,12 +1367,12 @@
     },
     {
       "tail": "N328DS",
-      "lastService": "2026-10-31",
+      "lastService": "2026-11-03",
       "lastED1": "2026-10-18",
       "lastED2": "2026-10-18",
-      "lastIHC": "2026-10-31",
+      "lastIHC": "2026-11-03",
       "lastLocation": "CVG",
-      "lastTech": "Dvion Davis",
+      "lastTech": "Precious Valadez-Roberson",
       "ED1": 13,
       "ED2": 43
     },
@@ -1774,12 +1774,12 @@
     },
     {
       "tail": "N751AB",
-      "lastService": "2026-10-30",
+      "lastService": "2026-11-03",
       "lastED1": "2026-10-30",
       "lastED2": "2026-10-16",
-      "lastIHC": "2026-10-30",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
+      "lastIHC": "2026-11-03",
+      "lastLocation": "CVG",
+      "lastTech": "Precious Valadez-Roberson",
       "ED1": 25,
       "ED2": 41
     },
@@ -2016,12 +2016,12 @@
     },
     {
       "tail": "N785BR",
-      "lastService": "2026-11-02",
+      "lastService": "2026-11-03",
       "lastED1": "2026-10-26",
       "lastED2": "2026-09-12",
-      "lastIHC": "2026-11-02",
+      "lastIHC": "2026-11-03",
       "lastLocation": "DFW",
-      "lastTech": "Nadia Johnson",
+      "lastTech": "Aunyae Morrison",
       "ED1": 21,
       "ED2": 7
     },
@@ -2320,6 +2320,42 @@
       "ED2": 0
     },
     {
+      "tail": "N235NN",
+      "date": "2026-11-03",
+      "name": "Precious Valadez-Roberson",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N328DS",
+      "date": "2026-11-03",
+      "name": "Precious Valadez-Roberson",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N309JR",
+      "date": "2026-11-03",
+      "name": "Precious Valadez-Roberson",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N751AB",
+      "date": "2026-11-03",
+      "name": "Precious Valadez-Roberson",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
       "tail": "N763CC",
       "date": "2026-11-03",
       "name": "Aunyae Morrison",
@@ -2348,6 +2384,24 @@
     },
     {
       "tail": "N268NN",
+      "date": "2026-11-03",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N785BR",
+      "date": "2026-11-03",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N242NN",
       "date": "2026-11-03",
       "name": "Aunyae Morrison",
       "location": "DFW",

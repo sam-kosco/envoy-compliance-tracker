@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-04T09:08:07.649239+00:00",
+  "generated": "2026-11-04T10:07:42.046745+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -25,12 +25,12 @@
     },
     {
       "tail": "N202NN",
-      "lastService": "2026-10-29",
+      "lastService": "2026-11-03",
       "lastED1": "2026-10-23",
       "lastED2": "2026-10-29",
-      "lastIHC": "2026-10-29",
-      "lastLocation": "XNA",
-      "lastTech": "Ashley Burke",
+      "lastIHC": "2026-11-03",
+      "lastLocation": "LIT",
+      "lastTech": "Damian Utley",
       "ED1": 18,
       "ED2": 54
     },
@@ -300,14 +300,14 @@
     },
     {
       "tail": "N227NN",
-      "lastService": "2026-10-22",
+      "lastService": "2026-11-03",
       "lastED1": "2026-10-17",
-      "lastED2": "2026-09-11",
-      "lastIHC": "2026-10-22",
-      "lastLocation": "DFW",
-      "lastTech": "Nadia Johnson",
+      "lastED2": "2026-11-03",
+      "lastIHC": "2026-11-03",
+      "lastLocation": "LIT",
+      "lastTech": "Damian Utley",
       "ED1": 12,
-      "ED2": 6
+      "ED2": 59
     },
     {
       "tail": "N228NN",
@@ -795,12 +795,12 @@
     },
     {
       "tail": "N272NN",
-      "lastService": "2026-11-01",
+      "lastService": "2026-11-03",
       "lastED1": "2026-10-17",
       "lastED2": "2026-09-30",
-      "lastIHC": "2026-11-01",
-      "lastLocation": "XNA",
-      "lastTech": "Shaun Neil",
+      "lastIHC": "2026-11-03",
+      "lastLocation": "LIT",
+      "lastTech": "Damian Utley",
       "ED1": 12,
       "ED2": 25
     },
@@ -1279,12 +1279,12 @@
     },
     {
       "tail": "N321JS",
-      "lastService": "2026-11-02",
+      "lastService": "2026-11-03",
       "lastED1": "2026-11-02",
       "lastED2": "2026-11-02",
-      "lastIHC": "2026-11-02",
+      "lastIHC": "2026-11-03",
       "lastLocation": "LIT",
-      "lastTech": "Erica Griffin",
+      "lastTech": "Damian Utley",
       "ED1": 28,
       "ED2": 58
     },
@@ -1378,12 +1378,12 @@
     },
     {
       "tail": "N329DD",
-      "lastService": "2026-10-31",
+      "lastService": "2026-11-03",
       "lastED1": "2026-10-25",
       "lastED2": "2026-09-28",
-      "lastIHC": "2026-10-31",
-      "lastLocation": "SGF",
-      "lastTech": "Steven Wilson",
+      "lastIHC": "2026-11-03",
+      "lastLocation": "LIT",
+      "lastTech": "Damian Utley",
       "ED1": 20,
       "ED2": 23
     },
@@ -2351,6 +2351,51 @@
       "date": "2026-11-03",
       "name": "Precious Valadez-Roberson",
       "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N329DD",
+      "date": "2026-11-03",
+      "name": "Damian Utley",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N202NN",
+      "date": "2026-11-03",
+      "name": "Damian Utley",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N227NN",
+      "date": "2026-11-03",
+      "name": "Damian Utley",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 1
+    },
+    {
+      "tail": "N272NN",
+      "date": "2026-11-03",
+      "name": "Damian Utley",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N321JS",
+      "date": "2026-11-03",
+      "name": "Damian Utley",
+      "location": "LIT",
       "IHC": 1,
       "ED1": 0,
       "ED2": 0

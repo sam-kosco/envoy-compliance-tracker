@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-05T04:07:52.995718+00:00",
+  "generated": "2026-11-05T05:08:15.634741+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -1697,12 +1697,12 @@
     },
     {
       "tail": "N743MB",
-      "lastService": "2026-10-09",
+      "lastService": "2026-11-04",
       "lastED1": "2026-09-03",
       "lastED2": "2026-08-12",
-      "lastIHC": "2026-10-09",
-      "lastLocation": "CVG",
-      "lastTech": "Sellers Davis",
+      "lastIHC": "2026-11-04",
+      "lastLocation": "DFW",
+      "lastTech": "Aunyae Morrison",
       "ED1": -33,
       "ED2": -25
     },
@@ -2148,6 +2148,15 @@
     }
   ],
   "debriefs": [
+    {
+      "tail": "N743MB",
+      "date": "2026-11-04",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
     {
       "tail": "N251NN",
       "date": "2026-11-03",

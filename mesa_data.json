@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-05T05:27:30.112050+00:00",
+  "generated": "2026-11-05T06:28:00.372627+00:00",
   "cycles": {
     "IHC": 45,
     "ED": 30,
@@ -561,21 +561,21 @@
     },
     {
       "tail": "N87306",
-      "lastService": "2026-11-01",
+      "lastService": "2026-11-04",
       "lastIHC": "2026-10-19",
-      "lastED": "2026-10-10",
+      "lastED": "2026-11-04",
       "lastDSC": "2026-10-22",
-      "lastFD": "2026-11-01",
+      "lastFD": "2026-11-04",
       "lastCE": "2026-11-01",
-      "lastRON": "2026-11-01",
-      "lastEC": "2026-11-01",
-      "lastESS": "2026-11-01",
+      "lastRON": "2026-11-04",
+      "lastEC": "2026-11-04",
+      "lastESS": "2026-11-04",
       "lastTech": "Shylo Stalder",
       "lastLocation": "IAH",
       "IHC": 28,
-      "ED": 4,
+      "ED": 29,
       "DSC": 16,
-      "FD": 26,
+      "FD": 29,
       "CE": 26
     },
     {
@@ -1188,6 +1188,20 @@
       "DSC": 1,
       "FD": 1,
       "CE": 1,
+      "RON": 1,
+      "EC": 1,
+      "ESS": 1
+    },
+    {
+      "tail": "N87306",
+      "date": "2026-11-04",
+      "name": "Shylo Stalder",
+      "location": "IAH",
+      "IHC": 0,
+      "ED": 1,
+      "DSC": 0,
+      "FD": 1,
+      "CE": 0,
       "RON": 1,
       "EC": 1,
       "ESS": 1

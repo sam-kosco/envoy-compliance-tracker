@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-06T07:07:45.849196+00:00",
+  "generated": "2026-11-06T08:08:11.799161+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -729,12 +729,12 @@
     },
     {
       "tail": "N266NN",
-      "lastService": "2026-11-03",
+      "lastService": "2026-11-05",
       "lastED1": "2026-11-03",
       "lastED2": "2026-11-03",
-      "lastIHC": "2026-11-03",
-      "lastLocation": "CMH",
-      "lastTech": "Tanaija  Price",
+      "lastIHC": "2026-11-05",
+      "lastLocation": "CVG",
+      "lastTech": "Sellers Davis",
       "ED1": 27,
       "ED2": 57
     },
@@ -1235,12 +1235,12 @@
     },
     {
       "tail": "N317TB",
-      "lastService": "2026-11-02",
+      "lastService": "2026-11-05",
       "lastED1": "2026-11-02",
       "lastED2": "2026-11-02",
-      "lastIHC": "2026-11-02",
-      "lastLocation": "XNA",
-      "lastTech": "Shaun Neil",
+      "lastIHC": "2026-11-05",
+      "lastLocation": "CVG",
+      "lastTech": "Sellers Davis",
       "ED1": 26,
       "ED2": 56
     },
@@ -2005,14 +2005,14 @@
     },
     {
       "tail": "N784DP",
-      "lastService": "2026-10-31",
-      "lastED1": "2026-09-29",
-      "lastED2": "2026-06-04",
-      "lastIHC": "2026-10-31",
-      "lastLocation": "DFW",
-      "lastTech": "Nadia Johnson",
-      "ED1": -8,
-      "ED2": -95
+      "lastService": "2026-11-05",
+      "lastED1": "2026-11-05",
+      "lastED2": "2026-11-05",
+      "lastIHC": "2026-11-05",
+      "lastLocation": "CVG",
+      "lastTech": "Sellers Davis",
+      "ED1": 29,
+      "ED2": 59
     },
     {
       "tail": "N785BR",
@@ -2027,12 +2027,12 @@
     },
     {
       "tail": "N786SM",
-      "lastService": "2026-11-02",
+      "lastService": "2026-11-05",
       "lastED1": "2026-11-02",
       "lastED2": "2026-11-02",
-      "lastIHC": "2026-11-02",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
+      "lastIHC": "2026-11-05",
+      "lastLocation": "CVG",
+      "lastTech": "Sellers Davis",
       "ED1": 26,
       "ED2": 56
     },
@@ -2192,6 +2192,42 @@
       "IHC": 1,
       "ED1": 0,
       "ED2": 0
+    },
+    {
+      "tail": "N317TB",
+      "date": "2026-11-05",
+      "name": "Sellers Davis",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N786SM",
+      "date": "2026-11-05",
+      "name": "Sellers Davis",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N266NN",
+      "date": "2026-11-05",
+      "name": "Sellers Davis",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N784DP",
+      "date": "2026-11-05",
+      "name": "Sellers Davis",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 1
     },
     {
       "tail": "N760MQ",

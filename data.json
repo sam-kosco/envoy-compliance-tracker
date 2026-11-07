@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-07T11:07:24.926216+00:00",
+  "generated": "2026-11-07T12:07:55.509415+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -113,12 +113,12 @@
     },
     {
       "tail": "N210NN",
-      "lastService": "2026-11-04",
+      "lastService": "2026-11-06",
       "lastED1": "2026-10-19",
       "lastED2": "2026-10-02",
-      "lastIHC": "2026-11-04",
-      "lastLocation": "XNA",
-      "lastTech": "Ashley Burke",
+      "lastIHC": "2026-11-06",
+      "lastLocation": "DFW",
+      "lastTech": "Aunyae Morrison",
       "ED1": 11,
       "ED2": 24
     },
@@ -1191,12 +1191,12 @@
     },
     {
       "tail": "N313BS",
-      "lastService": "2026-11-04",
+      "lastService": "2026-11-06",
       "lastED1": "2026-10-14",
       "lastED2": "2026-09-17",
-      "lastIHC": "2026-11-04",
-      "lastLocation": "CMH",
-      "lastTech": "Darian Eiland",
+      "lastIHC": "2026-11-06",
+      "lastLocation": "DFW",
+      "lastTech": "Aunyae Morrison",
       "ED1": 6,
       "ED2": 9
     },
@@ -2038,10 +2038,10 @@
     },
     {
       "tail": "N787BP",
-      "lastService": "2026-11-05",
+      "lastService": "2026-11-06",
       "lastED1": "2026-11-05",
       "lastED2": "2026-10-15",
-      "lastIHC": "2026-11-05",
+      "lastIHC": "2026-11-06",
       "lastLocation": "DFW",
       "lastTech": "Aunyae Morrison",
       "ED1": 28,
@@ -2474,6 +2474,33 @@
     },
     {
       "tail": "N216NN",
+      "date": "2026-11-06",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N210NN",
+      "date": "2026-11-06",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N313BS",
+      "date": "2026-11-06",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N787BP",
       "date": "2026-11-06",
       "name": "Aunyae Morrison",
       "location": "DFW",

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-09T17:07:20.560816+00:00",
+  "generated": "2026-11-09T18:07:39.615106+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -1334,12 +1334,12 @@
     },
     {
       "tail": "N326CJ",
-      "lastService": "2026-11-06",
+      "lastService": "2026-11-07",
       "lastED1": "2026-11-04",
       "lastED2": "2026-11-04",
-      "lastIHC": "2026-11-06",
-      "lastLocation": "XNA",
-      "lastTech": "Ashley Burke",
+      "lastIHC": "2026-11-07",
+      "lastLocation": "CMH",
+      "lastTech": "Darian Eiland",
       "ED1": 25,
       "ED2": 55
     },
@@ -2738,6 +2738,15 @@
       "date": "2026-11-07",
       "name": "Damian Utley",
       "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N326CJ",
+      "date": "2026-11-07",
+      "name": "Darian Eiland",
+      "location": "CMH",
       "IHC": 1,
       "ED1": 0,
       "ED2": 0

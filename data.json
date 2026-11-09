@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-09T09:07:39.940198+00:00",
+  "generated": "2026-11-09T11:07:40.648527+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -256,12 +256,12 @@
     },
     {
       "tail": "N223NN",
-      "lastService": "2026-10-30",
+      "lastService": "2026-11-08",
       "lastED1": "2026-10-23",
       "lastED2": "2026-09-20",
-      "lastIHC": "2026-10-30",
+      "lastIHC": "2026-11-08",
       "lastLocation": "LIT",
-      "lastTech": "Damian Utley",
+      "lastTech": "Erica Griffin",
       "ED1": 13,
       "ED2": 10
     },
@@ -608,13 +608,13 @@
     },
     {
       "tail": "N255NN",
-      "lastService": "2026-10-29",
-      "lastED1": "2026-10-05",
+      "lastService": "2026-11-08",
+      "lastED1": "2026-11-08",
       "lastED2": "2026-10-05",
-      "lastIHC": "2026-10-29",
-      "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
-      "ED1": -5,
+      "lastIHC": "2026-11-08",
+      "lastLocation": "LIT",
+      "lastTech": "Erica Griffin",
+      "ED1": 29,
       "ED2": 25
     },
     {
@@ -630,14 +630,14 @@
     },
     {
       "tail": "N257NN",
-      "lastService": "2026-11-04",
-      "lastED1": "2026-10-11",
-      "lastED2": "2026-09-08",
-      "lastIHC": "2026-11-04",
-      "lastLocation": "SGF",
-      "lastTech": "Steven Wilson",
-      "ED1": 1,
-      "ED2": -2
+      "lastService": "2026-11-08",
+      "lastED1": "2026-11-08",
+      "lastED2": "2026-11-08",
+      "lastIHC": "2026-11-08",
+      "lastLocation": "LIT",
+      "lastTech": "Erica Griffin",
+      "ED1": 29,
+      "ED2": 59
     },
     {
       "tail": "N258NN",
@@ -806,12 +806,12 @@
     },
     {
       "tail": "N273NN",
-      "lastService": "2026-11-06",
+      "lastService": "2026-11-08",
       "lastED1": "2026-10-18",
       "lastED2": "2026-10-18",
-      "lastIHC": "2026-11-06",
-      "lastLocation": "XNA",
-      "lastTech": "Ashley Burke",
+      "lastIHC": "2026-11-08",
+      "lastLocation": "LIT",
+      "lastTech": "Erica Griffin",
       "ED1": 8,
       "ED2": 38
     },
@@ -993,14 +993,14 @@
     },
     {
       "tail": "N290NN",
-      "lastService": "2026-10-31",
-      "lastED1": "2026-10-16",
-      "lastED2": "2026-09-13",
-      "lastIHC": "2026-10-31",
+      "lastService": "2026-11-08",
+      "lastED1": "2026-11-08",
+      "lastED2": "2026-11-08",
+      "lastIHC": "2026-11-08",
       "lastLocation": "LIT",
-      "lastTech": "Damian Utley",
-      "ED1": 6,
-      "ED2": 3
+      "lastTech": "Erica Griffin",
+      "ED1": 29,
+      "ED2": 59
     },
     {
       "tail": "N291NN",
@@ -1059,12 +1059,12 @@
     },
     {
       "tail": "N300LK",
-      "lastService": "2026-10-31",
+      "lastService": "2026-11-08",
       "lastED1": "2026-10-31",
       "lastED2": "2026-09-30",
-      "lastIHC": "2026-10-31",
-      "lastLocation": "CMH",
-      "lastTech": "Alexander Hamilton",
+      "lastIHC": "2026-11-08",
+      "lastLocation": "LIT",
+      "lastTech": "Erica Griffin",
       "ED1": 21,
       "ED2": 20
     },
@@ -2363,6 +2363,60 @@
       "IHC": 1,
       "ED1": 0,
       "ED2": 0
+    },
+    {
+      "tail": "N273NN",
+      "date": "2026-11-08",
+      "name": "Erica Griffin",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N300LK",
+      "date": "2026-11-08",
+      "name": "Erica Griffin",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N255NN",
+      "date": "2026-11-08",
+      "name": "Erica Griffin",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N223NN",
+      "date": "2026-11-08",
+      "name": "Erica Griffin",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N257NN",
+      "date": "2026-11-08",
+      "name": "Erica Griffin",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 1
+    },
+    {
+      "tail": "N290NN",
+      "date": "2026-11-08",
+      "name": "Erica Griffin",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 1
     },
     {
       "tail": "N323ED",

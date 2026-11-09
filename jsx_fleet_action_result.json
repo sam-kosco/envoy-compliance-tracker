@@ -1,22 +1,22 @@
 {
-  "tail": "N252JX",
-  "action": "remove_tail",
+  "tail": "N401JX",
+  "action": "add_tail",
   "program": "jsx",
-  "timestamp": "2026-11-02T19:40:18+00:00",
+  "timestamp": "2026-11-09T16:44:20+00:00",
   "jsx_debrief": {
     "status": "ok",
-    "message": "removed (54 tails remain)"
+    "message": "added at position 22 of 56"
   },
   "jsx_closeout": {
     "status": "ok",
-    "message": "removed (54 tails remain)"
+    "message": "added at position 22 of 56"
   },
   "safetyculture": {
     "status": "ok",
-    "message": "removed (54 remain)"
+    "message": "added at position 22 of 55"
   },
   "sharepoint": {
     "status": "ok",
-    "message": "Status=Disabled sent \u2014 async"
+    "message": "row add sent (Status=Active) \u2014 async"
   }
 }

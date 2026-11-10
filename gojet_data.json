@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-10T06:37:25.039713+00:00",
+  "generated": "2026-11-10T07:37:54.280660+00:00",
   "cycles": {
     "ED1": 60,
     "ED2": 60,
@@ -302,16 +302,16 @@
     },
     {
       "tail": "535",
-      "lastService": "2026-10-04",
-      "lastED1": "2026-07-27",
-      "lastED2": "2026-07-27",
+      "lastService": "2026-11-09",
+      "lastED1": "2026-11-09",
+      "lastED2": "2026-11-09",
       "lastCE": "2026-10-04",
       "lastIHC": "2026-07-27",
       "lastRON": "2026-10-04",
       "lastLocation": "STL",
-      "lastTech": "Tiffany Hudson",
-      "ED1": -46,
-      "ED2": -46,
+      "lastTech": "Ursula Moffitt",
+      "ED1": 59,
+      "ED2": 59,
       "CE": 23
     },
     {
@@ -442,14 +442,14 @@
     },
     {
       "tail": "545",
-      "lastService": "2026-10-31",
+      "lastService": "2026-11-09",
       "lastED1": "2026-10-09",
       "lastED2": "2026-10-09",
       "lastCE": "2026-10-31",
-      "lastIHC": "2026-10-09",
-      "lastRON": "2026-10-31",
+      "lastIHC": "2026-11-09",
+      "lastRON": "2026-11-09",
       "lastLocation": "STL",
-      "lastTech": "Tiffany Hudson",
+      "lastTech": "Ursula Moffitt",
       "ED1": 28,
       "ED2": 28,
       "CE": 50
@@ -680,14 +680,14 @@
     },
     {
       "tail": "565",
-      "lastService": "2026-10-07",
+      "lastService": "2026-11-09",
       "lastED1": "2026-10-06",
       "lastED2": "2026-10-06",
       "lastCE": "2026-10-06",
       "lastIHC": "2026-10-06",
-      "lastRON": "2026-10-07",
+      "lastRON": "2026-11-09",
       "lastLocation": "STL",
-      "lastTech": "Tiffany Hudson",
+      "lastTech": "Ursula Moffitt",
       "ED1": 25,
       "ED2": 25,
       "CE": 25
@@ -866,6 +866,39 @@
       "CE": 0,
       "IHC": 0,
       "RON": 1
+    },
+    {
+      "tail": "565",
+      "date": "2026-11-09",
+      "name": "Ursula Moffitt",
+      "location": "STL",
+      "ED1": 0,
+      "ED2": 0,
+      "CE": 0,
+      "IHC": 0,
+      "RON": 1
+    },
+    {
+      "tail": "545",
+      "date": "2026-11-09",
+      "name": "Ursula Moffitt",
+      "location": "STL",
+      "ED1": 0,
+      "ED2": 0,
+      "CE": 0,
+      "IHC": 1,
+      "RON": 1
+    },
+    {
+      "tail": "535",
+      "date": "2026-11-09",
+      "name": "Ursula Moffitt",
+      "location": "STL",
+      "ED1": 1,
+      "ED2": 1,
+      "CE": 0,
+      "IHC": 0,
+      "RON": 0
     },
     {
       "tail": "579",

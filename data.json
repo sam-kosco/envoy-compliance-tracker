@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-12T09:07:48.703997+00:00",
+  "generated": "2026-11-12T10:07:22.037219+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -113,12 +113,12 @@
     },
     {
       "tail": "N210NN",
-      "lastService": "2026-11-07",
+      "lastService": "2026-11-11",
       "lastED1": "2026-10-19",
       "lastED2": "2026-10-02",
-      "lastIHC": "2026-11-07",
+      "lastIHC": "2026-11-11",
       "lastLocation": "DFW",
-      "lastTech": "Nadia Johnson",
+      "lastTech": "Aunyae Morrison",
       "ED1": 6,
       "ED2": 19
     },
@@ -850,12 +850,12 @@
     },
     {
       "tail": "N277NN",
-      "lastService": "2026-11-04",
+      "lastService": "2026-11-11",
       "lastED1": "2026-10-30",
       "lastED2": "2026-11-03",
-      "lastIHC": "2026-11-04",
-      "lastLocation": "XNA",
-      "lastTech": "Ashley Burke",
+      "lastIHC": "2026-11-11",
+      "lastLocation": "DFW",
+      "lastTech": "Aunyae Morrison",
       "ED1": 17,
       "ED2": 51
     },
@@ -927,12 +927,12 @@
     },
     {
       "tail": "N284JN",
-      "lastService": "2026-11-05",
+      "lastService": "2026-11-11",
       "lastED1": "2026-11-05",
       "lastED2": "2026-09-24",
-      "lastIHC": "2026-11-05",
-      "lastLocation": "LIT",
-      "lastTech": "Erica Griffin",
+      "lastIHC": "2026-11-11",
+      "lastLocation": "CVG",
+      "lastTech": "Sellers Davis",
       "ED1": 23,
       "ED2": 11
     },
@@ -1246,23 +1246,23 @@
     },
     {
       "tail": "N318JE",
-      "lastService": "2026-11-07",
+      "lastService": "2026-11-11",
       "lastED1": "2026-10-22",
       "lastED2": "2026-10-23",
-      "lastIHC": "2026-11-07",
+      "lastIHC": "2026-11-11",
       "lastLocation": "CVG",
-      "lastTech": "Bayleah Vogel",
+      "lastTech": "Sellers Davis",
       "ED1": 9,
       "ED2": 40
     },
     {
       "tail": "N319RG",
-      "lastService": "2026-11-05",
+      "lastService": "2026-11-11",
       "lastED1": "2026-11-05",
       "lastED2": "2026-09-29",
-      "lastIHC": "2026-11-05",
-      "lastLocation": "XNA",
-      "lastTech": "Ashley Burke",
+      "lastIHC": "2026-11-11",
+      "lastLocation": "CVG",
+      "lastTech": "Sellers Davis",
       "ED1": 23,
       "ED2": 16
     },
@@ -1675,12 +1675,12 @@
     },
     {
       "tail": "N741AK",
-      "lastService": "2026-11-07",
+      "lastService": "2026-11-11",
       "lastED1": "2026-11-07",
       "lastED2": "2026-11-07",
-      "lastIHC": "2026-11-07",
+      "lastIHC": "2026-11-11",
       "lastLocation": "CVG",
-      "lastTech": "Bayleah Vogel",
+      "lastTech": "Sellers Davis",
       "ED1": 25,
       "ED2": 55
     },
@@ -2383,6 +2383,42 @@
       "ED2": 1
     },
     {
+      "tail": "N741AK",
+      "date": "2026-11-11",
+      "name": "Sellers Davis",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N318JE",
+      "date": "2026-11-11",
+      "name": "Sellers Davis",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N319RG",
+      "date": "2026-11-11",
+      "name": "Sellers Davis",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N284JN",
+      "date": "2026-11-11",
+      "name": "Sellers Davis",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
       "tail": "N202NN",
       "date": "2026-11-11",
       "name": "Aunyae Morrison",
@@ -2429,6 +2465,24 @@
     },
     {
       "tail": "N329DD",
+      "date": "2026-11-11",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N210NN",
+      "date": "2026-11-11",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N277NN",
       "date": "2026-11-11",
       "name": "Aunyae Morrison",
       "location": "DFW",

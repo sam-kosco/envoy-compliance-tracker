@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-13T05:08:05.234089+00:00",
+  "generated": "2026-11-13T06:07:42.904875+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -1345,12 +1345,12 @@
     },
     {
       "tail": "N327PG",
-      "lastService": "2026-11-11",
+      "lastService": "2026-11-12",
       "lastED1": "2026-10-25",
       "lastED2": "2026-09-25",
-      "lastIHC": "2026-11-11",
-      "lastLocation": "SGF",
-      "lastTech": "Steven Wilson",
+      "lastIHC": "2026-11-12",
+      "lastLocation": "DFW",
+      "lastTech": "Aunyae Morrison",
       "ED1": 11,
       "ED2": 11
     },
@@ -2150,6 +2150,15 @@
   "debriefs": [
     {
       "tail": "N322RC",
+      "date": "2026-11-12",
+      "name": "Aunyae Morrison",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N327PG",
       "date": "2026-11-12",
       "name": "Aunyae Morrison",
       "location": "DFW",

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-14T08:08:11.356576+00:00",
+  "generated": "2026-11-14T09:07:53.422013+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -916,12 +916,12 @@
     },
     {
       "tail": "N283NN",
-      "lastService": "2026-11-05",
+      "lastService": "2026-11-13",
       "lastED1": "2026-10-15",
       "lastED2": "2026-09-20",
-      "lastIHC": "2026-11-05",
-      "lastLocation": "CMH",
-      "lastTech": "Tanaija Price",
+      "lastIHC": "2026-11-13",
+      "lastLocation": "CVG",
+      "lastTech": "Precious Valadez-Roberson",
       "ED1": 0,
       "ED2": 5
     },
@@ -971,12 +971,12 @@
     },
     {
       "tail": "N288NN",
-      "lastService": "2026-11-11",
+      "lastService": "2026-11-13",
       "lastED1": "2026-10-24",
       "lastED2": "2026-10-15",
-      "lastIHC": "2026-11-11",
-      "lastLocation": "XNA",
-      "lastTech": "Ashley Burke",
+      "lastIHC": "2026-11-13",
+      "lastLocation": "CVG",
+      "lastTech": "Precious Valadez-Roberson",
       "ED1": 9,
       "ED2": 30
     },
@@ -2027,12 +2027,12 @@
     },
     {
       "tail": "N786SM",
-      "lastService": "2026-11-12",
+      "lastService": "2026-11-13",
       "lastED1": "2026-11-02",
       "lastED2": "2026-11-02",
-      "lastIHC": "2026-11-12",
-      "lastLocation": "CMH",
-      "lastTech": "Tanaija Price",
+      "lastIHC": "2026-11-13",
+      "lastLocation": "CVG",
+      "lastTech": "Precious Valadez-Roberson",
       "ED1": 18,
       "ED2": 48
     },
@@ -2198,6 +2198,33 @@
       "date": "2026-11-13",
       "name": "Ashley Burke",
       "location": "XNA",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N786SM",
+      "date": "2026-11-13",
+      "name": "Precious Valadez-Roberson",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N288NN",
+      "date": "2026-11-13",
+      "name": "Precious Valadez-Roberson",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N283NN",
+      "date": "2026-11-13",
+      "name": "Precious Valadez-Roberson",
+      "location": "CVG",
       "IHC": 1,
       "ED1": 0,
       "ED2": 0

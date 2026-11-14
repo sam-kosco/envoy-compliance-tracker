@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-14T09:07:53.422013+00:00",
+  "generated": "2026-11-14T10:07:32.929353+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -36,12 +36,12 @@
     },
     {
       "tail": "N203NN",
-      "lastService": "2026-11-03",
+      "lastService": "2026-11-13",
       "lastED1": "2026-10-19",
       "lastED2": "2026-10-25",
-      "lastIHC": "2026-11-03",
-      "lastLocation": "SGF",
-      "lastTech": "Steven wilson",
+      "lastIHC": "2026-11-13",
+      "lastLocation": "CMH",
+      "lastTech": "Darian Eiland",
       "ED1": 4,
       "ED2": 40
     },
@@ -1389,12 +1389,12 @@
     },
     {
       "tail": "N330JT",
-      "lastService": "2026-11-11",
+      "lastService": "2026-11-13",
       "lastED1": "2026-10-15",
       "lastED2": "2026-10-03",
-      "lastIHC": "2026-11-11",
-      "lastLocation": "XNA",
-      "lastTech": "Ashley Burke",
+      "lastIHC": "2026-11-13",
+      "lastLocation": "CMH",
+      "lastTech": "Darian Eiland",
       "ED1": 0,
       "ED2": 18
     },
@@ -2225,6 +2225,24 @@
       "date": "2026-11-13",
       "name": "Precious Valadez-Roberson",
       "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N330JT",
+      "date": "2026-11-13",
+      "name": "Darian Eiland",
+      "location": "CMH",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N203NN",
+      "date": "2026-11-13",
+      "name": "Darian Eiland",
+      "location": "CMH",
       "IHC": 1,
       "ED1": 0,
       "ED2": 0

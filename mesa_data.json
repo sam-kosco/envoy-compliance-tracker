@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-16T07:28:00.612188+00:00",
+  "generated": "2026-11-16T08:33:35.280499+00:00",
   "cycles": {
     "IHC": 45,
     "ED": 30,
@@ -941,21 +941,21 @@
     },
     {
       "tail": "N88359",
-      "lastService": "2026-11-14",
+      "lastService": "2026-11-15",
       "lastIHC": "2026-10-29",
       "lastED": "2026-10-29",
       "lastDSC": "2026-10-29",
-      "lastFD": "2026-11-14",
+      "lastFD": "2026-11-15",
       "lastCE": "2026-10-29",
-      "lastRON": "2026-11-14",
-      "lastEC": "2026-11-14",
-      "lastESS": "2026-11-14",
-      "lastTech": "David Blatt",
+      "lastRON": "2026-11-15",
+      "lastEC": "2026-11-15",
+      "lastESS": "2026-11-15",
+      "lastTech": "Kamari Payne",
       "lastLocation": "IAH",
       "IHC": 27,
       "ED": 12,
       "DSC": 12,
-      "FD": 28,
+      "FD": 29,
       "CE": 12
     },
     {
@@ -1278,6 +1278,20 @@
     },
     {
       "tail": "N85358",
+      "date": "2026-11-15",
+      "name": "Kamari Payne",
+      "location": "IAH",
+      "IHC": 0,
+      "ED": 0,
+      "DSC": 0,
+      "FD": 1,
+      "CE": 0,
+      "RON": 1,
+      "EC": 1,
+      "ESS": 1
+    },
+    {
+      "tail": "N88359",
       "date": "2026-11-15",
       "name": "Kamari Payne",
       "location": "IAH",

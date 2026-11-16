@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-16T11:07:58.548040+00:00",
+  "generated": "2026-11-16T12:07:38.835791+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -113,13 +113,13 @@
     },
     {
       "tail": "N210NN",
-      "lastService": "2026-11-11",
-      "lastED1": "2026-10-19",
+      "lastService": "2026-11-15",
+      "lastED1": "2026-11-15",
       "lastED2": "2026-10-02",
-      "lastIHC": "2026-11-11",
-      "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
-      "ED1": 2,
+      "lastIHC": "2026-11-15",
+      "lastLocation": "LIT",
+      "lastTech": "Erica Griffin",
+      "ED1": 29,
       "ED2": 15
     },
     {
@@ -267,12 +267,12 @@
     },
     {
       "tail": "N224NN",
-      "lastService": "2026-11-14",
+      "lastService": "2026-11-15",
       "lastED1": "2026-11-06",
       "lastED2": "2026-11-06",
-      "lastIHC": "2026-11-14",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
+      "lastIHC": "2026-11-15",
+      "lastLocation": "LIT",
+      "lastTech": "Erica Griffin",
       "ED1": 20,
       "ED2": 50
     },
@@ -311,14 +311,14 @@
     },
     {
       "tail": "N228NN",
-      "lastService": "2026-11-11",
+      "lastService": "2026-11-15",
       "lastED1": "2026-10-09",
-      "lastED2": "2026-09-10",
-      "lastIHC": "2026-11-11",
-      "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastED2": "2026-11-15",
+      "lastIHC": "2026-11-15",
+      "lastLocation": "LIT",
+      "lastTech": "Erica Griffin",
       "ED1": -8,
-      "ED2": -7
+      "ED2": 59
     },
     {
       "tail": "N229NN",
@@ -1180,12 +1180,12 @@
     },
     {
       "tail": "N312BT",
-      "lastService": "2026-11-11",
+      "lastService": "2026-11-15",
       "lastED1": "2026-11-09",
       "lastED2": "2026-09-18",
-      "lastIHC": "2026-11-11",
-      "lastLocation": "CMH",
-      "lastTech": "Darian Eiland",
+      "lastIHC": "2026-11-15",
+      "lastLocation": "LIT",
+      "lastTech": "Erica Griffin",
       "ED1": 23,
       "ED2": 1
     },
@@ -1488,12 +1488,12 @@
     },
     {
       "tail": "N339HG",
-      "lastService": "2026-11-12",
+      "lastService": "2026-11-15",
       "lastED1": "2026-10-26",
       "lastED2": "2026-10-18",
-      "lastIHC": "2026-11-12",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
+      "lastIHC": "2026-11-15",
+      "lastLocation": "LIT",
+      "lastTech": "Erica Griffin",
       "ED1": 9,
       "ED2": 31
     },
@@ -1752,12 +1752,12 @@
     },
     {
       "tail": "N749BM",
-      "lastService": "2026-11-13",
+      "lastService": "2026-11-15",
       "lastED1": "2026-10-27",
       "lastED2": "2026-10-27",
-      "lastIHC": "2026-11-13",
+      "lastIHC": "2026-11-15",
       "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastTech": "Nadia Johnson",
       "ED1": 10,
       "ED2": 40
     },
@@ -2410,6 +2410,51 @@
       "ED2": 0
     },
     {
+      "tail": "N228NN",
+      "date": "2026-11-15",
+      "name": "Erica Griffin",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 1
+    },
+    {
+      "tail": "N224NN",
+      "date": "2026-11-15",
+      "name": "Erica Griffin",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N210NN",
+      "date": "2026-11-15",
+      "name": "Erica Griffin",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N339HG",
+      "date": "2026-11-15",
+      "name": "Erica Griffin",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N312BT",
+      "date": "2026-11-15",
+      "name": "Erica Griffin",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
       "tail": "N279MQ",
       "date": "2026-11-15",
       "name": "Nadia Johnson",
@@ -2447,6 +2492,15 @@
     },
     {
       "tail": "N207AN",
+      "date": "2026-11-15",
+      "name": "Nadia Johnson",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N749BM",
       "date": "2026-11-15",
       "name": "Nadia Johnson",
       "location": "DFW",

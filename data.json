@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-16T10:07:29.738859+00:00",
+  "generated": "2026-11-16T11:07:58.548040+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -80,12 +80,12 @@
     },
     {
       "tail": "N207AN",
-      "lastService": "2026-10-24",
+      "lastService": "2026-11-15",
       "lastED1": "2026-10-16",
       "lastED2": "2026-09-20",
-      "lastIHC": "2026-10-24",
-      "lastLocation": "CVG",
-      "lastTech": "Bayleah Vogel",
+      "lastIHC": "2026-11-15",
+      "lastLocation": "DFW",
+      "lastTech": "Nadia Johnson",
       "ED1": -1,
       "ED2": 3
     },
@@ -1378,12 +1378,12 @@
     },
     {
       "tail": "N329DD",
-      "lastService": "2026-11-14",
+      "lastService": "2026-11-15",
       "lastED1": "2026-10-25",
       "lastED2": "2026-09-28",
-      "lastIHC": "2026-11-14",
-      "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastIHC": "2026-11-15",
+      "lastLocation": "LIT",
+      "lastTech": "Erica Griffin",
       "ED1": 8,
       "ED2": 11
     },
@@ -2401,6 +2401,15 @@
       "ED2": 0
     },
     {
+      "tail": "N329DD",
+      "date": "2026-11-15",
+      "name": "Erica Griffin",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
       "tail": "N279MQ",
       "date": "2026-11-15",
       "name": "Nadia Johnson",
@@ -2429,6 +2438,15 @@
     },
     {
       "tail": "N256NN",
+      "date": "2026-11-15",
+      "name": "Nadia Johnson",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N207AN",
       "date": "2026-11-15",
       "name": "Nadia Johnson",
       "location": "DFW",

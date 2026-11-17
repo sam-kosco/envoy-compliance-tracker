@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-17T01:01:36.092849+00:00",
+  "generated": "2026-11-17T02:02:18.748055+00:00",
   "planes": [
     {
       "tail": "N351DC",
@@ -1153,13 +1153,20 @@
     },
     {
       "tail": "N625DC",
-      "status": "soon",
-      "count7d": 1,
-      "daysSinceLast": 6,
-      "lastClean": "2026-11-11",
+      "status": "compliant",
+      "count7d": 2,
+      "daysSinceLast": 0,
+      "lastClean": "2026-11-17",
       "lastLocation": "KFNT",
       "lastTech": "Jakendell Brown",
       "recentInspections": [
+        {
+          "audit_id": "audit_52a1fc54c7244a08bb9e12ae29d04238",
+          "date": "2026-11-17",
+          "location": "KFNT",
+          "tech": "Jakendell Brown",
+          "report_url": "https://app.safetyculture.com/report/public/audit/46c42a884ae7540d26b86c582957c55bb2458bb52cb2d980e6bef183d1788540"
+        },
         {
           "audit_id": "audit_d43f4ef52afd4d03822b286b33c8b935",
           "date": "2026-11-11",
@@ -1187,25 +1194,25 @@
           "location": "KFNT",
           "tech": "Jakendell Brown",
           "report_url": "https://app.safetyculture.com/report/public/audit/f499fd30aee22316e9138fa6068cc1aee8f7286f7d4a1f56c40ee6f1164b8076"
-        },
-        {
-          "audit_id": "audit_045725c003244474972a7f43ce68e9c8",
-          "date": "2026-10-29",
-          "location": "KFNT",
-          "tech": "Jakendell Brown",
-          "report_url": "https://app.safetyculture.com/report/public/audit/41ec9310560ee3c4b3f06c02f5c3c2f0b6a91224859236b7459fe5dc80530758"
         }
       ]
     },
     {
       "tail": "N627DC",
-      "status": "soon",
-      "count7d": 1,
-      "daysSinceLast": 6,
-      "lastClean": "2026-11-11",
+      "status": "compliant",
+      "count7d": 2,
+      "daysSinceLast": 0,
+      "lastClean": "2026-11-17",
       "lastLocation": "KFNT",
       "lastTech": "Jakendell Brown",
       "recentInspections": [
+        {
+          "audit_id": "audit_40f8ec582ad541109b793b7bbbcd7b6d",
+          "date": "2026-11-17",
+          "location": "KFNT",
+          "tech": "Jakendell Brown",
+          "report_url": "https://app.safetyculture.com/report/public/audit/2ce39221259ecc9a3b59f3ee4fcdab3a2981dd4d9be3b84ac10a7b1539f407d0"
+        },
         {
           "audit_id": "audit_9916c197a6354519bc5eccb66a53f71d",
           "date": "2026-11-11",
@@ -1233,25 +1240,25 @@
           "location": "KFNT",
           "tech": "Jakendell Brown",
           "report_url": "https://app.safetyculture.com/report/public/audit/59d40588ca3e1a2ff742f9223e12516824baf033844225e4d10fce95235295c7"
-        },
-        {
-          "audit_id": "audit_f27749bf0e2142bdab9ec4dd6b244b71",
-          "date": "2026-10-30",
-          "location": "KFNT",
-          "tech": "Jakendell Brown",
-          "report_url": "https://app.safetyculture.com/report/public/audit/30e791c0fabda11470852ebacb73b0ffe44b89bc53603264cc9dc58dbfdb6ffb"
         }
       ]
     },
     {
       "tail": "N419JS",
-      "status": "soon",
-      "count7d": 1,
-      "daysSinceLast": 6,
-      "lastClean": "2026-11-11",
+      "status": "compliant",
+      "count7d": 2,
+      "daysSinceLast": 0,
+      "lastClean": "2026-11-17",
       "lastLocation": "KFNT",
       "lastTech": "Jakendell Brown",
       "recentInspections": [
+        {
+          "audit_id": "audit_3d2af0e466454e2c89b1e5162a3f4eea",
+          "date": "2026-11-17",
+          "location": "KFNT",
+          "tech": "Jakendell Brown",
+          "report_url": "https://app.safetyculture.com/report/public/audit/19700f9348f26755ae536f08a1ee7cb3fd05076c4893f077b6f90a5bde07d312"
+        },
         {
           "audit_id": "audit_c0c5a12acd43421bb2506f17aeff6cf5",
           "date": "2026-11-11",
@@ -1279,13 +1286,6 @@
           "location": "KFNT",
           "tech": "Jakendell Brown",
           "report_url": "https://app.safetyculture.com/report/public/audit/7d29e5653310c2e9f50f6747b74424af7f65aeac9537e515f92df828e3af6ada"
-        },
-        {
-          "audit_id": "audit_39984920868b42c5bf1adbbc5cdbc38d",
-          "date": "2026-10-29",
-          "location": "KFNT",
-          "tech": "Jakendell Brown",
-          "report_url": "https://app.safetyculture.com/report/public/audit/1af9cf6ed4262fabf933efb07fac7b1c20fbe323f9b4f1876e6bb7ec40ff6d94"
         }
       ]
     },

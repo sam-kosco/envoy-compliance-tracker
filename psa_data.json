@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-18T11:17:27.694980+00:00",
+  "generated": "2026-11-18T18:18:22.875891+00:00",
   "planes": [
     {
       "tail": "N500AE",
@@ -1918,7 +1918,7 @@
     {
       "tail": "N592NN",
       "lastService": "2026-11-13",
-      "lastCC": "2026-11-10",
+      "lastCC": "2026-11-13",
       "lastDSC": "2026-11-10",
       "lastCE": "2026-10-20",
       "lastED1": "2026-11-10",
@@ -1930,7 +1930,7 @@
       "lastED4": null,
       "lastLocation": "CAK",
       "lastTech": "Amy Gribble",
-      "CC": 22,
+      "CC": 25,
       "DSC": 22,
       "CE": 1,
       "ED1": 22,
@@ -4004,6 +4004,23 @@
       "audits": []
     },
     {
+      "tail": "N586NN",
+      "date": "2026-11-16",
+      "name": "Saphire Wagner",
+      "location": "DAY",
+      "IC": 1,
+      "EC": 1,
+      "CC": 1,
+      "DSC": 0,
+      "CE": 0,
+      "ED1": 0,
+      "ED2": 0,
+      "ED3": 0,
+      "ED4": 0,
+      "Lav": 0,
+      "audits": []
+    },
+    {
       "tail": "N506AE",
       "date": "2026-11-16",
       "name": "Saphire Wagner",
@@ -4406,23 +4423,6 @@
       "CE": 0,
       "ED1": 0,
       "ED2": 0,
-      "ED3": 0,
-      "ED4": 0,
-      "Lav": 0,
-      "audits": []
-    },
-    {
-      "tail": "N608NN",
-      "date": "2026-11-16",
-      "name": "Juwan Britt",
-      "location": "ORF",
-      "IC": 1,
-      "EC": 1,
-      "CC": 1,
-      "DSC": 0,
-      "CE": 1,
-      "ED1": 1,
-      "ED2": 1,
       "ED3": 0,
       "ED4": 0,
       "Lav": 0,
@@ -5143,23 +5143,6 @@
       "audits": []
     },
     {
-      "tail": "N586NN",
-      "date": "2026-11-15",
-      "name": "Saphire Wagner",
-      "location": "DAY",
-      "IC": 1,
-      "EC": 1,
-      "CC": 1,
-      "DSC": 0,
-      "CE": 0,
-      "ED1": 0,
-      "ED2": 0,
-      "ED3": 0,
-      "ED4": 0,
-      "Lav": 0,
-      "audits": []
-    },
-    {
       "tail": "N631NN",
       "date": "2026-11-14",
       "name": "Kristen Matos",
@@ -5846,7 +5829,7 @@
       "location": "CAK",
       "IC": 1,
       "EC": 1,
-      "CC": 0,
+      "CC": 1,
       "DSC": 0,
       "CE": 0,
       "ED1": 0,

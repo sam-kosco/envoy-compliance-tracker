@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-19T12:07:46.309637+00:00",
+  "generated": "2026-11-19T14:08:02.289769+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -1763,12 +1763,12 @@
     },
     {
       "tail": "N750BD",
-      "lastService": "2026-11-08",
+      "lastService": "2026-11-18",
       "lastED1": "2026-11-01",
       "lastED2": "2026-11-08",
-      "lastIHC": "2026-11-08",
-      "lastLocation": "CVG",
-      "lastTech": "Bayleah Vogel",
+      "lastIHC": "2026-11-18",
+      "lastLocation": "DFW",
+      "lastTech": "Nadia johnson",
       "ED1": 12,
       "ED2": 49
     },
@@ -2503,6 +2503,15 @@
       "tail": "N207AN",
       "date": "2026-11-18",
       "name": "Nadia Johnson",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N750BD",
+      "date": "2026-11-18",
+      "name": "Nadia johnson",
       "location": "DFW",
       "IHC": 1,
       "ED1": 0,

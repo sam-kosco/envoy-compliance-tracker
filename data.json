@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-19T10:07:34.410925+00:00",
+  "generated": "2026-11-19T11:08:05.169234+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -641,12 +641,12 @@
     },
     {
       "tail": "N258NN",
-      "lastService": "2026-11-14",
+      "lastService": "2026-11-18",
       "lastED1": "2026-11-14",
       "lastED2": "2026-11-14",
-      "lastIHC": "2026-11-14",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
+      "lastIHC": "2026-11-18",
+      "lastLocation": "CVG",
+      "lastTech": "Sellers Davis",
       "ED1": 25,
       "ED2": 55
     },
@@ -872,10 +872,10 @@
     },
     {
       "tail": "N279MQ",
-      "lastService": "2026-11-15",
+      "lastService": "2026-11-18",
       "lastED1": "2026-11-01",
       "lastED2": "2026-10-24",
-      "lastIHC": "2026-11-15",
+      "lastIHC": "2026-11-18",
       "lastLocation": "DFW",
       "lastTech": "Nadia Johnson",
       "ED1": 12,
@@ -894,12 +894,12 @@
     },
     {
       "tail": "N281NN",
-      "lastService": "2026-11-15",
+      "lastService": "2026-11-18",
       "lastED1": "2026-11-15",
       "lastED2": "2026-09-29",
-      "lastIHC": "2026-11-15",
+      "lastIHC": "2026-11-18",
       "lastLocation": "CVG",
-      "lastTech": "Bayleah Vogel",
+      "lastTech": "Sellers Davis",
       "ED1": 26,
       "ED2": 9
     },
@@ -1389,13 +1389,13 @@
     },
     {
       "tail": "N330JT",
-      "lastService": "2026-11-13",
-      "lastED1": "2026-10-15",
+      "lastService": "2026-11-18",
+      "lastED1": "2026-11-18",
       "lastED2": "2026-10-03",
-      "lastIHC": "2026-11-13",
-      "lastLocation": "CMH",
-      "lastTech": "Darian Eiland",
-      "ED1": -5,
+      "lastIHC": "2026-11-18",
+      "lastLocation": "CVG",
+      "lastTech": "Sellers Davis",
+      "ED1": 29,
       "ED2": 13
     },
     {
@@ -1950,12 +1950,12 @@
     },
     {
       "tail": "N779RN",
-      "lastService": "2026-11-06",
+      "lastService": "2026-11-18",
       "lastED1": "2026-11-06",
       "lastED2": "2026-10-07",
-      "lastIHC": "2026-11-06",
-      "lastLocation": "CMH",
-      "lastTech": "Darian Eiland",
+      "lastIHC": "2026-11-18",
+      "lastLocation": "CVG",
+      "lastTech": "Sellers Davis",
       "ED1": 17,
       "ED2": 17
     },
@@ -2071,12 +2071,12 @@
     },
     {
       "tail": "N789SS",
-      "lastService": "2026-11-15",
+      "lastService": "2026-11-18",
       "lastED1": "2026-10-07",
       "lastED2": "2026-09-04",
-      "lastIHC": "2026-11-15",
-      "lastLocation": "CMH",
-      "lastTech": "Tanaija Price",
+      "lastIHC": "2026-11-18",
+      "lastLocation": "DFW",
+      "lastTech": "Nadia johnson",
       "ED1": -13,
       "ED2": -16
     },
@@ -2374,6 +2374,42 @@
       "ED2": 0
     },
     {
+      "tail": "N779RN",
+      "date": "2026-11-18",
+      "name": "Sellers Davis",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N258NN",
+      "date": "2026-11-18",
+      "name": "Sellers Davis",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N281NN",
+      "date": "2026-11-18",
+      "name": "Sellers Davis",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N330JT",
+      "date": "2026-11-18",
+      "name": "Sellers Davis",
+      "location": "CVG",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
       "tail": "N261NN",
       "date": "2026-11-18",
       "name": "Nadia Johnson",
@@ -2431,6 +2467,24 @@
       "tail": "N344JA",
       "date": "2026-11-18",
       "name": "Nadia Johnson",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N279MQ",
+      "date": "2026-11-18",
+      "name": "Nadia Johnson",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N789SS",
+      "date": "2026-11-18",
+      "name": "Nadia johnson",
       "location": "DFW",
       "IHC": 1,
       "ED1": 0,

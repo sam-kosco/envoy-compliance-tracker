@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-20T10:08:02.472740+00:00",
+  "generated": "2026-11-20T11:07:35.198678+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -146,12 +146,12 @@
     },
     {
       "tail": "N213NN",
-      "lastService": "2026-11-08",
+      "lastService": "2026-11-19",
       "lastED1": "2026-11-04",
       "lastED2": "2026-11-04",
-      "lastIHC": "2026-11-08",
-      "lastLocation": "XNA",
-      "lastTech": "Ashley Burke",
+      "lastIHC": "2026-11-19",
+      "lastLocation": "LIT",
+      "lastTech": "Erica Griffin",
       "ED1": 14,
       "ED2": 44
     },
@@ -267,12 +267,12 @@
     },
     {
       "tail": "N224NN",
-      "lastService": "2026-11-16",
+      "lastService": "2026-11-19",
       "lastED1": "2026-11-06",
       "lastED2": "2026-11-06",
-      "lastIHC": "2026-11-16",
-      "lastLocation": "CMH",
-      "lastTech": "Darian Eiland",
+      "lastIHC": "2026-11-19",
+      "lastLocation": "LIT",
+      "lastTech": "Erica Griffin",
       "ED1": 16,
       "ED2": 46
     },
@@ -289,13 +289,13 @@
     },
     {
       "tail": "N226NN",
-      "lastService": "2026-11-15",
-      "lastED1": "2026-10-19",
+      "lastService": "2026-11-19",
+      "lastED1": "2026-11-19",
       "lastED2": "2026-11-08",
-      "lastIHC": "2026-11-15",
-      "lastLocation": "DFW",
-      "lastTech": "Nadia Johnson",
-      "ED1": -2,
+      "lastIHC": "2026-11-19",
+      "lastLocation": "LIT",
+      "lastTech": "Erica Griffin",
+      "ED1": 29,
       "ED2": 48
     },
     {
@@ -410,12 +410,12 @@
     },
     {
       "tail": "N237NN",
-      "lastService": "2026-11-15",
+      "lastService": "2026-11-19",
       "lastED1": "2026-11-06",
       "lastED2": "2026-11-06",
-      "lastIHC": "2026-11-15",
-      "lastLocation": "DFW",
-      "lastTech": "Nadia Johnson",
+      "lastIHC": "2026-11-19",
+      "lastLocation": "LIT",
+      "lastTech": "Erica Griffin",
       "ED1": 16,
       "ED2": 46
     },
@@ -707,13 +707,13 @@
     },
     {
       "tail": "N264NN",
-      "lastService": "2026-11-15",
-      "lastED1": "2026-10-17",
+      "lastService": "2026-11-19",
+      "lastED1": "2026-11-19",
       "lastED2": "2026-10-17",
-      "lastIHC": "2026-11-15",
-      "lastLocation": "CMH",
-      "lastTech": "Tanaija Price",
-      "ED1": -4,
+      "lastIHC": "2026-11-19",
+      "lastLocation": "LIT",
+      "lastTech": "Erica Griffin",
+      "ED1": 29,
       "ED2": 26
     },
     {
@@ -1059,12 +1059,12 @@
     },
     {
       "tail": "N300LK",
-      "lastService": "2026-11-15",
+      "lastService": "2026-11-19",
       "lastED1": "2026-10-31",
       "lastED2": "2026-09-30",
-      "lastIHC": "2026-11-15",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
+      "lastIHC": "2026-11-19",
+      "lastLocation": "LIT",
+      "lastTech": "Erica Griffin",
       "ED1": 10,
       "ED2": 9
     },
@@ -2371,6 +2371,60 @@
       "location": "CVG",
       "IHC": 1,
       "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N237NN",
+      "date": "2026-11-19",
+      "name": "Erica Griffin",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N224NN",
+      "date": "2026-11-19",
+      "name": "Erica Griffin",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N264NN",
+      "date": "2026-11-19",
+      "name": "Erica Griffin",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N300LK",
+      "date": "2026-11-19",
+      "name": "Erica Griffin",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N213NN",
+      "date": "2026-11-19",
+      "name": "Erica Griffin",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N226NN",
+      "date": "2026-11-19",
+      "name": "Erica Griffin",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 1,
       "ED2": 0
     },
     {

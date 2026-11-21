@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-21T03:37:43.883619+00:00",
+  "generated": "2026-11-21T07:37:40.978383+00:00",
   "cycles": {
     "ED1": 60,
     "ED2": 60,
@@ -106,14 +106,14 @@
     },
     {
       "tail": "509",
-      "lastService": "2026-11-18",
+      "lastService": "2026-11-20",
       "lastED1": "2026-10-21",
       "lastED2": "2026-10-21",
       "lastCE": "2026-11-18",
       "lastIHC": "2026-10-21",
-      "lastRON": "2026-11-18",
+      "lastRON": "2026-11-20",
       "lastLocation": "STL",
-      "lastTech": "Ursula Moffitt",
+      "lastTech": "Tiffany Hudson",
       "ED1": 29,
       "ED2": 29,
       "CE": 57
@@ -134,14 +134,14 @@
     },
     {
       "tail": "513",
-      "lastService": "2026-11-04",
+      "lastService": "2026-11-20",
       "lastED1": "2026-09-30",
       "lastED2": "2026-09-30",
       "lastCE": "2026-09-30",
-      "lastIHC": "2026-10-14",
+      "lastIHC": "2026-11-20",
       "lastRON": "2026-11-04",
       "lastLocation": "STL",
-      "lastTech": "Ursula Moffitt",
+      "lastTech": "Tiffany Hudson",
       "ED1": 8,
       "ED2": 8,
       "CE": 8
@@ -190,14 +190,14 @@
     },
     {
       "tail": "521",
-      "lastService": "2026-11-11",
+      "lastService": "2026-11-20",
       "lastED1": "2026-10-31",
       "lastED2": "2026-10-31",
       "lastCE": "2026-10-24",
       "lastIHC": "2026-10-31",
-      "lastRON": "2026-11-11",
+      "lastRON": "2026-11-20",
       "lastLocation": "STL",
-      "lastTech": "Ursula Moffitt",
+      "lastTech": "Tiffany Hudson",
       "ED1": 39,
       "ED2": 39,
       "CE": 32
@@ -414,17 +414,17 @@
     },
     {
       "tail": "543",
-      "lastService": "2026-10-23",
+      "lastService": "2026-11-20",
       "lastED1": "2026-10-16",
       "lastED2": "2026-10-16",
-      "lastCE": "2026-10-10",
-      "lastIHC": "2026-10-16",
+      "lastCE": "2026-11-20",
+      "lastIHC": "2026-11-20",
       "lastRON": "2026-10-23",
       "lastLocation": "STL",
       "lastTech": "Tiffany Hudson",
       "ED1": 24,
       "ED2": 24,
-      "CE": 18
+      "CE": 59
     },
     {
       "tail": "544",
@@ -442,14 +442,14 @@
     },
     {
       "tail": "545",
-      "lastService": "2026-11-09",
+      "lastService": "2026-11-20",
       "lastED1": "2026-10-09",
       "lastED2": "2026-10-09",
       "lastCE": "2026-10-31",
       "lastIHC": "2026-11-09",
-      "lastRON": "2026-10-31",
+      "lastRON": "2026-11-20",
       "lastLocation": "STL",
-      "lastTech": "Ursula Moffitt",
+      "lastTech": "Tiffany Hudson",
       "ED1": 17,
       "ED2": 17,
       "CE": 39
@@ -834,6 +834,61 @@
     }
   ],
   "debriefs": [
+    {
+      "tail": "509",
+      "date": "2026-11-20",
+      "name": "Tiffany Hudson",
+      "location": "STL",
+      "ED1": 0,
+      "ED2": 0,
+      "CE": 0,
+      "IHC": 0,
+      "RON": 1
+    },
+    {
+      "tail": "521",
+      "date": "2026-11-20",
+      "name": "Tiffany Hudson",
+      "location": "STL",
+      "ED1": 0,
+      "ED2": 0,
+      "CE": 0,
+      "IHC": 0,
+      "RON": 1
+    },
+    {
+      "tail": "545",
+      "date": "2026-11-20",
+      "name": "Tiffany Hudson",
+      "location": "STL",
+      "ED1": 0,
+      "ED2": 0,
+      "CE": 0,
+      "IHC": 0,
+      "RON": 1
+    },
+    {
+      "tail": "513",
+      "date": "2026-11-20",
+      "name": "Tiffany Hudson",
+      "location": "STL",
+      "ED1": 0,
+      "ED2": 0,
+      "CE": 0,
+      "IHC": 1,
+      "RON": 0
+    },
+    {
+      "tail": "543",
+      "date": "2026-11-20",
+      "name": "Tiffany Hudson",
+      "location": "STL",
+      "ED1": 0,
+      "ED2": 0,
+      "CE": 1,
+      "IHC": 1,
+      "RON": 0
+    },
     {
       "tail": "569",
       "date": "2026-11-19",

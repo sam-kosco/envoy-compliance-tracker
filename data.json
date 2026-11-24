@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-24T09:07:27.899912+00:00",
+  "generated": "2026-11-24T10:07:54.584461+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -916,12 +916,12 @@
     },
     {
       "tail": "N283NN",
-      "lastService": "2026-11-15",
+      "lastService": "2026-11-23",
       "lastED1": "2026-11-15",
       "lastED2": "2026-11-15",
-      "lastIHC": "2026-11-15",
-      "lastLocation": "XNA",
-      "lastTech": "Shaun Neil",
+      "lastIHC": "2026-11-23",
+      "lastLocation": "LIT",
+      "lastTech": "Damian Utley",
       "ED1": 21,
       "ED2": 51
     },
@@ -1026,12 +1026,12 @@
     },
     {
       "tail": "N293NN",
-      "lastService": "2026-11-20",
+      "lastService": "2026-11-23",
       "lastED1": "2026-11-02",
       "lastED2": "2026-10-02",
-      "lastIHC": "2026-11-20",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
+      "lastIHC": "2026-11-23",
+      "lastLocation": "LIT",
+      "lastTech": "Damian Utley",
       "ED1": 8,
       "ED2": 7
     },
@@ -1191,12 +1191,12 @@
     },
     {
       "tail": "N313BS",
-      "lastService": "2026-11-06",
+      "lastService": "2026-11-23",
       "lastED1": "2026-10-14",
       "lastED2": "2026-09-17",
-      "lastIHC": "2026-11-06",
+      "lastIHC": "2026-11-23",
       "lastLocation": "DFW",
-      "lastTech": "Aunyae Morrison",
+      "lastTech": "Nadia Johnson",
       "ED1": -11,
       "ED2": -8
     },
@@ -2401,6 +2401,33 @@
       "ED2": 0
     },
     {
+      "tail": "N270NN",
+      "date": "2026-11-23",
+      "name": "Damian Utley",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N293NN",
+      "date": "2026-11-23",
+      "name": "Damian Utley",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N283NN",
+      "date": "2026-11-23",
+      "name": "Damian Utley",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
       "tail": "N262NN",
       "date": "2026-11-23",
       "name": "Nadia Johnson",
@@ -2438,6 +2465,15 @@
     },
     {
       "tail": "N206NN",
+      "date": "2026-11-23",
+      "name": "Nadia Johnson",
+      "location": "DFW",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N313BS",
       "date": "2026-11-23",
       "name": "Nadia Johnson",
       "location": "DFW",

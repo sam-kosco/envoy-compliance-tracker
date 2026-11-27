@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-27T09:07:37.130664+00:00",
+  "generated": "2026-11-27T11:07:40.052522+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -47,13 +47,13 @@
     },
     {
       "tail": "N204NN",
-      "lastService": "2026-11-25",
-      "lastED1": "2026-11-03",
+      "lastService": "2026-11-26",
+      "lastED1": "2026-11-26",
       "lastED2": "2026-10-22",
       "lastIHC": "2026-11-25",
       "lastLocation": "LIT",
       "lastTech": "Erica Griffin",
-      "ED1": 6,
+      "ED1": 29,
       "ED2": 24
     },
     {
@@ -157,12 +157,12 @@
     },
     {
       "tail": "N214NN",
-      "lastService": "2026-11-18",
+      "lastService": "2026-11-26",
       "lastED1": "2026-11-12",
       "lastED2": "2026-11-12",
-      "lastIHC": "2026-11-18",
-      "lastLocation": "DFW",
-      "lastTech": "Nadia Johnson",
+      "lastIHC": "2026-11-26",
+      "lastLocation": "LIT",
+      "lastTech": "Erica Griffin",
       "ED1": 15,
       "ED2": 45
     },
@@ -388,12 +388,12 @@
     },
     {
       "tail": "N235NN",
-      "lastService": "2026-11-24",
+      "lastService": "2026-11-26",
       "lastED1": "2026-11-15",
       "lastED2": "2026-10-03",
-      "lastIHC": "2026-11-24",
-      "lastLocation": "XNA",
-      "lastTech": "Ashley Burke",
+      "lastIHC": "2026-11-26",
+      "lastLocation": "LIT",
+      "lastTech": "Erica Griffin",
       "ED1": 18,
       "ED2": 5
     },
@@ -432,12 +432,12 @@
     },
     {
       "tail": "N239NN",
-      "lastService": "2026-11-18",
+      "lastService": "2026-11-26",
       "lastED1": "2026-11-18",
       "lastED2": "2026-11-05",
-      "lastIHC": "2026-11-18",
-      "lastLocation": "XNA",
-      "lastTech": "Ashley Burke",
+      "lastIHC": "2026-11-26",
+      "lastLocation": "LIT",
+      "lastTech": "Erica Griffin",
       "ED1": 21,
       "ED2": 38
     },
@@ -1103,14 +1103,14 @@
     },
     {
       "tail": "N305CL",
-      "lastService": "2026-11-24",
-      "lastED1": "2026-10-25",
-      "lastED2": "2026-09-20",
-      "lastIHC": "2026-11-24",
-      "lastLocation": "SGF",
-      "lastTech": "Steven Wilson",
-      "ED1": -3,
-      "ED2": -8
+      "lastService": "2026-11-26",
+      "lastED1": "2026-11-26",
+      "lastED2": "2026-11-26",
+      "lastIHC": "2026-11-26",
+      "lastLocation": "LIT",
+      "lastTech": "Erica Griffin",
+      "ED1": 29,
+      "ED2": 59
     },
     {
       "tail": "N306DD",
@@ -1246,12 +1246,12 @@
     },
     {
       "tail": "N318JE",
-      "lastService": "2026-11-24",
+      "lastService": "2026-11-26",
       "lastED1": "2026-11-15",
       "lastED2": "2026-10-23",
-      "lastIHC": "2026-11-24",
-      "lastLocation": "XNA",
-      "lastTech": "Ashley Burke",
+      "lastIHC": "2026-11-26",
+      "lastLocation": "LIT",
+      "lastTech": "Erica Griffin",
       "ED1": 18,
       "ED2": 25
     },
@@ -2333,6 +2333,60 @@
       "date": "2026-11-26",
       "name": "Jeffrey Crookshanks",
       "location": "SGF",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N235NN",
+      "date": "2026-11-26",
+      "name": "Erica Griffin",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N318JE",
+      "date": "2026-11-26",
+      "name": "Erica Griffin",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N305CL",
+      "date": "2026-11-26",
+      "name": "Erica Griffin",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 1
+    },
+    {
+      "tail": "N204NN",
+      "date": "2026-11-26",
+      "name": "Erica Griffin",
+      "location": "LIT",
+      "IHC": 0,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N239NN",
+      "date": "2026-11-26",
+      "name": "Erica Griffin",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N214NN",
+      "date": "2026-11-26",
+      "name": "Erica Griffin",
+      "location": "LIT",
       "IHC": 1,
       "ED1": 0,
       "ED2": 0

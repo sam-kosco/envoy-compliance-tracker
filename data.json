@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-27T11:07:40.052522+00:00",
+  "generated": "2026-11-27T16:07:46.234165+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -685,12 +685,12 @@
     },
     {
       "tail": "N262NN",
-      "lastService": "2026-11-23",
+      "lastService": "2026-11-26",
       "lastED1": "2026-11-01",
       "lastED2": "2026-10-03",
-      "lastIHC": "2026-11-23",
-      "lastLocation": "DFW",
-      "lastTech": "Nadia Johnson",
+      "lastIHC": "2026-11-26",
+      "lastLocation": "SGF",
+      "lastTech": "Jeffrey Crookshanks",
       "ED1": 4,
       "ED2": 5
     },
@@ -2387,6 +2387,15 @@
       "date": "2026-11-26",
       "name": "Erica Griffin",
       "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N262NN",
+      "date": "2026-11-26",
+      "name": "Jeffrey Crookshanks",
+      "location": "SGF",
       "IHC": 1,
       "ED1": 0,
       "ED2": 0

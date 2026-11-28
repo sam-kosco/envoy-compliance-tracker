@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-28T11:08:04.953126+00:00",
+  "generated": "2026-11-28T12:07:38.014160+00:00",
   "planes": [
     {
       "tail": "N200NN",
@@ -113,12 +113,12 @@
     },
     {
       "tail": "N210NN",
-      "lastService": "2026-11-23",
+      "lastService": "2026-11-27",
       "lastED1": "2026-11-15",
       "lastED2": "2026-10-02",
-      "lastIHC": "2026-11-23",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
+      "lastIHC": "2026-11-27",
+      "lastLocation": "LIT",
+      "lastTech": "Damian Utley",
       "ED1": 17,
       "ED2": 3
     },
@@ -454,12 +454,12 @@
     },
     {
       "tail": "N241NN",
-      "lastService": "2026-11-22",
+      "lastService": "2026-11-27",
       "lastED1": "2026-11-06",
       "lastED2": "2026-11-14",
-      "lastIHC": "2026-11-22",
-      "lastLocation": "DFW",
-      "lastTech": "Nadia Johnson",
+      "lastIHC": "2026-11-27",
+      "lastLocation": "LIT",
+      "lastTech": "Damian Utley",
       "ED1": 8,
       "ED2": 46
     },
@@ -619,13 +619,13 @@
     },
     {
       "tail": "N256NN",
-      "lastService": "2026-11-24",
-      "lastED1": "2026-10-28",
+      "lastService": "2026-11-27",
+      "lastED1": "2026-11-27",
       "lastED2": "2026-11-01",
-      "lastIHC": "2026-11-24",
-      "lastLocation": "SGF",
-      "lastTech": "Steven Wilson",
-      "ED1": -1,
+      "lastIHC": "2026-11-27",
+      "lastLocation": "LIT",
+      "lastTech": "Damian Utley",
+      "ED1": 29,
       "ED2": 33
     },
     {
@@ -861,12 +861,12 @@
     },
     {
       "tail": "N278NN",
-      "lastService": "2026-11-23",
+      "lastService": "2026-11-27",
       "lastED1": "2026-11-07",
       "lastED2": "2026-11-17",
-      "lastIHC": "2026-11-23",
-      "lastLocation": "XNA",
-      "lastTech": "Ashley Burke",
+      "lastIHC": "2026-11-27",
+      "lastLocation": "LIT",
+      "lastTech": "Damian Utley",
       "ED1": 9,
       "ED2": 49
     },
@@ -894,12 +894,12 @@
     },
     {
       "tail": "N281NN",
-      "lastService": "2026-11-23",
+      "lastService": "2026-11-27",
       "lastED1": "2026-11-15",
       "lastED2": "2026-09-29",
-      "lastIHC": "2026-11-23",
-      "lastLocation": "CMH",
-      "lastTech": "Tanaija Price",
+      "lastIHC": "2026-11-27",
+      "lastLocation": "LIT",
+      "lastTech": "Damian Utley",
       "ED1": 17,
       "ED2": 0
     },
@@ -1015,12 +1015,12 @@
     },
     {
       "tail": "N292NN",
-      "lastService": "2026-11-22",
+      "lastService": "2026-11-27",
       "lastED1": "2026-11-07",
       "lastED2": "2026-10-30",
-      "lastIHC": "2026-11-22",
-      "lastLocation": "SGF",
-      "lastTech": "Jeffrey Crookshanks",
+      "lastIHC": "2026-11-27",
+      "lastLocation": "LIT",
+      "lastTech": "Damian Utley",
       "ED1": 9,
       "ED2": 31
     },
@@ -2351,6 +2351,60 @@
       "date": "2026-11-27",
       "name": "Sellers Davis",
       "location": "CVG",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N256NN",
+      "date": "2026-11-27",
+      "name": "Damian Utley",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 1,
+      "ED2": 0
+    },
+    {
+      "tail": "N278NN",
+      "date": "2026-11-27",
+      "name": "Damian Utley",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N210NN",
+      "date": "2026-11-27",
+      "name": "Damian Utley",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N292NN",
+      "date": "2026-11-27",
+      "name": "Damian Utley",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N241NN",
+      "date": "2026-11-27",
+      "name": "Damian Utley",
+      "location": "LIT",
+      "IHC": 1,
+      "ED1": 0,
+      "ED2": 0
+    },
+    {
+      "tail": "N281NN",
+      "date": "2026-11-27",
+      "name": "Damian Utley",
+      "location": "LIT",
       "IHC": 1,
       "ED1": 0,
       "ED2": 0
